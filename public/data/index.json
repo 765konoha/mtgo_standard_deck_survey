@@ -1,0 +1,94 @@
+{
+  "generatedAt": "2026-07-01T22:05:00+09:00",
+  "lastSuccessfulUpdateAt": "2026-07-01T22:05:00+09:00",
+  "overallStatus": "partial",
+  "summary": {
+    "completedEvents": 14,
+    "pendingEvents": 1,
+    "fetchErrors": 1,
+    "parseErrors": 1,
+    "untranslatedCards": 2
+  },
+  "events": [
+    {
+      "id": "standard-challenge-32-2026-07-01",
+      "name": "Standard Challenge 32",
+      "eventType": "challenge",
+      "eventDate": "2026-07-01",
+      "publishedDate": "2026-07-01",
+      "status": "pending_publication",
+      "deckCount": 0,
+      "sourceUrl": "https://www.mtgo.com/en/mtgo/decklist/standard-challenge-32-20260701",
+      "dataFile": "./events/standard-challenge-32-2026-07-01.json",
+      "lastCheckedAt": "2026-07-01T22:00:00+09:00"
+    },
+    {
+      "id": "standard-challenge-32-2026-06-30",
+      "name": "Standard Challenge 32",
+      "eventType": "challenge",
+      "eventDate": "2026-06-30",
+      "publishedDate": "2026-07-01",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/en/mtgo/decklist/standard-challenge-32-20260630",
+      "dataFile": "./events/standard-challenge-32-2026-06-30.json"
+    },
+    {
+      "id": "standard-league-2026-06-30",
+      "name": "Standard League",
+      "eventType": "league",
+      "eventDate": "2026-06-30",
+      "publishedDate": "2026-07-01",
+      "status": "completed",
+      "deckCount": 12,
+      "sourceUrl": "https://www.mtgo.com/en/mtgo/decklist/standard-league-20260630",
+      "dataFile": "./events/standard-league-2026-06-30.json"
+    },
+    {
+      "id": "standard-challenge-31-2026-06-29",
+      "name": "Standard Challenge 31",
+      "eventType": "challenge",
+      "eventDate": "2026-06-29",
+      "publishedDate": "2026-06-30",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/en/mtgo/decklist/standard-challenge-31-20260629",
+      "dataFile": "./events/standard-challenge-31-2026-06-29.json"
+    },
+    {
+      "id": "standard-league-2026-06-29",
+      "name": "Standard League",
+      "eventType": "league",
+      "eventDate": "2026-06-29",
+      "publishedDate": "2026-06-30",
+      "status": "parse_error",
+      "deckCount": 0,
+      "sourceUrl": "https://www.mtgo.com/en/mtgo/decklist/standard-league-20260629",
+      "dataFile": "./events/standard-league-2026-06-29.json",
+      "lastCheckedAt": "2026-06-30T22:00:00+09:00"
+    },
+    {
+      "id": "standard-league-2026-06-28",
+      "name": "Standard League",
+      "eventType": "league",
+      "eventDate": "2026-06-28",
+      "publishedDate": "2026-06-29",
+      "status": "fetch_error",
+      "deckCount": 0,
+      "sourceUrl": "https://www.mtgo.com/en/mtgo/decklist/standard-league-20260628",
+      "dataFile": "./events/standard-league-2026-06-28.json",
+      "lastCheckedAt": "2026-06-29T22:00:00+09:00"
+    },
+    {
+      "id": "standard-challenge-30-2026-06-25",
+      "name": "Standard Challenge 30",
+      "eventType": "challenge",
+      "eventDate": "2026-06-25",
+      "publishedDate": "2026-06-26",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/en/mtgo/decklist/standard-challenge-30-20260625",
+      "dataFile": "./events/standard-challenge-30-2026-06-25.json"
+    }
+  ]
+}
