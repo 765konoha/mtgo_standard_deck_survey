@@ -1,7 +1,7 @@
-// Status types
 export type EventStatus =
-  | 'completed'
+  | 'discovered'
   | 'pending_publication'
+  | 'completed'
   | 'fetch_error'
   | 'parse_error'
   | 'publication_timeout';
@@ -14,17 +14,27 @@ export type EventType = 'challenge' | 'league';
 
 export type CardNameDisplayMode = 'ja' | 'ja-en' | 'en';
 
-// Card types
+export type CardTypeGroup =
+  | 'creature'
+  | 'planeswalker'
+  | 'instant'
+  | 'sorcery'
+  | 'enchantment'
+  | 'artifact'
+  | 'battle'
+  | 'land'
+  | 'other';
+
 export interface Card {
   quantity: number;
   nameEn: string;
   nameJa: string | null;
   detailUrl: string | null;
-  category: string;
+  typeGroup?: CardTypeGroup | null;
+  category?: CardTypeGroup | null;
   translationStatus: TranslationStatus;
 }
 
-// Deck types
 export interface Deck {
   id: string;
   player: string;
@@ -36,7 +46,6 @@ export interface Deck {
   sideboard: Card[];
 }
 
-// Event summary (from index.json)
 export interface EventSummary {
   id: string;
   name: string;
@@ -47,10 +56,11 @@ export interface EventSummary {
   deckCount: number;
   sourceUrl: string;
   dataFile: string;
+  firstSeenAt?: string;
   lastCheckedAt?: string;
+  completedAt?: string | null;
 }
 
-// Full event (from event JSON)
 export interface Event {
   schemaVersion: number;
   event: {
@@ -61,47 +71,41 @@ export interface Event {
     publishedDate: string;
     sourceUrl: string;
     status: EventStatus;
+    firstSeenAt?: string;
+    fetchedAt?: string;
   };
   decks: Deck[];
 }
 
-// Index.json structure
 export interface IndexData {
+  schemaVersion?: number;
   generatedAt: string;
-  lastSuccessfulUpdateAt: string;
+  lastSuccessfulUpdateAt: string | null;
   overallStatus: OverallStatus;
   summary: {
     completedEvents: number;
     pendingEvents: number;
     fetchErrors: number;
     parseErrors: number;
+    timedOutEvents?: number;
     untranslatedCards: number;
   };
   events: EventSummary[];
 }
 
-// Processing status item for display
-export interface ProcessingStatusItem {
-  event: EventSummary;
-  type: 'pending' | 'fetch_error' | 'parse_error' | 'publication_timeout';
-}
-
-// Toast notification
 export interface ToastMessage {
   id: string;
   message: string;
   type: 'success' | 'error' | 'info';
 }
 
-// Filter state
 export interface FilterState {
   selectedDate: string | null;
   eventType: 'all' | 'challenge' | 'league';
   cardNameDisplay: CardNameDisplayMode;
 }
 
-// Card category display names
-export const CARD_CATEGORY_LABELS: Record<string, string> = {
+export const CARD_CATEGORY_LABELS: Record<CardTypeGroup, string> = {
   creature: 'クリーチャー',
   planeswalker: 'プレインズウォーカー',
   instant: 'インスタント',
@@ -113,18 +117,18 @@ export const CARD_CATEGORY_LABELS: Record<string, string> = {
   other: 'その他',
 };
 
-// Status display labels
 export const STATUS_LABELS: Record<EventStatus, string> = {
-  completed: '完了',
+  discovered: '検出済み',
   pending_publication: '公開待ち',
-  fetch_error: '取得失敗',
+  completed: '完了',
+  fetch_error: '取得エラー',
   parse_error: '解析エラー',
-  publication_timeout: '公開タイムアウト',
+  publication_timeout: '公開期限切れ',
 };
 
 export const OVERALL_STATUS_LABELS: Record<OverallStatus, string> = {
   success: '正常',
-  partial: '一部失敗',
+  partial: '一部未完了',
   failed: '更新失敗',
   pending: '公開待ちあり',
 };

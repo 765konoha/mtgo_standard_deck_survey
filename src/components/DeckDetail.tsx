@@ -1,12 +1,6 @@
 import { useEffect, useRef } from 'react';
-import {
-  X,
-  ExternalLink,
-  Copy,
-  Globe,
-  AlertTriangle,
-} from 'lucide-react';
-import type { EventSummary, Event, Deck, CardNameDisplayMode } from '../types';
+import { AlertTriangle, Copy, ExternalLink, Globe, X } from 'lucide-react';
+import type { CardNameDisplayMode, Deck, Event, EventSummary } from '../types';
 import { formatDate, getPlacementLabel } from '../utils/helpers';
 import { CardList } from './CardList';
 
@@ -29,18 +23,14 @@ export function DeckDetail({
 }: DeckDetailProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Close on Escape
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
+      if (e.key === 'Escape') onClose();
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [onClose]);
 
-  // Focus trap
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -53,27 +43,20 @@ export function DeckDetail({
 
     const handleTab = (e: KeyboardEvent) => {
       if (e.key !== 'Tab') return;
-
-      if (e.shiftKey) {
-        if (document.activeElement === firstElement) {
-          e.preventDefault();
-          lastElement?.focus();
-        }
-      } else {
-        if (document.activeElement === lastElement) {
-          e.preventDefault();
-          firstElement?.focus();
-        }
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement?.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement?.focus();
       }
     };
 
     container.addEventListener('keydown', handleTab);
     firstElement?.focus();
-
     return () => container.removeEventListener('keydown', handleTab);
   }, []);
 
-  // Prevent body scroll
   useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => {
@@ -82,22 +65,18 @@ export function DeckDetail({
   }, []);
 
   const placement = getPlacementLabel(deck);
-
-  // Check for untranslated cards
   const hasUntranslatedCards =
     deck.mainboard.some((c) => c.translationStatus === 'missing') ||
     deck.sideboard.some((c) => c.translationStatus === 'missing');
 
   return (
     <>
-      {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black/70 z-40 lg:hidden"
         onClick={onClose}
         aria-hidden="true"
       />
 
-      {/* Panel */}
       <div
         ref={containerRef}
         className="fixed inset-0 z-50 bg-neutral-950 overflow-y-auto sm:inset-y-4 sm:right-4 sm:left-auto sm:max-w-2xl sm:rounded-xl sm:border sm:border-neutral-800"
@@ -105,7 +84,6 @@ export function DeckDetail({
         aria-modal="true"
         aria-labelledby="deck-detail-title"
       >
-        {/* Header */}
         <div className="sticky top-0 z-10 bg-neutral-950 border-b border-neutral-800">
           <div className="px-4 py-3 flex items-start justify-between gap-4">
             <div className="min-w-0 flex-1">
@@ -130,7 +108,6 @@ export function DeckDetail({
             </button>
           </div>
 
-          {/* Event info and actions */}
           <div className="px-4 pb-3 flex flex-wrap items-center gap-2">
             <div className="text-xs text-neutral-500">
               {formatDate(eventData.event.eventDate)}
@@ -171,10 +148,8 @@ export function DeckDetail({
           </div>
         </div>
 
-        {/* Deck content */}
         <div className="p-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Mainboard */}
             <div>
               <h3 className="text-sm font-semibold text-neutral-300 mb-3">
                 メインデッキ{' '}
@@ -189,7 +164,6 @@ export function DeckDetail({
               />
             </div>
 
-            {/* Sideboard */}
             <div>
               <h3 className="text-sm font-semibold text-neutral-300 mb-3">
                 サイドボード{' '}

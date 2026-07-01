@@ -1,4 +1,4 @@
-import { RefreshCw, AlertCircle, Inbox } from 'lucide-react';
+import { AlertCircle, Inbox, RefreshCw } from 'lucide-react';
 
 interface ErrorStateProps {
   error: Error;

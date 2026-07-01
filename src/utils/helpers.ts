@@ -1,4 +1,5 @@
-import type { Card, Deck, CardNameDisplayMode } from '../types';
+import type { Card, CardNameDisplayMode, CardTypeGroup, Deck } from '../types';
+import { CARD_CATEGORY_LABELS } from '../types';
 
 const DISPLAY_LOCALE = 'ja-JP';
 
@@ -11,7 +12,8 @@ export function formatDate(dateStr: string): string {
   });
 }
 
-export function formatDateTime(dateStr: string): string {
+export function formatDateTime(dateStr: string | null | undefined): string {
+  if (!dateStr) return '-';
   const date = new Date(dateStr);
   return date.toLocaleDateString(DISPLAY_LOCALE, {
     year: 'numeric',
@@ -30,30 +32,33 @@ export function formatShortDate(dateStr: string): string {
   });
 }
 
-export function getLastNDates(n: number): string[] {
+export function getLastNDates(n: number, baseDate = new Date()): string[] {
   const dates: string[] = [];
-  const today = new Date();
   for (let i = 0; i < n; i++) {
-    const date = new Date(today);
+    const date = new Date(baseDate);
     date.setDate(date.getDate() - i);
     dates.push(date.toISOString().split('T')[0]);
   }
   return dates;
 }
 
+export function getCardCategory(card: Card): CardTypeGroup {
+  return card.typeGroup || card.category || 'other';
+}
+
 export function groupCardsByCategory(
   cards: Card[]
-): Map<string, { label: string; cards: Card[]; count: number }> {
+): Map<CardTypeGroup, { label: string; cards: Card[]; count: number }> {
   const grouped = new Map<
-    string,
+    CardTypeGroup,
     { label: string; cards: Card[]; count: number }
   >();
 
   for (const card of cards) {
-    const category = card.category || 'other';
+    const category = getCardCategory(card);
     if (!grouped.has(category)) {
       grouped.set(category, {
-        label: getCategoryLabel(category),
+        label: CARD_CATEGORY_LABELS[category] || category,
         cards: [],
         count: 0,
       });
@@ -64,21 +69,6 @@ export function groupCardsByCategory(
   }
 
   return grouped;
-}
-
-function getCategoryLabel(category: string): string {
-  const labels: Record<string, string> = {
-    creature: 'クリーチャー',
-    planeswalker: 'プレインズウォーカー',
-    instant: 'インスタント',
-    sorcery: 'ソーサリー',
-    enchantment: 'エンチャント',
-    artifact: 'アーティファクト',
-    battle: 'バトル',
-    land: '土地',
-    other: 'その他',
-  };
-  return labels[category] || category;
 }
 
 export function getCardDisplayName(
@@ -94,7 +84,7 @@ export function getCardDisplayName(
     case 'ja-en':
       return {
         primary: card.nameJa || card.nameEn,
-        secondary: card.nameJa ? card.nameEn : null,
+        secondary: card.nameJa ? card.nameEn : '日本語名未登録',
       };
     case 'en':
       return {
@@ -108,14 +98,7 @@ export function copyDeckToClipboard(
   deck: Deck,
   format: 'ja' | 'arena'
 ): Promise<void> {
-  let text = '';
-
-  if (format === 'ja') {
-    text = formatDeckAsJapaneseList(deck);
-  } else {
-    text = formatDeckAsArena(deck);
-  }
-
+  const text = format === 'ja' ? formatDeckAsJapaneseList(deck) : formatDeckAsArena(deck);
   return navigator.clipboard.writeText(text);
 }
 
@@ -127,8 +110,7 @@ function formatDeckAsJapaneseList(deck: Deck): string {
   mainGrouped.forEach((group) => {
     lines.push(`${group.label} (${group.count}枚)`);
     for (const card of group.cards) {
-      const name = card.nameJa || card.nameEn;
-      lines.push(`${card.quantity} ${name}`);
+      lines.push(`${card.quantity} ${card.nameJa || card.nameEn}`);
     }
     lines.push('');
   });
@@ -138,8 +120,7 @@ function formatDeckAsJapaneseList(deck: Deck): string {
   sideGrouped.forEach((group) => {
     lines.push(`${group.label} (${group.count}枚)`);
     for (const card of group.cards) {
-      const name = card.nameJa || card.nameEn;
-      lines.push(`${card.quantity} ${name}`);
+      lines.push(`${card.quantity} ${card.nameJa || card.nameEn}`);
     }
     lines.push('');
   });
@@ -148,15 +129,13 @@ function formatDeckAsJapaneseList(deck: Deck): string {
 }
 
 function formatDeckAsArena(deck: Deck): string {
-  const lines: string[] = [];
+  const lines: string[] = ['Deck'];
 
-  lines.push('Deck');
   for (const card of deck.mainboard) {
     lines.push(`${card.quantity} ${card.nameEn}`);
   }
 
-  lines.push('');
-  lines.push('Sideboard');
+  lines.push('', 'Sideboard');
   for (const card of deck.sideboard) {
     lines.push(`${card.quantity} ${card.nameEn}`);
   }

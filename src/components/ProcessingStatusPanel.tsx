@@ -1,6 +1,13 @@
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, Clock, AlertCircle, AlertTriangle, ExternalLink } from 'lucide-react';
-import type { EventSummary, IndexData } from '../types';
+import {
+  AlertCircle,
+  AlertTriangle,
+  ChevronDown,
+  ChevronUp,
+  Clock,
+  ExternalLink,
+} from 'lucide-react';
+import type { EventStatus, EventSummary, IndexData } from '../types';
 import { formatDateTime } from '../utils/helpers';
 
 interface ProcessingStatusPanelProps {
@@ -10,16 +17,13 @@ interface ProcessingStatusPanelProps {
 export function ProcessingStatusPanel({ data }: ProcessingStatusPanelProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const pendingEvents = data.events.filter(
-    (e) => e.status === 'pending_publication'
-  );
-  const errorEvents = data.events.filter(
-    (e) => e.status === 'fetch_error' || e.status === 'parse_error'
-  );
+  const issueEvents = data.events.filter((e) => e.status !== 'completed');
+  if (issueEvents.length === 0) return null;
 
-  const hasIssues = pendingEvents.length > 0 || errorEvents.length > 0;
-
-  if (!hasIssues) return null;
+  const pendingCount = issueEvents.filter(
+    (e) => e.status === 'pending_publication' || e.status === 'discovered'
+  ).length;
+  const errorCount = issueEvents.length - pendingCount;
 
   return (
     <div className="bg-neutral-900 border border-neutral-800 rounded-lg mt-6">
@@ -29,15 +33,15 @@ export function ProcessingStatusPanel({ data }: ProcessingStatusPanelProps) {
         aria-expanded={isExpanded}
       >
         <div className="flex items-center gap-2">
-          <span className="text-sm font-medium text-neutral-300">取得状況</span>
-          {pendingEvents.length > 0 && (
+          <span className="text-sm font-medium text-neutral-300">取得状態</span>
+          {pendingCount > 0 && (
             <span className="px-1.5 py-0.5 text-xs bg-primary-950 text-primary-400 rounded">
-              公開待ち {pendingEvents.length}
+              公開待ち {pendingCount}
             </span>
           )}
-          {errorEvents.length > 0 && (
+          {errorCount > 0 && (
             <span className="px-1.5 py-0.5 text-xs bg-error-950 text-error-400 rounded">
-              エラー {errorEvents.length}
+              要確認 {errorCount}
             </span>
           )}
         </div>
@@ -50,10 +54,7 @@ export function ProcessingStatusPanel({ data }: ProcessingStatusPanelProps) {
 
       {isExpanded && (
         <div className="px-4 pb-4 space-y-3 border-t border-neutral-800 pt-3">
-          {pendingEvents.map((event) => (
-            <StatusItem key={event.id} event={event} />
-          ))}
-          {errorEvents.map((event) => (
+          {issueEvents.map((event) => (
             <StatusItem key={event.id} event={event} />
           ))}
         </div>
@@ -62,50 +63,8 @@ export function ProcessingStatusPanel({ data }: ProcessingStatusPanelProps) {
   );
 }
 
-interface StatusItemProps {
-  event: EventSummary;
-}
-
-function StatusItem({ event }: StatusItemProps) {
-  const config = {
-    pending_publication: {
-      icon: <Clock className="w-4 h-4" />,
-      color: 'text-primary-400',
-      bg: 'bg-primary-950/50',
-      label: '公開待ち',
-      description: 'デッキリストはまだ掲載されていません。',
-    },
-    parse_error: {
-      icon: <AlertTriangle className="w-4 h-4" />,
-      color: 'text-warning-400',
-      bg: 'bg-warning-950/50',
-      label: '解析エラー',
-      description: 'ページ構造を解析できませんでした。',
-    },
-    fetch_error: {
-      icon: <AlertCircle className="w-4 h-4" />,
-      color: 'text-error-400',
-      bg: 'bg-error-950/50',
-      label: '取得失敗',
-      description: 'MTGOイベントページを取得できませんでした。',
-    },
-    publication_timeout: {
-      icon: <AlertCircle className="w-4 h-4" />,
-      color: 'text-error-400',
-      bg: 'bg-error-950/50',
-      label: '公開タイムアウト',
-      description: 'デッキリストの公開がタイムアウトしました。',
-    },
-    completed: {
-      icon: null,
-      color: '',
-      bg: '',
-      label: '',
-      description: '',
-    },
-  };
-
-  const statusConfig = config[event.status] || config.completed;
+function StatusItem({ event }: { event: EventSummary }) {
+  const statusConfig = getStatusConfig(event.status);
 
   return (
     <div className={`p-3 rounded-lg border border-neutral-800 ${statusConfig.bg}`}>
@@ -119,10 +78,7 @@ function StatusItem({ event }: StatusItemProps) {
       <p className="text-xs text-neutral-400 mt-1">{statusConfig.description}</p>
       <div className="flex items-center justify-between mt-2 pt-2 border-t border-neutral-700/50">
         <span className="text-xs text-neutral-500">
-          最終確認：
-          {event.lastCheckedAt
-            ? formatDateTime(event.lastCheckedAt)
-            : '---'}
+          最終確認: {formatDateTime(event.lastCheckedAt)}
         </span>
         <a
           href={event.sourceUrl}
@@ -136,4 +92,52 @@ function StatusItem({ event }: StatusItemProps) {
       </div>
     </div>
   );
+}
+
+function getStatusConfig(status: EventStatus) {
+  const base = {
+    discovered: {
+      icon: <Clock className="w-4 h-4" />,
+      color: 'text-primary-400',
+      bg: 'bg-primary-950/50',
+      label: '検出済み',
+      description: 'イベント一覧でリンクを検出しました。',
+    },
+    pending_publication: {
+      icon: <Clock className="w-4 h-4" />,
+      color: 'text-primary-400',
+      bg: 'bg-primary-950/50',
+      label: '公開待ち',
+      description: 'デッキリストはまだ掲載されていません。',
+    },
+    parse_error: {
+      icon: <AlertTriangle className="w-4 h-4" />,
+      color: 'text-warning-400',
+      bg: 'bg-warning-950/50',
+      label: '解析エラー',
+      description: 'HTML構造が想定と異なり、デッキを解析できませんでした。',
+    },
+    fetch_error: {
+      icon: <AlertCircle className="w-4 h-4" />,
+      color: 'text-error-400',
+      bg: 'bg-error-950/50',
+      label: '取得エラー',
+      description: 'MTGOイベントページを取得できませんでした。',
+    },
+    publication_timeout: {
+      icon: <AlertCircle className="w-4 h-4" />,
+      color: 'text-error-400',
+      bg: 'bg-error-950/50',
+      label: '公開期限切れ',
+      description: '設定日数を超えてもデッキリストが公開されませんでした。',
+    },
+    completed: {
+      icon: null,
+      color: '',
+      bg: '',
+      label: '',
+      description: '',
+    },
+  };
+  return base[status];
 }

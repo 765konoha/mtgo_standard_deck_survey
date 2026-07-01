@@ -1,3 +1,4 @@
+import { AlertCircle, AlertTriangle, Clock } from 'lucide-react';
 import type { EventSummary } from '../types';
 import { useEventData } from '../hooks/useData';
 import { formatDate } from '../utils/helpers';
@@ -19,10 +20,8 @@ export function EventList({
   selectedDeckId,
 }: EventListProps) {
   const filteredEvents = events.filter((event) => {
-    if (event.status !== 'completed') return false;
-    if (selectedDate && event.publishedDate !== selectedDate) return false;
-    if (eventTypeFilter !== 'all' && event.eventType !== eventTypeFilter)
-      return false;
+    if (selectedDate && event.eventDate !== selectedDate) return false;
+    if (eventTypeFilter !== 'all' && event.eventType !== eventTypeFilter) return false;
     return true;
   });
 
@@ -31,27 +30,23 @@ export function EventList({
       <div className="text-center py-12">
         <p className="text-neutral-400">
           {selectedDate
-            ? 'この日付には対象のデッキリストがありません。'
-            : '指定した条件に一致するデッキがありません。'}
+            ? 'この日付には対象のイベントがありません。'
+            : '指定した条件に一致するイベントがありません。'}
         </p>
       </div>
     );
   }
 
-  // Group by published date
   const groupedByDate = filteredEvents.reduce(
     (acc, event) => {
-      const date = event.publishedDate;
-      if (!acc[date]) {
-        acc[date] = [];
-      }
+      const date = event.eventDate;
+      acc[date] = acc[date] || [];
       acc[date].push(event);
       return acc;
     },
     {} as Record<string, EventSummary[]>
   );
 
-  // Sort events within each date: challenge first, then league
   Object.keys(groupedByDate).forEach((date) => {
     groupedByDate[date].sort((a, b) => {
       if (a.eventType === 'challenge' && b.eventType !== 'challenge') return -1;
@@ -98,6 +93,10 @@ function EventCardWrapper({
 }: EventCardWrapperProps) {
   const { data, loading, error } = useEventData(event);
 
+  if (event.status !== 'completed') {
+    return <IncompleteEventCard event={event} />;
+  }
+
   if (loading) {
     return (
       <div className="card p-4">
@@ -115,7 +114,9 @@ function EventCardWrapper({
   if (error || !data) {
     return (
       <div className="card p-4 border-error-800">
-        <p className="text-error-400">イベントデータの読み込みに失敗しました</p>
+        <p className="text-error-400">
+          イベントデータの読み込みに失敗しました。
+        </p>
       </div>
     );
   }
@@ -127,5 +128,76 @@ function EventCardWrapper({
       onDeckSelect={onDeckSelect}
       selectedDeckId={selectedDeckId}
     />
+  );
+}
+
+function IncompleteEventCard({ event }: { event: EventSummary }) {
+  const config = {
+    discovered: {
+      icon: <Clock className="w-4 h-4" />,
+      label: '検出済み',
+      description: 'イベントリンクを検出しました。次回実行でデッキ公開を確認します。',
+      color: 'text-primary-400',
+    },
+    pending_publication: {
+      icon: <Clock className="w-4 h-4" />,
+      label: '公開待ち',
+      description: 'MTGO上でデッキリストがまだ公開されていません。',
+      color: 'text-primary-400',
+    },
+    fetch_error: {
+      icon: <AlertCircle className="w-4 h-4" />,
+      label: '取得エラー',
+      description: 'イベントページを取得できませんでした。既存データは保持されています。',
+      color: 'text-error-400',
+    },
+    parse_error: {
+      icon: <AlertTriangle className="w-4 h-4" />,
+      label: '解析エラー',
+      description: 'デッキリストらしき内容はありますが、現在の解析処理では読めませんでした。',
+      color: 'text-warning-400',
+    },
+    publication_timeout: {
+      icon: <AlertCircle className="w-4 h-4" />,
+      label: '公開期限切れ',
+      description: '発見から設定日数を超えてもデッキリストが公開されませんでした。',
+      color: 'text-error-400',
+    },
+    completed: {
+      icon: null,
+      label: '',
+      description: '',
+      color: '',
+    },
+  }[event.status];
+
+  return (
+    <div className="card p-4">
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <div className="flex items-center gap-2">
+            <span className={config.color}>{config.icon}</span>
+            <h3 className="text-base font-semibold text-neutral-100">
+              {event.name}
+            </h3>
+            <span className={`text-xs font-medium ${config.color}`}>
+              {config.label}
+            </span>
+          </div>
+          <p className="text-sm text-neutral-400 mt-2">{config.description}</p>
+          <div className="text-xs text-neutral-500 mt-2">
+            掲載日: {formatDate(event.publishedDate)}
+          </div>
+        </div>
+        <a
+          href={event.sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-primary-400 hover:text-primary-300 shrink-0"
+        >
+          元ページ
+        </a>
+      </div>
+    </div>
   );
 }

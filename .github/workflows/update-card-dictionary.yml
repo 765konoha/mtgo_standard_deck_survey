@@ -1,0 +1,46 @@
+name: Update card dictionary
+
+on:
+  workflow_dispatch:
+    inputs:
+      rebuild_events:
+        description: '既存イベントJSONを再変換する'
+        required: false
+        default: 'true'
+
+concurrency:
+  group: update-card-dictionary
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run update:dictionary
+      - run: npm run rebuild:data
+        if: ${{ inputs.rebuild_events != 'false' }}
+      - run: npm run build:index
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - name: Commit dictionary changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update card dictionary'
+          file_pattern: 'data/cards data/events public/data'
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4

@@ -1,5 +1,5 @@
-import { useEffect, useCallback } from 'react';
-import { X, CheckCircle, AlertCircle, Info } from 'lucide-react';
+import { useCallback, useEffect } from 'react';
+import { AlertCircle, CheckCircle, Info, X } from 'lucide-react';
 import type { ToastMessage } from '../types';
 
 interface ToastProps {
@@ -23,20 +23,19 @@ export function Toast({ toasts, removeToast }: ToastProps) {
   );
 }
 
-interface ToastItemProps {
+function ToastItem({
+  toast,
+  onRemove,
+}: {
   toast: ToastMessage;
   onRemove: (id: string) => void;
-}
-
-function ToastItem({ toast, onRemove }: ToastItemProps) {
+}) {
   const handleClose = useCallback(() => {
     onRemove(toast.id);
   }, [onRemove, toast.id]);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      onRemove(toast.id);
-    }, 3000);
+    const timer = setTimeout(() => onRemove(toast.id), 3000);
     return () => clearTimeout(timer);
   }, [onRemove, toast.id]);
 

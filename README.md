@@ -1,114 +1,93 @@
 # MTGO Standard Results
 
-MTG Onlineで公開されるStandardフォーマットのデッキリストを日本語で閲覧するためのWebアプリケーションです。
+MTGOで公開されるStandard League 5-0とStandard Challenge Top 8のデッキリストを取得し、日本語カード名で閲覧する静的Webサイトです。サーバーとデータベースは使わず、GitHub ActionsでJSONを生成してGitHub Pagesに公開します。
 
-- Standard League 5-0デッキ
-- Standard Challenge Top 8デッキ
+## 構成
 
-## 特徴
+- React 18 / TypeScript / Vite / Tailwind CSS
+- データ取得と解析: Node.js scripts
+- 公開データ: `public/data/index.json` と `public/data/events/*.json`
+- 永続データ: `data/state/events.json`, `data/events/*.json`, `data/cards/en-ja-map.json`
+- 生HTML保存: `data/raw/events/*.html`
 
-- 日本語カード名での表示（日本語のみ / 日本語＋英語 / 英語のみの切り替え可能）
-- レスポンシブデザイン（PC / タブレット / スマートフォン対応）
-- ダークテーマ
-- 外部カード詳細ページへのリンク（Scryfall等）
-- デッキリストのコピー機能（日本語形式 / MTG Arena形式）
-- 公開待ち・取得エラー・解析エラーの状態表示
-
-## 技術スタック
-
-- React 18
-- TypeScript
-- Vite
-- Tailwind CSS
-- Lucide React（アイコン）
-
-## ローカル環境での実行
-
-### 前提条件
-
-- Node.js 18以上
-- npm 9以上
-
-### 手順
-
-1. 依存パッケージをインストール
+## ローカル起動
 
 ```bash
 npm install
-```
-
-2. 開発サーバーを起動
-
-```bash
 npm run dev
 ```
 
-3. ブラウザで `http://localhost:5173` を開く
-
-### ビルド
-
-本番用ビルドを作成：
+ビルドと検証:
 
 ```bash
+npm run typecheck
+npm test
 npm run build
 ```
 
-ビルド成果物は `dist` ディレクトリに出力されます。
+## データ取得
 
-ビルド結果をプレビュー：
+MTGO公式のDecklistsページを起点に対象イベントリンクを検出します。
 
 ```bash
-npm run preview
+npm run fetch:decklists
 ```
 
-## データ構造
+処理対象:
 
-### ファイル配置
+- 新規に検出したStandard League / Standard Challenge
+- `pending_publication` の再確認
+- `fetch_error` / `parse_error` の再試行
+- `--force` または `FORCE_REFETCH=true` 指定時のcompleted再取得
 
+取得ページは `data/raw/events/<eventId>.html` に保存します。解析成功時は `data/events` と `public/data/events` にイベントJSONを書きます。失敗時も既存の正常データは削除しません。
+
+## 状態
+
+- `discovered`: イベント一覧でリンクを初検出
+- `pending_publication`: ページは取得できたがデッキリストが未公開または一部のみ
+- `completed`: 必要なデッキを解析しJSON保存済み
+- `fetch_error`: HTTPエラー、タイムアウト、ネットワークエラー
+- `parse_error`: デッキらしき構造はあるが解析不能
+- `publication_timeout`: 発見から設定日数を超えても未公開
+
+公開期限は `PUBLICATION_TIMEOUT_DAYS` で変更できます。初期値は7日です。
+
+## カード辞書
+
+辞書は通常の定期取得では更新しません。新セット発売時などに手動で更新します。
+
+```bash
+npm run update:dictionary
+npm run rebuild:data
+npm run build:index
 ```
-public/
-└── data/
-    ├── index.json          # 全体のインデックス
-    └── events/
-        ├── standard-challenge-32-2026-06-30.json
-        └── standard-league-2026-06-30.json
-```
 
-### index.json
+データソースはScryfall Bulk Dataの `all_cards` です。英語名、日本語印刷名、カード詳細URL、タイプ分類をローカル辞書に保存します。表示時にカードごとの外部API呼び出しは行いません。日本語名がないカードは英語名で表示し、`translationStatus: "missing"` として集計します。
 
-全体のインデックスファイルです。
+## JSONスキーマ概要
+
+`public/data/index.json`:
 
 ```json
 {
+  "schemaVersion": 1,
   "generatedAt": "2026-07-01T22:05:00+09:00",
   "lastSuccessfulUpdateAt": "2026-07-01T22:05:00+09:00",
-  "overallStatus": "success",
+  "overallStatus": "partial",
   "summary": {
     "completedEvents": 14,
-    "pendingEvents": 0,
+    "pendingEvents": 1,
     "fetchErrors": 0,
     "parseErrors": 0,
+    "timedOutEvents": 0,
     "untranslatedCards": 2
   },
-  "events": [
-    {
-      "id": "standard-challenge-32-2026-06-30",
-      "name": "Standard Challenge 32",
-      "eventType": "challenge",
-      "eventDate": "2026-06-30",
-      "publishedDate": "2026-07-01",
-      "status": "completed",
-      "deckCount": 8,
-      "sourceUrl": "https://www.mtgo.com/decklist/...",
-      "dataFile": "./events/standard-challenge-32-2026-06-30.json"
-    }
-  ]
+  "events": []
 }
 ```
 
-### イベントJSON
-
-各イベントの詳細データです。
+イベントJSON:
 
 ```json
 {
@@ -120,164 +99,55 @@ public/
     "eventDate": "2026-06-30",
     "publishedDate": "2026-07-01",
     "sourceUrl": "https://www.mtgo.com/decklist/...",
-    "status": "completed"
+    "status": "completed",
+    "firstSeenAt": "2026-07-01T06:00:00+09:00",
+    "fetchedAt": "2026-07-01T22:00:00+09:00"
   },
-  "decks": [
-    {
-      "id": "deck-1",
-      "player": "PlayerA",
-      "placement": 1,
-      "record": "7-1",
-      "mainboardCount": 60,
-      "sideboardCount": 15,
-      "mainboard": [
-        {
-          "quantity": 4,
-          "nameEn": "Lightning Strike",
-          "nameJa": "稲妻の一撃",
-          "detailUrl": "https://scryfall.com/card/...",
-          "category": "instant",
-          "translationStatus": "complete"
-        }
-      ],
-      "sideboard": []
-    }
-  ]
+  "decks": []
 }
 ```
 
-### League形式
+カードは `quantity`, `nameEn`, `nameJa`, `detailUrl`, `typeGroup`, `translationStatus` を持ちます。
 
-League 5-0デッキの場合：
+## UI
 
-```json
-{
-  "id": "league-deck-1",
-  "player": "PlayerB",
-  "placement": null,
-  "record": "5-0",
-  ...
-}
-```
+既存の1ページ構成を維持しています。
 
-### フィールド説明
+- 直近10日間の日付切り替え
+- すべて / League / Challengeの絞り込み
+- Challenge順位、League 5-0表示
+- デッキ詳細、メイン/サイド分離
+- 日本語 / 日本語+英語 / 英語表示
+- カード分類、外部詳細リンク
+- 日本語リストコピー、Arena形式コピー
+- 公開待ち、取得エラー、解析エラー、公開期限切れ、未変換カード表示
 
-| フィールド | 説明 |
-|-----------|------|
-| `generatedAt` | データ生成日時（ISO 8601形式） |
-| `overallStatus` | 全体ステータス（success / partial / failed / pending） |
-| `eventType` | イベント種別（challenge / league） |
-| `eventDate` | イベント開催日 |
-| `publishedDate` | MTGO掲載日 |
-| `status` | イベントステータス |
-| `placement` | 順位（Challengeの場合） |
-| `record` | 戦績（Leagueは 5-0） |
-| `detailUrl` | カード詳細ページURL（存在しない場合はnull） |
-| `category` | カードカテゴリ（creature / instant / sorcery / enchantment / artifact / planeswalker / battle / land / other） |
-| `translationStatus` | 翻訳ステータス（complete / missing） |
+## GitHub Actions
 
-### イベントステータス
+- `.github/workflows/fetch-decklists.yml`
+  - 定期実行と手動実行
+  - 06:00 / 14:00 / 22:00 JST相当
+  - 取得、解析、変換、index生成、ビルド、変更がある場合だけコミット、Pagesデプロイ
+- `.github/workflows/update-card-dictionary.yml`
+  - 手動実行専用
+  - Scryfall Bulk Dataから辞書生成、既存イベント再変換、Pagesデプロイ
+- `.github/workflows/deploy-pages.yml`
+  - UIや公開JSON変更時の静的デプロイ
 
-| ステータス | 説明 |
-|-----------|------|
-| `completed` | 正常に取得完了 |
-| `pending_publication` | デッキリスト公開待ち |
-| `fetch_error` | ページ取得失敗 |
-| `parse_error` | ページ解析失敗 |
-| `publication_timeout` | 公開タイムアウト |
+GitHub PagesはRepository SettingsのPagesでSourceを「GitHub Actions」にしてください。
 
-## GitHub Pagesへのデプロイ
+## パーサー修正箇所
 
-### 自動デプロイ（GitHub Actions使用しない場合）
+- イベント判定: `scripts/lib/event-rules.mjs`
+- カード名正規化: `scripts/lib/normalize-card-name.mjs`
+- HTML解析: `scripts/lib/parse-event-page.mjs`
+- 翻訳処理: `scripts/lib/translate-decklists.mjs`
+- JSON検証: `scripts/lib/validate-data.mjs`
 
-1. リポジトリを作成し、コードをプッシュ
+HTML構造変更時は `data/raw/events/*.html` をフィクスチャ化して `tests/parse-event-page.test.mjs` にケースを追加してください。
 
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/USERNAME/REPOSITORY.git
-git push -u origin main
-```
+## 既知の制約
 
-2. ビルドを実行
-
-```bash
-npm run build
-```
-
-3. `dist` ディレクトリの中身をGitHub Pagesとして公開
-
-方法A: `gh-pages` ブランチを使用
-
-```bash
-npx gh-pages -d dist
-```
-
-方法B: GitHub設定から `main` ブランチの `/`（root）または `docs` フォルダを指定
-
-※ この場合、`dist` の中身をリポジトリルートまたは `docs` フォルダに配置してください。
-
-### カスタムドメイン（オプション）
-
-`public/CNAME` ファイルを作成し、ドメイン名を記載：
-
-```
-your-domain.com
-```
-
-## 開発
-
-### 型チェック
-
-```bash
-npm run typecheck
-```
-
-### Lint
-
-```bash
-npm run lint
-```
-
-### ディレクトリ構造
-
-```
-src/
-├── App.tsx                    # メインアプリコンポーネント
-├── components/
-│   ├── CardList.tsx          # カードリスト表示
-│   ├── DeckDetail.tsx        # デッキ詳細モーダル
-│   ├── ErrorState.tsx        # エラー状態表示
-│   ├── EventCard.tsx         # イベントカード
-│   ├── EventList.tsx         # イベント一覧
-│   ├── FilterBar.tsx         # フィルターバー
-│   ├── Header.tsx            # ヘッダー
-│   ├── ProcessingStatusPanel.tsx  # 処理状態パネル
-│   ├── Toast.tsx             # トースト通知
-│   └── UpdateStatus.tsx      # 更新状態サマリー
-├── hooks/
-│   └── useData.ts            # データ読み込みフック
-├── types/
-│   └── index.ts              # TypeScript型定義
-└── utils/
-    └── helpers.ts            # ユーティリティ関数
-```
-
-## 実装対象外
-
-以下は本アプリの対象外です：
-
-- MTGOサイトからのスクレイピング
-- デッキリスト取得処理
-- カード英日辞書の生成
-- ユーザー認証
-- データベース
-- 外部APIへのリアルタイムアクセス
-- 通知機能（Slack / Discord / メール等）
-- カード画像・ルールテキスト・価格情報の表示
-
-## ライセンス
-
-MIT License
+- MTGOのHTML構造が大きく変わった場合はパーサー修正が必要です。
+- Scryfallに日本語名がないカードは英語名で表示されます。
+- デッキタイプ判定、価格、勝率、通知、ログイン、管理画面は実装対象外です。

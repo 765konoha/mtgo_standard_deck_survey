@@ -1,7 +1,7 @@
-import { useState, useRef, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, Languages } from 'lucide-react';
 import type { CardNameDisplayMode } from '../types';
-import { formatShortDate, formatDate } from '../utils/helpers';
+import { formatDate, formatShortDate } from '../utils/helpers';
 
 interface FilterBarProps {
   availableDates: string[];
@@ -27,45 +27,38 @@ export function FilterBar({
   const [canScrollRight, setCanScrollRight] = useState(false);
 
   const checkScroll = () => {
-    if (scrollRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-      setCanScrollLeft(scrollLeft > 0);
-      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 1);
-    }
+    if (!scrollRef.current) return;
+    const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+    setCanScrollLeft(scrollLeft > 0);
+    setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 1);
   };
 
   useEffect(() => {
     checkScroll();
     const el = scrollRef.current;
-    if (el) {
-      el.addEventListener('scroll', checkScroll);
-      return () => el.removeEventListener('scroll', checkScroll);
-    }
+    if (!el) return;
+    el.addEventListener('scroll', checkScroll);
+    return () => el.removeEventListener('scroll', checkScroll);
   }, [availableDates.length]);
 
   const scroll = (direction: 'left' | 'right') => {
-    if (scrollRef.current) {
-      const scrollAmount = 120;
-      scrollRef.current.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth',
-      });
-    }
+    scrollRef.current?.scrollBy({
+      left: direction === 'left' ? -120 : 120,
+      behavior: 'smooth',
+    });
   };
 
   return (
     <div className="bg-neutral-900 border-b border-neutral-800 sticky top-0 z-30">
       <div className="max-w-7xl mx-auto px-4 py-3">
         <div className="flex flex-col gap-3">
-          {/* Date selector */}
           <div className="relative">
-            {/* Desktop: scrollable tabs with arrows */}
             <div className="hidden sm:flex items-center gap-1">
               <button
                 onClick={() => scroll('left')}
                 disabled={!canScrollLeft}
                 className="p-1.5 rounded-lg hover:bg-neutral-800 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-                aria-label="前の日付"
+                aria-label="前の日付へ"
               >
                 <ChevronLeft className="w-5 h-5 text-neutral-400" />
               </button>
@@ -95,13 +88,12 @@ export function FilterBar({
                 onClick={() => scroll('right')}
                 disabled={!canScrollRight}
                 className="p-1.5 rounded-lg hover:bg-neutral-800 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-                aria-label="次の日付"
+                aria-label="次の日付へ"
               >
                 <ChevronRight className="w-5 h-5 text-neutral-400" />
               </button>
             </div>
 
-            {/* Mobile: select dropdown */}
             <div className="sm:hidden">
               <select
                 value={selectedDate || ''}
@@ -118,85 +110,56 @@ export function FilterBar({
             </div>
           </div>
 
-          {/* Event type and card name display filters */}
           <div className="flex flex-wrap items-center gap-2 sm:gap-4">
-            {/* Event type filter */}
             <div className="flex items-center gap-1 bg-neutral-800 rounded-lg p-1">
-              <button
-                onClick={() => onEventTypeChange('all')}
-                className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
-                  eventTypeFilter === 'all'
-                    ? 'bg-neutral-700 text-neutral-100'
-                    : 'text-neutral-400 hover:text-neutral-200'
-                }`}
-                aria-pressed={eventTypeFilter === 'all'}
-              >
-                すべて
-              </button>
-              <button
-                onClick={() => onEventTypeChange('challenge')}
-                className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
-                  eventTypeFilter === 'challenge'
-                    ? 'bg-neutral-700 text-neutral-100'
-                    : 'text-neutral-400 hover:text-neutral-200'
-                }`}
-                aria-pressed={eventTypeFilter === 'challenge'}
-              >
-                Challenge
-              </button>
-              <button
-                onClick={() => onEventTypeChange('league')}
-                className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
-                  eventTypeFilter === 'league'
-                    ? 'bg-neutral-700 text-neutral-100'
-                    : 'text-neutral-400 hover:text-neutral-200'
-                }`}
-                aria-pressed={eventTypeFilter === 'league'}
-              >
-                League
-              </button>
+              {[
+                ['all', 'すべて'],
+                ['challenge', 'Challenge'],
+                ['league', 'League'],
+              ].map(([value, label]) => (
+                <button
+                  key={value}
+                  onClick={() =>
+                    onEventTypeChange(value as 'all' | 'challenge' | 'league')
+                  }
+                  className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
+                    eventTypeFilter === value
+                      ? 'bg-neutral-700 text-neutral-100'
+                      : 'text-neutral-400 hover:text-neutral-200'
+                  }`}
+                  aria-pressed={eventTypeFilter === value}
+                >
+                  {label}
+                </button>
+              ))}
             </div>
 
-            {/* Card name display selector */}
             <div className="flex items-center gap-2">
               <div className="flex items-center gap-1 text-neutral-400">
                 <Languages className="w-4 h-4" />
                 <span className="text-xs hidden sm:inline">カード名</span>
               </div>
               <div className="flex items-center gap-1 bg-neutral-800 rounded-lg p-1">
-                <button
-                  onClick={() => onCardNameDisplayChange('ja')}
-                  className={`px-2 py-1 text-xs font-medium rounded-md transition-colors ${
-                    cardNameDisplay === 'ja'
-                      ? 'bg-neutral-700 text-neutral-100'
-                      : 'text-neutral-400 hover:text-neutral-200'
-                  }`}
-                  aria-pressed={cardNameDisplay === 'ja'}
-                >
-                  日本語
-                </button>
-                <button
-                  onClick={() => onCardNameDisplayChange('ja-en')}
-                  className={`px-2 py-1 text-xs font-medium rounded-md transition-colors ${
-                    cardNameDisplay === 'ja-en'
-                      ? 'bg-neutral-700 text-neutral-100'
-                      : 'text-neutral-400 hover:text-neutral-200'
-                  }`}
-                  aria-pressed={cardNameDisplay === 'ja-en'}
-                >
-                  日+英
-                </button>
-                <button
-                  onClick={() => onCardNameDisplayChange('en')}
-                  className={`px-2 py-1 text-xs font-medium rounded-md transition-colors ${
-                    cardNameDisplay === 'en'
-                      ? 'bg-neutral-700 text-neutral-100'
-                      : 'text-neutral-400 hover:text-neutral-200'
-                  }`}
-                  aria-pressed={cardNameDisplay === 'en'}
-                >
-                  英語
-                </button>
+                {[
+                  ['ja', '日本語'],
+                  ['ja-en', '日+英'],
+                  ['en', '英語'],
+                ].map(([value, label]) => (
+                  <button
+                    key={value}
+                    onClick={() =>
+                      onCardNameDisplayChange(value as CardNameDisplayMode)
+                    }
+                    className={`px-2 py-1 text-xs font-medium rounded-md transition-colors ${
+                      cardNameDisplay === value
+                        ? 'bg-neutral-700 text-neutral-100'
+                        : 'text-neutral-400 hover:text-neutral-200'
+                    }`}
+                    aria-pressed={cardNameDisplay === value}
+                  >
+                    {label}
+                  </button>
+                ))}
               </div>
             </div>
           </div>

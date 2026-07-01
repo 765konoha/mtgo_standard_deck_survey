@@ -1,7 +1,7 @@
 import {
-  CheckCircle,
-  AlertTriangle,
   AlertCircle,
+  AlertTriangle,
+  CheckCircle,
   Clock,
   RefreshCw,
 } from 'lucide-react';
@@ -34,13 +34,13 @@ export function Header({ data, loading, onRefetch }: HeaderProps) {
             {data && (
               <>
                 <div className="text-sm text-neutral-300">
-                  最終更新：
+                  最終生成:
                   <span className="font-medium text-neutral-100 ml-1">
                     {formatDateTime(data.generatedAt)}
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-sm text-neutral-300">取得状況：</span>
+                  <span className="text-sm text-neutral-300">取得状態:</span>
                   <div
                     className={`flex items-center gap-1.5 px-2 py-0.5 rounded text-sm font-medium ${statusConfig.bg} ${statusConfig.text}`}
                   >
@@ -61,9 +61,7 @@ export function Header({ data, loading, onRefetch }: HeaderProps) {
             className="flex items-center gap-2 text-sm text-neutral-400 hover:text-neutral-200 transition-colors disabled:opacity-50"
             aria-label="データを再読み込み"
           >
-            <RefreshCw
-              className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`}
-            />
+            <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
             <span className="hidden sm:inline">
               {loading ? '読み込み中...' : '再読み込み'}
             </span>
@@ -85,7 +83,7 @@ function getStatusConfig(status: OverallStatus) {
       };
     case 'partial':
       return {
-        label: '一部失敗',
+        label: '一部未完了',
         icon: <AlertTriangle className="w-4 h-4" />,
         bg: 'bg-warning-950',
         text: 'text-warning-400',

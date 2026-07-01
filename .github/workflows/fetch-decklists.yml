@@ -1,0 +1,48 @@
+name: Fetch MTGO decklists
+
+on:
+  schedule:
+    # 21:00, 05:00, 13:00 UTC = 06:00, 14:00, 22:00 JST
+    - cron: '0 21,5,13 * * *'
+  workflow_dispatch:
+    inputs:
+      force_refetch:
+        description: 'Completed eventsも再取得する'
+        required: false
+        default: 'false'
+
+concurrency:
+  group: fetch-mtgo-decklists
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run fetch:decklists
+        env:
+          FORCE_REFETCH: ${{ inputs.force_refetch || 'false' }}
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - name: Commit data changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update mtgo decklists'
+          file_pattern: 'data public/data'
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4

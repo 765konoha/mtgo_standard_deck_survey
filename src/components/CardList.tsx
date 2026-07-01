@@ -14,9 +14,7 @@ export function CardList({
   showCategoryHeaders = false,
 }: CardListProps) {
   if (cards.length === 0) {
-    return (
-      <p className="text-sm text-neutral-500 italic">カードがありません</p>
-    );
+    return <p className="text-sm text-neutral-500 italic">カードがありません</p>;
   }
 
   if (showCategoryHeaders) {
@@ -63,7 +61,7 @@ interface CardRowProps {
 
 function CardRow({ card, displayMode }: CardRowProps) {
   const { primary, secondary } = getCardDisplayName(card, displayMode);
-  const hasDetailUrl = card.detailUrl !== null;
+  const hasDetailUrl = Boolean(card.detailUrl);
   const isUntranslated = card.translationStatus === 'missing';
 
   const content = (
@@ -75,8 +73,8 @@ function CardRow({ card, displayMode }: CardRowProps) {
         <div className="text-sm text-neutral-200 group-hover:text-neutral-100">
           {primary}
           {isUntranslated && (
-            <span className="ml-2 text-xs text-warning-600">
-              (日本語名未登録)
+            <span className="ml-2 text-xs text-warning-500">
+              日本語名未登録
             </span>
           )}
         </div>
@@ -97,7 +95,7 @@ function CardRow({ card, displayMode }: CardRowProps) {
         target="_blank"
         rel="noopener noreferrer"
         className="block"
-        aria-label={`${primary}のカード情報を開く`}
+        aria-label={`${primary}のカード詳細を開く`}
       >
         {content}
       </a>

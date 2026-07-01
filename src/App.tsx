@@ -1,12 +1,7 @@
-import { useState, useCallback, useMemo, useEffect } from 'react';
-import type {
-  EventSummary,
-  CardNameDisplayMode,
-  ToastMessage,
-  Deck,
-} from './types';
-import { useIndexData, useEventData, useLocalStorage } from './hooks/useData';
-import { getLastNDates, copyDeckToClipboard } from './utils/helpers';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import type { CardNameDisplayMode, Deck, EventSummary, ToastMessage } from './types';
+import { useEventData, useIndexData, useLocalStorage } from './hooks/useData';
+import { copyDeckToClipboard, getLastNDates } from './utils/helpers';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
 import { EventList } from './components/EventList';
@@ -14,16 +9,14 @@ import { DeckDetail } from './components/DeckDetail';
 import { ProcessingStatusPanel } from './components/ProcessingStatusPanel';
 import { UpdateStatus } from './components/UpdateStatus';
 import { Toast } from './components/Toast';
-import { ErrorState, EmptyState } from './components/ErrorState';
+import { EmptyState, ErrorState } from './components/ErrorState';
 
 const DATE_RANGE = 10;
 
 export default function App() {
   const { data, loading, error, refetch } = useIndexData();
-  const [cardNameDisplay, setCardNameDisplay] = useLocalStorage<CardNameDisplayMode>(
-    'mtgo-card-display',
-    'ja'
-  );
+  const [cardNameDisplay, setCardNameDisplay] =
+    useLocalStorage<CardNameDisplayMode>('mtgo-card-display', 'ja');
 
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const [eventTypeFilter, setEventTypeFilter] = useState<
@@ -34,10 +27,15 @@ export default function App() {
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
 
   const availableDates = useMemo(() => {
-    return getLastNDates(DATE_RANGE);
-  }, []);
+    const newestEventDate = data?.events
+      .map((event) => event.eventDate)
+      .sort((a, b) => b.localeCompare(a))[0];
+    return getLastNDates(
+      DATE_RANGE,
+      newestEventDate ? new Date(`${newestEventDate}T12:00:00+09:00`) : new Date()
+    );
+  }, [data]);
 
-  // Set default date to latest when data loads
   useEffect(() => {
     if (!selectedDate && availableDates.length > 0 && data) {
       setSelectedDate(availableDates[0]);
@@ -46,7 +44,7 @@ export default function App() {
 
   const addToast = useCallback(
     (message: string, type: ToastMessage['type'] = 'success') => {
-      const id = Date.now().toString();
+      const id = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
       setToasts((prev) => [...prev, { id, message, type }]);
     },
     []
@@ -56,13 +54,10 @@ export default function App() {
     setToasts((prev) => prev.filter((t) => t.id !== id));
   }, []);
 
-  const handleDeckSelect = useCallback(
-    (event: EventSummary, deckId: string) => {
-      setSelectedEvent(event);
-      setSelectedDeckId(deckId);
-    },
-    []
-  );
+  const handleDeckSelect = useCallback((event: EventSummary, deckId: string) => {
+    setSelectedEvent(event);
+    setSelectedDeckId(deckId);
+  }, []);
 
   const handleCloseDeckDetail = useCallback(() => {
     setSelectedEvent(null);
@@ -81,7 +76,6 @@ export default function App() {
     [addToast]
   );
 
-  // Get selected deck for detail view
   const { data: selectedEventData } = useEventData(selectedEvent);
   const selectedDeck = useMemo(() => {
     if (!selectedEventData || !selectedDeckId) return null;

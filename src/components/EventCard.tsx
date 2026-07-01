@@ -1,5 +1,5 @@
 import { ExternalLink, Trophy, Users } from 'lucide-react';
-import type { EventSummary, Event, Deck, EventType } from '../types';
+import type { Deck, Event, EventSummary, EventType } from '../types';
 import { formatDate, getPlacementLabel } from '../utils/helpers';
 
 interface EventCardProps {
@@ -17,15 +17,12 @@ export function EventCard({
 }: EventCardProps) {
   const { event, decks } = eventData;
   const isChallenge = event.eventType === 'challenge';
-
-  // Sort challenge decks by placement
   const sortedDecks = isChallenge
     ? [...decks].sort((a, b) => (a.placement ?? 99) - (b.placement ?? 99))
     : decks;
 
   return (
     <div className="card">
-      {/* Event header */}
       <div className="px-4 py-3 border-b border-neutral-800">
         <div className="flex items-start justify-between gap-2">
           <div>
@@ -49,8 +46,8 @@ export function EventCard({
               </span>
             </div>
             <div className="text-xs text-neutral-500 mt-1 space-x-3">
-              <span>開催：{formatDate(event.eventDate)}</span>
-              <span>掲載：{formatDate(event.publishedDate)}</span>
+              <span>開催: {formatDate(event.eventDate)}</span>
+              <span>掲載: {formatDate(event.publishedDate)}</span>
               <span>{eventSummary.deckCount}デッキ</span>
             </div>
           </div>
@@ -67,7 +64,6 @@ export function EventCard({
         </div>
       </div>
 
-      {/* Deck list */}
       <div className="divide-y divide-neutral-800">
         {sortedDecks.map((deck) => (
           <DeckRow
@@ -121,7 +117,7 @@ function DeckRow({ deck, eventType, isSelected, onClick }: DeckRowProps) {
             {deck.player}
           </div>
           <div className="text-xs text-neutral-500">
-            {deck.mainboardCount} / {deck.sideboardCount}
+            Main {deck.mainboardCount} / Side {deck.sideboardCount}
           </div>
         </div>
       </div>
