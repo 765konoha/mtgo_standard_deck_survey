@@ -7,7 +7,7 @@ test('normalizes case and surrounding whitespace', () => {
 });
 
 test('normalizes repeated whitespace and unicode apostrophes', () => {
-  assert.equal(normalizeCardName("Kaito’s  Pursuit"), "kaito's pursuit");
+  assert.equal(normalizeCardName('Kaito\u2019s  Pursuit'), "kaito's pursuit");
 });
 
 test('normalizes split-card separators', () => {
@@ -15,10 +15,12 @@ test('normalizes split-card separators', () => {
 });
 
 test('normalizes full-width latin characters', () => {
-  assert.equal(normalizeCardName('Ｌｉｇｈｔｎｉｎｇ'), 'lightning');
+  assert.equal(
+    normalizeCardName('\uFF2C\uFF29\uFF27\uFF28\uFF34\uFF2E\uFF29\uFF2E\uFF27'),
+    'lightning'
+  );
 });
 
 test('normalizes unicode dash variants', () => {
-  assert.equal(normalizeCardName('Foo—Bar'), 'foo-bar');
+  assert.equal(normalizeCardName('Foo\u2014Bar'), 'foo-bar');
 });
-
