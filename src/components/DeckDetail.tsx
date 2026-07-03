@@ -66,8 +66,8 @@ export function DeckDetail({
 
   const placement = getPlacementLabel(deck);
   const hasUntranslatedCards =
-    deck.mainboard.some((c) => c.translationStatus === 'missing') ||
-    deck.sideboard.some((c) => c.translationStatus === 'missing');
+    deck.mainboard.some((c) => c.translationStatus !== 'complete') ||
+    deck.sideboard.some((c) => c.translationStatus !== 'complete');
 
   return (
     <>

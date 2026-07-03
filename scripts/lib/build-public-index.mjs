@@ -165,6 +165,6 @@ async function safeReaddir(path) {
 function countMissing(eventData) {
   return (eventData.decks || []).reduce((sum, deck) => {
     const cards = [...(deck.mainboard || []), ...(deck.sideboard || [])];
-    return sum + cards.filter((card) => card.translationStatus === 'missing').length;
+    return sum + cards.filter((card) => card.translationStatus !== 'complete').length;
   }, 0);
 }

@@ -18,28 +18,228 @@
       "mainboardCount": 60,
       "sideboardCount": 15,
       "mainboard": [
-        {"quantity": 4, "nameEn": "Monastery Swiftspear", "nameJa": "修道院の速射槍", "detailUrl": "https://scryfall.com/card/bro/142/monastery-swiftspear", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Kumano Faces Kakkazan", "nameJa": "火の神、熊野とカッカザン", "detailUrl": "https://scryfall.com/card/neo/152/kumano-faces-kakkazan-kumano-ages-of-attainment", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Slickshot Show-Off", "nameJa": "早撃ちの見せ屋", "detailUrl": "https://scryfall.com/card/otj/126/slickshot-show-off", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Heartfire Hero", "nameJa": "心火の英雄", "detailUrl": "https://scryfall.com/card/woe/131/heartfire-hero", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Lightning Strike", "nameJa": "稲妻の一撃", "detailUrl": "https://scryfall.com/card/dom/142/lightning-strike", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Play with Fire", "nameJa": "火遊び", "detailUrl": "https://scryfall.com/card/mid/154/play-with-fire", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Monstrous Rage", "nameJa": "怪物の激昂", "detailUrl": "https://scryfall.com/card/woe/143/monstrous-rage", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Shrapnel Blast", "nameJa": "破片の爆風", "detailUrl": "https://scryfall.com/card/ori/151/shrapnel-blast", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Unknown New Card", "nameJa": null, "detailUrl": null, "category": "creature", "translationStatus": "missing"},
-        {"quantity": 4, "nameEn": "Seismic Rupture", "nameJa": "地震の裂傷", "detailUrl": "https://scryfall.com/card/dtk/159/seismic-rupture", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Shivan Sands", "nameJa": "シヴァン砂地", "detailUrl": "https://scryfall.com/card/dmu/255/shivan-sands", "category": "land", "translationStatus": "complete"},
-        {"quantity": 10, "nameEn": "Mountain", "nameJa": "山", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Sundown Pass", "nameJa": "日没の山道", "detailUrl": "https://scryfall.com/card/otj/264/sundown-pass", "category": "land", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Mirrex", "nameJa": "ミレックス", "detailUrl": "https://scryfall.com/card/one/262/mirrex", "category": "land", "translationStatus": "complete"}
+        {
+          "quantity": 4,
+          "nameEn": "Monastery Swiftspear",
+          "nameJa": "僧院の速槍",
+          "detailUrl": "https://scryfall.com/card/bro/144/ja/%E5%83%A7%E9%99%A2%E3%81%AE%E9%80%9F%E6%A7%8D-(monastery-swiftspear)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "dafd2713-d1bc-474b-b390-d2ff20b5375e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Kumano Faces Kakkazan",
+          "nameJa": "熊野と渇苛斬の対峙",
+          "detailUrl": "https://scryfall.com/card/neo/152/ja/%E7%86%8A%E9%87%8E%E3%81%A8%E6%B8%87%E8%8B%9B%E6%96%AC%E3%81%AE%E5%AF%BE%E5%B3%99-%E7%86%8A%E9%87%8E%E3%81%AE%E9%A3%9F%E5%88%BB-(kumano-faces-kakkazan-etching-of-kumano)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "535916f8-b51a-4414-8ab0-fdccdefd9433",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Slickshot Show-Off",
+          "nameJa": "精鋭射手団の目立ちたがり",
+          "detailUrl": "https://scryfall.com/card/pwcs/2025-6/ja/%E7%B2%BE%E9%8B%AD%E5%B0%84%E6%89%8B%E5%9B%A3%E3%81%AE%E7%9B%AE%E7%AB%8B%E3%81%A1%E3%81%9F%E3%81%8C%E3%82%8A-(slickshot-show-off)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "74c7a029-59aa-4511-8e4c-f8f167cda4e2",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Heartfire Hero",
+          "nameJa": "心火の英雄",
+          "detailUrl": "https://scryfall.com/card/blb/138/ja/%E5%BF%83%E7%81%AB%E3%81%AE%E8%8B%B1%E9%9B%84-(heartfire-hero)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "49e1e202-37bf-46ed-93d1-1adb13726039",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Lightning Strike",
+          "nameJa": "稲妻の一撃",
+          "detailUrl": "https://scryfall.com/card/tla/146/ja/%E7%A8%B2%E5%A6%BB%E3%81%AE%E4%B8%80%E6%92%83-(lightning-strike)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "f34b9bc4-7bfe-47fd-ba23-4eeeb46026eb",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Play with Fire",
+          "nameJa": "火遊び",
+          "detailUrl": "https://scryfall.com/card/j25/586/ja/%E7%81%AB%E9%81%8A%E3%81%B3-(play-with-fire)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "5ffc1e77-152b-4a82-8ea8-2c79cc31d5ef",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Monstrous Rage",
+          "nameJa": "巨怪の怒り",
+          "detailUrl": "https://scryfall.com/card/soa/45/ja/%E5%B7%A8%E6%80%AA%E3%81%AE%E6%80%92%E3%82%8A-(monstrous-rage)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "646a2371-54c0-4492-ac2f-20f109d6108c",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Shrapnel Blast",
+          "nameJa": "爆片破",
+          "detailUrl": "https://scryfall.com/card/ddu/48/ja/%E7%88%86%E7%89%87%E7%A0%B4-(shrapnel-blast)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "d3c623f3-c7c9-47c0-8096-6dee3267baff",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Unknown New Card",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Seismic Rupture",
+          "nameJa": "大地の断裂",
+          "detailUrl": "https://scryfall.com/card/fdn/205/ja/%E5%A4%A7%E5%9C%B0%E3%81%AE%E6%96%AD%E8%A3%82-(seismic-rupture)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "3b1f1a57-d83a-443f-b190-03df63d2bfe6",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Shivan Sands",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 10,
+          "nameEn": "Mountain",
+          "nameJa": "山",
+          "detailUrl": "https://scryfall.com/card/tmt/194/ja/%E5%B1%B1-(mountain)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sundown Pass",
+          "nameJa": "日没の道",
+          "detailUrl": "https://scryfall.com/card/who/310/ja/%E6%97%A5%E6%B2%A1%E3%81%AE%E9%81%93-(sundown-pass)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "5ad0b405-cca4-475e-985c-4d7e3599d87e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Mirrex",
+          "nameJa": "ミレックス",
+          "detailUrl": "https://scryfall.com/card/one/254/ja/%E3%83%9F%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9-(mirrex)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ],
       "sideboard": [
-        {"quantity": 2, "nameEn": "Abrade", "nameJa": "磨耗", "detailUrl": "https://scryfall.com/card/khc/56/abrade", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Burn Down the House", "nameJa": "家を焼き払う", "detailUrl": "https://scryfall.com/card/mid/131/burn-down-the-house", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Cacophony Scorpion", "nameJa": "不協和のサソリ", "detailUrl": "https://scryfall.com/card/mom/119/cacophony-scorpion", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Liquimetal Torque", "nameJa": "液状金属トルク", "detailUrl": "https://scryfall.com/card/mh2/228/liquimetal-torque", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Unlicensed Hearse", "nameJa": "無許可の霊柩車", "detailUrl": "https://scryfall.com/card/snc/246/unlicensed-hearse", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Phoenix Flame", "nameJa": "不死鳥の炎", "detailUrl": "https://scryfall.com/card/akr/158/phoenix-flame", "category": "instant", "translationStatus": "complete"}
+        {
+          "quantity": 2,
+          "nameEn": "Abrade",
+          "nameJa": "削剥",
+          "detailUrl": "https://scryfall.com/card/soa/37/ja/%E5%89%8A%E5%89%A5-(abrade)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "f9db72dc-9a5b-48a4-a86e-7464d9a2166a",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Burn Down the House",
+          "nameJa": "家の焼き払い",
+          "detailUrl": "https://scryfall.com/card/mid/131/ja/%E5%AE%B6%E3%81%AE%E7%84%BC%E3%81%8D%E6%89%95%E3%81%84-(burn-down-the-house)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "0ec54683-a65c-461d-862e-585b6499d6a5",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Cacophony Scorpion",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Liquimetal Torque",
+          "nameJa": "液鋼の首飾り",
+          "detailUrl": "https://scryfall.com/card/brc/145/ja/%E6%B6%B2%E9%8B%BC%E3%81%AE%E9%A6%96%E9%A3%BE%E3%82%8A-(liquimetal-torque)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "b7d4b7dd-fbb1-4ca3-875f-ef13a95e66ad",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Unlicensed Hearse",
+          "nameJa": "未認可霊柩車",
+          "detailUrl": "https://scryfall.com/card/otp/64/ja/%E6%9C%AA%E8%AA%8D%E5%8F%AF%E9%9C%8A%E6%9F%A9%E8%BB%8A-(unlicensed-hearse)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "c640654c-487e-4a2c-aced-126ed835b78f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Phoenix Flame",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        }
       ]
     },
     {
@@ -50,29 +250,239 @@
       "mainboardCount": 60,
       "sideboardCount": 15,
       "mainboard": [
-        {"quantity": 2, "nameEn": "The Wandering Emperor", "nameJa": "彷徨える皇帝", "detailUrl": "https://scryfall.com/card/neo/42/the-wandering-emperor", "category": "planeswalker", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Sunfall", "nameJa": "陽没", "detailUrl": "https://scryfall.com/card/mom/40/sunfall", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Make Disappear", "nameJa": "消滅", "detailUrl": "https://scryfall.com/card/snc/53/make-disappear", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Temporarily Locked", "nameJa": "一時封鎖", "detailUrl": "https://scryfall.com/card/mid/41/temporarily-locked", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "No More Lies", "nameJa": "嘘はもういらない", "detailUrl": "https://scryfall.com/card/acr/72/no-more-lies", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Azorius Chancery", "nameJa": "アゾリウスの大庁舎", "detailUrl": "https://scryfall.com/card/dmu/243/azorius-chancery", "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Deserted Beach", "nameJa": "見捨てられた砂浜", "detailUrl": "https://scryfall.com/card/mid/260/deserted-beach", "category": "land", "translationStatus": "complete"},
-        {"quantity": 6, "nameEn": "Island", "nameJa": "島", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 6, "nameEn": "Plains", "nameJa": "平地", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Memory Deluge", "nameJa": "記憶の洪水", "detailUrl": "https://scryfall.com/card/mid/62/memory-deluge", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Farewell", "nameJa": "告別", "detailUrl": "https://scryfall.com/card/neo/12/farewell", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Brotherhood's End", "nameJa": "兄弟会の終焉", "detailUrl": "https://scryfall.com/card/bro/170/brotherhoods-end", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Wedding Announcement", "nameJa": "婚礼の発表", "detailUrl": "https://scryfall.com/card/vow/45/wedding-announcement-wedding-festivity", "category": "enchantment", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Teferi, Time Raveler", "nameJa": "時を翔けるテフェリー", "detailUrl": "https://scryfall.com/card/war/221/teferi-time-raveler", "category": "planeswalker", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Lay Down Arms", "nameJa": "武器を置く", "detailUrl": "https://scryfall.com/card/bro/11/lay-down-arms", "category": "instant", "translationStatus": "complete"}
+        {
+          "quantity": 2,
+          "nameEn": "The Wandering Emperor",
+          "nameJa": "放浪皇",
+          "detailUrl": "https://scryfall.com/card/neo/42/ja/%E6%94%BE%E6%B5%AA%E7%9A%87-(the-wandering-emperor)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "oracleId": "0c7f18d5-36cb-4bc6-a358-443b97666215",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Sunfall",
+          "nameJa": "太陽降下",
+          "detailUrl": "https://scryfall.com/card/mom/40/ja/%E5%A4%AA%E9%99%BD%E9%99%8D%E4%B8%8B-(sunfall)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "fb3f5097-0da0-458c-8508-60823567e2da",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Make Disappear",
+          "nameJa": "かき消し",
+          "detailUrl": "https://scryfall.com/card/snc/49/ja/%E3%81%8B%E3%81%8D%E6%B6%88%E3%81%97-(make-disappear)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "5f12f665-f083-48ae-b61a-541051c996ec",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Temporarily Locked",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 3,
+          "nameEn": "No More Lies",
+          "nameJa": "喝破",
+          "detailUrl": "https://scryfall.com/card/mkm/221/ja/%E5%96%9D%E7%A0%B4-(no-more-lies)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "ead1ee6a-e0da-46d5-89e8-31e8c0270bc2",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Azorius Chancery",
+          "nameJa": "アゾリウスの大法官庁",
+          "detailUrl": "https://scryfall.com/card/dsc/261/ja/%E3%82%A2%E3%82%BE%E3%83%AA%E3%82%A6%E3%82%B9%E3%81%AE%E5%A4%A7%E6%B3%95%E5%AE%98%E5%BA%81-(azorius-chancery)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "189fc8f4-17ac-4f1d-82c8-8401445bdaf4",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Deserted Beach",
+          "nameJa": "さびれた浜",
+          "detailUrl": "https://scryfall.com/card/who/270/ja/%E3%81%95%E3%81%B3%E3%82%8C%E3%81%9F%E6%B5%9C-(deserted-beach)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "f0ec8681-da50-466b-8cdd-1dc710deccd9",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 6,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 6,
+          "nameEn": "Plains",
+          "nameJa": "平地",
+          "detailUrl": "https://scryfall.com/card/tmt/191/ja/%E5%B9%B3%E5%9C%B0-(plains)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "bc71ebf6-2056-41f7-be35-b2e5c34afa99",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Memory Deluge",
+          "nameJa": "記憶の氾濫",
+          "detailUrl": "https://scryfall.com/card/mid/62/ja/%E8%A8%98%E6%86%B6%E3%81%AE%E6%B0%BE%E6%BF%AB-(memory-deluge)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "e6fd55f2-7e26-469c-a44a-ea2eb90e19a9",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Farewell",
+          "nameJa": "告別",
+          "detailUrl": "https://scryfall.com/card/fic/242/ja/%E5%91%8A%E5%88%A5-(farewell)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "4eb813fd-2d5a-4b02-8193-662681ef4e7d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Brotherhood's End",
+          "nameJa": "兄弟仲の終焉",
+          "detailUrl": "https://scryfall.com/card/soa/39/ja/%E5%85%84%E5%BC%9F%E4%BB%B2%E3%81%AE%E7%B5%82%E7%84%89-(brotherhoods-end)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "fe7bf8ca-88ae-4c6d-8d71-ef170a87c0d0",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Wedding Announcement",
+          "nameJa": "婚礼の発表",
+          "detailUrl": "https://scryfall.com/card/vow/45/ja/%E5%A9%9A%E7%A4%BC%E3%81%AE%E7%99%BA%E8%A1%A8-%E5%A9%9A%E7%A4%BC%E3%81%AE%E7%A5%AD%E5%85%B8-(wedding-announcement-wedding-festivity)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "259ac30c-cc05-4c04-9b23-71283f84b808",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Teferi, Time Raveler",
+          "nameJa": "時を解す者、テフェリー",
+          "detailUrl": "https://scryfall.com/card/blc/92/ja/%E6%99%82%E3%82%92%E8%A7%A3%E3%81%99%E8%80%85%E3%80%81%E3%83%86%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC-(teferi-time-raveler)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "oracleId": "ae7604bb-4818-45a3-960c-cf3d83f15964",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Lay Down Arms",
+          "nameJa": "軍備放棄",
+          "detailUrl": "https://scryfall.com/card/bro/11/ja/%E8%BB%8D%E5%82%99%E6%94%BE%E6%A3%84-(lay-down-arms)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "aa91d092-7f4a-4e4d-85db-e200692f3d9d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ],
       "sideboard": [
-        {"quantity": 2, "nameEn": "Negate", "nameJa": "否認", "detailUrl": "https://scryfall.com/card/dmu/58/negate", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Destroy Evil", "nameJa": "悪の破壊", "detailUrl": "https://scryfall.com/card/dmu/17/destroy-evil", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Slayer's Cleaver", "nameJa": "殺戮者の肉切り包丁", "detailUrl": "https://scryfall.com/card/vow/141/slayers-cleaver", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Cult Conscript", "nameJa": "カルトの徴集兵", "detailUrl": "https://scryfall.com/card/dmu/90/cult-conscript", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Disdainful Stroke", "nameJa": "軽蔑の視線", "detailUrl": "https://scryfall.com/card/snc/39/disdainful-stroke", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Spell Pierce", "nameJa": "魔法貫通", "detailUrl": "https://scryfall.com/card/2xm/63/spell-pierce", "category": "instant", "translationStatus": "complete"}
+        {
+          "quantity": 2,
+          "nameEn": "Negate",
+          "nameJa": "否認",
+          "detailUrl": "https://scryfall.com/card/tmt/47/ja/%E5%90%A6%E8%AA%8D-(negate)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "3407fe41-fdd3-4119-8f70-4bc4590a379f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Destroy Evil",
+          "nameJa": "邪悪を打ち砕く",
+          "detailUrl": "https://scryfall.com/card/fic/240/ja/%E9%82%AA%E6%82%AA%E3%82%92%E6%89%93%E3%81%A1%E7%A0%95%E3%81%8F-(destroy-evil)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "b75e667a-1ceb-445a-acf4-ae1fd2dae9e7",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Slayer's Cleaver",
+          "nameJa": "処刑者の大包丁",
+          "detailUrl": "https://scryfall.com/card/emn/198/ja/%E5%87%A6%E5%88%91%E8%80%85%E3%81%AE%E5%A4%A7%E5%8C%85%E4%B8%81-(slayers-cleaver)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "e51cbdce-017e-4b14-b3a7-2db50ddd8037",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Cult Conscript",
+          "nameJa": "教団の徴集兵",
+          "detailUrl": "https://scryfall.com/card/dmu/88/ja/%E6%95%99%E5%9B%A3%E3%81%AE%E5%BE%B4%E9%9B%86%E5%85%B5-(cult-conscript)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Disdainful Stroke",
+          "nameJa": "軽蔑的な一撃",
+          "detailUrl": "https://scryfall.com/card/soa/17/ja/%E8%BB%BD%E8%94%91%E7%9A%84%E3%81%AA%E4%B8%80%E6%92%83-(disdainful-stroke)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "11e02134-7b1a-46a4-a89e-7539dd1efada",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Spell Pierce",
+          "nameJa": "呪文貫き",
+          "detailUrl": "https://scryfall.com/card/soa/23/ja/%E5%91%AA%E6%96%87%E8%B2%AB%E3%81%8D-(spell-pierce)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "d64b0848-0193-4025-ba62-63ecd8fb9f50",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ]
     },
     {
@@ -83,28 +493,228 @@
       "mainboardCount": 60,
       "sideboardCount": 15,
       "mainboard": [
-        {"quantity": 4, "nameEn": "Sheoldred, the Apocalypse", "nameJa": "終焉のセラクレッド", "detailUrl": "https://scryfall.com/card/dmu/108/sheoldred-the-apocalypse", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Bloodtithe Harvester", "nameJa": "血の十分の一の収穫者", "detailUrl": "https://scryfall.com/card/vow/232/bloodtithe-harvester", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Kaya, Living Ichor", "nameJa": "生ける腐液のカヤ", "detailUrl": "https://scryfall.com/card/one/213/kaya-living-ichor", "category": "planeswalker", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "The Immortal Sun", "nameJa": "不滅の太陽", "detailUrl": "https://scryfall.com/card/rix/180/the-immortal-sun", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Go for the Throat", "nameJa": "喉を狙う", "detailUrl": "https://scryfall.com/card/dgm/69/go-for-the-throat", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Cut Down", "nameJa": "切り倒す", "detailUrl": "https://scryfall.com/card/dmu/89/cut-down", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Reidane, God of the Worthy", "nameJa": "価値あるものの神、レイダイン", "detailUrl": "https://scryfall.com/card/khm/21/reidane-god-of-the-worthy-valkmira-protectors-obelisk", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Invasion of Gobakhan", "nameJa": "ゴバカンの侵攻", "detailUrl": "https://scryfall.com/card/mom/23/invasion-of-gobakhan-lightshield-array", "category": "battle", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Thoughtseize", "nameJa": "思考囲い", "detailUrl": "https://scryfall.com/card/lci/138/thoughtseize", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Duress", "nameJa": "強迫", "detailUrl": "https://scryfall.com/card/mom/120/duress", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Blackcleave Cliffs", "nameJa": "黒割れの岸壁", "detailUrl": "https://scryfall.com/card/klr/284/blackcleave-cliffs", "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Restless Reef", "nameJa": "休息の岩礁", "detailUrl": "https://scryfall.com/card/woe/263/restless-reef", "category": "land", "translationStatus": "complete"},
-        {"quantity": 5, "nameEn": "Swamp", "nameJa": "沼", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Cavern of Souls", "nameJa": "魂の洞窟", "detailUrl": "https://scryfall.com/card/mh2/232/cavern-of-souls", "category": "land", "translationStatus": "complete"}
+        {
+          "quantity": 4,
+          "nameEn": "Sheoldred, the Apocalypse",
+          "nameJa": "黙示録、シェオルドレッド",
+          "detailUrl": "https://scryfall.com/card/dmu/107/ja/%E9%BB%99%E7%A4%BA%E9%8C%B2%E3%80%81%E3%82%B7%E3%82%A7%E3%82%AA%E3%83%AB%E3%83%89%E3%83%AC%E3%83%83%E3%83%89-(sheoldred-the-apocalypse)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "34f34409-326d-4994-a0ea-1a69aa278f03",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Bloodtithe Harvester",
+          "nameJa": "税血の収穫者",
+          "detailUrl": "https://scryfall.com/card/vow/232/ja/%E7%A8%8E%E8%A1%80%E3%81%AE%E5%8F%8E%E7%A9%AB%E8%80%85-(bloodtithe-harvester)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "419a8ab2-cff6-4811-a559-8791c9bb3d8e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Kaya, Living Ichor",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 3,
+          "nameEn": "The Immortal Sun",
+          "nameJa": "不滅の太陽",
+          "detailUrl": "https://scryfall.com/card/cmm/393/ja/%E4%B8%8D%E6%BB%85%E3%81%AE%E5%A4%AA%E9%99%BD-(the-immortal-sun)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "52232aad-e4ca-4551-8c8d-c69a3b6b49c7",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Go for the Throat",
+          "nameJa": "喉首狙い",
+          "detailUrl": "https://scryfall.com/card/j25/447/ja/%E5%96%89%E9%A6%96%E7%8B%99%E3%81%84-(go-for-the-throat)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "2f092562-9e17-43cd-aeb8-d0567f99363e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Cut Down",
+          "nameJa": "切り崩し",
+          "detailUrl": "https://scryfall.com/card/dmu/89/ja/%E5%88%87%E3%82%8A%E5%B4%A9%E3%81%97-(cut-down)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "1b30210d-10e9-4703-8967-032063bb4f26",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Reidane, God of the Worthy",
+          "nameJa": "傑士の神、レーデイン",
+          "detailUrl": "https://scryfall.com/card/khm/21/ja/%E5%82%91%E5%A3%AB%E3%81%AE%E7%A5%9E%E3%80%81%E3%83%AC%E3%83%BC%E3%83%87%E3%82%A4%E3%83%B3-%E5%AE%88%E8%AD%B7%E8%80%85%E3%81%AE%E7%9B%BE%E3%80%81%E3%83%B4%E3%82%A1%E3%83%AB%E3%82%AF%E3%83%9F%E3%83%A9-(reidane-god-of-the-worthy-valkmira-protectors-shield)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "35ae7b25-6d0f-49f8-a40d-dd2cf88e6f44",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Invasion of Gobakhan",
+          "nameJa": "ゴバカーンへの侵攻",
+          "detailUrl": "https://scryfall.com/card/mom/22/ja/%E3%82%B4%E3%83%90%E3%82%AB%E3%83%BC%E3%83%B3%E3%81%B8%E3%81%AE%E4%BE%B5%E6%94%BB-%E5%85%89%E7%9B%BE%E3%81%AE%E9%99%A3%E5%88%97-(invasion-of-gobakhan-lightshield-array)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "86c32a56-3272-4738-b0b3-a8aa49a17ce4",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Thoughtseize",
+          "nameJa": "思考囲い",
+          "detailUrl": "https://scryfall.com/card/otp/20/ja/%E6%80%9D%E8%80%83%E5%9B%B2%E3%81%84-(thoughtseize)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "edd8d1e8-be43-4c38-bb3a-83081fbaf0b5",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Duress",
+          "nameJa": "強迫",
+          "detailUrl": "https://scryfall.com/card/one/92/ja/%E5%BC%B7%E8%BF%AB-(duress)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "33d405ea-7a9a-4970-b70f-9c05d90dd6f0",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Blackcleave Cliffs",
+          "nameJa": "黒割れの崖",
+          "detailUrl": "https://scryfall.com/card/dsc/263/ja/%E9%BB%92%E5%89%B2%E3%82%8C%E3%81%AE%E5%B4%96-(blackcleave-cliffs)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "5ad94412-6f79-4c5d-bbd4-4ef5779a7b6d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Restless Reef",
+          "nameJa": "不穏な浅瀬",
+          "detailUrl": "https://scryfall.com/card/lci/282/ja/%E4%B8%8D%E7%A9%8F%E3%81%AA%E6%B5%85%E7%80%AC-(restless-reef)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "df20f85b-5f81-4ee4-8487-55d90109ac36",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 5,
+          "nameEn": "Swamp",
+          "nameJa": "沼",
+          "detailUrl": "https://scryfall.com/card/tmt/193/ja/%E6%B2%BC-(swamp)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Cavern of Souls",
+          "nameJa": "魂の洞窟",
+          "detailUrl": "https://scryfall.com/card/lci/269/ja/%E9%AD%82%E3%81%AE%E6%B4%9E%E7%AA%9F-(cavern-of-souls)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "89ca686a-7c72-4d8f-9290-e89635624a83",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ],
       "sideboard": [
-        {"quantity": 3, "nameEn": "Graveyard Trespasser", "nameJa": "墓地の侵入者", "detailUrl": "https://scryfall.com/card/mid/106/graveyard-trespasser", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Sorin, Imperious House Guest", "nameJa": "尊大な招待客、ソリン", "detailUrl": "https://scryfall.com/card/vow/123/sorin-imperious-house-guest", "category": "planeswalker", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Unlicensed Hearse", "nameJa": "無許可の霊柩車", "detailUrl": "https://scryfall.com/card/snc/246/unlicensed-hearse", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Mystical Dispute", "nameJa": "神秘の争論", "detailUrl": "https://scryfall.com/card/eld/58/mystical-dispute", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Sheoldred's Edict", "nameJa": "セラクレッドの勅令", "detailUrl": "https://scryfall.com/card/dmu/121/sheoldreds-edict", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Exorcise", "nameJa": "エクソシズム", "detailUrl": "https://scryfall.com/card/vow/14/exorcise", "category": "instant", "translationStatus": "complete"}
+        {
+          "quantity": 3,
+          "nameEn": "Graveyard Trespasser",
+          "nameJa": "墓地の侵入者",
+          "detailUrl": "https://scryfall.com/card/mid/104/ja/%E5%A2%93%E5%9C%B0%E3%81%AE%E4%BE%B5%E5%85%A5%E8%80%85-%E5%A2%93%E5%9C%B0%E3%81%AE%E5%A4%A7%E9%A3%9F%E3%81%84-(graveyard-trespasser-graveyard-glutton)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "0bbd6cad-9b6f-45a6-9f2e-d7b4853586ae",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Sorin, Imperious House Guest",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Unlicensed Hearse",
+          "nameJa": "未認可霊柩車",
+          "detailUrl": "https://scryfall.com/card/otp/64/ja/%E6%9C%AA%E8%AA%8D%E5%8F%AF%E9%9C%8A%E6%9F%A9%E8%BB%8A-(unlicensed-hearse)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "c640654c-487e-4a2c-aced-126ed835b78f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Mystical Dispute",
+          "nameJa": "神秘の論争",
+          "detailUrl": "https://scryfall.com/card/pwcs/2020-4/ja/%E7%A5%9E%E7%A7%98%E3%81%AE%E8%AB%96%E4%BA%89-(mystical-dispute)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "48390b8d-db41-48a5-9bac-316660ab7252",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Sheoldred's Edict",
+          "nameJa": "シェオルドレッドの勅令",
+          "detailUrl": "https://scryfall.com/card/soa/32/ja/%E3%82%B7%E3%82%A7%E3%82%AA%E3%83%AB%E3%83%89%E3%83%AC%E3%83%83%E3%83%89%E3%81%AE%E5%8B%85%E4%BB%A4-(sheoldreds-edict)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "217062f5-96f1-454c-9507-17f34ef37070",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Exorcise",
+          "nameJa": "悪魔祓い",
+          "detailUrl": "https://scryfall.com/card/dsk/8/ja/%E6%82%AA%E9%AD%94%E7%A5%93%E3%81%84-(exorcise)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "58916455-844c-4d97-908f-8205bdc117c0",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ]
     },
     {
@@ -115,25 +725,195 @@
       "mainboardCount": 61,
       "sideboardCount": 15,
       "mainboard": [
-        {"quantity": 4, "nameEn": "Thalia, Guardian of Thraben", "nameJa": "スレイベンの守護者、サリア", "detailUrl": "https://scryfall.com/card/vow/38/thalia-guardian-of-thraben", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Intrepid Adversary", "nameJa": "果敢な敵対者", "detailUrl": "https://scryfall.com/card/vow/36/intrepid-adversary", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Hallowed Haunting", "nameJa": "神聖な幽霊", "detailUrl": "https://scryfall.com/card/vow/38/hallowed-haunting", "category": "enchantment", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Sigarda, Font of Blessings", "nameJa": "祝福の源泉、シガルダ", "detailUrl": "https://scryfall.com/card/mid/45/sigarda-font-of-blessings", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Hopeful Initiate", "nameJa": "希望に満ちた新参者", "detailUrl": "https://scryfall.com/card/dmu/20/hopeful-initiate", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Dauntless Bodyguard", "nameJa": "勇敢な護衛", "detailUrl": "https://scryfall.com/card/dmu/14/dauntless-bodyguard", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Hanna's Custody", "nameJa": "ハンナの監護", "detailUrl": "https://scryfall.com/card/war/12/hannas-custody", "category": "enchantment", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Seal Away", "nameJa": "封じ込め", "detailUrl": "https://scryfall.com/card/mid/33/seal-away", "category": "enchantment", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Plains", "nameJa": "平地", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Deserted Beach", "nameJa": "見捨てられた砂浜", "detailUrl": "https://scryfall.com/card/mid/260/deserted-beach", "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Roadside Reliquary", "nameJa": "道端の祭器殿", "detailUrl": "https://scryfall.com/card/mid/255/roadside-reliquary", "category": "land", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Faceless Haven", "nameJa": "顔なしの聖域", "detailUrl": "https://scryfall.com/card/khm/262/faceless-haven", "category": "land", "translationStatus": "complete"}
+        {
+          "quantity": 4,
+          "nameEn": "Thalia, Guardian of Thraben",
+          "nameJa": "スレイベンの守護者、サリア",
+          "detailUrl": "https://scryfall.com/card/mul/7/ja/%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%99%E3%83%B3%E3%81%AE%E5%AE%88%E8%AD%B7%E8%80%85%E3%80%81%E3%82%B5%E3%83%AA%E3%82%A2-(thalia-guardian-of-thraben)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "9b7f1d05-707c-4ed3-9f0e-8ced1232c2ee",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Intrepid Adversary",
+          "nameJa": "剛胆な敵対者",
+          "detailUrl": "https://scryfall.com/card/mid/25/ja/%E5%89%9B%E8%83%86%E3%81%AA%E6%95%B5%E5%AF%BE%E8%80%85-(intrepid-adversary)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "b72fde5e-862a-45e8-9880-f2c16975a9ac",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Hallowed Haunting",
+          "nameJa": "神聖なる憑依",
+          "detailUrl": "https://scryfall.com/card/vow/17/ja/%E7%A5%9E%E8%81%96%E3%81%AA%E3%82%8B%E6%86%91%E4%BE%9D-(hallowed-haunting)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "e310ab58-180e-4840-bc8d-9f9b06f1b478",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Sigarda, Font of Blessings",
+          "nameJa": "祝福の泉、シガルダ",
+          "detailUrl": "https://scryfall.com/card/mat/47/ja/%E7%A5%9D%E7%A6%8F%E3%81%AE%E6%B3%89%E3%80%81%E3%82%B7%E3%82%AC%E3%83%AB%E3%83%80-(sigarda-font-of-blessings)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "5fe07a76-f261-4f16-8a15-571bed707261",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Hopeful Initiate",
+          "nameJa": "有望な信徒",
+          "detailUrl": "https://scryfall.com/card/vow/20/ja/%E6%9C%89%E6%9C%9B%E3%81%AA%E4%BF%A1%E5%BE%92-(hopeful-initiate)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "317169b8-9014-48e6-862b-ca21b706846e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Dauntless Bodyguard",
+          "nameJa": "不屈の護衛",
+          "detailUrl": "https://scryfall.com/card/dom/14/ja/%E4%B8%8D%E5%B1%88%E3%81%AE%E8%AD%B7%E8%A1%9B-(dauntless-bodyguard)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "70973a2d-66e6-4662-ab10-99678775dda1",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Hanna's Custody",
+          "nameJa": "ハナの保護管理",
+          "detailUrl": "https://scryfall.com/card/tmp/22/ja/%E3%83%8F%E3%83%8A%E3%81%AE%E4%BF%9D%E8%AD%B7%E7%AE%A1%E7%90%86-(hannas-custody)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "57b0205d-ad9d-45b7-8556-0733aa7a4987",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Seal Away",
+          "nameJa": "封じ込め",
+          "detailUrl": "https://scryfall.com/card/dom/31/ja/%E5%B0%81%E3%81%98%E8%BE%BC%E3%82%81-(seal-away)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "c8909015-ea49-47cb-8d37-653904f965bb",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Plains",
+          "nameJa": "平地",
+          "detailUrl": "https://scryfall.com/card/tmt/191/ja/%E5%B9%B3%E5%9C%B0-(plains)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "bc71ebf6-2056-41f7-be35-b2e5c34afa99",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Deserted Beach",
+          "nameJa": "さびれた浜",
+          "detailUrl": "https://scryfall.com/card/who/270/ja/%E3%81%95%E3%81%B3%E3%82%8C%E3%81%9F%E6%B5%9C-(deserted-beach)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "f0ec8681-da50-466b-8cdd-1dc710deccd9",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Roadside Reliquary",
+          "nameJa": "道路脇の聖遺",
+          "detailUrl": "https://scryfall.com/card/pip/282/ja/%E9%81%93%E8%B7%AF%E8%84%87%E3%81%AE%E8%81%96%E9%81%BA-(roadside-reliquary)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "2fb13687-0518-4ba0-a5ae-dd609464b026",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Faceless Haven",
+          "nameJa": "不詳の安息地",
+          "detailUrl": "https://scryfall.com/card/pwcs/2021-6/ja/%E4%B8%8D%E8%A9%B3%E3%81%AE%E5%AE%89%E6%81%AF%E5%9C%B0-(faceless-haven)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "f74107d5-fb4a-464b-9251-42b84d91775d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ],
       "sideboard": [
-        {"quantity": 3, "nameEn": "Glass Casket", "nameJa": "ガラスの棺", "detailUrl": "https://scryfall.com/card/eld/15/glass-casket", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Skyclave Apparition", "nameJa": "天界の apparition", "detailUrl": "https://scryfall.com/card/klr/277/skyclave-apparition", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Mysterious Limbs", "nameJa": "神秘的な手足", "detailUrl": "https://scryfall.com/card/vow/34/mysterious-limbs", "category": "enchantment", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Sentry Sage", "nameJa": "歩哨の賢者", "detailUrl": "https://scryfall.com/card/khm/33/sentry-sage", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Guardian of Faith", "nameJa": "信仰の守護者", "detailUrl": "https://scryfall.com/card/dmu/16/guardian-of-faith", "category": "creature", "translationStatus": "complete"}
+        {
+          "quantity": 3,
+          "nameEn": "Glass Casket",
+          "nameJa": "ガラスの棺",
+          "detailUrl": "https://scryfall.com/card/woe/16/ja/%E3%82%AC%E3%83%A9%E3%82%B9%E3%81%AE%E6%A3%BA-(glass-casket)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "d9167046-7908-4d16-8cc1-3eb02d1ba547",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Skyclave Apparition",
+          "nameJa": "スカイクレイブの亡霊",
+          "detailUrl": "https://scryfall.com/card/soc/173/ja/%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%96%E3%81%AE%E4%BA%A1%E9%9C%8A-(skyclave-apparition)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "d90af00a-d322-4265-9954-7b1e80702e18",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Mysterious Limbs",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sentry Sage",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Guardian of Faith",
+          "nameJa": "ガーディアン・オヴ・フェイス",
+          "detailUrl": "https://scryfall.com/card/soc/148/ja/%E3%82%AC%E3%83%BC%E3%83%87%E3%82%A3%E3%82%A2%E3%83%B3%E3%83%BB%E3%82%AA%E3%83%B4%E3%83%BB%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9-(guardian-of-faith)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "8e04a5e0-e22c-430b-a39a-c9f38e16ea86",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ]
     },
     {
@@ -144,25 +924,195 @@
       "mainboardCount": 60,
       "sideboardCount": 15,
       "mainboard": [
-        {"quantity": 4, "nameEn": "Tolarian Terror", "nameJa": "トルアリアの恐怖", "detailUrl": "https://scryfall.com/card/dmu/78/tolarian-terror", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Coral Colony", "nameJa": "サンゴの集落", "detailUrl": "https://scryfall.com/card/mid/52/coral-colony", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Consider", "nameJa": "熟考", "detailUrl": "https://scryfall.com/card/mid/44/consider", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Make Disappear", "nameJa": "消滅", "detailUrl": "https://scryfall.com/card/snc/53/make-disappear", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Slip Out the Back", "nameJa": "裏口から抜け出し", "detailUrl": "https://scryfall.com/card/snc/62/slip-out-the-back", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Stormwing Entity", "nameJa": "嵐翼の精体", "detailUrl": "https://scryfall.com/card/mh2/218/stormwing-entity", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Spell Pierce", "nameJa": "魔法貫通", "detailUrl": "https://scryfall.com/card/2xm/63/spell-pierce", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Tamiyo's Compleation", "nameJa": "タミヨウの補完", "detailUrl": "https://scryfall.com/card/neo/83/tamiyos-compleation", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Island", "nameJa": "島", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Shipwreck Marsh", "nameJa": "難破船の沼地", "detailUrl": "https://scryfall.com/card/mid/267/shipwreck-marsh", "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Stormcarved Coast", "nameJa": "嵐削りの海岸", "detailUrl": "https://scryfall.com/card/vow/282/stormcarved-coast", "category": "land", "translationStatus": "complete"},
-        {"quantity": 6, "nameEn": "Swamp", "nameJa": "沼", "detailUrl": null, "category": "land", "translationStatus": "complete"}
+        {
+          "quantity": 4,
+          "nameEn": "Tolarian Terror",
+          "nameJa": "トレイリアの恐怖",
+          "detailUrl": "https://scryfall.com/card/fdn/167/ja/%E3%83%88%E3%83%AC%E3%82%A4%E3%83%AA%E3%82%A2%E3%81%AE%E6%81%90%E6%80%96-(tolarian-terror)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "b9d0f2e1-62c2-44fd-ad38-471daf17bb0a",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Coral Colony",
+          "nameJa": "珊瑚の群棲",
+          "detailUrl": "https://scryfall.com/card/dmu/45/ja/%E7%8F%8A%E7%91%9A%E3%81%AE%E7%BE%A4%E6%A3%B2-(coral-colony)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "5e186931-992b-491c-bffc-6877a613d5c3",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Consider",
+          "nameJa": "考慮",
+          "detailUrl": "https://scryfall.com/card/tle/157/ja/%E8%80%83%E6%85%AE-(consider)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "4c9bcba6-87b5-4fb3-97ee-6fe5b739337d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Make Disappear",
+          "nameJa": "かき消し",
+          "detailUrl": "https://scryfall.com/card/snc/49/ja/%E3%81%8B%E3%81%8D%E6%B6%88%E3%81%97-(make-disappear)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "5f12f665-f083-48ae-b61a-541051c996ec",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Slip Out the Back",
+          "nameJa": "とんずら",
+          "detailUrl": "https://scryfall.com/card/snc/62/ja/%E3%81%A8%E3%82%93%E3%81%9A%E3%82%89-(slip-out-the-back)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "82506e51-3fe1-446f-83c9-69e67583cefc",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Stormwing Entity",
+          "nameJa": "嵐翼の精体",
+          "detailUrl": "https://scryfall.com/card/m21/73/ja/%E5%B5%90%E7%BF%BC%E3%81%AE%E7%B2%BE%E4%BD%93-(stormwing-entity)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "ea43fd04-e9fa-42fb-ba20-22dcc21c6c43",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Spell Pierce",
+          "nameJa": "呪文貫き",
+          "detailUrl": "https://scryfall.com/card/soa/23/ja/%E5%91%AA%E6%96%87%E8%B2%AB%E3%81%8D-(spell-pierce)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "d64b0848-0193-4025-ba62-63ecd8fb9f50",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Tamiyo's Compleation",
+          "nameJa": "タミヨウの完成化",
+          "detailUrl": "https://scryfall.com/card/neo/83/ja/%E3%82%BF%E3%83%9F%E3%83%A8%E3%82%A6%E3%81%AE%E5%AE%8C%E6%88%90%E5%8C%96-(tamiyos-compleation)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "71d8b7f5-a5da-4528-815e-51c65626b681",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Shipwreck Marsh",
+          "nameJa": "難破船の湿地",
+          "detailUrl": "https://scryfall.com/card/who/305/ja/%E9%9B%A3%E7%A0%B4%E8%88%B9%E3%81%AE%E6%B9%BF%E5%9C%B0-(shipwreck-marsh)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "5f42b67f-87fd-4f98-a0e8-0c8313f4bbc8",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Stormcarved Coast",
+          "nameJa": "嵐削りの海岸",
+          "detailUrl": "https://scryfall.com/card/who/308/ja/%E5%B5%90%E5%89%8A%E3%82%8A%E3%81%AE%E6%B5%B7%E5%B2%B8-(stormcarved-coast)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "4722105b-0085-4bb8-bca1-9de0d3eb5600",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 6,
+          "nameEn": "Swamp",
+          "nameJa": "沼",
+          "detailUrl": "https://scryfall.com/card/tmt/193/ja/%E6%B2%BC-(swamp)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ],
       "sideboard": [
-        {"quantity": 3, "nameEn": "Negate", "nameJa": "否認", "detailUrl": "https://scryfall.com/card/dmu/58/negate", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Haughty Djinn", "nameJa": "傲慢な精霊", "detailUrl": "https://scryfall.com/card/dmu/52/haughty-djinn", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Disdainful Stroke", "nameJa": "軽蔑の視線", "detailUrl": "https://scryfall.com/card/snc/39/disdainful-stroke", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Essence Scatter", "nameJa": "精髓散逸", "detailUrl": "https://scryfall.com/card/mid/49/essence-scatter", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Jace, the Perfected Mind", "nameJa": "完成された精神、ジェイス", "detailUrl": "https://scryfall.com/card/one/57/jace-the-perfected-mind", "category": "planeswalker", "translationStatus": "complete"}
+        {
+          "quantity": 3,
+          "nameEn": "Negate",
+          "nameJa": "否認",
+          "detailUrl": "https://scryfall.com/card/tmt/47/ja/%E5%90%A6%E8%AA%8D-(negate)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "3407fe41-fdd3-4119-8f70-4bc4590a379f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Haughty Djinn",
+          "nameJa": "傲慢なジン",
+          "detailUrl": "https://scryfall.com/card/tdc/154/ja/%E5%82%B2%E6%85%A2%E3%81%AA%E3%82%B8%E3%83%B3-(haughty-djinn)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "44036bb5-f300-40bd-9180-6b246315d886",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Disdainful Stroke",
+          "nameJa": "軽蔑的な一撃",
+          "detailUrl": "https://scryfall.com/card/soa/17/ja/%E8%BB%BD%E8%94%91%E7%9A%84%E3%81%AA%E4%B8%80%E6%92%83-(disdainful-stroke)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "11e02134-7b1a-46a4-a89e-7539dd1efada",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Essence Scatter",
+          "nameJa": "本質の散乱",
+          "detailUrl": "https://scryfall.com/card/sos/47/ja/%E6%9C%AC%E8%B3%AA%E3%81%AE%E6%95%A3%E4%B9%B1-(essence-scatter)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "46665089-aa3d-44c3-964d-6638dfbb5782",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Jace, the Perfected Mind",
+          "nameJa": "完成化した精神、ジェイス",
+          "detailUrl": "https://scryfall.com/card/one/57/ja/%E5%AE%8C%E6%88%90%E5%8C%96%E3%81%97%E3%81%9F%E7%B2%BE%E7%A5%9E%E3%80%81%E3%82%B8%E3%82%A7%E3%82%A4%E3%82%B9-(jace-the-perfected-mind)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "oracleId": "03dafab4-841f-41cb-8f2e-8188f5177837",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ]
     },
     {
@@ -173,24 +1123,184 @@
       "mainboardCount": 60,
       "sideboardCount": 15,
       "mainboard": [
-        {"quantity": 4, "nameEn": "Topiary Stomper", "nameJa": "庭園の暴行者", "detailUrl": "https://scryfall.com/card/snc/160/topiary-stomper", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Karn, Living Legacy", "nameJa": "生ける遺産、カーン", "detailUrl": "https://scryfall.com/card/neo/238/karn-living-legacy", "category": "planeswalker", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Landsign Steward", "nameJa": "土地の執事", "detailUrl": "https://scryfall.com/card/dmu/170/landscapes-steward", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Sylvan Scrying", "nameJa": "森の占い", "detailUrl": "https://scryfall.com/card/bro/182/sylvan-scrying", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Nature's Lore", "nameJa": "自然の知識", "detailUrl": "https://scryfall.com/card/dmu/167/natures-lore", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Three Visits", "nameJa": "三回の訪問", "detailUrl": "https://scryfall.com/card/mid/209/three-visits", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Invasion of Zendikar", "nameJa": "ゼンディカーの侵攻", "detailUrl": "https://scryfall.com/card/mom/202/invasion-of-zendikar-awakened-skyclave", "category": "battle", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Atraxa, Grand Unifier", "nameJa": "大統一者、アトラクサ", "detailUrl": "https://scryfall.com/card/one/217/atraxa-grand-unifier", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Forest", "nameJa": "森", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Yavimaya, Cradle of Growth", "nameJa": "ヤヴィマヤ、成長の揺籃", "detailUrl": "https://scryfall.com/card/mh2/261/yavimaya-cradle-of-growth", "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Bojuka Bog", "nameJa": "ボジューカの泥沼", "detailUrl": "https://scryfall.com/card/c14/279/bojuka-bog", "category": "land", "translationStatus": "complete"}
+        {
+          "quantity": 4,
+          "nameEn": "Topiary Stomper",
+          "nameJa": "装飾庭園を踏み歩くもの",
+          "detailUrl": "https://scryfall.com/card/j25/730/ja/%E8%A3%85%E9%A3%BE%E5%BA%AD%E5%9C%92%E3%82%92%E8%B8%8F%E3%81%BF%E6%AD%A9%E3%81%8F%E3%82%82%E3%81%AE-(topiary-stomper)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "e3fc10d2-2733-4265-8275-112c285fd11a",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Karn, Living Legacy",
+          "nameJa": null,
+          "detailUrl": "https://scryfall.com/card/dmu/1/ja/karn-living-legacy-(karn-living-legacy)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "oracleId": "09ab1278-811f-4b97-bd34-7493d6e081e9",
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Landsign Steward",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sylvan Scrying",
+          "nameJa": "森の占術",
+          "detailUrl": "https://scryfall.com/card/m3c/248/ja/%E6%A3%AE%E3%81%AE%E5%8D%A0%E8%A1%93-(sylvan-scrying)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "ee24bf27-484d-4e1c-998e-6a74e3d3f6c4",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Nature's Lore",
+          "nameJa": "自然の知識",
+          "detailUrl": "https://scryfall.com/card/soc/278/ja/%E8%87%AA%E7%84%B6%E3%81%AE%E7%9F%A5%E8%AD%98-(natures-lore)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "78826359-fe63-44ad-adc4-a17ffcd710e4",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Three Visits",
+          "nameJa": "三顧の礼",
+          "detailUrl": "https://scryfall.com/card/fic/315/ja/%E4%B8%89%E9%A1%A7%E3%81%AE%E7%A4%BC-(three-visits)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "1b882a0e-0ede-4d1a-bd1a-9b7cffbcde8e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Invasion of Zendikar",
+          "nameJa": "ゼンディカーへの侵攻",
+          "detailUrl": "https://scryfall.com/card/mom/194/ja/%E3%82%BC%E3%83%B3%E3%83%87%E3%82%A3%E3%82%AB%E3%83%BC%E3%81%B8%E3%81%AE%E4%BE%B5%E6%94%BB-%E8%A6%9A%E9%86%92%E3%81%97%E3%81%9F%E3%82%B9%E3%82%AB%E3%82%A4%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%96-(invasion-of-zendikar-awakened-skyclave)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "4b1874af-4ea5-4e22-a4d4-e718d75fe95e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Atraxa, Grand Unifier",
+          "nameJa": "偉大なる統一者、アトラクサ",
+          "detailUrl": "https://scryfall.com/card/fca/49/ja/%E5%81%89%E5%A4%A7%E3%81%AA%E3%82%8B%E7%B5%B1%E4%B8%80%E8%80%85%E3%80%81%E3%82%A2%E3%83%88%E3%83%A9%E3%82%AF%E3%82%B5-(atraxa-grand-unifier)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "abbcb153-0763-44c6-964f-b4ff0eb64257",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Forest",
+          "nameJa": "森",
+          "detailUrl": "https://scryfall.com/card/tmt/195/ja/%E6%A3%AE-(forest)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "b34bb2dc-c1af-4d77-b0b3-a0fb342a5fc6",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Yavimaya, Cradle of Growth",
+          "nameJa": "成長の揺り篭、ヤヴィマヤ",
+          "detailUrl": "https://scryfall.com/card/m3c/409/ja/%E6%88%90%E9%95%B7%E3%81%AE%E6%8F%BA%E3%82%8A%E7%AF%AD%E3%80%81%E3%83%A4%E3%83%B4%E3%82%A3%E3%83%9E%E3%83%A4-(yavimaya-cradle-of-growth)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "8dd5f5af-d2d8-4356-8617-8381081b930c",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Bojuka Bog",
+          "nameJa": "ボジューカの沼（ぬま）",
+          "detailUrl": "https://scryfall.com/card/eoc/149/ja/%E3%83%9C%E3%82%B8%E3%83%A5%E3%83%BC%E3%82%AB%E3%81%AE%E6%B2%BC%EF%BC%88%E3%81%AC%E3%81%BE%EF%BC%89-(bojuka-bog)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "04b7362d-0490-4cb0-b5d7-2a7732f659ce",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ],
       "sideboard": [
-        {"quantity": 2, "nameEn": "The Mycosynth Gardens", "nameJa": "マイコシンスの庭園", "detailUrl": "https://scryfall.com/card/one/256/the-mycosynth-gardens", "category": "land", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Haywire Mite", "nameJa": "故障した精密機械", "detailUrl": "https://scryfall.com/card/bro/137/haywire-mite", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Pithing Needle", "nameJa": "外科的摘出", "detailUrl": "https://scryfall.com/card/2xm/274/pithing-needle", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Cityscape Leveler", "nameJa": "都市風景の整地機", "detailUrl": "https://scryfall.com/card/bro/239/cityscape-leveler", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Soul-Guide Lantern", "nameJa": "魂導の灯籠", "detailUrl": "https://scryfall.com/card/vow/238/soul-guide-lantern", "category": "artifact", "translationStatus": "complete"}
+        {
+          "quantity": 2,
+          "nameEn": "The Mycosynth Gardens",
+          "nameJa": "マイコシンスの庭（にわ）",
+          "detailUrl": "https://scryfall.com/card/eoc/168/ja/%E3%83%9E%E3%82%A4%E3%82%B3%E3%82%B7%E3%83%B3%E3%82%B9%E3%81%AE%E5%BA%AD%EF%BC%88%E3%81%AB%E3%82%8F%EF%BC%89-(the-mycosynth-gardens)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "03f5c566-825c-4c46-9c01-a2f9b1e70a13",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Haywire Mite",
+          "nameJa": "機能不全ダニ",
+          "detailUrl": "https://scryfall.com/card/dsc/247/ja/%E6%A9%9F%E8%83%BD%E4%B8%8D%E5%85%A8%E3%83%80%E3%83%8B-(haywire-mite)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "749d2994-44e7-40d3-8630-7bebed239e9e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Pithing Needle",
+          "nameJa": "真髄の針",
+          "detailUrl": "https://scryfall.com/card/rvr/463/ja/%E7%9C%9F%E9%AB%84%E3%81%AE%E9%87%9D-(pithing-needle)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "a188fe7e-68de-4c7c-806c-bfe8fc7b44bf",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Cityscape Leveler",
+          "nameJa": "街並みの地ならし屋",
+          "detailUrl": "https://scryfall.com/card/tle/53/ja/%E8%A1%97%E4%B8%A6%E3%81%BF%E3%81%AE%E5%9C%B0%E3%81%AA%E3%82%89%E3%81%97%E5%B1%8B-(cityscape-leveler)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "d4d65797-2b92-4265-9169-133120c86c7f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Soul-Guide Lantern",
+          "nameJa": "魂（たま）標（しるべ）ランタン",
+          "detailUrl": "https://scryfall.com/card/eoc/143/ja/%E9%AD%82%EF%BC%88%E3%81%9F%E3%81%BE%EF%BC%89%E6%A8%99%EF%BC%88%E3%81%97%E3%82%8B%E3%81%B9%EF%BC%89%E3%83%A9%E3%83%B3%E3%82%BF%E3%83%B3-(soul-guide-lantern)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "1b5e6560-ff2e-4475-96cb-63f64c8a86db",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ]
     },
     {
@@ -201,23 +1311,173 @@
       "mainboardCount": 60,
       "sideboardCount": 15,
       "mainboard": [
-        {"quantity": 4, "nameEn": "Chilleriller", "nameJa": "チララー", "detailUrl": "https://scryfall.com/card/dmu/45/chilleriller", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Frostbite", "nameJa": "凍傷", "detailUrl": "https://scryfall.com/card/mid/55/frostbite", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Hunt for Specimens", "nameJa": "検体狩り", "detailUrl": "https://scryfall.com/card/mid/51/hunt-for-specimens", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Risky Shortcut", "nameJa": "危険な近道", "detailUrl": "https://scryfall.com/card/mid/60/risky-shortcut", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Galedrifter", "nameJa": "突風漂流者", "detailUrl": "https://scryfall.com/card/mid/55/galedrifter", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Overload", "nameJa": "過負荷", "detailUrl": "https://scryfall.com/card/mid/62/overload", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Lantern of the Lost", "nameJa": "失われし者の灯籠", "detailUrl": "https://scryfall.com/card/vow/123/lantern-of-the-lost", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Island", "nameJa": "島", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Swamp", "nameJa": "沼", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Shipwreck Marsh", "nameJa": "難破船の沼地", "detailUrl": "https://scryfall.com/card/mid/267/shipwreck-marsh", "category": "land", "translationStatus": "complete"}
+        {
+          "quantity": 4,
+          "nameEn": "Chilleriller",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Frostbite",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Hunt for Specimens",
+          "nameJa": "検体探し",
+          "detailUrl": "https://scryfall.com/card/stx/73/ja/%E6%A4%9C%E4%BD%93%E6%8E%A2%E3%81%97-(hunt-for-specimens)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "53f1bcff-55fb-4d38-b108-dcbed623f488",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Risky Shortcut",
+          "nameJa": "危険な近道",
+          "detailUrl": "https://scryfall.com/card/dft/103/ja/%E5%8D%B1%E9%99%BA%E3%81%AA%E8%BF%91%E9%81%93-(risky-shortcut)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "a7c55495-6aca-4d17-b61a-cab8fa38b9f4",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Galedrifter",
+          "nameJa": "突風漂い",
+          "detailUrl": "https://scryfall.com/card/mid/55/ja/%E7%AA%81%E9%A2%A8%E6%BC%82%E3%81%84-%E5%98%86%E5%A3%B0%E6%BC%82%E3%81%84-(galedrifter-waildrifter)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "ba88575a-4b9a-40cd-abbc-4539912c9455",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Overload",
+          "nameJa": "過負荷",
+          "detailUrl": "https://scryfall.com/card/inv/157/ja/%E9%81%8E%E8%B2%A0%E8%8D%B7-(overload)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "07159efc-c69f-4164-a8ca-9da641dbf702",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Lantern of the Lost",
+          "nameJa": "失われし者のランタン",
+          "detailUrl": "https://scryfall.com/card/vow/259/ja/%E5%A4%B1%E3%82%8F%E3%82%8C%E3%81%97%E8%80%85%E3%81%AE%E3%83%A9%E3%83%B3%E3%82%BF%E3%83%B3-(lantern-of-the-lost)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "f0c4414f-f153-40f6-a3b3-94bcbf1d3e29",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Swamp",
+          "nameJa": "沼",
+          "detailUrl": "https://scryfall.com/card/tmt/193/ja/%E6%B2%BC-(swamp)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Shipwreck Marsh",
+          "nameJa": "難破船の湿地",
+          "detailUrl": "https://scryfall.com/card/who/305/ja/%E9%9B%A3%E7%A0%B4%E8%88%B9%E3%81%AE%E6%B9%BF%E5%9C%B0-(shipwreck-marsh)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "5f42b67f-87fd-4f98-a0e8-0c8313f4bbc8",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ],
       "sideboard": [
-        {"quantity": 2, "nameEn": "Negate", "nameJa": "否認", "detailUrl": "https://scryfall.com/card/dmu/58/negate", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Disdainful Stroke", "nameJa": "軽蔑の視線", "detailUrl": "https://scryfall.com/card/snc/39/disdainful-stroke", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Trespasser's Curse", "nameJa": "侵入者の呪い", "detailUrl": "https://scryfall.com/card/mid/118/trespassers-curse", "category": "enchantment", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Sawblade Schemer", "nameJa": "鋸刃の策士", "detailUrl": "https://scryfall.com/card/mid/121/sawblade-schemer", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Lithomantic Barricade", "nameJa": "リソマントの柵", "detailUrl": "https://scryfall.com/card/mid/114/lithomantic-barricade", "category": "artifact", "translationStatus": "complete"}
+        {
+          "quantity": 2,
+          "nameEn": "Negate",
+          "nameJa": "否認",
+          "detailUrl": "https://scryfall.com/card/tmt/47/ja/%E5%90%A6%E8%AA%8D-(negate)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "3407fe41-fdd3-4119-8f70-4bc4590a379f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Disdainful Stroke",
+          "nameJa": "軽蔑的な一撃",
+          "detailUrl": "https://scryfall.com/card/soa/17/ja/%E8%BB%BD%E8%94%91%E7%9A%84%E3%81%AA%E4%B8%80%E6%92%83-(disdainful-stroke)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "11e02134-7b1a-46a4-a89e-7539dd1efada",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Trespasser's Curse",
+          "nameJa": "侵入者への呪い",
+          "detailUrl": "https://scryfall.com/card/akh/112/ja/%E4%BE%B5%E5%85%A5%E8%80%85%E3%81%B8%E3%81%AE%E5%91%AA%E3%81%84-(trespassers-curse)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "2769751d-ca67-4d6e-93c9-9587367ae8ab",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Sawblade Schemer",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Lithomantic Barricade",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        }
       ]
     },
     {
@@ -228,24 +1488,184 @@
       "mainboardCount": 60,
       "sideboardCount": 15,
       "mainboard": [
-        {"quantity": 4, "nameEn": "Gideon of the Trials", "nameJa": "試練のギデオン", "detailUrl": "https://scryfall.com/card/akh/14/gideon-of-the-trials", "category": "planeswalker", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Gideon Blackblade", "nameJa": "黒き剣のギデオン", "detailUrl": "https://scryfall.com/card/war/13/gideon-blackblade", "category": "planeswalker", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Sram, Senior Edificer", "nameJa": "上級建築師、スラム", "detailUrl": "https://scryfall.com/card/kld/166/sram-senior-edificer", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Cartouche of Solidarity", "nameJa": "団結のカルトーシュ", "detailUrl": "https://scryfall.com/card/akh/7/cartouche-of-solidarity", "category": "enchantment", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Ethereal Armor", "nameJa": "霊体の鎧", "detailUrl": "https://scryfall.com/card/avr/14/ethereal-armor", "category": "enchantment", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "All That Glitters", "nameJa": "輝くものすべて", "detailUrl": "https://scryfall.com/card/cn2/44/all-that-glitters", "category": "enchantment", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Spirit Mantle", "nameJa": "精霊の覆い", "detailUrl": "https://scryfall.com/card/m12/37/spirit-mantle", "category": "enchantment", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Heliod's Intervention", "nameJa": "ヘリオッドの干渉", "detailUrl": "https://scryfall.com/card/thb/19/heliods-intervention", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Plains", "nameJa": "平地", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Deserted Beach", "nameJa": "見捨てられた砂浜", "detailUrl": "https://scryfall.com/card/mid/260/deserted-beach", "category": "land", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Field of Ruin", "nameJa": "荒野の原", "detailUrl": "https://scryfall.com/card/bro/260/field-of-ruin", "category": "land", "translationStatus": "complete"}
+        {
+          "quantity": 4,
+          "nameEn": "Gideon of the Trials",
+          "nameJa": "試練に臨むギデオン",
+          "detailUrl": "https://scryfall.com/card/akh/14/ja/%E8%A9%A6%E7%B7%B4%E3%81%AB%E8%87%A8%E3%82%80%E3%82%AE%E3%83%87%E3%82%AA%E3%83%B3-(gideon-of-the-trials)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "oracleId": "a9bbaad7-c016-4908-a6a7-2c26112a6bf6",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Gideon Blackblade",
+          "nameJa": "黒き剣のギデオン",
+          "detailUrl": "https://scryfall.com/card/rvr/20/ja/%E9%BB%92%E3%81%8D%E5%89%A3%E3%81%AE%E3%82%AE%E3%83%87%E3%82%AA%E3%83%B3-(gideon-blackblade)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "oracleId": "813c19f5-3580-488d-9eee-c7a563def532",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sram, Senior Edificer",
+          "nameJa": "上級建設官、スラム",
+          "detailUrl": "https://scryfall.com/card/soc/176/ja/%E4%B8%8A%E7%B4%9A%E5%BB%BA%E8%A8%AD%E5%AE%98%E3%80%81%E3%82%B9%E3%83%A9%E3%83%A0-(sram-senior-edificer)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "7e00b0cd-d212-4604-ba07-da21f4fe00b0",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Cartouche of Solidarity",
+          "nameJa": "結束のカルトーシュ",
+          "detailUrl": "https://scryfall.com/card/j25/178/ja/%E7%B5%90%E6%9D%9F%E3%81%AE%E3%82%AB%E3%83%AB%E3%83%88%E3%83%BC%E3%82%B7%E3%83%A5-(cartouche-of-solidarity)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "b9176173-c4a1-45ae-8f34-bd6b31c141fe",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Ethereal Armor",
+          "nameJa": "天上の鎧",
+          "detailUrl": "https://scryfall.com/card/dsk/7/ja/%E5%A4%A9%E4%B8%8A%E3%81%AE%E9%8E%A7-(ethereal-armor)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "dbba75f5-2404-4bd5-982b-f6c4effa5316",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "All That Glitters",
+          "nameJa": "きらきらするすべて",
+          "detailUrl": "https://scryfall.com/card/pip/155/ja/%E3%81%8D%E3%82%89%E3%81%8D%E3%82%89%E3%81%99%E3%82%8B%E3%81%99%E3%81%B9%E3%81%A6-(all-that-glitters)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "a4d751e0-41c1-4e90-853d-512f385acd81",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Spirit Mantle",
+          "nameJa": "霊魂のマントル",
+          "detailUrl": "https://scryfall.com/card/soc/175/ja/%E9%9C%8A%E9%AD%82%E3%81%AE%E3%83%9E%E3%83%B3%E3%83%88%E3%83%AB-(spirit-mantle)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "81a51328-b995-4f3b-90bc-a20ae21dd254",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Heliod's Intervention",
+          "nameJa": "ヘリオッドの介入",
+          "detailUrl": "https://scryfall.com/card/otc/81/ja/%E3%83%98%E3%83%AA%E3%82%AA%E3%83%83%E3%83%89%E3%81%AE%E4%BB%8B%E5%85%A5-(heliods-intervention)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "e7564d66-767c-4cd9-a5f0-0f2488a4a74b",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Plains",
+          "nameJa": "平地",
+          "detailUrl": "https://scryfall.com/card/tmt/191/ja/%E5%B9%B3%E5%9C%B0-(plains)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "bc71ebf6-2056-41f7-be35-b2e5c34afa99",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Deserted Beach",
+          "nameJa": "さびれた浜",
+          "detailUrl": "https://scryfall.com/card/who/270/ja/%E3%81%95%E3%81%B3%E3%82%8C%E3%81%9F%E6%B5%9C-(deserted-beach)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "f0ec8681-da50-466b-8cdd-1dc710deccd9",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Field of Ruin",
+          "nameJa": "廃墟の地",
+          "detailUrl": "https://scryfall.com/card/ltc/308/ja/%E5%BB%83%E5%A2%9F%E3%81%AE%E5%9C%B0-(field-of-ruin)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "f825c98f-a327-440b-8c0d-ebe02e23bfb7",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ],
       "sideboard": [
-        {"quantity": 3, "nameEn": "Shrine of Loyal Legions", "nameJa": "忠実な軍団の聖域", "detailUrl": "https://scryfall.com/card/nph/19/shrine-of-loyal-legions", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Selfless Sage", "nameJa": "私心なき賢者", "detailUrl": "https://scryfall.com/card/dmu/30/selfless-sage", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "March of Otherworldly Light", "nameJa": "異界の光の進軍", "detailUrl": "https://scryfall.com/card/neo/28/march-of-otherworldly-light", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Destroy Evil", "nameJa": "悪の破壊", "detailUrl": "https://scryfall.com/card/dmu/17/destroy-evil", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Wedding Announcement", "nameJa": "婚礼の発表", "detailUrl": "https://scryfall.com/card/vow/45/wedding-announcement-wedding-festivity", "category": "enchantment", "translationStatus": "complete"}
+        {
+          "quantity": 3,
+          "nameEn": "Shrine of Loyal Legions",
+          "nameJa": "忠実な軍勢の祭殿",
+          "detailUrl": "https://scryfall.com/card/nph/155/ja/%E5%BF%A0%E5%AE%9F%E3%81%AA%E8%BB%8D%E5%8B%A2%E3%81%AE%E7%A5%AD%E6%AE%BF-(shrine-of-loyal-legions)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "9696ad3d-2e17-4ab7-88ee-3c56a632b7a8",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Selfless Sage",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 3,
+          "nameEn": "March of Otherworldly Light",
+          "nameJa": "冥途灯りの行進",
+          "detailUrl": "https://scryfall.com/card/neo/28/ja/%E5%86%A5%E9%80%94%E7%81%AF%E3%82%8A%E3%81%AE%E8%A1%8C%E9%80%B2-(march-of-otherworldly-light)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "ed06e421-480c-40c8-8c3e-1e466e5327b2",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Destroy Evil",
+          "nameJa": "邪悪を打ち砕く",
+          "detailUrl": "https://scryfall.com/card/fic/240/ja/%E9%82%AA%E6%82%AA%E3%82%92%E6%89%93%E3%81%A1%E7%A0%95%E3%81%8F-(destroy-evil)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "b75e667a-1ceb-445a-acf4-ae1fd2dae9e7",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Wedding Announcement",
+          "nameJa": "婚礼の発表",
+          "detailUrl": "https://scryfall.com/card/vow/45/ja/%E5%A9%9A%E7%A4%BC%E3%81%AE%E7%99%BA%E8%A1%A8-%E5%A9%9A%E7%A4%BC%E3%81%AE%E7%A5%AD%E5%85%B8-(wedding-announcement-wedding-festivity)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "259ac30c-cc05-4c04-9b23-71283f84b808",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces"
+        }
       ]
     }
   ]

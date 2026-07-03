@@ -33,6 +33,7 @@ jobs:
       - run: npm run rebuild:data
         if: ${{ inputs.rebuild_events != 'false' }}
       - run: npm run build:index
+      - run: npm run audit:translations
       - run: npm run typecheck
       - run: npm test
       - run: npm run build

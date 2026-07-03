@@ -8,7 +8,12 @@ export type EventStatus =
 
 export type OverallStatus = 'success' | 'partial' | 'failed' | 'pending';
 
-export type TranslationStatus = 'complete' | 'missing';
+export type TranslationStatus = 'complete' | 'partial' | 'missing';
+export type TranslationSource =
+  | 'scryfall_printed_name'
+  | 'scryfall_card_faces'
+  | 'manual_override'
+  | null;
 
 export type EventType = 'challenge' | 'league';
 
@@ -33,6 +38,8 @@ export interface Card {
   typeGroup?: CardTypeGroup | null;
   category?: CardTypeGroup | null;
   translationStatus: TranslationStatus;
+  translationSource?: TranslationSource;
+  oracleId?: string | null;
 }
 
 export interface Deck {

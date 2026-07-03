@@ -18,26 +18,206 @@
       "mainboardCount": 60,
       "sideboardCount": 15,
       "mainboard": [
-        {"quantity": 4, "nameEn": "Sheoldred, the Apocalypse", "nameJa": "終焉のセラクレッド", "detailUrl": "https://scryfall.com/card/dmu/108/sheoldred-the-apocalypse", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Bloodtithe Harvester", "nameJa": "血の十分の一の収穫者", "detailUrl": "https://scryfall.com/card/vow/232/bloodtithe-harvester", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Kaya, Living Ichor", "nameJa": "生ける腐液のカヤ", "detailUrl": "https://scryfall.com/card/one/213/kaya-living-ichor", "category": "planeswalker", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Go for the Throat", "nameJa": "喉を狙う", "detailUrl": "https://scryfall.com/card/dgm/69/go-for-the-throat", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Cut Down", "nameJa": "切り倒す", "detailUrl": "https://scryfall.com/card/dmu/89/cut-down", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Thoughtseize", "nameJa": "思考囲い", "detailUrl": "https://scryfall.com/card/lci/138/thoughtseize", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Duress", "nameJa": "強迫", "detailUrl": "https://scryfall.com/card/mom/120/duress", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Blackcleave Cliffs", "nameJa": "黒割れの岸壁", "detailUrl": "https://scryfall.com/card/klr/284/blackcleave-cliffs", "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Restless Reef", "nameJa": "休息の岩礁", "detailUrl": "https://scryfall.com/card/woe/263/restless-reef", "category": "land", "translationStatus": "complete"},
-        {"quantity": 5, "nameEn": "Swamp", "nameJa": "沼", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Cavern of Souls", "nameJa": "魂の洞窟", "detailUrl": "https://scryfall.com/card/mh2/232/cavern-of-souls", "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Mirrex", "nameJa": "ミレックス", "detailUrl": "https://scryfall.com/card/one/262/mirrex", "category": "land", "translationStatus": "complete"}
+        {
+          "quantity": 4,
+          "nameEn": "Sheoldred, the Apocalypse",
+          "nameJa": "黙示録、シェオルドレッド",
+          "detailUrl": "https://scryfall.com/card/dmu/107/ja/%E9%BB%99%E7%A4%BA%E9%8C%B2%E3%80%81%E3%82%B7%E3%82%A7%E3%82%AA%E3%83%AB%E3%83%89%E3%83%AC%E3%83%83%E3%83%89-(sheoldred-the-apocalypse)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "34f34409-326d-4994-a0ea-1a69aa278f03",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Bloodtithe Harvester",
+          "nameJa": "税血の収穫者",
+          "detailUrl": "https://scryfall.com/card/vow/232/ja/%E7%A8%8E%E8%A1%80%E3%81%AE%E5%8F%8E%E7%A9%AB%E8%80%85-(bloodtithe-harvester)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "419a8ab2-cff6-4811-a559-8791c9bb3d8e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Kaya, Living Ichor",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Go for the Throat",
+          "nameJa": "喉首狙い",
+          "detailUrl": "https://scryfall.com/card/j25/447/ja/%E5%96%89%E9%A6%96%E7%8B%99%E3%81%84-(go-for-the-throat)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "2f092562-9e17-43cd-aeb8-d0567f99363e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Cut Down",
+          "nameJa": "切り崩し",
+          "detailUrl": "https://scryfall.com/card/dmu/89/ja/%E5%88%87%E3%82%8A%E5%B4%A9%E3%81%97-(cut-down)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "1b30210d-10e9-4703-8967-032063bb4f26",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Thoughtseize",
+          "nameJa": "思考囲い",
+          "detailUrl": "https://scryfall.com/card/otp/20/ja/%E6%80%9D%E8%80%83%E5%9B%B2%E3%81%84-(thoughtseize)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "edd8d1e8-be43-4c38-bb3a-83081fbaf0b5",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Duress",
+          "nameJa": "強迫",
+          "detailUrl": "https://scryfall.com/card/one/92/ja/%E5%BC%B7%E8%BF%AB-(duress)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "33d405ea-7a9a-4970-b70f-9c05d90dd6f0",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Blackcleave Cliffs",
+          "nameJa": "黒割れの崖",
+          "detailUrl": "https://scryfall.com/card/dsc/263/ja/%E9%BB%92%E5%89%B2%E3%82%8C%E3%81%AE%E5%B4%96-(blackcleave-cliffs)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "5ad94412-6f79-4c5d-bbd4-4ef5779a7b6d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Restless Reef",
+          "nameJa": "不穏な浅瀬",
+          "detailUrl": "https://scryfall.com/card/lci/282/ja/%E4%B8%8D%E7%A9%8F%E3%81%AA%E6%B5%85%E7%80%AC-(restless-reef)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "df20f85b-5f81-4ee4-8487-55d90109ac36",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 5,
+          "nameEn": "Swamp",
+          "nameJa": "沼",
+          "detailUrl": "https://scryfall.com/card/tmt/193/ja/%E6%B2%BC-(swamp)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Cavern of Souls",
+          "nameJa": "魂の洞窟",
+          "detailUrl": "https://scryfall.com/card/lci/269/ja/%E9%AD%82%E3%81%AE%E6%B4%9E%E7%AA%9F-(cavern-of-souls)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "89ca686a-7c72-4d8f-9290-e89635624a83",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Mirrex",
+          "nameJa": "ミレックス",
+          "detailUrl": "https://scryfall.com/card/one/254/ja/%E3%83%9F%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9-(mirrex)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ],
       "sideboard": [
-        {"quantity": 3, "nameEn": "Graveyard Trespasser", "nameJa": "墓地の侵入者", "detailUrl": "https://scryfall.com/card/mid/106/graveyard-trespasser", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Sorin, Imperious House Guest", "nameJa": "尊大な招待客、ソリン", "detailUrl": "https://scryfall.com/card/vow/123/sorin-imperious-house-guest", "category": "planeswalker", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Unlicensed Hearse", "nameJa": "無許可の霊柩車", "detailUrl": "https://scryfall.com/card/snc/246/unlicensed-hearse", "category": "artifact", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Mystical Dispute", "nameJa": "神秘の争論", "detailUrl": "https://scryfall.com/card/eld/58/mystical-dispute", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Sheoldred's Edict", "nameJa": "セラクレッドの勅令", "detailUrl": "https://scryfall.com/card/dmu/121/sheoldreds-edict", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Exorcise", "nameJa": "エクソシズム", "detailUrl": "https://scryfall.com/card/vow/14/exorcise", "category": "instant", "translationStatus": "complete"}
+        {
+          "quantity": 3,
+          "nameEn": "Graveyard Trespasser",
+          "nameJa": "墓地の侵入者",
+          "detailUrl": "https://scryfall.com/card/mid/104/ja/%E5%A2%93%E5%9C%B0%E3%81%AE%E4%BE%B5%E5%85%A5%E8%80%85-%E5%A2%93%E5%9C%B0%E3%81%AE%E5%A4%A7%E9%A3%9F%E3%81%84-(graveyard-trespasser-graveyard-glutton)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "0bbd6cad-9b6f-45a6-9f2e-d7b4853586ae",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Sorin, Imperious House Guest",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "oracleId": null,
+          "translationStatus": "missing",
+          "translationSource": null
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Unlicensed Hearse",
+          "nameJa": "未認可霊柩車",
+          "detailUrl": "https://scryfall.com/card/otp/64/ja/%E6%9C%AA%E8%AA%8D%E5%8F%AF%E9%9C%8A%E6%9F%A9%E8%BB%8A-(unlicensed-hearse)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "c640654c-487e-4a2c-aced-126ed835b78f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Mystical Dispute",
+          "nameJa": "神秘の論争",
+          "detailUrl": "https://scryfall.com/card/pwcs/2020-4/ja/%E7%A5%9E%E7%A7%98%E3%81%AE%E8%AB%96%E4%BA%89-(mystical-dispute)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "48390b8d-db41-48a5-9bac-316660ab7252",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Sheoldred's Edict",
+          "nameJa": "シェオルドレッドの勅令",
+          "detailUrl": "https://scryfall.com/card/soa/32/ja/%E3%82%B7%E3%82%A7%E3%82%AA%E3%83%AB%E3%83%89%E3%83%AC%E3%83%83%E3%83%89%E3%81%AE%E5%8B%85%E4%BB%A4-(sheoldreds-edict)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "217062f5-96f1-454c-9507-17f34ef37070",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Exorcise",
+          "nameJa": "悪魔祓い",
+          "detailUrl": "https://scryfall.com/card/dsk/8/ja/%E6%82%AA%E9%AD%94%E7%A5%93%E3%81%84-(exorcise)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "58916455-844c-4d97-908f-8205bdc117c0",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ]
     }
   ]

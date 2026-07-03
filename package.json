@@ -13,7 +13,8 @@
     "fetch:decklists": "node scripts/fetch-mtgo-events.mjs",
     "update:dictionary": "node scripts/update-card-dictionary.mjs",
     "rebuild:data": "node scripts/rebuild-event-data.mjs",
-    "build:index": "node scripts/build-index.mjs"
+    "build:index": "node scripts/build-index.mjs",
+    "audit:translations": "node scripts/audit-translations.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",

@@ -1,9 +1,11 @@
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import {
   buildCardDictionary,
   getJapaneseName,
 } from '../scripts/lib/build-card-dictionary.mjs';
+import { translateDecks } from '../scripts/lib/translate-decklists.mjs';
 
 const GREAT_HALL_JA = '\u5927\u56F3\u66F8\u68DF\u306E\u5927\u30DB\u30FC\u30EB';
 const VIBRANT_JA = '\u9BAE\u3084\u304B\u306A\u8FF8\u308A';
@@ -101,7 +103,7 @@ test('selects the fully translated Japanese Esper print', () => {
 
   assert.equal(entry.nameJa, ESPER_JA);
   assert.equal(entry.translationStatus, 'complete');
-  assert.equal(entry.translationSource, 'scryfall_printed_name');
+  assert.equal(entry.translationSource, 'scryfall_card_faces');
 });
 
 test('does not use English card or face names as Japanese fallbacks', () => {
@@ -112,7 +114,12 @@ test('does not use English card or face names as Japanese fallbacks', () => {
       { name: 'Front', printed_name: 'Front' },
       { name: 'Back', printed_name: 'Back' },
     ],
-  }), { nameJa: null, source: null });
+  }), {
+    nameJa: null,
+    source: null,
+    status: 'missing',
+    translatedFaces: [],
+  });
 
   const result = buildCardDictionary({
     englishPrints: [{ oracle_id: 'missing', name: 'English Only', lang: 'en' }],
@@ -121,6 +128,42 @@ test('does not use English card or face names as Japanese fallbacks', () => {
   assert.equal(result.dictionary.cards['english only'].nameJa, null);
   assert.equal(result.dictionary.cards['english only'].translationStatus, 'missing');
   assert.equal(result.dictionary.cards['english only'].translationSource, null);
+});
+
+test('joins every Japanese face name and marks incomplete faces as partial', () => {
+  const complete = getJapaneseName({
+    lang: 'ja',
+    name: 'Front // Back',
+    card_faces: [
+      { name: 'Front', printed_name: '\u8868\u9762' },
+      { name: 'Back', printed_name: '\u88CF\u9762' },
+    ],
+  });
+  assert.equal(complete.nameJa, '\u8868\u9762 // \u88CF\u9762');
+  assert.equal(complete.status, 'complete');
+
+  const partial = buildCardDictionary({
+    englishPrints: [{
+      oracle_id: 'partial',
+      name: 'Front // Back',
+      lang: 'en',
+      layout: 'transform',
+      card_faces: [{ name: 'Front' }, { name: 'Back' }],
+    }],
+    japanesePrints: [{
+      oracle_id: 'partial',
+      name: 'Front // Back',
+      lang: 'ja',
+      layout: 'transform',
+      card_faces: [
+        { name: 'Front', printed_name: '\u8868\u9762' },
+        { name: 'Back', printed_name: null },
+      ],
+    }],
+  }).dictionary.cards['front // back'];
+  assert.equal(partial.nameJa, null);
+  assert.equal(partial.translationStatus, 'partial');
+  assert.equal(partial.translationSource, 'scryfall_card_faces');
 });
 
 test('never lets a later null Japanese candidate replace a translated print', () => {
@@ -132,4 +175,44 @@ test('never lets a later null Japanese candidate replace a translated print', ()
     ],
   });
   assert.equal(result.dictionary.cards.card.nameJa, '\u30AB\u30FC\u30C9');
+});
+
+test('retranslates every card by normalized dictionary key', () => {
+  const dictionary = {
+    cards: {
+      'card one': {
+        nameEn: 'Card One',
+        nameJa: '\u30AB\u30FC\u30C9\u4E00',
+        translationStatus: 'complete',
+        translationSource: 'scryfall_printed_name',
+        oracleId: 'one',
+      },
+      'card two': {
+        nameEn: 'Card Two',
+        nameJa: null,
+        translationStatus: 'missing',
+        translationSource: null,
+        oracleId: 'two',
+      },
+    },
+  };
+  const { decks } = translateDecks([{
+    mainboard: [
+      { quantity: 1, nameEn: ' CARD   ONE ' },
+      { quantity: 1, nameEn: 'Card Two' },
+    ],
+    sideboard: [],
+  }], dictionary);
+  assert.equal(decks[0].mainboard[0].nameJa, '\u30AB\u30FC\u30C9\u4E00');
+  assert.equal(decks[0].mainboard[0].oracleId, 'one');
+  assert.equal(decks[0].mainboard[1].translationStatus, 'missing');
+});
+
+test('dictionary update script contains no card-specific processing list', async () => {
+  const source = await readFile('scripts/update-card-dictionary.mjs', 'utf8');
+  assert.doesNotMatch(source, /TARGET_CARDS|KNOWN_TRANSLATION_FIXES|CARD_FIXES/);
+  assert.doesNotMatch(
+    source,
+    /Great Hall of the Biblioplex|Vibrant Outburst|Emeritus of Ideation|Esper Origins/
+  );
 });

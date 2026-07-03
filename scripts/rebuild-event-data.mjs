@@ -1,4 +1,4 @@
-import { copyFile, mkdir, readdir } from 'node:fs/promises';
+import { access, copyFile, mkdir, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readJson } from './lib/fs-utils.mjs';
 import { translateDecks } from './lib/translate-decklists.mjs';
@@ -13,12 +13,22 @@ const dictionary = await readJson(join('data', 'cards', 'en-ja-map.json'), {
 await mkdir(join('public', 'data', 'events'), { recursive: true });
 
 let rebuilt = 0;
-for (const file of await safeReaddir(join('data', 'events'))) {
+const dataDirectory = join('data', 'events');
+const publicDirectory = join('public', 'data', 'events');
+const files = new Set([
+  ...(await safeReaddir(dataDirectory)),
+  ...(await safeReaddir(publicDirectory)),
+]);
+
+for (const file of files) {
   if (!file.endsWith('.json')) continue;
-  const path = join('data', 'events', file);
-  const eventData = await readJson(path);
+  const dataPath = join(dataDirectory, file);
+  const publicPath = join(publicDirectory, file);
+  const hasDataSource = await pathExists(dataPath);
+  const sourcePath = hasDataSource ? dataPath : publicPath;
+  const eventData = await readJson(sourcePath);
   if (!eventData?.event || eventData.event.status !== 'completed') {
-    await copyFile(path, join('public', 'data', 'events', file));
+    if (hasDataSource) await copyFile(dataPath, publicPath);
     continue;
   }
 
@@ -30,8 +40,8 @@ for (const file of await safeReaddir(join('data', 'events'))) {
   const { decks } = translateDecks(rawDecks, dictionary);
   const next = { ...eventData, decks };
   validateEventData(next);
-  await writeJsonAtomic(path, next);
-  await writeJsonAtomic(join('public', 'data', 'events', file), next);
+  if (hasDataSource) await writeJsonAtomic(dataPath, next);
+  await writeJsonAtomic(publicPath, next);
   rebuilt += 1;
 }
 
@@ -42,6 +52,15 @@ async function safeReaddir(path) {
     return await readdir(path);
   } catch {
     return [];
+  }
+}
+
+async function pathExists(path) {
+  try {
+    await access(path);
+    return true;
+  } catch {
+    return false;
   }
 }
 

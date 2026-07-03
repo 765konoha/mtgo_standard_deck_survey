@@ -19,6 +19,8 @@ export function buildCardDictionary({
     fromCardFaces: 0,
     aliases: 0,
     missingJapaneseCards: 0,
+    partialJapaneseCards: 0,
+    manualOverrides: 0,
   };
 
   for (const [oracleId, englishCards] of englishByOracle) {
@@ -31,24 +33,33 @@ export function buildCardDictionary({
 
     const aliases = collectAliases(englishCards);
     for (const alias of aliases) {
-      const faceName = alias.faceIndex == null
-        ? null
-        : getJapaneseFaceName(japaneseCard, alias.faceIndex);
+      const faceName = alias.faceIndex == null ? null : getJapaneseFaceName(japaneseCard, alias.faceIndex);
       const nameJa = faceName || (alias.faceIndex == null ? japaneseName.nameJa : null);
+      const translationStatus = faceName
+        ? 'complete'
+        : alias.faceIndex == null
+          ? japaneseName.status
+          : 'missing';
+      const translationSource = faceName
+        ? 'scryfall_card_faces'
+        : alias.faceIndex == null
+          ? sourceToTranslationSource(japaneseName.source)
+          : null;
       mergeEntry(cards, normalizeCardName(alias.name), {
         nameEn: alias.name,
         nameJa,
         detailUrl: japaneseCard?.scryfall_uri || englishCard.scryfall_uri || null,
         typeGroup: classifyTypeGroup(englishCard.type_line || facesTypeLine(englishCard)),
-        translationStatus: nameJa ? 'complete' : 'missing',
-        translationSource: nameJa ? 'scryfall_printed_name' : null,
+        translationStatus,
+        translationSource,
+        translatedFaces: alias.faceIndex == null ? japaneseName.translatedFaces : undefined,
         oracleId,
         layout: englishCard.layout || null,
       });
     }
     stats.aliases += aliases.length;
 
-    if (!japaneseName.nameJa) {
+    if (japaneseName.status !== 'complete') {
       stats.missingJapaneseCards += 1;
       unresolved.push({
         nameEn: englishCard.name,
@@ -58,11 +69,16 @@ export function buildCardDictionary({
     }
   }
 
-  applyManualOverrides(cards, manualOverrides);
+  stats.manualOverrides = applyManualOverrides(cards, manualOverrides);
   const remainingUnresolved = unresolved
     .filter((card) => !cards[normalizeCardName(card.nameEn)]?.nameJa)
     .sort((a, b) => a.nameEn.localeCompare(b.nameEn));
-  stats.missingJapaneseCards = remainingUnresolved.length;
+  stats.missingJapaneseCards = remainingUnresolved.filter(
+    (card) => cards[normalizeCardName(card.nameEn)]?.translationStatus === 'missing'
+  ).length;
+  stats.partialJapaneseCards = remainingUnresolved.filter(
+    (card) => cards[normalizeCardName(card.nameEn)]?.translationStatus === 'partial'
+  ).length;
   return {
     dictionary: {
       schemaVersion: 1,
@@ -76,20 +92,57 @@ export function buildCardDictionary({
 }
 
 export function getJapaneseName(card) {
-  if (!card || card.lang !== 'ja') return { nameJa: null, source: null };
+  const missing = {
+    nameJa: null,
+    source: null,
+    status: 'missing',
+    translatedFaces: [],
+  };
+  if (!card || card.lang !== 'ja') return missing;
   if (isTranslatedName(card.printed_name, card.name)) {
-    return { nameJa: card.printed_name, source: 'printed_name' };
+    return {
+      nameJa: card.printed_name,
+      source: 'printed_name',
+      status: 'complete',
+      translatedFaces: [],
+    };
   }
   const faces = card.card_faces || [];
-  const faceNames = faces.map((face) => face.printed_name);
+  const translatedFaces = faces.map((face, index) => ({
+    index,
+    nameEn: face.name,
+    nameJa: isTranslatedName(face.printed_name, face.name) ? face.printed_name : null,
+  }));
+  const faceNames = translatedFaces.map((face) => face.nameJa);
   if (
     faces.length > 0
     && faceNames.every(Boolean)
-    && faces.every((face) => isTranslatedName(face.printed_name, face.name))
   ) {
-    return { nameJa: faceNames.join(' // '), source: 'card_faces' };
+    return {
+      nameJa: faceNames.join(' // '),
+      source: 'card_faces',
+      status: 'complete',
+      translatedFaces,
+    };
   }
-  return { nameJa: null, source: null };
+  if (faceNames.some(Boolean)) {
+    return {
+      nameJa: null,
+      source: 'card_faces',
+      status: 'partial',
+      translatedFaces,
+    };
+  }
+  return missing;
+}
+
+export function unresolvedOracleIds(englishPrints, japanesePrints) {
+  const englishByOracle = groupByOracle(englishPrints);
+  const japaneseByOracle = groupByOracle(japanesePrints);
+  return [...englishByOracle.keys()].filter((oracleId) => {
+    const selected = selectJapaneseCard(japaneseByOracle.get(oracleId) || []);
+    return getJapaneseName(selected).status !== 'complete';
+  });
 }
 
 export function diagnoseCardNames({
@@ -155,10 +208,14 @@ function selectJapaneseCard(cards) {
   return [...cards].sort((a, b) => {
     const aName = getJapaneseName(a);
     const bName = getJapaneseName(b);
-    return Number(Boolean(bName.nameJa)) - Number(Boolean(aName.nameJa))
+    return statusScore(bName.status) - statusScore(aName.status)
       || sourceScore(bName.source) - sourceScore(aName.source)
       || String(b.released_at || '').localeCompare(String(a.released_at || ''));
   })[0] || null;
+}
+
+function statusScore(status) {
+  return status === 'complete' ? 2 : status === 'partial' ? 1 : 0;
 }
 
 function sourceScore(source) {
@@ -199,6 +256,7 @@ function mergeEntry(cards, key, candidate) {
 }
 
 function applyManualOverrides(cards, overrides) {
+  let applied = 0;
   for (const [name, override] of Object.entries(overrides || {})) {
     const key = normalizeCardName(name);
     const current = cards[key] || {
@@ -221,8 +279,11 @@ function applyManualOverrides(cards, overrides) {
       translationSource: override.nameJa
         ? 'manual_override'
         : current.translationSource || null,
+      translatedFaces: override.nameJa ? undefined : current.translatedFaces,
     };
+    if (override.nameJa) applied += 1;
   }
+  return applied;
 }
 
 function compactCard(card) {
@@ -277,6 +338,12 @@ function isTranslatedName(printedName, englishName) {
     printedName
     && normalizeCardName(printedName) !== normalizeCardName(englishName)
   );
+}
+
+function sourceToTranslationSource(source) {
+  if (source === 'printed_name') return 'scryfall_printed_name';
+  if (source === 'card_faces') return 'scryfall_card_faces';
+  return null;
 }
 
 function facesTypeLine(card) {

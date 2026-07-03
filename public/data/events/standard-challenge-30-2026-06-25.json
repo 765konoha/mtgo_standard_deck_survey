@@ -18,23 +18,173 @@
       "mainboardCount": 60,
       "sideboardCount": 15,
       "mainboard": [
-        {"quantity": 4, "nameEn": "The Wandering Emperor", "nameJa": "彷徨える皇帝", "detailUrl": "https://scryfall.com/card/neo/42/the-wandering-emperor", "category": "planeswalker", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Wedding Announcement", "nameJa": "婚礼の発表", "detailUrl": "https://scryfall.com/card/vow/45/wedding-announcement-wedding-festivity", "category": "enchantment", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Sunfall", "nameJa": "陽没", "detailUrl": "https://scryfall.com/card/mom/40/sunfall", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Farewell", "nameJa": "告別", "detailUrl": "https://scryfall.com/card/neo/12/farewell", "category": "sorcery", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Memory Deluge", "nameJa": "記憶の洪水", "detailUrl": "https://scryfall.com/card/mid/62/memory-deluge", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Make Disappear", "nameJa": "消滅", "detailUrl": "https://scryfall.com/card/snc/53/make-disappear", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Plains", "nameJa": "平地", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 6, "nameEn": "Island", "nameJa": "島", "detailUrl": null, "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Deserted Beach", "nameJa": "見捨てられた砂浜", "detailUrl": "https://scryfall.com/card/mid/260/deserted-beach", "category": "land", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Restless Anchorage", "nameJa": "休息の停泊地", "detailUrl": "https://scryfall.com/card/woe/262/restless-anchorage", "category": "land", "translationStatus": "complete"}
+        {
+          "quantity": 4,
+          "nameEn": "The Wandering Emperor",
+          "nameJa": "放浪皇",
+          "detailUrl": "https://scryfall.com/card/neo/42/ja/%E6%94%BE%E6%B5%AA%E7%9A%87-(the-wandering-emperor)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "oracleId": "0c7f18d5-36cb-4bc6-a358-443b97666215",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Wedding Announcement",
+          "nameJa": "婚礼の発表",
+          "detailUrl": "https://scryfall.com/card/vow/45/ja/%E5%A9%9A%E7%A4%BC%E3%81%AE%E7%99%BA%E8%A1%A8-%E5%A9%9A%E7%A4%BC%E3%81%AE%E7%A5%AD%E5%85%B8-(wedding-announcement-wedding-festivity)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "259ac30c-cc05-4c04-9b23-71283f84b808",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sunfall",
+          "nameJa": "太陽降下",
+          "detailUrl": "https://scryfall.com/card/mom/40/ja/%E5%A4%AA%E9%99%BD%E9%99%8D%E4%B8%8B-(sunfall)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "fb3f5097-0da0-458c-8508-60823567e2da",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Farewell",
+          "nameJa": "告別",
+          "detailUrl": "https://scryfall.com/card/fic/242/ja/%E5%91%8A%E5%88%A5-(farewell)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "4eb813fd-2d5a-4b02-8193-662681ef4e7d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Memory Deluge",
+          "nameJa": "記憶の氾濫",
+          "detailUrl": "https://scryfall.com/card/mid/62/ja/%E8%A8%98%E6%86%B6%E3%81%AE%E6%B0%BE%E6%BF%AB-(memory-deluge)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "e6fd55f2-7e26-469c-a44a-ea2eb90e19a9",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Make Disappear",
+          "nameJa": "かき消し",
+          "detailUrl": "https://scryfall.com/card/snc/49/ja/%E3%81%8B%E3%81%8D%E6%B6%88%E3%81%97-(make-disappear)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "5f12f665-f083-48ae-b61a-541051c996ec",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Plains",
+          "nameJa": "平地",
+          "detailUrl": "https://scryfall.com/card/tmt/191/ja/%E5%B9%B3%E5%9C%B0-(plains)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "bc71ebf6-2056-41f7-be35-b2e5c34afa99",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 6,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Deserted Beach",
+          "nameJa": "さびれた浜",
+          "detailUrl": "https://scryfall.com/card/who/270/ja/%E3%81%95%E3%81%B3%E3%82%8C%E3%81%9F%E6%B5%9C-(deserted-beach)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "f0ec8681-da50-466b-8cdd-1dc710deccd9",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Restless Anchorage",
+          "nameJa": "不穏な投錨地",
+          "detailUrl": "https://scryfall.com/card/lci/280/ja/%E4%B8%8D%E7%A9%8F%E3%81%AA%E6%8A%95%E9%8C%A8%E5%9C%B0-(restless-anchorage)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "91320daf-f69c-4350-b0fc-4bb37a6904b1",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ],
       "sideboard": [
-        {"quantity": 3, "nameEn": "Negate", "nameJa": "否認", "detailUrl": "https://scryfall.com/card/dmu/58/negate", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 2, "nameEn": "Destroy Evil", "nameJa": "悪の破壊", "detailUrl": "https://scryfall.com/card/dmu/17/destroy-evil", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 4, "nameEn": "Cult Conscript", "nameJa": "カルトの徴集兵", "detailUrl": "https://scryfall.com/card/dmu/90/cult-conscript", "category": "creature", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Disdainful Stroke", "nameJa": "軽蔑の視線", "detailUrl": "https://scryfall.com/card/snc/39/disdainful-stroke", "category": "instant", "translationStatus": "complete"},
-        {"quantity": 3, "nameEn": "Spell Pierce", "nameJa": "魔法貫通", "detailUrl": "https://scryfall.com/card/2xm/63/spell-pierce", "category": "instant", "translationStatus": "complete"}
+        {
+          "quantity": 3,
+          "nameEn": "Negate",
+          "nameJa": "否認",
+          "detailUrl": "https://scryfall.com/card/tmt/47/ja/%E5%90%A6%E8%AA%8D-(negate)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "3407fe41-fdd3-4119-8f70-4bc4590a379f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Destroy Evil",
+          "nameJa": "邪悪を打ち砕く",
+          "detailUrl": "https://scryfall.com/card/fic/240/ja/%E9%82%AA%E6%82%AA%E3%82%92%E6%89%93%E3%81%A1%E7%A0%95%E3%81%8F-(destroy-evil)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "b75e667a-1ceb-445a-acf4-ae1fd2dae9e7",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Cult Conscript",
+          "nameJa": "教団の徴集兵",
+          "detailUrl": "https://scryfall.com/card/dmu/88/ja/%E6%95%99%E5%9B%A3%E3%81%AE%E5%BE%B4%E9%9B%86%E5%85%B5-(cult-conscript)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Disdainful Stroke",
+          "nameJa": "軽蔑的な一撃",
+          "detailUrl": "https://scryfall.com/card/soa/17/ja/%E8%BB%BD%E8%94%91%E7%9A%84%E3%81%AA%E4%B8%80%E6%92%83-(disdainful-stroke)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "11e02134-7b1a-46a4-a89e-7539dd1efada",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Spell Pierce",
+          "nameJa": "呪文貫き",
+          "detailUrl": "https://scryfall.com/card/soa/23/ja/%E5%91%AA%E6%96%87%E8%B2%AB%E3%81%8D-(spell-pierce)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "d64b0848-0193-4025-ba62-63ecd8fb9f50",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name"
+        }
       ]
     }
   ]

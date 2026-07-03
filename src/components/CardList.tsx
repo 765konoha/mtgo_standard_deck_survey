@@ -62,7 +62,7 @@ interface CardRowProps {
 function CardRow({ card, displayMode }: CardRowProps) {
   const { primary, secondary } = getCardDisplayName(card, displayMode);
   const hasDetailUrl = Boolean(card.detailUrl);
-  const isUntranslated = card.translationStatus === 'missing';
+  const isUntranslated = card.translationStatus !== 'complete';
 
   const content = (
     <div className="flex items-start gap-2 py-1 px-2 -mx-2 rounded hover:bg-neutral-800/30 transition-colors group">

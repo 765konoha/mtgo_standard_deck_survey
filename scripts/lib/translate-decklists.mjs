@@ -14,8 +14,9 @@ export function translateDecks(decks, dictionary) {
       detailUrl: entry?.detailUrl || null,
       typeGroup: entry?.typeGroup || 'other',
       category: entry?.typeGroup || 'other',
-      translationStatus: entry?.nameJa ? 'complete' : 'missing',
-      translationSource: entry?.nameJa ? entry.translationSource || null : null,
+      oracleId: entry?.oracleId || null,
+      translationStatus: entry?.translationStatus || 'missing',
+      translationSource: entry?.translationSource || null,
     };
   };
 
