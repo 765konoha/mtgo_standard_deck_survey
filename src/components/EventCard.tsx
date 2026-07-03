@@ -1,12 +1,15 @@
 import { ExternalLink, Trophy, Users } from 'lucide-react';
 import type { Deck, Event, EventSummary, EventType } from '../types';
+import type { DeckMatch } from '../utils/cardSearch';
 import { formatDate, getPlacementLabel } from '../utils/helpers';
+import { formatDeckMatch } from '../utils/cardSearch';
 
 interface EventCardProps {
   eventSummary: EventSummary;
   eventData: Event;
   onDeckSelect: (event: EventSummary, deckId: string) => void;
   selectedDeckId: string | null;
+  deckMatches?: Map<string, DeckMatch> | null;
 }
 
 export function EventCard({
@@ -14,12 +17,17 @@ export function EventCard({
   eventData,
   onDeckSelect,
   selectedDeckId,
+  deckMatches,
 }: EventCardProps) {
   const { event, decks } = eventData;
   const isChallenge = event.eventType === 'challenge';
-  const sortedDecks = isChallenge
+  const orderedDecks = isChallenge
     ? [...decks].sort((a, b) => (a.placement ?? 99) - (b.placement ?? 99))
     : decks;
+  // When a card is selected, only show decks that contain it.
+  const sortedDecks = deckMatches
+    ? orderedDecks.filter((deck) => deckMatches.has(deck.id))
+    : orderedDecks;
 
   return (
     <div className="card">
@@ -48,7 +56,11 @@ export function EventCard({
             <div className="text-xs text-neutral-500 mt-1 space-x-3">
               <span>開催: {formatDate(event.eventDate)}</span>
               <span>掲載: {formatDate(event.publishedDate)}</span>
-              <span>{eventSummary.deckCount}デッキ</span>
+              <span>
+                {deckMatches
+                  ? `${sortedDecks.length} / ${eventSummary.deckCount}デッキ`
+                  : `${eventSummary.deckCount}デッキ`}
+              </span>
             </div>
           </div>
           <a
@@ -72,6 +84,7 @@ export function EventCard({
             eventType={event.eventType}
             isSelected={selectedDeckId === deck.id}
             onClick={() => onDeckSelect(eventSummary, deck.id)}
+            match={deckMatches?.get(deck.id) ?? null}
           />
         ))}
       </div>
@@ -84,11 +97,13 @@ interface DeckRowProps {
   eventType: EventType;
   isSelected: boolean;
   onClick: () => void;
+  match: DeckMatch | null;
 }
 
-function DeckRow({ deck, eventType, isSelected, onClick }: DeckRowProps) {
+function DeckRow({ deck, eventType, isSelected, onClick, match }: DeckRowProps) {
   const isChallenge = eventType === 'challenge';
   const placement = getPlacementLabel(deck);
+  const matchLabel = match ? formatDeckMatch(match) : null;
 
   return (
     <button
@@ -120,6 +135,11 @@ function DeckRow({ deck, eventType, isSelected, onClick }: DeckRowProps) {
             Main {deck.mainboardCount} / Side {deck.sideboardCount}
           </div>
         </div>
+        {matchLabel && (
+          <div className="shrink-0 text-xs font-medium text-primary-300 bg-primary-950/60 px-2 py-0.5 rounded">
+            {matchLabel}
+          </div>
+        )}
       </div>
     </button>
   );

@@ -89,7 +89,7 @@ test('public indexes contain multiple days but retain old event JSON on disk', a
   assert.deepEqual(result.period, { startDate: '2026-06-24', endDate: '2026-07-03' });
   assert.deepEqual(index.events.map((event) => event.id), ['newest', 'boundary']);
   assert.deepEqual(cardIndex.cards.map((card) => card.nameEn), ['Island', 'Lightning Bolt']);
-  assert.ok(cardIndex.cards.every((card) => card.eventIds.length === 1));
+  assert.ok(cardIndex.cards.every((card) => card.deckCount === 1 && card.deckRefs.length === 1));
   assert.ok(await readFile(join(dataDir, 'too-old.json'), 'utf8'));
 });
 

@@ -1,7 +1,47 @@
 import { useState, useEffect, useCallback } from 'react';
-import type { IndexData, Event, EventSummary } from '../types';
+import type { CardSearchIndex, IndexData, Event, EventSummary } from '../types';
 
 const DATA_BASE_PATH = './data';
+
+export function useCardSearchIndex() {
+  const [index, setIndex] = useState<CardSearchIndex | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
+
+  useEffect(() => {
+    let mounted = true;
+    setLoading(true);
+    setError(null);
+
+    fetch(`${DATA_BASE_PATH}/card-search-index.json`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+        }
+        return res.json();
+      })
+      .then((json: CardSearchIndex) => {
+        if (!json || !Array.isArray(json.cards)) {
+          throw new Error('検索インデックスの形式が不正です');
+        }
+        if (mounted) setIndex(json);
+      })
+      .catch((err) => {
+        // The deck list must keep working even if search data fails to load,
+        // so we surface the error to disable search only, not the whole page.
+        if (mounted) setError(err instanceof Error ? err : new Error(String(err)));
+      })
+      .finally(() => {
+        if (mounted) setLoading(false);
+      });
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  return { index, loading, error };
+}
 
 export function useIndexData() {
   const [data, setData] = useState<IndexData | null>(null);

@@ -6,7 +6,7 @@ MTGOで公開されるStandard League 5-0とStandard Challenge Top 8のデッキ
 
 - React 18 / TypeScript / Vite / Tailwind CSS
 - データ取得と解析: Node.js scripts
-- 公開データ: `public/data/index.json` と `public/data/events/*.json`
+- 公開データ: `public/data/index.json`, `public/data/events/*.json`, `public/data/card-search-index.json`
 - 永続データ: `data/state/events.json`, `data/events/*.json`, `data/cards/en-ja-map.json`
 - 生HTML保存: `data/raw/events/*.html`
 
@@ -109,12 +109,38 @@ npm run build:index
 
 カードは `quantity`, `nameEn`, `nameJa`, `detailUrl`, `typeGroup`, `translationStatus` を持ちます。
 
+`public/data/card-search-index.json`（カード検索用、直近10日間のcompletedイベントのみ）:
+
+```json
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-03T12:00:00+09:00",
+  "period": { "startDate": "2026-06-24", "endDate": "2026-07-03", "lookbackDays": 10 },
+  "cards": [
+    {
+      "key": "lightning strike",
+      "nameEn": "Lightning Strike",
+      "nameJa": "稲妻の一撃",
+      "normalizedNameEn": "lightning strike",
+      "normalizedNameJa": "稲妻の一撃",
+      "deckCount": 3,
+      "deckRefs": [
+        { "eventId": "standard-challenge-...", "deckId": "8-boin", "mainboardQuantity": 3, "sideboardQuantity": 0 }
+      ]
+    }
+  ]
+}
+```
+
+`index.json`／`build:index` 生成時に一緒に生成します。英語名の正規化キー（`scripts/lib/normalize-card-name.mjs`）でカードをまとめ、同一デッキのメイン／サイドは1つの `deckRef` に統合します。`scripts/lib/validate-search-index.mjs` で検証し、不正な場合は既存ファイルを上書きしません。UIは日本語名・英語名の部分一致で検索し、選択カードを含むデッキだけを日付・イベント種別とAND条件で絞り込みます。
+
 ## UI
 
 既存の1ページ構成を維持しています。
 
 - 直近10日間の日付切り替え
 - すべて / League / Challengeの絞り込み
+- カード名検索（日本語名・英語名、サジェスト、選択カードを含むデッキの抽出、含有枚数表示）
 - Challenge順位、League 5-0表示
 - デッキ詳細、メイン/サイド分離
 - 日本語 / 日本語+英語 / 英語表示
