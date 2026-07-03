@@ -19,6 +19,8 @@ permissions:
 
 jobs:
   update:
+    outputs:
+      pages_changed: ${{ steps.pages_changes.outputs.changed }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,13 +36,23 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run build
+      - name: Check for Pages data changes
+        id: pages_changes
+        run: |
+          if [[ -n "$(git status --porcelain -- public/data)" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Commit dictionary changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore: update card dictionary'
           file_pattern: 'data/cards data/events public/data'
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-      - uses: actions/deploy-pages@v4
+
+  deploy:
+    needs: update
+    if: needs.update.outputs.pages_changed == 'true'
+    uses: ./.github/workflows/deploy-pages.yml
+    with:
+      ref: main
