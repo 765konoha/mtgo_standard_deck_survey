@@ -2,6 +2,7 @@ import { readdir, rename } from 'node:fs/promises';
 import { join } from 'node:path';
 import {
   buildCardDictionary,
+  mergeSetScopedDictionary,
   unresolvedOracleIds,
 } from './lib/build-card-dictionary.mjs';
 import { readJson, toIsoTokyo, writeJsonAtomic } from './lib/fs-utils.mjs';
@@ -20,6 +21,15 @@ const OVERRIDES_PATH = join('data', 'cards', 'manual-overrides.json');
 const CACHE_PATH = join('data', 'cards', 'scryfall-ja-cache.json');
 const ORACLE_RECHECK_BATCH_SIZE = Number(process.env.SCRYFALL_ORACLE_BATCH_SIZE || 10);
 const COLLECTION_BATCH_SIZE = 75;
+// Cached "no Japanese prints" answers expire so late-arriving Scryfall
+// language data (e.g. a brand-new set) is eventually re-checked.
+const NEGATIVE_CACHE_TTL_DAYS = Number(process.env.SCRYFALL_NEGATIVE_CACHE_TTL_DAYS || 7);
+const TARGET_SET_CODE = parseSetCode();
+
+if (TARGET_SET_CODE) {
+  await runSetScopedUpdate(TARGET_SET_CODE);
+  process.exit(0);
+}
 
 console.log('[DICTIONARY] loading Standard English cards');
 const standardEnglishPrints = await fetchSearch(ENGLISH_QUERY);
@@ -69,7 +79,7 @@ const eventEnglishPrints = missingEventNames
 const englishPrints = deduplicatePrints([...standardEnglishPrints, ...eventEnglishPrints]);
 const unresolvedIds = unresolvedOracleIds(englishPrints, standardJapanesePrints);
 const recheckedPrints = [];
-const uncachedIds = unresolvedIds.filter((oracleId) => !cache.oracleIds[oracleId]);
+const uncachedIds = unresolvedIds.filter((oracleId) => shouldRecheckOracle(cache.oracleIds[oracleId]));
 
 console.log(`[DICTIONARY] unresolved oracle_ids to recheck: ${unresolvedIds.length}`);
 console.log(`[DICTIONARY] uncached oracle_ids: ${uncachedIds.length}`);
@@ -134,13 +144,13 @@ for (const card of unresolved) {
   );
 }
 
-async function fetchSearch(query) {
+async function fetchSearch(query, { allowNotFound = false } = {}) {
   const cards = [];
   let pageCount = 0;
   let nextUrl = buildSearchUrl(query);
   while (nextUrl) {
     pageCount += 1;
-    const page = await fetchJson(nextUrl);
+    const page = await fetchJson(nextUrl, { allowNotFound });
     const pageCards = Array.isArray(page.data) ? page.data : [];
     cards.push(...pageCards);
     console.log(
@@ -233,8 +243,134 @@ function compactCachedCard(card) {
     type_line: card.type_line || null,
     released_at: card.released_at,
     set: card.set,
+    set_name: card.set_name || null,
+    set_type: card.set_type || null,
     collector_number: card.collector_number,
   };
+}
+
+function parseSetCode(args = process.argv.slice(2), env = process.env) {
+  let value = env.SET_CODE || null;
+  for (let index = 0; index < args.length; index += 1) {
+    if (args[index].startsWith('--set-code=')) value = args[index].split('=', 2)[1];
+    if (args[index] === '--set-code') value = args[index + 1];
+  }
+  if (value == null || String(value).trim() === '') return null;
+  const code = String(value).trim();
+  if (!/^[a-z0-9]{2,6}$/i.test(code)) {
+    throw new Error(`set-code must be a 2-6 character set code: ${value}`);
+  }
+  return code.toUpperCase();
+}
+
+function shouldRecheckOracle(cacheEntry, now = Date.now()) {
+  if (!cacheEntry) return true;
+  if ((cacheEntry.prints || []).length > 0) return false;
+  const checkedAt = new Date(cacheEntry.checkedAt || 0).getTime();
+  if (!Number.isFinite(checkedAt)) return true;
+  return now - checkedAt > NEGATIVE_CACHE_TTL_DAYS * 86400000;
+}
+
+// Updates the dictionary for a single set (e.g. SET_CODE=MSH). Fetches only
+// that set's printings, force-refreshes the Japanese-print cache for its
+// unresolved oracle IDs, and safely merges the result into the existing
+// dictionary without touching entries from other sets.
+async function runSetScopedUpdate(setCode) {
+  const setQuery = `set:${setCode.toLowerCase()}`;
+  console.log(`[SET] target set: ${setCode}`);
+  const englishPrints = await fetchSearch(`${setQuery} lang:en`);
+  console.log(`[SET] English printings fetched: ${englishPrints.length}`);
+  // Scryfall answers 404 for zero-result searches; a set with no Japanese
+  // prints yet is an expected state, not an error.
+  const japanesePrints = await fetchSearch(`${setQuery} lang:ja`, { allowNotFound: true });
+  console.log(`[SET] Japanese printings fetched: ${japanesePrints.length}`);
+  if (englishPrints.length === 0) {
+    throw new Error(`No English printings found for set ${setCode}; refusing to update`);
+  }
+
+  const cache = await readJson(CACHE_PATH, {
+    schemaVersion: 1,
+    oracleIds: {},
+    englishNames: {},
+  });
+  cache.oracleIds ||= {};
+  cache.englishNames ||= {};
+  const oracleIds = [...new Set(englishPrints.map((card) => card.oracle_id).filter(Boolean))];
+  console.log(`[SET] Unique oracle IDs: ${oracleIds.length}`);
+
+  // Force-refresh: a set-scoped update intentionally ignores cached negative
+  // answers so newly published Japanese data is picked up immediately.
+  const unresolvedIds = unresolvedOracleIds(englishPrints, japanesePrints);
+  const recheckedPrints = [];
+  console.log(`[SET] oracle IDs rechecked for Japanese prints: ${unresolvedIds.length}`);
+  for (let index = 0; index < unresolvedIds.length; index += ORACLE_RECHECK_BATCH_SIZE) {
+    const batch = unresolvedIds.slice(index, index + ORACLE_RECHECK_BATCH_SIZE);
+    const prints = await fetchJapanesePrintsByOracleIds(batch);
+    for (const oracleId of batch) {
+      cache.oracleIds[oracleId] = {
+        checkedAt: toIsoTokyo(),
+        prints: prints
+          .filter((card) => card.oracle_id === oracleId)
+          .map(compactCachedCard),
+      };
+    }
+    recheckedPrints.push(...prints.map(compactCachedCard));
+    cache.updatedAt = toIsoTokyo();
+    await writeJsonAtomic(CACHE_PATH, cache);
+    if (index + ORACLE_RECHECK_BATCH_SIZE < unresolvedIds.length) await sleep(REQUEST_DELAY_MS);
+  }
+
+  const manualOverrides = await readJson(OVERRIDES_PATH, {});
+  const allJapanese = deduplicatePrints([...japanesePrints, ...recheckedPrints]);
+  const partialKeys = new Set(englishPrints.flatMap(cardEnglishAliases));
+  const scopedOverrides = Object.fromEntries(
+    Object.entries(manualOverrides).filter(([name]) => partialKeys.has(normalizeCardName(name)))
+  );
+  const { dictionary: partial, stats, unresolved } = buildCardDictionary({
+    englishPrints,
+    japanesePrints: allJapanese,
+    manualOverrides: scopedOverrides,
+    generatedAt: toIsoTokyo(),
+    source: {
+      name: 'Scryfall Cards Search API',
+      url: CARDS_SEARCH_API,
+      englishQuery: `${setQuery} lang:en`,
+      japaneseQuery: `${setQuery} lang:ja`,
+      includeMultilingual: true,
+      unique: 'prints',
+      joinKey: 'oracle_id',
+    },
+  });
+
+  const existing = await readJson(OUTPUT_PATH, { schemaVersion: 1, cards: {} });
+  const previousTranslated = Object.values(existing.cards || {}).filter((entry) => entry.nameJa).length;
+  const { dictionary: merged, mergeStats } = mergeSetScopedDictionary(existing, partial);
+  const nextTranslated = Object.values(merged.cards).filter((entry) => entry.nameJa).length;
+  if (nextTranslated < previousTranslated) {
+    throw new Error(
+      `Set-scoped update would reduce translated entries from ${previousTranslated} to ${nextTranslated}; aborting`
+    );
+  }
+
+  await writeJsonAtomic(TEMP_PATH, merged);
+  validateDictionary(await readJson(TEMP_PATH));
+  await rename(TEMP_PATH, OUTPUT_PATH);
+
+  console.log(`[TRANSLATE] printed_name resolved: ${stats.fromPrintedName}`);
+  console.log(`[TRANSLATE] card_faces resolved: ${stats.fromCardFaces}`);
+  console.log(`[TRANSLATE] unchanged existing translations: ${mergeStats.translationsPreserved}`);
+  console.log(`[TRANSLATE] translations adopted: ${mergeStats.translationsAdopted}`);
+  console.log(`[TRANSLATE] entries added: ${mergeStats.added}`);
+  console.log(`[TRANSLATE] entries updated: ${mergeStats.updated}`);
+  console.log(`[TRANSLATE] missing after update: ${unresolved.length}`);
+  for (const card of unresolved) {
+    const cachedPrints = cache.oracleIds[card.oracleId]?.prints || [];
+    console.log(
+      `[SET][UNRESOLVED] ${card.nameEn} | oracle_id=${card.oracleId} | layout=${card.layout}`
+      + ` | japanese prints=${cachedPrints.length}`
+      + `${cachedPrints.length ? ` | ${cachedPrints.map(describePrint).join('; ')}` : ''}`
+    );
+  }
 }
 
 function cardEnglishAliases(card) {
@@ -301,6 +437,33 @@ function validateDictionary(value) {
     if (entry.translationStatus === 'complete' && !entry.translationSource) {
       throw new Error(`Complete entry has no translationSource: ${key}`);
     }
+    validateEntrySetAttributes(key, entry);
+  }
+}
+
+function validateEntrySetAttributes(key, entry) {
+  // Set attributes are optional for backward compatibility, but must be
+  // internally consistent when present.
+  if (entry.setCodes === undefined && entry.sets === undefined && entry.primarySetCode === undefined) {
+    return;
+  }
+  if (!Array.isArray(entry.setCodes)) {
+    throw new Error(`setCodes must be an array: ${key}`);
+  }
+  if (new Set(entry.setCodes).size !== entry.setCodes.length) {
+    throw new Error(`setCodes must not contain duplicates: ${key}`);
+  }
+  for (const code of entry.setCodes) {
+    if (typeof code !== 'string' || code !== code.toUpperCase()) {
+      throw new Error(`setCodes must be uppercase strings: ${key}`);
+    }
+  }
+  if (entry.primarySetCode != null && !entry.setCodes.includes(entry.primarySetCode)) {
+    throw new Error(`primarySetCode must be null or one of setCodes: ${key}`);
+  }
+  const setListCodes = (entry.sets || []).map((set) => set.code);
+  if (JSON.stringify(setListCodes) !== JSON.stringify(entry.setCodes)) {
+    throw new Error(`sets and setCodes are inconsistent: ${key}`);
   }
 }
 

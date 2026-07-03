@@ -1,6 +1,6 @@
 import { AlertCircle, AlertTriangle, Clock } from 'lucide-react';
 import type { CardSearchEntry, EventSummary } from '../types';
-import type { DeckMatch } from '../utils/cardSearch';
+import type { DeckMatch, ExpansionDeckMatch } from '../utils/cardSearch';
 import { useEventData } from '../hooks/useData';
 import { formatDate } from '../utils/helpers';
 import { EventCard } from './EventCard';
@@ -13,6 +13,9 @@ interface EventListProps {
   selectedDeckId: string | null;
   selectedCard: CardSearchEntry | null;
   deckMatchIndex: Map<string, Map<string, DeckMatch>>;
+  selectedExpansion: string | null;
+  expansionDeckIndex: Map<string, Map<string, ExpansionDeckMatch>>;
+  visibleDecks: Map<string, Set<string>> | null;
 }
 
 export function EventList({
@@ -23,20 +26,27 @@ export function EventList({
   selectedDeckId,
   selectedCard,
   deckMatchIndex,
+  selectedExpansion,
+  expansionDeckIndex,
+  visibleDecks,
 }: EventListProps) {
   const filteredEvents = events.filter((event) => {
     if (selectedDate && event.eventDate !== selectedDate) return false;
     if (eventTypeFilter !== 'all' && event.eventType !== eventTypeFilter) return false;
-    // When a card is selected, only events with a matching deck remain (AND).
-    if (selectedCard && !deckMatchIndex.has(event.id)) return false;
+    // Card / expansion filters (AND): only events with a matching deck remain.
+    if (visibleDecks && !visibleDecks.has(event.id)) return false;
     return true;
   });
 
   if (filteredEvents.length === 0) {
-    if (selectedCard) {
+    if (selectedCard || selectedExpansion) {
       return (
         <div className="text-center py-12">
-          <p className="text-neutral-300">選択したカードを含むデッキはありません。</p>
+          <p className="text-neutral-300">
+            {selectedCard
+              ? '選択したカードを含むデッキはありません。'
+              : '選択したエキスパンションのカードを含むデッキはありません。'}
+          </p>
           <p className="text-sm text-neutral-500 mt-2">
             日付やイベント種別の条件を変更してください。
           </p>
@@ -89,6 +99,11 @@ export function EventList({
                 onDeckSelect={onDeckSelect}
                 selectedDeckId={selectedDeckId}
                 deckMatches={selectedCard ? deckMatchIndex.get(event.id) ?? null : null}
+                expansionCode={selectedExpansion}
+                expansionMatches={
+                  selectedExpansion ? expansionDeckIndex.get(event.id) ?? null : null
+                }
+                visibleDeckIds={visibleDecks ? visibleDecks.get(event.id) ?? new Set() : null}
               />
             ))}
           </div>
@@ -103,6 +118,9 @@ interface EventCardWrapperProps {
   onDeckSelect: (event: EventSummary, deckId: string) => void;
   selectedDeckId: string | null;
   deckMatches: Map<string, DeckMatch> | null;
+  expansionCode: string | null;
+  expansionMatches: Map<string, ExpansionDeckMatch> | null;
+  visibleDeckIds: Set<string> | null;
 }
 
 function EventCardWrapper({
@@ -110,6 +128,9 @@ function EventCardWrapper({
   onDeckSelect,
   selectedDeckId,
   deckMatches,
+  expansionCode,
+  expansionMatches,
+  visibleDeckIds,
 }: EventCardWrapperProps) {
   const { data, loading, error } = useEventData(event);
 
@@ -148,6 +169,9 @@ function EventCardWrapper({
       onDeckSelect={onDeckSelect}
       selectedDeckId={selectedDeckId}
       deckMatches={deckMatches}
+      expansionCode={expansionCode}
+      expansionMatches={expansionMatches}
+      visibleDeckIds={visibleDeckIds}
     />
   );
 }

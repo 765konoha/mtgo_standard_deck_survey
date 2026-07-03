@@ -36,6 +36,17 @@ export function validateEventData(eventData) {
       if (!Number.isInteger(card.quantity) || card.quantity <= 0) {
         errors.push(`deck ${deckIndex} card ${cardIndex}: quantity must be positive`);
       }
+      // Expansion attributes are optional (older events may predate them) but
+      // must be consistent when present.
+      if (card.setCodes !== undefined && !Array.isArray(card.setCodes)) {
+        errors.push(`deck ${deckIndex} card ${cardIndex}: setCodes must be an array`);
+      }
+      if (
+        card.primarySetCode != null
+        && !(Array.isArray(card.setCodes) && card.setCodes.includes(card.primarySetCode))
+      ) {
+        errors.push(`deck ${deckIndex} card ${cardIndex}: primarySetCode must be null or in setCodes`);
+      }
     }
   }
 

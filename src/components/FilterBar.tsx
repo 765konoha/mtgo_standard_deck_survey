@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight, Languages } from 'lucide-react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { ChevronLeft, ChevronRight, Languages, Package } from 'lucide-react';
 import type { CardNameDisplayMode, CardSearchEntry, CardSearchIndex } from '../types';
 import { formatDate, formatShortDate } from '../utils/helpers';
 import { CardSearchBox } from './CardSearchBox';
@@ -17,6 +17,8 @@ interface FilterBarProps {
   selectedCard: CardSearchEntry | null;
   onCardSelect: (card: CardSearchEntry) => void;
   onCardClear: () => void;
+  selectedExpansion: string | null;
+  onExpansionChange: (code: string | null) => void;
 }
 
 export function FilterBar({
@@ -32,7 +34,23 @@ export function FilterBar({
   selectedCard,
   onCardSelect,
   onCardClear,
+  selectedExpansion,
+  onExpansionChange,
 }: FilterBarProps) {
+  // Expansion choices come from the live search index (only sets that actually
+  // appear in the current 10-day window), never from a hardcoded list.
+  const expansionOptions = useMemo(() => {
+    if (cardSearchIndex?.expansions?.length) return cardSearchIndex.expansions;
+    const codes = new Map<string, number>();
+    for (const card of cardSearchIndex?.cards ?? []) {
+      for (const code of card.setCodes ?? []) {
+        codes.set(code, (codes.get(code) ?? 0) + 1);
+      }
+    }
+    return [...codes.entries()]
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([code, cardCount]) => ({ code, name: null, cardCount, deckCount: 0 }));
+  }, [cardSearchIndex]);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
@@ -174,6 +192,28 @@ export function FilterBar({
               </div>
             </div>
 
+            {expansionOptions.length > 0 && (
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1 text-neutral-400">
+                  <Package className="w-4 h-4" />
+                  <span className="text-xs hidden sm:inline">エキスパンション</span>
+                </div>
+                <select
+                  value={selectedExpansion ?? ''}
+                  onChange={(e) => onExpansionChange(e.target.value || null)}
+                  className="px-2 py-1.5 bg-neutral-800 border border-neutral-700 rounded-lg text-neutral-100 text-sm max-w-[10rem] focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  aria-label="エキスパンションで絞り込み"
+                >
+                  <option value="">すべて</option>
+                  {expansionOptions.map((expansion) => (
+                    <option key={expansion.code} value={expansion.code} title={expansion.name ?? undefined}>
+                      {expansion.code}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
+
             <div className="w-full sm:w-auto sm:ml-auto">
               <CardSearchBox
                 index={cardSearchIndex}
@@ -181,6 +221,7 @@ export function FilterBar({
                 selectedCard={selectedCard}
                 onSelect={onCardSelect}
                 onClear={onCardClear}
+                expansionFilter={selectedExpansion}
               />
             </div>
           </div>

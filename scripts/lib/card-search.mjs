@@ -27,6 +27,38 @@ function cardTier(card, query) {
   return Math.min(matchTier(en, query), ja ? matchTier(ja, query) : NO_MATCH);
 }
 
+// Builds eventId -> (deckId -> {mainboardQuantity, sideboardQuantity,
+// cardKinds}) for decks containing at least one card of the expansion.
+// Mirrors buildExpansionDeckIndex in src/utils/cardSearch.ts — keep in sync.
+export function buildExpansionDeckIndex(index, expansionCode) {
+  const result = new Map();
+  if (!index || !expansionCode) return result;
+  for (const card of index.cards || []) {
+    if (!(card.setCodes || []).includes(expansionCode)) continue;
+    for (const ref of card.deckRefs || []) {
+      const byDeck = result.get(ref.eventId) || new Map();
+      const match = byDeck.get(ref.deckId) || {
+        mainboardQuantity: 0,
+        sideboardQuantity: 0,
+        cardKinds: 0,
+      };
+      match.mainboardQuantity += ref.mainboardQuantity;
+      match.sideboardQuantity += ref.sideboardQuantity;
+      match.cardKinds += 1;
+      byDeck.set(ref.deckId, match);
+      result.set(ref.eventId, byDeck);
+    }
+  }
+  return result;
+}
+
+// Filters suggestion candidates to an expansion before ranking. Mirrors the
+// pre-filter used by CardSearchBox in the browser.
+export function filterCardsByExpansion(cards, expansionCode) {
+  if (!expansionCode) return cards;
+  return (cards || []).filter((card) => (card.setCodes || []).includes(expansionCode));
+}
+
 // Rank card entries against a raw query. Returns the best `limit` matches,
 // ordered by match tier, then deck count (desc), then Japanese and English name.
 export function rankCardSuggestions(cards, rawQuery, limit = 10) {

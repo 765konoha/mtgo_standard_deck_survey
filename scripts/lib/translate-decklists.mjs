@@ -17,6 +17,8 @@ export function translateDecks(decks, dictionary) {
       oracleId: entry?.oracleId || null,
       translationStatus: entry?.translationStatus || 'missing',
       translationSource: entry?.translationSource || null,
+      setCodes: entry?.setCodes || [],
+      primarySetCode: entry?.primarySetCode ?? null,
     };
   };
 

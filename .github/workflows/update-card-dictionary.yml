@@ -3,10 +3,21 @@ name: Update card dictionary
 on:
   workflow_dispatch:
     inputs:
-      rebuild_events:
-        description: '既存イベントJSONを再変換する'
+      set_code:
+        description: '更新対象セットコード（例: MSH）。空欄は全体更新'
         required: false
-        default: 'true'
+        default: ''
+        type: string
+      retranslate_events:
+        description: '既存イベントJSONを再変換する'
+        required: true
+        default: true
+        type: boolean
+      rebuild_search_index:
+        description: '検索インデックスを再生成する'
+        required: true
+        default: true
+        type: boolean
 
 concurrency:
   group: update-card-dictionary
@@ -30,10 +41,17 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run update:dictionary
+        env:
+          SET_CODE: ${{ inputs.set_code }}
       - run: npm run rebuild:data
-        if: ${{ inputs.rebuild_events != 'false' }}
+        if: ${{ inputs.retranslate_events }}
       - run: npm run build:index
+        if: ${{ inputs.rebuild_search_index }}
       - run: npm run audit:translations
+      - run: npm run audit:set
+        if: ${{ inputs.set_code != '' }}
+        env:
+          SET_CODE: ${{ inputs.set_code }}
       - run: npm run typecheck
       - run: npm test
       - run: npm run build

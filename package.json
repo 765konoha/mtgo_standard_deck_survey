@@ -14,7 +14,8 @@
     "update:dictionary": "node scripts/update-card-dictionary.mjs",
     "rebuild:data": "node scripts/rebuild-event-data.mjs",
     "build:index": "node scripts/build-index.mjs",
-    "audit:translations": "node scripts/audit-translations.mjs"
+    "audit:translations": "node scripts/audit-translations.mjs",
+    "audit:set": "node scripts/audit-set-translations.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
