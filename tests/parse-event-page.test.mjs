@@ -9,6 +9,15 @@ test('detects pending publication when no deck area exists', () => {
   assert.equal(result.status, 'pending_publication');
 });
 
+test('treats a redirect to the decklists index as pending publication', () => {
+  const result = parseEventPage(
+    '<html><body><div class="container-page-fluid decklists-page">Latest decklists</div></body></html>',
+    { eventType: 'league' }
+  );
+  assert.equal(result.status, 'pending_publication');
+  assert.equal(result.reason, 'decklists_not_published');
+});
+
 test('parses a league 5-0 deck', () => {
   const result = parseEventPage(
     `

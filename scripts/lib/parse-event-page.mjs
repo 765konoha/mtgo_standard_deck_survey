@@ -8,6 +8,15 @@ export function parseEventPage(html, eventSummary) {
     return parseEmbeddedDecklistsData(embeddedData, eventSummary);
   }
 
+  if (/\bdecklists-page\b/i.test(html)) {
+    return {
+      status: 'pending_publication',
+      reason: 'decklists_not_published',
+      decks: [],
+      hasDeckSignals: false,
+    };
+  }
+
   const text = htmlToText(html);
   const hasDeckSignals = /decklist|main deck|sideboard|player|place|finish|5-0/i.test(text);
   const rawSections = splitDeckSections(text);

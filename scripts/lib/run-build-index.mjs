@@ -1,4 +1,5 @@
 export async function buildIndex() {
-  await import('../build-index.mjs');
+  const { buildPublicIndexes } = await import('./build-public-index.mjs');
+  return buildPublicIndexes();
 }
 

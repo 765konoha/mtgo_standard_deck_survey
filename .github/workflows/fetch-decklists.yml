@@ -9,7 +9,18 @@ on:
       force_refetch:
         description: 'Completed eventsも再取得する'
         required: false
-        default: 'false'
+        default: false
+        type: boolean
+      lookback_days:
+        description: '過去何日分のイベントを遡って取得するか'
+        required: false
+        default: '3'
+        type: string
+      force_backfill:
+        description: '過去イベントをバックフィルする'
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: fetch-mtgo-decklists
@@ -34,7 +45,9 @@ jobs:
       - run: npm ci
       - run: npm run fetch:decklists
         env:
-          FORCE_REFETCH: ${{ inputs.force_refetch || 'false' }}
+          FORCE_REFETCH: ${{ inputs.force_refetch || false }}
+          FORCE_BACKFILL: ${{ inputs.force_backfill || false }}
+          LOOKBACK_DAYS: ${{ inputs.lookback_days || '3' }}
       - run: npm run typecheck
       - run: npm test
       - run: npm run build

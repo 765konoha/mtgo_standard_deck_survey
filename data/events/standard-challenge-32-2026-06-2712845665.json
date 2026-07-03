@@ -1,0 +1,2354 @@
+{
+  "schemaVersion": 1,
+  "event": {
+    "id": "standard-challenge-32-2026-06-2712845665",
+    "name": "Standard Challenge 32 June 27 2026",
+    "eventType": "challenge",
+    "eventDate": "2026-06-27",
+    "publishedDate": "2026-06-27",
+    "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-06-2712845665",
+    "status": "completed",
+    "firstSeenAt": "2026-07-03T09:33:27+09:00",
+    "fetchedAt": "2026-07-03T09:36:16+09:00",
+    "completedAt": "2026-07-03T09:36:16+09:00"
+  },
+  "decks": [
+    {
+      "id": "1-arianne",
+      "player": "Arianne",
+      "placement": 1,
+      "record": null,
+      "mainboardCount": 60,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 4,
+          "nameEn": "Boomerang Basics",
+          "nameJa": "ブーメランの基礎",
+          "detailUrl": "https://scryfall.com/card/tla/46/ja/%E3%83%96%E3%83%BC%E3%83%A1%E3%83%A9%E3%83%B3%E3%81%AE%E5%9F%BA%E7%A4%8E-(boomerang-basics)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Bounce Off",
+          "nameJa": "跳ね弾き",
+          "detailUrl": "https://scryfall.com/card/dft/39/ja/%E8%B7%B3%E3%81%AD%E5%BC%BE%E3%81%8D-(bounce-off)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Burst Lightning",
+          "nameJa": "噴出の稲妻",
+          "detailUrl": "https://scryfall.com/card/soa/41/ja/%E5%99%B4%E5%87%BA%E3%81%AE%E7%A8%B2%E5%A6%BB-(burst-lightning)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Namor the Sub-Mariner",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Eddymurk Crab",
+          "nameJa": "渦泥の蟹",
+          "detailUrl": "https://scryfall.com/card/blb/48/ja/%E6%B8%A6%E6%B3%A5%E3%81%AE%E8%9F%B9-(eddymurk-crab)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Flow State",
+          "nameJa": "没頭",
+          "detailUrl": "https://scryfall.com/card/sos/49/ja/%E6%B2%A1%E9%A0%AD-(flow-state)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Opt",
+          "nameJa": "選択",
+          "detailUrl": "https://scryfall.com/card/tdc/158/ja/%E9%81%B8%E6%8A%9E-(opt)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Opt",
+          "nameJa": "選択",
+          "detailUrl": "https://scryfall.com/card/tdc/158/ja/%E9%81%B8%E6%8A%9E-(opt)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Multiversal Passage",
+          "nameJa": "マルチバースへの通り道",
+          "detailUrl": "https://scryfall.com/card/spm/180/ja/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%90%E3%83%BC%E3%82%B9%E3%81%B8%E3%81%AE%E9%80%9A%E3%82%8A%E9%81%93-(multiversal-passage)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Riverpyre Verge",
+          "nameJa": "リバーパイアーの境界",
+          "detailUrl": "https://scryfall.com/card/dft/260/ja/%E3%83%AA%E3%83%90%E3%83%BC%E3%83%91%E3%82%A4%E3%82%A2%E3%83%BC%E3%81%AE%E5%A2%83%E7%95%8C-(riverpyre-verge)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Roaring Furnace // Steaming Sauna",
+          "nameJa": "咆哮する焼炉 // 蒸気サウナ",
+          "detailUrl": "https://scryfall.com/card/dsk/230/ja/%E5%92%86%E5%93%AE%E3%81%99%E3%82%8B%E7%84%BC%E7%82%89-%E8%92%B8%E6%B0%97%E3%82%B5%E3%82%A6%E3%83%8A-(roaring-furnace-steaming-sauna)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Sleight of Hand",
+          "nameJa": "手練",
+          "detailUrl": "https://scryfall.com/card/soa/22/ja/%E6%89%8B%E7%B7%B4-(sleight-of-hand)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Slickshot Show-Off",
+          "nameJa": "精鋭射手団の目立ちたがり",
+          "detailUrl": "https://scryfall.com/card/pwcs/2025-6/ja/%E7%B2%BE%E9%8B%AD%E5%B0%84%E6%89%8B%E5%9B%A3%E3%81%AE%E7%9B%AE%E7%AB%8B%E3%81%A1%E3%81%9F%E3%81%8C%E3%82%8A-(slickshot-show-off)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Spell Pierce",
+          "nameJa": "呪文貫き",
+          "detailUrl": "https://scryfall.com/card/soa/23/ja/%E5%91%AA%E6%96%87%E8%B2%AB%E3%81%8D-(spell-pierce)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 5,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Burst Lightning",
+          "nameJa": "噴出の稲妻",
+          "detailUrl": "https://scryfall.com/card/soa/41/ja/%E5%99%B4%E5%87%BA%E3%81%AE%E7%A8%B2%E5%A6%BB-(burst-lightning)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Stormchaser's Talent",
+          "nameJa": "嵐追いの才能",
+          "detailUrl": "https://scryfall.com/card/blb/75/ja/%E5%B5%90%E8%BF%BD%E3%81%84%E3%81%AE%E6%89%8D%E8%83%BD-(stormchasers-talent)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Vibrant Outburst",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Secret Identity",
+          "nameJa": "秘密の正体",
+          "detailUrl": "https://scryfall.com/card/spm/43/ja/%E7%A7%98%E5%AF%86%E3%81%AE%E6%AD%A3%E4%BD%93-(secret-identity)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Sleight of Hand",
+          "nameJa": "手練",
+          "detailUrl": "https://scryfall.com/card/soa/22/ja/%E6%89%8B%E7%B7%B4-(sleight-of-hand)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Spirebluff Canal",
+          "nameJa": "尖塔断の運河",
+          "detailUrl": "https://scryfall.com/card/otj/270/ja/%E5%B0%96%E5%A1%94%E6%96%AD%E3%81%AE%E9%81%8B%E6%B2%B3-(spirebluff-canal)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Steam Vents",
+          "nameJa": "蒸気孔",
+          "detailUrl": "https://scryfall.com/card/rvr/288/ja/%E8%92%B8%E6%B0%97%E5%AD%94-(steam-vents)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Spell Pierce",
+          "nameJa": "呪文貫き",
+          "detailUrl": "https://scryfall.com/card/soa/23/ja/%E5%91%AA%E6%96%87%E8%B2%AB%E3%81%8D-(spell-pierce)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 1,
+          "nameEn": "Soul-Guide Lantern",
+          "nameJa": "魂（たま）標（しるべ）ランタン",
+          "detailUrl": "https://scryfall.com/card/eoc/143/ja/%E9%AD%82%EF%BC%88%E3%81%9F%E3%81%BE%EF%BC%89%E6%A8%99%EF%BC%88%E3%81%97%E3%82%8B%E3%81%B9%EF%BC%89%E3%83%A9%E3%83%B3%E3%82%BF%E3%83%B3-(soul-guide-lantern)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Broadside Barrage",
+          "nameJa": "舷側砲の一斉射撃",
+          "detailUrl": "https://scryfall.com/card/dft/192/ja/%E8%88%B7%E5%81%B4%E7%A0%B2%E3%81%AE%E4%B8%80%E6%96%89%E5%B0%84%E6%92%83-(broadside-barrage)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Get Out",
+          "nameJa": "今のうちに出よう",
+          "detailUrl": "https://scryfall.com/card/dsk/60/ja/%E4%BB%8A%E3%81%AE%E3%81%86%E3%81%A1%E3%81%AB%E5%87%BA%E3%82%88%E3%81%86-(get-out)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Ral, Crackling Wit",
+          "nameJa": "轟く機知、ラル",
+          "detailUrl": "https://scryfall.com/card/blb/230/ja/%E8%BD%9F%E3%81%8F%E6%A9%9F%E7%9F%A5%E3%80%81%E3%83%A9%E3%83%AB-(ral-crackling-wit)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Namor the Sub-Mariner",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Ghost Vacuum",
+          "nameJa": "除霊用掃除機",
+          "detailUrl": "https://scryfall.com/card/dsk/248/ja/%E9%99%A4%E9%9C%8A%E7%94%A8%E6%8E%83%E9%99%A4%E6%A9%9F-(ghost-vacuum)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Sear",
+          "nameJa": "焼きつけ",
+          "detailUrl": "https://scryfall.com/card/ecl/154/ja/%E7%84%BC%E3%81%8D%E3%81%A4%E3%81%91-(sear)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Flashfreeze",
+          "nameJa": "瞬間凍結",
+          "detailUrl": "https://scryfall.com/card/mm2/45/ja/%E7%9E%AC%E9%96%93%E5%87%8D%E7%B5%90-(flashfreeze)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Spell Pierce",
+          "nameJa": "呪文貫き",
+          "detailUrl": "https://scryfall.com/card/soa/23/ja/%E5%91%AA%E6%96%87%E8%B2%AB%E3%81%8D-(spell-pierce)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Annul",
+          "nameJa": "無（む）効（こう）",
+          "detailUrl": "https://scryfall.com/card/eoe/46/ja/%E7%84%A1%EF%BC%88%E3%82%80%EF%BC%89%E5%8A%B9%EF%BC%88%E3%81%93%E3%81%86%EF%BC%89-(annul)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Avengers Disassembled",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Sunspine Lynx",
+          "nameJa": "陽背骨のオオヤマネコ",
+          "detailUrl": "https://scryfall.com/card/blb/155/ja/%E9%99%BD%E8%83%8C%E9%AA%A8%E3%81%AE%E3%82%AA%E3%82%AA%E3%83%A4%E3%83%9E%E3%83%8D%E3%82%B3-(sunspine-lynx)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        }
+      ]
+    },
+    {
+      "id": "2-vitorcarvalho01",
+      "player": "VitorCarvalho01",
+      "placement": 2,
+      "record": null,
+      "mainboardCount": 60,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 2,
+          "nameEn": "Winternight Stories",
+          "nameJa": "冬夜の物語",
+          "detailUrl": "https://scryfall.com/card/tdm/67/ja/%E5%86%AC%E5%A4%9C%E3%81%AE%E7%89%A9%E8%AA%9E-(winternight-stories)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 10,
+          "nameEn": "Swamp",
+          "nameJa": "沼",
+          "detailUrl": "https://scryfall.com/card/tmt/193/ja/%E6%B2%BC-(swamp)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Watery Grave",
+          "nameJa": "湿（しめ）った墓（はか）",
+          "detailUrl": "https://scryfall.com/card/eoe/261/ja/%E6%B9%BF%EF%BC%88%E3%81%97%E3%82%81%EF%BC%89%E3%81%A3%E3%81%9F%E5%A2%93%EF%BC%88%E3%81%AF%E3%81%8B%EF%BC%89-(watery-grave)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Bitter Triumph",
+          "nameJa": "苦々しい勝利",
+          "detailUrl": "https://scryfall.com/card/soa/26/ja/%E8%8B%A6%E3%80%85%E3%81%97%E3%81%84%E5%8B%9D%E5%88%A9-(bitter-triumph)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Day of Black Sun",
+          "nameJa": "黒い太陽の日",
+          "detailUrl": "https://scryfall.com/card/tla/94/ja/%E9%BB%92%E3%81%84%E5%A4%AA%E9%99%BD%E3%81%AE%E6%97%A5-(day-of-black-sun)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Doomsday Excruciator",
+          "nameJa": "終末の加虐者",
+          "detailUrl": "https://scryfall.com/card/dsk/94/ja/%E7%B5%82%E6%9C%AB%E3%81%AE%E5%8A%A0%E8%99%90%E8%80%85-(doomsday-excruciator)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Requiting Hex",
+          "nameJa": "報いの呪詛",
+          "detailUrl": "https://scryfall.com/card/ecl/116/ja/%E5%A0%B1%E3%81%84%E3%81%AE%E5%91%AA%E8%A9%9B-(requiting-hex)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Stock Up",
+          "nameJa": "食糧補充",
+          "detailUrl": "https://scryfall.com/card/soa/24/ja/%E9%A3%9F%E7%B3%A7%E8%A3%9C%E5%85%85-(stock-up)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Kavaero, Mind-Bitten",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Restless Reef",
+          "nameJa": "不穏な浅瀬",
+          "detailUrl": "https://scryfall.com/card/lci/282/ja/%E4%B8%8D%E7%A9%8F%E3%81%AA%E6%B5%85%E7%80%AC-(restless-reef)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Duress",
+          "nameJa": "強迫",
+          "detailUrl": "https://scryfall.com/card/one/92/ja/%E5%BC%B7%E8%BF%AB-(duress)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Deceit",
+          "nameJa": "欺瞞",
+          "detailUrl": "https://scryfall.com/card/ecl/212/ja/%E6%AC%BA%E7%9E%9E-(deceit)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Hidden Lair",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Deadly Cover-Up",
+          "nameJa": "死人に口無し",
+          "detailUrl": "https://scryfall.com/card/mkm/83/ja/%E6%AD%BB%E4%BA%BA%E3%81%AB%E5%8F%A3%E7%84%A1%E3%81%97-(deadly-cover-up)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Strategic Betrayal",
+          "nameJa": "戦略的裏切り",
+          "detailUrl": "https://scryfall.com/card/pwcs/2026-6/ja/%E6%88%A6%E7%95%A5%E7%9A%84%E8%A3%8F%E5%88%87%E3%82%8A-(strategic-betrayal)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Undercity Sewers",
+          "nameJa": "地底街の下水道",
+          "detailUrl": "https://scryfall.com/card/pza/20/ja/%E5%9C%B0%E5%BA%95%E8%A1%97%E3%81%AE%E4%B8%8B%E6%B0%B4%E9%81%93-(undercity-sewers)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Emeritus of Ideation // Ancestral Recall",
+          "nameJa": null,
+          "detailUrl": "https://scryfall.com/card/sos/45/ja/%E8%A6%B3%E5%BF%B5%E3%81%AE%E5%90%8D%E8%AA%89%E6%95%99%E6%8E%88-(emeritus-of-ideation-ancestral-recall)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Gloomlake Verge",
+          "nameJa": "グルームレイクの境界",
+          "detailUrl": "https://scryfall.com/card/dsk/260/ja/%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%A0%E3%83%AC%E3%82%A4%E3%82%AF%E3%81%AE%E5%A2%83%E7%95%8C-(gloomlake-verge)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Cavern of Souls",
+          "nameJa": "魂の洞窟",
+          "detailUrl": "https://scryfall.com/card/lci/269/ja/%E9%AD%82%E3%81%AE%E6%B4%9E%E7%AA%9F-(cavern-of-souls)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "M.O.D.O.K.",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 1,
+          "nameEn": "Flashfreeze",
+          "nameJa": "瞬間凍結",
+          "detailUrl": "https://scryfall.com/card/mm2/45/ja/%E7%9E%AC%E9%96%93%E5%87%8D%E7%B5%90-(flashfreeze)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Flashfreeze",
+          "nameJa": "瞬間凍結",
+          "detailUrl": "https://scryfall.com/card/mm2/45/ja/%E7%9E%AC%E9%96%93%E5%87%8D%E7%B5%90-(flashfreeze)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Oildeep Gearhulk",
+          "nameJa": "油浸の機械巨人",
+          "detailUrl": "https://scryfall.com/card/dft/215/ja/%E6%B2%B9%E6%B5%B8%E3%81%AE%E6%A9%9F%E6%A2%B0%E5%B7%A8%E4%BA%BA-(oildeep-gearhulk)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Ghost Vacuum",
+          "nameJa": "除霊用掃除機",
+          "detailUrl": "https://scryfall.com/card/dsk/248/ja/%E9%99%A4%E9%9C%8A%E7%94%A8%E6%8E%83%E9%99%A4%E6%A9%9F-(ghost-vacuum)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Emeritus of Ideation // Ancestral Recall",
+          "nameJa": null,
+          "detailUrl": "https://scryfall.com/card/sos/45/ja/%E8%A6%B3%E5%BF%B5%E3%81%AE%E5%90%8D%E8%AA%89%E6%95%99%E6%8E%88-(emeritus-of-ideation-ancestral-recall)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Strategic Betrayal",
+          "nameJa": "戦略的裏切り",
+          "detailUrl": "https://scryfall.com/card/pwcs/2026-6/ja/%E6%88%A6%E7%95%A5%E7%9A%84%E8%A3%8F%E5%88%87%E3%82%8A-(strategic-betrayal)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Qarsi Revenant",
+          "nameJa": "カルシの帰還者",
+          "detailUrl": "https://scryfall.com/card/tdm/86/ja/%E3%82%AB%E3%83%AB%E3%82%B7%E3%81%AE%E5%B8%B0%E9%82%84%E8%80%85-(qarsi-revenant)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Shoot the Sheriff",
+          "nameJa": "保安官を撃て",
+          "detailUrl": "https://scryfall.com/card/otj/106/ja/%E4%BF%9D%E5%AE%89%E5%AE%98%E3%82%92%E6%92%83%E3%81%A6-(shoot-the-sheriff)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Deadly Cover-Up",
+          "nameJa": "死人に口無し",
+          "detailUrl": "https://scryfall.com/card/mkm/83/ja/%E6%AD%BB%E4%BA%BA%E3%81%AB%E5%8F%A3%E7%84%A1%E3%81%97-(deadly-cover-up)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        }
+      ]
+    },
+    {
+      "id": "3-strongmind",
+      "player": "Strongmind",
+      "placement": 3,
+      "record": null,
+      "mainboardCount": 60,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 4,
+          "nameEn": "Watery Grave",
+          "nameJa": "湿（しめ）った墓（はか）",
+          "detailUrl": "https://scryfall.com/card/eoe/261/ja/%E6%B9%BF%EF%BC%88%E3%81%97%E3%82%81%EF%BC%89%E3%81%A3%E3%81%9F%E5%A2%93%EF%BC%88%E3%81%AF%E3%81%8B%EF%BC%89-(watery-grave)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 10,
+          "nameEn": "Swamp",
+          "nameJa": "沼",
+          "detailUrl": "https://scryfall.com/card/tmt/193/ja/%E6%B2%BC-(swamp)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Stock Up",
+          "nameJa": "食糧補充",
+          "detailUrl": "https://scryfall.com/card/soa/24/ja/%E9%A3%9F%E7%B3%A7%E8%A3%9C%E5%85%85-(stock-up)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Bitter Triumph",
+          "nameJa": "苦々しい勝利",
+          "detailUrl": "https://scryfall.com/card/soa/26/ja/%E8%8B%A6%E3%80%85%E3%81%97%E3%81%84%E5%8B%9D%E5%88%A9-(bitter-triumph)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Day of Black Sun",
+          "nameJa": "黒い太陽の日",
+          "detailUrl": "https://scryfall.com/card/tla/94/ja/%E9%BB%92%E3%81%84%E5%A4%AA%E9%99%BD%E3%81%AE%E6%97%A5-(day-of-black-sun)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Doomsday Excruciator",
+          "nameJa": "終末の加虐者",
+          "detailUrl": "https://scryfall.com/card/dsk/94/ja/%E7%B5%82%E6%9C%AB%E3%81%AE%E5%8A%A0%E8%99%90%E8%80%85-(doomsday-excruciator)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Requiting Hex",
+          "nameJa": "報いの呪詛",
+          "detailUrl": "https://scryfall.com/card/ecl/116/ja/%E5%A0%B1%E3%81%84%E3%81%AE%E5%91%AA%E8%A9%9B-(requiting-hex)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Stock Up",
+          "nameJa": "食糧補充",
+          "detailUrl": "https://scryfall.com/card/soa/24/ja/%E9%A3%9F%E7%B3%A7%E8%A3%9C%E5%85%85-(stock-up)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Kavaero, Mind-Bitten",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Restless Reef",
+          "nameJa": "不穏な浅瀬",
+          "detailUrl": "https://scryfall.com/card/lci/282/ja/%E4%B8%8D%E7%A9%8F%E3%81%AA%E6%B5%85%E7%80%AC-(restless-reef)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Deceit",
+          "nameJa": "欺瞞",
+          "detailUrl": "https://scryfall.com/card/ecl/212/ja/%E6%AC%BA%E7%9E%9E-(deceit)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Hidden Lair",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Deadly Cover-Up",
+          "nameJa": "死人に口無し",
+          "detailUrl": "https://scryfall.com/card/mkm/83/ja/%E6%AD%BB%E4%BA%BA%E3%81%AB%E5%8F%A3%E7%84%A1%E3%81%97-(deadly-cover-up)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Strategic Betrayal",
+          "nameJa": "戦略的裏切り",
+          "detailUrl": "https://scryfall.com/card/pwcs/2026-6/ja/%E6%88%A6%E7%95%A5%E7%9A%84%E8%A3%8F%E5%88%87%E3%82%8A-(strategic-betrayal)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Undercity Sewers",
+          "nameJa": "地底街の下水道",
+          "detailUrl": "https://scryfall.com/card/pza/20/ja/%E5%9C%B0%E5%BA%95%E8%A1%97%E3%81%AE%E4%B8%8B%E6%B0%B4%E9%81%93-(undercity-sewers)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Emeritus of Ideation // Ancestral Recall",
+          "nameJa": null,
+          "detailUrl": "https://scryfall.com/card/sos/45/ja/%E8%A6%B3%E5%BF%B5%E3%81%AE%E5%90%8D%E8%AA%89%E6%95%99%E6%8E%88-(emeritus-of-ideation-ancestral-recall)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Gloomlake Verge",
+          "nameJa": "グルームレイクの境界",
+          "detailUrl": "https://scryfall.com/card/dsk/260/ja/%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%A0%E3%83%AC%E3%82%A4%E3%82%AF%E3%81%AE%E5%A2%83%E7%95%8C-(gloomlake-verge)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Cavern of Souls",
+          "nameJa": "魂の洞窟",
+          "detailUrl": "https://scryfall.com/card/lci/269/ja/%E9%AD%82%E3%81%AE%E6%B4%9E%E7%AA%9F-(cavern-of-souls)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Winternight Stories",
+          "nameJa": "冬夜の物語",
+          "detailUrl": "https://scryfall.com/card/tdm/67/ja/%E5%86%AC%E5%A4%9C%E3%81%AE%E7%89%A9%E8%AA%9E-(winternight-stories)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Duress",
+          "nameJa": "強迫",
+          "detailUrl": "https://scryfall.com/card/one/92/ja/%E5%BC%B7%E8%BF%AB-(duress)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "M.O.D.O.K.",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 3,
+          "nameEn": "Flashfreeze",
+          "nameJa": "瞬間凍結",
+          "detailUrl": "https://scryfall.com/card/mm2/45/ja/%E7%9E%AC%E9%96%93%E5%87%8D%E7%B5%90-(flashfreeze)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Qarsi Revenant",
+          "nameJa": "カルシの帰還者",
+          "detailUrl": "https://scryfall.com/card/tdm/86/ja/%E3%82%AB%E3%83%AB%E3%82%B7%E3%81%AE%E5%B8%B0%E9%82%84%E8%80%85-(qarsi-revenant)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Ghost Vacuum",
+          "nameJa": "除霊用掃除機",
+          "detailUrl": "https://scryfall.com/card/dsk/248/ja/%E9%99%A4%E9%9C%8A%E7%94%A8%E6%8E%83%E9%99%A4%E6%A9%9F-(ghost-vacuum)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Deadly Cover-Up",
+          "nameJa": "死人に口無し",
+          "detailUrl": "https://scryfall.com/card/mkm/83/ja/%E6%AD%BB%E4%BA%BA%E3%81%AB%E5%8F%A3%E7%84%A1%E3%81%97-(deadly-cover-up)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Emeritus of Ideation // Ancestral Recall",
+          "nameJa": null,
+          "detailUrl": "https://scryfall.com/card/sos/45/ja/%E8%A6%B3%E5%BF%B5%E3%81%AE%E5%90%8D%E8%AA%89%E6%95%99%E6%8E%88-(emeritus-of-ideation-ancestral-recall)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Strategic Betrayal",
+          "nameJa": "戦略的裏切り",
+          "detailUrl": "https://scryfall.com/card/pwcs/2026-6/ja/%E6%88%A6%E7%95%A5%E7%9A%84%E8%A3%8F%E5%88%87%E3%82%8A-(strategic-betrayal)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Qarsi Revenant",
+          "nameJa": "カルシの帰還者",
+          "detailUrl": "https://scryfall.com/card/tdm/86/ja/%E3%82%AB%E3%83%AB%E3%82%B7%E3%81%AE%E5%B8%B0%E9%82%84%E8%80%85-(qarsi-revenant)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Shoot the Sheriff",
+          "nameJa": "保安官を撃て",
+          "detailUrl": "https://scryfall.com/card/otj/106/ja/%E4%BF%9D%E5%AE%89%E5%AE%98%E3%82%92%E6%92%83%E3%81%A6-(shoot-the-sheriff)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Oildeep Gearhulk",
+          "nameJa": "油浸の機械巨人",
+          "detailUrl": "https://scryfall.com/card/dft/215/ja/%E6%B2%B9%E6%B5%B8%E3%81%AE%E6%A9%9F%E6%A2%B0%E5%B7%A8%E4%BA%BA-(oildeep-gearhulk)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        }
+      ]
+    },
+    {
+      "id": "4-mistertwin",
+      "player": "MisterTwin",
+      "placement": 4,
+      "record": null,
+      "mainboardCount": 61,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 2,
+          "nameEn": "Burst Lightning",
+          "nameJa": "噴出の稲妻",
+          "detailUrl": "https://scryfall.com/card/soa/41/ja/%E5%99%B4%E5%87%BA%E3%81%AE%E7%A8%B2%E5%A6%BB-(burst-lightning)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Colorstorm Stallion",
+          "nameJa": "彩嵐の雄馬",
+          "detailUrl": "https://scryfall.com/card/sos/180/ja/%E5%BD%A9%E5%B5%90%E3%81%AE%E9%9B%84%E9%A6%AC-(colorstorm-stallion)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Eddymurk Crab",
+          "nameJa": "渦泥の蟹",
+          "detailUrl": "https://scryfall.com/card/blb/48/ja/%E6%B8%A6%E6%B3%A5%E3%81%AE%E8%9F%B9-(eddymurk-crab)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Flow State",
+          "nameJa": "没頭",
+          "detailUrl": "https://scryfall.com/card/sos/49/ja/%E6%B2%A1%E9%A0%AD-(flow-state)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Get Out",
+          "nameJa": "今のうちに出よう",
+          "detailUrl": "https://scryfall.com/card/dsk/60/ja/%E4%BB%8A%E3%81%AE%E3%81%86%E3%81%A1%E3%81%AB%E5%87%BA%E3%82%88%E3%81%86-(get-out)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Hearth Elemental // Stoke Genius",
+          "nameJa": "Hearth Elemental // 火（ひ）おこしの天（てん）才（さい）",
+          "detailUrl": "https://scryfall.com/card/woe/136/ja/hearth-elemental-%E7%81%AB%EF%BC%88%E3%81%B2%EF%BC%89%E3%81%8A%E3%81%93%E3%81%97%E3%81%AE%E5%A4%A9%EF%BC%88%E3%81%A6%E3%82%93%EF%BC%89%E6%89%8D%EF%BC%88%E3%81%95%E3%81%84%EF%BC%89-(hearth-elemental-stoke-genius)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Impractical Joke",
+          "nameJa": "すべきでない悪ふざけ",
+          "detailUrl": "https://scryfall.com/card/sos/119/ja/%E3%81%99%E3%81%B9%E3%81%8D%E3%81%A7%E3%81%AA%E3%81%84%E6%82%AA%E3%81%B5%E3%81%96%E3%81%91-(impractical-joke)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Opt",
+          "nameJa": "選択",
+          "detailUrl": "https://scryfall.com/card/tdc/158/ja/%E9%81%B8%E6%8A%9E-(opt)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Riverpyre Verge",
+          "nameJa": "リバーパイアーの境界",
+          "detailUrl": "https://scryfall.com/card/dft/260/ja/%E3%83%AA%E3%83%90%E3%83%BC%E3%83%91%E3%82%A4%E3%82%A2%E3%83%BC%E3%81%AE%E5%A2%83%E7%95%8C-(riverpyre-verge)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sleight of Hand",
+          "nameJa": "手練",
+          "detailUrl": "https://scryfall.com/card/soa/22/ja/%E6%89%8B%E7%B7%B4-(sleight-of-hand)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Spell Snare",
+          "nameJa": "呪文嵌め",
+          "detailUrl": "https://scryfall.com/card/ecl/71/ja/%E5%91%AA%E6%96%87%E5%B5%8C%E3%82%81-(spell-snare)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Steam Vents",
+          "nameJa": "蒸気孔",
+          "detailUrl": "https://scryfall.com/card/rvr/288/ja/%E8%92%B8%E6%B0%97%E5%AD%94-(steam-vents)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Stormcarved Coast",
+          "nameJa": "嵐削りの海岸",
+          "detailUrl": "https://scryfall.com/card/who/308/ja/%E5%B5%90%E5%89%8A%E3%82%8A%E3%81%AE%E6%B5%B7%E5%B2%B8-(stormcarved-coast)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Stormcarved Coast",
+          "nameJa": "嵐削りの海岸",
+          "detailUrl": "https://scryfall.com/card/who/308/ja/%E5%B5%90%E5%89%8A%E3%82%8A%E3%81%AE%E6%B5%B7%E5%B2%B8-(stormcarved-coast)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sunderflock",
+          "nameJa": "刻み群れ",
+          "detailUrl": "https://scryfall.com/card/ecl/74/ja/%E5%88%BB%E3%81%BF%E7%BE%A4%E3%82%8C-(sunderflock)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Traumatic Critique",
+          "nameJa": "傷残す批評",
+          "detailUrl": "https://scryfall.com/card/sos/239/ja/%E5%82%B7%E6%AE%8B%E3%81%99%E6%89%B9%E8%A9%95-(traumatic-critique)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Prismari Charm",
+          "nameJa": "プリズマリの魔除け",
+          "detailUrl": "https://scryfall.com/card/sos/211/ja/%E3%83%97%E3%83%AA%E3%82%BA%E3%83%9E%E3%83%AA%E3%81%AE%E9%AD%94%E9%99%A4%E3%81%91-(prismari-charm)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Spell Pierce",
+          "nameJa": "呪文貫き",
+          "detailUrl": "https://scryfall.com/card/soa/23/ja/%E5%91%AA%E6%96%87%E8%B2%AB%E3%81%8D-(spell-pierce)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Steam Vents",
+          "nameJa": "蒸気孔",
+          "detailUrl": "https://scryfall.com/card/rvr/288/ja/%E8%92%B8%E6%B0%97%E5%AD%94-(steam-vents)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Spirebluff Canal",
+          "nameJa": "尖塔断の運河",
+          "detailUrl": "https://scryfall.com/card/otj/270/ja/%E5%B0%96%E5%A1%94%E6%96%AD%E3%81%AE%E9%81%8B%E6%B2%B3-(spirebluff-canal)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 1,
+          "nameEn": "Flashfreeze",
+          "nameJa": "瞬間凍結",
+          "detailUrl": "https://scryfall.com/card/mm2/45/ja/%E7%9E%AC%E9%96%93%E5%87%8D%E7%B5%90-(flashfreeze)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Colorstorm Stallion",
+          "nameJa": "彩嵐の雄馬",
+          "detailUrl": "https://scryfall.com/card/sos/180/ja/%E5%BD%A9%E5%B5%90%E3%81%AE%E9%9B%84%E9%A6%AC-(colorstorm-stallion)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Disdainful Stroke",
+          "nameJa": "軽蔑的な一撃",
+          "detailUrl": "https://scryfall.com/card/soa/17/ja/%E8%BB%BD%E8%94%91%E7%9A%84%E3%81%AA%E4%B8%80%E6%92%83-(disdainful-stroke)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Annul",
+          "nameJa": "無（む）効（こう）",
+          "detailUrl": "https://scryfall.com/card/eoe/46/ja/%E7%84%A1%EF%BC%88%E3%82%80%EF%BC%89%E5%8A%B9%EF%BC%88%E3%81%93%E3%81%86%EF%BC%89-(annul)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Ghost Vacuum",
+          "nameJa": "除霊用掃除機",
+          "detailUrl": "https://scryfall.com/card/dsk/248/ja/%E9%99%A4%E9%9C%8A%E7%94%A8%E6%8E%83%E9%99%A4%E6%A9%9F-(ghost-vacuum)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Negate",
+          "nameJa": "否認",
+          "detailUrl": "https://scryfall.com/card/tmt/47/ja/%E5%90%A6%E8%AA%8D-(negate)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Octopus Form",
+          "nameJa": "タコの型",
+          "detailUrl": "https://scryfall.com/card/tla/66/ja/%E3%82%BF%E3%82%B3%E3%81%AE%E5%9E%8B-(octopus-form)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Slagstorm",
+          "nameJa": "金屑の嵐",
+          "detailUrl": "https://scryfall.com/card/fdn/207/ja/%E9%87%91%E5%B1%91%E3%81%AE%E5%B5%90-(slagstorm)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Slagstorm",
+          "nameJa": "金屑の嵐",
+          "detailUrl": "https://scryfall.com/card/fdn/207/ja/%E9%87%91%E5%B1%91%E3%81%AE%E5%B5%90-(slagstorm)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Ral, Crackling Wit",
+          "nameJa": "轟く機知、ラル",
+          "detailUrl": "https://scryfall.com/card/blb/230/ja/%E8%BD%9F%E3%81%8F%E6%A9%9F%E7%9F%A5%E3%80%81%E3%83%A9%E3%83%AB-(ral-crackling-wit)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "translationStatus": "complete"
+        }
+      ]
+    },
+    {
+      "id": "5-pedrastone",
+      "player": "PedraStone",
+      "placement": 5,
+      "record": null,
+      "mainboardCount": 60,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 3,
+          "nameEn": "Abandoned Air Temple",
+          "nameJa": "放棄された気の寺",
+          "detailUrl": "https://scryfall.com/card/tla/263/ja/%E6%94%BE%E6%A3%84%E3%81%95%E3%82%8C%E3%81%9F%E6%B0%97%E3%81%AE%E5%AF%BA-(abandoned-air-temple)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Bushwhack",
+          "nameJa": "薮打ち",
+          "detailUrl": "https://scryfall.com/card/fdn/215/ja/%E8%96%AE%E6%89%93%E3%81%A1-(bushwhack)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 6,
+          "nameEn": "Forest",
+          "nameJa": "森",
+          "detailUrl": "https://scryfall.com/card/tmt/195/ja/%E6%A3%AE-(forest)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Leatherhead, Swamp Stalker",
+          "nameJa": "沼地のハンター、レザーヘッド",
+          "detailUrl": "https://scryfall.com/card/tmt/117/ja/%E6%B2%BC%E5%9C%B0%E3%81%AE%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BC%E3%80%81%E3%83%AC%E3%82%B6%E3%83%BC%E3%83%98%E3%83%83%E3%83%89-(leatherhead-swamp-stalker)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Meltstrider's Resolve",
+          "nameJa": "溶（と）かし歩（ある）きの消（しょう）散（さん）",
+          "detailUrl": "https://scryfall.com/card/eoe/199/ja/%E6%BA%B6%EF%BC%88%E3%81%A8%EF%BC%89%E3%81%8B%E3%81%97%E6%AD%A9%EF%BC%88%E3%81%82%E3%82%8B%EF%BC%89%E3%81%8D%E3%81%AE%E6%B6%88%EF%BC%88%E3%81%97%E3%82%87%E3%81%86%EF%BC%89%E6%95%A3%EF%BC%88%E3%81%95%E3%82%93%EF%BC%89-(meltstriders-resolve)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Multiversal Passage",
+          "nameJa": "マルチバースへの通り道",
+          "detailUrl": "https://scryfall.com/card/spm/180/ja/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%90%E3%83%BC%E3%82%B9%E3%81%B8%E3%81%AE%E9%80%9A%E3%82%8A%E9%81%93-(multiversal-passage)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Ouroboroid",
+          "nameJa": "ウロボロイド",
+          "detailUrl": "https://scryfall.com/card/eoe/201/ja/%E3%82%A6%E3%83%AD%E3%83%9C%E3%83%AD%E3%82%A4%E3%83%89-(ouroboroid)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Pawpatch Recruit",
+          "nameJa": "脚当ての補充兵",
+          "detailUrl": "https://scryfall.com/card/blb/187/ja/%E8%84%9A%E5%BD%93%E3%81%A6%E3%81%AE%E8%A3%9C%E5%85%85%E5%85%B5-(pawpatch-recruit)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Practiced Offense",
+          "nameJa": "練習を積んだ攻撃",
+          "detailUrl": "https://scryfall.com/card/sos/25/ja/%E7%B7%B4%E7%BF%92%E3%82%92%E7%A9%8D%E3%82%93%E3%81%A0%E6%94%BB%E6%92%83-(practiced-offense)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Seam Rip",
+          "nameJa": "縫（ぬ）い目（め）破（やぶ）り",
+          "detailUrl": "https://scryfall.com/card/eoe/34/ja/%E7%B8%AB%EF%BC%88%E3%81%AC%EF%BC%89%E3%81%84%E7%9B%AE%EF%BC%88%E3%82%81%EF%BC%89%E7%A0%B4%EF%BC%88%E3%82%84%E3%81%B6%EF%BC%89%E3%82%8A-(seam-rip)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Starting Town",
+          "nameJa": "始まりの町",
+          "detailUrl": "https://scryfall.com/card/fin/289/ja/%E5%A7%8B%E3%81%BE%E3%82%8A%E3%81%AE%E7%94%BA-(starting-town)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Surrak, Elusive Hunter",
+          "nameJa": "神出鬼没の狩人、スーラク",
+          "detailUrl": "https://scryfall.com/card/tdm/161/ja/%E7%A5%9E%E5%87%BA%E9%AC%BC%E6%B2%A1%E3%81%AE%E7%8B%A9%E4%BA%BA%E3%80%81%E3%82%B9%E3%83%BC%E3%83%A9%E3%82%AF-(surrak-elusive-hunter)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Leyline Weaver",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Keen-Eyed Curator",
+          "nameJa": "鋭い目の管理者",
+          "detailUrl": "https://scryfall.com/card/blb/181/ja/%E9%8B%AD%E3%81%84%E7%9B%AE%E3%81%AE%E7%AE%A1%E7%90%86%E8%80%85-(keen-eyed-curator)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Plains",
+          "nameJa": "平地",
+          "detailUrl": "https://scryfall.com/card/tmt/191/ja/%E5%B9%B3%E5%9C%B0-(plains)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Temple Garden",
+          "nameJa": "寺院の庭",
+          "detailUrl": "https://scryfall.com/card/rvr/290/ja/%E5%AF%BA%E9%99%A2%E3%81%AE%E5%BA%AD-(temple-garden)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Hushwood Verge",
+          "nameJa": "ハッシュウッドの境界",
+          "detailUrl": "https://scryfall.com/card/dsk/261/ja/%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%82%A6%E3%83%83%E3%83%89%E3%81%AE%E5%A2%83%E7%95%8C-(hushwood-verge)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Badgermole Cub",
+          "nameJa": "アナグマモグラの仔",
+          "detailUrl": "https://scryfall.com/card/tla/167/ja/%E3%82%A2%E3%83%8A%E3%82%B0%E3%83%9E%E3%83%A2%E3%82%B0%E3%83%A9%E3%81%AE%E4%BB%94-(badgermole-cub)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Jennifer Walters",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Brightglass Gearhulk",
+          "nameJa": "輝晶の機械巨人",
+          "detailUrl": "https://scryfall.com/card/dft/191/ja/%E8%BC%9D%E6%99%B6%E3%81%AE%E6%A9%9F%E6%A2%B0%E5%B7%A8%E4%BA%BA-(brightglass-gearhulk)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Llanowar Elves",
+          "nameJa": "ラノワールのエルフ",
+          "detailUrl": "https://scryfall.com/card/fdn/227/ja/%E3%83%A9%E3%83%8E%E3%83%AF%E3%83%BC%E3%83%AB%E3%81%AE%E3%82%A8%E3%83%AB%E3%83%95-(llanowar-elves)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 1,
+          "nameEn": "Soul-Guide Lantern",
+          "nameJa": "魂（たま）標（しるべ）ランタン",
+          "detailUrl": "https://scryfall.com/card/eoc/143/ja/%E9%AD%82%EF%BC%88%E3%81%9F%E3%81%BE%EF%BC%89%E6%A8%99%EF%BC%88%E3%81%97%E3%82%8B%E3%81%B9%EF%BC%89%E3%83%A9%E3%83%B3%E3%82%BF%E3%83%B3-(soul-guide-lantern)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Erode",
+          "nameJa": "浸食作用",
+          "detailUrl": "https://scryfall.com/card/sos/15/ja/%E6%B5%B8%E9%A3%9F%E4%BD%9C%E7%94%A8-(erode)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Meltstrider's Resolve",
+          "nameJa": "溶（と）かし歩（ある）きの消（しょう）散（さん）",
+          "detailUrl": "https://scryfall.com/card/eoe/199/ja/%E6%BA%B6%EF%BC%88%E3%81%A8%EF%BC%89%E3%81%8B%E3%81%97%E6%AD%A9%EF%BC%88%E3%81%82%E3%82%8B%EF%BC%89%E3%81%8D%E3%81%AE%E6%B6%88%EF%BC%88%E3%81%97%E3%82%87%E3%81%86%EF%BC%89%E6%95%A3%EF%BC%88%E3%81%95%E3%82%93%EF%BC%89-(meltstriders-resolve)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Restoration Magic",
+          "nameJa": "回復魔法",
+          "detailUrl": "https://scryfall.com/card/fin/30/ja/%E5%9B%9E%E5%BE%A9%E9%AD%94%E6%B3%95-(restoration-magic)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sheltered by Ghosts",
+          "nameJa": "幽霊による庇護",
+          "detailUrl": "https://scryfall.com/card/soc/171/ja/%E5%B9%BD%E9%9C%8A%E3%81%AB%E3%82%88%E3%82%8B%E5%BA%87%E8%AD%B7-(sheltered-by-ghosts)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Axebane Ferox",
+          "nameJa": "斧折りのフェロックス",
+          "detailUrl": "https://scryfall.com/card/mkm/153/ja/%E6%96%A7%E6%8A%98%E3%82%8A%E3%81%AE%E3%83%95%E3%82%A7%E3%83%AD%E3%83%83%E3%82%AF%E3%82%B9-(axebane-ferox)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Rest in Peace",
+          "nameJa": "安らかなる眠り",
+          "detailUrl": "https://scryfall.com/card/mar/6/ja/%E5%AE%89%E3%82%89%E3%81%8B%E3%81%AA%E3%82%8B%E7%9C%A0%E3%82%8A-(rest-in-peace)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Elspeth, Storm Slayer",
+          "nameJa": "嵐の討伐者、エルズペス",
+          "detailUrl": "https://scryfall.com/card/tdm/11/ja/%E5%B5%90%E3%81%AE%E8%A8%8E%E4%BC%90%E8%80%85%E3%80%81%E3%82%A8%E3%83%AB%E3%82%BA%E3%83%9A%E3%82%B9-(elspeth-storm-slayer)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "translationStatus": "complete"
+        }
+      ]
+    },
+    {
+      "id": "6-spockvidaloka",
+      "player": "SpockVidaLoka",
+      "placement": 6,
+      "record": null,
+      "mainboardCount": 60,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 3,
+          "nameEn": "Abandoned Air Temple",
+          "nameJa": "放棄された気の寺",
+          "detailUrl": "https://scryfall.com/card/tla/263/ja/%E6%94%BE%E6%A3%84%E3%81%95%E3%82%8C%E3%81%9F%E6%B0%97%E3%81%AE%E5%AF%BA-(abandoned-air-temple)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Bushwhack",
+          "nameJa": "薮打ち",
+          "detailUrl": "https://scryfall.com/card/fdn/215/ja/%E8%96%AE%E6%89%93%E3%81%A1-(bushwhack)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Llanowar Elves",
+          "nameJa": "ラノワールのエルフ",
+          "detailUrl": "https://scryfall.com/card/fdn/227/ja/%E3%83%A9%E3%83%8E%E3%83%AF%E3%83%BC%E3%83%AB%E3%81%AE%E3%82%A8%E3%83%AB%E3%83%95-(llanowar-elves)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Leatherhead, Swamp Stalker",
+          "nameJa": "沼地のハンター、レザーヘッド",
+          "detailUrl": "https://scryfall.com/card/tmt/117/ja/%E6%B2%BC%E5%9C%B0%E3%81%AE%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BC%E3%80%81%E3%83%AC%E3%82%B6%E3%83%BC%E3%83%98%E3%83%83%E3%83%89-(leatherhead-swamp-stalker)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Meltstrider's Resolve",
+          "nameJa": "溶（と）かし歩（ある）きの消（しょう）散（さん）",
+          "detailUrl": "https://scryfall.com/card/eoe/199/ja/%E6%BA%B6%EF%BC%88%E3%81%A8%EF%BC%89%E3%81%8B%E3%81%97%E6%AD%A9%EF%BC%88%E3%81%82%E3%82%8B%EF%BC%89%E3%81%8D%E3%81%AE%E6%B6%88%EF%BC%88%E3%81%97%E3%82%87%E3%81%86%EF%BC%89%E6%95%A3%EF%BC%88%E3%81%95%E3%82%93%EF%BC%89-(meltstriders-resolve)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Multiversal Passage",
+          "nameJa": "マルチバースへの通り道",
+          "detailUrl": "https://scryfall.com/card/spm/180/ja/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%90%E3%83%BC%E3%82%B9%E3%81%B8%E3%81%AE%E9%80%9A%E3%82%8A%E9%81%93-(multiversal-passage)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Ouroboroid",
+          "nameJa": "ウロボロイド",
+          "detailUrl": "https://scryfall.com/card/eoe/201/ja/%E3%82%A6%E3%83%AD%E3%83%9C%E3%83%AD%E3%82%A4%E3%83%89-(ouroboroid)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Pawpatch Recruit",
+          "nameJa": "脚当ての補充兵",
+          "detailUrl": "https://scryfall.com/card/blb/187/ja/%E8%84%9A%E5%BD%93%E3%81%A6%E3%81%AE%E8%A3%9C%E5%85%85%E5%85%B5-(pawpatch-recruit)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Practiced Offense",
+          "nameJa": "練習を積んだ攻撃",
+          "detailUrl": "https://scryfall.com/card/sos/25/ja/%E7%B7%B4%E7%BF%92%E3%82%92%E7%A9%8D%E3%82%93%E3%81%A0%E6%94%BB%E6%92%83-(practiced-offense)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Seam Rip",
+          "nameJa": "縫（ぬ）い目（め）破（やぶ）り",
+          "detailUrl": "https://scryfall.com/card/eoe/34/ja/%E7%B8%AB%EF%BC%88%E3%81%AC%EF%BC%89%E3%81%84%E7%9B%AE%EF%BC%88%E3%82%81%EF%BC%89%E7%A0%B4%EF%BC%88%E3%82%84%E3%81%B6%EF%BC%89%E3%82%8A-(seam-rip)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Starting Town",
+          "nameJa": "始まりの町",
+          "detailUrl": "https://scryfall.com/card/fin/289/ja/%E5%A7%8B%E3%81%BE%E3%82%8A%E3%81%AE%E7%94%BA-(starting-town)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Surrak, Elusive Hunter",
+          "nameJa": "神出鬼没の狩人、スーラク",
+          "detailUrl": "https://scryfall.com/card/tdm/161/ja/%E7%A5%9E%E5%87%BA%E9%AC%BC%E6%B2%A1%E3%81%AE%E7%8B%A9%E4%BA%BA%E3%80%81%E3%82%B9%E3%83%BC%E3%83%A9%E3%82%AF-(surrak-elusive-hunter)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Leyline Weaver",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Keen-Eyed Curator",
+          "nameJa": "鋭い目の管理者",
+          "detailUrl": "https://scryfall.com/card/blb/181/ja/%E9%8B%AD%E3%81%84%E7%9B%AE%E3%81%AE%E7%AE%A1%E7%90%86%E8%80%85-(keen-eyed-curator)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 6,
+          "nameEn": "Forest",
+          "nameJa": "森",
+          "detailUrl": "https://scryfall.com/card/tmt/195/ja/%E6%A3%AE-(forest)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Plains",
+          "nameJa": "平地",
+          "detailUrl": "https://scryfall.com/card/tmt/191/ja/%E5%B9%B3%E5%9C%B0-(plains)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Temple Garden",
+          "nameJa": "寺院の庭",
+          "detailUrl": "https://scryfall.com/card/rvr/290/ja/%E5%AF%BA%E9%99%A2%E3%81%AE%E5%BA%AD-(temple-garden)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Badgermole Cub",
+          "nameJa": "アナグマモグラの仔",
+          "detailUrl": "https://scryfall.com/card/tla/167/ja/%E3%82%A2%E3%83%8A%E3%82%B0%E3%83%9E%E3%83%A2%E3%82%B0%E3%83%A9%E3%81%AE%E4%BB%94-(badgermole-cub)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Brightglass Gearhulk",
+          "nameJa": "輝晶の機械巨人",
+          "detailUrl": "https://scryfall.com/card/dft/191/ja/%E8%BC%9D%E6%99%B6%E3%81%AE%E6%A9%9F%E6%A2%B0%E5%B7%A8%E4%BA%BA-(brightglass-gearhulk)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Jennifer Walters",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Hushwood Verge",
+          "nameJa": "ハッシュウッドの境界",
+          "detailUrl": "https://scryfall.com/card/dsk/261/ja/%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%82%A6%E3%83%83%E3%83%89%E3%81%AE%E5%A2%83%E7%95%8C-(hushwood-verge)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 1,
+          "nameEn": "Soul-Guide Lantern",
+          "nameJa": "魂（たま）標（しるべ）ランタン",
+          "detailUrl": "https://scryfall.com/card/eoc/143/ja/%E9%AD%82%EF%BC%88%E3%81%9F%E3%81%BE%EF%BC%89%E6%A8%99%EF%BC%88%E3%81%97%E3%82%8B%E3%81%B9%EF%BC%89%E3%83%A9%E3%83%B3%E3%82%BF%E3%83%B3-(soul-guide-lantern)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Erode",
+          "nameJa": "浸食作用",
+          "detailUrl": "https://scryfall.com/card/sos/15/ja/%E6%B5%B8%E9%A3%9F%E4%BD%9C%E7%94%A8-(erode)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Meltstrider's Resolve",
+          "nameJa": "溶（と）かし歩（ある）きの消（しょう）散（さん）",
+          "detailUrl": "https://scryfall.com/card/eoe/199/ja/%E6%BA%B6%EF%BC%88%E3%81%A8%EF%BC%89%E3%81%8B%E3%81%97%E6%AD%A9%EF%BC%88%E3%81%82%E3%82%8B%EF%BC%89%E3%81%8D%E3%81%AE%E6%B6%88%EF%BC%88%E3%81%97%E3%82%87%E3%81%86%EF%BC%89%E6%95%A3%EF%BC%88%E3%81%95%E3%82%93%EF%BC%89-(meltstriders-resolve)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Rest in Peace",
+          "nameJa": "安らかなる眠り",
+          "detailUrl": "https://scryfall.com/card/mar/6/ja/%E5%AE%89%E3%82%89%E3%81%8B%E3%81%AA%E3%82%8B%E7%9C%A0%E3%82%8A-(rest-in-peace)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Restoration Magic",
+          "nameJa": "回復魔法",
+          "detailUrl": "https://scryfall.com/card/fin/30/ja/%E5%9B%9E%E5%BE%A9%E9%AD%94%E6%B3%95-(restoration-magic)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sheltered by Ghosts",
+          "nameJa": "幽霊による庇護",
+          "detailUrl": "https://scryfall.com/card/soc/171/ja/%E5%B9%BD%E9%9C%8A%E3%81%AB%E3%82%88%E3%82%8B%E5%BA%87%E8%AD%B7-(sheltered-by-ghosts)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Axebane Ferox",
+          "nameJa": "斧折りのフェロックス",
+          "detailUrl": "https://scryfall.com/card/mkm/153/ja/%E6%96%A7%E6%8A%98%E3%82%8A%E3%81%AE%E3%83%95%E3%82%A7%E3%83%AD%E3%83%83%E3%82%AF%E3%82%B9-(axebane-ferox)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Elspeth, Storm Slayer",
+          "nameJa": "嵐の討伐者、エルズペス",
+          "detailUrl": "https://scryfall.com/card/tdm/11/ja/%E5%B5%90%E3%81%AE%E8%A8%8E%E4%BC%90%E8%80%85%E3%80%81%E3%82%A8%E3%83%AB%E3%82%BA%E3%83%9A%E3%82%B9-(elspeth-storm-slayer)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "translationStatus": "complete"
+        }
+      ]
+    },
+    {
+      "id": "7-kvothe-de-arrascaeta",
+      "player": "Kvothe_De_Arrascaeta",
+      "placement": 7,
+      "record": null,
+      "mainboardCount": 60,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 1,
+          "nameEn": "Prismari Charm",
+          "nameJa": "プリズマリの魔除け",
+          "detailUrl": "https://scryfall.com/card/sos/211/ja/%E3%83%97%E3%83%AA%E3%82%BA%E3%83%9E%E3%83%AA%E3%81%AE%E9%AD%94%E9%99%A4%E3%81%91-(prismari-charm)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Eddymurk Crab",
+          "nameJa": "渦泥の蟹",
+          "detailUrl": "https://scryfall.com/card/blb/48/ja/%E6%B8%A6%E6%B3%A5%E3%81%AE%E8%9F%B9-(eddymurk-crab)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Get Out",
+          "nameJa": "今のうちに出よう",
+          "detailUrl": "https://scryfall.com/card/dsk/60/ja/%E4%BB%8A%E3%81%AE%E3%81%86%E3%81%A1%E3%81%AB%E5%87%BA%E3%82%88%E3%81%86-(get-out)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Hearth Elemental // Stoke Genius",
+          "nameJa": "Hearth Elemental // 火（ひ）おこしの天（てん）才（さい）",
+          "detailUrl": "https://scryfall.com/card/woe/136/ja/hearth-elemental-%E7%81%AB%EF%BC%88%E3%81%B2%EF%BC%89%E3%81%8A%E3%81%93%E3%81%97%E3%81%AE%E5%A4%A9%EF%BC%88%E3%81%A6%E3%82%93%EF%BC%89%E6%89%8D%EF%BC%88%E3%81%95%E3%81%84%EF%BC%89-(hearth-elemental-stoke-genius)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Impractical Joke",
+          "nameJa": "すべきでない悪ふざけ",
+          "detailUrl": "https://scryfall.com/card/sos/119/ja/%E3%81%99%E3%81%B9%E3%81%8D%E3%81%A7%E3%81%AA%E3%81%84%E6%82%AA%E3%81%B5%E3%81%96%E3%81%91-(impractical-joke)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Burst Lightning",
+          "nameJa": "噴出の稲妻",
+          "detailUrl": "https://scryfall.com/card/soa/41/ja/%E5%99%B4%E5%87%BA%E3%81%AE%E7%A8%B2%E5%A6%BB-(burst-lightning)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Steam Vents",
+          "nameJa": "蒸気孔",
+          "detailUrl": "https://scryfall.com/card/rvr/288/ja/%E8%92%B8%E6%B0%97%E5%AD%94-(steam-vents)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Steam Vents",
+          "nameJa": "蒸気孔",
+          "detailUrl": "https://scryfall.com/card/rvr/288/ja/%E8%92%B8%E6%B0%97%E5%AD%94-(steam-vents)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Spell Pierce",
+          "nameJa": "呪文貫き",
+          "detailUrl": "https://scryfall.com/card/soa/23/ja/%E5%91%AA%E6%96%87%E8%B2%AB%E3%81%8D-(spell-pierce)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Spell Snare",
+          "nameJa": "呪文嵌め",
+          "detailUrl": "https://scryfall.com/card/ecl/71/ja/%E5%91%AA%E6%96%87%E5%B5%8C%E3%82%81-(spell-snare)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Opt",
+          "nameJa": "選択",
+          "detailUrl": "https://scryfall.com/card/tdc/158/ja/%E9%81%B8%E6%8A%9E-(opt)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Stormcarved Coast",
+          "nameJa": "嵐削りの海岸",
+          "detailUrl": "https://scryfall.com/card/who/308/ja/%E5%B5%90%E5%89%8A%E3%82%8A%E3%81%AE%E6%B5%B7%E5%B2%B8-(stormcarved-coast)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Flow State",
+          "nameJa": "没頭",
+          "detailUrl": "https://scryfall.com/card/sos/49/ja/%E6%B2%A1%E9%A0%AD-(flow-state)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Traumatic Critique",
+          "nameJa": "傷残す批評",
+          "detailUrl": "https://scryfall.com/card/sos/239/ja/%E5%82%B7%E6%AE%8B%E3%81%99%E6%89%B9%E8%A9%95-(traumatic-critique)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Sunderflock",
+          "nameJa": "刻み群れ",
+          "detailUrl": "https://scryfall.com/card/ecl/74/ja/%E5%88%BB%E3%81%BF%E7%BE%A4%E3%82%8C-(sunderflock)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Prismari Charm",
+          "nameJa": "プリズマリの魔除け",
+          "detailUrl": "https://scryfall.com/card/sos/211/ja/%E3%83%97%E3%83%AA%E3%82%BA%E3%83%9E%E3%83%AA%E3%81%AE%E9%AD%94%E9%99%A4%E3%81%91-(prismari-charm)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sleight of Hand",
+          "nameJa": "手練",
+          "detailUrl": "https://scryfall.com/card/soa/22/ja/%E6%89%8B%E7%B7%B4-(sleight-of-hand)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Spirebluff Canal",
+          "nameJa": "尖塔断の運河",
+          "detailUrl": "https://scryfall.com/card/otj/270/ja/%E5%B0%96%E5%A1%94%E6%96%AD%E3%81%AE%E9%81%8B%E6%B2%B3-(spirebluff-canal)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Riverpyre Verge",
+          "nameJa": "リバーパイアーの境界",
+          "detailUrl": "https://scryfall.com/card/dft/260/ja/%E3%83%AA%E3%83%90%E3%83%BC%E3%83%91%E3%82%A4%E3%82%A2%E3%83%BC%E3%81%AE%E5%A2%83%E7%95%8C-(riverpyre-verge)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Colorstorm Stallion",
+          "nameJa": "彩嵐の雄馬",
+          "detailUrl": "https://scryfall.com/card/sos/180/ja/%E5%BD%A9%E5%B5%90%E3%81%AE%E9%9B%84%E9%A6%AC-(colorstorm-stallion)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 1,
+          "nameEn": "Disdainful Stroke",
+          "nameJa": "軽蔑的な一撃",
+          "detailUrl": "https://scryfall.com/card/soa/17/ja/%E8%BB%BD%E8%94%91%E7%9A%84%E3%81%AA%E4%B8%80%E6%92%83-(disdainful-stroke)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Annul",
+          "nameJa": "無（む）効（こう）",
+          "detailUrl": "https://scryfall.com/card/eoe/46/ja/%E7%84%A1%EF%BC%88%E3%82%80%EF%BC%89%E5%8A%B9%EF%BC%88%E3%81%93%E3%81%86%EF%BC%89-(annul)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Colorstorm Stallion",
+          "nameJa": "彩嵐の雄馬",
+          "detailUrl": "https://scryfall.com/card/sos/180/ja/%E5%BD%A9%E5%B5%90%E3%81%AE%E9%9B%84%E9%A6%AC-(colorstorm-stallion)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Flashfreeze",
+          "nameJa": "瞬間凍結",
+          "detailUrl": "https://scryfall.com/card/mm2/45/ja/%E7%9E%AC%E9%96%93%E5%87%8D%E7%B5%90-(flashfreeze)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Slagstorm",
+          "nameJa": "金屑の嵐",
+          "detailUrl": "https://scryfall.com/card/fdn/207/ja/%E9%87%91%E5%B1%91%E3%81%AE%E5%B5%90-(slagstorm)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Octopus Form",
+          "nameJa": "タコの型",
+          "detailUrl": "https://scryfall.com/card/tla/66/ja/%E3%82%BF%E3%82%B3%E3%81%AE%E5%9E%8B-(octopus-form)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Ghost Vacuum",
+          "nameJa": "除霊用掃除機",
+          "detailUrl": "https://scryfall.com/card/dsk/248/ja/%E9%99%A4%E9%9C%8A%E7%94%A8%E6%8E%83%E9%99%A4%E6%A9%9F-(ghost-vacuum)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Ral, Crackling Wit",
+          "nameJa": "轟く機知、ラル",
+          "detailUrl": "https://scryfall.com/card/blb/230/ja/%E8%BD%9F%E3%81%8F%E6%A9%9F%E7%9F%A5%E3%80%81%E3%83%A9%E3%83%AB-(ral-crackling-wit)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Sunderflock",
+          "nameJa": "刻み群れ",
+          "detailUrl": "https://scryfall.com/card/ecl/74/ja/%E5%88%BB%E3%81%BF%E7%BE%A4%E3%82%8C-(sunderflock)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "translationStatus": "complete"
+        }
+      ]
+    },
+    {
+      "id": "8-cutechandra19",
+      "player": "CuteChandra19",
+      "placement": 8,
+      "record": null,
+      "mainboardCount": 60,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 4,
+          "nameEn": "Aang's Iceberg",
+          "nameJa": "アンの氷山",
+          "detailUrl": "https://scryfall.com/card/tla/5/ja/%E3%82%A2%E3%83%B3%E3%81%AE%E6%B0%B7%E5%B1%B1-(aangs-iceberg)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Weapons Manufacturing",
+          "nameJa": "武（ぶ）器（き）製（せい）造（ぞう）",
+          "detailUrl": "https://scryfall.com/card/eoe/168/ja/%E6%AD%A6%EF%BC%88%E3%81%B6%EF%BC%89%E5%99%A8%EF%BC%88%E3%81%8D%EF%BC%89%E8%A3%BD%EF%BC%88%E3%81%9B%E3%81%84%EF%BC%89%E9%80%A0%EF%BC%88%E3%81%9E%E3%81%86%EF%BC%89-(weapons-manufacturing)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Dusk Rose Reliquary",
+          "nameJa": "薄暮薔薇の聖遺",
+          "detailUrl": "https://scryfall.com/card/lci/10/ja/%E8%96%84%E6%9A%AE%E8%96%94%E8%96%87%E3%81%AE%E8%81%96%E9%81%BA-(dusk-rose-reliquary)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Legion Extruder",
+          "nameJa": "軍団の成形機械",
+          "detailUrl": "https://scryfall.com/card/big/12/ja/%E8%BB%8D%E5%9B%A3%E3%81%AE%E6%88%90%E5%BD%A2%E6%A9%9F%E6%A2%B0-(legion-extruder)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Cryogen Relic",
+          "nameJa": "氷（こおり）魔（ま）法（ほう）の秘（ひ）宝（ほう）",
+          "detailUrl": "https://scryfall.com/card/eoe/52/ja/%E6%B0%B7%EF%BC%88%E3%81%93%E3%81%8A%E3%82%8A%EF%BC%89%E9%AD%94%EF%BC%88%E3%81%BE%EF%BC%89%E6%B3%95%EF%BC%88%E3%81%BB%E3%81%86%EF%BC%89%E3%81%AE%E7%A7%98%EF%BC%88%E3%81%B2%EF%BC%89%E5%AE%9D%EF%BC%88%E3%81%BB%E3%81%86%EF%BC%89-(cryogen-relic)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Pinnacle Starcage",
+          "nameJa": "ピナクルの星（せい）檻（かん）",
+          "detailUrl": "https://scryfall.com/card/eoe/27/ja/%E3%83%94%E3%83%8A%E3%82%AF%E3%83%AB%E3%81%AE%E6%98%9F%EF%BC%88%E3%81%9B%E3%81%84%EF%BC%89%E6%AA%BB%EF%BC%88%E3%81%8B%E3%82%93%EF%BC%89-(pinnacle-starcage)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Castle Doom",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "United Battlefront",
+          "nameJa": "団結の最前線",
+          "detailUrl": "https://scryfall.com/card/tdm/32/ja/%E5%9B%A3%E7%B5%90%E3%81%AE%E6%9C%80%E5%89%8D%E7%B7%9A-(united-battlefront)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sacred Foundry",
+          "nameJa": "聖（せい）なる鋳（ちゅう）造（ぞう）所（しょ）",
+          "detailUrl": "https://scryfall.com/card/eoe/256/ja/%E8%81%96%EF%BC%88%E3%81%9B%E3%81%84%EF%BC%89%E3%81%AA%E3%82%8B%E9%8B%B3%EF%BC%88%E3%81%A1%E3%82%85%E3%81%86%EF%BC%89%E9%80%A0%EF%BC%88%E3%81%9E%E3%81%86%EF%BC%89%E6%89%80%EF%BC%88%E3%81%97%E3%82%87%EF%BC%89-(sacred-foundry)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Starting Town",
+          "nameJa": "始まりの町",
+          "detailUrl": "https://scryfall.com/card/fin/289/ja/%E5%A7%8B%E3%81%BE%E3%82%8A%E3%81%AE%E7%94%BA-(starting-town)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sundown Pass",
+          "nameJa": "日没の道",
+          "detailUrl": "https://scryfall.com/card/who/310/ja/%E6%97%A5%E6%B2%A1%E3%81%AE%E9%81%93-(sundown-pass)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Melded Moxite",
+          "nameJa": "モーキサイト合（ごう）金（きん）",
+          "detailUrl": "https://scryfall.com/card/eoe/143/ja/%E3%83%A2%E3%83%BC%E3%82%AD%E3%82%B5%E3%82%A4%E3%83%88%E5%90%88%EF%BC%88%E3%81%94%E3%81%86%EF%BC%89%E9%87%91%EF%BC%88%E3%81%8D%E3%82%93%EF%BC%89-(melded-moxite)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Hallowed Fountain",
+          "nameJa": "神聖なる泉",
+          "detailUrl": "https://scryfall.com/card/rvr/280/ja/%E7%A5%9E%E8%81%96%E3%81%AA%E3%82%8B%E6%B3%89-(hallowed-fountain)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Mountain",
+          "nameJa": "山",
+          "detailUrl": "https://scryfall.com/card/tmt/194/ja/%E5%B1%B1-(mountain)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Spring-Loaded Sawblades // Bladewheel Chariot",
+          "nameJa": "バネ仕掛けの鋸刃 // 刃車輪の戦車",
+          "detailUrl": "https://scryfall.com/card/lci/36/ja/%E3%83%90%E3%83%8D%E4%BB%95%E6%8E%9B%E3%81%91%E3%81%AE%E9%8B%B8%E5%88%83-%E5%88%83%E8%BB%8A%E8%BC%AA%E3%81%AE%E6%88%A6%E8%BB%8A-(spring-loaded-sawblades-bladewheel-chariot)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Plains",
+          "nameJa": "平地",
+          "detailUrl": "https://scryfall.com/card/tmt/191/ja/%E5%B9%B3%E5%9C%B0-(plains)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Temple of Epiphany",
+          "nameJa": "天（てん）啓（けい）の神（しん）殿（でん）",
+          "detailUrl": "https://scryfall.com/card/eoc/187/ja/%E5%A4%A9%EF%BC%88%E3%81%A6%E3%82%93%EF%BC%89%E5%95%93%EF%BC%88%E3%81%91%E3%81%84%EF%BC%89%E3%81%AE%E7%A5%9E%EF%BC%88%E3%81%97%E3%82%93%EF%BC%89%E6%AE%BF%EF%BC%88%E3%81%A7%E3%82%93%EF%BC%89-(temple-of-epiphany)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Ironheart, Clever Champion",
+          "nameJa": null,
+          "detailUrl": null,
+          "typeGroup": "other",
+          "category": "other",
+          "translationStatus": "missing"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Island",
+          "nameJa": "島",
+          "detailUrl": "https://scryfall.com/card/tmt/192/ja/%E5%B3%B6-(island)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 2,
+          "nameEn": "Day of Judgment",
+          "nameJa": "審判の日",
+          "detailUrl": "https://scryfall.com/card/fdn/140/ja/%E5%AF%A9%E5%88%A4%E3%81%AE%E6%97%A5-(day-of-judgment)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Authority of the Consuls",
+          "nameJa": "領事の権限",
+          "detailUrl": "https://scryfall.com/card/fic/232/ja/%E9%A0%98%E4%BA%8B%E3%81%AE%E6%A8%A9%E9%99%90-(authority-of-the-consuls)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Sewer-veillance Cam",
+          "nameJa": "監視亀ラ",
+          "detailUrl": "https://scryfall.com/card/tmt/53/ja/%E7%9B%A3%E8%A6%96%E4%BA%80%E3%83%A9-(sewer-veillance-cam)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Feldon's Cane",
+          "nameJa": "フェルドンの杖",
+          "detailUrl": "https://scryfall.com/card/tsb/109/ja/%E3%83%95%E3%82%A7%E3%83%AB%E3%83%89%E3%83%B3%E3%81%AE%E6%9D%96-(feldons-cane)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Tezzeret, Cruel Captain",
+          "nameJa": "冷（れい）酷（こく）な船（せん）長（ちょう）、テゼレット",
+          "detailUrl": "https://scryfall.com/card/eoe/2/ja/%E5%86%B7%EF%BC%88%E3%82%8C%E3%81%84%EF%BC%89%E9%85%B7%EF%BC%88%E3%81%93%E3%81%8F%EF%BC%89%E3%81%AA%E8%88%B9%EF%BC%88%E3%81%9B%E3%82%93%EF%BC%89%E9%95%B7%EF%BC%88%E3%81%A1%E3%82%87%E3%81%86%EF%BC%89%E3%80%81%E3%83%86%E3%82%BC%E3%83%AC%E3%83%83%E3%83%88-(tezzeret-cruel-captain)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Scene of the Crime",
+          "nameJa": "犯行現場",
+          "detailUrl": "https://scryfall.com/card/mkm/267/ja/%E7%8A%AF%E8%A1%8C%E7%8F%BE%E5%A0%B4-(scene-of-the-crime)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Torpor Orb",
+          "nameJa": "倦怠の宝珠",
+          "detailUrl": "https://scryfall.com/card/big/27/ja/%E5%80%A6%E6%80%A0%E3%81%AE%E5%AE%9D%E7%8F%A0-(torpor-orb)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Ghost Vacuum",
+          "nameJa": "除霊用掃除機",
+          "detailUrl": "https://scryfall.com/card/dsk/248/ja/%E9%99%A4%E9%9C%8A%E7%94%A8%E6%8E%83%E9%99%A4%E6%A9%9F-(ghost-vacuum)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "translationStatus": "complete"
+        }
+      ]
+    }
+  ]
+}
