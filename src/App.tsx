@@ -1,6 +1,18 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import type { CardNameDisplayMode, Deck, EventSummary, ToastMessage } from './types';
-import { useEventData, useIndexData, useLocalStorage } from './hooks/useData';
+import type {
+  CardNameDisplayMode,
+  CardSearchEntry,
+  Deck,
+  EventSummary,
+  ToastMessage,
+} from './types';
+import {
+  useCardSearchIndex,
+  useEventData,
+  useIndexData,
+  useLocalStorage,
+} from './hooks/useData';
+import { buildDeckRefIndex } from './utils/cardSearch';
 import { copyDeckToClipboard, getLastNDates } from './utils/helpers';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
@@ -15,6 +27,7 @@ const DATE_RANGE = 10;
 
 export default function App() {
   const { data, loading, error, refetch } = useIndexData();
+  const { index: cardSearchIndex, error: cardSearchError } = useCardSearchIndex();
   const [cardNameDisplay, setCardNameDisplay] =
     useLocalStorage<CardNameDisplayMode>('mtgo-card-display', 'ja');
 
@@ -22,9 +35,15 @@ export default function App() {
   const [eventTypeFilter, setEventTypeFilter] = useState<
     'all' | 'challenge' | 'league'
   >('all');
+  const [selectedCard, setSelectedCard] = useState<CardSearchEntry | null>(null);
   const [selectedEvent, setSelectedEvent] = useState<EventSummary | null>(null);
   const [selectedDeckId, setSelectedDeckId] = useState<string | null>(null);
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
+
+  const deckMatchIndex = useMemo(
+    () => buildDeckRefIndex(selectedCard),
+    [selectedCard]
+  );
 
   const availableDates = useMemo(() => {
     const newestEventDate = data?.events
@@ -52,6 +71,14 @@ export default function App() {
 
   const removeToast = useCallback((id: string) => {
     setToasts((prev) => prev.filter((t) => t.id !== id));
+  }, []);
+
+  const handleCardSelect = useCallback((card: CardSearchEntry) => {
+    setSelectedCard(card);
+  }, []);
+
+  const handleCardClear = useCallback(() => {
+    setSelectedCard(null);
   }, []);
 
   const handleDeckSelect = useCallback((event: EventSummary, deckId: string) => {
@@ -118,6 +145,11 @@ export default function App() {
         onEventTypeChange={setEventTypeFilter}
         cardNameDisplay={cardNameDisplay}
         onCardNameDisplayChange={setCardNameDisplay}
+        cardSearchIndex={cardSearchIndex}
+        cardSearchError={cardSearchError}
+        selectedCard={selectedCard}
+        onCardSelect={handleCardSelect}
+        onCardClear={handleCardClear}
       />
 
       <main className="max-w-7xl mx-auto px-4 py-6">
@@ -129,6 +161,8 @@ export default function App() {
           eventTypeFilter={eventTypeFilter}
           onDeckSelect={handleDeckSelect}
           selectedDeckId={selectedDeckId}
+          selectedCard={selectedCard}
+          deckMatchIndex={deckMatchIndex}
         />
 
         <ProcessingStatusPanel data={data} />

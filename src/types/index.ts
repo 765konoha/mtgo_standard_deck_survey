@@ -100,6 +100,30 @@ export interface IndexData {
   events: EventSummary[];
 }
 
+export interface DeckSearchReference {
+  eventId: string;
+  deckId: string;
+  mainboardQuantity: number;
+  sideboardQuantity: number;
+}
+
+export interface CardSearchEntry {
+  key: string;
+  nameEn: string;
+  nameJa: string | null;
+  normalizedNameEn: string;
+  normalizedNameJa: string | null;
+  deckCount: number;
+  deckRefs: DeckSearchReference[];
+}
+
+export interface CardSearchIndex {
+  schemaVersion: number;
+  generatedAt?: string;
+  period?: { startDate: string; endDate: string; lookbackDays: number };
+  cards: CardSearchEntry[];
+}
+
 export interface ToastMessage {
   id: string;
   message: string;

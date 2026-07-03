@@ -1,5 +1,6 @@
 import { AlertCircle, AlertTriangle, Clock } from 'lucide-react';
-import type { EventSummary } from '../types';
+import type { CardSearchEntry, EventSummary } from '../types';
+import type { DeckMatch } from '../utils/cardSearch';
 import { useEventData } from '../hooks/useData';
 import { formatDate } from '../utils/helpers';
 import { EventCard } from './EventCard';
@@ -10,6 +11,8 @@ interface EventListProps {
   eventTypeFilter: 'all' | 'challenge' | 'league';
   onDeckSelect: (event: EventSummary, deckId: string) => void;
   selectedDeckId: string | null;
+  selectedCard: CardSearchEntry | null;
+  deckMatchIndex: Map<string, Map<string, DeckMatch>>;
 }
 
 export function EventList({
@@ -18,14 +21,28 @@ export function EventList({
   eventTypeFilter,
   onDeckSelect,
   selectedDeckId,
+  selectedCard,
+  deckMatchIndex,
 }: EventListProps) {
   const filteredEvents = events.filter((event) => {
     if (selectedDate && event.eventDate !== selectedDate) return false;
     if (eventTypeFilter !== 'all' && event.eventType !== eventTypeFilter) return false;
+    // When a card is selected, only events with a matching deck remain (AND).
+    if (selectedCard && !deckMatchIndex.has(event.id)) return false;
     return true;
   });
 
   if (filteredEvents.length === 0) {
+    if (selectedCard) {
+      return (
+        <div className="text-center py-12">
+          <p className="text-neutral-300">選択したカードを含むデッキはありません。</p>
+          <p className="text-sm text-neutral-500 mt-2">
+            日付やイベント種別の条件を変更してください。
+          </p>
+        </div>
+      );
+    }
     return (
       <div className="text-center py-12">
         <p className="text-neutral-400">
@@ -71,6 +88,7 @@ export function EventList({
                 event={event}
                 onDeckSelect={onDeckSelect}
                 selectedDeckId={selectedDeckId}
+                deckMatches={selectedCard ? deckMatchIndex.get(event.id) ?? null : null}
               />
             ))}
           </div>
@@ -84,12 +102,14 @@ interface EventCardWrapperProps {
   event: EventSummary;
   onDeckSelect: (event: EventSummary, deckId: string) => void;
   selectedDeckId: string | null;
+  deckMatches: Map<string, DeckMatch> | null;
 }
 
 function EventCardWrapper({
   event,
   onDeckSelect,
   selectedDeckId,
+  deckMatches,
 }: EventCardWrapperProps) {
   const { data, loading, error } = useEventData(event);
 
@@ -127,6 +147,7 @@ function EventCardWrapper({
       eventData={data}
       onDeckSelect={onDeckSelect}
       selectedDeckId={selectedDeckId}
+      deckMatches={deckMatches}
     />
   );
 }

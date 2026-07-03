@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, Languages } from 'lucide-react';
-import type { CardNameDisplayMode } from '../types';
+import type { CardNameDisplayMode, CardSearchEntry, CardSearchIndex } from '../types';
 import { formatDate, formatShortDate } from '../utils/helpers';
+import { CardSearchBox } from './CardSearchBox';
 
 interface FilterBarProps {
   availableDates: string[];
@@ -11,6 +12,11 @@ interface FilterBarProps {
   onEventTypeChange: (filter: 'all' | 'challenge' | 'league') => void;
   cardNameDisplay: CardNameDisplayMode;
   onCardNameDisplayChange: (mode: CardNameDisplayMode) => void;
+  cardSearchIndex: CardSearchIndex | null;
+  cardSearchError: Error | null;
+  selectedCard: CardSearchEntry | null;
+  onCardSelect: (card: CardSearchEntry) => void;
+  onCardClear: () => void;
 }
 
 export function FilterBar({
@@ -21,6 +27,11 @@ export function FilterBar({
   onEventTypeChange,
   cardNameDisplay,
   onCardNameDisplayChange,
+  cardSearchIndex,
+  cardSearchError,
+  selectedCard,
+  onCardSelect,
+  onCardClear,
 }: FilterBarProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -161,6 +172,16 @@ export function FilterBar({
                   </button>
                 ))}
               </div>
+            </div>
+
+            <div className="w-full sm:w-auto sm:ml-auto">
+              <CardSearchBox
+                index={cardSearchIndex}
+                indexError={cardSearchError}
+                selectedCard={selectedCard}
+                onSelect={onCardSelect}
+                onClear={onCardClear}
+              />
             </div>
           </div>
         </div>
