@@ -1,4 +1,4 @@
-import type { CardSearchEntry, DeckSearchReference } from '../types';
+import type { CardSearchEntry, CardSearchIndex, DeckSearchReference } from '../types';
 
 // Normalizes text for card-name matching. This mirrors normalizeCardName in
 // scripts/lib/normalize-card-name.mjs so that browser search keys line up with
@@ -94,4 +94,90 @@ export function formatDeckMatch(match: DeckSearchReference | DeckMatch): string 
   if (match.mainboardQuantity > 0) parts.push(`メイン ${match.mainboardQuantity}枚`);
   if (match.sideboardQuantity > 0) parts.push(`サイド ${match.sideboardQuantity}枚`);
   return parts.join(' / ');
+}
+
+export interface ExpansionDeckMatch {
+  mainboardQuantity: number;
+  sideboardQuantity: number;
+  cardKinds: number;
+}
+
+// Builds eventId -> (deckId -> aggregate) for every deck containing at least
+// one card of the given expansion. Mirrors buildExpansionDeckIndex in
+// scripts/lib/card-search.mjs — keep the two in sync.
+export function buildExpansionDeckIndex(
+  index: CardSearchIndex | null,
+  expansionCode: string | null
+): Map<string, Map<string, ExpansionDeckMatch>> {
+  const result = new Map<string, Map<string, ExpansionDeckMatch>>();
+  if (!index || !expansionCode) return result;
+  for (const card of index.cards) {
+    if (!(card.setCodes ?? []).includes(expansionCode)) continue;
+    for (const ref of card.deckRefs) {
+      const byDeck = result.get(ref.eventId) ?? new Map<string, ExpansionDeckMatch>();
+      const match = byDeck.get(ref.deckId) ?? {
+        mainboardQuantity: 0,
+        sideboardQuantity: 0,
+        cardKinds: 0,
+      };
+      match.mainboardQuantity += ref.mainboardQuantity;
+      match.sideboardQuantity += ref.sideboardQuantity;
+      match.cardKinds += 1;
+      byDeck.set(ref.deckId, match);
+      result.set(ref.eventId, byDeck);
+    }
+  }
+  return result;
+}
+
+// "メイン12枚／サイド3枚・5種類" style label for an expansion-filtered deck.
+export function formatExpansionMatch(match: ExpansionDeckMatch): string {
+  const zones: string[] = [];
+  if (match.mainboardQuantity > 0) zones.push(`メイン${match.mainboardQuantity}枚`);
+  if (match.sideboardQuantity > 0) zones.push(`サイド${match.sideboardQuantity}枚`);
+  return `${zones.join('／')}・${match.cardKinds}種類`;
+}
+
+// Compact set badge for a card row: single set -> "FDN"; reprints -> "FDN +2"
+// (primary code plus how many other sets), with the full list for tooltips.
+// Never asserts which printing was actually played.
+export function formatSetBadge(
+  setCodes: string[] | undefined,
+  primarySetCode: string | null | undefined
+): { label: string; title: string } | null {
+  const codes = setCodes ?? [];
+  if (codes.length === 0) return null;
+  const primary = primarySetCode && codes.includes(primarySetCode) ? primarySetCode : codes[0];
+  const others = codes.length - 1;
+  return {
+    label: others > 0 ? `${primary} +${others}` : primary,
+    title: codes.join(', '),
+  };
+}
+
+// Intersects the per-deck visibility maps of active filters (card selection,
+// expansion). Passing null for a filter means "no restriction from it".
+export function intersectDeckIndexes<A, B>(
+  a: Map<string, Map<string, A>> | null,
+  b: Map<string, Map<string, B>> | null
+): Map<string, Set<string>> | null {
+  if (!a && !b) return null;
+  const single = (m: Map<string, Map<string, unknown>>) => {
+    const out = new Map<string, Set<string>>();
+    for (const [eventId, decks] of m) out.set(eventId, new Set(decks.keys()));
+    return out;
+  };
+  if (!a) return single(b as Map<string, Map<string, unknown>>);
+  if (!b) return single(a as Map<string, Map<string, unknown>>);
+  const out = new Map<string, Set<string>>();
+  for (const [eventId, decksA] of a) {
+    const decksB = b.get(eventId);
+    if (!decksB) continue;
+    const decks = new Set<string>();
+    for (const deckId of decksA.keys()) {
+      if (decksB.has(deckId)) decks.add(deckId);
+    }
+    if (decks.size > 0) out.set(eventId, decks);
+  }
+  return out;
 }

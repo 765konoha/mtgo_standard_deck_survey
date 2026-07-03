@@ -1,8 +1,8 @@
 import { ExternalLink, Trophy, Users } from 'lucide-react';
 import type { Deck, Event, EventSummary, EventType } from '../types';
-import type { DeckMatch } from '../utils/cardSearch';
+import type { DeckMatch, ExpansionDeckMatch } from '../utils/cardSearch';
 import { formatDate, getPlacementLabel } from '../utils/helpers';
-import { formatDeckMatch } from '../utils/cardSearch';
+import { formatDeckMatch, formatExpansionMatch } from '../utils/cardSearch';
 
 interface EventCardProps {
   eventSummary: EventSummary;
@@ -10,6 +10,9 @@ interface EventCardProps {
   onDeckSelect: (event: EventSummary, deckId: string) => void;
   selectedDeckId: string | null;
   deckMatches?: Map<string, DeckMatch> | null;
+  expansionCode?: string | null;
+  expansionMatches?: Map<string, ExpansionDeckMatch> | null;
+  visibleDeckIds?: Set<string> | null;
 }
 
 export function EventCard({
@@ -18,15 +21,19 @@ export function EventCard({
   onDeckSelect,
   selectedDeckId,
   deckMatches,
+  expansionCode,
+  expansionMatches,
+  visibleDeckIds,
 }: EventCardProps) {
   const { event, decks } = eventData;
   const isChallenge = event.eventType === 'challenge';
   const orderedDecks = isChallenge
     ? [...decks].sort((a, b) => (a.placement ?? 99) - (b.placement ?? 99))
     : decks;
-  // When a card is selected, only show decks that contain it.
-  const sortedDecks = deckMatches
-    ? orderedDecks.filter((deck) => deckMatches.has(deck.id))
+  // With active card/expansion filters, only show the matching decks.
+  const filtering = visibleDeckIds != null;
+  const sortedDecks = filtering
+    ? orderedDecks.filter((deck) => visibleDeckIds.has(deck.id))
     : orderedDecks;
 
   return (
@@ -57,7 +64,7 @@ export function EventCard({
               <span>開催: {formatDate(event.eventDate)}</span>
               <span>掲載: {formatDate(event.publishedDate)}</span>
               <span>
-                {deckMatches
+                {filtering
                   ? `${sortedDecks.length} / ${eventSummary.deckCount}デッキ`
                   : `${eventSummary.deckCount}デッキ`}
               </span>
@@ -85,6 +92,8 @@ export function EventCard({
             isSelected={selectedDeckId === deck.id}
             onClick={() => onDeckSelect(eventSummary, deck.id)}
             match={deckMatches?.get(deck.id) ?? null}
+            expansionCode={expansionCode ?? null}
+            expansionMatch={expansionMatches?.get(deck.id) ?? null}
           />
         ))}
       </div>
@@ -98,12 +107,25 @@ interface DeckRowProps {
   isSelected: boolean;
   onClick: () => void;
   match: DeckMatch | null;
+  expansionCode: string | null;
+  expansionMatch: ExpansionDeckMatch | null;
 }
 
-function DeckRow({ deck, eventType, isSelected, onClick, match }: DeckRowProps) {
+function DeckRow({
+  deck,
+  eventType,
+  isSelected,
+  onClick,
+  match,
+  expansionCode,
+  expansionMatch,
+}: DeckRowProps) {
   const isChallenge = eventType === 'challenge';
   const placement = getPlacementLabel(deck);
   const matchLabel = match ? formatDeckMatch(match) : null;
+  const expansionLabel = expansionCode && expansionMatch
+    ? `${expansionCode}: ${formatExpansionMatch(expansionMatch)}`
+    : null;
 
   return (
     <button
@@ -135,11 +157,18 @@ function DeckRow({ deck, eventType, isSelected, onClick, match }: DeckRowProps) 
             Main {deck.mainboardCount} / Side {deck.sideboardCount}
           </div>
         </div>
-        {matchLabel && (
-          <div className="shrink-0 text-xs font-medium text-primary-300 bg-primary-950/60 px-2 py-0.5 rounded">
-            {matchLabel}
-          </div>
-        )}
+        <div className="shrink-0 flex flex-col items-end gap-1">
+          {matchLabel && (
+            <div className="text-xs font-medium text-primary-300 bg-primary-950/60 px-2 py-0.5 rounded">
+              {matchLabel}
+            </div>
+          )}
+          {expansionLabel && (
+            <div className="text-xs font-medium text-warning-400 bg-warning-950/60 px-2 py-0.5 rounded">
+              {expansionLabel}
+            </div>
+          )}
+        </div>
       </div>
     </button>
   );

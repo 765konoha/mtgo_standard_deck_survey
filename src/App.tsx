@@ -12,7 +12,11 @@ import {
   useIndexData,
   useLocalStorage,
 } from './hooks/useData';
-import { buildDeckRefIndex } from './utils/cardSearch';
+import {
+  buildDeckRefIndex,
+  buildExpansionDeckIndex,
+  intersectDeckIndexes,
+} from './utils/cardSearch';
 import { copyDeckToClipboard, getLastNDates } from './utils/helpers';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
@@ -36,6 +40,7 @@ export default function App() {
     'all' | 'challenge' | 'league'
   >('all');
   const [selectedCard, setSelectedCard] = useState<CardSearchEntry | null>(null);
+  const [selectedExpansion, setSelectedExpansion] = useState<string | null>(null);
   const [selectedEvent, setSelectedEvent] = useState<EventSummary | null>(null);
   const [selectedDeckId, setSelectedDeckId] = useState<string | null>(null);
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
@@ -43,6 +48,20 @@ export default function App() {
   const deckMatchIndex = useMemo(
     () => buildDeckRefIndex(selectedCard),
     [selectedCard]
+  );
+
+  const expansionDeckIndex = useMemo(
+    () => buildExpansionDeckIndex(cardSearchIndex, selectedExpansion),
+    [cardSearchIndex, selectedExpansion]
+  );
+
+  // AND of the card filter and the expansion filter; null = no deck filtering.
+  const visibleDecks = useMemo(
+    () => intersectDeckIndexes(
+      selectedCard ? deckMatchIndex : null,
+      selectedExpansion ? expansionDeckIndex : null
+    ),
+    [selectedCard, deckMatchIndex, selectedExpansion, expansionDeckIndex]
   );
 
   const availableDates = useMemo(() => {
@@ -150,6 +169,8 @@ export default function App() {
         selectedCard={selectedCard}
         onCardSelect={handleCardSelect}
         onCardClear={handleCardClear}
+        selectedExpansion={selectedExpansion}
+        onExpansionChange={setSelectedExpansion}
       />
 
       <main className="max-w-7xl mx-auto px-4 py-6">
@@ -163,6 +184,9 @@ export default function App() {
           selectedDeckId={selectedDeckId}
           selectedCard={selectedCard}
           deckMatchIndex={deckMatchIndex}
+          selectedExpansion={selectedExpansion}
+          expansionDeckIndex={expansionDeckIndex}
+          visibleDecks={visibleDecks}
         />
 
         <ProcessingStatusPanel data={data} />

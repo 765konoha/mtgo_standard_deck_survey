@@ -13,6 +13,7 @@ interface CardSearchBoxProps {
   selectedCard: CardSearchEntry | null;
   onSelect: (card: CardSearchEntry) => void;
   onClear: () => void;
+  expansionFilter?: string | null;
 }
 
 export function CardSearchBox({
@@ -21,6 +22,7 @@ export function CardSearchBox({
   selectedCard,
   onSelect,
   onClear,
+  expansionFilter = null,
 }: CardSearchBoxProps) {
   const [query, setQuery] = useState('');
   const [debounced, setDebounced] = useState('');
@@ -42,8 +44,12 @@ export function CardSearchBox({
 
   const suggestions = useMemo(() => {
     if (!index || trimmedLength < MIN_QUERY_LENGTH) return [];
-    return rankCardSuggestions(index.cards, debounced, MAX_SUGGESTIONS);
-  }, [index, debounced, trimmedLength]);
+    // When an expansion is selected, only suggest cards from that expansion.
+    const candidates = expansionFilter
+      ? index.cards.filter((card) => (card.setCodes ?? []).includes(expansionFilter))
+      : index.cards;
+    return rankCardSuggestions(candidates, debounced, MAX_SUGGESTIONS);
+  }, [index, debounced, trimmedLength, expansionFilter]);
 
   const showList = open && trimmedLength >= MIN_QUERY_LENGTH;
 
@@ -208,7 +214,15 @@ export function CardSearchBox({
                       <div className="text-xs text-neutral-500 truncate">{card.nameEn}</div>
                     )}
                   </div>
-                  <span className="text-xs text-neutral-400 whitespace-nowrap shrink-0">
+                  <span className="text-xs text-neutral-400 whitespace-nowrap shrink-0 flex items-center gap-1.5">
+                    {(card.primarySetCode || (card.setCodes ?? [])[0]) && (
+                      <span
+                        className="text-[10px] font-mono text-neutral-500 border border-neutral-700 rounded px-1 py-px"
+                        title={(card.setCodes ?? []).join(', ')}
+                      >
+                        {card.primarySetCode || (card.setCodes ?? [])[0]}
+                      </span>
+                    )}
                     {card.deckCount}デッキ
                   </span>
                 </li>

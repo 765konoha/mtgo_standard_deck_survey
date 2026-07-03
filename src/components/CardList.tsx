@@ -1,5 +1,6 @@
 import { ExternalLink } from 'lucide-react';
 import type { Card, CardNameDisplayMode } from '../types';
+import { formatSetBadge } from '../utils/cardSearch';
 import { getCardDisplayName, groupCardsByCategory } from '../utils/helpers';
 
 interface CardListProps {
@@ -63,6 +64,7 @@ function CardRow({ card, displayMode }: CardRowProps) {
   const { primary, secondary } = getCardDisplayName(card, displayMode);
   const hasDetailUrl = Boolean(card.detailUrl);
   const isUntranslated = card.translationStatus !== 'complete';
+  const setBadge = formatSetBadge(card.setCodes, card.primarySetCode);
 
   const content = (
     <div className="flex items-start gap-2 py-1 px-2 -mx-2 rounded hover:bg-neutral-800/30 transition-colors group">
@@ -72,6 +74,14 @@ function CardRow({ card, displayMode }: CardRowProps) {
       <div className="flex-1 min-w-0">
         <div className="text-sm text-neutral-200 group-hover:text-neutral-100">
           {primary}
+          {setBadge && (
+            <span
+              className="ml-2 text-[10px] font-mono text-neutral-500 border border-neutral-700 rounded px-1 py-px align-middle whitespace-nowrap"
+              title={setBadge.title}
+            >
+              {setBadge.label}
+            </span>
+          )}
           {isUntranslated && (
             <span className="ml-2 text-xs text-warning-500">
               日本語名未登録

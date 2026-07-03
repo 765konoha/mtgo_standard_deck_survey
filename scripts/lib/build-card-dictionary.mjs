@@ -1,5 +1,47 @@
 import { normalizeCardName } from './normalize-card-name.mjs';
 
+// Set types whose printings define a card's expansion attribution. This keeps
+// tokens, art series, memorabilia, promos, and Commander-only printings out of
+// setCodes without maintaining a hardcoded set list.
+const EXPANSION_SET_TYPES = new Set(['expansion', 'core']);
+
+// Collects expansion references for one oracle group from its English prints.
+// Prefers expansion/core printings; falls back to whatever printings exist so
+// event-only cards outside the current Standard pool still get attribution.
+export function collectSetReferences(cards) {
+  const prints = (cards || []).filter((card) => card?.set);
+  const preferred = prints.filter((card) => EXPANSION_SET_TYPES.has(card.set_type));
+  const source = preferred.length > 0 ? preferred : prints;
+  const byCode = new Map();
+  for (const card of source) {
+    const code = String(card.set).toUpperCase();
+    const existing = byCode.get(code);
+    if (!existing) {
+      byCode.set(code, {
+        code,
+        name: card.set_name || null,
+        releasedAt: card.released_at || null,
+      });
+    } else {
+      // Keep the richest data seen for this code.
+      if (!existing.name && card.set_name) existing.name = card.set_name;
+      if (!existing.releasedAt && card.released_at) existing.releasedAt = card.released_at;
+    }
+  }
+  const sets = [...byCode.values()].sort(
+    (a, b) => String(b.releasedAt || '').localeCompare(String(a.releasedAt || ''))
+      || a.code.localeCompare(b.code)
+  );
+  const setCodes = sets.map((set) => set.code);
+  return {
+    setCodes,
+    sets,
+    // Display-only representative code: the newest attributed printing.
+    // Never asserts which printing was actually played on MTGO.
+    primarySetCode: setCodes[0] || null,
+  };
+}
+
 export function buildCardDictionary({
   englishPrints,
   japanesePrints,
@@ -27,6 +69,7 @@ export function buildCardDictionary({
     const englishCard = selectEnglishCard(englishCards);
     const japaneseCard = selectJapaneseCard(japaneseByOracle.get(oracleId) || []);
     const japaneseName = getJapaneseName(japaneseCard);
+    const setReferences = collectSetReferences(englishCards);
     if (japaneseCard) stats.oracleJoined += 1;
     if (japaneseName.source === 'printed_name') stats.fromPrintedName += 1;
     if (japaneseName.source === 'card_faces') stats.fromCardFaces += 1;
@@ -55,6 +98,9 @@ export function buildCardDictionary({
         translatedFaces: alias.faceIndex == null ? japaneseName.translatedFaces : undefined,
         oracleId,
         layout: englishCard.layout || null,
+        setCodes: setReferences.setCodes,
+        sets: setReferences.sets,
+        primarySetCode: setReferences.primarySetCode,
       });
     }
     stats.aliases += aliases.length;
@@ -89,6 +135,91 @@ export function buildCardDictionary({
     stats,
     unresolved: remainingUnresolved,
   };
+}
+
+// Merges a set-scoped partial dictionary into the existing full dictionary.
+// Entries outside the partial are untouched. A non-null existing nameJa is
+// never replaced by null or by an English fallback, and manual overrides win.
+export function mergeSetScopedDictionary(existing, partial) {
+  const cards = { ...(existing.cards || {}) };
+  const mergeStats = {
+    added: 0,
+    updated: 0,
+    translationsAdopted: 0,
+    translationsPreserved: 0,
+  };
+
+  for (const [key, candidate] of Object.entries(partial.cards || {})) {
+    const current = cards[key];
+    if (!current) {
+      cards[key] = candidate;
+      mergeStats.added += 1;
+      if (candidate.nameJa) mergeStats.translationsAdopted += 1;
+      continue;
+    }
+    const keepManual = current.nameJa && current.translationSource === 'manual_override'
+      && candidate.translationSource !== 'manual_override';
+    const adoptCandidate = candidate.nameJa && !keepManual;
+    const preserveCurrent = !adoptCandidate && Boolean(current.nameJa);
+    const translation = adoptCandidate
+      ? {
+        nameJa: candidate.nameJa,
+        translationStatus: candidate.translationStatus,
+        translationSource: candidate.translationSource,
+        translatedFaces: candidate.translatedFaces,
+      }
+      : preserveCurrent
+        ? {
+          nameJa: current.nameJa,
+          translationStatus: current.translationStatus,
+          translationSource: current.translationSource,
+          translatedFaces: current.translatedFaces,
+        }
+        : {
+          // Neither side has a translation; take the fresher diagnosis.
+          nameJa: null,
+          translationStatus: candidate.translationStatus || current.translationStatus || 'missing',
+          translationSource: null,
+          translatedFaces: candidate.translatedFaces ?? current.translatedFaces,
+        };
+    const setAttributes = mergeSetReferences(current.sets || [], candidate.sets || []);
+    cards[key] = {
+      ...current,
+      ...candidate,
+      ...translation,
+      detailUrl: (adoptCandidate ? candidate.detailUrl : current.detailUrl)
+        || candidate.detailUrl || current.detailUrl || null,
+      ...setAttributes,
+    };
+    if (adoptCandidate && candidate.nameJa !== current.nameJa) mergeStats.translationsAdopted += 1;
+    else if (current.nameJa) mergeStats.translationsPreserved += 1;
+    mergeStats.updated += 1;
+  }
+
+  return {
+    dictionary: {
+      ...existing,
+      schemaVersion: 1,
+      generatedAt: partial.generatedAt || existing.generatedAt,
+      cards: Object.fromEntries(Object.entries(cards).sort(([a], [b]) => a.localeCompare(b))),
+    },
+    mergeStats,
+  };
+}
+
+function mergeSetReferences(currentSets, candidateSets) {
+  const byCode = new Map();
+  // Candidate data is fresher; add it last so it wins per code.
+  for (const set of [...currentSets, ...candidateSets]) {
+    if (!set?.code) continue;
+    byCode.set(set.code, { ...byCode.get(set.code), ...set });
+  }
+  const sets = [...byCode.values()].sort(
+    (a, b) => String(b.releasedAt || '').localeCompare(String(a.releasedAt || ''))
+      || a.code.localeCompare(b.code)
+  );
+  const setCodes = sets.map((set) => set.code);
+  return { sets, setCodes, primarySetCode: setCodes[0] || null };
 }
 
 export function getJapaneseName(card) {
@@ -267,6 +398,9 @@ function applyManualOverrides(cards, overrides) {
       oracleId: null,
       layout: null,
       translationSource: null,
+      setCodes: [],
+      sets: [],
+      primarySetCode: null,
     };
     const nameJa = override.nameJa || current.nameJa || null;
     cards[key] = {

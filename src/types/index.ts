@@ -40,6 +40,8 @@ export interface Card {
   translationStatus: TranslationStatus;
   translationSource?: TranslationSource;
   oracleId?: string | null;
+  setCodes?: string[];
+  primarySetCode?: string | null;
 }
 
 export interface Deck {
@@ -113,14 +115,25 @@ export interface CardSearchEntry {
   nameJa: string | null;
   normalizedNameEn: string;
   normalizedNameJa: string | null;
+  setCodes?: string[];
+  primarySetCode?: string | null;
   deckCount: number;
   deckRefs: DeckSearchReference[];
+}
+
+export interface ExpansionSummary {
+  code: string;
+  name: string | null;
+  releasedAt?: string | null;
+  cardCount: number;
+  deckCount: number;
 }
 
 export interface CardSearchIndex {
   schemaVersion: number;
   generatedAt?: string;
   period?: { startDate: string; endDate: string; lookbackDays: number };
+  expansions?: ExpansionSummary[];
   cards: CardSearchEntry[];
 }
 
