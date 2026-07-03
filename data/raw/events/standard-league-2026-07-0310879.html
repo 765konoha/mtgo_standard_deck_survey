@@ -40,7 +40,8 @@
 
 
 
-            
+	
+
 
   
 
@@ -65,18 +66,18 @@
 
 
 			<meta property="og:site_name" content="Magic: The Gathering Online" />
-				<meta property="og:title" content="| Decklists | Magic: The Gathering Online" />
+				<meta property="og:title" content="July 2026 Decklists | Magic: The Gathering Online" />
 				<meta property="og:description" content="Magic: The Gathering Online" />
 	
 			<meta name="twitter:card" content="summary" />
 				<meta name="twitter:site" content="@MagicOnline" />
-				<meta name="twitter:title" content="| Decklists | Magic: The Gathering Online" />
+				<meta name="twitter:title" content="July 2026 Decklists | Magic: The Gathering Online" />
 				<meta name="twitter:description" content="Magic: The Gathering Online" />
 	
-<title>| Decklists | Magic: The Gathering Online</title>
+<title>July 2026 Decklists | Magic: The Gathering Online</title>
 
 
-																																										<link rel="stylesheet" href="https://www.mtgo.com/minify-css?locale=en_US&files=browserErrors/browserErrors^global-brand-bar/global-brand-bar^footer-alerts^bootstrap.min^core^_components/youtube-modal^_pages/decklist-item&v=1295701988" type="text/css" />
+																																												<link rel="stylesheet" href="https://www.mtgo.com/minify-css?locale=en_US&files=browserErrors/browserErrors^global-brand-bar/global-brand-bar^footer-alerts^bootstrap.min^core^_components/youtube-modal^_pages/decklists^_components/carousel&v=3175272042" type="text/css" />
 
 <script type="text/javascript">
 	
@@ -93,7 +94,7 @@ globs.wdl.sitePrefix = "mtgo";
 globs.wdl.scope = "full site";
 globs.wdl.business = "mktg";
 globs.wdl.language = "en";
-globs.wdl.pageID = "decklist-item";
+globs.wdl.pageID = "decklists";
 globs.wdl.pageType = "decklists";
 globs.wdl.env = "live";
 globs.wdl.cid = "";
@@ -170,7 +171,7 @@ webReg.theme = "mtgo";
 	</script>
 
 </head>
-<body id="decklist-item" class="decklists mtgo ">
+<body id="decklists" class="decklists mtgo ">
 		
 <div id="browserErrors">
 	<noscript>
@@ -267,185 +268,532 @@ webReg.theme = "mtgo";
 
 <div id="siteNavSpacer" class="site-nav-spacer"></div>
 	
-				<script>
-    window.MTGO = window.MTGO || {};
-    window.MTGO.decklists = window.MTGO.decklists || {};
-    window.MTGO.decklists.data = {"playeventid":"10879","name":"Standard League","publish_date":"2026-07-03","instance_id":"10879_2026-07-03","site_name":"standard-league-2026-07-0310879","decklists":[]};
-    window.MTGO.decklists.type = 'league';
-    window.MTGO.decklists.roundNames = [
-        'Final',
-        'Semifinals',
-        'Quarterfinals',
-        'Eighth-finals',
-        '16th-finals',
-        '32nd-finals',
-        '64th-finals'
-    ];
-</script>
-
-<div class="container-page-fluid decklist-item-page">
-    <div class="decklist-loading" id="decklistLoading">
-        <img src="https://www.mtgo.com/images/decklists/loading.gif?v=383992056" alt="">
-    </div>
-    <h1 class="decklist-title"></h1>
-    <p class="decklist-posted-on"></p>
-    <h2 class="decklist-player-count hidden"></h2>
-    <ul id="decklistIndex" class="decklist-index"></ul>
-    <div id="decklistBracket"></div>
-    <div id="decklistDecks"></div>
-    <div id="decklistStandings"></div>
-    </div>
-
-<script type="text/html" id="decklistIndexTemplate">
-    <% if (data.bracket) { %><li><a href="#decklistBracket" data-scroll-to>Bracket</a></li><% } %>
-    <% if (data.decks) { %><li><a href="#decklistDecks" data-scroll-to>Decklists</a></li><% } %>
-    <% if (data.standings) { %><li><a href="#decklistStandings" data-scroll-to>Standings</a></li><% } %>
-</script>
-
-<script type="text/html" id="decklistBracketTemplate">
-    <h2 class="decklist-section-title">Bracket</h2>
-    <div class="decklist-bracket">
-        <% data.rounds.forEach(round => { %>
-            <div class="decklist-bracket-round">
-                <h3 class="decklist-bracket-round-title"><%- data.roundNames[round.index] %></h3>
-                <% round.matches.forEach(match => { %>
-                    <div class="decklist-bracket-match-wrapper">
-                        <div class="decklist-bracket-match">
-                            <% match.players.forEach(player => { %>
-                                <div class="decklist-bracket-player <% if (player.winner) { %> winner <% } %>">
-                                    <%- player.player %> <% if (player.winner) { %> <%- player.wins %>-<%- player.losses %> <% } %>
-                                </div>
-                            <% }); %>
-                        </div>
-                    </div>
-                <% }); %>
+				
+    
+    
+            
+<div class="container-page-fluid decklists-page">
+    <h2 class="with-line"><span>Decklists</span></h2>
+    <p>Check out the latest decks from Magic Online events! Download your favorite decklists, build them using your Magic Online collection, and try them out in the next big event.</p>
+    <div class="decklists-pickers">
+        <div class="decklists-picker-group">
+            <div class="decklists-picker decklists-picker-date">
+                <label>Year:
+                    <select id="decklistYear" data-start-year="2015" data-start-month="11" data-current-year="2026" data-current-month="07">
+                                                    <option value="2015" >2015</option>
+                                                    <option value="2016" >2016</option>
+                                                    <option value="2017" >2017</option>
+                                                    <option value="2018" >2018</option>
+                                                    <option value="2019" >2019</option>
+                                                    <option value="2020" >2020</option>
+                                                    <option value="2021" >2021</option>
+                                                    <option value="2022" >2022</option>
+                                                    <option value="2023" >2023</option>
+                                                    <option value="2024" >2024</option>
+                                                    <option value="2025" >2025</option>
+                                                    <option value="2026"  selected >2026</option>
+                                            </select>
+                </label>
+                <label>Month:
+                    <select id="decklistMonth">
+                                                    <option value="01" >January</option>
+                                                    <option value="02" >February</option>
+                                                    <option value="03" >March</option>
+                                                    <option value="04" >April</option>
+                                                    <option value="05" >May</option>
+                                                    <option value="06" >June</option>
+                                                    <option value="07"  selected >July</option>
+                                                    <option value="08" >August</option>
+                                                    <option value="09" >September</option>
+                                                    <option value="10" >October</option>
+                                                    <option value="11" >November</option>
+                                                    <option value="12" >December</option>
+                                            </select>
+                </label>
+                <button id="decklistGo">Go</button>
             </div>
-        <% }); %>
-    </div>
-</script>
-
-
-<script type="text/html" id="deckContainerTemplate">
-    <section class="decklist" id="<%- data.playerAnchor %>">
-        <header class="decklist-header">
-            <a href="#<%- data.playerAnchor %>" class="decklist-link" title="Link to this decklist">#</a>
-            <p class="decklist-player"><%- data.player %> <%- data.score %></p>
-            <% if (data.eventName) { %>
-                <p class="decklist-event"><%- data.eventName %></p>
-            <% } %>
-            <% if (data.eventId || data.eventDate) { %>
-                <p class="decklist-date">
-                    <% if (data.eventId) { %> #<%- data.eventId %> <% } %>
-                    <% if (data.eventId && data.eventDate) { %> on <% } %>
-                    <% if (data.eventDate) { %> <%- data.eventDate %> <% } %>
-                </p>
-            <% } %>
-            <div class="decklist-actions">
-                <button class="decklist-action decklist-download" data-deck-index="<%- data.index %>" type="button" title="Download Decklist"></button>
-            </div>
-        </header>
-        <ul class="decklist-tabs" role="tablist">
-            <li class="decklist-tab active"><a href="#decklist<%- data.index %>Decklist" class="decklist-tab-link" role="tab" data-toggle="tab">Decklist</a></li>
-            <li class="decklist-tab"><a href="#decklist<%- data.index %>Stats" class="decklist-tab-link" role="tab" data-toggle="tab">Stats</a></li>
-        </ul>
-        <div class="decklist-tab-content tab-content">
-            <div id="decklist<%- data.index %>Decklist" class="decklist-sorts tab-pane active" data-sort="type" role="tabpanel">
-                <label class="decklist-sort-label">
-                    Sort By:
-                    <select class="decklist-sort-select">
-                        <option value="type">Overview</option>
-                        <option value="color">Color</option>
-                        <option value="cost">Cost</option>
-                        <option value="rarity">Rarity</option>
+            <div class="decklists-picker decklists-picker-filter">
+                <label>Format:
+                    <select id="decklistFilterFormat">
+                        <option selected></option>
+                        <option value="Standard" data-pattern="standard" data-class-name="standard">Standard</option>
+                        <option value="Modern" data-pattern="\bmodern" data-class-name="modern">Modern</option>
+                        <option value="Pioneer" data-pattern="pioneer" data-class-name="pioneer">Pioneer</option>
+                        <option value="Vintage" data-pattern="vintage" data-class-name="vintage">Vintage</option>
+                        <option value="Legacy" data-pattern="legacy" data-class-name="legacy">Legacy</option>
+                        <option value="Pauper" data-pattern="pauper" data-class-name="pauper">Pauper</option>
+                        <option value="Limited" data-pattern="limited" data-class-name="limited">Limited</option>
+                        <option value="Duel" data-pattern="duel" data-class-name="duel">Duel CMDR</option>
+                        <option value="Premodern" data-pattern="premodern" data-class-name="premodern">Premodern</option>
+                        <option value="Contraption" data-pattern="contraption" data-class-name="contraption">Contraption</option>
                     </select>
                 </label>
-                <div class="decklist-cards-and-preview">
-                    <div class="decklist-sort-group decklist-sort-type"><%= data.deckCategoryTemplate({ groups: data.byType, sideboard: data.deck.sideboard }) %></div>
-                    <div class="decklist-sort-group decklist-sort-color"><%= data.deckCategoryTemplate({ groups: data.byColor, sideboard: data.deck.sideboard }) %></div>
-                    <div class="decklist-sort-group decklist-sort-cost"><%= data.deckCategoryTemplate({ groups: data.byCost, sideboard: data.deck.sideboard }) %></div>
-                    <div class="decklist-sort-group decklist-sort-rarity"><%= data.deckCategoryTemplate({ groups: data.byRarity, sideboard: data.deck.sideboard }) %></div>
-                    <div class="decklist-card-preview hidden-xs">
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </div>
-            <div id="decklist<%- data.index %>Stats" class="decklist-charts tab-pane" role="tabpanel">
-                <div class="chart by-cost"></div>
-                <div class="chart by-color"></div>
-                <div class="chart by-type"></div>
+                <label>Event Type:
+                    <select id="decklistFilterEventType">
+                        <option selected></option>
+                        <option value="League" data-pattern="league">League</option>
+                        <option value="Challenge" data-pattern="challenge">Challenge</option>
+                        <option value="Showcase" data-pattern="showcase">Showcase</option>
+                    </select>
+                </label>
             </div>
         </div>
-    </section>
-</script>
-
-<script type="text/html" id="deckCategoryTemplate">
-    <div class="decklist-category-columns">
-        <% data.groups.groups.forEach(g => { %>
-            <div class="decklist-category">
-                <h3 class="decklist-category-name"><%- g.name %> (<%- g.count %>)</h3>
-                <ul class="decklist-category-list">
-                    <% g.cards.forEach(c => { %>
-                        <li class="decklist-category-card"><a href="<%- c.link %>" class="decklist-card-link" data-card-image="<%- c.image %>" data-card-title="<%- c.name %>" target="_blank" rel="noopener"><%- c.count %> <%- c.name %></a></li>
-                    <% }); %>
-                </ul>
+        <div class="decklists-picker-group">
+            <div class="decklists-picker decklists-picker-search">
+                <input id="decklistSearchPlayersText" class="decklist-search-text" data-search-type="player" type="search"  pattern="[^&amp;&lt;&gt;;$%@`&apos;&quot;,+\\\|\(\)]+" title="The following characters are not allowed: &amp; &lt; &gt; ; $ % @ ` ' &quot; , ( ) + \ |"></input>
+                <button id="decklistSearchPlayersGo" class="decklist-search-go">Search Players</button>
             </div>
-        <% }); %>
-        <p class="decklist-total-count"><%- data.groups.total %> Cards</p>
+            <div class="decklists-picker decklists-picker-search">
+                <input id="decklistSearchCardsText" class="decklist-search-text" data-search-type="card" type="search"  pattern="[^&lt;&gt;;$%@`&quot;+\\\|\(\)]+" title="The following characters are not allowed: &lt; &gt; ; $ % @ ` &quot; ( ) + \ |"></input>
+                <button id="decklistSearchCardsGo" class="decklist-search-go">Search Cards</button>
+            </div>
+        </div>
     </div>
-    <% if (data.sideboard && data.sideboard.cards && data.sideboard.cards.length > 0) { %>
-        <hr class="decklist-sideboard-separator">
-        <h3 class="decklist-category-name">Sideboard (<%- data.sideboard.count %>)</h3>
-        <ul class="decklist-category-list decklist-sideboard decklist-category-columns">
-            <% data.sideboard.cards.forEach(c => { %>
-                <li class="decklist-category-card"><a href="<%- c.link %>" class="decklist-card-link" data-card-image="<%- c.image %>" data-card-title="<%- c.name %>" target="_blank" rel="noopener"><%- c.count %> <%- c.name %></a></li>
-            <% }); %>
-        </ul>
-    <% } %>
-</script>
-
-<script type="text/html" id="decklistDecksTemplate">
-    <h2 class="decklist-section-title">Decklists</h2>
-    <%= data.decks %>
-</script>
-
-<script type="text/html" id="decklistStandingsTemplate">
-    <h2 class="decklist-section-title">Standings</h2>
-    <table class="decklist-standings hidden-sm hidden-md hidden-lg">
-        <tr class="decklist-standing-header"><td colspan="2">Rank</td></tr>
-        <% data.standings.forEach(standing => { %>
-            <tr class="decklist-standing-header"><td colspan="2"><%- standing.rank %></td></tr>
-            <tr><td>Name</td><td><%- standing.login_name %></td></tr>
-            <tr><td>Points</td><td><%- standing.score %></td></tr>
-            <tr><td>OMWP</td><td><%- standing.opponentmatchwinpercentage %></td></tr>
-            <tr><td>GWP</td><td><%- standing.gamewinpercentage %></td></tr>
-            <tr><td>OGWP</td><td><%- standing.opponentgamewinpercentage %></td></tr>
-        <% }); %>
-    </table>
-    <table class="decklist-standings hidden-xs">
-        <thead>
-            <tr class="decklist-standing-header">
-                <th>Rank</th>
-                <th>Name</th>
-                <th>Points</th>
-                <th>OMWP</th>
-                <th>GWP</th>
-                <th>OGWP</th>
-            </tr>
-        </thead>
-        <tbody>
-            <% data.standings.forEach(standing => { %>
-                <tr>
-                    <td><%- standing.rank %></td>
-                    <td><%- standing.login_name %></td>
-                    <td><%- standing.score %></td>
-                    <td><%- standing.opponentmatchwinpercentage %></td>
-                    <td><%- standing.gamewinpercentage %></td>
-                    <td><%- standing.opponentgamewinpercentage %></td>
-                </tr>
-            <% }); %>
-        </tbody>
-    </table>
-</script>
+        <ul class="decklists-list">
+                                                                                    <li class="decklists-item">
+                    <a href="/decklist/pauper-league-2026-07-0310855" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Pauper League</h3>
+                        </div>
+                        <time datetime="2026-07-03T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">3</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/standard-challenge-32-2026-07-0312846464" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Standard Challenge 32</h3>
+                        </div>
+                        <time datetime="2026-07-03T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">3</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/premodern-league-2026-07-0310871" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Premodern League</h3>
+                        </div>
+                        <time datetime="2026-07-03T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">3</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/standard-league-2026-07-0310879" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Standard League</h3>
+                        </div>
+                        <time datetime="2026-07-03T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">3</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/duel-commander-league-2026-07-0310716" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Duel Commander League</h3>
+                        </div>
+                        <time datetime="2026-07-03T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">3</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/vintage-league-2026-07-0310887" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Vintage League</h3>
+                        </div>
+                        <time datetime="2026-07-03T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">3</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/legacy-league-2026-07-0310831" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Legacy League</h3>
+                        </div>
+                        <time datetime="2026-07-03T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">3</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/modern-league-2026-07-0310847" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Modern League</h3>
+                        </div>
+                        <time datetime="2026-07-03T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">3</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/pioneer-league-2026-07-0310863" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Pioneer League</h3>
+                        </div>
+                        <time datetime="2026-07-03T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">3</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/pioneer-challenge-32-2026-07-0212846462" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Pioneer Challenge 32</h3>
+                        </div>
+                        <time datetime="2026-07-02T21:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/pauper-challenge-32-2026-07-0212846460" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Pauper Challenge 32</h3>
+                        </div>
+                        <time datetime="2026-07-02T19:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/premodern-challenge-32-2026-07-0212846459" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Premodern Challenge 32</h3>
+                        </div>
+                        <time datetime="2026-07-02T17:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/vintage-challenge-32-2026-07-0212846457" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Vintage Challenge 32</h3>
+                        </div>
+                        <time datetime="2026-07-02T15:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/modern-challenge-64-2026-07-0212846455" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Modern Challenge 64</h3>
+                        </div>
+                        <time datetime="2026-07-02T13:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/standard-league-2026-07-0210879" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Standard League</h3>
+                        </div>
+                        <time datetime="2026-07-02T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/duel-commander-league-2026-07-0210716" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Duel Commander League</h3>
+                        </div>
+                        <time datetime="2026-07-02T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/modern-league-2026-07-0210847" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Modern League</h3>
+                        </div>
+                        <time datetime="2026-07-02T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/standard-challenge-32-2026-07-0212846451" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Standard Challenge 32</h3>
+                        </div>
+                        <time datetime="2026-07-02T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/pioneer-league-2026-07-0210863" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Pioneer League</h3>
+                        </div>
+                        <time datetime="2026-07-02T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/legacy-league-2026-07-0210831" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Legacy League</h3>
+                        </div>
+                        <time datetime="2026-07-02T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/pauper-league-2026-07-0210855" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Pauper League</h3>
+                        </div>
+                        <time datetime="2026-07-02T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/vintage-league-2026-07-0210887" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Vintage League</h3>
+                        </div>
+                        <time datetime="2026-07-02T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/premodern-league-2026-07-0210871" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Premodern League</h3>
+                        </div>
+                        <time datetime="2026-07-02T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">2</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/legacy-challenge-32-2026-07-0112846449" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Legacy Challenge 32</h3>
+                        </div>
+                        <time datetime="2026-07-01T21:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">1</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/modern-challenge-96-2026-07-0112845722" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Modern Challenge 96</h3>
+                        </div>
+                        <time datetime="2026-07-01T16:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">1</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/pauper-challenge-32-2026-07-0112845719" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Pauper Challenge 32</h3>
+                        </div>
+                        <time datetime="2026-07-01T12:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">1</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/duel-commander-league-2026-07-0110716" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Duel Commander League</h3>
+                        </div>
+                        <time datetime="2026-07-01T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">1</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/premodern-league-2026-07-0110871" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Premodern League</h3>
+                        </div>
+                        <time datetime="2026-07-01T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">1</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/vintage-league-2026-07-0110887" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Vintage League</h3>
+                        </div>
+                        <time datetime="2026-07-01T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">1</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/pauper-league-2026-07-0110855" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Pauper League</h3>
+                        </div>
+                        <time datetime="2026-07-01T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">1</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/legacy-league-2026-07-0110831" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Legacy League</h3>
+                        </div>
+                        <time datetime="2026-07-01T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">1</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/standard-league-2026-07-0110879" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Standard League</h3>
+                        </div>
+                        <time datetime="2026-07-01T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">1</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/modern-league-2026-07-0110847" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Modern League</h3>
+                        </div>
+                        <time datetime="2026-07-01T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">1</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                                                                            <li class="decklists-item">
+                    <a href="/decklist/pioneer-league-2026-07-0110863" class="decklists-link">
+                        <div class="decklists-icon"></div>
+                        <div class="decklists-details">
+                            <h3>Pioneer League</h3>
+                        </div>
+                        <time datetime="2026-07-01T00:00:00Z" class="decklists-date">
+                            <span class="month">July</span>
+                            <span class="day">1</span>
+                            <span class="year">2026</span>
+                        </time>
+                    </a>
+                </li>
+                        </ul>
+    </div>
 	
 				<footer class="site-footer" id="footer">
 	<p class="footer-stay-connected">Stay connected with MTGO and follow us on:</p>
@@ -558,7 +906,7 @@ webReg.theme = "mtgo";
 					</script>
 			<script language="JavaScript" type="text/javascript" src="https://www.mtgo.com/minify-js?locale=en_US&files=web-platform/helpers/buffer^web-platform/track/tracker^web-platform/track/data-layer^web-platform/track/cookie-consent^web-platform/track/web-events&v=2513844730"></script>
 		
-			<script language="JavaScript" type="text/javascript" src="https://www.mtgo.com/minify-js?locale=en_US&files=_pages/decklist-item^imported/d3.v3.min^imported/wiz_bean_content_deck_list.charts^_components/deck^_components/get-started-modal&v=350458254"></script>
+			<script language="JavaScript" type="text/javascript" src="https://www.mtgo.com/minify-js?locale=en_US&files=_pages/decklists^_components/get-started-modal&v=761539401"></script>
 		</body>
 </html>
 
