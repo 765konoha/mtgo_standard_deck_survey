@@ -33,7 +33,7 @@ export function buildCardDictionary({
     for (const alias of aliases) {
       const faceName = alias.faceIndex == null
         ? null
-        : japaneseCard?.card_faces?.[alias.faceIndex]?.printed_name || null;
+        : getJapaneseFaceName(japaneseCard, alias.faceIndex);
       const nameJa = faceName || (alias.faceIndex == null ? japaneseName.nameJa : null);
       mergeEntry(cards, normalizeCardName(alias.name), {
         nameEn: alias.name,
@@ -41,6 +41,7 @@ export function buildCardDictionary({
         detailUrl: japaneseCard?.scryfall_uri || englishCard.scryfall_uri || null,
         typeGroup: classifyTypeGroup(englishCard.type_line || facesTypeLine(englishCard)),
         translationStatus: nameJa ? 'complete' : 'missing',
+        translationSource: nameJa ? 'scryfall_printed_name' : null,
         oracleId,
         layout: englishCard.layout || null,
       });
@@ -75,14 +76,17 @@ export function buildCardDictionary({
 }
 
 export function getJapaneseName(card) {
-  if (!card) return { nameJa: null, source: null };
-  if (card.printed_name) {
+  if (!card || card.lang !== 'ja') return { nameJa: null, source: null };
+  if (isTranslatedName(card.printed_name, card.name)) {
     return { nameJa: card.printed_name, source: 'printed_name' };
   }
-  const faceNames = (card.card_faces || [])
-    .map((face) => face.printed_name)
-    .filter(Boolean);
-  if (faceNames.length > 0) {
+  const faces = card.card_faces || [];
+  const faceNames = faces.map((face) => face.printed_name);
+  if (
+    faces.length > 0
+    && faceNames.every(Boolean)
+    && faces.every((face) => isTranslatedName(face.printed_name, face.name))
+  ) {
     return { nameJa: faceNames.join(' // '), source: 'card_faces' };
   }
   return { nameJa: null, source: null };
@@ -110,6 +114,20 @@ export function diagnoseCardNames({
       oracleId: englishCard?.oracle_id || null,
       printedName: selectedJapanese?.printed_name || null,
       cardFaces: (selectedJapanese?.card_faces || []).map(compactFace),
+      japanesePrintCount: japaneseCards.length,
+      japanesePrints: japaneseCards.map((card) => ({
+        lang: card.lang,
+        set: card.set,
+        collectorNumber: card.collector_number,
+        printedName: card.printed_name || null,
+        releasedAt: card.released_at,
+        cardFaces: (card.card_faces || []).map(compactFace),
+        decision: card === selectedJapanese
+          ? `adopted: ${getJapaneseName(card).source || 'best available missing candidate'}`
+          : getJapaneseName(card).nameJa
+            ? 'excluded: a higher-priority translated candidate was selected'
+            : 'excluded: no complete Japanese printed_name',
+      })),
       dictionaryResult: result,
       previousFailureReason: failureReason(requestedName, englishCard, selectedJapanese),
     };
@@ -190,6 +208,7 @@ function applyManualOverrides(cards, overrides) {
       typeGroup: 'other',
       oracleId: null,
       layout: null,
+      translationSource: null,
     };
     const nameJa = override.nameJa || current.nameJa || null;
     cards[key] = {
@@ -199,6 +218,9 @@ function applyManualOverrides(cards, overrides) {
       nameJa,
       detailUrl: override.detailUrl || current.detailUrl || null,
       translationStatus: nameJa ? 'complete' : 'missing',
+      translationSource: override.nameJa
+        ? 'manual_override'
+        : current.translationSource || null,
     };
   }
 }
@@ -232,10 +254,29 @@ function failureReason(requestedName, englishCard, japaneseCard) {
       ? 'The old name-keyed lookup should have matched; a later null candidate could win'
       : 'English and Japanese card.name differ; the old name-keyed lookup could not join them';
   }
-  if ((japaneseCard.card_faces || []).some((face) => face.printed_name)) {
+  const faces = japaneseCard.card_faces || [];
+  if (faces.length > 0 && faces.every((face) => face.printed_name)) {
+    return 'The old selector did not reject face printed_names identical to English and picked the wrong print';
+  }
+  if (faces.some((face) => face.printed_name)) {
     return 'Only some card_faces had printed_name; the old code required every face';
   }
   return 'The Japanese print exists but Scryfall provides no printed Japanese name';
+}
+
+function getJapaneseFaceName(card, index) {
+  if (!card || card.lang !== 'ja') return null;
+  const face = card.card_faces?.[index];
+  return face && isTranslatedName(face.printed_name, face.name)
+    ? face.printed_name
+    : null;
+}
+
+function isTranslatedName(printedName, englishName) {
+  return Boolean(
+    printedName
+    && normalizeCardName(printedName) !== normalizeCardName(englishName)
+  );
 }
 
 function facesTypeLine(card) {

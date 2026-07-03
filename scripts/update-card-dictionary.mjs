@@ -19,8 +19,10 @@ const DIAGNOSTIC_CARD_NAMES = [
   'Leyline Weaver',
   'Kavaero, Mind-Bitten',
   'Emeritus of Ideation // Ancestral Recall',
+  'Esper Origins // Summon: Esper Maduin',
   'Clarion Conqueror',
   'Great Hall of the Biblioplex',
+  'Vibrant Outburst',
 ];
 
 console.log('[DICTIONARY] loading Standard English cards');
@@ -135,6 +137,9 @@ function validateDictionary(value) {
     }
     if (entry.translationStatus === 'complete' && !entry.nameJa) {
       throw new Error(`Complete entry has no Japanese name: ${key}`);
+    }
+    if (entry.translationStatus === 'complete' && !entry.translationSource) {
+      throw new Error(`Complete entry has no translationSource: ${key}`);
     }
   }
 }

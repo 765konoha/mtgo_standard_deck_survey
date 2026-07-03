@@ -15,6 +15,7 @@ export function translateDecks(decks, dictionary) {
       typeGroup: entry?.typeGroup || 'other',
       category: entry?.typeGroup || 'other',
       translationStatus: entry?.nameJa ? 'complete' : 'missing',
+      translationSource: entry?.nameJa ? entry.translationSource || null : null,
     };
   };
 
