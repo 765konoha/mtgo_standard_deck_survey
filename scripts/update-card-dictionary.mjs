@@ -24,6 +24,10 @@ const COLLECTION_BATCH_SIZE = 75;
 // Cached "no Japanese prints" answers expire so late-arriving Scryfall
 // language data (e.g. a brand-new set) is eventually re-checked.
 const NEGATIVE_CACHE_TTL_DAYS = Number(process.env.SCRYFALL_NEGATIVE_CACHE_TTL_DAYS || 7);
+const CONFIG_PATH = join('data', 'config', 'standard-set-codes.json');
+// Standard holds roughly the last three years of premier sets; the exact pool
+// is data-derived on each full update and can be hand-edited in CONFIG_PATH.
+const STANDARD_ROTATION_YEARS = Number(process.env.STANDARD_ROTATION_YEARS || 3);
 const TARGET_SET_CODE = parseSetCode();
 
 if (TARGET_SET_CODE) {
@@ -109,11 +113,17 @@ cache.updatedAt = toIsoTokyo();
 await writeJsonAtomic(CACHE_PATH, cache);
 const japanesePrints = deduplicatePrints([...standardJapanesePrints, ...recheckedPrints]);
 
+// Refresh the current-Standard set list from the prints we just fetched so
+// setCodes stay scoped to sets actually in Standard, not every historical
+// reprint. Operators can hand-edit the file afterwards.
+const allowedSetCodes = await refreshStandardSetCodes(englishPrints);
+
 const { dictionary, stats, unresolved } = buildCardDictionary({
   englishPrints,
   japanesePrints,
   manualOverrides,
   generatedAt: toIsoTokyo(),
+  allowedSetCodes,
   source: {
     name: 'Scryfall Cards Search API',
     url: CARDS_SEARCH_API,
@@ -249,6 +259,46 @@ function compactCachedCard(card) {
   };
 }
 
+// Derives the current-Standard set codes from the freshly fetched Standard
+// prints (recent expansion/core sets) and persists them for reuse by
+// set-scoped updates. Keeps setCodes from accumulating old reprints.
+async function refreshStandardSetCodes(englishPrints) {
+  const cutoff = new Date();
+  cutoff.setFullYear(cutoff.getFullYear() - STANDARD_ROTATION_YEARS);
+  const cutoffDate = cutoff.toISOString().slice(0, 10);
+  const byCode = new Map();
+  for (const card of englishPrints) {
+    if (!card?.set || !['expansion', 'core'].includes(card.set_type)) continue;
+    if (!card.released_at || card.released_at < cutoffDate) continue;
+    const code = String(card.set).toUpperCase();
+    const existing = byCode.get(code);
+    if (!existing || card.released_at > existing.releasedAt) {
+      byCode.set(code, { code, name: card.set_name || null, releasedAt: card.released_at });
+    }
+  }
+  const sets = [...byCode.values()].sort(
+    (a, b) => String(b.releasedAt || '').localeCompare(String(a.releasedAt || ''))
+      || a.code.localeCompare(b.code)
+  );
+  const config = {
+    schemaVersion: 1,
+    generatedAt: toIsoTokyo(),
+    rotationYears: STANDARD_ROTATION_YEARS,
+    note: 'Auto-generated on full dictionary update. Edit setCodes to adjust the Standard pool by hand.',
+    setCodes: sets.map((set) => set.code),
+    sets,
+  };
+  await writeJsonAtomic(CONFIG_PATH, config);
+  console.log(`[CONFIG] current Standard set codes (${config.setCodes.length}): ${config.setCodes.join(', ')}`);
+  return new Set(config.setCodes);
+}
+
+async function loadStandardSetCodes() {
+  const config = await readJson(CONFIG_PATH, null);
+  if (!config?.setCodes?.length) return null;
+  return new Set(config.setCodes.map((code) => String(code).toUpperCase()));
+}
+
 function parseSetCode(args = process.argv.slice(2), env = process.env) {
   let value = env.SET_CODE || null;
   for (let index = 0; index < args.length; index += 1) {
@@ -326,11 +376,18 @@ async function runSetScopedUpdate(setCode) {
   const scopedOverrides = Object.fromEntries(
     Object.entries(manualOverrides).filter(([name]) => partialKeys.has(normalizeCardName(name)))
   );
+  // Reuse the Standard set list written by the last full update. The target set
+  // is always allowed so a brand-new set still attributes to itself.
+  const configuredSetCodes = await loadStandardSetCodes();
+  const allowedSetCodes = configuredSetCodes
+    ? new Set([...configuredSetCodes, setCode.toUpperCase()])
+    : null;
   const { dictionary: partial, stats, unresolved } = buildCardDictionary({
     englishPrints,
     japanesePrints: allJapanese,
     manualOverrides: scopedOverrides,
     generatedAt: toIsoTokyo(),
+    allowedSetCodes,
     source: {
       name: 'Scryfall Cards Search API',
       url: CARDS_SEARCH_API,

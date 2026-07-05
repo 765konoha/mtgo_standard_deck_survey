@@ -58,12 +58,24 @@ npm run fetch:decklists
 辞書は通常の定期取得では更新しません。新セット発売時などに手動で更新します。
 
 ```bash
-npm run update:dictionary
+npm run update:dictionary            # Standard全体を更新
+SET_CODE=MSH npm run update:dictionary   # 特定セットだけを安全にマージ更新
 npm run rebuild:data
 npm run build:index
+SET_CODE=MSH npm run audit:set       # セット単位の翻訳監査を出力
 ```
 
-データソースはScryfall Bulk Dataの `all_cards` です。英語名、日本語印刷名、カード詳細URL、タイプ分類をローカル辞書に保存します。表示時にカードごとの外部API呼び出しは行いません。日本語名がないカードは英語名で表示し、`translationStatus: "missing"` として集計します。
+データソースはScryfall Cards Search API（`format:standard`）です。英語名、日本語印刷名、カード詳細URL、タイプ分類、`oracle_id`、`layout`、エキスパンション属性（`setCodes` / `sets` / `primarySetCode`）をローカル辞書に保存します。表示時にカードごとの外部API呼び出しは行いません。日本語名がないカードは英語名で表示し、`translationStatus: "missing"` として集計します。
+
+### エキスパンション属性
+
+各カードは複数セットに再録され得るため、単一の `setCode` ではなく `setCodes`（大文字・重複排除・releasedAt降順の安定ソート）を持ちます。`primarySetCode` は表示用の代表コード（対象セット内で最新の印刷）で、実際に使用された印刷版を断定するものではありません。MTGOのデッキリストは印刷版を明示しないため、複数セットのカードは全てのコードに帰属します。
+
+セットコードは、現在のStandard対象セット一覧 `data/config/standard-set-codes.json` に限定して収集します。この設定は全体更新時に直近のStandard印刷（expansion/core、ローテーション期間内）から自動生成され、必要に応じて手動編集できます。
+
+### セット限定更新（例: MSH）
+
+`SET_CODE=MSH` を指定すると、そのセットの印刷だけを取得し、`oracle_id`で日本語印刷を結合して既存辞書へ安全にマージします（他セットの辞書・既存の日本語名は保持）。Scryfallの日本語印刷キャッシュには有効期限（`SCRYFALL_NEGATIVE_CACHE_TTL_DAYS`、既定7日）があり、新セットの日本語データが後から公開されても再取得されます。`SET_CODE=<code> npm run audit:set` で `data/cards/<code>-translation-audit.json` に監査結果を出力します。
 
 ## JSONスキーマ概要
 
@@ -113,9 +125,12 @@ npm run build:index
 
 ```json
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-07-03T12:00:00+09:00",
-  "period": { "startDate": "2026-06-24", "endDate": "2026-07-03", "lookbackDays": 10 },
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-05T12:00:00+09:00",
+  "period": { "startDate": "2026-06-26", "endDate": "2026-07-05", "lookbackDays": 10 },
+  "expansions": [
+    { "code": "MSH", "name": "Marvel Super Heroes", "releasedAt": "2026-06-26", "cardCount": 19, "deckCount": 99 }
+  ],
   "cards": [
     {
       "key": "lightning strike",
@@ -123,6 +138,8 @@ npm run build:index
       "nameJa": "稲妻の一撃",
       "normalizedNameEn": "lightning strike",
       "normalizedNameJa": "稲妻の一撃",
+      "setCodes": ["MSH", "TLA", "DFT"],
+      "primarySetCode": "MSH",
       "deckCount": 3,
       "deckRefs": [
         { "eventId": "standard-challenge-...", "deckId": "8-boin", "mainboardQuantity": 3, "sideboardQuantity": 0 }
@@ -132,7 +149,7 @@ npm run build:index
 }
 ```
 
-`index.json`／`build:index` 生成時に一緒に生成します。英語名の正規化キー（`scripts/lib/normalize-card-name.mjs`）でカードをまとめ、同一デッキのメイン／サイドは1つの `deckRef` に統合します。`scripts/lib/validate-search-index.mjs` で検証し、不正な場合は既存ファイルを上書きしません。UIは日本語名・英語名の部分一致で検索し、選択カードを含むデッキだけを日付・イベント種別とAND条件で絞り込みます。
+`index.json`／`build:index` 生成時に一緒に生成します（`schemaVersion: 2`）。英語名の正規化キー（`scripts/lib/normalize-card-name.mjs`）でカードをまとめ、同一デッキのメイン／サイドは1つの `deckRef` に統合します。`expansions` は直近10日間に登場した各セットのカード数（`cardCount`）と重複排除デッキ数（`deckCount`）です。`scripts/lib/validate-search-index.mjs` で検証し、不正な場合は既存ファイルを上書きしません。UIは日本語名・英語名の部分一致で検索し、選択カードとエキスパンションを含むデッキだけを日付・イベント種別とAND条件で絞り込みます。エキスパンション選択時はカード候補もそのセットに絞られます。
 
 ## UI
 
@@ -141,6 +158,8 @@ npm run build:index
 - 直近10日間の日付切り替え
 - すべて / League / Challengeの絞り込み
 - カード名検索（日本語名・英語名、サジェスト、選択カードを含むデッキの抽出、含有枚数表示）
+- エキスパンション絞り込み（該当セットのカードを含むデッキ抽出、セット別枚数・種類数表示、候補のセット絞り込み）
+- カード行のセットコードバッジ（複数セットは `[FDN +2]` 形式、tooltipで全コード）
 - Challenge順位、League 5-0表示
 - デッキ詳細、メイン/サイド分離
 - 日本語 / 日本語+英語 / 英語表示
@@ -156,7 +175,8 @@ npm run build:index
   - 取得、解析、変換、index生成、ビルド、変更がある場合だけコミット、Pagesデプロイ
 - `.github/workflows/update-card-dictionary.yml`
   - 手動実行専用
-  - Scryfall Bulk Dataから辞書生成、既存イベント再変換、Pagesデプロイ
+  - 入力: `set_code`（空欄で全体更新／`MSH`等でセット限定更新）、`retranslate_events`、`rebuild_search_index`
+  - Scryfallから辞書生成、既存イベント再変換、検索インデックス再生成、`set_code`指定時はセット監査、Pagesデプロイ
 - `.github/workflows/deploy-pages.yml`
   - UIや公開JSON変更時の静的デプロイ
 

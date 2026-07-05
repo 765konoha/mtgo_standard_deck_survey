@@ -6,12 +6,20 @@ import { normalizeCardName } from './normalize-card-name.mjs';
 const EXPANSION_SET_TYPES = new Set(['expansion', 'core']);
 
 // Collects expansion references for one oracle group from its English prints.
-// Prefers expansion/core printings; falls back to whatever printings exist so
-// event-only cards outside the current Standard pool still get attribution.
-export function collectSetReferences(cards) {
+// Prefers expansion/core printings, then narrows to the current-Standard set
+// list when one is supplied so long-running reprints (e.g. an old Theros
+// printing of Lightning Strike) do not pile up. Falls back gracefully so a card
+// is never left without attribution.
+export function collectSetReferences(cards, allowedSetCodes = null) {
   const prints = (cards || []).filter((card) => card?.set);
-  const preferred = prints.filter((card) => EXPANSION_SET_TYPES.has(card.set_type));
-  const source = preferred.length > 0 ? preferred : prints;
+  const expansionPrints = prints.filter((card) => EXPANSION_SET_TYPES.has(card.set_type));
+  // With a Standard set list, attribute strictly to current-Standard expansion
+  // printings; a card with none (rotated out, or only a Commander/promo print)
+  // gets no set codes rather than a misleading old/off-format one. Without a
+  // list, prefer expansion printings but fall back to whatever exists.
+  const source = allowedSetCodes
+    ? expansionPrints.filter((card) => allowedSetCodes.has(String(card.set).toUpperCase()))
+    : (expansionPrints.length > 0 ? expansionPrints : prints);
   const byCode = new Map();
   for (const card of source) {
     const code = String(card.set).toUpperCase();
@@ -48,7 +56,9 @@ export function buildCardDictionary({
   manualOverrides = {},
   generatedAt,
   source = {},
+  allowedSetCodes = null,
 }) {
+  const allowed = allowedSetCodes ? new Set([...allowedSetCodes].map((code) => code.toUpperCase())) : null;
   const englishByOracle = groupByOracle(englishPrints);
   const japaneseByOracle = groupByOracle(japanesePrints);
   const cards = {};
@@ -69,7 +79,7 @@ export function buildCardDictionary({
     const englishCard = selectEnglishCard(englishCards);
     const japaneseCard = selectJapaneseCard(japaneseByOracle.get(oracleId) || []);
     const japaneseName = getJapaneseName(japaneseCard);
-    const setReferences = collectSetReferences(englishCards);
+    const setReferences = collectSetReferences(englishCards, allowed);
     if (japaneseCard) stats.oracleJoined += 1;
     if (japaneseName.source === 'printed_name') stats.fromPrintedName += 1;
     if (japaneseName.source === 'card_faces') stats.fromCardFaces += 1;
