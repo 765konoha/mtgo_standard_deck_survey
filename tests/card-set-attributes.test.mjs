@@ -69,6 +69,32 @@ test('excludes token/promo/memorabilia printings but falls back when nothing els
   assert.deepEqual(fallback.setCodes, ['MSC']);
 });
 
+test('restricts setCodes to the allowed Standard set list, with fallback', () => {
+  const prints = [
+    print({ id: 'a', set: 'msh', set_name: 'Marvel Super Heroes', released_at: '2026-06-26' }),
+    print({ id: 'b', set: 'ths', set_name: 'Theros', released_at: '2013-09-27' }),
+    print({ id: 'c', set: 'm15', set_name: 'Magic 2015', released_at: '2014-07-18' }),
+  ];
+  const allowed = new Set(['MSH', 'FDN']);
+  const refs = collectSetReferences(prints, allowed);
+  // Old Theros / M15 reprints are dropped; only the in-Standard set remains.
+  assert.deepEqual(refs.setCodes, ['MSH']);
+  assert.equal(refs.primarySetCode, 'MSH');
+
+  // A card whose printings are all outside the Standard list gets no set codes
+  // rather than a misleading rotated-out one.
+  const legacy = collectSetReferences([print({ id: 'd', set: 'ths', released_at: '2013-09-27' })], allowed);
+  assert.deepEqual(legacy.setCodes, []);
+  assert.equal(legacy.primarySetCode, null);
+
+  // A Commander/promo-only printing is likewise not attributed under a config.
+  const commanderOnly = collectSetReferences(
+    [print({ id: 'e', set: 'msc', set_type: 'commander', released_at: '2026-06-26' })],
+    allowed
+  );
+  assert.deepEqual(commanderOnly.setCodes, []);
+});
+
 test('handles cards without set data safely', () => {
   const refs = collectSetReferences([print({ set: undefined, set_name: undefined })]);
   assert.deepEqual(refs.setCodes, []);
