@@ -146,12 +146,14 @@ function parseEmbeddedDecklistsData(data, eventSummary) {
       return {
         status: 'pending_publication',
         reason: 'challenge_top8_incomplete',
-        decks: topEight.map(({ deck, rank }) => convertEmbeddedDeck(deck, rank, null)),
+        decks: topEight.map(({ deck, rank }, index) => convertEmbeddedDeck(deck, rank, null, index)),
         hasDeckSignals,
       };
     }
 
-    const decks = topEight.map(({ deck, rank }) => convertEmbeddedDeck(deck, rank, null));
+    const decks = topEight.map(
+      ({ deck, rank }, index) => convertEmbeddedDeck(deck, rank, null, index)
+    );
     if (decks.some((deck) => !deck || deck.mainboardCount <= 0 || !deck.player)) {
       return {
         status: 'parse_error',
@@ -165,7 +167,7 @@ function parseEmbeddedDecklistsData(data, eventSummary) {
 
   const decks = rawDecklists
     .filter((deck) => deck.wins === undefined || isLeague5_0(deck.wins))
-    .map((deck) => convertEmbeddedDeck(deck, null, '5-0'));
+    .map((deck, index) => convertEmbeddedDeck(deck, null, '5-0', index));
 
   if (decks.length === 0) {
     return {
@@ -187,7 +189,7 @@ function parseEmbeddedDecklistsData(data, eventSummary) {
   return { status: 'completed', reason: 'ok', decks, hasDeckSignals };
 }
 
-function convertEmbeddedDeck(deck, placement, record) {
+function convertEmbeddedDeck(deck, placement, record, index) {
   const mainboard = convertEmbeddedCards(deck.main_deck);
   const sideboard = convertEmbeddedCards(deck.sideboard_deck);
   const player = cleanupName(deck.player);
@@ -195,9 +197,7 @@ function convertEmbeddedDeck(deck, placement, record) {
   if (!player) return null;
 
   return {
-    id: slugify(
-      `${placement || record || deck.decktournamentid || deck.instance_id || deck.loginplayeventcourseid || deck.loginid || 'deck'}-${player}`
-    ),
+    id: slugify(`${embeddedDeckId(deck, placement, record, index)}-${player}`),
     player,
     placement,
     record,
@@ -206,6 +206,15 @@ function convertEmbeddedDeck(deck, placement, record) {
     mainboard,
     sideboard,
   };
+}
+
+function embeddedDeckId(deck, placement, record, index) {
+  if (placement) return placement;
+  return deck.decktournamentid
+    || deck.loginplayeventcourseid
+    || deck.main_deck?.find((card) => card.leaguedeckid)?.leaguedeckid
+    || deck.sideboard_deck?.find((card) => card.leaguedeckid)?.leaguedeckid
+    || `${deck.loginid || record || 'deck'}-${index + 1}`;
 }
 
 function isLeague5_0(wins) {
@@ -280,7 +289,7 @@ function parseDeckSection(section, index, eventType) {
   if (eventType === 'league' && record !== '5-0') return null;
 
   return {
-    id: slugify(`${placement || record || index + 1}-${player}`),
+    id: slugify(`${placement || `${record || 'deck'}-${index + 1}`}-${player}`),
     player,
     placement,
     record,

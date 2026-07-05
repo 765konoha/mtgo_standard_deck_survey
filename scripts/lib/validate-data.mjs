@@ -15,7 +15,14 @@ export function validateEventData(eventData) {
   if (!Array.isArray(eventData?.decks)) errors.push('decks must be an array');
 
   const seenPlacements = new Set();
+  const seenDeckIds = new Set();
   for (const [deckIndex, deck] of (eventData?.decks || []).entries()) {
+    if (!deck.id) {
+      errors.push(`deck ${deckIndex}: id is required`);
+    } else if (seenDeckIds.has(deck.id)) {
+      errors.push(`deck ${deckIndex}: duplicate id ${deck.id}`);
+    }
+    seenDeckIds.add(deck.id);
     if (!deck.player) errors.push(`deck ${deckIndex}: player is required`);
     if (!Array.isArray(deck.mainboard) || deck.mainboard.length === 0) {
       errors.push(`deck ${deckIndex}: mainboard is empty`);
