@@ -33,13 +33,20 @@ test('case 1/5: two same-day Standard Challenges are both discovered as distinct
   assert.ok(events.every((e) => e.eventType === 'challenge' && e.eventDate === '2026-07-03'));
 });
 
-test('case 6: the same event listed twice (identical URL) is fetched once', () => {
+test('case 6: the same event listed twice (identical URL) is fetched once', async () => {
   const html = [
     link('standard-challenge-2026-07-03-12846464', 'Standard Challenge', 'July 3 2026'),
     link('standard-challenge-2026-07-03-12846464', 'Standard Challenge', 'July 3 2026'),
   ].join('');
-  const events = discoverEventsFromHtml(html, 'https://www.mtgo.com/decklists', NOW);
-  assert.equal(events.length, 1);
+  // De-duplication is keyed by event id (derived from the URL), so a repeated
+  // listing collapses to a single discovered event.
+  const result = await discoverEventPages({
+    listUrl: 'https://www.mtgo.com/decklists',
+    lookbackDays: null,
+    now: NOW,
+    fetchText: async () => html,
+  });
+  assert.equal(result.events.length, 1);
 });
 
 test('case 4: same-named challenges on different days are separate events', () => {
