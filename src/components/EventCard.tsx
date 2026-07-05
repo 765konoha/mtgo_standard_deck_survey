@@ -61,7 +61,12 @@ export function EventCard({
               </span>
             </div>
             <div className="text-xs text-neutral-500 mt-1 space-x-3">
-              <span>開催: {formatDate(event.eventDate)}</span>
+              <span>
+                開催: {formatDate(event.eventDate)}
+                {event.eventDateTime && event.eventDateTime.length >= 16
+                  ? ` ${event.eventDateTime.slice(11, 16)}`
+                  : ''}
+              </span>
               <span>掲載: {formatDate(event.publishedDate)}</span>
               <span>
                 {filtering

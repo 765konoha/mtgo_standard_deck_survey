@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import {
   discoverEventPages,
   extractEventDateFromPage,
+  extractEventDateTimeFromPage,
   isDateInRange,
   parseLookbackDays,
   shouldFetchEvent,
@@ -89,6 +90,7 @@ for (const eventState of stateById.values()) {
     name: eventState.eventName,
     eventType: eventState.eventType,
     eventDate: eventState.eventDate || dateTokyo(),
+    eventDateTime: eventState.eventDateTime || null,
     publishedDate: eventState.publishedDate || dateTokyo(),
     sourceUrl: eventState.sourceUrl,
   };
@@ -132,6 +134,7 @@ async function processEvent(summary, eventState, dictionary) {
     const html = await fetchText(summary.sourceUrl);
     await writeTextAtomic(join('data', 'raw', 'events', `${summary.id}.html`), html);
     summary.eventDate = extractEventDateFromPage(html) || summary.eventDate;
+    summary.eventDateTime = extractEventDateTimeFromPage(html) || summary.eventDateTime || null;
 
     const parsed = parseEventPage(html, summary);
     const status = applyPublicationTimeout(parsed.status, eventState.firstSeenAt);
@@ -142,6 +145,7 @@ async function processEvent(summary, eventState, dictionary) {
         name: summary.name,
         eventType: summary.eventType,
         eventDate: summary.eventDate,
+        eventDateTime: summary.eventDateTime || null,
         publishedDate: summary.publishedDate,
         sourceUrl: summary.sourceUrl,
         status,
@@ -167,6 +171,7 @@ async function processEvent(summary, eventState, dictionary) {
     Object.assign(eventState, {
       status,
       eventDate: summary.eventDate,
+      eventDateTime: summary.eventDateTime || null,
       publishedDate: summary.publishedDate,
       lastCheckedAt: now,
       completedAt: status === 'completed' ? now : eventState.completedAt || null,
@@ -252,6 +257,7 @@ async function syncCompletedEventMetadata(summary) {
       name: summary.name,
       eventType: summary.eventType,
       eventDate: summary.eventDate,
+      eventDateTime: summary.eventDateTime || eventData.event.eventDateTime || null,
       publishedDate: summary.publishedDate,
       sourceUrl: summary.sourceUrl,
     };

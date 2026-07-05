@@ -76,9 +76,13 @@ export function EventList({
 
   Object.keys(groupedByDate).forEach((date) => {
     groupedByDate[date].sort((a, b) => {
+      // Challenges before Leagues, then chronological by start time so multiple
+      // same-day Standard Challenges each show in a stable order.
       if (a.eventType === 'challenge' && b.eventType !== 'challenge') return -1;
       if (a.eventType !== 'challenge' && b.eventType === 'challenge') return 1;
-      return a.name.localeCompare(b.name);
+      const byTime = String(a.eventDateTime || '').localeCompare(String(b.eventDateTime || ''));
+      if (byTime !== 0) return byTime;
+      return a.name.localeCompare(b.name) || a.id.localeCompare(b.id);
     });
   });
 
