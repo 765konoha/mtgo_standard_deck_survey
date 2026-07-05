@@ -96,6 +96,14 @@ export function extractEventDateFromPage(html) {
   return html.match(/"starttime"\s*:\s*"(\d{4}-\d{2}-\d{2})/)?.[1] || null;
 }
 
+// Extracts the full event start time so same-day events can be ordered and
+// distinguished. MTGO renders e.g. "starttime":"2026-07-03 18:00:00.0" —
+// normalized here to "2026-07-03T18:00:00". Returns null when absent.
+export function extractEventDateTimeFromPage(html) {
+  const match = html.match(/"starttime"\s*:\s*"(\d{4}-\d{2}-\d{2})[ T](\d{2}:\d{2}:\d{2})/);
+  return match ? `${match[1]}T${match[2]}` : null;
+}
+
 export function isDateInRange(date, { startDate, endDate }) {
   return Boolean(date && date >= startDate && date <= endDate);
 }

@@ -60,6 +60,7 @@ export interface EventSummary {
   name: string;
   eventType: EventType;
   eventDate: string;
+  eventDateTime?: string | null;
   publishedDate: string;
   status: EventStatus;
   deckCount: number;
@@ -77,6 +78,7 @@ export interface Event {
     name: string;
     eventType: EventType;
     eventDate: string;
+    eventDateTime?: string | null;
     publishedDate: string;
     sourceUrl: string;
     status: EventStatus;
