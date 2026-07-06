@@ -112,14 +112,14 @@ test('public index aggregates expansion cardCount and deckCount without duplicat
     decks: [
       {
         id: 'd1',
-        player: 'p1',
+        player: 'repeat-player',
         record: '5-0',
         mainboard: [card('Alpha', 4, ['MSH']), card('Beta', 2, ['MSH'])],
         sideboard: [card('Alpha', 1, ['MSH']), card('Gamma', 2, ['FDN', 'DMU'])],
       },
       {
         id: 'd2',
-        player: 'p2',
+        player: 'repeat-player',
         record: '5-0',
         mainboard: [card('Alpha', 4, ['MSH']), card('NoSet', 4, [])],
         sideboard: [],
@@ -149,4 +149,18 @@ test('public index aggregates expansion cardCount and deckCount without duplicat
   const alpha = index.cards.find((entry) => entry.nameEn === 'Alpha');
   assert.deepEqual(alpha.setCodes, ['MSH']);
   assert.equal(alpha.primarySetCode, 'MSH');
+
+  // Repeated players still have independent deck ids, so the quantities shown
+  // for an expansion must match each deck rather than a player-level total.
+  const matches = buildExpansionDeckIndex(index, 'MSH').get('e1');
+  assert.deepEqual(matches.get('d1'), {
+    mainboardQuantity: 6,
+    sideboardQuantity: 1,
+    cardKinds: 2,
+  });
+  assert.deepEqual(matches.get('d2'), {
+    mainboardQuantity: 4,
+    sideboardQuantity: 0,
+    cardKinds: 1,
+  });
 });
