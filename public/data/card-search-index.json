@@ -7,53 +7,46 @@
   },
   "expansions": [
     {
-      "code": "HOB",
-      "name": "The Hobbit",
-      "releasedAt": "2026-08-14",
-      "cardCount": 5,
-      "deckCount": 116
-    },
-    {
       "code": "MSH",
       "name": "Marvel Super Heroes",
       "releasedAt": "2026-06-26",
-      "cardCount": 17,
-      "deckCount": 116
+      "cardCount": 12,
+      "deckCount": 44
     },
     {
       "code": "SOS",
       "name": "Secrets of Strixhaven",
       "releasedAt": "2026-04-24",
-      "cardCount": 30,
-      "deckCount": 116
+      "cardCount": 25,
+      "deckCount": 94
     },
     {
       "code": "TMT",
       "name": "Teenage Mutant Ninja Turtles",
       "releasedAt": "2026-03-06",
-      "cardCount": 15,
-      "deckCount": 116
+      "cardCount": 10,
+      "deckCount": 65
     },
     {
       "code": "ECL",
       "name": "Lorwyn Eclipsed",
       "releasedAt": "2026-01-23",
-      "cardCount": 26,
-      "deckCount": 116
+      "cardCount": 21,
+      "deckCount": 106
     },
     {
       "code": "TLA",
       "name": "Avatar: The Last Airbender",
       "releasedAt": "2025-11-21",
-      "cardCount": 27,
-      "deckCount": 116
+      "cardCount": 22,
+      "deckCount": 98
     },
     {
       "code": "SPM",
       "name": "Marvel's Spider-Man",
       "releasedAt": "2025-09-26",
-      "cardCount": 15,
-      "deckCount": 116
+      "cardCount": 10,
+      "deckCount": 69
     },
     {
       "code": "OM1",
@@ -66,50 +59,50 @@
       "code": "EOE",
       "name": "Edge of Eternities",
       "releasedAt": "2025-08-01",
-      "cardCount": 26,
-      "deckCount": 116
+      "cardCount": 21,
+      "deckCount": 93
     },
     {
       "code": "FIN",
       "name": "Final Fantasy",
       "releasedAt": "2025-06-13",
-      "cardCount": 15,
-      "deckCount": 116
+      "cardCount": 10,
+      "deckCount": 42
     },
     {
       "code": "TDM",
       "name": "Tarkir: Dragonstorm",
       "releasedAt": "2025-04-11",
-      "cardCount": 25,
-      "deckCount": 116
+      "cardCount": 20,
+      "deckCount": 81
     },
     {
       "code": "DFT",
       "name": "Aetherdrift",
       "releasedAt": "2025-02-14",
-      "cardCount": 31,
-      "deckCount": 116
+      "cardCount": 26,
+      "deckCount": 104
     },
     {
       "code": "FDN",
       "name": "Foundations",
       "releasedAt": "2024-11-15",
-      "cardCount": 34,
-      "deckCount": 116
+      "cardCount": 29,
+      "deckCount": 109
     },
     {
       "code": "DSK",
       "name": "Duskmourn: House of Horror",
       "releasedAt": "2024-09-27",
-      "cardCount": 24,
-      "deckCount": 116
+      "cardCount": 19,
+      "deckCount": 93
     },
     {
       "code": "BLB",
       "name": "Bloomburrow",
       "releasedAt": "2024-08-02",
-      "cardCount": 26,
-      "deckCount": 116
+      "cardCount": 21,
+      "deckCount": 88
     },
     {
       "code": "BIG",
@@ -122,36 +115,36 @@
       "code": "OTJ",
       "name": "Outlaws of Thunder Junction",
       "releasedAt": "2024-04-19",
-      "cardCount": 16,
-      "deckCount": 116
+      "cardCount": 11,
+      "deckCount": 66
     },
     {
       "code": "MKM",
       "name": "Murders at Karlov Manor",
       "releasedAt": "2024-02-09",
-      "cardCount": 18,
-      "deckCount": 116
+      "cardCount": 13,
+      "deckCount": 39
     },
     {
       "code": "LCI",
       "name": "The Lost Caverns of Ixalan",
       "releasedAt": "2023-11-17",
-      "cardCount": 20,
-      "deckCount": 116
+      "cardCount": 15,
+      "deckCount": 38
     },
     {
       "code": "WOE",
       "name": "Wilds of Eldraine",
       "releasedAt": "2023-09-08",
-      "cardCount": 14,
-      "deckCount": 116
+      "cardCount": 9,
+      "deckCount": 91
     },
     {
       "code": "KTK",
       "name": "Khans of Tarkir",
       "releasedAt": "2014-09-26",
-      "cardCount": 6,
-      "deckCount": 116
+      "cardCount": 1,
+      "deckCount": 39
     }
   ],
   "cards": [
@@ -162,6 +155,7 @@
       "normalizedNameEn": "abandon attachments",
       "normalizedNameJa": "愛着を捨てる",
       "oracleId": "82333385-631f-4abf-b159-bb367f1c6fd9",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -267,6 +261,7 @@
       "normalizedNameEn": "abandoned air temple",
       "normalizedNameJa": "放棄された気の寺",
       "oracleId": "9575d7ce-f26d-4b90-87a3-6329e9799572",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -456,6 +451,7 @@
       "normalizedNameEn": "abhorrent oculus",
       "normalizedNameJa": "忌まわしき眼魔",
       "oracleId": "b1a0e129-27f0-4a09-b00d-497e18777306",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -477,6 +473,7 @@
       "normalizedNameEn": "abrade",
       "normalizedNameJa": "削剥",
       "oracleId": "f9db72dc-9a5b-48a4-a86e-7464d9a2166a",
+      "isBasicLand": false,
       "setCodes": [
         "FDN",
         "LCI"
@@ -541,6 +538,7 @@
       "normalizedNameEn": "accumulate wisdom",
       "normalizedNameJa": "積み重ねられた叡智",
       "oracleId": "a63eb744-71c4-447d-9372-c3a734f022c5",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -646,6 +644,7 @@
       "normalizedNameEn": "adagia, windswept bastion",
       "normalizedNameJa": "吹(ふ)きさらしの要(よう)塞(さい)、アダージア",
       "oracleId": "70d35dbd-1d91-4a2a-a643-6870d168f4f5",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -667,6 +666,7 @@
       "normalizedNameEn": "aether gust",
       "normalizedNameJa": "霊気の疾風",
       "oracleId": "ecf1e378-d6bc-4ee0-800e-eb8a955d781f",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -686,6 +686,7 @@
       "normalizedNameEn": "aetherize",
       "normalizedNameJa": "霊気化",
       "oracleId": "7c779721-cd1b-4696-9ae9-68ccc284ed2a",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -713,6 +714,7 @@
       "normalizedNameEn": "agent bishop, man in black",
       "normalizedNameJa": "黒服の男、エージェント・ビショップ",
       "oracleId": "f33217cc-175f-45e8-bc69-801f41cb4495",
+      "isBasicLand": false,
       "setCodes": [
         "TMT"
       ],
@@ -734,6 +736,7 @@
       "normalizedNameEn": "agna qel'a",
       "normalizedNameJa": "アグナ・ケラ",
       "oracleId": "22d0a848-2126-48f0-9050-38daaf93b1d0",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -773,6 +776,7 @@
       "normalizedNameEn": "all that glitters",
       "normalizedNameJa": "きらきらするすべて",
       "oracleId": "a4d751e0-41c1-4e90-853d-512f385acd81",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -792,6 +796,7 @@
       "normalizedNameEn": "ambitious augmenter",
       "normalizedNameJa": "野心ある増強者",
       "oracleId": "d87f0e52-486e-49b4-9cf1-12e238857340",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -819,6 +824,7 @@
       "normalizedNameEn": "ancestral anger",
       "normalizedNameJa": "祖先の怒り",
       "oracleId": "e0828e8d-f01f-4088-9123-6d923ddb3242",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -840,6 +846,7 @@
       "normalizedNameEn": "ancient vendetta",
       "normalizedNameJa": "古からの確執",
       "oracleId": "6f053f0d-c9c7-4fcd-b218-a29d1d080104",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -873,6 +880,7 @@
       "normalizedNameEn": "annul",
       "normalizedNameJa": "無(む)効(こう)",
       "oracleId": "d08e9784-75f7-4164-ac48-d06160f8c56b",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -1020,6 +1028,7 @@
       "normalizedNameEn": "april o'neil, hacktivist",
       "normalizedNameJa": "ハクティビスト、エイプリル・オニール",
       "oracleId": "d379a919-02cd-46fd-a6ce-b66a77745ae7",
+      "isBasicLand": false,
       "setCodes": [
         "TMT"
       ],
@@ -1041,6 +1050,7 @@
       "normalizedNameEn": "archdruid's charm",
       "normalizedNameJa": "大ドルイドの魔除け",
       "oracleId": "3c1ef404-e2c6-486d-a5a2-d5779c71d498",
+      "isBasicLand": false,
       "setCodes": [
         "MKM"
       ],
@@ -1086,6 +1096,7 @@
       "normalizedNameEn": "artist's talent",
       "normalizedNameJa": "美術家の才能",
       "oracleId": "ea734863-5793-49d6-b10e-109432aec0a3",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -1119,6 +1130,7 @@
       "normalizedNameEn": "ashling's command",
       "normalizedNameJa": "アシュリングの命令",
       "oracleId": "9651d197-a408-4665-a292-58d5471f4ffc",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -1140,6 +1152,7 @@
       "normalizedNameEn": "astelli reclaimer",
       "normalizedNameJa": "アステッリの回(かい)収(しゅう)者(しゃ)",
       "oracleId": "bb956492-e3ed-483a-9169-5b795a8e619e",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -1161,6 +1174,7 @@
       "normalizedNameEn": "atraxa, grand unifier",
       "normalizedNameJa": "偉大なる統一者、アトラクサ",
       "oracleId": "abbcb153-0763-44c6-964f-b4ff0eb64257",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -1180,6 +1194,7 @@
       "normalizedNameEn": "authority of the consuls",
       "normalizedNameJa": "領事の権限",
       "oracleId": "55f3c721-e13a-406e-bc8e-d6cdc91ac477",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -1201,6 +1216,7 @@
       "normalizedNameEn": "avengers disassembled",
       "normalizedNameJa": null,
       "oracleId": "34493cf5-7586-48ef-806d-57273b2ab034",
+      "isBasicLand": false,
       "setCodes": [
         "MSH"
       ],
@@ -1246,6 +1262,7 @@
       "normalizedNameEn": "axebane ferox",
       "normalizedNameJa": "斧折りのフェロックス",
       "oracleId": "35b3ae1c-4116-49b0-89a9-7332fe9bbff0",
+      "isBasicLand": false,
       "setCodes": [
         "MKM"
       ],
@@ -1303,6 +1320,7 @@
       "normalizedNameEn": "azorius chancery",
       "normalizedNameJa": "アゾリウスの大法官庁",
       "oracleId": "189fc8f4-17ac-4f1d-82c8-8401445bdaf4",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -1322,6 +1340,7 @@
       "normalizedNameEn": "ba sing se",
       "normalizedNameJa": "バーシンセー",
       "oracleId": "de1ae205-ca5b-4d26-8194-ca85f1406e53",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -1475,6 +1494,7 @@
       "normalizedNameEn": "badgermole cub",
       "normalizedNameJa": "アナグマモグラの仔",
       "oracleId": "2b0afb89-0944-4861-b9c3-e909e2ac215e",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -1742,6 +1762,7 @@
       "normalizedNameEn": "balmor, battlemage captain",
       "normalizedNameJa": "戦闘魔道士の隊長、バルモア",
       "oracleId": "7da19fc5-cb85-4ec7-beea-95210378bbfe",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -1763,6 +1784,7 @@
       "normalizedNameEn": "balustrade wurm",
       "normalizedNameJa": "欄干ワーム",
       "oracleId": "2dd32fec-5bc3-4cc0-a9b4-814229a64914",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -1790,6 +1812,7 @@
       "normalizedNameEn": "belion, the parched",
       "normalizedNameJa": "液状の重罪犯、ハイドロマン",
       "oracleId": "a93a8edf-2879-4cae-b3b9-b46298270823",
+      "isBasicLand": false,
       "setCodes": [
         "OM1",
         "SPM"
@@ -1818,6 +1841,7 @@
       "normalizedNameEn": "bitter triumph",
       "normalizedNameJa": "苦々しい勝利",
       "oracleId": "776341cb-d2ec-423f-9250-92dc8bd8d503",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -1887,6 +1911,7 @@
       "normalizedNameEn": "blackcleave cliffs",
       "normalizedNameJa": "黒割れの崖",
       "oracleId": "5ad94412-6f79-4c5d-bbd4-4ef5779a7b6d",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -1912,6 +1937,7 @@
       "normalizedNameEn": "blast zone",
       "normalizedNameJa": "爆発域",
       "oracleId": "393a254f-be31-431a-9341-a51286f8cbce",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -1931,6 +1957,7 @@
       "normalizedNameEn": "blazemire verge",
       "normalizedNameJa": "ブレイズマイアの境界",
       "oracleId": "977c2f33-b622-4172-9efb-7f523becd32b",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -1952,6 +1979,7 @@
       "normalizedNameEn": "bleachbone verge",
       "normalizedNameJa": "ブリーチボーンの境界",
       "oracleId": "2b8144a0-08d2-4c28-9fd7-5d90f90105e4",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -1979,6 +2007,7 @@
       "normalizedNameEn": "blood crypt",
       "normalizedNameJa": "血の墓所",
       "oracleId": "43985bbc-a0f6-4812-984e-392bc8562633",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -2012,6 +2041,7 @@
       "normalizedNameEn": "bloodghast",
       "normalizedNameJa": "恐血鬼",
       "oracleId": "e97f9c2b-b41e-4f36-9245-77c0ac125647",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -2033,6 +2063,7 @@
       "normalizedNameEn": "bloodtithe harvester",
       "normalizedNameJa": "税血の収穫者",
       "oracleId": "419a8ab2-cff6-4811-a559-8791c9bb3d8e",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -2058,6 +2089,7 @@
       "normalizedNameEn": "bloom tender",
       "normalizedNameJa": "花を手入れする者",
       "oracleId": "0c23fefe-9891-4dd8-9bb1-eebdb3274e31",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -2091,6 +2123,7 @@
       "normalizedNameEn": "bojuka bog",
       "normalizedNameJa": "ボジューカの沼(ぬま)",
       "oracleId": "04b7362d-0490-4cb0-b5d7-2a7732f659ce",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -2116,6 +2149,7 @@
       "normalizedNameEn": "boomerang basics",
       "normalizedNameJa": "ブーメランの基礎",
       "oracleId": "acd881eb-f3b4-4174-9fc2-e3c7c213886b",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -2257,6 +2291,7 @@
       "normalizedNameEn": "botanical sanctum",
       "normalizedNameJa": "植物の聖域",
       "oracleId": "88f8f683-738e-48f3-afff-c8f73f1033a2",
+      "isBasicLand": false,
       "setCodes": [
         "OTJ"
       ],
@@ -2290,6 +2325,7 @@
       "normalizedNameEn": "bounce off",
       "normalizedNameJa": "跳ね弾き",
       "oracleId": "d9c29e6e-5949-4599-bf74-b9539e753f76",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -2353,6 +2389,7 @@
       "normalizedNameEn": "breeding pool",
       "normalizedNameJa": "繁(はん)殖(しょく)池(いけ)",
       "oracleId": "20283c4a-f1f0-42f0-bc08-6da87474426b",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -2386,6 +2423,7 @@
       "normalizedNameEn": "brightglass gearhulk",
       "normalizedNameJa": "輝晶の機械巨人",
       "oracleId": "0c7019a7-3cca-481a-9af0-abedb89c15ad",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -2575,6 +2613,7 @@
       "normalizedNameEn": "broadside barrage",
       "normalizedNameJa": "舷側砲の一斉射撃",
       "oracleId": "dbf9feb3-0751-47bd-a8dc-ed1c076cf8c7",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -2692,6 +2731,7 @@
       "normalizedNameEn": "brotherhood's end",
       "normalizedNameJa": "兄弟仲の終焉",
       "oracleId": "fe7bf8ca-88ae-4c6d-8d71-ef170a87c0d0",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -2711,6 +2751,7 @@
       "normalizedNameEn": "burn down the house",
       "normalizedNameJa": "家の焼き払い",
       "oracleId": "0ec54683-a65c-461d-862e-585b6499d6a5",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -2736,6 +2777,7 @@
       "normalizedNameEn": "burnout bashtronaut",
       "normalizedNameJa": "焼き切る非行士",
       "oracleId": "1b122fbb-c2e1-42d1-bfc5-fcacacdfa0bc",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -2763,6 +2805,7 @@
       "normalizedNameEn": "burst lightning",
       "normalizedNameJa": "噴出の稲妻",
       "oracleId": "ac2086fe-98ee-4280-9c7c-c5c2d6548a8b",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -2940,6 +2983,7 @@
       "normalizedNameEn": "bushwhack",
       "normalizedNameJa": "薮打ち",
       "oracleId": "c61374e5-a7f6-455e-a40b-a481751b536b",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -3087,6 +3131,7 @@
       "normalizedNameEn": "cacophony scorpion",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -3112,6 +3157,7 @@
       "normalizedNameEn": "callous sell-sword // burn together",
       "normalizedNameJa": "合(ごう)同(どう)火(か)葬(そう)",
       "oracleId": "0e7405e3-e9e6-4213-a73f-e0c01a7d6721",
+      "isBasicLand": false,
       "setCodes": [
         "WOE"
       ],
@@ -3133,6 +3179,7 @@
       "normalizedNameEn": "cartouche of solidarity",
       "normalizedNameJa": "結束のカルトーシュ",
       "oracleId": "b9176173-c4a1-45ae-8f34-bd6b31c141fe",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -3152,6 +3199,7 @@
       "normalizedNameEn": "case of the crimson pulse",
       "normalizedNameJa": "真紅の鼓動の事件",
       "oracleId": "955504bc-050a-42a2-b2e4-ab213183b2be",
+      "isBasicLand": false,
       "setCodes": [
         "MKM"
       ],
@@ -3173,6 +3221,7 @@
       "normalizedNameEn": "cavern of souls",
       "normalizedNameJa": "魂の洞窟",
       "oracleId": "89ca686a-7c72-4d8f-9290-e89635624a83",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -3254,6 +3303,7 @@
       "normalizedNameEn": "chilleriller",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -3273,6 +3323,7 @@
       "normalizedNameEn": "chomping changeling",
       "normalizedNameJa": "食らいつく変わり身",
       "oracleId": "d740dbd9-8e90-4121-8d53-c6ddf5178d58",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -3294,6 +3345,7 @@
       "normalizedNameEn": "cinderclasm",
       "normalizedNameJa": "燃えがら地獄",
       "oracleId": "d7b49bee-2cb0-48e1-91c1-1e150a0da6ed",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -3313,6 +3365,7 @@
       "normalizedNameEn": "cityscape leveler",
       "normalizedNameJa": "街並みの地ならし屋",
       "oracleId": "d4d65797-2b92-4265-9169-133120c86c7f",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -3332,6 +3385,7 @@
       "normalizedNameEn": "clarion conqueror",
       "normalizedNameJa": null,
       "oracleId": "f1266a1b-bae6-4ded-b4d5-7586a5b6c5d0",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -3353,6 +3407,7 @@
       "normalizedNameEn": "clay-fired bricks",
       "normalizedNameJa": "窯焼きの煉瓦",
       "oracleId": "90e1bcef-53af-4c08-b713-bf10dfcbd577",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -3374,6 +3429,7 @@
       "normalizedNameEn": "colorstorm stallion",
       "normalizedNameJa": "彩嵐の雄馬",
       "oracleId": "47ee6837-2e2f-4344-ab9f-6b8887874f77",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -3533,6 +3589,7 @@
       "normalizedNameEn": "combustion technique",
       "normalizedNameJa": "爆裂の技",
       "oracleId": "522a04ff-cbfe-47b0-bd29-ef6fc27a6905",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -3638,6 +3695,7 @@
       "normalizedNameEn": "confounding riddle",
       "normalizedNameJa": "困惑の謎掛け",
       "oracleId": "3df49c4d-a285-4826-824e-b742b0deed3a",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -3665,6 +3723,7 @@
       "normalizedNameEn": "consider",
       "normalizedNameJa": "考慮",
       "oracleId": "4c9bcba6-87b5-4fb3-97ee-6fe5b739337d",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -3684,6 +3743,7 @@
       "normalizedNameEn": "consult the star charts",
       "normalizedNameJa": "星(せい)間(かん)航(こう)路(ろ)の助(じょ)言(げん)",
       "oracleId": "e921839f-9d91-41a9-bc89-016af3c757aa",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -3753,6 +3813,7 @@
       "normalizedNameEn": "cool but rude",
       "normalizedNameJa": "華麗だが無礼者",
       "oracleId": "1f076303-d160-4e02-aa1e-9ed6040c3735",
+      "isBasicLand": false,
       "setCodes": [
         "TMT"
       ],
@@ -3774,6 +3835,7 @@
       "normalizedNameEn": "coral colony",
       "normalizedNameJa": "珊瑚の群棲",
       "oracleId": "5e186931-992b-491c-bffc-6877a613d5c3",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -3793,6 +3855,7 @@
       "normalizedNameEn": "cori mountain monastery",
       "normalizedNameJa": "コーリ山の僧院",
       "oracleId": "35c60b66-8c85-432e-90fe-99c19d21ed15",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -3844,6 +3907,7 @@
       "normalizedNameEn": "crash through",
       "normalizedNameJa": "突破",
       "oracleId": "41c15160-ee8c-42e3-bc6c-593b8c8ae335",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -3865,6 +3929,7 @@
       "normalizedNameEn": "craterhoof behemoth",
       "normalizedNameJa": "孔蹄のビヒモス",
       "oracleId": "8c52bd39-0586-48ca-b263-17210cf9feb6",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -3886,6 +3951,7 @@
       "normalizedNameEn": "crawling barrens",
       "normalizedNameJa": "這い回るやせ地",
       "oracleId": "dfe1a112-97aa-4e81-8431-81552ba2cdcf",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -3907,6 +3973,7 @@
       "normalizedNameEn": "creative outburst",
       "normalizedNameJa": "創造の発露",
       "oracleId": "ffc79d71-5a1f-40a8-80af-84c85e12ba6e",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -3926,6 +3993,7 @@
       "normalizedNameEn": "cruelclaw's heist",
       "normalizedNameJa": "残虐爪の強奪",
       "oracleId": "7a0bc265-6b40-48d6-a588-c9624df7d1bc",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -3947,6 +4015,7 @@
       "normalizedNameEn": "cryogen relic",
       "normalizedNameJa": "氷(こおり)魔(ま)法(ほう)の秘(ひ)宝(ほう)",
       "oracleId": "106e9c0d-67a2-4db7-97d9-03e1ea1b40b5",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -3986,6 +4055,7 @@
       "normalizedNameEn": "cult conscript",
       "normalizedNameJa": "教団の徴集兵",
       "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -4005,6 +4075,7 @@
       "normalizedNameEn": "cut down",
       "normalizedNameJa": "切り崩し",
       "oracleId": "1b30210d-10e9-4703-8967-032063bb4f26",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -4030,6 +4101,7 @@
       "normalizedNameEn": "dark fortress",
       "normalizedNameJa": null,
       "oracleId": "40760bfa-a423-487c-ba29-043b2d00c736",
+      "isBasicLand": false,
       "setCodes": [
         "MSH"
       ],
@@ -4051,6 +4123,7 @@
       "normalizedNameEn": "dauntless bodyguard",
       "normalizedNameJa": "不屈の護衛",
       "oracleId": "70973a2d-66e6-4662-ab10-99678775dda1",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -4070,6 +4143,7 @@
       "normalizedNameEn": "dawn's truce",
       "normalizedNameJa": "薄暮の休戦",
       "oracleId": "37c06f89-db36-4937-9404-2b07cd22e1a6",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -4181,6 +4255,7 @@
       "normalizedNameEn": "day of black sun",
       "normalizedNameJa": "黒い太陽の日",
       "oracleId": "dc857129-533c-41d1-8e8b-1c0443030d69",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -4256,6 +4331,7 @@
       "normalizedNameEn": "day of judgment",
       "normalizedNameJa": "審判の日",
       "oracleId": "d057289d-5e28-43d5-8ff3-4a1bc723477d",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -4331,6 +4407,7 @@
       "normalizedNameEn": "deadly cover-up",
       "normalizedNameJa": "死人に口無し",
       "oracleId": "04e2afbe-0c08-42bc-93e6-662066a958bf",
+      "isBasicLand": false,
       "setCodes": [
         "MKM"
       ],
@@ -4406,6 +4483,7 @@
       "normalizedNameEn": "deathmark",
       "normalizedNameJa": "死の印",
       "oracleId": "cf09b0af-3cf1-4486-8f65-8cfd2410314a",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -4433,6 +4511,7 @@
       "normalizedNameEn": "deceit",
       "normalizedNameJa": "欺瞞",
       "oracleId": "d7dddeac-c6ed-4111-ba40-e2830c08d480",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -4496,6 +4575,7 @@
       "normalizedNameEn": "defend the rider",
       "normalizedNameJa": "乗り手を守れ",
       "oracleId": "561af57d-d43d-4d98-9ef6-18a0843f22ae",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -4517,6 +4597,7 @@
       "normalizedNameEn": "demolition field",
       "normalizedNameJa": "解体爆破場",
       "oracleId": "93953926-a644-49bb-9b5a-4c8f19114c7e",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -4556,6 +4637,7 @@
       "normalizedNameEn": "desecrex, gift of servitude",
       "normalizedNameJa": "真紅の混沌、カーネイジ",
       "oracleId": "c0efafc6-8ffb-4908-ae64-3f391722370a",
+      "isBasicLand": false,
       "setCodes": [
         "OM1",
         "SPM"
@@ -4578,6 +4660,7 @@
       "normalizedNameEn": "deserted beach",
       "normalizedNameJa": "さびれた浜",
       "oracleId": "f0ec8681-da50-466b-8cdd-1dc710deccd9",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 3,
@@ -4609,6 +4692,7 @@
       "normalizedNameEn": "destroy evil",
       "normalizedNameJa": "邪悪を打ち砕く",
       "oracleId": "b75e667a-1ceb-445a-acf4-ae1fd2dae9e7",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -4634,6 +4718,7 @@
       "normalizedNameEn": "detect intrusion",
       "normalizedNameJa": "スパイダーセンス",
       "oracleId": "c4485bf9-e7ff-48b5-a983-02900939ee9d",
+      "isBasicLand": false,
       "setCodes": [
         "OM1",
         "SPM"
@@ -4698,6 +4783,7 @@
       "normalizedNameEn": "disdainful stroke",
       "normalizedNameJa": "軽蔑的な一撃",
       "oracleId": "11e02134-7b1a-46a4-a89e-7539dd1efada",
+      "isBasicLand": false,
       "setCodes": [
         "KTK",
         "WOE"
@@ -4948,6 +5034,7 @@
       "normalizedNameEn": "doomsday excruciator",
       "normalizedNameJa": "終末の加虐者",
       "oracleId": "ad0db433-a406-4ef0-8ffa-416af610c4e7",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -5005,6 +5092,7 @@
       "normalizedNameEn": "dragon sniper",
       "normalizedNameJa": "龍を狙い撃つ者",
       "oracleId": "913dbce2-6805-453f-a9c3-64f1cc658627",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -5026,6 +5114,7 @@
       "normalizedNameEn": "drake hatcher",
       "normalizedNameJa": "ドレイクの孵卵者",
       "oracleId": "4de0ccab-bb5d-4c7c-827e-36aa1d00b182",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -5047,6 +5136,7 @@
       "normalizedNameEn": "dreadmaw's ire",
       "normalizedNameJa": "戦慄大口の怒り",
       "oracleId": "781d6981-d389-4677-9eaf-9c46c9192ed6",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -5068,6 +5158,7 @@
       "normalizedNameEn": "duress",
       "normalizedNameJa": "強迫",
       "oracleId": "33d405ea-7a9a-4970-b70f-9c05d90dd6f0",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -5167,6 +5258,7 @@
       "normalizedNameEn": "dyadrine, synthesis amalgam",
       "normalizedNameJa": "混(こん)合(ごう)成(せい)体(たい)、ダイアドライン",
       "oracleId": "618a2272-62e0-4d0e-834d-7b81719eba12",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -5200,6 +5292,7 @@
       "normalizedNameEn": "earthbender ascension",
       "normalizedNameJa": "土のベンダーの位に至る",
       "oracleId": "f8966fd5-2926-4ba0-b7d6-cfea40cd4e05",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -5269,6 +5362,7 @@
       "normalizedNameEn": "eddymurk crab",
       "normalizedNameJa": "渦泥の蟹",
       "oracleId": "3c345e24-1726-45ac-91ca-e348d1e7acfe",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -5428,6 +5522,7 @@
       "normalizedNameEn": "elspeth, storm slayer",
       "normalizedNameJa": "嵐の討伐者、エルズペス",
       "oracleId": "f78af825-023a-42e9-8374-5c52303a1417",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -5611,6 +5706,7 @@
       "normalizedNameEn": "eluge, the shoreless sea",
       "normalizedNameJa": "岸無き海、エルージュ",
       "oracleId": "027989e7-20c4-4773-b6b4-20337cc5fe8c",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -5632,6 +5728,7 @@
       "normalizedNameEn": "elusive otter // grove's bounty",
       "normalizedNameJa": null,
       "oracleId": "54175132-2c44-4749-8dfd-d08dcc63e4b3",
+      "isBasicLand": false,
       "setCodes": [
         "WOE"
       ],
@@ -5653,6 +5750,7 @@
       "normalizedNameEn": "emeritus of ideation // ancestral recall",
       "normalizedNameJa": "観念の名誉教授 // 祖先の回想",
       "oracleId": "24a29be4-5bc2-469b-b2ce-2fb305c3facb",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -5818,6 +5916,7 @@
       "normalizedNameEn": "enduring vitality",
       "normalizedNameJa": "永劫の活力",
       "oracleId": "3577c47e-76d3-4659-b922-31c4b74be3a0",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -5839,6 +5938,7 @@
       "normalizedNameEn": "erode",
       "normalizedNameJa": "浸食作用",
       "oracleId": "2e467fab-e808-44d3-99bf-e3621baeb7cb",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -6070,6 +6170,7 @@
       "normalizedNameEn": "escape tunnel",
       "normalizedNameJa": "脱出トンネル",
       "oracleId": "0056fc91-4398-471c-b561-7ff99750ac8a",
+      "isBasicLand": false,
       "setCodes": [
         "MKM",
         "TMT"
@@ -6140,6 +6241,7 @@
       "normalizedNameEn": "esper origins // summon: esper maduin",
       "normalizedNameJa": "幻獣との交わり // 召喚:幻獣マディン",
       "oracleId": "947b40a2-e272-4ef6-85fb-3d767a21bc7a",
+      "isBasicLand": false,
       "setCodes": [
         "FIN"
       ],
@@ -6197,6 +6299,7 @@
       "normalizedNameEn": "essence scatter",
       "normalizedNameJa": "本質の散乱",
       "oracleId": "46665089-aa3d-44c3-964d-6638dfbb5782",
+      "isBasicLand": false,
       "setCodes": [
         "FDN",
         "SOS"
@@ -6219,6 +6322,7 @@
       "normalizedNameEn": "ethereal armor",
       "normalizedNameJa": "天上の鎧",
       "oracleId": "dbba75f5-2404-4bd5-982b-f6c4effa5316",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -6240,6 +6344,7 @@
       "normalizedNameEn": "evolving wilds",
       "normalizedNameJa": "進化する未開地",
       "oracleId": "a75445d3-1303-4bb5-89ad-26ea93fecd48",
+      "isBasicLand": false,
       "setCodes": [
         "ECL",
         "FDN",
@@ -6264,6 +6369,7 @@
       "normalizedNameEn": "exorcise",
       "normalizedNameJa": "悪魔祓い",
       "oracleId": "58916455-844c-4d97-908f-8205bdc117c0",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -6291,6 +6397,7 @@
       "normalizedNameEn": "expressive iteration",
       "normalizedNameJa": "表現の反復",
       "oracleId": "c7aecca5-2f67-4245-ab2d-e723d8b23a67",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -6310,6 +6417,7 @@
       "normalizedNameEn": "fabled passage",
       "normalizedNameJa": "寓話の小道",
       "oracleId": "0c85b8f7-0bd0-4680-9ec5-d4b110460a54",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -6379,6 +6487,7 @@
       "normalizedNameEn": "faceless haven",
       "normalizedNameJa": "不詳の安息地",
       "oracleId": "f74107d5-fb4a-464b-9251-42b84d91775d",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -6398,6 +6507,7 @@
       "normalizedNameEn": "farewell",
       "normalizedNameJa": "告別",
       "oracleId": "4eb813fd-2d5a-4b02-8193-662681ef4e7d",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -6417,6 +6527,7 @@
       "normalizedNameEn": "fear of missing out",
       "normalizedNameJa": "逸失への恐怖",
       "oracleId": "236ce592-1321-4a7c-b695-fd84496f8924",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -6438,6 +6549,7 @@
       "normalizedNameEn": "field of ruin",
       "normalizedNameJa": "廃墟の地",
       "oracleId": "f825c98f-a327-440b-8c0d-ebe02e23bfb7",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -6463,6 +6575,7 @@
       "normalizedNameEn": "fire magic",
       "normalizedNameJa": "炎魔法",
       "oracleId": "c87db803-3490-41bc-af7a-78f99bcd77c8",
+      "isBasicLand": false,
       "setCodes": [
         "FIN"
       ],
@@ -6514,6 +6627,7 @@
       "normalizedNameEn": "firebending lesson",
       "normalizedNameJa": "火の技の修行",
       "oracleId": "a9282f91-638e-414b-8b3d-9a99e30aec96",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -6649,6 +6763,7 @@
       "normalizedNameEn": "flashback",
       "normalizedNameJa": "フラッシュバック",
       "oracleId": "02070488-9203-4304-9392-a111d20218c5",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -6772,6 +6887,7 @@
       "normalizedNameEn": "flashfreeze",
       "normalizedNameJa": "瞬間凍結",
       "oracleId": "eaf98e03-729b-4145-b2af-c910c415c15d",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -7033,6 +7149,7 @@
       "normalizedNameEn": "floodfarm verge",
       "normalizedNameJa": "フラッドファームの境界",
       "oracleId": "f1e9abfb-c3c8-483e-b446-5c2afc9f6394",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -7090,6 +7207,7 @@
       "normalizedNameEn": "flow state",
       "normalizedNameJa": "没頭",
       "oracleId": "e7194bca-0cf4-4a86-8b84-d2f9219a08b3",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -7243,6 +7361,7 @@
       "normalizedNameEn": "flusterstorm",
       "normalizedNameJa": "狼狽の嵐",
       "oracleId": "86bf58f2-7f25-4e10-b797-25e0e8e67769",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -7262,6 +7381,7 @@
       "normalizedNameEn": "fomori vault",
       "normalizedNameJa": "フォモーリの宝物庫",
       "oracleId": "622a53bd-d894-422c-a606-7126041afa02",
+      "isBasicLand": false,
       "setCodes": [
         "BIG"
       ],
@@ -7283,6 +7403,7 @@
       "normalizedNameEn": "forest",
       "normalizedNameJa": "森",
       "oracleId": "b34bb2dc-c1af-4d77-b0b3-a0fb342a5fc6",
+      "isBasicLand": true,
       "setCodes": [
         "BLB",
         "DFT",
@@ -7562,6 +7683,7 @@
       "normalizedNameEn": "formidable speaker",
       "normalizedNameJa": "並外れた語り部",
       "oracleId": "5bd06f9e-9a42-455d-ad26-24bc04e51c7c",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -7583,6 +7705,7 @@
       "normalizedNameEn": "frantic inventory",
       "normalizedNameJa": "大慌ての棚卸し",
       "oracleId": "a7865331-4c53-46db-b2d7-7e5cb21b6b9d",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -7602,6 +7725,7 @@
       "normalizedNameEn": "frostbite",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -7621,6 +7745,7 @@
       "normalizedNameEn": "full bore",
       "normalizedNameJa": "急(きゅう)抗(こう)直(ちょっ)下(か)",
       "oracleId": "4b96d003-d3b4-4181-9f50-06a3e6eb1916",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -7642,6 +7767,7 @@
       "normalizedNameEn": "galedrifter",
       "normalizedNameJa": "突風漂い",
       "oracleId": "ba88575a-4b9a-40cd-abbc-4539912c9455",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -7661,6 +7787,7 @@
       "normalizedNameEn": "gathering place",
       "normalizedNameJa": null,
       "oracleId": "36b58705-c5a5-4547-8d8b-a7c35e1f69ae",
+      "isBasicLand": false,
       "setCodes": [
         "MSH"
       ],
@@ -7682,6 +7809,7 @@
       "normalizedNameEn": "gene pollinator",
       "normalizedNameJa": "遺(い)伝(でん)子(し)送(そう)粉(ふん)機(き)",
       "oracleId": "0a356d04-2e86-435b-9766-27b93b468a61",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -7739,6 +7867,7 @@
       "normalizedNameEn": "get lost",
       "normalizedNameJa": "失せろ",
       "oracleId": "522dd417-364b-44ab-8ca9-fb55db5f26a6",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -7808,6 +7937,7 @@
       "normalizedNameEn": "get out",
       "normalizedNameJa": "今のうちに出よう",
       "oracleId": "b2f3c27e-b646-4449-901a-8b809cdfa84e",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -7955,6 +8085,7 @@
       "normalizedNameEn": "ghost vacuum",
       "normalizedNameJa": "除霊用掃除機",
       "oracleId": "4ef583ab-e0a0-4e4b-bd65-af766038b1fd",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -8168,6 +8299,7 @@
       "normalizedNameEn": "gideon blackblade",
       "normalizedNameJa": "黒き剣のギデオン",
       "oracleId": "813c19f5-3580-488d-9eee-c7a563def532",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -8187,6 +8319,7 @@
       "normalizedNameEn": "gideon of the trials",
       "normalizedNameJa": "試練に臨むギデオン",
       "oracleId": "a9bbaad7-c016-4908-a6a7-2c26112a6bf6",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -8206,6 +8339,7 @@
       "normalizedNameEn": "gigastorm titan",
       "normalizedNameJa": "猛(もう)嵐(らん)のタイタン",
       "oracleId": "ef06e10c-553b-45b8-abf0-1d2e87c22128",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -8239,6 +8373,7 @@
       "normalizedNameEn": "glass casket",
       "normalizedNameJa": "ガラスの棺",
       "oracleId": "d9167046-7908-4d16-8cc1-3eb02d1ba547",
+      "isBasicLand": false,
       "setCodes": [
         "WOE"
       ],
@@ -8260,6 +8395,7 @@
       "normalizedNameEn": "gleaming bastion",
       "normalizedNameJa": null,
       "oracleId": "7785ffd4-f169-475d-9558-ce4877b3378a",
+      "isBasicLand": false,
       "setCodes": [
         "MSH"
       ],
@@ -8281,6 +8417,7 @@
       "normalizedNameEn": "glen elendra's answer",
       "normalizedNameJa": "エレンドラ谷の応答",
       "oracleId": "11ed8209-2184-4416-a8f0-72de00599574",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -8302,6 +8439,7 @@
       "normalizedNameEn": "gloomlake verge",
       "normalizedNameJa": "グルームレイクの境界",
       "oracleId": "d71bda4c-3dee-4398-8fd0-f77d8743b887",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -8389,6 +8527,7 @@
       "normalizedNameEn": "go for the throat",
       "normalizedNameJa": "喉首狙い",
       "oracleId": "2f092562-9e17-43cd-aeb8-d0567f99363e",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -8414,6 +8553,7 @@
       "normalizedNameEn": "godless shrine",
       "normalizedNameJa": "神(かみ)無(な)き祭(さい)殿(でん)",
       "oracleId": "73864fcc-1bde-4bc0-831e-2b93e546e417",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -8447,6 +8587,7 @@
       "normalizedNameEn": "gran-gran",
       "normalizedNameJa": "ばあば",
       "oracleId": "0259a9ed-0558-4183-b737-871ed5573c32",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -8558,6 +8699,7 @@
       "normalizedNameEn": "graveyard trespasser",
       "normalizedNameJa": "墓地の侵入者",
       "oracleId": "0bbd6cad-9b6f-45a6-9f2e-d7b4853586ae",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -8583,6 +8725,7 @@
       "normalizedNameEn": "great hall of the biblioplex",
       "normalizedNameJa": "大図書棟の大ホール",
       "oracleId": "a8c70dab-1e27-4a9c-bd2d-910d5720d02d",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -8724,6 +8867,7 @@
       "normalizedNameEn": "guardian of faith",
       "normalizedNameJa": "ガーディアン・オヴ・フェイス",
       "oracleId": "8e04a5e0-e22c-430b-a39a-c9f38e16ea86",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -8743,6 +8887,7 @@
       "normalizedNameEn": "hallowed fountain",
       "normalizedNameJa": "神聖なる泉",
       "oracleId": "f1750962-a87c-49f6-b731-02ae971ac6ea",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -8896,6 +9041,7 @@
       "normalizedNameEn": "hallowed haunting",
       "normalizedNameJa": "神聖なる憑依",
       "oracleId": "e310ab58-180e-4840-bc8d-9f9b06f1b478",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -8915,6 +9061,7 @@
       "normalizedNameEn": "hanna's custody",
       "normalizedNameJa": "ハナの保護管理",
       "oracleId": "57b0205d-ad9d-45b7-8556-0733aa7a4987",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -8934,6 +9081,7 @@
       "normalizedNameEn": "harvester of misery",
       "normalizedNameJa": "苦難の収穫者",
       "oracleId": "a0d3bb63-2977-41b2-bcc3-2488e6696cb8",
+      "isBasicLand": false,
       "setCodes": [
         "BIG"
       ],
@@ -8955,6 +9103,7 @@
       "normalizedNameEn": "haughty djinn",
       "normalizedNameJa": "傲慢なジン",
       "oracleId": "44036bb5-f300-40bd-9180-6b246315d886",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -8974,6 +9123,7 @@
       "normalizedNameEn": "haywire mite",
       "normalizedNameJa": "機能不全ダニ",
       "oracleId": "749d2994-44e7-40d3-8630-7bebed239e9e",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -8999,6 +9149,7 @@
       "normalizedNameEn": "heartfire hero",
       "normalizedNameJa": "心火の英雄",
       "oracleId": "49e1e202-37bf-46ed-93d1-1adb13726039",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -9024,6 +9175,7 @@
       "normalizedNameEn": "hearth elemental // stoke genius",
       "normalizedNameJa": null,
       "oracleId": "f01cf0c5-0ac6-4ad3-8642-dd21c8e8563e",
+      "isBasicLand": false,
       "setCodes": [
         "WOE"
       ],
@@ -9075,6 +9227,7 @@
       "normalizedNameEn": "heliod's intervention",
       "normalizedNameJa": "ヘリオッドの介入",
       "oracleId": "e7564d66-767c-4cd9-a5f0-0f2488a4a74b",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -9094,6 +9247,7 @@
       "normalizedNameEn": "helping hand",
       "normalizedNameJa": "救いの手",
       "oracleId": "170a5dbc-6a43-4715-9501-178b1eb7b08c",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -9115,6 +9269,7 @@
       "normalizedNameEn": "hexing squelcher",
       "normalizedNameJa": "呪詛の壊し屋",
       "oracleId": "96c2d71e-0fc9-42aa-bc6b-6d0ae3f66f8b",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -9142,6 +9297,7 @@
       "normalizedNameEn": "hidden lair",
       "normalizedNameJa": null,
       "oracleId": "7069d241-4e66-40bf-afd1-551a4a5457f0",
+      "isBasicLand": false,
       "setCodes": [
         "MSH"
       ],
@@ -9193,6 +9349,7 @@
       "normalizedNameEn": "hired claw",
       "normalizedNameJa": "雇われ爪",
       "oracleId": "031cfc7d-8bda-454b-b88a-15d3f5fe47e2",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -9220,6 +9377,7 @@
       "normalizedNameEn": "hopeful initiate",
       "normalizedNameJa": "有望な信徒",
       "oracleId": "317169b8-9014-48e6-862b-ca21b706846e",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -9239,6 +9397,7 @@
       "normalizedNameEn": "howlsquad heavy",
       "normalizedNameJa": "咆吼部隊の重量級",
       "oracleId": "cd45a29f-73bc-435c-9d50-09a4ecaa77be",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -9266,6 +9425,7 @@
       "normalizedNameEn": "hunt for specimens",
       "normalizedNameJa": "検体探し",
       "oracleId": "53f1bcff-55fb-4d38-b108-dcbed623f488",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -9285,6 +9445,7 @@
       "normalizedNameEn": "hushwood verge",
       "normalizedNameJa": "ハッシュウッドの境界",
       "oracleId": "cce328b9-6100-417e-9ddf-808bbe3e3bc5",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -9504,6 +9665,7 @@
       "normalizedNameEn": "icetill explorer",
       "normalizedNameJa": "氷(こおり)耕(たがや)しの探(たん)検(けん)家(か)",
       "oracleId": "109cdefd-e8cc-4ac7-b6ba-2cfdef8d780f",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -9567,6 +9729,7 @@
       "normalizedNameEn": "impractical joke",
       "normalizedNameJa": "すべきでない悪ふざけ",
       "oracleId": "c8da73ed-2834-4094-8723-a4ad75660290",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -9720,6 +9883,7 @@
       "normalizedNameEn": "improvisation capstone",
       "normalizedNameJa": "即興の集大成",
       "oracleId": "fd4f0315-567a-4cc5-bc7e-88a9d2cee910",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -9765,6 +9929,7 @@
       "normalizedNameEn": "inevitable defeat",
       "normalizedNameJa": "不可避の敗北",
       "oracleId": "d68439b5-7011-4b1d-a7da-14ef0f4d9994",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -9828,6 +9993,7 @@
       "normalizedNameEn": "innkeeper's talent",
       "normalizedNameJa": "亭主の才能",
       "oracleId": "915b75d1-b5e3-4aca-a54c-beaccef0a2e4",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -9849,6 +10015,7 @@
       "normalizedNameEn": "insatiable avarice",
       "normalizedNameJa": "限りない強欲",
       "oracleId": "ad3e705f-da57-4eff-84d7-2072522de988",
+      "isBasicLand": false,
       "setCodes": [
         "OTJ"
       ],
@@ -9876,6 +10043,7 @@
       "normalizedNameEn": "inti, seneschal of the sun",
       "normalizedNameJa": "太陽の執事長、インティ",
       "oracleId": "176f5ba8-6e7b-4234-a298-b6164f51656f",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -9897,6 +10065,7 @@
       "normalizedNameEn": "intimidation tactics",
       "normalizedNameJa": "脅迫戦術",
       "oracleId": "121bd1af-da21-4937-a911-377c5b430796",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -9924,6 +10093,7 @@
       "normalizedNameEn": "into the flood maw",
       "normalizedNameJa": "洪水の大口へ",
       "oracleId": "8cb36a67-9206-4665-a03f-64f52ba559c4",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -9993,6 +10163,7 @@
       "normalizedNameEn": "intrepid adversary",
       "normalizedNameJa": "剛胆な敵対者",
       "oracleId": "b72fde5e-862a-45e8-9880-f2c16975a9ac",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -10012,6 +10183,7 @@
       "normalizedNameEn": "invasion of gobakhan",
       "normalizedNameJa": "ゴバカーンへの侵攻",
       "oracleId": "86c32a56-3272-4738-b0b3-a8aa49a17ce4",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -10031,6 +10203,7 @@
       "normalizedNameEn": "invasion of zendikar",
       "normalizedNameJa": "ゼンディカーへの侵攻",
       "oracleId": "4b1874af-4ea5-4e22-a4d4-e718d75fe95e",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -10050,6 +10223,7 @@
       "normalizedNameEn": "iroh's demonstration",
       "normalizedNameJa": "アイローの表演",
       "oracleId": "8dd2e73a-d1b4-4d26-857f-9eb8e384c8ff",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -10155,6 +10329,7 @@
       "normalizedNameEn": "iron-shield elf",
       "normalizedNameJa": "鉄盾のエルフ",
       "oracleId": "1c77b4da-b580-4ce9-b127-76de674f5694",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -10176,6 +10351,7 @@
       "normalizedNameEn": "island",
       "normalizedNameJa": "島",
       "oracleId": "b2c6aa39-2d2a-459c-a555-fb48ba993373",
+      "isBasicLand": true,
       "setCodes": [
         "BLB",
         "DFT",
@@ -10515,6 +10691,7 @@
       "normalizedNameEn": "it'll quench ya!",
       "normalizedNameJa": "飲めば潤う!",
       "oracleId": "cb184995-700f-4900-994a-4ce7fd12f942",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -10620,6 +10797,7 @@
       "normalizedNameEn": "jace, the perfected mind",
       "normalizedNameJa": "完成化した精神、ジェイス",
       "oracleId": "03dafab4-841f-41cb-8f2e-8188f5177837",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -10639,6 +10817,7 @@
       "normalizedNameEn": "jennifer walters",
       "normalizedNameJa": null,
       "oracleId": "c867a778-97ef-4872-b890-b088b96a1281",
+      "isBasicLand": false,
       "setCodes": [
         "MSH"
       ],
@@ -10798,6 +10977,7 @@
       "normalizedNameEn": "jeskai revelation",
       "normalizedNameJa": "ジェスカイの啓示",
       "oracleId": "61b6b1d1-4350-41c1-ac47-835b2831f24a",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -10933,6 +11113,7 @@
       "normalizedNameEn": "karn, living legacy",
       "normalizedNameJa": null,
       "oracleId": "09ab1278-811f-4b97-bd34-7493d6e081e9",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -10952,6 +11133,7 @@
       "normalizedNameEn": "kavaero, mind-bitten",
       "normalizedNameJa": "スーペリア・スパイダーマン",
       "oracleId": "636cc915-9d1b-4ffe-9e74-795b78663911",
+      "isBasicLand": false,
       "setCodes": [
         "OM1",
         "SPM"
@@ -11016,6 +11198,7 @@
       "normalizedNameEn": "kaya, living ichor",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -11041,6 +11224,7 @@
       "normalizedNameEn": "keen-eyed curator",
       "normalizedNameJa": "鋭い目の管理者",
       "oracleId": "46ce3698-e4e6-44e9-8b99-2b12a703e91e",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -11176,6 +11360,7 @@
       "normalizedNameEn": "krang, master mind",
       "normalizedNameJa": "大いなる脳ミソ、クランゲ",
       "oracleId": "52562194-4a97-40d2-aa73-7827f7834f2f",
+      "isBasicLand": false,
       "setCodes": [
         "TMT"
       ],
@@ -11197,6 +11382,7 @@
       "normalizedNameEn": "kumano faces kakkazan",
       "normalizedNameJa": "熊野と渇苛斬の対峙",
       "oracleId": "535916f8-b51a-4414-8ab0-fdccdefd9433",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -11222,6 +11408,7 @@
       "normalizedNameEn": "kutzil, malamet exemplar",
       "normalizedNameJa": "マラメトの模範、クチル",
       "oracleId": "3233af43-7826-4895-b67e-03c6102c2cd5",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -11249,6 +11436,7 @@
       "normalizedNameEn": "landsign steward",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -11268,6 +11456,7 @@
       "normalizedNameEn": "lantern of the lost",
       "normalizedNameJa": "失われし者のランタン",
       "oracleId": "f0c4414f-f153-40f6-a3b3-94bcbf1d3e29",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -11287,6 +11476,7 @@
       "normalizedNameEn": "lay down arms",
       "normalizedNameJa": "軍備放棄",
       "oracleId": "aa91d092-7f4a-4e4d-85db-e200692f3d9d",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -11306,6 +11496,7 @@
       "normalizedNameEn": "leatherhead, swamp stalker",
       "normalizedNameJa": "沼地のハンター、レザーヘッド",
       "oracleId": "ee9b606a-a1fe-43c8-84d0-9bf7b012cc75",
+      "isBasicLand": false,
       "setCodes": [
         "TMT"
       ],
@@ -11537,6 +11728,7 @@
       "normalizedNameEn": "leyline weaver",
       "normalizedNameJa": "蜘蛛の顕現",
       "oracleId": "8281f2b9-e81b-48da-812a-8713b2adf8ab",
+      "isBasicLand": false,
       "setCodes": [
         "OM1",
         "SPM"
@@ -11703,6 +11895,7 @@
       "normalizedNameEn": "lightning helix",
       "normalizedNameJa": "稲妻のらせん",
       "oracleId": "800c258a-cfc4-4a54-a667-065ea8dea69e",
+      "isBasicLand": false,
       "setCodes": [
         "MKM"
       ],
@@ -11754,6 +11947,7 @@
       "normalizedNameEn": "lightning strike",
       "normalizedNameJa": "稲妻の一撃",
       "oracleId": "f34b9bc4-7bfe-47fd-ba23-4eeeb46026eb",
+      "isBasicLand": false,
       "setCodes": [
         "DFT",
         "MSH",
@@ -11795,6 +11989,7 @@
       "normalizedNameEn": "liquimetal torque",
       "normalizedNameJa": "液鋼の首飾り",
       "oracleId": "b7d4b7dd-fbb1-4ca3-875f-ef13a95e66ad",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -11820,6 +12015,7 @@
       "normalizedNameEn": "lithomantic barricade",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -11839,6 +12035,7 @@
       "normalizedNameEn": "llanowar elves",
       "normalizedNameJa": "ラノワールのエルフ",
       "oracleId": "68954295-54e3-4303-a6bc-fc4547a4e3a3",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -12088,6 +12285,7 @@
       "normalizedNameEn": "llanowar wastes",
       "normalizedNameJa": "ラノワールの荒(こう)原(げん)",
       "oracleId": "32116127-cf96-4a1b-8896-a1ebc087b597",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -12107,6 +12305,7 @@
       "normalizedNameEn": "lumbering worldwagon",
       "normalizedNameJa": "重厚な世界踏破車",
       "oracleId": "7e60a641-1f2d-45ff-b3f2-d389be938b22",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -12164,6 +12363,7 @@
       "normalizedNameEn": "m.o.d.o.k.",
       "normalizedNameJa": null,
       "oracleId": "fe7cc414-42d0-4dad-8516-7a0be0860a67",
+      "isBasicLand": false,
       "setCodes": [
         "MSH"
       ],
@@ -12209,6 +12409,7 @@
       "normalizedNameEn": "magebane lizard",
       "normalizedNameJa": "魔道士封じのトカゲ",
       "oracleId": "0c38f159-367b-4e4b-94cd-bf1b0721c3a8",
+      "isBasicLand": false,
       "setCodes": [
         "OTJ"
       ],
@@ -12236,6 +12437,7 @@
       "normalizedNameEn": "magic damper",
       "normalizedNameJa": "魔法無効化「シェル」",
       "oracleId": "ada82f93-dc93-4a95-a13f-42b5942b3413",
+      "isBasicLand": false,
       "setCodes": [
         "FIN"
       ],
@@ -12257,6 +12459,7 @@
       "normalizedNameEn": "make disappear",
       "normalizedNameJa": "かき消し",
       "oracleId": "5f12f665-f083-48ae-b61a-541051c996ec",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -12282,6 +12485,7 @@
       "normalizedNameEn": "marauding mako",
       "normalizedNameJa": "略奪するアオザメ",
       "oracleId": "e349be42-5f14-44a9-9608-281985c10e2d",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -12303,6 +12507,7 @@
       "normalizedNameEn": "march of otherworldly light",
       "normalizedNameJa": "冥途灯りの行進",
       "oracleId": "ed06e421-480c-40c8-8c3e-1e466e5327b2",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -12322,6 +12527,7 @@
       "normalizedNameEn": "meltstrider's resolve",
       "normalizedNameJa": "溶(と)かし歩(ある)きの消(しょう)散(さん)",
       "oracleId": "6f9bc0c6-1792-4771-a839-95a22d9c699a",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -12553,6 +12759,7 @@
       "normalizedNameEn": "memory deluge",
       "normalizedNameJa": "記憶の氾濫",
       "oracleId": "e6fd55f2-7e26-469c-a44a-ea2eb90e19a9",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -12572,6 +12779,7 @@
       "normalizedNameEn": "mendicant core, guidelight",
       "normalizedNameJa": "ガイドライト、雲水核",
       "oracleId": "b20d74a4-0e08-4779-972a-499f1a2be15a",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -12593,6 +12801,7 @@
       "normalizedNameEn": "meticulous archive",
       "normalizedNameJa": "行き届いた書庫",
       "oracleId": "ccfb8b4d-651c-418a-aa19-cb23105b3f2f",
+      "isBasicLand": false,
       "setCodes": [
         "MKM"
       ],
@@ -12638,6 +12847,7 @@
       "normalizedNameEn": "michelangelo, weirdness to 11",
       "normalizedNameJa": "ぶっとび全開、ミケランジェロ",
       "oracleId": "170ab932-9d50-4ce7-9a42-08e1edce7e7c",
+      "isBasicLand": false,
       "setCodes": [
         "TMT"
       ],
@@ -12665,6 +12875,7 @@
       "normalizedNameEn": "mightform harmonizer",
       "normalizedNameJa": "強(きょう)靭(じん)形(けい)態(たい)の調(ちょう)和(わ)者(しゃ)",
       "oracleId": "8e025cda-71c5-4d06-8436-decd408667af",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -12734,6 +12945,7 @@
       "normalizedNameEn": "mirrex",
       "normalizedNameJa": "ミレックス",
       "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 3,
@@ -12765,6 +12977,7 @@
       "normalizedNameEn": "mirrodin's core",
       "normalizedNameJa": "ミラディンの核",
       "oracleId": "ea53adbe-3f9a-4847-87c7-723ac2789918",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -12784,6 +12997,7 @@
       "normalizedNameEn": "mistrise village",
       "normalizedNameJa": "湧霧の村",
       "oracleId": "339f5334-b65a-445a-a016-20e997e0b4bb",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -12889,6 +13103,7 @@
       "normalizedNameEn": "mockingbird",
       "normalizedNameJa": "マネドリ",
       "oracleId": "b9df2cdf-397c-458d-89cf-911568737ffa",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -12922,6 +13137,7 @@
       "normalizedNameEn": "molten-core maestro",
       "normalizedNameJa": "融解コアの巨匠",
       "oracleId": "485233bf-dc4b-4f31-8dfb-5054aee70c08",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -12961,6 +13177,7 @@
       "normalizedNameEn": "momo, friendly flier",
       "normalizedNameJa": "空飛ぶ友だち、モモ",
       "oracleId": "a3c56e71-0de6-447a-a9b4-0971f56c2362",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -12982,6 +13199,7 @@
       "normalizedNameEn": "monastery swiftspear",
       "normalizedNameJa": "僧院の速槍",
       "oracleId": "dafd2713-d1bc-474b-b390-d2ff20b5375e",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -13007,6 +13225,7 @@
       "normalizedNameEn": "monstrous rage",
       "normalizedNameJa": "巨怪の怒り",
       "oracleId": "646a2371-54c0-4492-ac2f-20f109d6108c",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -13032,6 +13251,7 @@
       "normalizedNameEn": "monument to endurance",
       "normalizedNameJa": "忍耐の記念碑",
       "oracleId": "e69e8de4-b521-4888-8074-17f1efe2f345",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -13065,6 +13285,7 @@
       "normalizedNameEn": "moonshadow",
       "normalizedNameJa": "月影",
       "oracleId": "a3635b3f-839c-4fe5-83a5-7c70e8630184",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -13086,6 +13307,7 @@
       "normalizedNameEn": "mossborn hydra",
       "normalizedNameJa": "苔生まれのハイドラ",
       "oracleId": "84122d81-9634-4d3f-85a5-f6cf4303691a",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -13155,6 +13377,7 @@
       "normalizedNameEn": "mountain",
       "normalizedNameJa": "山",
       "oracleId": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+      "isBasicLand": true,
       "setCodes": [
         "BLB",
         "DFT",
@@ -13272,6 +13495,7 @@
       "normalizedNameEn": "multiversal passage",
       "normalizedNameJa": "マルチバースへの通り道",
       "oracleId": "17770eeb-ecbf-4510-af2d-acececfbe146",
+      "isBasicLand": false,
       "setCodes": [
         "OM1",
         "SPM"
@@ -13618,6 +13842,7 @@
       "normalizedNameEn": "mysterious limbs",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -13637,6 +13862,7 @@
       "normalizedNameEn": "mystical dispute",
       "normalizedNameJa": "神秘の論争",
       "oracleId": "48390b8d-db41-48a5-9bac-316660ab7252",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 3,
@@ -13668,6 +13894,7 @@
       "normalizedNameEn": "namor the sub-mariner",
       "normalizedNameJa": null,
       "oracleId": "dff11626-ad4d-443a-b7db-f508790b5fd2",
+      "isBasicLand": false,
       "setCodes": [
         "MSH"
       ],
@@ -13695,6 +13922,7 @@
       "normalizedNameEn": "nature's lore",
       "normalizedNameJa": "自然の知識",
       "oracleId": "78826359-fe63-44ad-adc4-a17ffcd710e4",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -13714,6 +13942,7 @@
       "normalizedNameEn": "nature's rhythm",
       "normalizedNameJa": "自然の律動",
       "oracleId": "0259f063-3e3f-4e07-9066-f748d4819829",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -13753,6 +13982,7 @@
       "normalizedNameEn": "negate",
       "normalizedNameJa": "否認",
       "oracleId": "3407fe41-fdd3-4119-8f70-4bc4590a379f",
+      "isBasicLand": false,
       "setCodes": [
         "FDN",
         "TMT"
@@ -13889,6 +14119,7 @@
       "normalizedNameEn": "no more lies",
       "normalizedNameJa": "喝破",
       "oracleId": "ead1ee6a-e0da-46d5-89e8-31e8c0270bc2",
+      "isBasicLand": false,
       "setCodes": [
         "MKM"
       ],
@@ -13952,6 +14183,7 @@
       "normalizedNameEn": "north wind avatar",
       "normalizedNameJa": "北風の守護者",
       "oracleId": "b408c345-b308-4920-8494-4f204d856aa3",
+      "isBasicLand": false,
       "setCodes": [
         "TMT"
       ],
@@ -13997,6 +14229,7 @@
       "normalizedNameEn": "nova hellkite",
       "normalizedNameJa": "新(しん)星(せい)のヘルカイト",
       "oracleId": "9635d79e-62ec-4d80-ae37-2793489cc13b",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -14024,6 +14257,7 @@
       "normalizedNameEn": "nowhere to run",
       "normalizedNameJa": "逃げ場なし",
       "oracleId": "da82ca96-a613-4d00-9e6b-1fece4fc23d0",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -14063,6 +14297,7 @@
       "normalizedNameEn": "nurturing pixie",
       "normalizedNameJa": "養育するピクシー",
       "oracleId": "8ecd3743-7c32-41ce-9ac1-c8c855a47302",
+      "isBasicLand": false,
       "setCodes": [
         "OTJ"
       ],
@@ -14108,6 +14343,7 @@
       "normalizedNameEn": "oakhollow village",
       "normalizedNameJa": "樫穴村",
       "oracleId": "177b7fe4-8565-4631-b4d9-8b2b4282f3ac",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -14129,6 +14365,7 @@
       "normalizedNameEn": "octopus form",
       "normalizedNameJa": "タコの型",
       "oracleId": "6fec368d-374d-4318-861b-ff478ba51a3c",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -14186,6 +14423,7 @@
       "normalizedNameEn": "oildeep gearhulk",
       "normalizedNameJa": "油浸の機械巨人",
       "oracleId": "aff0740f-51d5-41c7-ac13-97c298cfd743",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -14237,6 +14475,7 @@
       "normalizedNameEn": "old man willow",
       "normalizedNameJa": "柳じじい",
       "oracleId": "96c96842-42c2-4aa3-95e2-6186d4ab5693",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -14256,6 +14495,7 @@
       "normalizedNameEn": "opt",
       "normalizedNameJa": "選択",
       "oracleId": "713332c1-5bd8-400f-bfff-c1ca0697a043",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -14433,6 +14673,7 @@
       "normalizedNameEn": "origin of metalbending",
       "normalizedNameJa": "金属の技の原点",
       "oracleId": "177113f8-1188-4e5e-8ad7-34a7bb8ca7f1",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -14454,6 +14695,7 @@
       "normalizedNameEn": "ouroboroid",
       "normalizedNameJa": "ウロボロイド",
       "oracleId": "50d6fd91-23d3-4d32-804f-6233e4386904",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -14649,6 +14891,7 @@
       "normalizedNameEn": "outrageous robbery",
       "normalizedNameJa": "極悪非道の盗人",
       "oracleId": "5b194438-6946-45dd-8d77-c9de8c115d09",
+      "isBasicLand": false,
       "setCodes": [
         "MKM"
       ],
@@ -14712,6 +14955,7 @@
       "normalizedNameEn": "overload",
       "normalizedNameJa": "過負荷",
       "oracleId": "07159efc-c69f-4164-a8ca-9da641dbf702",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -14731,6 +14975,7 @@
       "normalizedNameEn": "pawpatch formation",
       "normalizedNameJa": "脚当ての陣形",
       "oracleId": "fa99cf82-ebf1-4526-ab9c-b24eb2970f2a",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -14776,6 +15021,7 @@
       "normalizedNameEn": "pawpatch recruit",
       "normalizedNameJa": "脚当ての補充兵",
       "oracleId": "50ab0194-c7dc-4f11-abc0-1a82393cc42e",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -14965,6 +15211,7 @@
       "normalizedNameEn": "perilous snare",
       "normalizedNameJa": "危険な罠",
       "oracleId": "cff7499a-44b0-4a2a-b96c-ed2cafb1a90d",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -14986,6 +15233,7 @@
       "normalizedNameEn": "pest control",
       "normalizedNameJa": "害獣駆除",
       "oracleId": "072db429-3838-42ba-89b6-e26cbce22af9",
+      "isBasicLand": false,
       "setCodes": [
         "BIG"
       ],
@@ -15031,6 +15279,7 @@
       "normalizedNameEn": "petrified hamlet",
       "normalizedNameJa": null,
       "oracleId": "78a2972c-14f4-41f3-99f9-167948bdd73a",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -15082,6 +15331,7 @@
       "normalizedNameEn": "phoenix flame",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -15107,6 +15357,7 @@
       "normalizedNameEn": "pick your poison",
       "normalizedNameJa": "毒を選べ",
       "oracleId": "9af4a832-d634-47aa-91ed-79d44fe08864",
+      "isBasicLand": false,
       "setCodes": [
         "MKM"
       ],
@@ -15134,6 +15385,7 @@
       "normalizedNameEn": "pinnacle starcage",
       "normalizedNameJa": "ピナクルの星(せい)檻(かん)",
       "oracleId": "10e0b563-4dfc-4530-a010-0ba40bdf02ac",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -15155,6 +15407,7 @@
       "normalizedNameEn": "pit of offerings",
       "normalizedNameJa": "捧げ物の穴",
       "oracleId": "044d2788-6daa-4849-a813-1f577eef9295",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -15188,6 +15441,7 @@
       "normalizedNameEn": "pithing needle",
       "normalizedNameJa": "真髄の針",
       "oracleId": "a188fe7e-68de-4c7c-806c-bfe8fc7b44bf",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -15213,6 +15467,7 @@
       "normalizedNameEn": "plains",
       "normalizedNameJa": "平地",
       "oracleId": "bc71ebf6-2056-41f7-be35-b2e5c34afa99",
+      "isBasicLand": true,
       "setCodes": [
         "BLB",
         "DFT",
@@ -15522,6 +15777,7 @@
       "normalizedNameEn": "play with fire",
       "normalizedNameJa": "火遊び",
       "oracleId": "5ffc1e77-152b-4a82-8ea8-2c79cc31d5ef",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -15547,6 +15803,7 @@
       "normalizedNameEn": "practiced offense",
       "normalizedNameJa": "練習を積んだ攻撃",
       "oracleId": "99678cc9-59c8-4358-b847-8c38ffb4a050",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -15748,6 +16005,7 @@
       "normalizedNameEn": "price of freedom",
       "normalizedNameJa": "自由の代価",
       "oracleId": "5e6faa98-cf55-430d-87ce-8085f68aa20a",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -15835,6 +16093,7 @@
       "normalizedNameEn": "prismari charm",
       "normalizedNameJa": "プリズマリの魔除け",
       "oracleId": "c3c25a2c-f71c-4cb7-9117-0bcda9248bfd",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -15904,6 +16163,7 @@
       "normalizedNameEn": "promising vein",
       "normalizedNameJa": "有望な鉱脈",
       "oracleId": "861eb7d7-7616-4620-a4fd-4b8c3bf00dd1",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -15955,6 +16215,7 @@
       "normalizedNameEn": "pyroclasm",
       "normalizedNameJa": "紅蓮地獄",
       "oracleId": "e4bcd4ea-e7cd-4471-8f3b-18bb51d3d70c",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -16060,6 +16321,7 @@
       "normalizedNameEn": "pyrrhic strike",
       "normalizedNameJa": "割に合わない一撃",
       "oracleId": "5ea1d89c-8650-4373-9835-e369587020ef",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -16081,6 +16343,7 @@
       "normalizedNameEn": "qarsi revenant",
       "normalizedNameJa": "カルシの帰還者",
       "oracleId": "bbea79bc-71d4-4100-92f4-783c2c4b46da",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -16144,6 +16407,7 @@
       "normalizedNameEn": "quantum riddler",
       "normalizedNameJa": "量(りょう)子(し)の謎(なぞ)かけ屋(や)",
       "oracleId": "58582fac-4c42-4a1c-9ab1-4a892b500da4",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -16207,6 +16471,7 @@
       "normalizedNameEn": "radiant flames",
       "normalizedNameJa": "光輝の炎",
       "oracleId": "cfc8372f-13b6-4628-84c7-066881b287f5",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -16226,6 +16491,7 @@
       "normalizedNameEn": "ral, crackling wit",
       "normalizedNameJa": "轟く機知、ラル",
       "oracleId": "3c970f43-17da-4187-a084-efd53b579067",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -16445,6 +16711,7 @@
       "normalizedNameEn": "rapturous moment",
       "normalizedNameJa": "有頂天の瞬間",
       "oracleId": "c997afb7-82cb-4579-885e-3628cb1b51e4",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -16466,6 +16733,7 @@
       "normalizedNameEn": "razortide bridge",
       "normalizedNameJa": "剃(かみ)刀(そり)潮(じお)の橋(はし)",
       "oracleId": "6cb37ac1-dd11-4a8c-bca5-ef44d828059f",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -16485,6 +16753,7 @@
       "normalizedNameEn": "reidane, god of the worthy",
       "normalizedNameJa": "傑士の神、レーデイン",
       "oracleId": "35ae7b25-6d0f-49f8-a40d-dd2cf88e6f44",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -16504,6 +16773,7 @@
       "normalizedNameEn": "repurposing bay",
       "normalizedNameJa": "再利用隔室",
       "oracleId": "1787ac2f-762d-4f3a-b7e5-12db6d3d470d",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -16525,6 +16795,7 @@
       "normalizedNameEn": "requiting hex",
       "normalizedNameJa": "報いの呪詛",
       "oracleId": "eda16b31-33db-4ad2-901a-80fbe6273733",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -16594,6 +16865,7 @@
       "normalizedNameEn": "rest in peace",
       "normalizedNameJa": "安らかなる眠り",
       "oracleId": "087f9ad7-e74f-40e2-8102-1ed2925d0418",
+      "isBasicLand": false,
       "setCodes": [
         "BIG"
       ],
@@ -16765,6 +17037,7 @@
       "normalizedNameEn": "restless reef",
       "normalizedNameJa": "不穏な浅瀬",
       "oracleId": "df20f85b-5f81-4ee4-8487-55d90109ac36",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -16840,6 +17113,7 @@
       "normalizedNameEn": "restoration magic",
       "normalizedNameJa": "回復魔法",
       "oracleId": "ddbe0d17-5cac-417c-afc0-e4aebae83205",
+      "isBasicLand": false,
       "setCodes": [
         "FIN"
       ],
@@ -16933,6 +17207,7 @@
       "normalizedNameEn": "return the favor",
       "normalizedNameJa": "しっぺ返し",
       "oracleId": "30377bd5-99ab-4888-9ea7-e5a069b527e8",
+      "isBasicLand": false,
       "setCodes": [
         "OTJ"
       ],
@@ -17020,6 +17295,7 @@
       "normalizedNameEn": "rielle, the everwise",
       "normalizedNameJa": "常智のリエール",
       "oracleId": "6f981e70-5828-49ac-8a72-cf1cc09be991",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -17039,6 +17315,7 @@
       "normalizedNameEn": "risky shortcut",
       "normalizedNameJa": "危険な近道",
       "oracleId": "a7c55495-6aca-4d17-b61a-cab8fa38b9f4",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -17060,6 +17337,7 @@
       "normalizedNameEn": "riverchurn monument",
       "normalizedNameJa": "奔流川の記念碑",
       "oracleId": "71c714a2-baa9-4082-bc8e-ceadbea231e0",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -17093,6 +17371,7 @@
       "normalizedNameEn": "riverpyre verge",
       "normalizedNameJa": "リバーパイアーの境界",
       "oracleId": "510a6ac5-f098-4145-ac07-771b1b6f7cdf",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -17372,6 +17651,7 @@
       "normalizedNameEn": "roadside reliquary",
       "normalizedNameJa": "道路脇の聖遺",
       "oracleId": "2fb13687-0518-4ba0-a5ae-dd609464b026",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -17391,6 +17671,7 @@
       "normalizedNameEn": "roaring furnace // steaming sauna",
       "normalizedNameJa": "咆哮する焼炉 // 蒸気サウナ",
       "oracleId": "d5f31713-d380-42ba-8052-4b8d9beb3958",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -17502,6 +17783,7 @@
       "normalizedNameEn": "rockface village",
       "normalizedNameJa": "岩面村",
       "oracleId": "7e103748-3f76-42ce-a063-d0256b2dce2b",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -17529,6 +17811,7 @@
       "normalizedNameEn": "royal treatment",
       "normalizedNameJa": "王のもてなし",
       "oracleId": "fd0f8fdc-4065-41f4-b8fb-ecb8f185774d",
+      "isBasicLand": false,
       "setCodes": [
         "WOE"
       ],
@@ -17550,6 +17833,7 @@
       "normalizedNameEn": "sacred foundry",
       "normalizedNameJa": "聖(せい)なる鋳(ちゅう)造(ぞう)所(しょ)",
       "oracleId": "45181cb8-2090-4471-ba90-e5a8f04d525f",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -17625,6 +17909,7 @@
       "normalizedNameEn": "sage of the skies",
       "normalizedNameJa": "大空の賢人",
       "oracleId": "cfc7cef7-0a95-49f8-970f-abff2cacd82d",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -17664,6 +17949,7 @@
       "normalizedNameEn": "sanar, unfinished genius",
       "normalizedNameJa": "荒削りな天才、サナール",
       "oracleId": "a8c44bd9-6470-47d7-934f-77c76a44a984",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -17685,6 +17971,7 @@
       "normalizedNameEn": "sapling nursery",
       "normalizedNameJa": "若木の生育場",
       "oracleId": "8bcbae66-1854-480e-a449-33e5389610ab",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -17742,6 +18029,7 @@
       "normalizedNameEn": "sawblade schemer",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -17761,6 +18049,7 @@
       "normalizedNameEn": "sazh's chocobo",
       "normalizedNameJa": "サッズのヒナチョコボ",
       "oracleId": "c2b082b4-5d9c-4125-b353-d1cf4f334720",
+      "isBasicLand": false,
       "setCodes": [
         "FIN"
       ],
@@ -17830,6 +18119,7 @@
       "normalizedNameEn": "scrapshooter",
       "normalizedNameJa": "屑鉄撃ち",
       "oracleId": "235e3231-c5e5-4696-a867-705b2c4158fe",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -17851,6 +18141,7 @@
       "normalizedNameEn": "seal away",
       "normalizedNameJa": "封じ込め",
       "oracleId": "c8909015-ea49-47cb-8d37-653904f965bb",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -17870,6 +18161,7 @@
       "normalizedNameEn": "seam rip",
       "normalizedNameJa": "縫(ぬ)い目(め)破(やぶ)り",
       "oracleId": "dfd5939e-a71a-4e16-9b93-752162be4ccd",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -18083,6 +18375,7 @@
       "normalizedNameEn": "sear",
       "normalizedNameJa": "焼きつけ",
       "oracleId": "23b11fdc-61b5-4f5e-ad80-f81b729fc91d",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -18230,6 +18523,7 @@
       "normalizedNameEn": "secret identity",
       "normalizedNameJa": "秘密の正体",
       "oracleId": "e6637f9f-8293-43a5-a134-93799a016ecb",
+      "isBasicLand": false,
       "setCodes": [
         "OM1",
         "SPM"
@@ -18264,6 +18558,7 @@
       "normalizedNameEn": "seismic rupture",
       "normalizedNameJa": "大地の断裂",
       "oracleId": "3b1f1a57-d83a-443f-b190-03df63d2bfe6",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -18291,6 +18586,7 @@
       "normalizedNameEn": "selfless sage",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -18310,6 +18606,7 @@
       "normalizedNameEn": "sentry sage",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -18329,6 +18626,7 @@
       "normalizedNameEn": "sewer-veillance cam",
       "normalizedNameJa": "監視亀ラ",
       "oracleId": "25c83d45-581f-48ba-b6bb-feb66e8a65c7",
+      "isBasicLand": false,
       "setCodes": [
         "TMT"
       ],
@@ -18362,6 +18660,7 @@
       "normalizedNameEn": "shang-chi, master of kung fu",
       "normalizedNameJa": null,
       "oracleId": "700ef9c8-698b-45f7-a1fd-dec74e553224",
+      "isBasicLand": false,
       "setCodes": [
         "MSH"
       ],
@@ -18383,6 +18682,7 @@
       "normalizedNameEn": "shattered sanctum",
       "normalizedNameJa": "砕かれた聖域",
       "oracleId": "c854ecb0-cc60-4c48-a9aa-7f2348a7a8c6",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -18446,6 +18746,7 @@
       "normalizedNameEn": "sheltered by ghosts",
       "normalizedNameJa": "幽霊による庇護",
       "oracleId": "d13fc657-c6fc-4394-bc70-691050550226",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -18647,6 +18948,7 @@
       "normalizedNameEn": "sheoldred, the apocalypse",
       "normalizedNameJa": "黙示録、シェオルドレッド",
       "oracleId": "34f34409-326d-4994-a0ea-1a69aa278f03",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -18672,6 +18974,7 @@
       "normalizedNameEn": "sheoldred's edict",
       "normalizedNameJa": "シェオルドレッドの勅令",
       "oracleId": "217062f5-96f1-454c-9507-17f34ef37070",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -18697,6 +19000,7 @@
       "normalizedNameEn": "shipwreck marsh",
       "normalizedNameJa": "難破船の湿地",
       "oracleId": "5f42b67f-87fd-4f98-a0e8-0c8313f4bbc8",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -18722,6 +19026,7 @@
       "normalizedNameEn": "shivan sands",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -18741,6 +19046,7 @@
       "normalizedNameEn": "shock",
       "normalizedNameJa": "ショック",
       "oracleId": "a9d288b8-cdc1-4e55-a0c9-d6edfc95e65d",
+      "isBasicLand": false,
       "setCodes": [
         "MKM",
         "OM1",
@@ -18770,6 +19076,7 @@
       "normalizedNameEn": "shoot the sheriff",
       "normalizedNameJa": "保安官を撃て",
       "oracleId": "2038138e-2e52-41e4-90fc-443fa054c5c0",
+      "isBasicLand": false,
       "setCodes": [
         "OTJ"
       ],
@@ -18815,6 +19122,7 @@
       "normalizedNameEn": "shore up",
       "normalizedNameJa": "下支え",
       "oracleId": "c9d8c983-2845-42e6-b6b8-bf7cf2729b23",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -18836,6 +19144,7 @@
       "normalizedNameEn": "shrapnel blast",
       "normalizedNameJa": "爆片破",
       "oracleId": "d3c623f3-c7c9-47c0-8096-6dee3267baff",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -18861,6 +19170,7 @@
       "normalizedNameEn": "shrine of loyal legions",
       "normalizedNameJa": "忠実な軍勢の祭殿",
       "oracleId": "9696ad3d-2e17-4ab7-88ee-3c56a632b7a8",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -18880,6 +19190,7 @@
       "normalizedNameEn": "sigarda, font of blessings",
       "normalizedNameJa": "祝福の泉、シガルダ",
       "oracleId": "5fe07a76-f261-4f16-8a15-571bed707261",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -18899,6 +19210,7 @@
       "normalizedNameEn": "simulacrum synthesizer",
       "normalizedNameJa": "身代わり合成機",
       "oracleId": "eb7a1f21-a66d-415b-8520-710b44890bb6",
+      "isBasicLand": false,
       "setCodes": [
         "BIG"
       ],
@@ -18920,6 +19232,7 @@
       "normalizedNameEn": "skyclave apparition",
       "normalizedNameJa": "スカイクレイブの亡霊",
       "oracleId": "d90af00a-d322-4265-9954-7b1e80702e18",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -18939,6 +19252,7 @@
       "normalizedNameEn": "slagstorm",
       "normalizedNameJa": "金屑の嵐",
       "oracleId": "2ed1879a-83b8-48df-a6d2-fe28e912b4c5",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -19122,6 +19436,7 @@
       "normalizedNameEn": "slayer's cleaver",
       "normalizedNameJa": "処刑者の大包丁",
       "oracleId": "e51cbdce-017e-4b14-b3a7-2db50ddd8037",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -19141,6 +19456,7 @@
       "normalizedNameEn": "sleight of hand",
       "normalizedNameJa": "手練",
       "oracleId": "05a039ad-1689-4d13-b393-6c1219583b5d",
+      "isBasicLand": false,
       "setCodes": [
         "WOE"
       ],
@@ -19306,6 +19622,7 @@
       "normalizedNameEn": "slickshot show-off",
       "normalizedNameJa": "精鋭射手団の目立ちたがり",
       "oracleId": "74c7a029-59aa-4511-8e4c-f8f167cda4e2",
+      "isBasicLand": false,
       "setCodes": [
         "OTJ"
       ],
@@ -19453,6 +19770,7 @@
       "normalizedNameEn": "slip out the back",
       "normalizedNameJa": "とんずら",
       "oracleId": "82506e51-3fe1-446f-83c9-69e67583cefc",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -19472,6 +19790,7 @@
       "normalizedNameEn": "snakeskin veil",
       "normalizedNameJa": "蛇皮のヴェール",
       "oracleId": "1e6a24be-8281-41c1-a5ba-b68f0ef1d7b8",
+      "isBasicLand": false,
       "setCodes": [
         "FDN",
         "OTJ",
@@ -19507,6 +19826,7 @@
       "normalizedNameEn": "sorin, imperious house guest",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -19532,6 +19852,7 @@
       "normalizedNameEn": "soul-guide lantern",
       "normalizedNameJa": "魂(たま)標(しるべ)ランタン",
       "oracleId": "1b5e6560-ff2e-4475-96cb-63f64c8a86db",
+      "isBasicLand": false,
       "setCodes": [
         "FDN",
         "WOE"
@@ -19848,6 +20169,7 @@
       "normalizedNameEn": "soulstone sanctuary",
       "normalizedNameJa": "魂石の聖域",
       "oracleId": "3c0f99b8-0222-4fac-932a-eb5d77826564",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -19875,6 +20197,7 @@
       "normalizedNameEn": "spectral interference",
       "normalizedNameJa": "幽体の干渉",
       "oracleId": "cb5ed146-5079-46ef-a3e0-e584fa4467f6",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -19896,6 +20219,7 @@
       "normalizedNameEn": "spell pierce",
       "normalizedNameJa": "呪文貫き",
       "oracleId": "d64b0848-0193-4025-ba62-63ecd8fb9f50",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -20157,6 +20481,7 @@
       "normalizedNameEn": "spell snare",
       "normalizedNameJa": "呪文嵌め",
       "oracleId": "38877c68-b69b-4ee1-8e8f-5137a184a8f7",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -20262,6 +20587,7 @@
       "normalizedNameEn": "spinner of souls",
       "normalizedNameJa": "魂を紡ぐもの",
       "oracleId": "6883e79e-0b4f-4fb8-aee3-a3905246a408",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -20289,6 +20615,7 @@
       "normalizedNameEn": "spirebluff canal",
       "normalizedNameJa": "尖塔断の運河",
       "oracleId": "eb0d8093-5f93-4b25-9384-08f9731bfb28",
+      "isBasicLand": false,
       "setCodes": [
         "OTJ"
       ],
@@ -20550,6 +20877,7 @@
       "normalizedNameEn": "spirit mantle",
       "normalizedNameJa": "霊魂のマントル",
       "oracleId": "81a51328-b995-4f3b-90bc-a20ae21dd254",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -20569,6 +20897,7 @@
       "normalizedNameEn": "splatter technique",
       "normalizedNameJa": null,
       "oracleId": "2620dcfe-8738-4f81-b23d-0c1c60cf9047",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -20590,6 +20919,7 @@
       "normalizedNameEn": "spring-loaded sawblades",
       "normalizedNameJa": "バネ仕掛けの鋸刃",
       "oracleId": "fa1ed9fa-5f77-4f7d-bab0-47c719cdc5bc",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -20611,6 +20941,7 @@
       "normalizedNameEn": "springleaf drum",
       "normalizedNameJa": "バネ葉の太鼓",
       "oracleId": "bdeb440d-a714-40e8-9038-f651e6ae45fb",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -20632,6 +20963,7 @@
       "normalizedNameEn": "sram, senior edificer",
       "normalizedNameJa": "上級建設官、スラム",
       "oracleId": "7e00b0cd-d212-4604-ba07-da21f4fe00b0",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -20651,6 +20983,7 @@
       "normalizedNameEn": "starting town",
       "normalizedNameJa": "始まりの町",
       "oracleId": "d04e0975-f401-41b8-a9db-9bcf9cbbce66",
+      "isBasicLand": false,
       "setCodes": [
         "FIN"
       ],
@@ -20798,6 +21131,7 @@
       "normalizedNameEn": "steam vents",
       "normalizedNameJa": "蒸気孔",
       "oracleId": "17039058-822d-409f-938c-b727a366ba63",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -21107,6 +21441,7 @@
       "normalizedNameEn": "steamcore scholar",
       "normalizedNameJa": "蒸気核の学者",
       "oracleId": "0fb9a928-9adb-4dc1-9761-857df7e6c643",
+      "isBasicLand": false,
       "setCodes": [
         "MKM"
       ],
@@ -21128,6 +21463,7 @@
       "normalizedNameEn": "stock up",
       "normalizedNameJa": "食糧補充",
       "oracleId": "2251e34e-4ce8-4452-9dc6-d8cce8583996",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -21329,6 +21665,7 @@
       "normalizedNameEn": "stoic sphinx",
       "normalizedNameJa": "冷静なスフィンクス",
       "oracleId": "d924c13e-f266-47b0-9711-ba9a9b9df1cb",
+      "isBasicLand": false,
       "setCodes": [
         "OTJ"
       ],
@@ -21362,6 +21699,7 @@
       "normalizedNameEn": "stormcarved coast",
       "normalizedNameJa": "嵐削りの海岸",
       "oracleId": "4722105b-0085-4bb8-bca1-9de0d3eb5600",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -21467,6 +21805,7 @@
       "normalizedNameEn": "stormchaser's talent",
       "normalizedNameJa": "嵐追いの才能",
       "oracleId": "00c1788d-c52f-4839-9cd8-11fb86c418b6",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -21608,6 +21947,7 @@
       "normalizedNameEn": "stormwing entity",
       "normalizedNameJa": "嵐翼の精体",
       "oracleId": "ea43fd04-e9fa-42fb-ba20-22dcc21c6c43",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -21627,6 +21967,7 @@
       "normalizedNameEn": "strategic betrayal",
       "normalizedNameJa": "戦略的裏切り",
       "oracleId": "0127c13f-7b0f-44c3-8b35-97f306c5f239",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -21744,6 +22085,7 @@
       "normalizedNameEn": "sunbillow verge",
       "normalizedNameJa": "サンビロウの境界",
       "oracleId": "a202276b-1f1b-4277-95ee-26877a204f5e",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -21783,6 +22125,7 @@
       "normalizedNameEn": "sunderflock",
       "normalizedNameJa": "刻み群れ",
       "oracleId": "c01b221f-3993-43ab-8cde-b42fb344e2a7",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -21870,6 +22213,7 @@
       "normalizedNameEn": "sundown pass",
       "normalizedNameJa": "日没の道",
       "oracleId": "5ad0b405-cca4-475e-985c-4d7e3599d87e",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -21987,6 +22331,7 @@
       "normalizedNameEn": "sunfall",
       "normalizedNameJa": "太陽降下",
       "oracleId": "fb3f5097-0da0-458c-8508-60823567e2da",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -22006,6 +22351,7 @@
       "normalizedNameEn": "sunspine lynx",
       "normalizedNameJa": "陽背骨のオオヤマネコ",
       "oracleId": "479adf64-f42c-4cb6-bf25-648c044bca8b",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -22051,6 +22397,7 @@
       "normalizedNameEn": "surrak, elusive hunter",
       "normalizedNameJa": "神出鬼没の狩人、スーラク",
       "oracleId": "7a0fe73f-6e08-4c9a-80e1-c2ead6cebe06",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -22294,6 +22641,7 @@
       "normalizedNameEn": "swamp",
       "normalizedNameJa": "沼",
       "oracleId": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+      "isBasicLand": true,
       "setCodes": [
         "BLB",
         "DFT",
@@ -22417,6 +22765,7 @@
       "normalizedNameEn": "sylvan scrying",
       "normalizedNameJa": "森の占術",
       "oracleId": "ee24bf27-484d-4e1c-998e-6a74e3d3f6c4",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -22442,6 +22791,7 @@
       "normalizedNameEn": "tablet of discovery",
       "normalizedNameJa": "発見の石板",
       "oracleId": "19cf5798-4600-4a66-b1c7-de77bde157d0",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -22583,6 +22933,7 @@
       "normalizedNameEn": "tamiyo's compleation",
       "normalizedNameJa": "タミヨウの完成化",
       "oracleId": "71d8b7f5-a5da-4528-815e-51c65626b681",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -22602,6 +22953,7 @@
       "normalizedNameEn": "teferi, time raveler",
       "normalizedNameJa": "時を解す者、テフェリー",
       "oracleId": "ae7604bb-4818-45a3-960c-cf3d83f15964",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -22621,6 +22973,7 @@
       "normalizedNameEn": "temple garden",
       "normalizedNameJa": "寺院の庭",
       "oracleId": "f413a83d-a40d-434c-b20a-4c707c0527fa",
+      "isBasicLand": false,
       "setCodes": [
         "ECL"
       ],
@@ -22840,6 +23193,7 @@
       "normalizedNameEn": "temporarily locked",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -22859,6 +23213,7 @@
       "normalizedNameEn": "tersa lightshatter",
       "normalizedNameJa": "光砕く者、テルサ",
       "oracleId": "9918eb7b-054e-4b1c-afc7-1163ab642d50",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -22880,6 +23235,7 @@
       "normalizedNameEn": "thalia, guardian of thraben",
       "normalizedNameJa": "スレイベンの守護者、サリア",
       "oracleId": "9b7f1d05-707c-4ed3-9f0e-8ced1232c2ee",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -22899,6 +23255,7 @@
       "normalizedNameEn": "the fire crystal",
       "normalizedNameJa": "火のクリスタル",
       "oracleId": "57276db8-9d8d-4587-ae88-dfdc44343f17",
+      "isBasicLand": false,
       "setCodes": [
         "FIN"
       ],
@@ -22920,6 +23277,7 @@
       "normalizedNameEn": "the immortal sun",
       "normalizedNameJa": "不滅の太陽",
       "oracleId": "52232aad-e4ca-4551-8c8d-c69a3b6b49c7",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -22939,6 +23297,7 @@
       "normalizedNameEn": "the jolly balloon man",
       "normalizedNameJa": "陽気な風船師",
       "oracleId": "82ea519f-0e14-43d3-bf46-a1c5352e9600",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -22972,6 +23331,7 @@
       "normalizedNameEn": "the legend of kuruk",
       "normalizedNameJa": null,
       "oracleId": "201b8936-18f4-4881-a1d4-c308cf3832bf",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -22993,6 +23353,7 @@
       "normalizedNameEn": "the mycosynth gardens",
       "normalizedNameJa": "マイコシンスの庭(にわ)",
       "oracleId": "03f5c566-825c-4c46-9c01-a2f9b1e70a13",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -23012,6 +23373,7 @@
       "normalizedNameEn": "the terminus of return",
       "normalizedNameJa": "ソウル・ストーン",
       "oracleId": "92cfba68-12f6-4f97-9187-0f6a39656a0f",
+      "isBasicLand": false,
       "setCodes": [
         "OM1",
         "SPM"
@@ -23034,6 +23396,7 @@
       "normalizedNameEn": "the unbeatable squirrel girl",
       "normalizedNameJa": null,
       "oracleId": "80312910-5d53-44f1-9982-e46dc7532abb",
+      "isBasicLand": false,
       "setCodes": [
         "MSH"
       ],
@@ -23055,6 +23418,7 @@
       "normalizedNameEn": "the wandering emperor",
       "normalizedNameJa": "放浪皇",
       "oracleId": "0c7f18d5-36cb-4bc6-a358-443b97666215",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -23074,6 +23438,7 @@
       "normalizedNameEn": "thor, god of thunder",
       "normalizedNameJa": null,
       "oracleId": "2842217a-173e-4879-8b25-fefe2fc1123f",
+      "isBasicLand": false,
       "setCodes": [
         "MSH"
       ],
@@ -23095,6 +23460,7 @@
       "normalizedNameEn": "thornvault forager",
       "normalizedNameJa": "茨越えの餌あさり",
       "oracleId": "7b18cfad-a1cf-46c2-bcdd-7762c13d50e5",
+      "isBasicLand": false,
       "setCodes": [
         "BLB"
       ],
@@ -23116,6 +23482,7 @@
       "normalizedNameEn": "thoughtseize",
       "normalizedNameJa": "思考囲い",
       "oracleId": "edd8d1e8-be43-4c38-bb3a-83081fbaf0b5",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -23141,6 +23508,7 @@
       "normalizedNameEn": "three steps ahead",
       "normalizedNameJa": "三歩先",
       "oracleId": "282dfeaa-6243-4f92-838a-5cb54fa85184",
+      "isBasicLand": false,
       "setCodes": [
         "OTJ"
       ],
@@ -23240,6 +23608,7 @@
       "normalizedNameEn": "three visits",
       "normalizedNameJa": "三顧の礼",
       "oracleId": "1b882a0e-0ede-4d1a-bd1a-9b7cffbcde8e",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -23259,6 +23628,7 @@
       "normalizedNameEn": "thunder magic",
       "normalizedNameJa": "雷魔法",
       "oracleId": "623c1873-cd83-4a5f-b391-fd0d2bb89061",
+      "isBasicLand": false,
       "setCodes": [
         "FIN"
       ],
@@ -23286,6 +23656,7 @@
       "normalizedNameEn": "tishana's tidebinder",
       "normalizedNameJa": "ティシャーナの潮縛り",
       "oracleId": "2993dc7d-723d-4a9b-94bd-4bb02a9f7243",
+      "isBasicLand": false,
       "setCodes": [
         "LCI"
       ],
@@ -23307,6 +23678,7 @@
       "normalizedNameEn": "together as one",
       "normalizedNameJa": "力を一つに",
       "oracleId": "234f1c4b-dd0c-4c4e-b3c1-3b9ccfc42226",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -23334,6 +23706,7 @@
       "normalizedNameEn": "tolarian terror",
       "normalizedNameJa": "トレイリアの恐怖",
       "oracleId": "b9d0f2e1-62c2-44fd-ad38-471daf17bb0a",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -23355,6 +23728,7 @@
       "normalizedNameEn": "topiary stomper",
       "normalizedNameJa": "装飾庭園を踏み歩くもの",
       "oracleId": "e3fc10d2-2733-4265-8275-112c285fd11a",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -23374,6 +23748,7 @@
       "normalizedNameEn": "torpor orb",
       "normalizedNameJa": "倦怠の宝珠",
       "oracleId": "97326cad-b13c-4e52-82ce-850a39e5ff08",
+      "isBasicLand": false,
       "setCodes": [
         "BIG"
       ],
@@ -23413,6 +23788,7 @@
       "normalizedNameEn": "traumatic critique",
       "normalizedNameJa": "傷残す批評",
       "oracleId": "06c1f8a4-4948-435b-ae98-b1276b57e958",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -23464,6 +23840,7 @@
       "normalizedNameEn": "trespasser's curse",
       "normalizedNameJa": "侵入者への呪い",
       "oracleId": "2769751d-ca67-4d6e-93c9-9587367ae8ab",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -23483,6 +23860,7 @@
       "normalizedNameEn": "troll of khazad-dum",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -23502,6 +23880,7 @@
       "normalizedNameEn": "turn inside out",
       "normalizedNameJa": "裏の裏まで",
       "oracleId": "be0a3925-8e0d-4ef6-85cb-c9f5eef6b4bb",
+      "isBasicLand": false,
       "setCodes": [
         "DSK"
       ],
@@ -23523,6 +23902,7 @@
       "normalizedNameEn": "undercity sewers",
       "normalizedNameJa": "地底街の下水道",
       "oracleId": "08d80efc-9542-4ba2-824c-c8615d8d07f2",
+      "isBasicLand": false,
       "setCodes": [
         "MKM"
       ],
@@ -23592,6 +23972,7 @@
       "normalizedNameEn": "united battlefront",
       "normalizedNameJa": "団結の最前線",
       "oracleId": "892a83a0-a3cb-4cfb-9106-4008e4e75c0f",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -23613,6 +23994,7 @@
       "normalizedNameEn": "unknown new card",
       "normalizedNameJa": null,
       "oracleId": null,
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -23632,6 +24014,7 @@
       "normalizedNameEn": "unlicensed hearse",
       "normalizedNameJa": "未認可霊柩車",
       "oracleId": "c640654c-487e-4a2c-aced-126ed835b78f",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 5,
@@ -23675,6 +24058,7 @@
       "normalizedNameEn": "unsummon",
       "normalizedNameJa": "送還",
       "oracleId": "837182db-1bf3-4a2c-bd01-1af9d9873561",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -23696,6 +24080,7 @@
       "normalizedNameEn": "urborg, tomb of yawgmoth",
       "normalizedNameJa": "ヨーグモスの墳墓、アーボーグ",
       "oracleId": "db6174d7-211d-4817-b8e4-8384594c83f9",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -23715,6 +24100,7 @@
       "normalizedNameEn": "vibrant outburst",
       "normalizedNameJa": "鮮やかな迸り",
       "oracleId": "a0cbb1ba-73b1-4418-bbe3-5d1a02007c08",
+      "isBasicLand": false,
       "setCodes": [
         "SOS"
       ],
@@ -23832,6 +24218,7 @@
       "normalizedNameEn": "vivien reid",
       "normalizedNameJa": "ビビアン・リード",
       "oracleId": "b5f20a6d-8c3e-452f-9d98-4886f0fa052a",
+      "isBasicLand": false,
       "setCodes": [
         "FDN"
       ],
@@ -23853,6 +24240,7 @@
       "normalizedNameEn": "voice of victory",
       "normalizedNameJa": "勝利の楽士",
       "oracleId": "b12cbda1-ac09-49eb-96b3-a4df27bc37ea",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -23874,6 +24262,7 @@
       "normalizedNameEn": "wan shi tong, librarian",
       "normalizedNameJa": "司書、ワン・シー・トン",
       "oracleId": "2bace3ea-7d28-4a1c-857a-d3c3a1c11b59",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -23895,6 +24284,7 @@
       "normalizedNameEn": "watery grave",
       "normalizedNameJa": "湿(しめ)った墓(はか)",
       "oracleId": "fc9ec820-4245-4a96-b009-5308a818ca58",
+      "isBasicLand": false,
       "setCodes": [
         "EOE"
       ],
@@ -23976,6 +24366,7 @@
       "normalizedNameEn": "wedding announcement",
       "normalizedNameJa": "婚礼の発表",
       "oracleId": "259ac30c-cc05-4c04-9b23-71283f84b808",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 2,
@@ -24001,6 +24392,7 @@
       "normalizedNameEn": "white auracite",
       "normalizedNameJa": "白聖石",
       "oracleId": "6022608a-6cf2-45bd-adec-63211710a5ed",
+      "isBasicLand": false,
       "setCodes": [
         "FIN"
       ],
@@ -24022,6 +24414,7 @@
       "normalizedNameEn": "wild ride",
       "normalizedNameJa": "激しき乗りこなし",
       "oracleId": "61978202-538b-4f92-acfc-e95f4a6ce466",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -24049,6 +24442,7 @@
       "normalizedNameEn": "willowrush verge",
       "normalizedNameJa": "ウィローラッシュの境界",
       "oracleId": "c52eaa87-9251-4a47-83fd-04e582ade612",
+      "isBasicLand": false,
       "setCodes": [
         "DFT"
       ],
@@ -24082,6 +24476,7 @@
       "normalizedNameEn": "winternight stories",
       "normalizedNameJa": "冬夜の物語",
       "oracleId": "d64687e4-ec37-4db2-9e60-4626c7a3b011",
+      "isBasicLand": false,
       "setCodes": [
         "TDM"
       ],
@@ -24175,6 +24570,7 @@
       "normalizedNameEn": "wrench, speedway saboteur",
       "normalizedNameJa": "狡猾な怪盗、ブラックキャット",
       "oracleId": "f5cdb413-2b72-4dc6-b93d-2532ac2ae568",
+      "isBasicLand": false,
       "setCodes": [
         "OM1",
         "SPM"
@@ -24197,6 +24593,7 @@
       "normalizedNameEn": "yavimaya, cradle of growth",
       "normalizedNameJa": "成長の揺り篭、ヤヴィマヤ",
       "oracleId": "8dd5f5af-d2d8-4356-8617-8381081b930c",
+      "isBasicLand": false,
       "setCodes": [],
       "primarySetCode": null,
       "deckCount": 1,
@@ -24216,6 +24613,7 @@
       "normalizedNameEn": "zack fair",
       "normalizedNameJa": "ザックス・フェア",
       "oracleId": "e84d146a-1c67-49df-b062-622794e45c42",
+      "isBasicLand": false,
       "setCodes": [
         "FIN"
       ],
@@ -24237,6 +24635,7 @@
       "normalizedNameEn": "zhao, the moon slayer",
       "normalizedNameJa": "月殺し、ジャオ",
       "oracleId": "94c64d41-d756-42b6-b0e7-0a351d64a68c",
+      "isBasicLand": false,
       "setCodes": [
         "TLA"
       ],
@@ -24258,5 +24657,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-07-07T09:42:37+09:00"
+  "generatedAt": "2026-07-07T10:14:31+09:00"
 }

@@ -19,9 +19,28 @@ const MATCH_PREFIX = 1;
 const MATCH_WORD_START = 2;
 const MATCH_SUBSTRING = 3;
 const NO_MATCH = Infinity;
+const BASIC_LAND_EN = new Set(['plains', 'island', 'swamp', 'mountain', 'forest', 'wastes']);
+const BASIC_LAND_JA = new Set(['平地', '島', '沼', '山', '森', '荒地']);
+
+type BasicLandCandidate = Partial<CardSearchEntry> & {
+  name?: string | null;
+};
 
 export function cardSearchIdentity(card: CardSearchEntry): string {
   return card.oracleId || card.key || card.normalizedNameEn || normalizeSearchText(card.nameEn);
+}
+
+export function isBasicLandCard(card: BasicLandCandidate | null | undefined): boolean {
+  if (!card) return false;
+  if (card.isBasicLand === true) return true;
+  const typeLineEn = String(card.typeLineEn || card.typeLine || '');
+  if (/\bbasic\s+land\b/i.test(typeLineEn)) return true;
+  const typeLineJa = String(card.typeLineJa || '');
+  if (typeLineJa.includes('基本土地')) return true;
+  const nameEn = normalizeSearchText(card.nameEn || card.name || '');
+  if (BASIC_LAND_EN.has(nameEn)) return true;
+  const nameJa = String(card.nameJa || '').normalize('NFKC').trim();
+  return BASIC_LAND_JA.has(nameJa);
 }
 
 function matchTier(normalized: string | null, query: string): number {
@@ -120,6 +139,7 @@ export function buildExpansionDeckIndex(
   if (!index || !expansionCode) return result;
   const seenKinds = new Map<string, Set<string>>();
   for (const card of dedupeCardSearchEntries(index.cards)) {
+    if (isBasicLandCard(card)) continue;
     if (!(card.setCodes ?? []).includes(expansionCode)) continue;
     const cardKey = cardSearchIdentity(card);
     for (const ref of card.deckRefs) {
@@ -178,12 +198,13 @@ export interface SetBadge {
 export function formatSetBadges(
   setCodes: string[] | undefined,
   primarySetCode: string | null | undefined,
-  selectedSetCode: string | null = null
+  selectedSetCode: string | null = null,
+  suppressSelected = false
 ): SetBadge[] {
   const codes = [...new Set(setCodes ?? [])].filter(Boolean);
   if (codes.length === 0) return [];
   const primary = primarySetCode && codes.includes(primarySetCode) ? primarySetCode : codes[0];
-  if (!selectedSetCode || !codes.includes(selectedSetCode)) {
+  if (suppressSelected || !selectedSetCode || !codes.includes(selectedSetCode)) {
     return [{
       code: primary,
       label: codes.length > 1 ? `${primary} +${codes.length - 1}` : primary,
@@ -227,6 +248,7 @@ function mergeCardSearchEntries(a: CardSearchEntry, b: CardSearchEntry): CardSea
     ...a,
     key: a.oracleId || b.oracleId || a.key || b.key,
     oracleId: a.oracleId || b.oracleId || null,
+    isBasicLand: Boolean(a.isBasicLand || b.isBasicLand || isBasicLandCard(a) || isBasicLandCard(b)),
     nameEn,
     nameJa,
     normalizedNameEn: normalizeSearchText(nameEn),

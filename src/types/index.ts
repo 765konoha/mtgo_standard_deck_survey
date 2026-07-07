@@ -40,6 +40,10 @@ export interface Card {
   translationStatus: TranslationStatus;
   translationSource?: TranslationSource;
   oracleId?: string | null;
+  isBasicLand?: boolean;
+  typeLine?: string | null;
+  typeLineEn?: string | null;
+  typeLineJa?: string | null;
   setCodes?: string[];
   primarySetCode?: string | null;
 }
@@ -118,6 +122,10 @@ export interface CardSearchEntry {
   normalizedNameEn: string;
   normalizedNameJa: string | null;
   oracleId?: string | null;
+  isBasicLand?: boolean;
+  typeLine?: string | null;
+  typeLineEn?: string | null;
+  typeLineJa?: string | null;
   setCodes?: string[];
   primarySetCode?: string | null;
   deckCount: number;

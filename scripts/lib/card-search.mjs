@@ -1,3 +1,4 @@
+import { isBasicLandCard } from './basic-land.mjs';
 import { normalizeCardName } from './normalize-card-name.mjs';
 
 // Shared suggestion-ranking logic used by Node tests and mirrored by
@@ -11,6 +12,7 @@ export const MATCH_PREFIX = 1;
 export const MATCH_WORD_START = 2;
 export const MATCH_SUBSTRING = 3;
 export const NO_MATCH = Infinity;
+export { isBasicLandCard };
 
 export function cardSearchIdentity(card) {
   return card?.oracleId || card?.key || card?.normalizedNameEn || normalizeSearchText(card?.nameEn || '');
@@ -39,6 +41,7 @@ export function buildExpansionDeckIndex(index, expansionCode) {
   if (!index || !expansionCode) return result;
   const seenKinds = new Map();
   for (const card of dedupeCardSearchEntries(index.cards || [])) {
+    if (isBasicLandCard(card)) continue;
     if (!(card.setCodes || []).includes(expansionCode)) continue;
     const cardKey = cardSearchIdentity(card);
     for (const ref of card.deckRefs || []) {
@@ -83,11 +86,11 @@ export function dedupeCardSearchEntries(cards) {
   return [...byKey.values()];
 }
 
-export function formatSetBadges(setCodes, primarySetCode, selectedSetCode = null) {
+export function formatSetBadges(setCodes, primarySetCode, selectedSetCode = null, suppressSelected = false) {
   const codes = [...new Set((setCodes || []).filter(Boolean))];
   if (codes.length === 0) return [];
   const primary = primarySetCode && codes.includes(primarySetCode) ? primarySetCode : codes[0];
-  if (!selectedSetCode || !codes.includes(selectedSetCode)) {
+  if (suppressSelected || !selectedSetCode || !codes.includes(selectedSetCode)) {
     return [{
       code: primary,
       label: codes.length > 1 ? `${primary} +${codes.length - 1}` : primary,
@@ -145,6 +148,7 @@ function mergeCardSearchEntries(a, b) {
     ...a,
     key: a.oracleId || b.oracleId || a.key || b.key,
     oracleId: a.oracleId || b.oracleId || null,
+    isBasicLand: Boolean(a.isBasicLand || b.isBasicLand || isBasicLandCard(a) || isBasicLandCard(b)),
     nameEn,
     nameJa,
     normalizedNameEn: normalizeSearchText(nameEn),

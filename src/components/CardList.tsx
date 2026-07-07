@@ -1,6 +1,6 @@
 import { ExternalLink } from 'lucide-react';
 import type { Card, CardNameDisplayMode } from '../types';
-import { formatSetBadges } from '../utils/cardSearch';
+import { formatSetBadges, isBasicLandCard } from '../utils/cardSearch';
 import { getCardDisplayName, groupCardsByCategory } from '../utils/helpers';
 
 interface CardListProps {
@@ -69,7 +69,12 @@ function CardRow({ card, displayMode, selectedSetCode }: CardRowProps) {
   const { primary, secondary } = getCardDisplayName(card, displayMode);
   const hasDetailUrl = Boolean(card.detailUrl);
   const isUntranslated = card.translationStatus !== 'complete';
-  const setBadges = formatSetBadges(card.setCodes, card.primarySetCode, selectedSetCode);
+  const setBadges = formatSetBadges(
+    card.setCodes,
+    card.primarySetCode,
+    selectedSetCode,
+    isBasicLandCard(card)
+  );
 
   const content = (
     <div className="flex items-start gap-2 py-1 px-2 -mx-2 rounded hover:bg-neutral-800/30 transition-colors group">

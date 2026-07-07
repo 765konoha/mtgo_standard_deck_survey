@@ -8,6 +8,7 @@ import {
   dedupeCardSearchEntries,
   filterCardsByExpansion,
   formatSetBadges,
+  isBasicLandCard,
   rankCardSuggestions,
 } from '../scripts/lib/card-search.mjs';
 import { buildPublicIndexes } from '../scripts/lib/build-public-index.mjs';
@@ -145,6 +146,25 @@ test('set badges only highlight the selected expansion code', () => {
     { code: 'FDN', label: 'FDN', title: 'FDN', selected: false },
     { code: 'MSH', label: 'MSH', title: 'MSH (selected set)', selected: true },
   ]);
+  assert.deepEqual(formatSetBadges(['FDN', 'MSH'], 'FDN', 'MSH', true), [
+    { code: 'FDN', label: 'FDN +1', title: 'FDN, MSH', selected: false },
+  ]);
+});
+
+test('detects only true basic lands', () => {
+  for (const nameEn of ['Plains', 'Island', 'Swamp', 'Mountain', 'Forest', 'Wastes']) {
+    assert.equal(isBasicLandCard({ nameEn }), true, nameEn);
+  }
+  for (const nameJa of ['平地', '島', '沼', '山', '森', '荒地']) {
+    assert.equal(isBasicLandCard({ nameJa }), true, nameJa);
+  }
+  assert.equal(isBasicLandCard({ typeLine: 'Basic Land — Plains' }), true);
+  assert.equal(isBasicLandCard({ typeLineEn: 'Basic Land' }), true);
+  assert.equal(isBasicLandCard({ typeLineJa: '基本土地 — 平地' }), true);
+  assert.equal(isBasicLandCard({ nameEn: 'Snow-Covered Plains' }), false);
+  assert.equal(isBasicLandCard({ nameEn: 'Great Hall of the Biblioplex', typeGroup: 'land' }), false);
+  assert.equal(isBasicLandCard({ nameEn: 'Scene of the Crime', typeGroup: 'land' }), false);
+  assert.equal(isBasicLandCard({ nameEn: 'Land-Looking Spell', typeGroup: 'land' }), false);
 });
 
 test('public index aggregates expansion cardCount and deckCount without duplicates', async () => {
@@ -238,4 +258,122 @@ test('public index aggregates expansion cardCount and deckCount without duplicat
     sideboardQuantity: 0,
     cardKinds: 1,
   });
+});
+
+test('basic lands stay searchable but are excluded from setCode counts and expansion matches', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'mtgo-basic-land-expansion-'));
+  const dataDir = join(root, 'data', 'events');
+  const publicDir = join(root, 'public', 'data', 'events');
+  await mkdir(dataDir, { recursive: true });
+  await mkdir(publicDir, { recursive: true });
+  const card = (nameEn, quantity, setCodes, extra = {}) => ({
+    quantity,
+    nameEn,
+    nameJa: null,
+    translationStatus: 'missing',
+    setCodes,
+    primarySetCode: setCodes[0] || null,
+    ...extra,
+  });
+  const eventData = {
+    schemaVersion: 1,
+    event: {
+      id: 'basic-check',
+      name: 'basic-check',
+      eventType: 'league',
+      eventDate: '2026-07-02',
+      publishedDate: '2026-07-02',
+      sourceUrl: 'https://www.mtgo.com/decklist/basic-check',
+      status: 'completed',
+    },
+    decks: [
+      {
+        id: 'basic-only',
+        player: 'basic-only',
+        record: '5-0',
+        mainboard: [
+          card('Plains', 8, ['MSH'], { oracleId: 'oracle-plains', typeGroup: 'land' }),
+          card('Island', 7, ['MSH'], { oracleId: 'oracle-island', typeGroup: 'land' }),
+        ],
+        sideboard: [],
+      },
+      {
+        id: 'mixed',
+        player: 'mixed',
+        record: '5-0',
+        mainboard: [
+          card('Plains', 4, ['MSH'], { oracleId: 'oracle-plains', typeGroup: 'land' }),
+          card('Alpha Hero', 2, ['MSH'], { oracleId: 'oracle-alpha' }),
+        ],
+        sideboard: [
+          card('Alpha Hero', 1, ['MSH'], { oracleId: 'oracle-alpha' }),
+        ],
+      },
+      {
+        id: 'non-basic-land',
+        player: 'non-basic-land',
+        record: '5-0',
+        mainboard: [
+          card('Great Hall of the Biblioplex', 1, ['MSH'], {
+            oracleId: 'oracle-great-hall',
+            typeGroup: 'land',
+          }),
+        ],
+        sideboard: [],
+      },
+    ],
+  };
+  const pendingData = {
+    ...eventData,
+    event: { ...eventData.event, id: 'pending', status: 'pending_publication' },
+    decks: [{
+      id: 'pending-deck',
+      player: 'pending',
+      record: '5-0',
+      mainboard: [card('Pending Hero', 4, ['MSH'], { oracleId: 'oracle-pending' })],
+      sideboard: [],
+    }],
+  };
+  const oldData = {
+    ...eventData,
+    event: { ...eventData.event, id: 'old', eventDate: '2026-06-22', publishedDate: '2026-06-22' },
+    decks: [{
+      id: 'old-deck',
+      player: 'old',
+      record: '5-0',
+      mainboard: [card('Old Hero', 4, ['MSH'], { oracleId: 'oracle-old' })],
+      sideboard: [],
+    }],
+  };
+  await writeFile(join(dataDir, 'basic-check.json'), `${JSON.stringify(eventData)}\n`, 'utf8');
+  await writeFile(join(publicDir, 'basic-check.json'), `${JSON.stringify(eventData)}\n`, 'utf8');
+  await writeFile(join(dataDir, 'pending.json'), `${JSON.stringify(pendingData)}\n`, 'utf8');
+  await writeFile(join(dataDir, 'old.json'), `${JSON.stringify(oldData)}\n`, 'utf8');
+
+  await buildPublicIndexes({ root, lookbackDays: 10, now: NOW });
+  const index = JSON.parse(
+    await readFile(join(root, 'public', 'data', 'card-search-index.json'), 'utf8')
+  );
+
+  const msh = index.expansions.find((expansion) => expansion.code === 'MSH');
+  assert.deepEqual({ cardCount: msh.cardCount, deckCount: msh.deckCount }, { cardCount: 2, deckCount: 2 });
+
+  const plains = index.cards.find((entry) => entry.nameEn === 'Plains');
+  assert.equal(plains.isBasicLand, true);
+  assert.deepEqual(rankCardSuggestions(index.cards, 'plains').map((entry) => entry.nameEn), ['Plains']);
+
+  const matches = buildExpansionDeckIndex(index, 'MSH').get('basic-check');
+  assert.equal(matches.has('basic-only'), false);
+  assert.deepEqual(matches.get('mixed'), {
+    mainboardQuantity: 2,
+    sideboardQuantity: 1,
+    cardKinds: 1,
+  });
+  assert.deepEqual(matches.get('non-basic-land'), {
+    mainboardQuantity: 1,
+    sideboardQuantity: 0,
+    cardKinds: 1,
+  });
+  assert.ok(!index.cards.some((entry) => entry.nameEn === 'Pending Hero'));
+  assert.ok(!index.cards.some((entry) => entry.nameEn === 'Old Hero'));
 });

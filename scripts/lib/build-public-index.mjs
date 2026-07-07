@@ -1,6 +1,7 @@
 import { readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { isDateInRange, lookbackPeriod } from './backfill.mjs';
+import { isBasicLandCard } from './basic-land.mjs';
 import { normalizeCardName } from './normalize-card-name.mjs';
 import { validateCardSearchIndex } from './validate-search-index.mjs';
 import { readJson, toIsoTokyo, writeJsonAtomic } from './fs-utils.mjs';
@@ -144,6 +145,7 @@ function buildCardSearchIndex(records, period, lookbackDays, dictionary = null) 
           normalizedNameJa: info.nameJa ? normalizeCardName(info.nameJa) : null,
           translationStatus: info.translationStatus,
           oracleId: info.oracleId,
+          isBasicLand: info.isBasicLand,
           setCodes: [...info.setCodes],
           primarySetCode: info.primarySetCode,
           sourceKeys: new Set(),
@@ -160,6 +162,7 @@ function buildCardSearchIndex(records, period, lookbackDays, dictionary = null) 
           entry.translationStatus = info.translationStatus;
         }
         if (!entry.oracleId && info.oracleId) entry.oracleId = info.oracleId;
+        entry.isBasicLand ||= info.isBasicLand;
         entry.setCodes = mergeSetCodes(entry.setCodes, info.setCodes);
         if (!entry.primarySetCode || !entry.setCodes.includes(entry.primarySetCode)) {
           entry.primarySetCode = info.primarySetCode && entry.setCodes.includes(info.primarySetCode)
@@ -198,6 +201,7 @@ function buildCardSearchIndex(records, period, lookbackDays, dictionary = null) 
       normalizedNameEn: card.normalizedNameEn,
       normalizedNameJa: card.normalizedNameJa,
       oracleId: card.oracleId || null,
+      isBasicLand: Boolean(card.isBasicLand),
       setCodes: card.setCodes,
       primarySetCode: card.primarySetCode,
       deckCount: deckRefs.length,
@@ -214,6 +218,7 @@ function buildCardSearchIndex(records, period, lookbackDays, dictionary = null) 
     ...stats,
     postDeckRefs,
     unifiedCardIdentities,
+    basicLandCardsExcludedFromExpansions: cardEntries.filter(isBasicLandCard).length,
     expansions: payload.expansions,
   });
   return payload;
@@ -233,6 +238,7 @@ function buildExpansionSummaries(cardEntries, dictionary) {
   }
   const expansions = new Map();
   for (const card of cardEntries) {
+    if (isBasicLandCard(card)) continue;
     for (const code of card.setCodes || []) {
       const expansion = expansions.get(code) || { code, cardCount: 0, deckKeys: new Set() };
       expansion.cardCount += 1;
@@ -272,6 +278,7 @@ function accumulate(perCard, cardList, zone, dictionaryLookup) {
       existing.translationStatus = info.translationStatus;
     }
     if (!existing.oracleId && info.oracleId) existing.oracleId = info.oracleId;
+    existing.isBasicLand ||= info.isBasicLand;
     existing.setCodes = mergeSetCodes(existing.setCodes, info.setCodes);
     if (!existing.primarySetCode || !existing.setCodes.includes(existing.primarySetCode)) {
       existing.primarySetCode = info.primarySetCode && existing.setCodes.includes(info.primarySetCode)
@@ -297,6 +304,7 @@ function toCardIndexInfo(card, dictionaryLookup) {
     : 'missing';
   const setCodes = mergeSetCodes(card?.setCodes || [], dictionaryEntry?.setCodes || []);
   const primarySetCode = preferredPrimarySetCode(card?.primarySetCode, dictionaryEntry?.primarySetCode, setCodes);
+  const isBasicLand = isBasicLandCard(card) || isBasicLandCard(dictionaryEntry);
   return {
     key: oracleId || normalizedSourceName,
     sourceKey: normalizedSourceName || String(sourceName),
@@ -304,6 +312,7 @@ function toCardIndexInfo(card, dictionaryLookup) {
     nameJa,
     translationStatus,
     oracleId,
+    isBasicLand,
     setCodes,
     primarySetCode,
   };
@@ -384,6 +393,7 @@ function logCardIndexStats({
   rawDeckRefs,
   postDeckRefs,
   unifiedCardIdentities,
+  basicLandCardsExcludedFromExpansions,
   expansions,
 }) {
   console.log(`[CARD INDEX] target events: ${targetEvents}`);
@@ -391,6 +401,7 @@ function logCardIndexStats({
   console.log(`[CARD INDEX] target card rows: ${targetCardRows}`);
   console.log(`[CARD INDEX] deckRefs before/after dedupe: ${rawDeckRefs}/${postDeckRefs}`);
   console.log(`[CARD INDEX] unified card identities: ${unifiedCardIdentities}`);
+  console.log(`[CARD INDEX] basic lands excluded from set counts: ${basicLandCardsExcludedFromExpansions}`);
   for (const expansion of expansions) {
     console.log(`[CARD INDEX] set ${expansion.code}: cardCount=${expansion.cardCount}, deckCount=${expansion.deckCount}`);
   }
