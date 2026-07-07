@@ -23,7 +23,7 @@ on:
         type: boolean
 
 concurrency:
-  group: fetch-mtgo-decklists
+  group: data-generation-main
   cancel-in-progress: false
 
 permissions:
@@ -38,6 +38,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Sync latest main before generating data
+        run: git pull --ff-only origin main
       - uses: actions/setup-node@v4
         with:
           node-version: 20
