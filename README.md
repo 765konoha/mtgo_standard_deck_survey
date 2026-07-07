@@ -169,6 +169,8 @@ SET_CODE=MSH npm run audit:set       # セット単位の翻訳監査を出力
 
 ## GitHub Actions
 
+- PR / data update conflict prevention flow: [`docs/conflict-prevention.md`](docs/conflict-prevention.md)
+
 - `.github/workflows/fetch-decklists.yml`
   - 定期実行と手動実行
   - 06:00 / 14:00 / 22:00 JST相当

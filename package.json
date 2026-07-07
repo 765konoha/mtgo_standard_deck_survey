@@ -14,6 +14,7 @@
     "update:dictionary": "node scripts/update-card-dictionary.mjs",
     "rebuild:data": "node scripts/rebuild-event-data.mjs",
     "build:index": "node scripts/build-index.mjs",
+    "check:conflict-risk": "node scripts/check-conflict-risk.mjs",
     "audit:translations": "node scripts/audit-translations.mjs",
     "audit:set": "node scripts/audit-set-translations.mjs"
   },
