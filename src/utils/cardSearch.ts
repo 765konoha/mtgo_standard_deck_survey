@@ -20,6 +20,10 @@ const MATCH_WORD_START = 2;
 const MATCH_SUBSTRING = 3;
 const NO_MATCH = Infinity;
 
+export function cardSearchIdentity(card: CardSearchEntry): string {
+  return card.oracleId || card.key || card.normalizedNameEn || normalizeSearchText(card.nameEn);
+}
+
 function matchTier(normalized: string | null, query: string): number {
   if (!normalized) return NO_MATCH;
   if (normalized === query) return MATCH_EXACT;
@@ -47,7 +51,7 @@ export function rankCardSuggestions(
   if (!query) return [];
 
   const scored: { card: CardSearchEntry; tier: number }[] = [];
-  for (const card of cards) {
+  for (const card of dedupeCardSearchEntries(cards)) {
     const tier = cardTier(card, query);
     if (tier === NO_MATCH) continue;
     scored.push({ card, tier });
@@ -79,10 +83,13 @@ export function buildDeckRefIndex(
   if (!card) return index;
   for (const ref of card.deckRefs) {
     const byDeck = index.get(ref.eventId) ?? new Map<string, DeckMatch>();
-    byDeck.set(ref.deckId, {
-      mainboardQuantity: ref.mainboardQuantity,
-      sideboardQuantity: ref.sideboardQuantity,
-    });
+    const existing = byDeck.get(ref.deckId) ?? {
+      mainboardQuantity: 0,
+      sideboardQuantity: 0,
+    };
+    existing.mainboardQuantity += ref.mainboardQuantity;
+    existing.sideboardQuantity += ref.sideboardQuantity;
+    byDeck.set(ref.deckId, existing);
     index.set(ref.eventId, byDeck);
   }
   return index;
@@ -111,10 +118,13 @@ export function buildExpansionDeckIndex(
 ): Map<string, Map<string, ExpansionDeckMatch>> {
   const result = new Map<string, Map<string, ExpansionDeckMatch>>();
   if (!index || !expansionCode) return result;
-  for (const card of index.cards) {
+  const seenKinds = new Map<string, Set<string>>();
+  for (const card of dedupeCardSearchEntries(index.cards)) {
     if (!(card.setCodes ?? []).includes(expansionCode)) continue;
+    const cardKey = cardSearchIdentity(card);
     for (const ref of card.deckRefs) {
       const byDeck = result.get(ref.eventId) ?? new Map<string, ExpansionDeckMatch>();
+      const deckKey = `${ref.eventId}\u0000${ref.deckId}`;
       const match = byDeck.get(ref.deckId) ?? {
         mainboardQuantity: 0,
         sideboardQuantity: 0,
@@ -122,7 +132,12 @@ export function buildExpansionDeckIndex(
       };
       match.mainboardQuantity += ref.mainboardQuantity;
       match.sideboardQuantity += ref.sideboardQuantity;
-      match.cardKinds += 1;
+      const deckKinds = seenKinds.get(deckKey) ?? new Set<string>();
+      if (!deckKinds.has(cardKey)) {
+        deckKinds.add(cardKey);
+        match.cardKinds += 1;
+        seenKinds.set(deckKey, deckKinds);
+      }
       byDeck.set(ref.deckId, match);
       result.set(ref.eventId, byDeck);
     }
@@ -132,10 +147,8 @@ export function buildExpansionDeckIndex(
 
 // "メイン12枚／サイド3枚・5種類" style label for an expansion-filtered deck.
 export function formatExpansionMatch(match: ExpansionDeckMatch): string {
-  const zones: string[] = [];
-  if (match.mainboardQuantity > 0) zones.push(`メイン${match.mainboardQuantity}枚`);
-  if (match.sideboardQuantity > 0) zones.push(`サイド${match.sideboardQuantity}枚`);
-  return `${zones.join('／')}・${match.cardKinds}種類`;
+  const total = match.mainboardQuantity + match.sideboardQuantity;
+  return `${match.cardKinds}種類・合計${total}枚`;
 }
 
 // Compact set badge for a card row: single set -> "FDN"; reprints -> "FDN +2"
@@ -153,6 +166,105 @@ export function formatSetBadge(
     label: others > 0 ? `${primary} +${others}` : primary,
     title: codes.join(', '),
   };
+}
+
+export interface SetBadge {
+  code: string;
+  label: string;
+  title: string;
+  selected: boolean;
+}
+
+export function formatSetBadges(
+  setCodes: string[] | undefined,
+  primarySetCode: string | null | undefined,
+  selectedSetCode: string | null = null
+): SetBadge[] {
+  const codes = [...new Set(setCodes ?? [])].filter(Boolean);
+  if (codes.length === 0) return [];
+  const primary = primarySetCode && codes.includes(primarySetCode) ? primarySetCode : codes[0];
+  if (!selectedSetCode || !codes.includes(selectedSetCode)) {
+    return [{
+      code: primary,
+      label: codes.length > 1 ? `${primary} +${codes.length - 1}` : primary,
+      title: codes.join(', '),
+      selected: false,
+    }];
+  }
+  return codes.map((code) => ({
+    code,
+    label: code,
+    title: code === selectedSetCode ? `${code}（選択中セット）` : code,
+    selected: code === selectedSetCode,
+  }));
+}
+
+export function dedupeCardSearchEntries(cards: CardSearchEntry[]): CardSearchEntry[] {
+  const byKey = new Map<string, CardSearchEntry>();
+  for (const card of cards ?? []) {
+    const key = cardSearchIdentity(card);
+    if (!key) continue;
+    const existing = byKey.get(key);
+    byKey.set(key, existing ? mergeCardSearchEntries(existing, card) : cloneCardSearchEntry(card));
+  }
+  return [...byKey.values()];
+}
+
+function cloneCardSearchEntry(card: CardSearchEntry): CardSearchEntry {
+  return {
+    ...card,
+    setCodes: [...(card.setCodes ?? [])],
+    deckRefs: [...(card.deckRefs ?? [])],
+  };
+}
+
+function mergeCardSearchEntries(a: CardSearchEntry, b: CardSearchEntry): CardSearchEntry {
+  const nameJa = a.nameJa || b.nameJa || null;
+  const setCodes = [...new Set([...(a.setCodes ?? []), ...(b.setCodes ?? [])])].sort();
+  const deckRefs = mergeDeckRefs([...(a.deckRefs ?? []), ...(b.deckRefs ?? [])]);
+  const nameEn = preferCompleteName(a.nameEn, b.nameEn);
+  return {
+    ...a,
+    key: a.oracleId || b.oracleId || a.key || b.key,
+    oracleId: a.oracleId || b.oracleId || null,
+    nameEn,
+    nameJa,
+    normalizedNameEn: normalizeSearchText(nameEn),
+    normalizedNameJa: nameJa ? normalizeSearchText(nameJa) : null,
+    setCodes,
+    primarySetCode: (a.primarySetCode && setCodes.includes(a.primarySetCode))
+      ? a.primarySetCode
+      : (b.primarySetCode && setCodes.includes(b.primarySetCode))
+        ? b.primarySetCode
+        : setCodes[0] || null,
+    deckCount: deckRefs.length,
+    deckRefs,
+  };
+}
+
+function mergeDeckRefs(refs: DeckSearchReference[]): DeckSearchReference[] {
+  const byDeck = new Map<string, DeckSearchReference>();
+  for (const ref of refs) {
+    const key = `${ref.eventId}\u0000${ref.deckId}`;
+    const existing = byDeck.get(key) ?? {
+      eventId: ref.eventId,
+      deckId: ref.deckId,
+      mainboardQuantity: 0,
+      sideboardQuantity: 0,
+    };
+    existing.mainboardQuantity += ref.mainboardQuantity || 0;
+    existing.sideboardQuantity += ref.sideboardQuantity || 0;
+    byDeck.set(key, existing);
+  }
+  return [...byDeck.values()].sort(
+    (a, b) => a.eventId.localeCompare(b.eventId) || a.deckId.localeCompare(b.deckId)
+  );
+}
+
+function preferCompleteName(a: string, b: string): string {
+  if (!a) return b;
+  if (!b) return a;
+  return !a.includes(' // ') && b.includes(' // ') ? b : a;
 }
 
 // Intersects the per-deck visibility maps of active filters (card selection,

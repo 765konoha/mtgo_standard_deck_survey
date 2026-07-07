@@ -198,6 +198,7 @@ export default function App() {
           eventData={selectedEventData}
           deck={selectedDeck}
           cardNameDisplay={cardNameDisplay}
+          selectedExpansion={selectedExpansion}
           onClose={handleCloseDeckDetail}
           onCopy={handleCopyDeck}
         />

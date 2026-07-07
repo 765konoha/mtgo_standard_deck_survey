@@ -1,7 +1,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { Search, X } from 'lucide-react';
 import type { CardSearchEntry, CardSearchIndex } from '../types';
-import { rankCardSuggestions } from '../utils/cardSearch';
+import { formatSetBadges, rankCardSuggestions } from '../utils/cardSearch';
 
 const MIN_QUERY_LENGTH = 2;
 const DEBOUNCE_MS = 150;
@@ -215,14 +215,20 @@ export function CardSearchBox({
                     )}
                   </div>
                   <span className="text-xs text-neutral-400 whitespace-nowrap shrink-0 flex items-center gap-1.5">
-                    {(card.primarySetCode || (card.setCodes ?? [])[0]) && (
+                    {formatSetBadges(card.setCodes, card.primarySetCode, expansionFilter).map((badge) => (
                       <span
-                        className="text-[10px] font-mono text-neutral-500 border border-neutral-700 rounded px-1 py-px"
-                        title={(card.setCodes ?? []).join(', ')}
+                        key={badge.code}
+                        className={`text-[10px] font-mono border rounded px-1 py-px ${
+                          badge.selected
+                            ? 'border-yellow-400/70 bg-yellow-500/15 text-yellow-200'
+                            : 'border-neutral-700 text-neutral-500'
+                        }`}
+                        title={badge.title}
+                        aria-label={badge.selected ? `${badge.code}（選択中セット）` : badge.code}
                       >
-                        {card.primarySetCode || (card.setCodes ?? [])[0]}
+                        {badge.label}
                       </span>
-                    )}
+                    ))}
                     {card.deckCount}デッキ
                   </span>
                 </li>

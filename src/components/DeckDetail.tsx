@@ -9,6 +9,7 @@ interface DeckDetailProps {
   eventData: Event;
   deck: Deck;
   cardNameDisplay: CardNameDisplayMode;
+  selectedExpansion?: string | null;
   onClose: () => void;
   onCopy: (deck: Deck, format: 'ja' | 'arena') => void;
 }
@@ -18,6 +19,7 @@ export function DeckDetail({
   eventData,
   deck,
   cardNameDisplay,
+  selectedExpansion = null,
   onClose,
   onCopy,
 }: DeckDetailProps) {
@@ -161,6 +163,7 @@ export function DeckDetail({
                 cards={deck.mainboard}
                 displayMode={cardNameDisplay}
                 showCategoryHeaders
+                selectedSetCode={selectedExpansion}
               />
             </div>
 
@@ -175,6 +178,7 @@ export function DeckDetail({
                 cards={deck.sideboard}
                 displayMode={cardNameDisplay}
                 showCategoryHeaders
+                selectedSetCode={selectedExpansion}
               />
             </div>
           </div>
