@@ -5,24 +5,28 @@ import { join } from 'node:path';
 import test from 'node:test';
 import {
   buildExpansionDeckIndex,
+  dedupeCardSearchEntries,
   filterCardsByExpansion,
+  formatSetBadges,
   rankCardSuggestions,
 } from '../scripts/lib/card-search.mjs';
 import { buildPublicIndexes } from '../scripts/lib/build-public-index.mjs';
 
 const NOW = new Date('2026-07-03T03:00:00+09:00');
 
-function indexCard(nameEn, setCodes, deckRefs) {
+function indexCard(nameEn, setCodes, deckRefs, extra = {}) {
   return {
     key: nameEn.toLowerCase(),
     nameEn,
     nameJa: null,
     normalizedNameEn: nameEn.toLowerCase(),
     normalizedNameJa: null,
+    oracleId: null,
     setCodes,
     primarySetCode: setCodes[0] || null,
     deckCount: deckRefs.length,
     deckRefs,
+    ...extra,
   };
 }
 
@@ -64,6 +68,34 @@ test('does not duplicate a deck when it holds multiple cards of the expansion', 
   });
 });
 
+test('defensively merges duplicate expansion card entries and deck refs', () => {
+  const index = {
+    cards: [
+      indexCard('Split Card // Back', ['MSH'], [
+        ref('e1', 'd1', 4, 0),
+      ], { key: 'oracle-a', oracleId: 'oracle-a', nameJa: '分割カード' }),
+      indexCard('Split Card', ['FDN', 'MSH'], [
+        ref('e1', 'd1', 0, 2),
+        ref('e1', 'd1', 1, 0),
+      ], { key: 'split card', oracleId: 'oracle-a' }),
+    ],
+  };
+
+  const deduped = dedupeCardSearchEntries(index.cards);
+  assert.equal(deduped.length, 1);
+  assert.equal(deduped[0].nameEn, 'Split Card // Back');
+  assert.equal(deduped[0].nameJa, '分割カード');
+  assert.deepEqual(deduped[0].setCodes, ['FDN', 'MSH']);
+  assert.deepEqual(deduped[0].deckRefs, [ref('e1', 'd1', 5, 2)]);
+
+  const result = buildExpansionDeckIndex(index, 'MSH');
+  assert.deepEqual(result.get('e1').get('d1'), {
+    mainboardQuantity: 5,
+    sideboardQuantity: 2,
+    cardKinds: 1,
+  });
+});
+
 test('returns empty for no expansion selected or unknown codes', () => {
   const index = { cards: [indexCard('Card A', ['MSH'], [ref('e1', 'd1', 4, 0)])] };
   assert.equal(buildExpansionDeckIndex(index, null).size, 0);
@@ -85,18 +117,49 @@ test('suggestions narrow to the selected expansion', () => {
   assert.equal(rankCardSuggestions(filterCardsByExpansion(cards, null), 'iron').length, 2);
 });
 
+test('suggestions are deduped by oracle id before ranking', () => {
+  const cards = [
+    indexCard('Esper Origins // Summon: Esper Maduin', ['MSH'], [ref('e1', 'd1', 4, 0)], {
+      key: 'oracle-esper',
+      oracleId: 'oracle-esper',
+      nameJa: '幻獣との交わり // 召喚：幻獣マディン',
+      normalizedNameJa: '幻獣との交わり // 召喚:幻獣マディン',
+    }),
+    indexCard('Esper Origins', ['MSH'], [ref('e1', 'd1', 0, 1)], {
+      key: 'esper origins',
+      oracleId: 'oracle-esper',
+    }),
+  ];
+
+  const suggestions = rankCardSuggestions(cards, 'esper');
+  assert.equal(suggestions.length, 1);
+  assert.equal(suggestions[0].nameEn, 'Esper Origins // Summon: Esper Maduin');
+  assert.deepEqual(suggestions[0].deckRefs, [ref('e1', 'd1', 4, 1)]);
+});
+
+test('set badges only highlight the selected expansion code', () => {
+  assert.deepEqual(formatSetBadges(['FDN', 'MSH'], 'FDN', null), [
+    { code: 'FDN', label: 'FDN +1', title: 'FDN, MSH', selected: false },
+  ]);
+  assert.deepEqual(formatSetBadges(['FDN', 'MSH'], 'FDN', 'MSH'), [
+    { code: 'FDN', label: 'FDN', title: 'FDN', selected: false },
+    { code: 'MSH', label: 'MSH', title: 'MSH (selected set)', selected: true },
+  ]);
+});
+
 test('public index aggregates expansion cardCount and deckCount without duplicates', async () => {
   const root = await mkdtemp(join(tmpdir(), 'mtgo-expansion-'));
   const dataDir = join(root, 'data', 'events');
   await mkdir(dataDir, { recursive: true });
   await mkdir(join(root, 'public', 'data', 'events'), { recursive: true });
-  const card = (nameEn, quantity, setCodes) => ({
+  const card = (nameEn, quantity, setCodes, extra = {}) => ({
     quantity,
     nameEn,
     nameJa: null,
     translationStatus: 'missing',
     setCodes,
     primarySetCode: setCodes[0] || null,
+    ...extra,
   });
   const eventData = {
     schemaVersion: 1,
@@ -114,14 +177,23 @@ test('public index aggregates expansion cardCount and deckCount without duplicat
         id: 'd1',
         player: 'repeat-player',
         record: '5-0',
-        mainboard: [card('Alpha', 4, ['MSH']), card('Beta', 2, ['MSH'])],
-        sideboard: [card('Alpha', 1, ['MSH']), card('Gamma', 2, ['FDN', 'DMU'])],
+        mainboard: [
+          card('Alpha', 4, ['MSH'], { oracleId: 'oracle-alpha' }),
+          card('Beta', 2, ['MSH'], { oracleId: 'oracle-beta' }),
+        ],
+        sideboard: [
+          card('Alpha Face', 1, ['MSH'], { oracleId: 'oracle-alpha' }),
+          card('Gamma', 2, ['FDN', 'DMU'], { oracleId: 'oracle-gamma' }),
+        ],
       },
       {
         id: 'd2',
         player: 'repeat-player',
         record: '5-0',
-        mainboard: [card('Alpha', 4, ['MSH']), card('NoSet', 4, [])],
+        mainboard: [
+          card('Alpha', 4, ['MSH'], { oracleId: 'oracle-alpha' }),
+          card('NoSet', 4, []),
+        ],
         sideboard: [],
       },
     ],
@@ -137,7 +209,8 @@ test('public index aggregates expansion cardCount and deckCount without duplicat
   const msh = index.expansions.find((expansion) => expansion.code === 'MSH');
   const fdn = index.expansions.find((expansion) => expansion.code === 'FDN');
   const dmu = index.expansions.find((expansion) => expansion.code === 'DMU');
-  // Alpha + Beta = 2 distinct MSH cards; d1 + d2 = 2 decks, never duplicated.
+  // Alpha/Alpha Face share one oracleId, so Alpha + Beta = 2 distinct MSH cards;
+  // d1 + d2 = 2 decks, never duplicated.
   assert.deepEqual({ cardCount: msh.cardCount, deckCount: msh.deckCount }, { cardCount: 2, deckCount: 2 });
   assert.deepEqual({ cardCount: fdn.cardCount, deckCount: fdn.deckCount }, { cardCount: 1, deckCount: 1 });
   assert.deepEqual({ cardCount: dmu.cardCount, deckCount: dmu.deckCount }, { cardCount: 1, deckCount: 1 });
@@ -147,6 +220,8 @@ test('public index aggregates expansion cardCount and deckCount without duplicat
   assert.equal(noSet.primarySetCode, null);
   // Per-card set attributes survive into the index.
   const alpha = index.cards.find((entry) => entry.nameEn === 'Alpha');
+  assert.equal(alpha.key, 'oracle-alpha');
+  assert.equal(alpha.oracleId, 'oracle-alpha');
   assert.deepEqual(alpha.setCodes, ['MSH']);
   assert.equal(alpha.primarySetCode, 'MSH');
 

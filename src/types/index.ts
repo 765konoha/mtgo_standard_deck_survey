@@ -117,6 +117,7 @@ export interface CardSearchEntry {
   nameJa: string | null;
   normalizedNameEn: string;
   normalizedNameJa: string | null;
+  oracleId?: string | null;
   setCodes?: string[];
   primarySetCode?: string | null;
   deckCount: number;

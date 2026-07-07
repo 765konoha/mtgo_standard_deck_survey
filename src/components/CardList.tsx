@@ -1,18 +1,20 @@
 import { ExternalLink } from 'lucide-react';
 import type { Card, CardNameDisplayMode } from '../types';
-import { formatSetBadge } from '../utils/cardSearch';
+import { formatSetBadges } from '../utils/cardSearch';
 import { getCardDisplayName, groupCardsByCategory } from '../utils/helpers';
 
 interface CardListProps {
   cards: Card[];
   displayMode: CardNameDisplayMode;
   showCategoryHeaders?: boolean;
+  selectedSetCode?: string | null;
 }
 
 export function CardList({
   cards,
   displayMode,
   showCategoryHeaders = false,
+  selectedSetCode = null,
 }: CardListProps) {
   if (cards.length === 0) {
     return <p className="text-sm text-neutral-500 italic">カードがありません</p>;
@@ -33,6 +35,7 @@ export function CardList({
                   key={`${category}-${idx}-${card.nameEn}`}
                   card={card}
                   displayMode={displayMode}
+                  selectedSetCode={selectedSetCode}
                 />
               ))}
             </div>
@@ -49,6 +52,7 @@ export function CardList({
           key={`${card.nameEn}-${idx}`}
           card={card}
           displayMode={displayMode}
+          selectedSetCode={selectedSetCode}
         />
       ))}
     </div>
@@ -58,13 +62,14 @@ export function CardList({
 interface CardRowProps {
   card: Card;
   displayMode: CardNameDisplayMode;
+  selectedSetCode: string | null;
 }
 
-function CardRow({ card, displayMode }: CardRowProps) {
+function CardRow({ card, displayMode, selectedSetCode }: CardRowProps) {
   const { primary, secondary } = getCardDisplayName(card, displayMode);
   const hasDetailUrl = Boolean(card.detailUrl);
   const isUntranslated = card.translationStatus !== 'complete';
-  const setBadge = formatSetBadge(card.setCodes, card.primarySetCode);
+  const setBadges = formatSetBadges(card.setCodes, card.primarySetCode, selectedSetCode);
 
   const content = (
     <div className="flex items-start gap-2 py-1 px-2 -mx-2 rounded hover:bg-neutral-800/30 transition-colors group">
@@ -74,12 +79,22 @@ function CardRow({ card, displayMode }: CardRowProps) {
       <div className="flex-1 min-w-0">
         <div className="text-sm text-neutral-200 group-hover:text-neutral-100">
           {primary}
-          {setBadge && (
-            <span
-              className="ml-2 text-[10px] font-mono text-neutral-500 border border-neutral-700 rounded px-1 py-px align-middle whitespace-nowrap"
-              title={setBadge.title}
-            >
-              {setBadge.label}
+          {setBadges.length > 0 && (
+            <span className="ml-2 inline-flex flex-wrap gap-1 align-middle">
+              {setBadges.map((badge) => (
+                <span
+                  key={badge.code}
+                  className={`text-[10px] font-mono rounded px-1 py-px whitespace-nowrap border ${
+                    badge.selected
+                      ? 'border-yellow-400/70 bg-yellow-500/15 text-yellow-200 shadow-[0_0_0_1px_rgba(250,204,21,0.08)]'
+                      : 'border-neutral-700 text-neutral-500'
+                  }`}
+                  title={badge.title}
+                  aria-label={badge.selected ? `${badge.code}（選択中セット）` : badge.code}
+                >
+                  {badge.label}
+                </span>
+              ))}
             </span>
           )}
           {isUntranslated && (

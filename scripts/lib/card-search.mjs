@@ -12,6 +12,10 @@ export const MATCH_WORD_START = 2;
 export const MATCH_SUBSTRING = 3;
 export const NO_MATCH = Infinity;
 
+export function cardSearchIdentity(card) {
+  return card?.oracleId || card?.key || card?.normalizedNameEn || normalizeSearchText(card?.nameEn || '');
+}
+
 function matchTier(normalized, query) {
   if (!normalized) return NO_MATCH;
   if (normalized === query) return MATCH_EXACT;
@@ -33,10 +37,13 @@ function cardTier(card, query) {
 export function buildExpansionDeckIndex(index, expansionCode) {
   const result = new Map();
   if (!index || !expansionCode) return result;
-  for (const card of index.cards || []) {
+  const seenKinds = new Map();
+  for (const card of dedupeCardSearchEntries(index.cards || [])) {
     if (!(card.setCodes || []).includes(expansionCode)) continue;
+    const cardKey = cardSearchIdentity(card);
     for (const ref of card.deckRefs || []) {
       const byDeck = result.get(ref.eventId) || new Map();
+      const deckKey = `${ref.eventId}\u0000${ref.deckId}`;
       const match = byDeck.get(ref.deckId) || {
         mainboardQuantity: 0,
         sideboardQuantity: 0,
@@ -44,7 +51,12 @@ export function buildExpansionDeckIndex(index, expansionCode) {
       };
       match.mainboardQuantity += ref.mainboardQuantity;
       match.sideboardQuantity += ref.sideboardQuantity;
-      match.cardKinds += 1;
+      const deckKinds = seenKinds.get(deckKey) || new Set();
+      if (!deckKinds.has(cardKey)) {
+        deckKinds.add(cardKey);
+        match.cardKinds += 1;
+        seenKinds.set(deckKey, deckKinds);
+      }
       byDeck.set(ref.deckId, match);
       result.set(ref.eventId, byDeck);
     }
@@ -55,8 +67,40 @@ export function buildExpansionDeckIndex(index, expansionCode) {
 // Filters suggestion candidates to an expansion before ranking. Mirrors the
 // pre-filter used by CardSearchBox in the browser.
 export function filterCardsByExpansion(cards, expansionCode) {
-  if (!expansionCode) return cards;
-  return (cards || []).filter((card) => (card.setCodes || []).includes(expansionCode));
+  const deduped = dedupeCardSearchEntries(cards || []);
+  if (!expansionCode) return deduped;
+  return deduped.filter((card) => (card.setCodes || []).includes(expansionCode));
+}
+
+export function dedupeCardSearchEntries(cards) {
+  const byKey = new Map();
+  for (const card of cards || []) {
+    const key = cardSearchIdentity(card);
+    if (!key) continue;
+    const existing = byKey.get(key);
+    byKey.set(key, existing ? mergeCardSearchEntries(existing, card) : cloneCardSearchEntry(card));
+  }
+  return [...byKey.values()];
+}
+
+export function formatSetBadges(setCodes, primarySetCode, selectedSetCode = null) {
+  const codes = [...new Set((setCodes || []).filter(Boolean))];
+  if (codes.length === 0) return [];
+  const primary = primarySetCode && codes.includes(primarySetCode) ? primarySetCode : codes[0];
+  if (!selectedSetCode || !codes.includes(selectedSetCode)) {
+    return [{
+      code: primary,
+      label: codes.length > 1 ? `${primary} +${codes.length - 1}` : primary,
+      title: codes.join(', '),
+      selected: false,
+    }];
+  }
+  return codes.map((code) => ({
+    code,
+    label: code,
+    title: code === selectedSetCode ? `${code} (selected set)` : code,
+    selected: code === selectedSetCode,
+  }));
 }
 
 // Rank card entries against a raw query. Returns the best `limit` matches,
@@ -66,7 +110,7 @@ export function rankCardSuggestions(cards, rawQuery, limit = 10) {
   if (!query) return [];
 
   const scored = [];
-  for (const card of cards) {
+  for (const card of dedupeCardSearchEntries(cards)) {
     const tier = cardTier(card, query);
     if (tier === NO_MATCH) continue;
     scored.push({ card, tier });
@@ -82,4 +126,65 @@ export function rankCardSuggestions(cards, rawQuery, limit = 10) {
   });
 
   return scored.slice(0, limit).map((entry) => entry.card);
+}
+
+function cloneCardSearchEntry(card) {
+  return {
+    ...card,
+    setCodes: [...(card.setCodes || [])],
+    deckRefs: [...(card.deckRefs || [])],
+  };
+}
+
+function mergeCardSearchEntries(a, b) {
+  const nameJa = chooseNameJa(a, b);
+  const setCodes = [...new Set([...(a.setCodes || []), ...(b.setCodes || [])])].sort();
+  const deckRefs = mergeDeckRefs([...(a.deckRefs || []), ...(b.deckRefs || [])]);
+  const nameEn = preferCompleteName(a.nameEn, b.nameEn);
+  return {
+    ...a,
+    key: a.oracleId || b.oracleId || a.key || b.key,
+    oracleId: a.oracleId || b.oracleId || null,
+    nameEn,
+    nameJa,
+    normalizedNameEn: normalizeSearchText(nameEn),
+    normalizedNameJa: nameJa ? normalizeSearchText(nameJa) : null,
+    setCodes,
+    primarySetCode: (a.primarySetCode && setCodes.includes(a.primarySetCode))
+      ? a.primarySetCode
+      : (b.primarySetCode && setCodes.includes(b.primarySetCode))
+        ? b.primarySetCode
+        : setCodes[0] || null,
+    deckCount: deckRefs.length,
+    deckRefs,
+  };
+}
+
+function mergeDeckRefs(refs) {
+  const byDeck = new Map();
+  for (const ref of refs) {
+    const key = `${ref.eventId}\u0000${ref.deckId}`;
+    const existing = byDeck.get(key) || {
+      eventId: ref.eventId,
+      deckId: ref.deckId,
+      mainboardQuantity: 0,
+      sideboardQuantity: 0,
+    };
+    existing.mainboardQuantity += ref.mainboardQuantity || 0;
+    existing.sideboardQuantity += ref.sideboardQuantity || 0;
+    byDeck.set(key, existing);
+  }
+  return [...byDeck.values()].sort(
+    (a, b) => a.eventId.localeCompare(b.eventId) || a.deckId.localeCompare(b.deckId)
+  );
+}
+
+function chooseNameJa(a, b) {
+  return a.nameJa || b.nameJa || null;
+}
+
+function preferCompleteName(a, b) {
+  if (!a) return b;
+  if (!b) return a;
+  return !String(a).includes(' // ') && String(b).includes(' // ') ? b : a;
 }
