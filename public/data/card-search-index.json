@@ -17,50 +17,50 @@
       "code": "SOS",
       "name": "Secrets of Strixhaven",
       "releasedAt": "2026-04-24",
-      "cardCount": 25,
-      "deckCount": 105
+      "cardCount": 31,
+      "deckCount": 107
     },
     {
       "code": "TMT",
       "name": "Teenage Mutant Ninja Turtles",
       "releasedAt": "2026-03-06",
       "cardCount": 10,
-      "deckCount": 71
+      "deckCount": 73
     },
     {
       "code": "ECL",
       "name": "Lorwyn Eclipsed",
       "releasedAt": "2026-01-23",
-      "cardCount": 21,
-      "deckCount": 115
+      "cardCount": 22,
+      "deckCount": 117
     },
     {
       "code": "TLA",
       "name": "Avatar: The Last Airbender",
       "releasedAt": "2025-11-21",
       "cardCount": 23,
-      "deckCount": 106
+      "deckCount": 108
     },
     {
       "code": "SPM",
       "name": "Marvel's Spider-Man",
       "releasedAt": "2025-09-26",
       "cardCount": 10,
-      "deckCount": 76
+      "deckCount": 77
     },
     {
       "code": "OM1",
       "name": "Through the Omenpaths",
       "releasedAt": "2025-09-23",
       "cardCount": 10,
-      "deckCount": 76
+      "deckCount": 77
     },
     {
       "code": "EOE",
       "name": "Edge of Eternities",
       "releasedAt": "2025-08-01",
       "cardCount": 21,
-      "deckCount": 98
+      "deckCount": 100
     },
     {
       "code": "FIN",
@@ -74,56 +74,56 @@
       "name": "Tarkir: Dragonstorm",
       "releasedAt": "2025-04-11",
       "cardCount": 20,
-      "deckCount": 89
+      "deckCount": 91
     },
     {
       "code": "DFT",
       "name": "Aetherdrift",
       "releasedAt": "2025-02-14",
       "cardCount": 26,
-      "deckCount": 113
+      "deckCount": 115
     },
     {
       "code": "FDN",
       "name": "Foundations",
       "releasedAt": "2024-11-15",
-      "cardCount": 29,
-      "deckCount": 117
+      "cardCount": 30,
+      "deckCount": 119
     },
     {
       "code": "DSK",
       "name": "Duskmourn: House of Horror",
       "releasedAt": "2024-09-27",
       "cardCount": 20,
-      "deckCount": 104
+      "deckCount": 106
     },
     {
       "code": "BLB",
       "name": "Bloomburrow",
       "releasedAt": "2024-08-02",
-      "cardCount": 21,
-      "deckCount": 97
+      "cardCount": 22,
+      "deckCount": 99
     },
     {
       "code": "BIG",
       "name": "The Big Score",
       "releasedAt": "2024-04-19",
-      "cardCount": 6,
-      "deckCount": 40
+      "cardCount": 7,
+      "deckCount": 41
     },
     {
       "code": "OTJ",
       "name": "Outlaws of Thunder Junction",
       "releasedAt": "2024-04-19",
       "cardCount": 11,
-      "deckCount": 71
+      "deckCount": 73
     },
     {
       "code": "MKM",
       "name": "Murders at Karlov Manor",
       "releasedAt": "2024-02-09",
       "cardCount": 13,
-      "deckCount": 35
+      "deckCount": 36
     },
     {
       "code": "LCI",
@@ -137,14 +137,14 @@
       "name": "Wilds of Eldraine",
       "releasedAt": "2023-09-08",
       "cardCount": 9,
-      "deckCount": 101
+      "deckCount": 102
     },
     {
       "code": "KTK",
       "name": "Khans of Tarkir",
       "releasedAt": "2014-09-26",
       "cardCount": 1,
-      "deckCount": 45
+      "deckCount": 46
     }
   ],
   "cards": [
@@ -904,6 +904,28 @@
       ]
     },
     {
+      "key": "f0950c95-a297-489d-b166-74bba6af5376",
+      "nameEn": "Ancient Cornucopia",
+      "nameJa": "古のヤギ角",
+      "normalizedNameEn": "ancient cornucopia",
+      "normalizedNameJa": "古のヤギ角",
+      "oracleId": "f0950c95-a297-489d-b166-74bba6af5376",
+      "isBasicLand": false,
+      "setCodes": [
+        "BIG"
+      ],
+      "primarySetCode": "BIG",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "6f053f0d-c9c7-4fcd-b218-a29d1d080104",
       "nameEn": "Ancient Vendetta",
       "nameJa": "古からの確執",
@@ -915,7 +937,7 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0312846464",
@@ -934,6 +956,12 @@
           "deckId": "5-0-thebigbrain",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         }
       ]
     },
@@ -949,7 +977,7 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 23,
+      "deckCount": 24,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -1088,6 +1116,12 @@
           "deckId": "5-0-znt-",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         }
       ]
     },
@@ -1900,7 +1934,7 @@
         "SPM"
       ],
       "primarySetCode": "SPM",
-      "deckCount": 2,
+      "deckCount": 3,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-3012845710",
@@ -1911,6 +1945,12 @@
         {
           "eventId": "standard-league-2026-06-3010879",
           "deckId": "35379502-dadams103",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
         }
@@ -2560,7 +2600,7 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 6,
+      "deckCount": 7,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-3012845710",
@@ -2596,6 +2636,12 @@
           "eventId": "standard-league-2026-07-0710879",
           "deckId": "35442373-lemonadearchery",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         }
       ]
@@ -2838,7 +2884,7 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 20,
+      "deckCount": 21,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -2959,6 +3005,12 @@
           "deckId": "5-0-znt-",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         }
       ]
     },
@@ -3048,7 +3100,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 30,
+      "deckCount": 31,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -3228,6 +3280,12 @@
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-znt-",
           "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         }
       ]
@@ -3690,7 +3748,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 26,
+      "deckCount": 27,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -3847,6 +3905,12 @@
           "deckId": "5-0-znt-",
           "mainboardQuantity": 2,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         }
       ]
     },
@@ -4028,7 +4092,7 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 11,
+      "deckCount": 12,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-3012845710",
@@ -4094,6 +4158,12 @@
           "eventId": "standard-league-2026-07-0310879",
           "deckId": "5-0-thebigbrain",
           "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
       ]
@@ -4594,7 +4664,7 @@
         "TLA"
       ],
       "primarySetCode": "TLA",
-      "deckCount": 9,
+      "deckCount": 10,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0212846451",
@@ -4648,6 +4718,12 @@
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-robinbanks",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 1,
           "sideboardQuantity": 0
         }
       ]
@@ -4752,7 +4828,7 @@
         "MKM"
       ],
       "primarySetCode": "MKM",
-      "deckCount": 9,
+      "deckCount": 10,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0212846451",
@@ -4805,6 +4881,34 @@
         {
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-robinbanks",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
+      "key": "f6d24565-5b32-4eff-b2e0-6e2c25516ff0",
+      "nameEn": "Deathcap Glade",
+      "nameJa": "死天狗茸の林間地",
+      "normalizedNameEn": "deathcap glade",
+      "normalizedNameJa": "死天狗茸の林間地",
+      "oracleId": "f6d24565-5b32-4eff-b2e0-6e2c25516ff0",
+      "isBasicLand": false,
+      "setCodes": [
+        "SOS"
+      ],
+      "primarySetCode": "SOS",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         }
@@ -4886,6 +4990,28 @@
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-robinbanks",
           "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
+      "key": "f4c57454-d36f-4f38-b7ac-76477a516c3e",
+      "nameEn": "Decorum Dissertation",
+      "nameJa": "端正な論文",
+      "normalizedNameEn": "decorum dissertation",
+      "normalizedNameJa": "端正な論文",
+      "oracleId": "f4c57454-d36f-4f38-b7ac-76477a516c3e",
+      "isBasicLand": false,
+      "setCodes": [
+        "SOS"
+      ],
+      "primarySetCode": "SOS",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 1,
           "sideboardQuantity": 0
         }
       ]
@@ -5111,7 +5237,7 @@
         "WOE"
       ],
       "primarySetCode": "WOE",
-      "deckCount": 45,
+      "deckCount": 46,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-30",
@@ -5382,6 +5508,12 @@
           "deckId": "35442373-lemonadearchery",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         }
       ]
     },
@@ -5515,7 +5647,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 13,
+      "deckCount": 14,
       "deckRefs": [
         {
           "eventId": "standard-challenge-31-2026-06-29",
@@ -5594,6 +5726,12 @@
           "deckId": "5-0-robinbanks",
           "mainboardQuantity": 3,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 2
         }
       ]
     },
@@ -5701,7 +5839,7 @@
         "BLB"
       ],
       "primarySetCode": "BLB",
-      "deckCount": 27,
+      "deckCount": 28,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -5864,6 +6002,12 @@
           "deckId": "5-0-znt-",
           "mainboardQuantity": 3,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -6913,6 +7057,28 @@
       ]
     },
     {
+      "key": "c338eedb-9b70-4b77-b5d6-8ea74b7bea3e",
+      "nameEn": "Feed the Cycle",
+      "nameJa": "循環への給餌",
+      "normalizedNameEn": "feed the cycle",
+      "normalizedNameJa": "循環への給餌",
+      "oracleId": "c338eedb-9b70-4b77-b5d6-8ea74b7bea3e",
+      "isBasicLand": false,
+      "setCodes": [
+        "BLB"
+      ],
+      "primarySetCode": "BLB",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "f825c98f-a327-440b-8c0d-ebe02e23bfb7",
       "nameEn": "Field of Ruin",
       "nameJa": "廃墟の地",
@@ -7322,7 +7488,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 45,
+      "deckCount": 46,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -7593,6 +7759,12 @@
           "deckId": "35422866-rienigmadle",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 1
         }
       ]
     },
@@ -7684,7 +7856,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 26,
+      "deckCount": 28,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -7841,6 +8013,18 @@
           "deckId": "5-0-znt-",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -7916,7 +8100,7 @@
         "WOE"
       ],
       "primarySetCode": "HOB",
-      "deckCount": 42,
+      "deckCount": 43,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -8168,6 +8352,12 @@
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-rpa",
           "mainboardQuantity": 6,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 1,
           "sideboardQuantity": 0
         }
       ]
@@ -8450,7 +8640,7 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 24,
+      "deckCount": 25,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -8595,6 +8785,12 @@
           "deckId": "5-0-znt-",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         }
       ]
     },
@@ -8982,7 +9178,7 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 11,
+      "deckCount": 12,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0212846451",
@@ -9048,6 +9244,12 @@
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-robinbanks",
           "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         }
       ]
@@ -9280,7 +9482,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 25,
+      "deckCount": 26,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-3012845710",
@@ -9429,6 +9631,12 @@
         {
           "eventId": "standard-league-2026-07-0710879",
           "deckId": "35422866-rienigmadle",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -9790,7 +9998,7 @@
         "WOE"
       ],
       "primarySetCode": "WOE",
-      "deckCount": 6,
+      "deckCount": 7,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -9825,6 +10033,12 @@
         {
           "eventId": "standard-league-2026-06-3010879",
           "deckId": "35379502-dadams103",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -10362,7 +10576,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 23,
+      "deckCount": 24,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -10500,6 +10714,12 @@
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-znt-",
           "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         }
       ]
@@ -11020,7 +11240,7 @@
         "WOE"
       ],
       "primarySetCode": "HOB",
-      "deckCount": 54,
+      "deckCount": 55,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -11344,6 +11564,12 @@
           "eventId": "standard-league-2026-07-0710879",
           "deckId": "35422866-rienigmadle",
           "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 6,
           "sideboardQuantity": 0
         }
       ]
@@ -13084,6 +13310,28 @@
       ]
     },
     {
+      "key": "95ce305f-34bc-4d6d-b7ba-ffd4b2a25336",
+      "nameEn": "Maelstrom Pulse",
+      "nameJa": "大渦の脈動",
+      "normalizedNameEn": "maelstrom pulse",
+      "normalizedNameJa": "大渦の脈動",
+      "oracleId": "95ce305f-34bc-4d6d-b7ba-ffd4b2a25336",
+      "isBasicLand": false,
+      "setCodes": [
+        "FDN"
+      ],
+      "primarySetCode": "FDN",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 1
+        }
+      ]
+    },
+    {
       "key": "0c38f159-367b-4e4b-94cd-bf1b0721c3a8",
       "nameEn": "Magebane Lizard",
       "nameJa": "魔道士封じのトカゲ",
@@ -13701,7 +13949,7 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 19,
+      "deckCount": 20,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-3012845710",
@@ -13814,6 +14062,12 @@
         {
           "eventId": "standard-league-2026-07-0710879",
           "deckId": "35422866-rienigmadle",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
         }
@@ -14753,7 +15007,7 @@
         "TMT"
       ],
       "primarySetCode": "TMT",
-      "deckCount": 23,
+      "deckCount": 25,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-30",
@@ -14890,6 +15144,18 @@
         {
           "eventId": "standard-league-2026-07-0710879",
           "deckId": "35442373-lemonadearchery",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
         }
@@ -15057,7 +15323,7 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 5,
+      "deckCount": 6,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0312846474",
@@ -15087,6 +15353,12 @@
           "eventId": "standard-challenge-32-2026-07-0612846517",
           "deckId": "8-mistertwin",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 0,
           "sideboardQuantity": 1
         }
       ]
@@ -15307,7 +15579,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 30,
+      "deckCount": 31,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -15486,6 +15758,12 @@
         {
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-znt-",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -15739,7 +16017,7 @@
         "MKM"
       ],
       "primarySetCode": "MKM",
-      "deckCount": 10,
+      "deckCount": 11,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0212846451",
@@ -15800,6 +16078,34 @@
           "deckId": "5-0-thebigbrain",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        }
+      ]
+    },
+    {
+      "key": "975ec9a3-6f20-4177-8211-82526e092538",
+      "nameEn": "Overgrown Tomb",
+      "nameJa": "草むした墓",
+      "normalizedNameEn": "overgrown tomb",
+      "normalizedNameJa": "草むした墓",
+      "oracleId": "975ec9a3-6f20-4177-8211-82526e092538",
+      "isBasicLand": false,
+      "setCodes": [
+        "ECL"
+      ],
+      "primarySetCode": "ECL",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -16163,7 +16469,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 7,
+      "deckCount": 8,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0212846451",
@@ -16206,6 +16512,12 @@
           "deckId": "5-0-thebigbrain",
           "mainboardQuantity": 1,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -17061,7 +17373,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 9,
+      "deckCount": 10,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -17115,6 +17427,34 @@
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-supercazzola",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
+      "key": "8c5fe985-69e1-4a03-99fc-a6fd2314a9a7",
+      "nameEn": "Professor Dellian Fel",
+      "nameJa": "デリアン・フェル教授",
+      "normalizedNameEn": "professor dellian fel",
+      "normalizedNameJa": "デリアン・フェル教授",
+      "oracleId": "8c5fe985-69e1-4a03-99fc-a6fd2314a9a7",
+      "isBasicLand": false,
+      "setCodes": [
+        "SOS"
+      ],
+      "primarySetCode": "SOS",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         }
       ]
@@ -17346,6 +17686,28 @@
       ]
     },
     {
+      "key": "f43e36ea-6bf5-45bd-a4ad-cc507ae45641",
+      "nameEn": "Quandrix Charm",
+      "nameJa": "クアンドリクスの魔除け",
+      "normalizedNameEn": "quandrix charm",
+      "normalizedNameJa": "クアンドリクスの魔除け",
+      "oracleId": "f43e36ea-6bf5-45bd-a4ad-cc507ae45641",
+      "isBasicLand": false,
+      "setCodes": [
+        "SOS"
+      ],
+      "primarySetCode": "SOS",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "58582fac-4c42-4a1c-9ab1-4a892b500da4",
       "nameEn": "Quantum Riddler",
       "nameJa": "量（りょう）子（し）の謎（なぞ）かけ屋（や）",
@@ -17357,7 +17719,7 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 7,
+      "deckCount": 8,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0212846451",
@@ -17400,6 +17762,12 @@
           "deckId": "5-0-junyuanz",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         }
       ]
     },
@@ -17435,7 +17803,7 @@
         "BLB"
       ],
       "primarySetCode": "BLB",
-      "deckCount": 40,
+      "deckCount": 41,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -17676,6 +18044,12 @@
           "deckId": "35422866-rienigmadle",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         }
       ]
     },
@@ -17775,7 +18149,7 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 7,
+      "deckCount": 8,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0212846451",
@@ -17818,6 +18192,12 @@
           "deckId": "5-0-robinbanks",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 1
         }
       ]
     },
@@ -18351,7 +18731,7 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 50,
+      "deckCount": 51,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -18650,6 +19030,12 @@
         {
           "eventId": "standard-league-2026-07-0710879",
           "deckId": "35422866-rienigmadle",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -19445,7 +19831,7 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 27,
+      "deckCount": 28,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -19606,6 +19992,12 @@
         {
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-znt-",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
         }
@@ -20264,7 +20656,7 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0312846474",
@@ -20282,6 +20674,12 @@
           "eventId": "standard-league-2026-07-0310879",
           "deckId": "5-0-junyuanz",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         }
       ]
@@ -20428,7 +20826,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 30,
+      "deckCount": 31,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -20609,6 +21007,12 @@
           "deckId": "5-0-znt-",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         }
       ]
     },
@@ -20644,7 +21048,7 @@
         "WOE"
       ],
       "primarySetCode": "WOE",
-      "deckCount": 28,
+      "deckCount": 29,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -20811,6 +21215,12 @@
         {
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-znt-",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -21473,7 +21883,7 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 49,
+      "deckCount": 50,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -21768,6 +22178,12 @@
           "deckId": "35442373-lemonadearchery",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -21783,7 +22199,7 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 18,
+      "deckCount": 19,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -21892,6 +22308,12 @@
           "deckId": "35422866-rienigmadle",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -21941,7 +22363,7 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 46,
+      "deckCount": 47,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -22217,6 +22639,12 @@
           "eventId": "standard-league-2026-07-0710879",
           "deckId": "35422866-rienigmadle",
           "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
       ]
@@ -22499,7 +22927,7 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 56,
+      "deckCount": 57,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -22834,6 +23262,12 @@
         {
           "eventId": "standard-league-2026-07-0710879",
           "deckId": "35422866-rienigmadle",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -23133,7 +23567,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 17,
+      "deckCount": 18,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -23234,6 +23668,12 @@
         {
           "eventId": "standard-league-2026-07-0310879",
           "deckId": "5-0-thebigbrain",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         }
@@ -23449,7 +23889,7 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 17,
+      "deckCount": 18,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0212846451",
@@ -23552,6 +23992,12 @@
           "deckId": "5-0-robinbanks",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -23613,7 +24059,7 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 12,
+      "deckCount": 13,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -23686,6 +24132,12 @@
           "deckId": "5-0-supercazzola",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 1
         }
       ]
     },
@@ -24236,7 +24688,7 @@
         "WOE"
       ],
       "primarySetCode": "HOB",
-      "deckCount": 14,
+      "deckCount": 15,
       "deckRefs": [
         {
           "eventId": "standard-challenge-31-2026-06-29",
@@ -24320,6 +24772,12 @@
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-robinbanks",
           "mainboardQuantity": 8,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 1,
           "sideboardQuantity": 0
         }
       ]
@@ -24881,6 +25339,28 @@
       ]
     },
     {
+      "key": "a3e10b9b-9349-4b44-a46c-c825293dbd05",
+      "nameEn": "The Dawning Archaic",
+      "nameJa": "夜明けのアルカイック",
+      "normalizedNameEn": "the dawning archaic",
+      "normalizedNameJa": "夜明けのアルカイック",
+      "oracleId": "a3e10b9b-9349-4b44-a46c-c825293dbd05",
+      "isBasicLand": false,
+      "setCodes": [
+        "SOS"
+      ],
+      "primarySetCode": "SOS",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        }
+      ]
+    },
+    {
       "key": "57276db8-9d8d-4587-ae88-dfdc44343f17",
       "nameEn": "The Fire Crystal",
       "nameJa": "火のクリスタル",
@@ -24986,13 +25466,19 @@
         "TLA"
       ],
       "primarySetCode": "TLA",
-      "deckCount": 1,
+      "deckCount": 2,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-3012845710",
           "deckId": "8-lbbl",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         }
       ]
     },
@@ -25169,7 +25655,7 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 15,
+      "deckCount": 16,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-3012845710",
@@ -25258,6 +25744,12 @@
         {
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-wata",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
         }
@@ -25399,7 +25891,7 @@
         "BIG"
       ],
       "primarySetCode": "BIG",
-      "deckCount": 4,
+      "deckCount": 5,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0212846451",
@@ -25424,6 +25916,12 @@
           "deckId": "5-0-inalienabledreamless",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         }
       ]
     },
@@ -25439,7 +25937,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 6,
+      "deckCount": 7,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -25475,6 +25973,12 @@
           "eventId": "standard-league-2026-06-3010879",
           "deckId": "35379502-dadams103",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         }
       ]
@@ -25553,7 +26057,7 @@
         "MKM"
       ],
       "primarySetCode": "MKM",
-      "deckCount": 8,
+      "deckCount": 9,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0212846451",
@@ -25600,6 +26104,12 @@
         {
           "eventId": "standard-league-2026-07-0310879",
           "deckId": "5-0-junyuanz",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
         }
@@ -25953,7 +26463,7 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 9,
+      "deckCount": 10,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-07-0212846451",
@@ -26006,6 +26516,12 @@
         {
           "eventId": "standard-league-2026-07-0610879",
           "deckId": "5-0-robinbanks",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -26157,7 +26673,7 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 12,
+      "deckCount": 13,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-06-2912845700",
@@ -26230,6 +26746,34 @@
           "deckId": "5-0-robinbanks",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35449647-jon-ma",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
+      "key": "ee1db746-f5c1-4dce-82eb-24b273cc9507",
+      "nameEn": "Witherbloom Charm",
+      "nameJa": null,
+      "normalizedNameEn": "witherbloom charm",
+      "normalizedNameJa": null,
+      "oracleId": "ee1db746-f5c1-4dce-82eb-24b273cc9507",
+      "isBasicLand": false,
+      "setCodes": [
+        "SOS"
+      ],
+      "primarySetCode": "SOS",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-07-0810879",
+          "deckId": "35448569-thebigbrain",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 2
         }
       ]
     },
@@ -26327,5 +26871,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-07-08T09:15:34+09:00"
+  "generatedAt": "2026-07-08T20:32:21+09:00"
 }
