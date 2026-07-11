@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-11T22:23:11+09:00",
-  "lastSuccessfulUpdateAt": "2026-07-11T22:23:11+09:00",
+  "generatedAt": "2026-07-12T01:11:42+09:00",
+  "lastSuccessfulUpdateAt": "2026-07-12T01:11:42+09:00",
   "period": {
-    "startDate": "2026-07-02",
-    "endDate": "2026-07-11",
+    "startDate": "2026-07-03",
+    "endDate": "2026-07-12",
     "lookbackDays": 10
   },
   "overallStatus": "success",
   "summary": {
-    "completedEvents": 22,
+    "completedEvents": 20,
     "pendingEvents": 0,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 106
+    "untranslatedCards": 99
   },
   "events": [
     {
@@ -316,36 +316,6 @@
       "firstSeenAt": "2026-07-04T16:30:02+09:00",
       "lastCheckedAt": "2026-07-05T01:35:41+09:00",
       "completedAt": "2026-07-05T01:35:41+09:00"
-    },
-    {
-      "id": "standard-league-2026-07-0210879",
-      "name": "Standard League July 2 2026",
-      "eventType": "league",
-      "eventDate": "2026-07-02",
-      "eventDateTime": null,
-      "publishedDate": "2026-07-02",
-      "status": "completed",
-      "deckCount": 1,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-07-0210879",
-      "dataFile": "./events/standard-league-2026-07-0210879.json",
-      "firstSeenAt": "2026-07-02T19:48:55+09:00",
-      "lastCheckedAt": "2026-07-03T03:21:46+09:00",
-      "completedAt": "2026-07-03T03:21:46+09:00"
-    },
-    {
-      "id": "standard-challenge-32-2026-07-0212846451",
-      "name": "Standard Challenge 32 July 2 2026",
-      "eventType": "challenge",
-      "eventDate": "2026-07-02",
-      "eventDateTime": "2026-07-02T00:00:00",
-      "publishedDate": "2026-07-02",
-      "status": "completed",
-      "deckCount": 8,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-07-0212846451",
-      "dataFile": "./events/standard-challenge-32-2026-07-0212846451.json",
-      "firstSeenAt": "2026-07-02T19:48:55+09:00",
-      "lastCheckedAt": "2026-07-02T19:48:58+09:00",
-      "completedAt": "2026-07-02T19:48:58+09:00"
     }
   ]
 }
