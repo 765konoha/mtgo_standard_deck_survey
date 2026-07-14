@@ -6,19 +6,38 @@
       "eventName": "Standard League July 14 2026",
       "eventType": "league",
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-07-1410879",
-      "status": "pending_publication",
+      "status": "completed",
       "firstSeenAt": "2026-07-14T19:59:14+09:00",
-      "lastCheckedAt": "2026-07-14T19:59:15+09:00",
-      "completedAt": null,
-      "retryCount": 1,
+      "lastCheckedAt": "2026-07-15T08:38:22+09:00",
+      "completedAt": "2026-07-15T08:38:22+09:00",
+      "retryCount": 0,
       "lastResult": {
         "httpStatus": 200,
-        "deckCount": 0,
-        "reason": "decklists_not_published"
+        "deckCount": 2,
+        "reason": "ok"
       },
       "eventDate": "2026-07-14",
       "publishedDate": "2026-07-14",
       "eventDateTime": null
+    },
+    {
+      "eventId": "standard-challenge-32-2026-07-1412847168",
+      "eventName": "Standard Challenge 32 July 14 2026",
+      "eventType": "challenge",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-07-1412847168",
+      "status": "completed",
+      "firstSeenAt": "2026-07-15T08:38:21+09:00",
+      "lastCheckedAt": "2026-07-15T08:38:24+09:00",
+      "completedAt": "2026-07-15T08:38:24+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 8,
+        "reason": "ok"
+      },
+      "eventDate": "2026-07-14",
+      "publishedDate": "2026-07-15",
+      "eventDateTime": "2026-07-14T17:00:00"
     },
     {
       "eventId": "standard-league-2026-07-1310879",
