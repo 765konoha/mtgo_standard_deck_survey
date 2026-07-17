@@ -208,6 +208,32 @@ test('retranslates every card by normalized dictionary key', () => {
   assert.equal(decks[0].mainboard[1].translationStatus, 'missing');
 });
 
+test('combines separate MTGO printing rows for the same card within a zone', () => {
+  const dictionary = {
+    cards: {
+      island: {
+        nameEn: 'Island',
+        nameJa: '島',
+        translationStatus: 'complete',
+      },
+    },
+  };
+
+  const { decks } = translateDecks([{
+    mainboard: [
+      { quantity: 1, nameEn: 'Island' },
+      { quantity: 2, nameEn: ' ISLAND ' },
+      { quantity: 2, nameEn: 'Island' },
+    ],
+    sideboard: [{ quantity: 1, nameEn: 'Island' }],
+  }], dictionary);
+
+  assert.equal(decks[0].mainboard.length, 1);
+  assert.equal(decks[0].mainboard[0].quantity, 5);
+  assert.equal(decks[0].sideboard.length, 1);
+  assert.equal(decks[0].sideboard[0].quantity, 1);
+});
+
 test('dictionary update script contains no card-specific processing list', async () => {
   const source = await readFile('scripts/update-card-dictionary.mjs', 'utf8');
   assert.doesNotMatch(source, /TARGET_CARDS|KNOWN_TRANSLATION_FIXES|CARD_FIXES/);

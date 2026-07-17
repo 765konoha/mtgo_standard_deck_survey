@@ -24,10 +24,31 @@ export function translateDecks(decks, dictionary) {
 
   const translatedDecks = decks.map((deck) => ({
     ...deck,
-    mainboard: deck.mainboard.map(translateCard),
-    sideboard: deck.sideboard.map(translateCard),
+    // MTGO emits separate rows for different printings / artwork of the same
+    // card. They are deck-list details, not distinct card names, so combine
+    // them within each zone before attaching dictionary metadata.
+    mainboard: mergeCardRows(deck.mainboard).map(translateCard),
+    sideboard: mergeCardRows(deck.sideboard).map(translateCard),
   }));
 
   return { decks: translatedDecks, missing };
+}
+
+export function mergeCardRows(cards) {
+  const merged = new Map();
+
+  for (const card of cards || []) {
+    const key = normalizeCardName(card.nameEn);
+    if (!key) continue;
+
+    const existing = merged.get(key);
+    if (existing) {
+      existing.quantity += card.quantity;
+    } else {
+      merged.set(key, { ...card });
+    }
+  }
+
+  return [...merged.values()];
 }
 
