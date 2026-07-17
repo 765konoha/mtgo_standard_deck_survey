@@ -13,7 +13,7 @@ export function useCardSearchIndex() {
     setLoading(true);
     setError(null);
 
-    fetch(`${DATA_BASE_PATH}/card-search-index.json`)
+    fetch(`${DATA_BASE_PATH}/card-search-index.json`, { cache: 'no-store' })
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP ${res.status}: ${res.statusText}`);
@@ -58,7 +58,7 @@ export function useIndexData() {
     setLoading(true);
     setError(null);
 
-    fetch(`${DATA_BASE_PATH}/index.json`)
+    fetch(`${DATA_BASE_PATH}/index.json`, { cache: 'no-store' })
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP ${res.status}: ${res.statusText}`);
@@ -110,7 +110,7 @@ export function useEventData(eventSummary: EventSummary | null) {
       ? eventSummary.dataFile
       : `./${eventSummary.dataFile}`;
 
-    fetch(`${DATA_BASE_PATH}/${dataFile.replace('./', '')}`)
+    fetch(`${DATA_BASE_PATH}/${dataFile.replace('./', '')}`, { cache: 'no-store' })
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP ${res.status}: ${res.statusText}`);
