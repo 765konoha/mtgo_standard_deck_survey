@@ -172,3 +172,28 @@ test('event validation rejects duplicate deck ids', () => {
     /duplicate id duplicate/
   );
 });
+
+test('event validation rejects duplicate card rows within the same zone', () => {
+  assert.throws(
+    () => validateEventData({
+      event: {
+        id: 'event',
+        eventType: 'league',
+        sourceUrl: 'https://www.mtgo.com/decklist/event',
+        status: 'completed',
+      },
+      decks: [{
+        id: 'deck',
+        player: 'Player',
+        placement: null,
+        record: '5-0',
+        mainboard: [
+          { quantity: 1, nameEn: 'Rest in Peace' },
+          { quantity: 2, nameEn: ' REST  IN PEACE ' },
+        ],
+        sideboard: [],
+      }],
+    }),
+    /duplicate mainboard card/
+  );
+});

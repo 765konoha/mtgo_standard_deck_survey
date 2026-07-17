@@ -1,3 +1,5 @@
+import { normalizeCardName } from './normalize-card-name.mjs';
+
 const VALID_STATUSES = new Set([
   'discovered',
   'pending_publication',
@@ -38,6 +40,16 @@ export function validateEventData(eventData) {
     }
     if (eventData.event.eventType === 'league' && deck.record !== '5-0') {
       errors.push(`deck ${deckIndex}: league record must be 5-0`);
+    }
+    for (const zone of ['mainboard', 'sideboard']) {
+      const seenCardNames = new Set();
+      for (const card of deck[zone] || []) {
+        const normalizedName = normalizeCardName(card.nameEn);
+        if (normalizedName && seenCardNames.has(normalizedName)) {
+          errors.push(`deck ${deckIndex}: duplicate ${zone} card ${card.nameEn}`);
+        }
+        seenCardNames.add(normalizedName);
+      }
     }
     for (const [cardIndex, card] of [...(deck.mainboard || []), ...(deck.sideboard || [])].entries()) {
       if (!Number.isInteger(card.quantity) || card.quantity <= 0) {
