@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-19T08:38:08+09:00",
-  "lastSuccessfulUpdateAt": "2026-07-19T08:38:08+09:00",
+  "generatedAt": "2026-07-19T19:16:58+09:00",
+  "lastSuccessfulUpdateAt": "2026-07-19T19:16:58+09:00",
   "period": {
     "startDate": "2026-07-10",
     "endDate": "2026-07-19",
@@ -9,14 +9,29 @@
   },
   "overallStatus": "success",
   "summary": {
-    "completedEvents": 19,
+    "completedEvents": 20,
     "pendingEvents": 0,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 107
+    "untranslatedCards": 112
   },
   "events": [
+    {
+      "id": "standard-league-2026-07-1910879",
+      "name": "Standard League July 19 2026",
+      "eventType": "league",
+      "eventDate": "2026-07-19",
+      "eventDateTime": null,
+      "publishedDate": "2026-07-19",
+      "status": "completed",
+      "deckCount": 3,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-07-1910879",
+      "dataFile": "./events/standard-league-2026-07-1910879.json",
+      "firstSeenAt": "2026-07-19T19:16:51+09:00",
+      "lastCheckedAt": "2026-07-19T19:16:52+09:00",
+      "completedAt": "2026-07-19T19:16:52+09:00"
+    },
     {
       "id": "standard-league-2026-07-1810879",
       "name": "Standard League July 18 2026",
