@@ -1,22 +1,37 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-21T09:14:04+09:00",
-  "lastSuccessfulUpdateAt": "2026-07-21T09:14:04+09:00",
+  "generatedAt": "2026-07-21T20:30:22+09:00",
+  "lastSuccessfulUpdateAt": "2026-07-21T20:30:22+09:00",
   "period": {
     "startDate": "2026-07-12",
     "endDate": "2026-07-21",
     "lookbackDays": 10
   },
-  "overallStatus": "success",
+  "overallStatus": "pending",
   "summary": {
-    "completedEvents": 19,
-    "pendingEvents": 0,
+    "completedEvents": 20,
+    "pendingEvents": 1,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 114
+    "untranslatedCards": 125
   },
   "events": [
+    {
+      "id": "standard-league-2026-07-2110879",
+      "name": "Standard League July 21 2026",
+      "eventType": "league",
+      "eventDate": "2026-07-21",
+      "eventDateTime": null,
+      "publishedDate": "2026-07-21",
+      "status": "pending_publication",
+      "deckCount": 0,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-07-2110879",
+      "dataFile": "./events/standard-league-2026-07-2110879.json",
+      "firstSeenAt": "2026-07-21T20:30:06+09:00",
+      "lastCheckedAt": "2026-07-21T20:30:08+09:00",
+      "completedAt": null
+    },
     {
       "id": "standard-league-2026-07-2010879",
       "name": "Standard League July 20 2026",
@@ -31,6 +46,21 @@
       "firstSeenAt": "2026-07-20T21:35:19+09:00",
       "lastCheckedAt": "2026-07-21T04:15:15+09:00",
       "completedAt": "2026-07-21T04:15:15+09:00"
+    },
+    {
+      "id": "standard-challenge-32-2026-07-2012847725",
+      "name": "Standard Challenge 32 July 20 2026",
+      "eventType": "challenge",
+      "eventDate": "2026-07-20",
+      "eventDateTime": "2026-07-20T20:00:00",
+      "publishedDate": "2026-07-21",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-07-2012847725",
+      "dataFile": "./events/standard-challenge-32-2026-07-2012847725.json",
+      "firstSeenAt": "2026-07-21T20:30:06+09:00",
+      "lastCheckedAt": "2026-07-21T20:30:22+09:00",
+      "completedAt": "2026-07-21T20:30:22+09:00"
     },
     {
       "id": "standard-league-2026-07-1910879",
