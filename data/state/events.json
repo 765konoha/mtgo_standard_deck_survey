@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "events": [
     {
-      "eventId": "standard-challenge-32-2026-07-2512848200",
-      "eventName": "Standard Challenge 32 July 25 2026",
-      "eventType": "challenge",
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-07-2512848200",
+      "eventId": "standard-league-2026-07-2610879",
+      "eventName": "Standard League July 26 2026",
+      "eventType": "league",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-07-2610879",
       "status": "pending_publication",
-      "firstSeenAt": "2026-07-26T01:13:54+09:00",
-      "lastCheckedAt": "2026-07-26T01:13:55+09:00",
+      "firstSeenAt": "2026-07-26T15:51:34+09:00",
+      "lastCheckedAt": "2026-07-26T15:51:48+09:00",
       "completedAt": null,
       "retryCount": 1,
       "lastResult": {
@@ -16,9 +16,28 @@
         "deckCount": 0,
         "reason": "decklists_not_published"
       },
+      "eventDate": "2026-07-26",
+      "publishedDate": "2026-07-26",
+      "eventDateTime": null
+    },
+    {
+      "eventId": "standard-challenge-32-2026-07-2512848200",
+      "eventName": "Standard Challenge 32 July 25 2026",
+      "eventType": "challenge",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-07-2512848200",
+      "status": "completed",
+      "firstSeenAt": "2026-07-26T01:13:54+09:00",
+      "lastCheckedAt": "2026-07-26T15:51:35+09:00",
+      "completedAt": "2026-07-26T15:51:35+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 8,
+        "reason": "ok"
+      },
       "eventDate": "2026-07-25",
       "publishedDate": "2026-07-25",
-      "eventDateTime": null
+      "eventDateTime": "2026-07-25T02:00:00"
     },
     {
       "eventId": "standard-league-2026-07-2510879",
@@ -38,6 +57,25 @@
       "eventDate": "2026-07-25",
       "publishedDate": "2026-07-25",
       "eventDateTime": null
+    },
+    {
+      "eventId": "standard-challenge-32-2026-07-2512848205",
+      "eventName": "Standard Challenge 32 July 25 2026",
+      "eventType": "challenge",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-07-2512848205",
+      "status": "completed",
+      "firstSeenAt": "2026-07-26T15:51:34+09:00",
+      "lastCheckedAt": "2026-07-26T15:51:49+09:00",
+      "completedAt": "2026-07-26T15:51:49+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 8,
+        "reason": "ok"
+      },
+      "eventDate": "2026-07-25",
+      "publishedDate": "2026-07-25",
+      "eventDateTime": "2026-07-25T13:00:00"
     },
     {
       "eventId": "standard-league-2026-07-2410879",
