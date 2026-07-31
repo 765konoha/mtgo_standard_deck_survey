@@ -2,19 +2,57 @@
   "schemaVersion": 1,
   "events": [
     {
-      "eventId": "standard-league-2026-07-3010879",
-      "eventName": "Standard League July 30 2026",
+      "eventId": "standard-league-2026-07-3110879",
+      "eventName": "Standard League July 31 2026",
       "eventType": "league",
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-07-3010879",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-07-3110879",
       "status": "pending_publication",
-      "firstSeenAt": "2026-07-30T09:14:09+09:00",
-      "lastCheckedAt": "2026-07-31T03:01:11+09:00",
+      "firstSeenAt": "2026-07-31T17:09:42+09:00",
+      "lastCheckedAt": "2026-07-31T17:09:45+09:00",
       "completedAt": null,
-      "retryCount": 3,
+      "retryCount": 1,
       "lastResult": {
         "httpStatus": 200,
         "deckCount": 0,
         "reason": "decklists_not_published"
+      },
+      "eventDate": "2026-07-31",
+      "publishedDate": "2026-07-31",
+      "eventDateTime": null
+    },
+    {
+      "eventId": "standard-challenge-32-2026-07-3112849443",
+      "eventName": "Standard Challenge 32 July 31 2026",
+      "eventType": "challenge",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-07-3112849443",
+      "status": "completed",
+      "firstSeenAt": "2026-07-31T17:09:42+09:00",
+      "lastCheckedAt": "2026-07-31T17:09:46+09:00",
+      "completedAt": "2026-07-31T17:09:46+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 8,
+        "reason": "ok"
+      },
+      "eventDate": "2026-07-31",
+      "publishedDate": "2026-07-31",
+      "eventDateTime": "2026-07-31T00:00:00"
+    },
+    {
+      "eventId": "standard-league-2026-07-3010879",
+      "eventName": "Standard League July 30 2026",
+      "eventType": "league",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-07-3010879",
+      "status": "completed",
+      "firstSeenAt": "2026-07-30T09:14:09+09:00",
+      "lastCheckedAt": "2026-07-31T17:09:43+09:00",
+      "completedAt": "2026-07-31T17:09:43+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 2,
+        "reason": "ok"
       },
       "eventDate": "2026-07-30",
       "publishedDate": "2026-07-30",
