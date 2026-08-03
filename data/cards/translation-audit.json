@@ -1,61 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-07T07:54:08+09:00",
+  "generatedAt": "2026-08-03T20:20:12+09:00",
   "summary": {
     "auditedCards": 5416,
-    "translated": 4826,
-    "unresolved": 606,
-    "nameJaNull": 606,
-    "missing": 515,
+    "translated": 5106,
+    "unresolved": 326,
+    "nameJaNull": 326,
+    "missing": 235,
     "sameAsEnglish": 0,
     "partialFaces": 91,
     "notAppliedToEvents": 0,
-    "detailWithoutJapaneseName": 590,
+    "detailWithoutJapaneseName": 310,
     "manualOverrides": 3
   },
   "cards": [
-    {
-      "nameEn": "A.I.M. Labs",
-      "oracleId": "8417f2d5-93c9-474a-a143-5c4e17097a88",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "A.I.M. Scientists",
-      "oracleId": "fa732888-5b7d-4087-a6e5-1db1c98fbd4c",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "A.I.M. Synthoids",
-      "oracleId": "10916f33-aaa6-43a1-9835-b60fd061161f",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
     {
       "nameEn": "Aang and La, Ocean's Fury",
       "oracleId": "cbf09050-39d0-463b-96db-9e22011ae0d8",
@@ -138,7 +96,14 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-0712846527",
+        "standard-challenge-32-2026-07-0912847094",
+        "standard-challenge-32-2026-07-1612847673",
+        "standard-challenge-32-2026-07-2312848169",
+        "standard-challenge-32-2026-07-2412848182",
+        "standard-challenge-32-2026-07-2812848245"
+      ]
     },
     {
       "nameEn": "Aang, Swift Savior // Aang and La, Ocean's Fury",
@@ -169,34 +134,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Abomination, Terrifying Titan",
-      "oracleId": "72101185-4336-480a-b4d7-f8ceb0007a51",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Absorbing Man",
-      "oracleId": "ec8e310f-e871-498f-8d80-c3617c5e1433",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Acolyte of Aclazotz",
       "oracleId": "324d2aa8-6dea-4b0d-898d-1e52ed187565",
       "layout": "normal",
@@ -221,118 +158,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Aerial Doombot",
-      "oracleId": "f24efc60-fdac-4a5d-bcbc-784ec5ae6d96",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Agent 13, Sharon Carter",
-      "oracleId": "ddf7201a-6672-416d-be6b-202dafbeccab",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Agent Maria Hill",
-      "oracleId": "a2d90efe-80f2-4069-b135-a8bd00ccd2b0",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Agent of Atlas",
-      "oracleId": "cd403866-bef1-413a-85e2-c86e295b3589",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Agent Phil Coulson",
-      "oracleId": "dae20bcd-dc24-4f9d-9400-a6f013b49f14",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Agents of HYDRA",
-      "oracleId": "31816924-1430-4581-86e8-325e2ca16217",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Agents of S.H.I.E.L.D.",
-      "oracleId": "203b72d2-a273-49cc-bd10-2fbc07ed2fc8",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Alien Invasion",
-      "oracleId": "7c854a07-e031-458e-a335-9c31865020b8",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -368,34 +193,6 @@
       "nameEn": "Ancestral Recall",
       "oracleId": "24a29be4-5bc2-469b-b2ce-2fb305c3facb",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ant-Man, Colony Commander",
-      "oracleId": "b0ed9fbe-324d-467a-a326-c6f85a4c688a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ant-Man's Army",
-      "oracleId": "34c0f75d-10a9-428d-b202-3defb3949090",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -449,76 +246,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Arc Reactor",
-      "oracleId": "55f7b005-31ea-4865-a8f3-460d15bed795",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ares, God of War",
-      "oracleId": "8a09d4a2-4796-4a15-ab75-a3a0b717f62d",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Armor Wars",
-      "oracleId": "1ad83cac-2c85-477b-ab00-1369f9683db5",
-      "layout": "saga",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Arnim Zola, Bio-Fanatic",
-      "oracleId": "95161e23-e4c4-411f-bce5-58a02abc0958",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Asgardian Citadel",
-      "oracleId": "e3614df6-ce84-4180-ade1-a1751e8e3c9a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Ashling, Rekindled",
       "oracleId": "31fc5d8b-94bc-4688-8a84-f15800e717a8",
       "layout": "transform",
@@ -532,7 +259,8 @@
       ],
       "eventIds": [
         "standard-challenge-32-2026-06-2612845647",
-        "standard-challenge-32-2026-06-2612845657"
+        "standard-challenge-32-2026-06-2612845657",
+        "standard-challenge-32-2026-07-1912847716"
       ]
     },
     {
@@ -553,48 +281,6 @@
       "nameEn": "Ashling, Rimebound",
       "oracleId": "31fc5d8b-94bc-4688-8a84-f15800e717a8",
       "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Atlantean Cavalry",
-      "oracleId": "e929b730-9aa2-49e1-9a65-50afc0fbe3e0",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Atlantis Attacks",
-      "oracleId": "b5c8e24a-f4d7-42dc-8117-905ad0bad888",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Attuma, Atlantean Warlord",
-      "oracleId": "e3b70a85-4296-411f-a673-7992b0c8a9aa",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -690,130 +376,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Avengers Assemble!",
-      "oracleId": "3477e1cc-46af-46f4-9ea2-bdf0bf1f880e",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Avengers Disassembled",
-      "oracleId": "34493cf5-7586-48ef-806d-57273b2ab034",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2512845634",
-        "standard-challenge-32-2026-06-2712845665",
-        "standard-challenge-32-2026-06-2712845670",
-        "standard-challenge-32-2026-07-0412846487",
-        "standard-league-2026-06-3010879",
-        "standard-league-2026-07-0110879",
-        "standard-league-2026-07-0310879",
-        "standard-league-2026-07-0610879"
-      ]
-    },
-    {
-      "nameEn": "Avengers Hangar",
-      "oracleId": "10fc2009-4212-47c6-8a97-ab0f45c1f91b",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Avengers Tower",
-      "oracleId": "c5fc8e7c-a87e-4586-a13c-d30e0a3aafbf",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Avengers: Under Siege",
-      "oracleId": "d911cf65-7273-4162-a766-7d4107699dc2",
-      "layout": "saga",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Awaken the Ages",
       "oracleId": "e85c6bd2-db15-4052-88c0-3ae25414f0ca",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Baron Helmut Zemo",
-      "oracleId": "0fe6c042-1182-4392-8938-fee36149d74f",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Baron Strucker, HYDRA Overlord",
-      "oracleId": "c91e64d4-e687-4ccd-a56e-796cff6e052c",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Baxter Building",
-      "oracleId": "71bc69a5-7cec-4abd-b97d-13f8e1f9afac",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -849,20 +414,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Beast, Erudite Aerialist",
-      "oracleId": "191ba5f0-45f4-4b7f-910d-4bd4d2d28b33",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -979,76 +530,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Birnin Zana Plaza",
-      "oracleId": "c3172c5d-c745-4422-b651-cd414c8da11b",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Black Panther, Hope Enduring",
-      "oracleId": "fe00278d-4385-4e3f-919c-12a794fd86f5",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Black Panther, Vanguard",
-      "oracleId": "b0bf1964-c543-4c53-9f09-0dd7c608d5c5",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Black Widow, Double Agent",
-      "oracleId": "e6c181f1-f4f7-4a96-b50c-717cf2a02098",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Black Widow, Super Spy",
-      "oracleId": "579f9a86-a1af-4c2a-a7e5-8fea0bd0eb61",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Blazing Firesinger // Seething Song",
       "oracleId": "1bf505a7-292e-4642-83b6-8ff41ebe5d51",
       "layout": "prepare",
@@ -1105,34 +586,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Bold Biochemist",
-      "oracleId": "45ddfa35-7b3c-4916-b231-dc721b7b56d9",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Borough Backup",
-      "oracleId": "6effbf59-3933-4a77-9a6a-fd3bedf45c26",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Brainstorm",
       "oracleId": "f6036065-7196-44d4-8a27-2199f0e1a03c",
       "layout": "prepare",
@@ -1171,20 +624,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Brave Brawler",
-      "oracleId": "a1a791be-71e6-4c1f-8717-08ca62d40de2",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -1231,48 +670,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Bruce Banner",
-      "oracleId": "b6c0ee14-2028-4e8b-9acd-ff78821bca9b",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Bruce Banner // The Incredible Hulk",
-      "oracleId": "b6c0ee14-2028-4e8b-9acd-ff78821bca9b",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Bullseye, Death Dealer",
-      "oracleId": "10db57b4-f895-4514-b610-2252ba676353",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Cacophony Scorpion",
       "oracleId": null,
       "layout": null,
@@ -1289,20 +686,6 @@
       ]
     },
     {
-      "nameEn": "Call Damage Control",
-      "oracleId": "49a32f34-01a9-4f25-bf38-b4d46ca67b2d",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Callous Sell-Sword",
       "oracleId": "0e7405e3-e9e6-4213-a73f-e0c01a7d6721",
       "layout": "adventure",
@@ -1314,7 +697,10 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-1012847107",
+        "standard-league-2026-07-2910879"
+      ]
     },
     {
       "nameEn": "Callous Sell-Sword // Burn Together",
@@ -1347,90 +733,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Captain America, Living Legend",
-      "oracleId": "67aa946d-e694-494e-ba0c-44880d5bc03e",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Captain America, Super-Soldier",
-      "oracleId": "ac1b6ffc-12a9-4d9c-a9fc-68a839a40738",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Captain America, Wings of Freedom",
-      "oracleId": "942ac2ac-7528-4768-8398-8520a8ee15e5",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Captain America's Shield",
-      "oracleId": "8255a797-ddd3-4db0-a3f5-dd8f38c3b908",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Captain Mar-Vell, Space-Born",
-      "oracleId": "b74c072d-77ac-460d-9d9c-75b25874f58b",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Captain Marvel, Earth's Protector",
-      "oracleId": "2e665a03-bece-43df-bd15-b4496e233f2e",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Careful Study",
       "oracleId": "df5e4100-8c83-42d6-af96-1a1ec84a9210",
       "layout": "prepare",
@@ -1443,24 +745,6 @@
         "nameJaNull"
       ],
       "eventIds": []
-    },
-    {
-      "nameEn": "Castle Doom",
-      "oracleId": "9bd013df-ad75-4099-940b-1765c58faf26",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2512845634",
-        "standard-challenge-32-2026-06-2612845647",
-        "standard-challenge-32-2026-06-2712845665"
-      ]
     },
     {
       "nameEn": "Cheeky House-Mouse",
@@ -1548,20 +832,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Claim the Kingdom",
-      "oracleId": "3cd15225-e9b6-4998-b545-76536c72e948",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Clarion Conqueror",
       "oracleId": "f1266a1b-bae6-4ded-b4d5-7586a5b6c5d0",
       "layout": "normal",
@@ -1574,41 +844,15 @@
         "nameJaNull"
       ],
       "eventIds": [
-        "standard-league-2026-07-0210879"
+        "standard-challenge-32-2026-08-0112849466",
+        "standard-league-2026-07-0210879",
+        "standard-league-2026-07-2910879"
       ]
-    },
-    {
-      "nameEn": "Cloak and Dagger, Entwined",
-      "oracleId": "64132f93-66ac-4794-8c07-a88f9ed0e22b",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
     },
     {
       "nameEn": "Coil and Catch",
       "oracleId": "099b8d2c-b482-48dd-b6bc-dedf546d66c5",
       "layout": "adventure",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Colleen Wing, Street Samurai",
-      "oracleId": "685181dd-0124-4c76-9270-f9dd17e6a221",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -1644,34 +888,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Construct a Cosmic Cube",
-      "oracleId": "369aa9a6-af8a-432c-adff-ced2bb203dc7",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Cosmic Cube",
-      "oracleId": "0866a630-d962-4aa9-a15f-08b2947540ef",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -1718,62 +934,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Crimson Operative",
-      "oracleId": "d8863742-6c1c-415a-ad27-7def6d119c6a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Crossbones, Malicious Mercenary",
-      "oracleId": "ac950d10-e373-42d3-907b-ee56e45a2084",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Crowd of True Believers",
-      "oracleId": "06296d4d-a1b3-4e9a-a2fd-a0183bb892a1",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Cruel Alliance",
-      "oracleId": "6897f9e0-f654-4c0a-9fda-2ad4e264bf9a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Cruel Somnophage",
       "oracleId": "997bdec5-f67b-4822-a3ba-c636e2685e8a",
       "layout": "adventure",
@@ -1802,64 +962,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Daredevil, Man Without Fear",
-      "oracleId": "88aadf60-91f9-4932-a2bc-63365a139d36",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Dark Deed",
-      "oracleId": "e98cd00c-b812-4c6a-81d4-e3f94b64fc58",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Dark Fortress",
-      "oracleId": "40760bfa-a423-487c-ba29-043b2d00c736",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-league-2026-07-0110879"
-      ]
-    },
-    {
-      "nameEn": "Death to Our Enemies",
-      "oracleId": "c2b2b743-dfc7-439e-8563-1ccce54422bd",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Decadent Dragon",
       "oracleId": "5df44b8d-b337-49d8-8427-34253f52cb47",
       "layout": "adventure",
@@ -1884,20 +986,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Decoy Ploy",
-      "oracleId": "035cddbc-39c9-42af-9e26-c88419b43b49",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -1933,34 +1021,6 @@
       "nameEn": "Demonic Tutor",
       "oracleId": "93056597-b964-421f-be2f-e92abef1c2a4",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Dependable Quinjet",
-      "oracleId": "60105eb8-bdca-44b9-a970-68a7615526e8",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Depower",
-      "oracleId": "33f89437-885b-4850-88b7-239f5dfcc8b1",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -2014,76 +1074,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Doc Samson, Super Psychiatrist",
-      "oracleId": "699610c9-c991-4faf-b712-d015ef0799ad",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Doctor Doom",
-      "oracleId": "9e4fa592-71f8-4c71-8c91-78e6326cd736",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Doom Reigns Supreme",
-      "oracleId": "f398a742-22c1-4da9-9d49-fdce2eb93d01",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Earth's Mightiest Heroes",
-      "oracleId": "2b87bcac-ec64-4012-9e75-f459d3640eb3",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Echo, Perceptive Prodigy",
-      "oracleId": "1091c83a-a4b9-457f-a69a-9a44a7e10759",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Eddie Brock",
       "oracleId": "fe01c96b-eb78-4477-bec2-944b2a28c778",
       "layout": "modal_dfc",
@@ -2095,7 +1085,10 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-1612847673",
+        "standard-challenge-32-2026-07-2812848245"
+      ]
     },
     {
       "nameEn": "Eddie Brock // Venom, Lethal Protector",
@@ -2140,20 +1133,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Elektra, Daughter of the Hand",
-      "oracleId": "b46647a1-0c91-451b-8c0b-be8fe02faee2",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Elite Interceptor // Rejoinder",
       "oracleId": "d97de156-5a6d-4dc6-953e-d4bad63cbad2",
       "layout": "prepare",
@@ -2179,7 +1158,10 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-1012847107",
+        "standard-league-2026-07-2910879"
+      ]
     },
     {
       "nameEn": "Elusive Otter // Grove's Bounty",
@@ -2269,34 +1251,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Epic Fight",
-      "oracleId": "4bdfc580-de51-445b-b170-8c6832e44704",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Evil's Thrall",
-      "oracleId": "d7562f89-4808-44ab-8dc9-fc4078e8a47b",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Exude Toxin",
       "oracleId": "7e97a242-0bac-4f18-9228-e98ecca36254",
       "layout": "adventure",
@@ -2314,34 +1268,6 @@
       "nameEn": "Faith & Grief",
       "oracleId": "4f4358cb-59df-46d9-be27-69929f5a615c",
       "layout": "adventure",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Falcon, Winged Wonder",
-      "oracleId": "92e222c2-28e6-4d43-8b48-480ebcd88495",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Falcon's Wing Harness",
-      "oracleId": "e69db5f0-beed-48e8-bc25-768b1e8be5ea",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -2451,37 +1377,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Fin Fang Foom",
-      "oracleId": "52ec472e-a745-4e25-b9a7-8e1eb8873594",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Fire Lord Sozin",
       "oracleId": "9b0b217d-cc9d-4187-89cb-f13160ed2983",
       "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Fisk Tower",
-      "oracleId": "5554db95-9676-4c24-b82a-8173513d7927",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -2578,36 +1476,8 @@
       ]
     },
     {
-      "nameEn": "Frozen in Ice",
-      "oracleId": "82fa14d8-5019-4e1b-a86c-923d9292b87a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Fungal Fortitude",
       "oracleId": "cf73d2e7-584f-41d0-8fc7-50d886dcf9fe",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Futurist Forge",
-      "oracleId": "0e5f97b5-bb8c-4688-a141-5db4d4eeccf0",
       "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
@@ -2648,53 +1518,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Gathering Place",
-      "oracleId": "36b58705-c5a5-4547-8d8b-a7c35e1f69ae",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-07-0512846507"
-      ]
-    },
-    {
       "nameEn": "Ghost-Spider",
       "oracleId": "5f143d87-35fb-40e3-94ae-f85cfff9adb5",
       "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ghost, Spectral Saboteur",
-      "oracleId": "88f34d15-c338-40a7-b56c-c5b650847430",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Giant-Sized Flying Ant",
-      "oracleId": "233e3b4b-faaf-451d-8a2e-e9f5a6ced671",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -2730,36 +1556,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Gleaming Bastion",
-      "oracleId": "7785ffd4-f169-475d-9558-ce4877b3378a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-league-2026-07-0210879"
-      ]
-    },
-    {
-      "nameEn": "Go Nuts!",
-      "oracleId": "0efe1357-bfbb-42c0-9cc9-6a919d686c66",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -2848,20 +1644,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Grim Reaper, Lethal Legionnaire",
-      "oracleId": "edf429a8-6a4d-4d2a-b0ca-c0c72a0698a3",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Grub, Notorious Auntie",
       "oracleId": "180286e4-67fa-44d5-9e90-4a4e99c016a7",
       "layout": "transform",
@@ -2893,20 +1675,6 @@
       "nameEn": "Grub, Storied Matriarch // Grub, Notorious Auntie",
       "oracleId": "180286e4-67fa-44d5-9e90-4a4e99c016a7",
       "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Guerrilla Gorilla",
-      "oracleId": "6cb65b68-91b2-45ba-867b-3b31d6dd5643",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -2957,26 +1725,14 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-1612847673"
+      ]
     },
     {
       "nameEn": "Gwen Stacy // Ghost-Spider",
       "oracleId": "5f143d87-35fb-40e3-94ae-f85cfff9adb5",
       "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "H.E.R.B.I.E. Scout Unit",
-      "oracleId": "393ff8c5-4da0-4290-b498-222cc0244026",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -3005,48 +1761,6 @@
       "nameEn": "Have a Bite",
       "oracleId": "02125db4-4507-467a-ac0c-406de2c7d533",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hawkeye, Master Marksman",
-      "oracleId": "6b59bb1f-f2d4-4d47-bd57-23927d588381",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hawkeye, Young Avenger",
-      "oracleId": "c8f8b4ed-8455-45cd-a24c-e2f42cd5e5b1",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hawkeye's Bow",
-      "oracleId": "83798eb8-b14f-4620-bce2-1a6804a24dc7",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -3099,7 +1813,34 @@
       ],
       "eventIds": [
         "standard-challenge-32-2026-07-0312846464",
-        "standard-challenge-32-2026-07-0412846487"
+        "standard-challenge-32-2026-07-0412846487",
+        "standard-challenge-32-2026-07-0712846527",
+        "standard-challenge-32-2026-07-0912847094",
+        "standard-challenge-32-2026-07-1012847107",
+        "standard-challenge-32-2026-07-1012847117",
+        "standard-challenge-32-2026-07-1012847168",
+        "standard-challenge-32-2026-07-1112847125",
+        "standard-challenge-32-2026-07-1212847148",
+        "standard-challenge-32-2026-07-1412847168",
+        "standard-challenge-32-2026-07-1512847697",
+        "standard-challenge-32-2026-07-1612847673",
+        "standard-challenge-32-2026-07-1712847680",
+        "standard-challenge-32-2026-07-1712847684",
+        "standard-challenge-32-2026-07-1812847697",
+        "standard-challenge-32-2026-07-1912847716",
+        "standard-challenge-32-2026-07-2012847725",
+        "standard-challenge-32-2026-07-2412848192",
+        "standard-challenge-32-2026-07-2512848205",
+        "standard-challenge-32-2026-07-2612848225",
+        "standard-challenge-32-2026-07-2712848235",
+        "standard-challenge-32-2026-07-2812848245",
+        "standard-challenge-32-2026-07-3012849430",
+        "standard-challenge-32-2026-07-3112849443",
+        "standard-league-2026-07-0810879",
+        "standard-league-2026-07-2110879",
+        "standard-league-2026-07-2910879",
+        "standard-league-2026-07-3110879",
+        "standard-league-2026-08-0110879"
       ]
     },
     {
@@ -3126,144 +1867,9 @@
       ]
     },
     {
-      "nameEn": "Helicarrier Strike",
-      "oracleId": "ca3cda24-0ecd-4edf-b1b3-54311ad58a51",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hell's Kitchen",
-      "oracleId": "1337d89e-a883-4568-a14f-9ca3305cc3df",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hellcat, Undying Vigilante",
-      "oracleId": "4c27ba61-6812-4dd7-8efc-65435a8df7b5",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hercules, Prince of Power",
-      "oracleId": "c3a8cc79-3771-484d-84dd-1a97f8bd12c2",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hero in Training",
-      "oracleId": "87f1a840-021c-4699-a2c4-f2926daf98eb",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Heroic Feast",
-      "oracleId": "31cae00a-3a74-4a59-80b0-a656f524e878",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Heroic Stanza",
       "oracleId": "2f5f46ed-b8aa-4864-bd20-17281d4632bf",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hex Magic",
-      "oracleId": "2283729c-11db-471c-9f63-46092c97bd00",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hidden Lair",
-      "oracleId": "7069d241-4e66-40bf-afd1-551a4a5457f0",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2612845657",
-        "standard-challenge-32-2026-06-2712845665",
-        "standard-challenge-32-2026-06-2812845690",
-        "standard-challenge-32-2026-07-0312846474",
-        "standard-challenge-32-2026-07-0412846482",
-        "standard-league-2026-06-2810879",
-        "standard-league-2026-07-0310879",
-        "standard-league-2026-07-0610879"
-      ]
-    },
-    {
-      "nameEn": "Hire a Crew",
-      "oracleId": "6eb7a870-b626-4326-9e4c-45193f8ce138",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -3345,146 +1951,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Hour of Defeat",
-      "oracleId": "2774fcb7-8988-4a18-b5ec-7534dd8b2e05",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "HULK SMASH!",
-      "oracleId": "5f97d49c-d0fa-4776-9455-93c1a172cd83",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hulk, Gamma Goliath",
-      "oracleId": "3508fd7d-ca02-47f9-8b0a-525f7bde4f57",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hulkling, Burgeoning Bruiser",
-      "oracleId": "03c934a6-be57-480d-8c84-4e46d9ccb406",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Human Torch, Johnny Storm",
-      "oracleId": "5b6f2770-e774-4a77-801f-a3fda093c3dd",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "HYDRA Assault Robot",
-      "oracleId": "a2558476-5506-4a09-93fc-b8ab33c98985",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "HYDRA Infiltration",
-      "oracleId": "27692079-a517-4d38-b452-7409980b5912",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "HYDRA Troopers",
-      "oracleId": "6de67fad-0d01-443d-9ae0-4126ae903069",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Hydraulic Helper",
-      "oracleId": "503928cd-1abd-44cd-92c3-6dc19bb07f78",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "I Am Iron Man",
-      "oracleId": "deb16a9a-2fa9-4ad3-bb20-7c16066e3d14",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Imodane's Recruiter",
       "oracleId": "50bee80e-89df-48c2-b608-ba66ff3e794a",
       "layout": "adventure",
@@ -3555,95 +2021,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Invisible Woman, Sue Storm",
-      "oracleId": "e9d20b6d-fa4f-473b-9866-230fd92a1319",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Iron Fist, Living Weapon",
-      "oracleId": "bbf873c2-94c1-46b8-912e-e29e48e0212c",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Iron Lad, Diverging Destiny",
-      "oracleId": "3e715032-0d21-441b-b2d4-c91084728718",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Iron Man Armor",
-      "oracleId": "958d81c2-ca09-4275-890e-3bb595317325",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2512845634",
-        "standard-challenge-32-2026-06-2612845647"
-      ]
-    },
-    {
-      "nameEn": "Iron Man, Master of Machines",
-      "oracleId": "94bc796d-8c04-4835-8a99-7e5dce9540ee",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ironheart, Clever Champion",
-      "oracleId": "df3d5b86-7b75-4df9-8985-7159cde12261",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2712845665"
-      ]
-    },
-    {
       "nameEn": "Ishgard, the Holy See",
       "oracleId": "4f4358cb-59df-46d9-be27-69929f5a615c",
       "layout": "adventure",
@@ -3700,69 +2077,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Jennifer Walters",
-      "oracleId": "c867a778-97ef-4872-b890-b088b96a1281",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2512845634",
-        "standard-challenge-32-2026-06-2612845647",
-        "standard-challenge-32-2026-06-2612845657",
-        "standard-challenge-32-2026-06-2712845665",
-        "standard-challenge-32-2026-06-2712845670",
-        "standard-challenge-32-2026-06-2812845690",
-        "standard-challenge-32-2026-06-2912845700",
-        "standard-challenge-32-2026-06-3012845710",
-        "standard-challenge-32-2026-07-0212846451",
-        "standard-challenge-32-2026-07-0312846464",
-        "standard-challenge-32-2026-07-0312846474",
-        "standard-challenge-32-2026-07-0412846482",
-        "standard-challenge-32-2026-07-0412846487",
-        "standard-challenge-32-2026-07-0512846507",
-        "standard-league-2026-06-2710879",
-        "standard-league-2026-06-2910879",
-        "standard-league-2026-07-0310879",
-        "standard-league-2026-07-0410879",
-        "standard-league-2026-07-0510879",
-        "standard-league-2026-07-0610879"
-      ]
-    },
-    {
-      "nameEn": "Jennifer Walters // The Sensational She-Hulk",
-      "oracleId": "c867a778-97ef-4872-b890-b088b96a1281",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Jessica Jones, Private Eye",
-      "oracleId": "6677cd5a-0785-499b-ba99-f6bdcfb196d5",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Jidoor, Aristocratic Capital",
       "oracleId": "bd513d9d-5aa2-4860-bd86-8b5d9430f133",
       "layout": "adventure",
@@ -3808,76 +2122,6 @@
       "nameEn": "Jump",
       "oracleId": "d6accaed-ff35-4324-b31b-35e6837bc079",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Justice, Vance Astrovik",
-      "oracleId": "184dba74-63ed-4820-9174-68adf26bfabf",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "K'un-Lun Warrior",
-      "oracleId": "0618a217-2a6e-4fa1-bfe6-89c6612a594d",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ka-Zar of the Savage Land",
-      "oracleId": "88eeb519-5782-4732-bd34-81d1ee6dbc8f",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Kang the Conqueror",
-      "oracleId": "da6e24a4-8adc-41a1-b5eb-3e31dc1250c9",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Kang, Temporal Tyrant",
-      "oracleId": "b43350a8-fc4d-41ed-becd-f0277512bb5f",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -4005,76 +2249,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Kid Loki",
-      "oracleId": "19ef0329-08de-4835-8079-2e791e19f3a6",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Killmonger, Scourge of Wakanda",
-      "oracleId": "1c3ba54a-a8ef-4838-b3aa-cb6df827a619",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "King T'Challa",
-      "oracleId": "fe00278d-4385-4e3f-919c-12a794fd86f5",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "King T'Challa // Black Panther, Hope Enduring",
-      "oracleId": "fe00278d-4385-4e3f-919c-12a794fd86f5",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Kingpin's Enforcers",
-      "oracleId": "342df67f-44d8-4b0a-b1d7-4241966d0598",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Kirol, History Buff // Pack a Punch",
       "oracleId": "df1c0d06-2109-4297-9271-8a003fc892bc",
       "layout": "prepare",
@@ -4085,62 +2259,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Klaw, Sonic Subjugator",
-      "oracleId": "1c233e08-d5a3-48d7-9074-20393896a480",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Knight of Wundagore",
-      "oracleId": "39145960-a212-46b4-addb-4b187f6bf6fd",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Kree Commandos",
-      "oracleId": "09eb988a-e2eb-42e1-a786-01be63d2263f",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Kree Sentinel",
-      "oracleId": "3c2b9bb2-8201-47e8-84d5-f3518cac03cb",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -4177,20 +2295,6 @@
       "nameEn": "Lasting Fayth",
       "oracleId": "5f2b3ea8-99ee-47a4-8a1c-4b27478d524c",
       "layout": "adventure",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Leader, Super-Genius",
-      "oracleId": "bec686dd-a9ea-4db5-bc20-8e40420b9a9b",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -4241,7 +2345,9 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-0612846517"
+      ]
     },
     {
       "nameEn": "Lindblum, Industrial Regency // Mage Siege",
@@ -4287,128 +2393,8 @@
       "eventIds": []
     },
     {
-      "nameEn": "Loki Laufeyson",
-      "oracleId": "9c78778a-6335-4949-8ade-11d0f085cb2b",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Loki, God of Mischief",
-      "oracleId": "c112852f-61d5-4b94-b864-c7d0b5333b29",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Los Diablos Missile Base",
-      "oracleId": "4b17048f-8c7f-4e29-8f56-16db4c2106e6",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Lotusguard Disciple",
       "oracleId": "1139ee31-cb6e-4ae6-a08b-252c46b2db97",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Luke Cage, Power Man",
-      "oracleId": "c95d1558-09a4-4dbc-b08a-fe21b47bc5d2",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "M.O.D.O.K.",
-      "oracleId": "fe7cc414-42d0-4dad-8516-7a0be0860a67",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2612845657",
-        "standard-challenge-32-2026-06-2712845665",
-        "standard-challenge-32-2026-06-2812845690",
-        "standard-challenge-32-2026-07-0312846474",
-        "standard-challenge-32-2026-07-0412846482",
-        "standard-league-2026-06-2810879",
-        "standard-league-2026-07-0610879"
-      ]
-    },
-    {
-      "nameEn": "Machinesmith Automaton",
-      "oracleId": "945e8443-9647-4eab-b091-ee8e7bc347f5",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Madame Hydra",
-      "oracleId": "d812c8e3-a475-4ad2-a93f-7208ad873676",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Madame Masque",
-      "oracleId": "b5b0e85f-6651-4667-829c-2253ff8b130d",
       "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
@@ -4474,7 +2460,9 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-1912847716"
+      ]
     },
     {
       "nameEn": "Marang River Regent // Coil and Catch",
@@ -4530,7 +2518,10 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-1612847673",
+        "standard-challenge-32-2026-07-2812848245"
+      ]
     },
     {
       "nameEn": "Miles Morales // Ultimate Spider-Man",
@@ -4575,188 +2566,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Mister Fantastic, Reed Richards",
-      "oracleId": "7fa5237e-dd79-4646-b935-cb8c6ee803ab",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Mister Hyde, Monster Within",
-      "oracleId": "4a7c7ecc-df72-4da0-af35-dd0af58ec02c",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Misty Knight, Hero for Hire",
-      "oracleId": "5b090ba3-0ecb-4585-b5b7-9d6028c32487",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Mjölnir, Hammer of Thor",
-      "oracleId": "7f9a8845-d760-44a7-a4c9-8a20dba4e14a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Mockingbird, Ace Agent",
-      "oracleId": "1fd00656-83ba-4feb-b089-224007936b99",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Mole Man, Moloid Master",
-      "oracleId": "34994475-b914-44f6-8ca1-c2747b6d5956",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Monica Rambeau",
-      "oracleId": "8dd929cb-0fe1-4cb3-bc8d-96ca37f194f3",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Monica Rambeau // Photon, Living Light",
-      "oracleId": "8dd929cb-0fe1-4cb3-bc8d-96ca37f194f3",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Moon Girl and Devil Dinosaur",
-      "oracleId": "bfe0818b-ae13-4174-85c8-24b895d28df0",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Moonstone, Harsh Mistress",
-      "oracleId": "aeeb50f2-8e02-4d40-a1dd-28b1c5c85c7e",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ms. Marvel, Kamala Khan",
-      "oracleId": "ebedff30-ae43-4861-aab2-afe1fc88337e",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Multiversal Incursion",
-      "oracleId": "d3678fce-6897-4f2c-bf50-243facb6581b",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Murdock's Crusade",
-      "oracleId": "36330947-5ef9-4bff-b541-bfbddd9715a3",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Mysterious Limbs",
       "oracleId": null,
       "layout": null,
@@ -4769,27 +2578,6 @@
       ],
       "eventIds": [
         "standard-challenge-32-2026-06-30"
-      ]
-    },
-    {
-      "nameEn": "Namor the Sub-Mariner",
-      "oracleId": "dff11626-ad4d-443a-b7db-f508790b5fd2",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2612845647",
-        "standard-challenge-32-2026-06-2612845657",
-        "standard-challenge-32-2026-06-2712845665",
-        "standard-challenge-32-2026-06-2712845670",
-        "standard-challenge-32-2026-06-3012845710",
-        "standard-league-2026-07-0310879"
       ]
     },
     {
@@ -4810,48 +2598,6 @@
       "nameEn": "Nia, Skysail Storyteller",
       "oracleId": "5f143d87-35fb-40e3-94ae-f85cfff9adb5",
       "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Nick Fury, Agent of S.H.I.E.L.D.",
-      "oracleId": "62916107-14c0-4516-9fed-a032b1a80e5d",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Night Nurse, Healer of Heroes",
-      "oracleId": "e3559565-0512-4525-addb-bf27903bcd13",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ninja of the Hand",
-      "oracleId": "c38f7447-e646-438d-81bd-fe2a71c8a79c",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -4961,37 +2707,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Okoye, Dora Milaje Leader",
-      "oracleId": "6d397d26-7e52-47b2-9880-2c10e90cfba4",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Oracle's Gift",
       "oracleId": "c63b3511-d597-4c6e-9094-eabdeaa8a394",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Origin of the Avengers",
-      "oracleId": "d7f3178d-7b7c-4346-af50-a7b0206bee22",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -5042,21 +2760,9 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Panther Pounce",
-      "oracleId": "ead0820e-fc6b-4ab2-9110-048d6d53985d",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-2412848182"
+      ]
     },
     {
       "nameEn": "Paradox Gardens",
@@ -5073,37 +2779,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Patriot, Shield Wielder",
-      "oracleId": "1df7a09f-fbc8-4c2a-a903-bab9e680eda7",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Pest Friend",
       "oracleId": "cb125cd4-c7c2-415d-b802-bdcfc2454403",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Pet Avengers",
-      "oracleId": "bbee7921-19c9-4c70-8462-f16e7e9c25db",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -5163,8 +2841,24 @@
         "standard-challenge-32-2026-07-0312846464",
         "standard-challenge-32-2026-07-0312846474",
         "standard-challenge-32-2026-07-0412846482",
+        "standard-challenge-32-2026-07-0712846527",
+        "standard-challenge-32-2026-07-0912847094",
+        "standard-challenge-32-2026-07-1012847107",
+        "standard-challenge-32-2026-07-1712847680",
+        "standard-challenge-32-2026-07-2112847734",
+        "standard-challenge-32-2026-07-2312848169",
+        "standard-challenge-32-2026-07-2412848182",
+        "standard-challenge-32-2026-07-2512848200",
+        "standard-challenge-32-2026-07-3012849430",
+        "standard-challenge-32-2026-08-0112849461",
+        "standard-challenge-32-2026-08-0112849466",
         "standard-league-2026-06-2610879",
-        "standard-league-2026-07-0310879"
+        "standard-league-2026-07-0310879",
+        "standard-league-2026-07-0810879",
+        "standard-league-2026-07-1110879",
+        "standard-league-2026-07-1310879",
+        "standard-league-2026-07-1910879",
+        "standard-league-2026-08-0110879"
       ]
     },
     {
@@ -5182,34 +2876,6 @@
         "standard-challenge-32-2026-06-30",
         "standard-league-2026-06-30"
       ]
-    },
-    {
-      "nameEn": "Photon Blast Barrage",
-      "oracleId": "a5424e33-ff4e-4c82-8aa9-9d25ced7830a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Photon, Living Light",
-      "oracleId": "8dd929cb-0fe1-4cb3-bc8d-96ca37f194f3",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
     },
     {
       "nameEn": "Picnic Ruiner",
@@ -5250,20 +2916,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Political Triumph",
-      "oracleId": "0bbceb51-1fb8-44d7-8afc-b4746d292262",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -5310,48 +2962,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Powerful Broker",
-      "oracleId": "2b3d76e7-faaa-4e6f-9e21-a88dd719247e",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Project Deathlok Soldier",
-      "oracleId": "d89aa87a-d59a-41e2-b92f-15c9bc6d3d13",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Punishing Punch",
-      "oracleId": "454c4e8b-e417-4381-a931-6a11356ef64e",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Purging Stormbrood",
       "oracleId": "5e8086d5-ea48-4555-b65a-a33d08ba4afd",
       "layout": "adventure",
@@ -5380,48 +2990,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Pym Particles",
-      "oracleId": "636b44dc-f7e4-42d2-abf6-ae49432b6052",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Pym Technologies",
-      "oracleId": "5a8977fc-0732-4807-b876-01819aedd70b",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Quake, Agent of S.H.I.E.L.D.",
-      "oracleId": "3966c94b-e597-4b3f-a4f5-001d52fff9fe",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Questing Druid",
       "oracleId": "555df32f-f8e9-49af-bc4a-1194ea325a97",
       "layout": "adventure",
@@ -5433,7 +3001,12 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-2012847725",
+        "standard-challenge-32-2026-07-2112847734",
+        "standard-challenge-32-2026-07-2512848205",
+        "standard-challenge-32-2026-07-2812848245"
+      ]
     },
     {
       "nameEn": "Questing Druid // Seek the Beast",
@@ -5450,20 +3023,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Quicksilver, Brash Blur",
-      "oracleId": "b76ce131-e51a-445e-8216-00df5904ab93",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Quill-Blade Laureate // Twofold Intent",
       "oracleId": "bd9d3a70-faed-4bc6-97d8-1601b36cdb21",
       "layout": "prepare",
@@ -5474,20 +3033,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Raft Security Officer",
-      "oracleId": "60754d4b-2add-4928-8d30-8ce9c0f54f91",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -5509,20 +3054,6 @@
       "nameEn": "Rampant Growth",
       "oracleId": "58b0c737-0a84-4f9a-b3b7-300c5de43874",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Rapid Rescue",
-      "oracleId": "de1ad369-5aa3-4c54-8fb1-30b7f1d4d542",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -5590,48 +3121,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Red Guardian, Super-Soldier",
-      "oracleId": "e85567e8-1102-4d44-a15b-d5f1fdef8465",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Red Hulk",
-      "oracleId": "a14a838a-49f4-45e3-9ec0-3c803af45a68",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Red Room Recruit",
-      "oracleId": "4e60c38c-cbf5-4ff7-8fff-634f7e3086cc",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Regrowth",
       "oracleId": "e5152e8d-9f55-493d-a0fc-753cc72ee299",
       "layout": "prepare",
@@ -5660,121 +3149,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Reptil, Dinomorpher",
-      "oracleId": "c6284597-1983-4a21-a461-724135220e0d",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Repulsor Blast",
-      "oracleId": "150f920c-c942-4feb-824f-79dd9b531687",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Restorative Technique",
-      "oracleId": "f7b2606c-42b8-46d6-bcaa-8d4506b348eb",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Rewrite History",
-      "oracleId": "f91c860e-3feb-4a5a-b7ef-4e7d38d61c75",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Rick Jones, Destined Sidekick",
-      "oracleId": "4bccfa67-0c6f-42a1-b8d4-0842a8230d1e",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Robot Domination",
-      "oracleId": "4f69d2f9-c16a-4752-9026-794a29d73af8",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Rocket Volley",
       "oracleId": "03931270-504a-4b0b-af3f-918bf124ea07",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ronin, Shadow Stalker",
-      "oracleId": "8ceb1acf-5ff3-4f1a-af04-9f07ad454526",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Roxxon Brutes",
-      "oracleId": "b92c2da9-eaa4-404b-8114-5527eec6390e",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -5828,62 +3205,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "S.H.I.E.L.D. Deployment Drone",
-      "oracleId": "c1669020-8f81-471a-9083-7e9ce3e8f387",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "S.H.I.E.L.D. Flying Car",
-      "oracleId": "12d51534-a98d-487b-9ba9-c10861dff992",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "S.H.I.E.L.D. Helicarrier",
-      "oracleId": "0f2335bf-6a13-4483-997a-fd19d30c4d48",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "S.H.I.E.L.D. Spy Kit",
-      "oracleId": "6fd44fb9-3433-4cb0-95a4-4ac8170b2166",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Sagu Wildling",
       "oracleId": "7cee6d43-5dec-4989-85ec-c635ec783ec7",
       "layout": "adventure",
@@ -5926,20 +3247,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Savage Land Dinosaur",
-      "oracleId": "6e21ebdf-b97c-494e-a1d5-19db1b7d3016",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Sawblade Schemer",
       "oracleId": null,
       "layout": null,
@@ -5966,7 +3273,9 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-league-2026-07-2110879"
+      ]
     },
     {
       "nameEn": "Scalding Viper // Steam Clean",
@@ -6039,37 +3348,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Scientist Supreme of A.I.M.",
-      "oracleId": "c09c424b-6aba-4190-9f55-f0307d746386",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Scrollboost",
       "oracleId": "c77ddcac-ce54-4348-bde2-5d9caf3d5b04",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Secret Invasion",
-      "oracleId": "25443ea4-3177-4e29-a2b1-f3fee60b3205",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -6139,51 +3420,6 @@
       ]
     },
     {
-      "nameEn": "Serpent Specialist",
-      "oracleId": "556f127f-6131-4171-b1ed-11420c21d345",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Shang-Chi, Master of Kung Fu",
-      "oracleId": "700ef9c8-698b-45f7-a1fd-dec74e553224",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-3012845710",
-        "standard-league-2026-06-2510879"
-      ]
-    },
-    {
-      "nameEn": "She-Hulk, Jade Defender",
-      "oracleId": "bbd0a2a4-f81b-4a6b-bc4d-d7e53dc51333",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Shivan Sands",
       "oracleId": null,
       "layout": null,
@@ -6223,20 +3459,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Shuri, Wakandan Inventor",
-      "oracleId": "a8c047fc-20a9-4c62-b8a6-9ead56d60ad0",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -6313,34 +3535,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Speed, Young Avenger",
-      "oracleId": "2fb0f2d2-ed1f-4181-91f2-684a71c34998",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Speedball, New Warrior",
-      "oracleId": "53d3ef8f-8e0f-4119-8cdc-a0bf076b4e91",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Spellbook Seeker // Careful Study",
       "oracleId": "df5e4100-8c83-42d6-af96-1a1ec84a9210",
       "layout": "prepare",
@@ -6383,34 +3577,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Spider-Man, To the Rescue",
-      "oracleId": "85dec6cf-6f27-4eb0-834b-5f6fbbe25fc8",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Spider-Woman, Secret Agent",
-      "oracleId": "04e53f36-9f16-4678-9caf-9afda85f76b4",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Spiritcall Enthusiast // Scrollboost",
       "oracleId": "c77ddcac-ce54-4348-bde2-5d9caf3d5b04",
       "layout": "prepare",
@@ -6438,6 +3604,16 @@
       ],
       "eventIds": [
         "standard-challenge-32-2026-06-2612845657",
+        "standard-challenge-32-2026-07-1012847117",
+        "standard-challenge-32-2026-07-1612847673",
+        "standard-challenge-32-2026-07-1712847680",
+        "standard-challenge-32-2026-07-2012847725",
+        "standard-challenge-32-2026-07-2112847734",
+        "standard-challenge-32-2026-07-2312848169",
+        "standard-challenge-32-2026-07-2512848205",
+        "standard-challenge-32-2026-07-2612848225",
+        "standard-challenge-32-2026-07-2812848245",
+        "standard-challenge-32-2026-07-3012849430",
         "standard-league-2026-07-0610879"
       ]
     },
@@ -6454,78 +3630,6 @@
         "nameJaNull"
       ],
       "eventIds": []
-    },
-    {
-      "nameEn": "Stark Industries",
-      "oracleId": "52401cb4-1bce-4191-9220-0d93ea4108b8",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Stark Industries Executive",
-      "oracleId": "7c07970d-063a-44a1-9761-b80aafa90dac",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Stature, Size Shifter",
-      "oracleId": "bd49a05c-ed51-4d69-ab9b-11192442ec17",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Stolen Stark Tech",
-      "oracleId": "51023277-5434-4913-b9dc-df2a3fde1652",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Storm, Windrider",
-      "oracleId": "06e9287b-56d4-443e-97ba-b5dcdc4fa989",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-league-2026-06-2410879"
-      ]
     },
     {
       "nameEn": "Stormkeld Vanguard",
@@ -6654,132 +3758,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Subterranean Cavern",
-      "oracleId": "d49a7525-eca5-48e1-b94b-d618a706fd02",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Super Intelligence",
-      "oracleId": "d82929f2-57ad-45be-a834-984437046026",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Super Speed",
-      "oracleId": "88923ca1-a793-42f0-b9f8-ed9ff9c1185d",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Super Strength",
-      "oracleId": "e1b577ad-1488-43b5-83d9-e40bd60c74be",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Super Suit",
-      "oracleId": "606092eb-8fe3-4ef7-aaf1-2d3b2687d27a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Super Villain Lockup",
-      "oracleId": "192e150a-96b0-42d6-9d39-03d0bed61f41",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Super-Adaptoid",
-      "oracleId": "f93fa6ec-1f13-4109-aa60-11e148f7ba88",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Super-Skrull",
-      "oracleId": "4644013f-c96a-450e-a7bc-ddfa7a563050",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Super-Soldier Serum",
-      "oracleId": "6f2ba142-5e7c-4709-ae03-e028cb2a9872",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Surris, Silk-Tech Vanguard",
       "oracleId": "f1b7488c-c675-42e9-818a-24a50347ec2c",
       "layout": "modal_dfc",
@@ -6808,37 +3786,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Surveillance Room",
-      "oracleId": "a3648376-dc8b-409b-b2d1-c29e326a059c",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Swords to Plowshares",
       "oracleId": "e6c41473-2398-4888-9f0c-467dce7c39a4",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Swordsman, Sharp Scoundrel",
-      "oracleId": "2f15abe7-54aa-40ed-a15d-5b827f1c3923",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -6920,34 +3870,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Taskmaster, Mercenary Mimic",
-      "oracleId": "dcd97730-b793-4c0c-b158-625ac3656b4a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Team Tactics",
-      "oracleId": "98b99d7c-d006-471a-8583-0468743c1597",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Tempest Hart",
       "oracleId": "5005df36-a100-492d-89b9-e221793cfb56",
       "layout": "adventure",
@@ -6991,90 +3913,6 @@
       ]
     },
     {
-      "nameEn": "Thanos, the Mad Titan",
-      "oracleId": "090d815b-b2c8-48cd-a0b3-dc662d5352ac",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Astonishing Ant-Man",
-      "oracleId": "6c7e4e51-099a-4398-a4b7-e2f0ddd36429",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Coming of Galactus",
-      "oracleId": "e05f23ba-f2b2-4c40-83fa-8defce3cb978",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Incredible Hulk",
-      "oracleId": "b6c0ee14-2028-4e8b-9acd-ff78821bca9b",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Invincible Iron Man",
-      "oracleId": "4a46ea59-6c5d-4bed-9951-b5590f9a1bdb",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Kingpin of Crime",
-      "oracleId": "3eeeb159-aa45-4a9b-9618-8542604b9830",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "The Legend of Kuruk",
       "oracleId": "201b8936-18f4-4881-a1d4-c308cf3832bf",
       "layout": "transform",
@@ -7089,7 +3927,12 @@
       "eventIds": [
         "standard-challenge-32-2026-06-2612845647",
         "standard-challenge-32-2026-06-2612845657",
-        "standard-challenge-32-2026-06-3012845710"
+        "standard-challenge-32-2026-06-3012845710",
+        "standard-challenge-32-2026-07-0912847094",
+        "standard-challenge-32-2026-07-1112847125",
+        "standard-challenge-32-2026-07-1712847684",
+        "standard-challenge-32-2026-07-3012849430",
+        "standard-league-2026-07-0810879"
       ]
     },
     {
@@ -7191,50 +4034,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "The Masters of Evil",
-      "oracleId": "fcb1caea-e1ac-48f0-a67a-d4aadad490d9",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Mighty Thor, Jane Foster",
-      "oracleId": "57d02dc8-e22e-4874-9f02-490a2528a28f",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Mind Stone",
-      "oracleId": "b175e826-09e8-4fae-9f2e-b902f95b282d",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2612845647"
-      ]
-    },
-    {
       "nameEn": "The Rise of Sozin",
       "oracleId": "9b0b217d-cc9d-4187-89cb-f13160ed2983",
       "layout": "transform",
@@ -7246,7 +4045,11 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-3012849430",
+        "standard-league-2026-07-3010879",
+        "standard-league-2026-08-0110879"
+      ]
     },
     {
       "nameEn": "The Rise of Sozin // Fire Lord Sozin",
@@ -7261,195 +4064,6 @@
         "nameJaNull"
       ],
       "eventIds": []
-    },
-    {
-      "nameEn": "The Ruinous Wrecking Crew",
-      "oracleId": "0ff9c0cc-4fb3-4117-9a8e-5b51f62306c4",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Scarlet Witch",
-      "oracleId": "d8ae8c38-501e-44ea-9faf-cf9d11ba6616",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Sensational She-Hulk",
-      "oracleId": "c867a778-97ef-4872-b890-b088b96a1281",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Sentry, Golden Guardian",
-      "oracleId": "1fe549c3-79be-40ef-b57c-de59f24df5ab",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-league-2026-06-2410879"
-      ]
-    },
-    {
-      "nameEn": "The Serpent Society",
-      "oracleId": "3688ad0d-653b-4d5d-a57e-444db679d83e",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Super Hero Civil War",
-      "oracleId": "11d74dc2-8c11-4d4b-b727-8216d2eb6b4e",
-      "layout": "saga",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Ten Rings",
-      "oracleId": "a82d855c-50c8-43f2-99ba-a84fe84539c5",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Thing, Ben Grimm",
-      "oracleId": "d566d5f1-5abd-405b-8553-d267ecbe72ab",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Unbeatable Squirrel Girl",
-      "oracleId": "80312910-5d53-44f1-9982-e46dc7532abb",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-3012845710",
-        "standard-league-2026-06-2510879"
-      ]
-    },
-    {
-      "nameEn": "The Vision",
-      "oracleId": "32aee76a-e738-4898-985a-801d1cce15ea",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Wondrous Wasp",
-      "oracleId": "5ad8963b-8091-4787-9147-20a1fe7bf0fb",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Thor Odinson",
-      "oracleId": "ec9b74d0-e4fe-4764-b628-992a62f2a1cf",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Thor, God of Thunder",
-      "oracleId": "2842217a-173e-4879-8b25-fefe2fc1123f",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-league-2026-07-0310879"
-      ]
     },
     {
       "nameEn": "Threadbind Clique",
@@ -7480,134 +4094,8 @@
       "eventIds": []
     },
     {
-      "nameEn": "Thunderbolts Conspiracy",
-      "oracleId": "d90a5213-3363-4cd1-97d6-4fc057f78b2a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Tigra, Feline Fury",
-      "oracleId": "39d993be-30ad-4756-a494-fd8808d474c9",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Titan's Grave",
       "oracleId": "595f0eb5-f521-4174-9c48-b89e85ea907c",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Titania, Rugged Rumbler",
-      "oracleId": "e380e37d-926b-4a4b-a275-7844bf4956d5",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Tony Stark",
-      "oracleId": "4a46ea59-6c5d-4bed-9951-b5590f9a1bdb",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Tony Stark // The Invincible Iron Man",
-      "oracleId": "4a46ea59-6c5d-4bed-9951-b5590f9a1bdb",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Too Evil to Stay Dead",
-      "oracleId": "e50fecff-8872-42f5-8882-41ad13d9d1ae",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Training Compound",
-      "oracleId": "99c70f4e-de8a-426d-99aa-17b2f87625ba",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Training Regimen",
-      "oracleId": "f44bde8b-43e9-4719-ac60-b8f0cee8df9b",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Trickster's Stratagem",
-      "oracleId": "170ee399-d3cd-40ef-a340-193c0f0f6002",
       "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
@@ -7633,20 +4121,6 @@
       "eventIds": [
         "standard-league-2026-06-30"
       ]
-    },
-    {
-      "nameEn": "Truck Toss",
-      "oracleId": "7d765055-da62-43f7-9580-98e9d164753b",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
     },
     {
       "nameEn": "Trystan, Callous Cultivator",
@@ -7789,65 +4263,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "U.S.Agent, John Walker",
-      "oracleId": "2b6fa8b6-4865-4eb6-974b-00f6b16b6f0f",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Ultimate Spider-Man",
       "oracleId": "be48c721-bdc6-4f2c-96d6-82d934b31615",
       "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ultron Drone",
-      "oracleId": "51c1f21d-1512-4885-bfdc-58790cf77d51",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ultron, Artificial Malevolence",
-      "oracleId": "a8f25e67-2112-4355-9298-363ed04a5cb8",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Undercover Skrull",
-      "oracleId": "33b1379f-b329-42cd-92ed-4811d44ed8dd",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -7872,20 +4290,6 @@
       "eventIds": [
         "standard-challenge-32-2026-06-30"
       ]
-    },
-    {
-      "nameEn": "Unliving Legionnaire",
-      "oracleId": "0edaf433-4ded-4841-bc86-136780c0767f",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
     },
     {
       "nameEn": "Vantress Transmuter",
@@ -7958,20 +4362,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Vibranium Energy Daggers",
-      "oracleId": "be0b86fc-8450-41d4-9836-6de11cecb857",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Vibrant Idea",
       "oracleId": "5ba7abbc-f6e8-40c2-800b-11efd10cca5b",
       "layout": "prepare",
@@ -7997,7 +4387,10 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-32-2026-07-3012849430",
+        "standard-challenge-32-2026-08-0112849461"
+      ]
     },
     {
       "nameEn": "Viggo, End of Ig's Crossing",
@@ -8017,20 +4410,6 @@
       "nameEn": "Viggo, Enforcer of Ig's Crossing",
       "oracleId": "fe01c96b-eb78-4477-bec2-944b2a28c778",
       "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Villainous Hideout",
-      "oracleId": "cd2888aa-71f3-47ee-ba33-7bb95d5bc836",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -8182,148 +4561,8 @@
       "eventIds": []
     },
     {
-      "nameEn": "Vision of Love",
-      "oracleId": "70c96b50-ac2b-493d-bd15-fc66eb767111",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Vision Quest",
-      "oracleId": "240410a0-3288-4336-b1ad-34936e64ccf2",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Visionary's Dance",
       "oracleId": "c9f35490-462a-4c8f-9d8b-d8abca6596f7",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Visions of Villainy",
-      "oracleId": "3b46800b-711b-4cbb-b296-26115b4f6839",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Viv Vision, Teen Synthezoid",
-      "oracleId": "f67a599c-200a-4831-9e73-126c7435a396",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Volcanic Villain",
-      "oracleId": "a257426d-70c9-4d58-bd8b-97ec38f6e133",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Wakandan Drone Flock",
-      "oracleId": "282d6e61-3240-4f1e-9c2d-8ddb59b03af4",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Wakandan Royal Guard",
-      "oracleId": "4ae15bd1-e0ea-4c1a-a311-dae421381ebc",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "War Machine, Legacy of Iron",
-      "oracleId": "ae6d1aa3-4ceb-4fc1-a3a6-033afd4b3bce",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "We Say Thee Nay!",
-      "oracleId": "1abe8246-d2f9-407b-8c16-83da0a6b7de3",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Whiplash, Vengeful Engineer",
-      "oracleId": "00ed7aca-b3c1-4d48-acd5-b1596daeb4c3",
       "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
@@ -8364,62 +4603,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "White Tiger, Ava Ayala",
-      "oracleId": "e2084d73-5a4c-4b17-942a-93c1a1f7ac2a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "White Widow, Free Agent",
-      "oracleId": "4f0c055f-f614-44b0-9374-c53541f89185",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Wiccan, Rising Magician",
-      "oracleId": "fc17b7a3-7711-4449-80bd-692e8ed9087d",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Widow's Bite",
-      "oracleId": "39f2a632-30d2-4b35-9e7f-fef27713a4f7",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Wild Idea",
       "oracleId": "a8c44bd9-6470-47d7-934f-77c76a44a984",
       "layout": "prepare",
@@ -8436,20 +4619,6 @@
     {
       "nameEn": "Wilt in the Heat",
       "oracleId": "3bed0b60-5944-44bb-9ddd-c82f323e6d20",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Winter Soldier, Icy Assassin",
-      "oracleId": "6f4c94b6-f829-4646-a574-083997b78dfb",
       "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
@@ -8487,39 +4656,13 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-league-2026-07-0810879"
+      ]
     },
     {
       "nameEn": "Witherbloom, the Balancer",
       "oracleId": "fbb04a21-e513-4317-aac8-fa6df91c3438",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Wolverine, Fierce Fighter",
-      "oracleId": "8429ba6a-6c06-4a83-a6ee-023b64b825f8",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Wonder Man, Hollywood Hero",
-      "oracleId": "e2c49754-711e-43b3-82f1-5376a4d99701",
       "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
@@ -8556,48 +4699,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "World War Hulk",
-      "oracleId": "8c4da760-8913-46ca-b00c-bba6d877d482",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Worlds Within Worlds",
-      "oracleId": "e25062ba-7176-4d59-ac3e-26d19b26f02a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Yellowjacket, Heartless Marauder",
-      "oracleId": "0a364879-31bd-4760-833d-165cde1e96c6",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
