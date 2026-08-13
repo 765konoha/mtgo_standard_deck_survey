@@ -2,22 +2,41 @@
   "schemaVersion": 1,
   "events": [
     {
+      "eventId": "standard-challenge-32-2026-08-1212851628",
+      "eventName": "Standard Challenge 32 August 13 2026",
+      "eventType": "challenge",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-08-1212851628",
+      "status": "completed",
+      "firstSeenAt": "2026-08-13T23:12:32+09:00",
+      "lastCheckedAt": "2026-08-13T23:13:54+09:00",
+      "completedAt": "2026-08-13T23:13:54+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 8,
+        "reason": "ok"
+      },
+      "eventDate": "2026-08-13",
+      "publishedDate": "2026-08-13",
+      "eventDateTime": "2026-08-13T00:00:00"
+    },
+    {
       "eventId": "standard-league-2026-08-1311015",
-      "eventName": "Standard League August 13 2026",
+      "eventName": "Standard League August 12 2026",
       "eventType": "league",
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-08-1311015",
       "status": "pending_publication",
       "firstSeenAt": "2026-08-13T15:08:33+09:00",
-      "lastCheckedAt": "2026-08-13T15:08:35+09:00",
+      "lastCheckedAt": "2026-08-13T23:12:33+09:00",
       "completedAt": null,
-      "retryCount": 1,
+      "retryCount": 2,
       "lastResult": {
         "httpStatus": 200,
         "deckCount": 0,
         "reason": "decklists_not_published"
       },
-      "eventDate": "2026-08-13",
-      "publishedDate": "2026-08-13",
+      "eventDate": "2026-08-12",
+      "publishedDate": "2026-08-12",
       "eventDateTime": null
     },
     {
@@ -25,15 +44,15 @@
       "eventName": "Standard League August 12 2026",
       "eventType": "league",
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-08-1211015",
-      "status": "pending_publication",
+      "status": "completed",
       "firstSeenAt": "2026-08-13T15:08:33+09:00",
-      "lastCheckedAt": "2026-08-13T15:09:07+09:00",
-      "completedAt": null,
-      "retryCount": 1,
+      "lastCheckedAt": "2026-08-13T23:13:05+09:00",
+      "completedAt": "2026-08-13T23:13:05+09:00",
+      "retryCount": 0,
       "lastResult": {
         "httpStatus": 200,
-        "deckCount": 0,
-        "reason": "decklists_not_published"
+        "deckCount": 16,
+        "reason": "ok"
       },
       "eventDate": "2026-08-12",
       "publishedDate": "2026-08-12",
@@ -82,15 +101,15 @@
       "eventName": "Standard Challenge 32 August 11 2026",
       "eventType": "challenge",
       "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-08-1112851611",
-      "status": "pending_publication",
+      "status": "completed",
       "firstSeenAt": "2026-08-13T15:08:33+09:00",
-      "lastCheckedAt": "2026-08-13T15:09:38+09:00",
-      "completedAt": null,
-      "retryCount": 1,
+      "lastCheckedAt": "2026-08-13T23:13:53+09:00",
+      "completedAt": "2026-08-13T23:13:53+09:00",
+      "retryCount": 0,
       "lastResult": {
         "httpStatus": 200,
-        "deckCount": 0,
-        "reason": "decklists_not_published"
+        "deckCount": 8,
+        "reason": "ok"
       },
       "eventDate": "2026-08-11",
       "publishedDate": "2026-08-12",
@@ -162,6 +181,25 @@
       "firstSeenAt": "2026-08-10T23:10:03+09:00",
       "lastCheckedAt": "2026-08-10T23:10:21+09:00",
       "completedAt": "2026-08-10T23:10:21+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 8,
+        "reason": "ok"
+      },
+      "eventDate": "2026-08-09",
+      "publishedDate": "2026-08-10",
+      "eventDateTime": "2026-08-09T21:00:00"
+    },
+    {
+      "eventId": "standard-challenge-32-2026-08-1012851116",
+      "eventName": "Standard Challenge 32 August 9 2026",
+      "eventType": "challenge",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-08-1012851116",
+      "status": "completed",
+      "firstSeenAt": "2026-08-13T23:12:32+09:00",
+      "lastCheckedAt": "2026-08-13T23:14:02+09:00",
+      "completedAt": "2026-08-13T23:14:02+09:00",
       "retryCount": 0,
       "lastResult": {
         "httpStatus": 200,
