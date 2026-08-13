@@ -1,124 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-03T20:20:12+09:00",
+  "generatedAt": "2026-08-13T18:45:28+09:00",
   "summary": {
-    "auditedCards": 5416,
-    "translated": 5106,
-    "unresolved": 326,
-    "nameJaNull": 326,
-    "missing": 235,
+    "auditedCards": 5638,
+    "translated": 5367,
+    "unresolved": 287,
+    "nameJaNull": 287,
+    "missing": 179,
     "sameAsEnglish": 0,
-    "partialFaces": 91,
+    "partialFaces": 108,
     "notAppliedToEvents": 0,
-    "detailWithoutJapaneseName": 310,
+    "detailWithoutJapaneseName": 271,
     "manualOverrides": 3
   },
   "cards": [
-    {
-      "nameEn": "Aang and La, Ocean's Fury",
-      "oracleId": "cbf09050-39d0-463b-96db-9e22011ae0d8",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Aang, at the Crossroads",
-      "oracleId": "96e5d4a1-e59f-4140-823f-a17e15ee5d8d",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Aang, at the Crossroads // Aang, Destined Savior",
-      "oracleId": "96e5d4a1-e59f-4140-823f-a17e15ee5d8d",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Aang, Destined Savior",
-      "oracleId": "96e5d4a1-e59f-4140-823f-a17e15ee5d8d",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Aang, Master of Elements",
-      "oracleId": "b4872bac-5822-4c35-9b73-38c4e3ffa477",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Aang, Swift Savior",
-      "oracleId": "cbf09050-39d0-463b-96db-9e22011ae0d8",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-07-0712846527",
-        "standard-challenge-32-2026-07-0912847094",
-        "standard-challenge-32-2026-07-1612847673",
-        "standard-challenge-32-2026-07-2312848169",
-        "standard-challenge-32-2026-07-2412848182",
-        "standard-challenge-32-2026-07-2812848245"
-      ]
-    },
-    {
-      "nameEn": "Aang, Swift Savior // Aang and La, Ocean's Fury",
-      "oracleId": "cbf09050-39d0-463b-96db-9e22011ae0d8",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
     {
       "nameEn": "Abigale, Poet Laureate // Heroic Stanza",
       "oracleId": "2f5f46ed-b8aa-4864-bd20-17281d4632bf",
@@ -176,9 +71,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Amazing Spider-Man",
-      "oracleId": "f1b7488c-c675-42e9-818a-24a50347ec2c",
-      "layout": "modal_dfc",
+      "nameEn": "Allure of Power",
+      "oracleId": "2e728381-6db0-4c66-883d-82d718fef833",
+      "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -186,6 +81,20 @@
         "detailWithoutJapaneseName",
         "missing",
         "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "An Unexpected Party // At the Door",
+      "oracleId": "38503d34-f4f9-4eeb-9b1e-4fec1df921b3",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -246,125 +155,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Ashling, Rekindled",
-      "oracleId": "31fc5d8b-94bc-4688-8a84-f15800e717a8",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2612845647",
-        "standard-challenge-32-2026-06-2612845657",
-        "standard-challenge-32-2026-07-1912847716"
-      ]
-    },
-    {
-      "nameEn": "Ashling, Rekindled // Ashling, Rimebound",
-      "oracleId": "31fc5d8b-94bc-4688-8a84-f15800e717a8",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Ashling, Rimebound",
-      "oracleId": "31fc5d8b-94bc-4688-8a84-f15800e717a8",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Avatar Aang",
-      "oracleId": "b4872bac-5822-4c35-9b73-38c4e3ffa477",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Avatar Aang // Aang, Master of Elements",
-      "oracleId": "b4872bac-5822-4c35-9b73-38c4e3ffa477",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Avatar Kuruk",
-      "oracleId": "201b8936-18f4-4881-a1d4-c308cf3832bf",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Avatar Kyoshi",
-      "oracleId": "e41e8754-028c-4399-b530-de9e134d04b0",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Avatar Roku",
-      "oracleId": "2f26f270-26d9-46d3-957f-19f52d51eb03",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Avatar Yangchen",
-      "oracleId": "521a63cf-5e83-4649-9800-c62b2fc474d6",
-      "layout": "transform",
+      "nameEn": "At the Door",
+      "oracleId": "38503d34-f4f9-4eeb-9b1e-4fec1df921b3",
+      "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -502,6 +295,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Beorn, Reluctant Host // Till and Tend",
+      "oracleId": "288da486-393c-4995-ad02-c5093a71970d",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Biblioplex Tomekeeper",
       "oracleId": "08a0e845-9ef9-4de1-b9fe-4530357346ca",
       "layout": "normal",
@@ -512,6 +319,34 @@
         "detailWithoutJapaneseName",
         "missing",
         "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Bilbo Baggins, Burglar // Take a Glance",
+      "oracleId": "fa85f9e6-69ff-4669-b70a-440aa7b16c97",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Bilbo, Luckwearer // Burglar's Plot",
+      "oracleId": "a73d9109-36e0-40ea-ab06-5c5f7eb4ac54",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -586,6 +421,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Bofur, Reliable Guardian // Concerted Care",
+      "oracleId": "8a0e35ac-6c03-4922-b3b4-e419419fe3d7",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Brainstorm",
       "oracleId": "f6036065-7196-44d4-8a27-2199f0e1a03c",
       "layout": "prepare",
@@ -628,37 +477,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Brigid, Clachan's Heart",
-      "oracleId": "60fc89a1-cc6f-4a32-84c3-09abf7a4a1df",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Brigid, Clachan's Heart // Brigid, Doun's Mind",
-      "oracleId": "60fc89a1-cc6f-4a32-84c3-09abf7a4a1df",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Brigid, Doun's Mind",
-      "oracleId": "60fc89a1-cc6f-4a32-84c3-09abf7a4a1df",
-      "layout": "transform",
+      "nameEn": "Burglar's Plot",
+      "oracleId": "a73d9109-36e0-40ea-ab06-5c5f7eb4ac54",
+      "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -699,6 +520,12 @@
       ],
       "eventIds": [
         "standard-challenge-32-2026-07-1012847107",
+        "standard-challenge-32-2026-08-0312849496",
+        "standard-challenge-32-2026-08-0412849506",
+        "standard-challenge-32-2026-08-0612850613",
+        "standard-challenge-32-2026-08-0712850805",
+        "standard-challenge-32-2026-08-0712850815",
+        "standard-challenge-32-2026-08-0912851116",
         "standard-league-2026-07-2910879"
       ]
     },
@@ -804,9 +631,9 @@
       ]
     },
     {
-      "nameEn": "Chosen by Valgavoth",
-      "oracleId": "dfedb968-f27c-4117-aff6-da707dd43e82",
-      "layout": "normal",
+      "nameEn": "Claim Territory",
+      "oracleId": "da1e019c-2ffb-412d-90d7-f2e5e5c44c4b",
+      "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -818,8 +645,8 @@
       "eventIds": []
     },
     {
-      "nameEn": "Claim Territory",
-      "oracleId": "da1e019c-2ffb-412d-90d7-f2e5e5c44c4b",
+      "nameEn": "Clap! Snap!",
+      "oracleId": "27e17542-549b-4c05-8091-c10a245c916b",
       "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
@@ -845,8 +672,14 @@
       ],
       "eventIds": [
         "standard-challenge-32-2026-08-0112849466",
+        "standard-challenge-32-2026-08-0712850815",
+        "standard-challenge-32-2026-08-0812850823",
+        "standard-challenge-32-2026-08-0812851135",
         "standard-league-2026-07-0210879",
-        "standard-league-2026-07-2910879"
+        "standard-league-2026-07-2910879",
+        "standard-league-2026-08-0410879",
+        "standard-league-2026-08-0610879",
+        "standard-league-2026-08-1010879"
       ]
     },
     {
@@ -892,37 +725,23 @@
       "eventIds": []
     },
     {
+      "nameEn": "Concerted Care",
+      "oracleId": "8a0e35ac-6c03-4922-b3b4-e419419fe3d7",
+      "layout": "adventure",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Craft with Pride",
       "oracleId": "23c3de07-8aa2-48e9-848c-50b5a40bd133",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Cren of the Spider Brood",
-      "oracleId": "be48c721-bdc6-4f2c-96d6-82d934b31615",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Cren, Undercity Dreamer",
-      "oracleId": "be48c721-bdc6-4f2c-96d6-82d934b31615",
-      "layout": "modal_dfc",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -1074,54 +893,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Eddie Brock",
-      "oracleId": "fe01c96b-eb78-4477-bec2-944b2a28c778",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-07-1612847673",
-        "standard-challenge-32-2026-07-2812848245"
-      ]
-    },
-    {
-      "nameEn": "Eddie Brock // Venom, Lethal Protector",
-      "oracleId": "fe01c96b-eb78-4477-bec2-944b2a28c778",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Eirdu, Carrier of Dawn",
-      "oracleId": "36af3c2c-49d7-46ea-ab02-c254b332448e",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Eirdu, Carrier of Dawn // Isilu, Carrier of Twilight",
-      "oracleId": "36af3c2c-49d7-46ea-ab02-c254b332448e",
-      "layout": "transform",
+      "nameEn": "Easy Pickings",
+      "oracleId": "6505a53b-00db-44c4-8eaa-09a1a01451a4",
+      "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -1160,6 +934,12 @@
       ],
       "eventIds": [
         "standard-challenge-32-2026-07-1012847107",
+        "standard-challenge-32-2026-08-0312849496",
+        "standard-challenge-32-2026-08-0412849506",
+        "standard-challenge-32-2026-08-0612850613",
+        "standard-challenge-32-2026-08-0712850805",
+        "standard-challenge-32-2026-08-0712850815",
+        "standard-challenge-32-2026-08-0912851116",
         "standard-league-2026-07-2910879"
       ]
     },
@@ -1377,23 +1157,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Fire Lord Sozin",
-      "oracleId": "9b0b217d-cc9d-4187-89cb-f13160ed2983",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Fleem, Goben's Creation",
-      "oracleId": "aa5b06a4-90c3-45e7-ab83-cb5c96ded21d",
-      "layout": "modal_dfc",
+      "nameEn": "Flameshape",
+      "oracleId": "f48f2a9b-4ba5-4984-8180-3950889bba65",
+      "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -1518,9 +1284,23 @@
       "eventIds": []
     },
     {
-      "nameEn": "Ghost-Spider",
-      "oracleId": "5f143d87-35fb-40e3-94ae-f85cfff9adb5",
-      "layout": "modal_dfc",
+      "nameEn": "Gandalf, Goblins' Bane // Flameshape",
+      "oracleId": "f48f2a9b-4ba5-4984-8180-3950889bba65",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Gaze in Wonder",
+      "oracleId": "70a702fe-1dd6-4d7b-a85a-45744ecad741",
+      "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -1560,9 +1340,23 @@
       "eventIds": []
     },
     {
-      "nameEn": "Goben, Gene-Splice Savant",
-      "oracleId": "aa5b06a4-90c3-45e7-ab83-cb5c96ded21d",
-      "layout": "modal_dfc",
+      "nameEn": "Glamdring, Foe-hammer // Gleam of Death",
+      "oracleId": "2802069f-201e-43a7-b5d3-43a95951a2ec",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Gleam of Death",
+      "oracleId": "2802069f-201e-43a7-b5d3-43a95951a2ec",
+      "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -1570,6 +1364,20 @@
         "detailWithoutJapaneseName",
         "missing",
         "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Glóin the Mighty // Easy Pickings",
+      "oracleId": "6505a53b-00db-44c4-8eaa-09a1a01451a4",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -1584,6 +1392,34 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Gollum, Silent Slinker // Meager Meal",
+      "oracleId": "0296d57e-e5b9-456f-bb21-eb584adefb4c",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Gone Fishing",
+      "oracleId": "dba1d231-6b03-44ad-ab8c-be0c8fe1b6db",
+      "layout": "adventure",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -1630,58 +1466,16 @@
       "eventIds": []
     },
     {
-      "nameEn": "Green Goblin",
-      "oracleId": "aa5b06a4-90c3-45e7-ab83-cb5c96ded21d",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
+      "nameEn": "Great Ugly-Looking Goblin // Clap! Snap!",
+      "oracleId": "27e17542-549b-4c05-8091-c10a245c916b",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
       "reasons": [
         "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Grub, Notorious Auntie",
-      "oracleId": "180286e4-67fa-44d5-9e90-4a4e99c016a7",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Grub, Storied Matriarch",
-      "oracleId": "180286e4-67fa-44d5-9e90-4a4e99c016a7",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Grub, Storied Matriarch // Grub, Notorious Auntie",
-      "oracleId": "180286e4-67fa-44d5-9e90-4a4e99c016a7",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -1710,36 +1504,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Gwen Stacy",
-      "oracleId": "5f143d87-35fb-40e3-94ae-f85cfff9adb5",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-07-1612847673"
-      ]
-    },
-    {
-      "nameEn": "Gwen Stacy // Ghost-Spider",
-      "oracleId": "5f143d87-35fb-40e3-94ae-f85cfff9adb5",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -1836,11 +1600,24 @@
         "standard-challenge-32-2026-07-2812848245",
         "standard-challenge-32-2026-07-3012849430",
         "standard-challenge-32-2026-07-3112849443",
+        "standard-challenge-32-2026-08-0212849486",
+        "standard-challenge-32-2026-08-0312849496",
+        "standard-challenge-32-2026-08-0412849506",
+        "standard-challenge-32-2026-08-0612850613",
+        "standard-challenge-32-2026-08-0712850805",
+        "standard-challenge-32-2026-08-0712850815",
+        "standard-challenge-32-2026-08-0812850823",
+        "standard-challenge-32-2026-08-0812851135",
+        "standard-challenge-32-2026-08-0912851116",
+        "standard-challenge-32-2026-08-1012851126",
         "standard-league-2026-07-0810879",
         "standard-league-2026-07-2110879",
         "standard-league-2026-07-2910879",
         "standard-league-2026-07-3110879",
-        "standard-league-2026-08-0110879"
+        "standard-league-2026-08-0110879",
+        "standard-league-2026-08-0610879",
+        "standard-league-2026-08-0710879",
+        "standard-league-2026-08-0810879"
       ]
     },
     {
@@ -2038,20 +1815,6 @@
       "nameEn": "Ishgard, the Holy See // Faith & Grief",
       "oracleId": "4f4358cb-59df-46d9-be27-69929f5a615c",
       "layout": "adventure",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Isilu, Carrier of Twilight",
-      "oracleId": "36af3c2c-49d7-46ea-ab02-c254b332448e",
-      "layout": "transform",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -2263,6 +2026,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Lake-town Mariners // Gone Fishing",
+      "oracleId": "dba1d231-6b03-44ad-ab8c-be0c8fe1b6db",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Landscape Painter // Vibrant Idea",
       "oracleId": "5ba7abbc-f6e8-40c2-800b-11efd10cca5b",
       "layout": "prepare",
@@ -2393,20 +2170,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Lotusguard Disciple",
-      "oracleId": "1139ee31-cb6e-4ae6-a08b-252c46b2db97",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Maelstrom Artisan // Rocket Volley",
       "oracleId": "03931270-504a-4b0b-af3f-918bf124ea07",
       "layout": "prepare",
@@ -2461,12 +2224,28 @@
         "nameJaNull"
       ],
       "eventIds": [
-        "standard-challenge-32-2026-07-1912847716"
+        "standard-challenge-32-2026-07-1912847716",
+        "standard-league-2026-08-1110879",
+        "standard-league-2026-08-1111015"
       ]
     },
     {
       "nameEn": "Marang River Regent // Coil and Catch",
       "oracleId": "099b8d2c-b482-48dd-b6bc-dedf546d66c5",
+      "layout": "adventure",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Meager Meal",
+      "oracleId": "0296d57e-e5b9-456f-bb21-eb584adefb4c",
       "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
@@ -2507,37 +2286,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Miles Morales",
-      "oracleId": "be48c721-bdc6-4f2c-96d6-82d934b31615",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-07-1612847673",
-        "standard-challenge-32-2026-07-2812848245"
-      ]
-    },
-    {
-      "nameEn": "Miles Morales // Ultimate Spider-Man",
-      "oracleId": "be48c721-bdc6-4f2c-96d6-82d934b31615",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Minecart Daredevil",
       "oracleId": "df555f60-2164-49dc-be67-00aca9eb0d45",
       "layout": "adventure",
@@ -2566,6 +2314,34 @@
       "eventIds": []
     },
     {
+      "nameEn": "Most Decrepit Old Bird // Speak Secrets",
+      "oracleId": "34d34f2c-06ff-4acf-8f2f-ff867774b777",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "My Precious // Allure of Power",
+      "oracleId": "2e728381-6db0-4c66-883d-82d718fef833",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Mysterious Limbs",
       "oracleId": null,
       "layout": null,
@@ -2579,62 +2355,6 @@
       "eventIds": [
         "standard-challenge-32-2026-06-30"
       ]
-    },
-    {
-      "nameEn": "Nia, Fabled Skyclimber",
-      "oracleId": "5f143d87-35fb-40e3-94ae-f85cfff9adb5",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Nia, Skysail Storyteller",
-      "oracleId": "5f143d87-35fb-40e3-94ae-f85cfff9adb5",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Norman Osborn",
-      "oracleId": "aa5b06a4-90c3-45e7-ab83-cb5c96ded21d",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Norman Osborn // Green Goblin",
-      "oracleId": "aa5b06a4-90c3-45e7-ab83-cb5c96ded21d",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
     },
     {
       "nameEn": "Obyra's Attendants",
@@ -2661,48 +2381,6 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Oko, Lorwyn Liege",
-      "oracleId": "a0c956dc-d7de-4f11-b76f-7537fbee1731",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Oko, Lorwyn Liege // Oko, Shadowmoor Scion",
-      "oracleId": "a0c956dc-d7de-4f11-b76f-7537fbee1731",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Oko, Shadowmoor Scion",
-      "oracleId": "a0c956dc-d7de-4f11-b76f-7537fbee1731",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -2761,7 +2439,8 @@
         "nameJaNull"
       ],
       "eventIds": [
-        "standard-challenge-32-2026-07-2412848182"
+        "standard-challenge-32-2026-07-2412848182",
+        "standard-challenge-32-2026-08-0612850613"
       ]
     },
     {
@@ -2782,34 +2461,6 @@
       "nameEn": "Pest Friend",
       "oracleId": "cb125cd4-c7c2-415d-b802-bdcfc2454403",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Peter Parker",
-      "oracleId": "f1b7488c-c675-42e9-818a-24a50347ec2c",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Peter Parker // Amazing Spider-Man",
-      "oracleId": "f1b7488c-c675-42e9-818a-24a50347ec2c",
-      "layout": "modal_dfc",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -2852,13 +2503,21 @@
         "standard-challenge-32-2026-07-3012849430",
         "standard-challenge-32-2026-08-0112849461",
         "standard-challenge-32-2026-08-0112849466",
+        "standard-challenge-32-2026-08-0412849506",
+        "standard-challenge-32-2026-08-0812850823",
+        "standard-challenge-32-2026-08-0812851135",
+        "standard-challenge-32-2026-08-1012851126",
         "standard-league-2026-06-2610879",
         "standard-league-2026-07-0310879",
         "standard-league-2026-07-0810879",
         "standard-league-2026-07-1110879",
         "standard-league-2026-07-1310879",
         "standard-league-2026-07-1910879",
-        "standard-league-2026-08-0110879"
+        "standard-league-2026-08-0110879",
+        "standard-league-2026-08-0310879",
+        "standard-league-2026-08-0510879",
+        "standard-league-2026-08-0610879",
+        "standard-league-2026-08-1010879"
       ]
     },
     {
@@ -3376,6 +3035,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Seek the Heart",
+      "oracleId": "09f09d0a-6054-4545-b81e-0295773cc5f0",
+      "layout": "adventure",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Seething Song",
       "oracleId": "1bf505a7-292e-4642-83b6-8ff41ebe5d51",
       "layout": "prepare",
@@ -3477,6 +3150,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Silvan Rally",
+      "oracleId": "f6771d32-395e-4832-b33d-cbc12dff1516",
+      "layout": "adventure",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Skycoach Conductor // All Aboard",
       "oracleId": "788d3cfa-7706-4728-9c48-cf7bc963d002",
       "layout": "prepare",
@@ -3505,6 +3192,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Smaug, the Great Calamity // Spew Flame",
+      "oracleId": "fc75cfec-e1f6-4cb5-8a3c-2f7b2c39c03f",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Sorin, Imperious House Guest",
       "oracleId": null,
       "layout": null,
@@ -3519,6 +3220,20 @@
         "standard-challenge-31-2026-06-29",
         "standard-challenge-32-2026-06-30"
       ]
+    },
+    {
+      "nameEn": "Speak Secrets",
+      "oracleId": "34d34f2c-06ff-4acf-8f2f-ff867774b777",
+      "layout": "adventure",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
     },
     {
       "nameEn": "Spectacle Summit",
@@ -3577,6 +3292,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Spew Flame",
+      "oracleId": "fc75cfec-e1f6-4cb5-8a3c-2f7b2c39c03f",
+      "layout": "adventure",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Spiritcall Enthusiast // Scrollboost",
       "oracleId": "c77ddcac-ce54-4348-bde2-5d9caf3d5b04",
       "layout": "prepare",
@@ -3614,7 +3343,11 @@
         "standard-challenge-32-2026-07-2612848225",
         "standard-challenge-32-2026-07-2812848245",
         "standard-challenge-32-2026-07-3012849430",
-        "standard-league-2026-07-0610879"
+        "standard-challenge-32-2026-08-0212849486",
+        "standard-challenge-32-2026-08-0712850805",
+        "standard-challenge-32-2026-08-0912851116",
+        "standard-league-2026-07-0610879",
+        "standard-league-2026-08-0710879"
       ]
     },
     {
@@ -3758,34 +3491,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Surris, Silk-Tech Vanguard",
-      "oracleId": "f1b7488c-c675-42e9-818a-24a50347ec2c",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Surris, Spidersilk Innovator",
-      "oracleId": "f1b7488c-c675-42e9-818a-24a50347ec2c",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Swords to Plowshares",
       "oracleId": "e6c41473-2398-4888-9f0c-467dce7c39a4",
       "layout": "prepare",
@@ -3800,37 +3505,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Sygg, Wanderbrine Shield",
-      "oracleId": "9cc91ac5-6f2b-4fc0-b810-cdc92eebe6de",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Sygg, Wanderwine Wisdom",
-      "oracleId": "9cc91ac5-6f2b-4fc0-b810-cdc92eebe6de",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Sygg, Wanderwine Wisdom // Sygg, Wanderbrine Shield",
-      "oracleId": "9cc91ac5-6f2b-4fc0-b810-cdc92eebe6de",
-      "layout": "transform",
+      "nameEn": "Take a Glance",
+      "oracleId": "fa85f9e6-69ff-4669-b70a-440aa7b16c97",
+      "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -3913,155 +3590,30 @@
       ]
     },
     {
-      "nameEn": "The Legend of Kuruk",
-      "oracleId": "201b8936-18f4-4881-a1d4-c308cf3832bf",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
+      "nameEn": "The Arkenstone // Seek the Heart",
+      "oracleId": "09f09d0a-6054-4545-b81e-0295773cc5f0",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
       "reasons": [
         "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2612845647",
-        "standard-challenge-32-2026-06-2612845657",
-        "standard-challenge-32-2026-06-3012845710",
-        "standard-challenge-32-2026-07-0912847094",
-        "standard-challenge-32-2026-07-1112847125",
-        "standard-challenge-32-2026-07-1712847684",
-        "standard-challenge-32-2026-07-3012849430",
-        "standard-league-2026-07-0810879"
-      ]
-    },
-    {
-      "nameEn": "The Legend of Kuruk // Avatar Kuruk",
-      "oracleId": "201b8936-18f4-4881-a1d4-c308cf3832bf",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
     {
-      "nameEn": "The Legend of Kyoshi",
-      "oracleId": "e41e8754-028c-4399-b530-de9e134d04b0",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
+      "nameEn": "Thranduil, Sindarin Liege // Silvan Rally",
+      "oracleId": "f6771d32-395e-4832-b33d-cbc12dff1516",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
       "reasons": [
         "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Legend of Kyoshi // Avatar Kyoshi",
-      "oracleId": "e41e8754-028c-4399-b530-de9e134d04b0",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Legend of Roku",
-      "oracleId": "2f26f270-26d9-46d3-957f-19f52d51eb03",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Legend of Roku // Avatar Roku",
-      "oracleId": "2f26f270-26d9-46d3-957f-19f52d51eb03",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Legend of Yangchen",
-      "oracleId": "521a63cf-5e83-4649-9800-c62b2fc474d6",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Legend of Yangchen // Avatar Yangchen",
-      "oracleId": "521a63cf-5e83-4649-9800-c62b2fc474d6",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "The Rise of Sozin",
-      "oracleId": "9b0b217d-cc9d-4187-89cb-f13160ed2983",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-07-3012849430",
-        "standard-league-2026-07-3010879",
-        "standard-league-2026-08-0110879"
-      ]
-    },
-    {
-      "nameEn": "The Rise of Sozin // Fire Lord Sozin",
-      "oracleId": "9b0b217d-cc9d-4187-89cb-f13160ed2983",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -4094,6 +3646,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Till and Tend",
+      "oracleId": "288da486-393c-4995-ad02-c5093a71970d",
+      "layout": "adventure",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Titan's Grave",
       "oracleId": "595f0eb5-f521-4174-9c48-b89e85ea907c",
       "layout": "normal",
@@ -4121,48 +3687,6 @@
       "eventIds": [
         "standard-league-2026-06-30"
       ]
-    },
-    {
-      "nameEn": "Trystan, Callous Cultivator",
-      "oracleId": "961d1128-a022-480c-918e-16ba0abf844b",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Trystan, Callous Cultivator // Trystan, Penitent Culler",
-      "oracleId": "961d1128-a022-480c-918e-16ba0abf844b",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Trystan, Penitent Culler",
-      "oracleId": "961d1128-a022-480c-918e-16ba0abf844b",
-      "layout": "transform",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
     },
     {
       "nameEn": "Twining Twins",
@@ -4263,20 +3787,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Ultimate Spider-Man",
-      "oracleId": "be48c721-bdc6-4f2c-96d6-82d934b31615",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Unknown New Card",
       "oracleId": null,
       "layout": null,
@@ -4334,16 +3844,16 @@
       "eventIds": []
     },
     {
-      "nameEn": "Venom, Lethal Protector",
-      "oracleId": "fe01c96b-eb78-4477-bec2-944b2a28c778",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
+      "nameEn": "Velvetwing Butterflies // Gaze in Wonder",
+      "oracleId": "70a702fe-1dd6-4d7b-a85a-45744ecad741",
+      "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
       "reasons": [
         "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -4389,36 +3899,14 @@
       ],
       "eventIds": [
         "standard-challenge-32-2026-07-3012849430",
-        "standard-challenge-32-2026-08-0112849461"
+        "standard-challenge-32-2026-08-0112849461",
+        "standard-challenge-32-2026-08-0312849496",
+        "standard-challenge-32-2026-08-0712850805",
+        "standard-challenge-32-2026-08-1012851126",
+        "standard-league-2026-08-0610879",
+        "standard-league-2026-08-0910879",
+        "standard-league-2026-08-1010879"
       ]
-    },
-    {
-      "nameEn": "Viggo, End of Ig's Crossing",
-      "oracleId": "fe01c96b-eb78-4477-bec2-944b2a28c778",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Viggo, Enforcer of Ig's Crossing",
-      "oracleId": "fe01c96b-eb78-4477-bec2-944b2a28c778",
-      "layout": "modal_dfc",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
     },
     {
       "nameEn": "Virtue of Courage",
@@ -4631,20 +4119,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "With Great Power . . .",
-      "oracleId": "dfedb968-f27c-4117-aff6-da707dd43e82",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Witherbloom Charm",
       "oracleId": "ee1db746-f5c1-4dce-82eb-24b273cc9507",
       "layout": "normal",
@@ -4657,7 +4131,9 @@
         "nameJaNull"
       ],
       "eventIds": [
-        "standard-league-2026-07-0810879"
+        "standard-league-2026-07-0810879",
+        "standard-league-2026-08-0310879",
+        "standard-league-2026-08-0510879"
       ]
     },
     {
