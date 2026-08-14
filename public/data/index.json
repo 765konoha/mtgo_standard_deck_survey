@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T23:06:18+09:00",
-  "lastSuccessfulUpdateAt": "2026-08-14T23:06:18+09:00",
+  "generatedAt": "2026-08-15T06:14:14+09:00",
+  "lastSuccessfulUpdateAt": "2026-08-15T06:14:14+09:00",
   "period": {
-    "startDate": "2026-08-05",
-    "endDate": "2026-08-14",
+    "startDate": "2026-08-06",
+    "endDate": "2026-08-15",
     "lookbackDays": 10
   },
   "overallStatus": "pending",
   "summary": {
-    "completedEvents": 21,
+    "completedEvents": 20,
     "pendingEvents": 2,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 102
+    "untranslatedCards": 100
   },
   "events": [
     {
@@ -29,7 +29,7 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-08-1411015",
       "dataFile": "./events/standard-league-2026-08-1411015.json",
       "firstSeenAt": "2026-08-14T15:06:37+09:00",
-      "lastCheckedAt": "2026-08-14T23:06:13+09:00",
+      "lastCheckedAt": "2026-08-15T06:13:42+09:00",
       "completedAt": null
     },
     {
@@ -44,7 +44,7 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-08-1412851641",
       "dataFile": "./events/standard-challenge-32-2026-08-1412851641.json",
       "firstSeenAt": "2026-08-14T15:06:37+09:00",
-      "lastCheckedAt": "2026-08-14T23:06:14+09:00",
+      "lastCheckedAt": "2026-08-15T06:14:13+09:00",
       "completedAt": null
     },
     {
@@ -346,21 +346,6 @@
       "firstSeenAt": "2026-08-06T16:29:58+09:00",
       "lastCheckedAt": "2026-08-06T16:30:00+09:00",
       "completedAt": "2026-08-06T16:30:00+09:00"
-    },
-    {
-      "id": "standard-league-2026-08-0510879",
-      "name": "Standard League August 5 2026",
-      "eventType": "league",
-      "eventDate": "2026-08-05",
-      "eventDateTime": null,
-      "publishedDate": "2026-08-05",
-      "status": "completed",
-      "deckCount": 2,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-08-0510879",
-      "dataFile": "./events/standard-league-2026-08-0510879.json",
-      "firstSeenAt": "2026-08-05T16:29:51+09:00",
-      "lastCheckedAt": "2026-08-06T00:05:34+09:00",
-      "completedAt": "2026-08-06T00:05:34+09:00"
     }
   ]
 }
