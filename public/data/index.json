@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-19T14:18:33+09:00",
-  "lastSuccessfulUpdateAt": "2026-08-19T14:18:33+09:00",
+  "generatedAt": "2026-08-19T22:35:11+09:00",
+  "lastSuccessfulUpdateAt": "2026-08-19T22:35:11+09:00",
   "period": {
     "startDate": "2026-08-10",
     "endDate": "2026-08-19",
     "lookbackDays": 10
   },
-  "overallStatus": "success",
+  "overallStatus": "pending",
   "summary": {
     "completedEvents": 22,
-    "pendingEvents": 0,
+    "pendingEvents": 2,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
@@ -183,6 +183,21 @@
       "completedAt": "2026-08-15T14:13:55+09:00"
     },
     {
+      "id": "standard-challenge-32-2026-08-1312851641",
+      "name": "Standard Challenge 32 August 14 2026",
+      "eventType": "challenge",
+      "eventDate": "2026-08-14",
+      "eventDateTime": "2026-08-14T00:00:00",
+      "publishedDate": "2026-08-14",
+      "status": "pending_publication",
+      "deckCount": 0,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-08-1312851641",
+      "dataFile": "./events/standard-challenge-32-2026-08-1312851641.json",
+      "firstSeenAt": "2026-08-19T22:35:02+09:00",
+      "lastCheckedAt": "2026-08-19T22:35:05+09:00",
+      "completedAt": null
+    },
+    {
       "id": "standard-challenge-32-2026-08-1412851641",
       "name": "Standard Challenge 32 August 14 2026",
       "eventType": "challenge",
@@ -211,6 +226,21 @@
       "firstSeenAt": "2026-08-15T14:13:54+09:00",
       "lastCheckedAt": "2026-08-15T14:15:22+09:00",
       "completedAt": "2026-08-15T14:15:22+09:00"
+    },
+    {
+      "id": "standard-challenge-32-2026-08-1512851651",
+      "name": "Standard Challenge 32 August 14 2026",
+      "eventType": "challenge",
+      "eventDate": "2026-08-14",
+      "eventDateTime": "2026-08-14T18:00:00",
+      "publishedDate": "2026-08-15",
+      "status": "pending_publication",
+      "deckCount": 0,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-08-1512851651",
+      "dataFile": "./events/standard-challenge-32-2026-08-1512851651.json",
+      "firstSeenAt": "2026-08-19T22:35:02+09:00",
+      "lastCheckedAt": "2026-08-19T22:35:04+09:00",
+      "completedAt": null
     },
     {
       "id": "standard-league-2026-08-1311015",
