@@ -1,22 +1,37 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-26T06:15:13+09:00",
-  "lastSuccessfulUpdateAt": "2026-08-26T06:15:13+09:00",
+  "generatedAt": "2026-08-26T14:21:38+09:00",
+  "lastSuccessfulUpdateAt": "2026-08-26T14:21:38+09:00",
   "period": {
     "startDate": "2026-08-17",
     "endDate": "2026-08-26",
     "lookbackDays": 10
   },
-  "overallStatus": "success",
+  "overallStatus": "pending",
   "summary": {
-    "completedEvents": 15,
-    "pendingEvents": 0,
+    "completedEvents": 16,
+    "pendingEvents": 1,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 30
+    "untranslatedCards": 33
   },
   "events": [
+    {
+      "id": "standard-league-2026-08-2611015",
+      "name": "Standard League August 26 2026",
+      "eventType": "league",
+      "eventDate": "2026-08-26",
+      "eventDateTime": null,
+      "publishedDate": "2026-08-26",
+      "status": "pending_publication",
+      "deckCount": 0,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-08-2611015",
+      "dataFile": "./events/standard-league-2026-08-2611015.json",
+      "firstSeenAt": "2026-08-26T14:21:24+09:00",
+      "lastCheckedAt": "2026-08-26T14:21:25+09:00",
+      "completedAt": null
+    },
     {
       "id": "standard-league-2026-08-2511015",
       "name": "Standard League August 25 2026",
@@ -31,6 +46,21 @@
       "firstSeenAt": "2026-08-25T14:21:30+09:00",
       "lastCheckedAt": "2026-08-25T14:21:55+09:00",
       "completedAt": "2026-08-25T14:21:55+09:00"
+    },
+    {
+      "id": "standard-challenge-32-2026-08-2512852775",
+      "name": "Standard Challenge 32 August 25 2026",
+      "eventType": "challenge",
+      "eventDate": "2026-08-25",
+      "eventDateTime": "2026-08-25T17:30:00",
+      "publishedDate": "2026-08-26",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-08-2512852775",
+      "dataFile": "./events/standard-challenge-32-2026-08-2512852775.json",
+      "firstSeenAt": "2026-08-26T14:21:24+09:00",
+      "lastCheckedAt": "2026-08-26T14:21:38+09:00",
+      "completedAt": "2026-08-26T14:21:38+09:00"
     },
     {
       "id": "standard-league-2026-08-2411015",
