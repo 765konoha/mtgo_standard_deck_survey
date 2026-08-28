@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "period": {
-    "startDate": "2026-08-19",
-    "endDate": "2026-08-28",
+    "startDate": "2026-08-20",
+    "endDate": "2026-08-29",
     "lookbackDays": 10
   },
   "expansions": [
@@ -11,154 +11,154 @@
       "name": "Star Trek",
       "releasedAt": "2026-11-13",
       "cardCount": 9,
-      "deckCount": 61
+      "deckCount": 65
     },
     {
       "code": "HOB",
       "name": "The Hobbit",
       "releasedAt": "2026-08-14",
-      "cardCount": 22,
-      "deckCount": 29
+      "cardCount": 24,
+      "deckCount": 32
     },
     {
       "code": "MSH",
       "name": "Marvel Super Heroes",
       "releasedAt": "2026-06-26",
-      "cardCount": 17,
-      "deckCount": 30
+      "cardCount": 16,
+      "deckCount": 32
     },
     {
       "code": "SOS",
       "name": "Secrets of Strixhaven",
       "releasedAt": "2026-04-24",
-      "cardCount": 33,
-      "deckCount": 57
+      "cardCount": 34,
+      "deckCount": 59
     },
     {
       "code": "TMT",
       "name": "Teenage Mutant Ninja Turtles",
       "releasedAt": "2026-03-06",
-      "cardCount": 14,
-      "deckCount": 62
+      "cardCount": 17,
+      "deckCount": 65
     },
     {
       "code": "ECL",
       "name": "Lorwyn Eclipsed",
       "releasedAt": "2026-01-23",
-      "cardCount": 24,
-      "deckCount": 84
+      "cardCount": 23,
+      "deckCount": 87
     },
     {
       "code": "TLA",
       "name": "Avatar: The Last Airbender",
       "releasedAt": "2025-11-21",
       "cardCount": 27,
-      "deckCount": 69
+      "deckCount": 71
     },
     {
       "code": "SPM",
       "name": "Marvel's Spider-Man",
       "releasedAt": "2025-09-26",
-      "cardCount": 14,
+      "cardCount": 15,
       "deckCount": 43
     },
     {
       "code": "OM1",
       "name": "Through the Omenpaths",
       "releasedAt": "2025-09-23",
-      "cardCount": 14,
+      "cardCount": 15,
       "deckCount": 43
     },
     {
       "code": "EOE",
       "name": "Edge of Eternities",
       "releasedAt": "2025-08-01",
-      "cardCount": 27,
-      "deckCount": 86
+      "cardCount": 30,
+      "deckCount": 90
     },
     {
       "code": "FIN",
       "name": "Final Fantasy",
       "releasedAt": "2025-06-13",
       "cardCount": 12,
-      "deckCount": 60
+      "deckCount": 62
     },
     {
       "code": "TDM",
       "name": "Tarkir: Dragonstorm",
       "releasedAt": "2025-04-11",
       "cardCount": 30,
-      "deckCount": 86
+      "deckCount": 90
     },
     {
       "code": "DFT",
       "name": "Aetherdrift",
       "releasedAt": "2025-02-14",
       "cardCount": 19,
-      "deckCount": 75
+      "deckCount": 77
     },
     {
       "code": "FDN",
       "name": "Foundations",
       "releasedAt": "2024-11-15",
       "cardCount": 35,
-      "deckCount": 90
+      "deckCount": 94
     },
     {
       "code": "DSK",
       "name": "Duskmourn: House of Horror",
       "releasedAt": "2024-09-27",
       "cardCount": 28,
-      "deckCount": 62
+      "deckCount": 65
     },
     {
       "code": "BLB",
       "name": "Bloomburrow",
       "releasedAt": "2024-08-02",
-      "cardCount": 25,
-      "deckCount": 67
+      "cardCount": 23,
+      "deckCount": 69
     },
     {
       "code": "BIG",
       "name": "The Big Score",
       "releasedAt": "2024-04-19",
-      "cardCount": 6,
-      "deckCount": 47
+      "cardCount": 5,
+      "deckCount": 50
     },
     {
       "code": "OTJ",
       "name": "Outlaws of Thunder Junction",
       "releasedAt": "2024-04-19",
       "cardCount": 21,
-      "deckCount": 57
+      "deckCount": 61
     },
     {
       "code": "MKM",
       "name": "Murders at Karlov Manor",
       "releasedAt": "2024-02-09",
-      "cardCount": 14,
-      "deckCount": 58
+      "cardCount": 16,
+      "deckCount": 61
     },
     {
       "code": "LCI",
       "name": "The Lost Caverns of Ixalan",
       "releasedAt": "2023-11-17",
-      "cardCount": 26,
-      "deckCount": 50
+      "cardCount": 27,
+      "deckCount": 53
     },
     {
       "code": "WOE",
       "name": "Wilds of Eldraine",
       "releasedAt": "2023-09-08",
       "cardCount": 15,
-      "deckCount": 53
+      "deckCount": 54
     },
     {
       "code": "KTK",
       "name": "Khans of Tarkir",
       "releasedAt": "2014-09-26",
       "cardCount": 1,
-      "deckCount": 18
+      "deckCount": 22
     }
   ],
   "cards": [
@@ -246,17 +246,11 @@
         "TLA"
       ],
       "primarySetCode": "TLA",
-      "deckCount": 3,
+      "deckCount": 2,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "4-truehero",
-          "mainboardQuantity": 2,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
@@ -515,7 +509,7 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 11,
+      "deckCount": 13,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -528,6 +522,18 @@
           "deckId": "8-rushi-00",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -824,7 +830,7 @@
         "TLA"
       ],
       "primarySetCode": "TLA",
-      "deckCount": 7,
+      "deckCount": 5,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -835,18 +841,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
           "deckId": "7-mommydom-manifesto",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
         },
@@ -937,6 +931,18 @@
           "sideboardQuantity": 0
         },
         {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "5-duanceyao",
           "mainboardQuantity": 3,
@@ -1011,18 +1017,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -1355,11 +1349,23 @@
         "LCI"
       ],
       "primarySetCode": "LCI",
-      "deckCount": 11,
+      "deckCount": 13,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
@@ -1437,14 +1443,8 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 4,
+      "deckCount": 3,
       "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 1,
-          "sideboardQuantity": 0
-        },
         {
           "eventId": "standard-league-2026-08-2111015",
           "deckId": "35737046-thebigbrain",
@@ -1524,17 +1524,11 @@
         "TRK"
       ],
       "primarySetCode": "TRK",
-      "deckCount": 5,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -1570,18 +1564,12 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 5,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
           "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
         {
@@ -1774,28 +1762,6 @@
       ]
     },
     {
-      "key": "0c7019a7-3cca-481a-9af0-abedb89c15ad",
-      "nameEn": "Brightglass Gearhulk",
-      "nameJa": "輝晶の機械巨人",
-      "normalizedNameEn": "brightglass gearhulk",
-      "normalizedNameJa": "輝晶の機械巨人",
-      "oracleId": "0c7019a7-3cca-481a-9af0-abedb89c15ad",
-      "isBasicLand": false,
-      "setCodes": [
-        "DFT"
-      ],
-      "primarySetCode": "DFT",
-      "deckCount": 1,
-      "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        }
-      ]
-    },
-    {
       "key": "0fb9a8a2-4331-4259-9460-a37397554962",
       "nameEn": "Bringer of the Last Gift",
       "nameJa": "最後の贈り物の運び手",
@@ -1869,13 +1835,19 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 8,
+      "deckCount": 9,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "2-pius23",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 1
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -1976,6 +1948,12 @@
           "sideboardQuantity": 0
         },
         {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "2-maemtg",
           "mainboardQuantity": 3,
@@ -2020,12 +1998,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
           "deckId": "8-wadeb",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -2076,6 +2048,12 @@
       "deckCount": 5,
       "deckRefs": [
         {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
           "eventId": "standard-challenge-32-2026-08-2412852766",
           "deckId": "4-laplasjan",
           "mainboardQuantity": 2,
@@ -2085,12 +2063,6 @@
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "2-thalai",
           "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
         {
@@ -2188,17 +2160,11 @@
         "SPM"
       ],
       "primarySetCode": "SPM",
-      "deckCount": 5,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
-          "mainboardQuantity": 2,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
@@ -2280,14 +2246,8 @@
         "TMT"
       ],
       "primarySetCode": "TMT",
-      "deckCount": 3,
+      "deckCount": 2,
       "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 2,
-          "sideboardQuantity": 0
-        },
         {
           "eventId": "standard-league-2026-08-2111015",
           "deckId": "35737046-thebigbrain",
@@ -2314,8 +2274,14 @@
         "MSH"
       ],
       "primarySetCode": "MSH",
-      "deckCount": 4,
+      "deckCount": 5,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "6-aljce",
@@ -2376,7 +2342,7 @@
         "LCI"
       ],
       "primarySetCode": "LCI",
-      "deckCount": 13,
+      "deckCount": 14,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -2388,6 +2354,12 @@
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
           "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
         {
@@ -2470,14 +2442,8 @@
         "FIN"
       ],
       "primarySetCode": "FIN",
-      "deckCount": 3,
+      "deckCount": 2,
       "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 1,
-          "sideboardQuantity": 0
-        },
         {
           "eventId": "standard-league-2026-08-2111015",
           "deckId": "35737046-thebigbrain",
@@ -2504,8 +2470,14 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 2,
+      "deckCount": 3,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
         {
           "eventId": "standard-league-2026-08-2511015",
           "deckId": "35767724-ihuman",
@@ -2605,28 +2577,6 @@
       ]
     },
     {
-      "key": "8f5b71fd-469f-4370-a806-9bfefbae03a2",
-      "nameEn": "Collector's Cage",
-      "nameJa": "収集家の檻",
-      "normalizedNameEn": "collector's cage",
-      "normalizedNameJa": "収集家の檻",
-      "oracleId": "8f5b71fd-469f-4370-a806-9bfefbae03a2",
-      "isBasicLand": false,
-      "setCodes": [
-        "BIG"
-      ],
-      "primarySetCode": "BIG",
-      "deckCount": 1,
-      "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        }
-      ]
-    },
-    {
       "key": "47ee6837-2e2f-4344-ab9f-6b8887874f77",
       "nameEn": "Colorstorm Stallion",
       "nameJa": "彩嵐の雄馬",
@@ -2638,7 +2588,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 11,
+      "deckCount": 12,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -2651,6 +2601,12 @@
           "deckId": "8-rushi-00",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 3
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -2742,7 +2698,7 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 9,
+      "deckCount": 8,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -2753,12 +2709,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "5-gxs3v3n",
-          "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
@@ -2812,8 +2762,14 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 4,
+      "deckCount": 5,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
           "deckId": "3-jtl005",
@@ -2852,17 +2808,11 @@
         "TMT"
       ],
       "primarySetCode": "TMT",
-      "deckCount": 5,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -2898,8 +2848,14 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 5,
+      "deckCount": 6,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "1-b-carp",
@@ -3118,8 +3074,14 @@
         "HOB"
       ],
       "primarySetCode": "HOB",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2411015",
           "deckId": "35763138-reddy-roxx",
@@ -3264,8 +3226,14 @@
         "BLB"
       ],
       "primarySetCode": "BLB",
-      "deckCount": 2,
+      "deckCount": 3,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
         {
           "eventId": "standard-league-2026-08-2111015",
           "deckId": "35736734-mosh-joscoe",
@@ -3488,14 +3456,8 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 4,
+      "deckCount": 3,
       "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
-        },
         {
           "eventId": "standard-league-2026-08-2111015",
           "deckId": "35736626-oafmcnamara",
@@ -3663,6 +3625,12 @@
           "sideboardQuantity": 0
         },
         {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "5-duanceyao",
           "mainboardQuantity": 1,
@@ -3720,12 +3688,6 @@
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
           "mainboardQuantity": 2,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
-          "mainboardQuantity": 1,
           "sideboardQuantity": 0
         },
         {
@@ -3843,7 +3805,7 @@
         "WOE"
       ],
       "primarySetCode": "WOE",
-      "deckCount": 18,
+      "deckCount": 22,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -3860,6 +3822,30 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
         },
@@ -4152,8 +4138,14 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2411015",
           "deckId": "35763138-reddy-roxx",
@@ -4220,18 +4212,12 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 3,
+      "deckCount": 2,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "3-macisaac",
           "mainboardQuantity": 2,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
         {
@@ -4282,12 +4268,18 @@
         "TMT"
       ],
       "primarySetCode": "TMT",
-      "deckCount": 5,
+      "deckCount": 6,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
           "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
         {
@@ -4328,7 +4320,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 20,
+      "deckCount": 21,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -4339,6 +4331,18 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 4
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
         },
@@ -4365,12 +4369,6 @@
           "deckId": "6-bertram",
           "mainboardQuantity": 0,
           "sideboardQuantity": 3
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-league-2026-08-2111015",
@@ -4464,8 +4462,14 @@
         "LCI"
       ],
       "primarySetCode": "LCI",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "6-aljce",
@@ -4487,6 +4491,28 @@
       ]
     },
     {
+      "key": "cee583b7-7cc3-40ea-a227-b760839ec291",
+      "nameEn": "Dwalin, Weaponmaster",
+      "nameJa": "武器の達人、ドワーリン",
+      "normalizedNameEn": "dwalin, weaponmaster",
+      "normalizedNameJa": "武器の達人、ドワーリン",
+      "oracleId": "cee583b7-7cc3-40ea-a227-b760839ec291",
+      "isBasicLand": false,
+      "setCodes": [
+        "HOB"
+      ],
+      "primarySetCode": "HOB",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "70538676-2ffb-4cad-827e-b55e81088678",
       "nameEn": "Dwarven Mauler",
       "nameJa": "ドワーフの打ち壊し屋",
@@ -4498,8 +4524,14 @@
         "HOB"
       ],
       "primarySetCode": "HOB",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2411015",
           "deckId": "35763138-reddy-roxx",
@@ -4535,14 +4567,14 @@
       "deckCount": 4,
       "deckRefs": [
         {
-          "eventId": "standard-challenge-32-2026-08-2512852775",
-          "deckId": "7-lucasg1ggs",
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
         {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
+          "eventId": "standard-challenge-32-2026-08-2512852775",
+          "deckId": "7-lucasg1ggs",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
@@ -4572,7 +4604,7 @@
         "TLA"
       ],
       "primarySetCode": "TLA",
-      "deckCount": 32,
+      "deckCount": 33,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -4589,6 +4621,18 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "6-burp93",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -4667,12 +4711,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -4780,11 +4818,17 @@
         "BLB"
       ],
       "primarySetCode": "BLB",
-      "deckCount": 9,
+      "deckCount": 10,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -4835,28 +4879,6 @@
           "deckId": "35778719-asr1927",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
-        }
-      ]
-    },
-    {
-      "key": "36af3c2c-49d7-46ea-ab02-c254b332448e",
-      "nameEn": "Eirdu, Carrier of Dawn",
-      "nameJa": "払暁をもたらすもの、エイルドゥ",
-      "normalizedNameEn": "eirdu, carrier of dawn",
-      "normalizedNameJa": "払暁をもたらすもの、エイルドゥ",
-      "oracleId": "36af3c2c-49d7-46ea-ab02-c254b332448e",
-      "isBasicLand": false,
-      "setCodes": [
-        "ECL"
-      ],
-      "primarySetCode": "ECL",
-      "deckCount": 1,
-      "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 1
         }
       ]
     },
@@ -4916,19 +4938,13 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 2,
+      "deckCount": 1,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
           "deckId": "8-wadeb",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 1
         }
       ]
     },
@@ -5034,13 +5050,19 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 10,
+      "deckCount": 11,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -5145,6 +5167,28 @@
       ]
     },
     {
+      "key": "74b8182e-54be-444a-97b1-84fc5fd3c290",
+      "nameEn": "End of the Hunt",
+      "nameJa": "狩りの終わり",
+      "normalizedNameEn": "end of the hunt",
+      "normalizedNameJa": "狩りの終わり",
+      "oracleId": "74b8182e-54be-444a-97b1-84fc5fd3c290",
+      "isBasicLand": false,
+      "setCodes": [
+        "SOS"
+      ],
+      "primarySetCode": "SOS",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        }
+      ]
+    },
+    {
       "key": "9d2460c3-8eeb-4f35-b6f6-748c478664c7",
       "nameEn": "Enduring Curiosity",
       "nameJa": "永劫の好奇心",
@@ -5156,12 +5200,24 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 5,
+      "deckCount": 7,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
           "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
         {
@@ -5255,6 +5311,12 @@
           "sideboardQuantity": 0
         },
         {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "6-aljce",
           "mainboardQuantity": 0,
@@ -5300,12 +5362,6 @@
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "7-lucasg1ggs",
           "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
         {
@@ -5401,7 +5457,7 @@
         "TMT"
       ],
       "primarySetCode": "TMT",
-      "deckCount": 32,
+      "deckCount": 33,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -5418,6 +5474,18 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "6-burp93",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -5497,12 +5565,6 @@
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
           "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
-          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
         {
@@ -5609,7 +5671,7 @@
         "FIN"
       ],
       "primarySetCode": "FIN",
-      "deckCount": 33,
+      "deckCount": 34,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -5627,6 +5689,18 @@
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "6-burp93",
           "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
         {
@@ -5704,12 +5778,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -5857,14 +5925,8 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 4,
+      "deckCount": 3,
       "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 3
-        },
         {
           "eventId": "standard-league-2026-08-2311015",
           "deckId": "35751961-nessin",
@@ -5897,7 +5959,7 @@
         "BLB"
       ],
       "primarySetCode": "BLB",
-      "deckCount": 33,
+      "deckCount": 34,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -5914,6 +5976,18 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "6-burp93",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -5992,12 +6066,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -6111,11 +6179,17 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 1,
+      "deckCount": 2,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
         }
@@ -6155,14 +6229,8 @@
         "BLB"
       ],
       "primarySetCode": "BLB",
-      "deckCount": 2,
+      "deckCount": 1,
       "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 1
-        },
         {
           "eventId": "standard-league-2026-08-2211015",
           "deckId": "35731385-atagomax",
@@ -6261,8 +6329,14 @@
         "TLA"
       ],
       "primarySetCode": "TLA",
-      "deckCount": 4,
+      "deckCount": 5,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "1-b-carp",
@@ -6329,8 +6403,14 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "1-b-carp",
@@ -6363,7 +6443,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 22,
+      "deckCount": 27,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -6376,6 +6456,36 @@
           "deckId": "8-rushi-00",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 3
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 3
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -6511,8 +6621,14 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 2,
+      "deckCount": 3,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "4-truehero",
@@ -6603,11 +6719,23 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 5,
+      "deckCount": 7,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -6649,8 +6777,14 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 2,
+      "deckCount": 3,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "4-deleon91",
@@ -6677,8 +6811,14 @@
         "BIG"
       ],
       "primarySetCode": "BIG",
-      "deckCount": 1,
+      "deckCount": 2,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2711015",
           "deckId": "35786045-inalienabledreamless",
@@ -6736,6 +6876,18 @@
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "6-burp93",
           "mainboardQuantity": 14,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 9,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 13,
           "sideboardQuantity": 0
         },
         {
@@ -6813,18 +6965,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 13,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 13,
           "sideboardQuantity": 0
         },
@@ -7006,11 +7146,17 @@
         "BLB"
       ],
       "primarySetCode": "BLB",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
         },
@@ -7117,72 +7263,6 @@
       ]
     },
     {
-      "key": "f48f2a9b-4ba5-4984-8180-3950889bba65",
-      "nameEn": "Gandalf, Goblins' Bane",
-      "nameJa": "ゴブリンの災い、ガンダルフ",
-      "normalizedNameEn": "gandalf, goblins' bane",
-      "normalizedNameJa": "ゴブリンの災い、ガンダルフ",
-      "oracleId": "f48f2a9b-4ba5-4984-8180-3950889bba65",
-      "isBasicLand": false,
-      "setCodes": [
-        "HOB"
-      ],
-      "primarySetCode": "HOB",
-      "deckCount": 1,
-      "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        }
-      ]
-    },
-    {
-      "key": "36b58705-c5a5-4547-8d8b-a7c35e1f69ae",
-      "nameEn": "Gathering Place",
-      "nameJa": "集いの場",
-      "normalizedNameEn": "gathering place",
-      "normalizedNameJa": "集いの場",
-      "oracleId": "36b58705-c5a5-4547-8d8b-a7c35e1f69ae",
-      "isBasicLand": false,
-      "setCodes": [
-        "MSH"
-      ],
-      "primarySetCode": "MSH",
-      "deckCount": 1,
-      "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        }
-      ]
-    },
-    {
-      "key": "0a356d04-2e86-435b-9766-27b93b468a61",
-      "nameEn": "Gene Pollinator",
-      "nameJa": "遺（い）伝（でん）子（し）送（そう）粉（ふん）機（き）",
-      "normalizedNameEn": "gene pollinator",
-      "normalizedNameJa": "遺(い)伝(でん)子(し)送(そう)粉(ふん)機(き)",
-      "oracleId": "0a356d04-2e86-435b-9766-27b93b468a61",
-      "isBasicLand": false,
-      "setCodes": [
-        "EOE"
-      ],
-      "primarySetCode": "EOE",
-      "deckCount": 1,
-      "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        }
-      ]
-    },
-    {
       "key": "522dd417-364b-44ab-8ca9-fb55db5f26a6",
       "nameEn": "Get Lost",
       "nameJa": "失せろ",
@@ -7194,13 +7274,25 @@
         "LCI"
       ],
       "primarySetCode": "LCI",
-      "deckCount": 8,
+      "deckCount": 10,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "7-cachorrowo",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         },
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
@@ -7258,12 +7350,18 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 9,
+      "deckCount": 10,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
           "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
         {
@@ -7328,13 +7426,31 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 18,
+      "deckCount": 19,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -7369,18 +7485,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
         },
@@ -7441,24 +7545,24 @@
       ]
     },
     {
-      "key": "bd0c0e85-ff24-46c9-a547-4f633355c131",
-      "nameEn": "Giant Cindermaw",
-      "nameJa": "巨大焦がし大口",
-      "normalizedNameEn": "giant cindermaw",
-      "normalizedNameJa": "巨大焦がし大口",
-      "oracleId": "bd0c0e85-ff24-46c9-a547-4f633355c131",
+      "key": "80433c2c-5196-42e0-b9fa-d7b12783f5fd",
+      "nameEn": "Giant's Boulder",
+      "nameJa": "巨人の大岩",
+      "normalizedNameEn": "giant's boulder",
+      "normalizedNameJa": "巨人の大岩",
+      "oracleId": "80433c2c-5196-42e0-b9fa-d7b12783f5fd",
       "isBasicLand": false,
       "setCodes": [
-        "FDN"
+        "HOB"
       ],
-      "primarySetCode": "FDN",
+      "primarySetCode": "HOB",
       "deckCount": 1,
       "deckRefs": [
         {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 3
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -7474,13 +7578,19 @@
         "HOB"
       ],
       "primarySetCode": "HOB",
-      "deckCount": 8,
+      "deckCount": 9,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "1-dawido",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -7606,11 +7716,23 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 12,
+      "deckCount": 14,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -7717,7 +7839,7 @@
         "TRK"
       ],
       "primarySetCode": "TRK",
-      "deckCount": 12,
+      "deckCount": 11,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -7735,12 +7857,6 @@
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "5-gxs3v3n",
           "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
         {
@@ -7892,15 +8008,15 @@
           "sideboardQuantity": 0
         },
         {
-          "eventId": "standard-challenge-32-2026-08-2512852775",
-          "deckId": "1-b-carp",
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
         {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 2,
+          "eventId": "standard-challenge-32-2026-08-2512852775",
+          "deckId": "1-b-carp",
+          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
         {
@@ -7932,6 +8048,28 @@
           "deckId": "35778653-varo",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
+      "key": "431d6a2b-e22c-4921-a5f1-dd672f764f78",
+      "nameEn": "Grim Bauble",
+      "nameJa": "不気味なガラクタ",
+      "normalizedNameEn": "grim bauble",
+      "normalizedNameJa": "不気味なガラクタ",
+      "oracleId": "431d6a2b-e22c-4921-a5f1-dd672f764f78",
+      "isBasicLand": false,
+      "setCodes": [
+        "DFT"
+      ],
+      "primarySetCode": "DFT",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         }
       ]
     },
@@ -8000,11 +8138,17 @@
         "TRK"
       ],
       "primarySetCode": "TRK",
-      "deckCount": 12,
+      "deckCount": 13,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "7-cachorrowo",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -8088,17 +8232,11 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 4,
+      "deckCount": 3,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -8150,11 +8288,17 @@
         "WOE"
       ],
       "primarySetCode": "WOE",
-      "deckCount": 9,
+      "deckCount": 10,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -8260,11 +8404,23 @@
         "MSH"
       ],
       "primarySetCode": "MSH",
-      "deckCount": 7,
+      "deckCount": 9,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
@@ -8451,15 +8607,15 @@
           "sideboardQuantity": 0
         },
         {
-          "eventId": "standard-challenge-32-2026-08-2512852775",
-          "deckId": "7-lucasg1ggs",
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
         },
         {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 4,
+          "eventId": "standard-challenge-32-2026-08-2512852775",
+          "deckId": "7-lucasg1ggs",
+          "mainboardQuantity": 1,
           "sideboardQuantity": 0
         },
         {
@@ -8488,7 +8644,7 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 33,
+      "deckCount": 34,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -8505,6 +8661,18 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "6-burp93",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -8583,12 +8751,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -8730,8 +8892,14 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 8,
+      "deckCount": 9,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "2-maemtg",
@@ -8805,6 +8973,28 @@
       ]
     },
     {
+      "key": "4f02aa99-481c-4089-8f7c-cfe7eaa7dda0",
+      "nameEn": "Improvised Arsenal",
+      "nameJa": "寄せ集めの武器",
+      "normalizedNameEn": "improvised arsenal",
+      "normalizedNameJa": "寄せ集めの武器",
+      "oracleId": "4f02aa99-481c-4089-8f7c-cfe7eaa7dda0",
+      "isBasicLand": false,
+      "setCodes": [
+        "TMT"
+      ],
+      "primarySetCode": "TMT",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "d68439b5-7011-4b1d-a7da-14ef0f4d9994",
       "nameEn": "Inevitable Defeat",
       "nameJa": "不可避の敗北",
@@ -8833,6 +9023,28 @@
         {
           "eventId": "standard-league-2026-08-2611015",
           "deckId": "35778653-varo",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
+      "key": "d398dca3-f3a5-44c9-998f-b4fce9e5c2bf",
+      "nameEn": "Infestation Sage",
+      "nameJa": "寄生の賢者",
+      "normalizedNameEn": "infestation sage",
+      "normalizedNameJa": "寄生の賢者",
+      "oracleId": "d398dca3-f3a5-44c9-998f-b4fce9e5c2bf",
+      "isBasicLand": false,
+      "setCodes": [
+        "FDN"
+      ],
+      "primarySetCode": "FDN",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -8903,6 +9115,12 @@
           "sideboardQuantity": 0
         },
         {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
           "eventId": "standard-challenge-32-2026-08-2412852766",
           "deckId": "7-mommydom-manifesto",
           "mainboardQuantity": 4,
@@ -8912,12 +9130,6 @@
           "eventId": "standard-challenge-32-2026-08-2412852766",
           "deckId": "8-wadeb",
           "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
         {
@@ -8976,17 +9188,11 @@
         "LCI"
       ],
       "primarySetCode": "LCI",
-      "deckCount": 5,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
-          "mainboardQuantity": 2,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
@@ -9039,28 +9245,6 @@
       ]
     },
     {
-      "key": "8cb36a67-9206-4665-a03f-64f52ba559c4",
-      "nameEn": "Into the Flood Maw",
-      "nameJa": "洪水の大口へ",
-      "normalizedNameEn": "into the flood maw",
-      "normalizedNameJa": "洪水の大口へ",
-      "oracleId": "8cb36a67-9206-4665-a03f-64f52ba559c4",
-      "isBasicLand": false,
-      "setCodes": [
-        "BLB"
-      ],
-      "primarySetCode": "BLB",
-      "deckCount": 1,
-      "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
-        }
-      ]
-    },
-    {
       "key": "4f8c4927-46c2-4c18-b5af-c6288dbaff6d",
       "nameEn": "Iridescent Vinelasher",
       "nameJa": "玉虫色の蔦打ち",
@@ -9077,6 +9261,28 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "6-bertram",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
+      "key": "9febdfa8-8af2-4aba-b2e6-cb2baad7e02b",
+      "nameEn": "Iron Hills Blacksmith",
+      "nameJa": "くろがね連山の武器鍛冶",
+      "normalizedNameEn": "iron hills blacksmith",
+      "normalizedNameJa": "くろがね連山の武器鍛冶",
+      "oracleId": "9febdfa8-8af2-4aba-b2e6-cb2baad7e02b",
+      "isBasicLand": false,
+      "setCodes": [
+        "HOB"
+      ],
+      "primarySetCode": "HOB",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -9122,17 +9328,11 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 5,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -9187,7 +9387,7 @@
         "WOE"
       ],
       "primarySetCode": "TRK",
-      "deckCount": 26,
+      "deckCount": 30,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -9198,6 +9398,36 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
+          "mainboardQuantity": 5,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 5,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 6,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 5,
           "sideboardQuantity": 0
         },
@@ -9272,12 +9502,6 @@
           "deckId": "3-macisaac",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
         },
         {
           "eventId": "standard-league-2026-08-2011015",
@@ -9387,18 +9611,12 @@
         "MSH"
       ],
       "primarySetCode": "MSH",
-      "deckCount": 4,
+      "deckCount": 3,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
           "deckId": "7-mommydom-manifesto",
           "mainboardQuantity": 2,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
         {
@@ -9427,8 +9645,14 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 4,
+      "deckCount": 5,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "1-b-carp",
@@ -9467,11 +9691,23 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 5,
+      "deckCount": 7,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -9531,6 +9767,12 @@
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "6-burp93",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 1,
           "sideboardQuantity": 1
         },
         {
@@ -9596,12 +9838,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 2,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
@@ -9719,8 +9955,14 @@
         "HOB"
       ],
       "primarySetCode": "HOB",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2411015",
           "deckId": "35763138-reddy-roxx",
@@ -9781,8 +10023,14 @@
         "TMT"
       ],
       "primarySetCode": "TMT",
-      "deckCount": 1,
+      "deckCount": 2,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2711015",
           "deckId": "35786045-inalienabledreamless",
@@ -9825,8 +10073,14 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2411015",
           "deckId": "35763138-reddy-roxx",
@@ -9848,6 +10102,28 @@
       ]
     },
     {
+      "key": "4ec0b64d-c793-47a6-9c26-9ad4d9e9c182",
+      "nameEn": "Lazav, Wearer of Faces",
+      "nameJa": "顔を繕う者、ラザーヴ",
+      "normalizedNameEn": "lazav, wearer of faces",
+      "normalizedNameJa": "顔を繕う者、ラザーヴ",
+      "oracleId": "4ec0b64d-c793-47a6-9c26-9ad4d9e9c182",
+      "isBasicLand": false,
+      "setCodes": [
+        "MKM"
+      ],
+      "primarySetCode": "MKM",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "ee9b606a-a1fe-43c8-84d0-9bf7b012cc75",
       "nameEn": "Leatherhead, Swamp Stalker",
       "nameJa": "沼地のハンター、レザーヘッド",
@@ -9859,7 +10135,7 @@
         "TMT"
       ],
       "primarySetCode": "TMT",
-      "deckCount": 20,
+      "deckCount": 19,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -9872,6 +10148,12 @@
           "deckId": "7-cachorrowo",
           "mainboardQuantity": 0,
           "sideboardQuantity": 3
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -9912,18 +10194,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 2,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
         },
@@ -10029,8 +10299,14 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2411015",
           "deckId": "35763138-reddy-roxx",
@@ -10198,6 +10474,18 @@
           "sideboardQuantity": 0
         },
         {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "5-duanceyao",
           "mainboardQuantity": 4,
@@ -10272,18 +10560,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -10413,7 +10689,7 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 20,
+      "deckCount": 19,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -10454,12 +10730,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 1,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
         },
@@ -10787,17 +11057,11 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 5,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -10861,7 +11125,7 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 29,
+      "deckCount": 28,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -10879,6 +11143,12 @@
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "6-burp93",
           "mainboardQuantity": 1,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 2,
           "sideboardQuantity": 2
         },
         {
@@ -10944,18 +11214,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 2,
-          "sideboardQuantity": 2
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 1,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 2,
           "sideboardQuantity": 2
         },
@@ -11036,6 +11294,29 @@
           "deckId": "35792714-reojund",
           "mainboardQuantity": 1,
           "sideboardQuantity": 3
+        }
+      ]
+    },
+    {
+      "key": "8e51fdb8-4f83-4e94-b36c-40a501075ecb",
+      "nameEn": "Merata, Neuron Hacker",
+      "nameJa": "傑出した発明家、レディ・オクトパス",
+      "normalizedNameEn": "merata, neuron hacker",
+      "normalizedNameJa": "傑出した発明家、レディ・オクトパス",
+      "oracleId": "8e51fdb8-4f83-4e94-b36c-40a501075ecb",
+      "isBasicLand": false,
+      "setCodes": [
+        "OM1",
+        "SPM"
+      ],
+      "primarySetCode": "SPM",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -11165,7 +11446,7 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 32,
+      "deckCount": 33,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -11183,6 +11464,18 @@
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "6-burp93",
           "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
         {
@@ -11260,12 +11553,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
@@ -11373,8 +11660,14 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "1-b-carp",
@@ -11549,17 +11842,11 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 5,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -11663,7 +11950,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 32,
+      "deckCount": 33,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -11682,6 +11969,18 @@
           "deckId": "6-burp93",
           "mainboardQuantity": 0,
           "sideboardQuantity": 4
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -11758,12 +12057,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 4
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 0,
           "sideboardQuantity": 4
         },
@@ -11890,7 +12183,7 @@
         "WOE"
       ],
       "primarySetCode": "TRK",
-      "deckCount": 15,
+      "deckCount": 16,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -11901,6 +12194,18 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
         },
@@ -11925,12 +12230,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "3-macisaac",
-          "mainboardQuantity": 1,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
         },
@@ -12019,12 +12318,24 @@
         "SPM"
       ],
       "primarySetCode": "SPM",
-      "deckCount": 20,
+      "deckCount": 21,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
           "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
         {
@@ -12073,12 +12384,6 @@
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "4-truehero",
           "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
         {
@@ -12156,8 +12461,14 @@
         "TMT"
       ],
       "primarySetCode": "TMT",
-      "deckCount": 7,
+      "deckCount": 8,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "4-deleon91",
@@ -12533,6 +12844,12 @@
           "sideboardQuantity": 0
         },
         {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "2-maemtg",
           "mainboardQuantity": 4,
@@ -12559,12 +12876,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
           "deckId": "5-mdvwin",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -12600,7 +12911,7 @@
         "TLA"
       ],
       "primarySetCode": "TLA",
-      "deckCount": 5,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-08-2112852733",
@@ -12623,12 +12934,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
         }
@@ -12852,28 +13157,6 @@
       ]
     },
     {
-      "key": "50ab0194-c7dc-4f11-abc0-1a82393cc42e",
-      "nameEn": "Pawpatch Recruit",
-      "nameJa": "脚当ての補充兵",
-      "normalizedNameEn": "pawpatch recruit",
-      "normalizedNameJa": "脚当ての補充兵",
-      "oracleId": "50ab0194-c7dc-4f11-abc0-1a82393cc42e",
-      "isBasicLand": false,
-      "setCodes": [
-        "BLB"
-      ],
-      "primarySetCode": "BLB",
-      "deckCount": 1,
-      "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        }
-      ]
-    },
-    {
       "key": "cff7499a-44b0-4a2a-b96c-ed2cafb1a90d",
       "nameEn": "Perilous Snare",
       "nameJa": "危険な罠",
@@ -12925,13 +13208,19 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 10,
+      "deckCount": 11,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "2-pius23",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 1
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -13040,6 +13329,28 @@
       ]
     },
     {
+      "key": "522e8db5-857e-492f-afed-d60cd2ce3dcd",
+      "nameEn": "Pinnacle Emissary",
+      "nameJa": "ピナクルの特（とく）使（し）",
+      "normalizedNameEn": "pinnacle emissary",
+      "normalizedNameJa": "ピナクルの特(とく)使(し)",
+      "oracleId": "522e8db5-857e-492f-afed-d60cd2ce3dcd",
+      "isBasicLand": false,
+      "setCodes": [
+        "EOE"
+      ],
+      "primarySetCode": "EOE",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "10e0b563-4dfc-4530-a010-0ba40bdf02ac",
       "nameEn": "Pinnacle Starcage",
       "nameJa": "ピナクルの星（せい）檻（かん）",
@@ -13110,12 +13421,24 @@
         "WOE"
       ],
       "primarySetCode": "TRK",
-      "deckCount": 27,
+      "deckCount": 28,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "7-cachorrowo",
           "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
         {
@@ -13163,12 +13486,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "5-gxs3v3n",
-          "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
           "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
@@ -13354,7 +13671,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 8,
+      "deckCount": 6,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -13375,18 +13692,6 @@
           "sideboardQuantity": 0
         },
         {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        },
-        {
           "eventId": "standard-league-2026-08-2111015",
           "deckId": "35737046-thebigbrain",
           "mainboardQuantity": 3,
@@ -13402,6 +13707,28 @@
           "eventId": "standard-league-2026-08-2711015",
           "deckId": "35784555-zonda",
           "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
+      "key": "74947e47-c4ff-4f47-9845-befa7403cbde",
+      "nameEn": "Preacher of the Schism",
+      "nameJa": "分派の説教者",
+      "normalizedNameEn": "preacher of the schism",
+      "normalizedNameJa": "分派の説教者",
+      "oracleId": "74947e47-c4ff-4f47-9845-befa7403cbde",
+      "isBasicLand": false,
+      "setCodes": [
+        "LCI"
+      ],
+      "primarySetCode": "LCI",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 1,
           "sideboardQuantity": 0
         }
       ]
@@ -13440,11 +13767,23 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 9,
+      "deckCount": 11,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -13634,18 +13973,12 @@
         "MSH"
       ],
       "primarySetCode": "MSH",
-      "deckCount": 3,
+      "deckCount": 2,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "3-macisaac",
           "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
         {
@@ -13736,8 +14069,14 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 8,
+      "deckCount": 9,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "1-claudioh",
@@ -13800,8 +14139,14 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 5,
+      "deckCount": 6,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 1
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "7-tchuco",
@@ -13896,13 +14241,19 @@
         "BLB"
       ],
       "primarySetCode": "BLB",
-      "deckCount": 6,
+      "deckCount": 7,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -13976,8 +14327,14 @@
         "FIN"
       ],
       "primarySetCode": "FIN",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2411015",
           "deckId": "35763138-reddy-roxx",
@@ -14035,6 +14392,28 @@
           "deckId": "35752748-popeville",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        }
+      ]
+    },
+    {
+      "key": "45873747-f2a4-4d83-9492-bfc97df7b605",
+      "nameEn": "Ravenous Robots",
+      "nameJa": "暴食ロボット",
+      "normalizedNameEn": "ravenous robots",
+      "normalizedNameJa": "暴食ロボット",
+      "oracleId": "45873747-f2a4-4d83-9492-bfc97df7b605",
+      "isBasicLand": false,
+      "setCodes": [
+        "TMT"
+      ],
+      "primarySetCode": "TMT",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -14175,7 +14554,7 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 21,
+      "deckCount": 22,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -14187,6 +14566,18 @@
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
         {
@@ -14212,12 +14603,6 @@
           "deckId": "6-bertram",
           "mainboardQuantity": 2,
           "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 2,
-          "sideboardQuantity": 0
         },
         {
           "eventId": "standard-league-2026-08-2111015",
@@ -14317,8 +14702,20 @@
         "BIG"
       ],
       "primarySetCode": "BIG",
-      "deckCount": 20,
+      "deckCount": 21,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 4
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "6-aljce",
@@ -14360,12 +14757,6 @@
           "deckId": "7-lucasg1ggs",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 3
         },
         {
           "eventId": "standard-league-2026-08-2111015",
@@ -14503,12 +14894,24 @@
         "LCI"
       ],
       "primarySetCode": "LCI",
-      "deckCount": 10,
+      "deckCount": 12,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
           "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
         {
@@ -14601,13 +15004,19 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 1,
+      "deckCount": 2,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         }
       ]
     },
@@ -14673,7 +15082,7 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 16,
+      "deckCount": 18,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -14684,6 +15093,24 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -14727,12 +15154,6 @@
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "3-macisaac",
           "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
         {
@@ -14844,6 +15265,28 @@
       ]
     },
     {
+      "key": "9ad956c8-71d3-436f-961e-e2dfc1d2ca70",
+      "nameEn": "Rust Harvester",
+      "nameJa": "錆（さ）びついた収（しゅう）穫（かく）機（き）",
+      "normalizedNameEn": "rust harvester",
+      "normalizedNameJa": "錆(さ)びついた収(しゅう)穫(かく)機(き)",
+      "oracleId": "9ad956c8-71d3-436f-961e-e2dfc1d2ca70",
+      "isBasicLand": false,
+      "setCodes": [
+        "EOE"
+      ],
+      "primarySetCode": "EOE",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "45181cb8-2090-4471-ba90-e5a8f04d525f",
       "nameEn": "Sacred Foundry",
       "nameJa": "聖（せい）なる鋳（ちゅう）造（ぞう）所（しょ）",
@@ -14861,6 +15304,12 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -14892,12 +15341,6 @@
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "1-b-carp",
           "mainboardQuantity": 3,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
         {
@@ -15008,7 +15451,7 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 31,
+      "deckCount": 32,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -15027,6 +15470,18 @@
           "deckId": "6-burp93",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 4
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 4
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -15103,12 +15558,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 3,
-          "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 3,
           "sideboardQuantity": 1
         },
@@ -15244,7 +15693,7 @@
         "FIN"
       ],
       "primarySetCode": "FIN",
-      "deckCount": 32,
+      "deckCount": 33,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -15261,6 +15710,18 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "6-burp93",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -15339,12 +15800,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -15508,13 +15963,19 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 14,
+      "deckCount": 13,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "7-cachorrowo",
           "mainboardQuantity": 0,
           "sideboardQuantity": 4
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
@@ -15533,18 +15994,6 @@
           "deckId": "5-gxs3v3n",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 2,
-          "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-league-2026-08-2111015",
@@ -15608,13 +16057,25 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 9,
+      "deckCount": 11,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "2-pius23",
           "mainboardQuantity": 0,
           "sideboardQuantity": 3
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -15679,40 +16140,12 @@
         "SPM"
       ],
       "primarySetCode": "SPM",
-      "deckCount": 2,
+      "deckCount": 1,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "3-macisaac",
           "mainboardQuantity": 1,
-          "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        }
-      ]
-    },
-    {
-      "key": "a5bbfe32-2fb9-48a0-bc8a-e9899aac1fda",
-      "nameEn": "Sentinel of the Nameless City",
-      "nameJa": "名もなき都市の歩哨",
-      "normalizedNameEn": "sentinel of the nameless city",
-      "normalizedNameJa": "名もなき都市の歩哨",
-      "oracleId": "a5bbfe32-2fb9-48a0-bc8a-e9899aac1fda",
-      "isBasicLand": false,
-      "setCodes": [
-        "LCI"
-      ],
-      "primarySetCode": "LCI",
-      "deckCount": 1,
-      "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 2,
           "sideboardQuantity": 1
         }
       ]
@@ -15729,7 +16162,7 @@
         "TLA"
       ],
       "primarySetCode": "TLA",
-      "deckCount": 25,
+      "deckCount": 26,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -15747,6 +16180,18 @@
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "6-burp93",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
         {
@@ -15806,12 +16251,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 2,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
@@ -15895,8 +16334,14 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 1,
+      "deckCount": 2,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
         {
           "eventId": "standard-league-2026-08-2611015",
           "deckId": "35777936-feitosa-",
@@ -15981,13 +16426,25 @@
         "DSK"
       ],
       "primarySetCode": "DSK",
-      "deckCount": 6,
+      "deckCount": 8,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 4
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
@@ -16033,7 +16490,7 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 14,
+      "deckCount": 16,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -16046,6 +16503,18 @@
           "deckId": "5-fried-liver-attack",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -16133,8 +16602,14 @@
         "BLB"
       ],
       "primarySetCode": "BLB",
-      "deckCount": 5,
+      "deckCount": 6,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "2-maemtg",
@@ -16208,6 +16683,28 @@
       ]
     },
     {
+      "key": "decfde5e-ea53-4b15-8f69-51da7ef39d15",
+      "nameEn": "Skateboard",
+      "nameJa": "スケートボード",
+      "normalizedNameEn": "skateboard",
+      "normalizedNameJa": "スケートボード",
+      "oracleId": "decfde5e-ea53-4b15-8f69-51da7ef39d15",
+      "isBasicLand": false,
+      "setCodes": [
+        "TMT"
+      ],
+      "primarySetCode": "TMT",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "2ed1879a-83b8-48df-a6d2-fe28e912b4c5",
       "nameEn": "Slagstorm",
       "nameJa": "金屑の嵐",
@@ -16219,7 +16716,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 5,
+      "deckCount": 6,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -16228,10 +16725,16 @@
           "sideboardQuantity": 2
         },
         {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
           "mainboardQuantity": 0,
-          "sideboardQuantity": 3
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-league-2026-08-2111015",
@@ -16274,6 +16777,12 @@
           "sideboardQuantity": 0
         },
         {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "2-maemtg",
           "mainboardQuantity": 4,
@@ -16300,12 +16809,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
           "deckId": "5-mdvwin",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -16341,17 +16844,11 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 3,
+      "deckCount": 2,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "3-macisaac",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -16498,7 +16995,7 @@
         "WOE"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 20,
+      "deckCount": 19,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -16517,6 +17014,18 @@
           "deckId": "6-burp93",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 3
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -16585,24 +17094,6 @@
           "sideboardQuantity": 1
         },
         {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 4
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 1
-        },
-        {
           "eventId": "standard-league-2026-08-2311015",
           "deckId": "35754107-toopoortoplay",
           "mainboardQuantity": 0,
@@ -16634,7 +17125,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 9,
+      "deckCount": 11,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -16646,6 +17137,18 @@
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
           "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
         {
@@ -16750,7 +17253,7 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 20,
+      "deckCount": 22,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -16763,6 +17266,24 @@
           "deckId": "3-o-danielakos",
           "mainboardQuantity": 1,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -16825,12 +17346,6 @@
           "sideboardQuantity": 2
         },
         {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 2,
-          "sideboardQuantity": 1
-        },
-        {
           "eventId": "standard-league-2026-08-2111015",
           "deckId": "35735866-samlsd",
           "mainboardQuantity": 0,
@@ -16886,7 +17401,7 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 19,
+      "deckCount": 22,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -16899,6 +17414,30 @@
           "deckId": "8-rushi-00",
           "mainboardQuantity": 3,
           "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -16953,12 +17492,6 @@
           "deckId": "1-b-carp",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-league-2026-08-2111015",
@@ -17090,7 +17623,7 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 16,
+      "deckCount": 17,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -17101,6 +17634,18 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -17143,12 +17688,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "3-macisaac",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -17258,8 +17797,14 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 2,
+      "deckCount": 3,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "4-truehero",
@@ -17286,11 +17831,23 @@
         "LCI"
       ],
       "primarySetCode": "LCI",
-      "deckCount": 5,
+      "deckCount": 7,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -17461,6 +18018,12 @@
           "sideboardQuantity": 0
         },
         {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "6-aljce",
           "mainboardQuantity": 1,
@@ -17487,12 +18050,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "5-gxs3v3n",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -17571,7 +18128,7 @@
         "TRK"
       ],
       "primarySetCode": "TRK",
-      "deckCount": 19,
+      "deckCount": 21,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -17582,6 +18139,24 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -17630,12 +18205,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "3-macisaac",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -17751,8 +18320,14 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 7,
+      "deckCount": 8,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "7-tchuco",
@@ -17809,11 +18384,17 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 12,
+      "deckCount": 13,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
@@ -17897,7 +18478,7 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 25,
+      "deckCount": 26,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -17908,6 +18489,18 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 3
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 0,
           "sideboardQuantity": 3
         },
@@ -17946,12 +18539,6 @@
           "deckId": "6-bertram",
           "mainboardQuantity": 0,
           "sideboardQuantity": 4
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-league-2026-08-2111015",
@@ -18063,8 +18650,14 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 10,
+      "deckCount": 11,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
           "deckId": "7-mommydom-manifesto",
@@ -18139,11 +18732,17 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 9,
+      "deckCount": 10,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -18209,8 +18808,14 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 4,
+      "deckCount": 5,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "1-b-carp",
@@ -18249,19 +18854,13 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 4,
+      "deckCount": 3,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "6-bertram",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-league-2026-08-2111015",
@@ -18439,6 +19038,18 @@
           "sideboardQuantity": 3
         },
         {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "5-duanceyao",
           "mainboardQuantity": 0,
@@ -18513,18 +19124,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 1,
-          "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 1,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 1,
           "sideboardQuantity": 1
         },
@@ -18645,7 +19244,7 @@
         "WOE"
       ],
       "primarySetCode": "TRK",
-      "deckCount": 19,
+      "deckCount": 21,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -18657,6 +19256,18 @@
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
           "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         },
         {
@@ -18775,8 +19386,14 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 4,
+      "deckCount": 5,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "1-b-carp",
@@ -18825,14 +19442,14 @@
           "sideboardQuantity": 0
         },
         {
-          "eventId": "standard-challenge-32-2026-08-2512852775",
-          "deckId": "7-lucasg1ggs",
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
         {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
+          "eventId": "standard-challenge-32-2026-08-2512852775",
+          "deckId": "7-lucasg1ggs",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -18862,18 +19479,12 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 5,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
           "mainboardQuantity": 2,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 1,
           "sideboardQuantity": 0
         },
         {
@@ -18891,6 +19502,28 @@
         {
           "eventId": "standard-league-2026-08-2711015",
           "deckId": "35784555-zonda",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
+      "key": "0eb11b2d-a397-48da-a0f3-9f0f83f42282",
+      "nameEn": "Tezzeret, Cruel Captain",
+      "nameJa": "冷（れい）酷（こく）な船（せん）長（ちょう）、テゼレット",
+      "normalizedNameEn": "tezzeret, cruel captain",
+      "normalizedNameJa": "冷(れい)酷(こく)な船(せん)長(ちょう)、テゼレット",
+      "oracleId": "0eb11b2d-a397-48da-a0f3-9f0f83f42282",
+      "isBasicLand": false,
+      "setCodes": [
+        "EOE"
+      ],
+      "primarySetCode": "EOE",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         }
@@ -18927,6 +19560,28 @@
           "deckId": "35731148-otp-luke",
           "mainboardQuantity": 0,
           "sideboardQuantity": 1
+        }
+      ]
+    },
+    {
+      "key": "c0d2bdd9-1e68-4d3a-83f8-ec2ba440a494",
+      "nameEn": "The Enigma Jewel",
+      "nameJa": "奇怪な宝石",
+      "normalizedNameEn": "the enigma jewel",
+      "normalizedNameJa": "奇怪な宝石",
+      "oracleId": "c0d2bdd9-1e68-4d3a-83f8-ec2ba440a494",
+      "isBasicLand": false,
+      "setCodes": [
+        "LCI"
+      ],
+      "primarySetCode": "LCI",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -19094,8 +19749,14 @@
         "HOB"
       ],
       "primarySetCode": "HOB",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2411015",
           "deckId": "35763138-reddy-roxx",
@@ -19168,8 +19829,20 @@
         "TMT"
       ],
       "primarySetCode": "TMT",
-      "deckCount": 1,
+      "deckCount": 3,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
         {
           "eventId": "standard-league-2026-08-2711015",
           "deckId": "35787513-gxs3v3n",
@@ -19230,6 +19903,28 @@
           "eventId": "standard-league-2026-08-2711015",
           "deckId": "35787513-gxs3v3n",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
+      "key": "e3a665f9-6e51-4e0d-923b-e9552d5978a4",
+      "nameEn": "The Sackville-Bagginses",
+      "nameJa": "サックビル＝バギンズ一家",
+      "normalizedNameEn": "the sackville-bagginses",
+      "normalizedNameJa": "サックビル=バギンズ一家",
+      "oracleId": "e3a665f9-6e51-4e0d-923b-e9552d5978a4",
+      "isBasicLand": false,
+      "setCodes": [
+        "HOB"
+      ],
+      "primarySetCode": "HOB",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
       ]
@@ -19304,12 +19999,24 @@
         "MSH"
       ],
       "primarySetCode": "MSH",
-      "deckCount": 6,
+      "deckCount": 8,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 1,
           "sideboardQuantity": 0
         },
         {
@@ -19356,8 +20063,14 @@
         "MSH"
       ],
       "primarySetCode": "MSH",
-      "deckCount": 1,
+      "deckCount": 2,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2011015",
           "deckId": "35720774-drpp",
@@ -19378,8 +20091,14 @@
         "HOB"
       ],
       "primarySetCode": "HOB",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-league-2026-08-2411015",
           "deckId": "35763138-reddy-roxx",
@@ -19412,12 +20131,18 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
           "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 1,
           "sideboardQuantity": 0
         },
         {
@@ -19435,6 +20160,28 @@
       ]
     },
     {
+      "key": "d2bcff58-7a8a-46ef-b6b3-39501d4c8e6e",
+      "nameEn": "Thundering Falls",
+      "nameJa": "轟音の滝",
+      "normalizedNameEn": "thundering falls",
+      "normalizedNameJa": "轟音の滝",
+      "oracleId": "d2bcff58-7a8a-46ef-b6b3-39501d4c8e6e",
+      "isBasicLand": false,
+      "setCodes": [
+        "MKM"
+      ],
+      "primarySetCode": "MKM",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "2993dc7d-723d-4a9b-94bd-4bb02a9f7243",
       "nameEn": "Tishana's Tidebinder",
       "nameJa": "ティシャーナの潮縛り",
@@ -19446,13 +20193,19 @@
         "LCI"
       ],
       "primarySetCode": "LCI",
-      "deckCount": 6,
+      "deckCount": 7,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
           "mainboardQuantity": 2,
           "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -19554,8 +20307,14 @@
         "WOE"
       ],
       "primarySetCode": "WOE",
-      "deckCount": 1,
+      "deckCount": 2,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 3
+        },
         {
           "eventId": "standard-league-2026-08-2111015",
           "deckId": "35736734-mosh-joscoe",
@@ -19576,7 +20335,7 @@
         "BIG"
       ],
       "primarySetCode": "BIG",
-      "deckCount": 32,
+      "deckCount": 34,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -19595,6 +20354,24 @@
           "deckId": "6-burp93",
           "mainboardQuantity": 0,
           "sideboardQuantity": 3
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "2-akvsjj",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 1
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -19671,12 +20448,6 @@
         {
           "eventId": "standard-challenge-32-2026-08-2512852775",
           "deckId": "8-chamytinho-",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35722271-feitosa-",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
         },
@@ -19812,11 +20583,23 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 9,
+      "deckCount": 11,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "8-rushi-00",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
           "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
@@ -20079,6 +20862,28 @@
       ]
     },
     {
+      "key": "df08ac72-010f-42f8-beb3-6d645c638e1e",
+      "nameEn": "Uthros, Titanic Godcore",
+      "nameJa": "巨（きょ）大（だい）な神（しん）核（かく）、ウスロス",
+      "normalizedNameEn": "uthros, titanic godcore",
+      "normalizedNameJa": "巨(きょ)大(だい)な神(しん)核(かく)、ウスロス",
+      "oracleId": "df08ac72-010f-42f8-beb3-6d645c638e1e",
+      "isBasicLand": false,
+      "setCodes": [
+        "EOE"
+      ],
+      "primarySetCode": "EOE",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "1-aldreen",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "a0cbb1ba-73b1-4418-bbe3-5d1a02007c08",
       "nameEn": "Vibrant Outburst",
       "nameJa": "鮮やかな迸り",
@@ -20090,7 +20895,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 4,
+      "deckCount": 3,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -20102,12 +20907,6 @@
           "eventId": "standard-challenge-32-2026-08-2112852733",
           "deckId": "6-misstrigger",
           "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
         {
@@ -20130,13 +20929,19 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 14,
+      "deckCount": 13,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "5-fried-liver-attack",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "7-scipios",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
         },
         {
           "eventId": "standard-challenge-32-2026-08-2412852766",
@@ -20155,18 +20960,6 @@
           "deckId": "5-gxs3v3n",
           "mainboardQuantity": 3,
           "sideboardQuantity": 0
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35702558-jiggiestjay",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 1
-        },
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35720937-thebigbrain",
-          "mainboardQuantity": 0,
-          "sideboardQuantity": 2
         },
         {
           "eventId": "standard-league-2026-08-2111015",
@@ -20280,7 +21073,7 @@
         "TLA"
       ],
       "primarySetCode": "TLA",
-      "deckCount": 9,
+      "deckCount": 12,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -20293,6 +21086,24 @@
           "deckId": "8-rushi-00",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "4-kritik",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
         },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
@@ -20350,7 +21161,7 @@
         "HOB"
       ],
       "primarySetCode": "HOB",
-      "deckCount": 15,
+      "deckCount": 16,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
@@ -20361,6 +21172,12 @@
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "4-yolad",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "6-liuyuchen",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
         },
@@ -20519,11 +21336,23 @@
         "TRK"
       ],
       "primarySetCode": "TRK",
-      "deckCount": 12,
+      "deckCount": 14,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         },
@@ -20607,12 +21436,24 @@
         "MSH"
       ],
       "primarySetCode": "MSH",
-      "deckCount": 6,
+      "deckCount": 8,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-08-2012852720",
           "deckId": "3-o-danielakos",
           "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "3-bubblywubblytubbler",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "8-unagieel",
+          "mainboardQuantity": 2,
           "sideboardQuantity": 0
         },
         {
@@ -20709,8 +21550,14 @@
         "TDM"
       ],
       "primarySetCode": "TDM",
-      "deckCount": 10,
+      "deckCount": 11,
       "deckRefs": [
+        {
+          "eventId": "standard-challenge-16-2026-08-2712853170",
+          "deckId": "5-holachico",
+          "mainboardQuantity": 2,
+          "sideboardQuantity": 0
+        },
         {
           "eventId": "standard-challenge-32-2026-08-2112852728",
           "deckId": "2-maemtg",
@@ -20824,28 +21671,6 @@
       ]
     },
     {
-      "key": "30c3c700-46f4-4a77-8c45-5c7e3a21bd62",
-      "nameEn": "Wizard's Staff",
-      "nameJa": "魔法使いの杖",
-      "normalizedNameEn": "wizard's staff",
-      "normalizedNameJa": "魔法使いの杖",
-      "oracleId": "30c3c700-46f4-4a77-8c45-5c7e3a21bd62",
-      "isBasicLand": false,
-      "setCodes": [
-        "HOB"
-      ],
-      "primarySetCode": "HOB",
-      "deckCount": 1,
-      "deckRefs": [
-        {
-          "eventId": "standard-league-2026-08-1911015",
-          "deckId": "35716137-zer014",
-          "mainboardQuantity": 4,
-          "sideboardQuantity": 0
-        }
-      ]
-    },
-    {
       "key": "5a775f50-20f8-4a8f-868c-8907305bfad6",
       "nameEn": "Zoraline, Cosmos Caller",
       "nameJa": "星界を呼ぶ者、ゾラリーネ",
@@ -20880,5 +21705,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-28T13:59:46+09:00"
+  "generatedAt": "2026-08-29T02:09:41+09:00"
 }
