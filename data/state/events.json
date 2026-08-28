@@ -2,13 +2,51 @@
   "schemaVersion": 1,
   "events": [
     {
+      "eventId": "standard-league-2026-08-2811015",
+      "eventName": "Standard League August 28 2026",
+      "eventType": "league",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-08-2811015",
+      "status": "completed",
+      "firstSeenAt": "2026-08-28T13:59:30+09:00",
+      "lastCheckedAt": "2026-08-28T13:59:33+09:00",
+      "completedAt": "2026-08-28T13:59:33+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 5,
+        "reason": "ok"
+      },
+      "eventDate": "2026-08-28",
+      "publishedDate": "2026-08-28",
+      "eventDateTime": null
+    },
+    {
       "eventId": "standard-league-2026-08-2711015",
       "eventName": "Standard League August 27 2026",
       "eventType": "league",
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-08-2711015",
-      "status": "pending_publication",
+      "status": "completed",
       "firstSeenAt": "2026-08-27T09:19:00+09:00",
-      "lastCheckedAt": "2026-08-27T09:19:02+09:00",
+      "lastCheckedAt": "2026-08-28T13:59:31+09:00",
+      "completedAt": "2026-08-28T13:59:31+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 13,
+        "reason": "ok"
+      },
+      "eventDate": "2026-08-27",
+      "publishedDate": "2026-08-27",
+      "eventDateTime": null
+    },
+    {
+      "eventId": "standard-challenge-16-2026-08-2712853170",
+      "eventName": "Standard Challenge 16 August 27 2026",
+      "eventType": "challenge",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-08-2712853170",
+      "status": "pending_publication",
+      "firstSeenAt": "2026-08-28T13:59:30+09:00",
+      "lastCheckedAt": "2026-08-28T13:59:34+09:00",
       "completedAt": null,
       "retryCount": 1,
       "lastResult": {
@@ -18,7 +56,7 @@
       },
       "eventDate": "2026-08-27",
       "publishedDate": "2026-08-27",
-      "eventDateTime": null
+      "eventDateTime": "2026-08-27T10:00:00"
     },
     {
       "eventId": "standard-league-2026-08-2611015",
