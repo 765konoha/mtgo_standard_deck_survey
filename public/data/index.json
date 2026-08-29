@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-30T01:54:30+09:00",
-  "lastSuccessfulUpdateAt": "2026-08-30T01:54:30+09:00",
+  "generatedAt": "2026-08-30T07:52:04+09:00",
+  "lastSuccessfulUpdateAt": "2026-08-30T07:52:04+09:00",
   "period": {
     "startDate": "2026-08-21",
     "endDate": "2026-08-30",
@@ -9,12 +9,12 @@
   },
   "overallStatus": "success",
   "summary": {
-    "completedEvents": 19,
+    "completedEvents": 20,
     "pendingEvents": 0,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 49
+    "untranslatedCards": 51
   },
   "events": [
     {
@@ -31,6 +31,21 @@
       "firstSeenAt": "2026-08-29T11:55:55+09:00",
       "lastCheckedAt": "2026-08-29T20:23:30+09:00",
       "completedAt": "2026-08-29T20:23:30+09:00"
+    },
+    {
+      "id": "standard-challenge-32-2026-08-2912853190",
+      "name": "Standard Challenge 32 August 29 2026",
+      "eventType": "challenge",
+      "eventDate": "2026-08-29",
+      "eventDateTime": "2026-08-29T13:00:00",
+      "publishedDate": "2026-08-29",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-08-2912853190",
+      "dataFile": "./events/standard-challenge-32-2026-08-2912853190.json",
+      "firstSeenAt": "2026-08-30T07:51:53+09:00",
+      "lastCheckedAt": "2026-08-30T07:51:55+09:00",
+      "completedAt": "2026-08-30T07:51:55+09:00"
     },
     {
       "id": "standard-league-2026-08-2811015",
