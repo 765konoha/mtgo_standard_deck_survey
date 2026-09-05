@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-06T00:40:56+09:00",
-  "lastSuccessfulUpdateAt": "2026-09-06T00:40:56+09:00",
+  "generatedAt": "2026-09-06T07:24:52+09:00",
+  "lastSuccessfulUpdateAt": "2026-09-06T07:24:52+09:00",
   "period": {
     "startDate": "2026-08-28",
     "endDate": "2026-09-06",
     "lookbackDays": 10
   },
-  "overallStatus": "pending",
+  "overallStatus": "success",
   "summary": {
-    "completedEvents": 17,
-    "pendingEvents": 1,
+    "completedEvents": 19,
+    "pendingEvents": 0,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 43
+    "untranslatedCards": 53
   },
   "events": [
     {
@@ -24,13 +24,28 @@
       "eventDate": "2026-09-05",
       "eventDateTime": null,
       "publishedDate": "2026-09-05",
-      "status": "pending_publication",
-      "deckCount": 0,
+      "status": "completed",
+      "deckCount": 6,
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-09-0511015",
       "dataFile": "./events/standard-league-2026-09-0511015.json",
       "firstSeenAt": "2026-09-06T00:40:52+09:00",
-      "lastCheckedAt": "2026-09-06T00:40:54+09:00",
-      "completedAt": null
+      "lastCheckedAt": "2026-09-06T07:24:38+09:00",
+      "completedAt": "2026-09-06T07:24:38+09:00"
+    },
+    {
+      "id": "standard-challenge-32-2026-09-0512853686",
+      "name": "Standard Challenge 32 September 5 2026",
+      "eventType": "challenge",
+      "eventDate": "2026-09-05",
+      "eventDateTime": "2026-09-05T13:00:00",
+      "publishedDate": "2026-09-05",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-09-0512853686",
+      "dataFile": "./events/standard-challenge-32-2026-09-0512853686.json",
+      "firstSeenAt": "2026-09-06T07:24:36+09:00",
+      "lastCheckedAt": "2026-09-06T07:24:48+09:00",
+      "completedAt": "2026-09-06T07:24:48+09:00"
     },
     {
       "id": "standard-league-2026-09-0411015",
