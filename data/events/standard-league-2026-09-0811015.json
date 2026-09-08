@@ -1,0 +1,1338 @@
+{
+  "schemaVersion": 1,
+  "event": {
+    "id": "standard-league-2026-09-0811015",
+    "name": "Standard League September 8 2026",
+    "eventType": "league",
+    "eventDate": "2026-09-08",
+    "eventDateTime": null,
+    "publishedDate": "2026-09-08",
+    "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-09-0811015",
+    "status": "completed",
+    "firstSeenAt": "2026-09-08T18:12:16+09:00",
+    "fetchedAt": "2026-09-08T18:12:18+09:00",
+    "completedAt": "2026-09-08T18:12:18+09:00"
+  },
+  "decks": [
+    {
+      "id": "35871706-aljce",
+      "player": "aljce",
+      "placement": null,
+      "record": "5-0",
+      "mainboardCount": 60,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 2,
+          "nameEn": "Braided Net",
+          "nameJa": "編まれた網",
+          "detailUrl": "https://scryfall.com/card/lci/47/ja/%E7%B7%A8%E3%81%BE%E3%82%8C%E3%81%9F%E7%B6%B2-%E7%B7%A8%E3%81%BE%E3%82%8C%E3%81%9F%E7%B5%90%E7%B8%84-(braided-net-braided-quipu)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "86ef06b3-2049-494d-9ecb-ca14766d3b68",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces",
+          "setCodes": [
+            "LCI"
+          ],
+          "primarySetCode": "LCI"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Candy Trail",
+          "nameJa": "キャンディーの道標",
+          "detailUrl": "https://scryfall.com/card/woe/243/ja/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E3%81%AE%E9%81%93%E6%A8%99-(candy-trail)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "7c8e4f29-53e0-4242-8ef8-7a9476dce178",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "WOE"
+          ],
+          "primarySetCode": "WOE"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Castle Doom",
+          "nameJa": "キャッスル・ドゥーム",
+          "detailUrl": "https://scryfall.com/card/msh/263/ja/%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B9%E3%83%AB%E3%83%BB%E3%83%89%E3%82%A5%E3%83%BC%E3%83%A0-(castle-doom)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "9bd013df-ad75-4099-940b-1765c58faf26",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "MSH"
+          ],
+          "primarySetCode": "MSH"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Cryogen Relic",
+          "nameJa": "氷（こおり）魔（ま）法（ほう）の秘（ひ）宝（ほう）",
+          "detailUrl": "https://scryfall.com/card/eoe/52/ja/%E6%B0%B7%EF%BC%88%E3%81%93%E3%81%8A%E3%82%8A%EF%BC%89%E9%AD%94%EF%BC%88%E3%81%BE%EF%BC%89%E6%B3%95%EF%BC%88%E3%81%BB%E3%81%86%EF%BC%89%E3%81%AE%E7%A7%98%EF%BC%88%E3%81%B2%EF%BC%89%E5%AE%9D%EF%BC%88%E3%81%BB%E3%81%86%EF%BC%89-(cryogen-relic)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "106e9c0d-67a2-4db7-97d9-03e1ea1b40b5",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "EOE"
+          ],
+          "primarySetCode": "EOE"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Dusk Rose Reliquary",
+          "nameJa": "薄暮薔薇の聖遺",
+          "detailUrl": "https://scryfall.com/card/lci/10/ja/%E8%96%84%E6%9A%AE%E8%96%94%E8%96%87%E3%81%AE%E8%81%96%E9%81%BA-(dusk-rose-reliquary)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "dca7102e-c020-4fdc-9b59-f186e3e615a5",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "LCI"
+          ],
+          "primarySetCode": "LCI"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Floodfarm Verge",
+          "nameJa": "フラッドファームの境界",
+          "detailUrl": "https://scryfall.com/card/dsk/259/ja/%E3%83%95%E3%83%A9%E3%83%83%E3%83%89%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%81%AE%E5%A2%83%E7%95%8C-(floodfarm-verge)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "f1e9abfb-c3c8-483e-b446-5c2afc9f6394",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "DSK"
+          ],
+          "primarySetCode": "DSK"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Giant's Boulder",
+          "nameJa": "巨人の大岩",
+          "detailUrl": "https://scryfall.com/card/hob/173/ja/%E5%B7%A8%E4%BA%BA%E3%81%AE%E5%A4%A7%E5%B2%A9-(giants-boulder)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "80433c2c-5196-42e0-b9fa-d7b12783f5fd",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "HOB"
+          ],
+          "primarySetCode": "HOB"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Plains",
+          "nameJa": "平地",
+          "detailUrl": "https://scryfall.com/card/hob/189/ja/%E5%B9%B3%E5%9C%B0-(plains)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "bc71ebf6-2056-41f7-be35-b2e5c34afa99",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TRK",
+            "HOB",
+            "MSH",
+            "SOS",
+            "TMT",
+            "ECL",
+            "TLA",
+            "SPM",
+            "EOE",
+            "FIN",
+            "TDM",
+            "DFT",
+            "FDN",
+            "DSK",
+            "BLB",
+            "OTJ",
+            "MKM",
+            "LCI",
+            "WOE",
+            "KTK"
+          ],
+          "primarySetCode": "TRK"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Meticulous Archive",
+          "nameJa": "行き届いた書庫",
+          "detailUrl": "https://scryfall.com/card/mkm/264/ja/%E8%A1%8C%E3%81%8D%E5%B1%8A%E3%81%84%E3%81%9F%E6%9B%B8%E5%BA%AB-(meticulous-archive)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "ccfb8b4d-651c-418a-aa19-cb23105b3f2f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "MKM"
+          ],
+          "primarySetCode": "MKM"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Perilous Snare",
+          "nameJa": "危険な罠",
+          "detailUrl": "https://scryfall.com/card/dft/23/ja/%E5%8D%B1%E9%99%BA%E3%81%AA%E7%BD%A0-(perilous-snare)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "cff7499a-44b0-4a2a-b96c-ed2cafb1a90d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "DFT"
+          ],
+          "primarySetCode": "DFT"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Petrified Hamlet",
+          "nameJa": null,
+          "detailUrl": "https://scryfall.com/card/sos/259/petrified-hamlet?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "78a2972c-14f4-41f3-99f9-167948bdd73a",
+          "translationStatus": "missing",
+          "translationSource": null,
+          "setCodes": [
+            "SOS"
+          ],
+          "primarySetCode": "SOS"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Pinnacle Starcage",
+          "nameJa": "ピナクルの星（せい）檻（かん）",
+          "detailUrl": "https://scryfall.com/card/eoe/27/ja/%E3%83%94%E3%83%8A%E3%82%AF%E3%83%AB%E3%81%AE%E6%98%9F%EF%BC%88%E3%81%9B%E3%81%84%EF%BC%89%E6%AA%BB%EF%BC%88%E3%81%8B%E3%82%93%EF%BC%89-(pinnacle-starcage)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "10e0b563-4dfc-4530-a010-0ba40bdf02ac",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "EOE"
+          ],
+          "primarySetCode": "EOE"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Repurposing Bay",
+          "nameJa": "再利用隔室",
+          "detailUrl": "https://scryfall.com/card/dft/56/ja/%E5%86%8D%E5%88%A9%E7%94%A8%E9%9A%94%E5%AE%A4-(repurposing-bay)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "1787ac2f-762d-4f3a-b7e5-12db6d3d470d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "DFT"
+          ],
+          "primarySetCode": "DFT"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Hallowed Fountain",
+          "nameJa": "神聖なる泉",
+          "detailUrl": "https://scryfall.com/card/rvr/280/ja/%E7%A5%9E%E8%81%96%E3%81%AA%E3%82%8B%E6%B3%89-(hallowed-fountain)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "f1750962-a87c-49f6-b731-02ae971ac6ea",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TRK",
+            "ECL"
+          ],
+          "primarySetCode": "TRK"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Simulacrum Synthesizer",
+          "nameJa": "身代わり合成機",
+          "detailUrl": "https://scryfall.com/card/big/6/ja/%E8%BA%AB%E4%BB%A3%E3%82%8F%E3%82%8A%E5%90%88%E6%88%90%E6%A9%9F-(simulacrum-synthesizer)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "eb7a1f21-a66d-415b-8520-710b44890bb6",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "BIG"
+          ],
+          "primarySetCode": "BIG"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Spring-Loaded Sawblades",
+          "nameJa": "バネ仕掛けの鋸刃",
+          "detailUrl": "https://scryfall.com/card/lci/36/ja/%E3%83%90%E3%83%8D%E4%BB%95%E6%8E%9B%E3%81%91%E3%81%AE%E9%8B%B8%E5%88%83-%E5%88%83%E8%BB%8A%E8%BC%AA%E3%81%AE%E6%88%A6%E8%BB%8A-(spring-loaded-sawblades-bladewheel-chariot)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "fa1ed9fa-5f77-4f7d-bab0-47c719cdc5bc",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_card_faces",
+          "setCodes": [
+            "LCI"
+          ],
+          "primarySetCode": "LCI"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Starting Town",
+          "nameJa": "始まりの町",
+          "detailUrl": "https://scryfall.com/card/fin/289/ja/%E5%A7%8B%E3%81%BE%E3%82%8A%E3%81%AE%E7%94%BA-(starting-town)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "d04e0975-f401-41b8-a9db-9bcf9cbbce66",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FIN"
+          ],
+          "primarySetCode": "FIN"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "The Fire Crystal",
+          "nameJa": "火のクリスタル",
+          "detailUrl": "https://scryfall.com/card/fin/135/ja/%E7%81%AB%E3%81%AE%E3%82%AF%E3%83%AA%E3%82%B9%E3%82%BF%E3%83%AB-(the-fire-crystal)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "57276db8-9d8d-4587-ae88-dfdc44343f17",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FIN"
+          ],
+          "primarySetCode": "FIN"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "The Mind Stone",
+          "nameJa": "マインド・ストーン",
+          "detailUrl": "https://scryfall.com/card/msh/21/ja/%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E3%83%BB%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3-(the-mind-stone)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "b175e826-09e8-4fae-9f2e-b902f95b282d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "MSH"
+          ],
+          "primarySetCode": "MSH"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Torpor Orb",
+          "nameJa": "倦怠の宝珠",
+          "detailUrl": "https://scryfall.com/card/big/27/ja/%E5%80%A6%E6%80%A0%E3%81%AE%E5%AE%9D%E7%8F%A0-(torpor-orb)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "97326cad-b13c-4e52-82ce-850a39e5ff08",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "BIG"
+          ],
+          "primarySetCode": "BIG"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Unidentified Hovership",
+          "nameJa": "未確認浮遊船",
+          "detailUrl": "https://scryfall.com/card/dsk/37/ja/%E6%9C%AA%E7%A2%BA%E8%AA%8D%E6%B5%AE%E9%81%8A%E8%88%B9-(unidentified-hovership)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "bde67dfb-706b-4942-a365-984ea6e97a2b",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "DSK"
+          ],
+          "primarySetCode": "DSK"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Sacred Foundry",
+          "nameJa": "聖（せい）なる鋳（ちゅう）造（ぞう）所（しょ）",
+          "detailUrl": "https://scryfall.com/card/eoe/256/ja/%E8%81%96%EF%BC%88%E3%81%9B%E3%81%84%EF%BC%89%E3%81%AA%E3%82%8B%E9%8B%B3%EF%BC%88%E3%81%A1%E3%82%85%E3%81%86%EF%BC%89%E9%80%A0%EF%BC%88%E3%81%9E%E3%81%86%EF%BC%89%E6%89%80%EF%BC%88%E3%81%97%E3%82%87%EF%BC%89-(sacred-foundry)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "45181cb8-2090-4471-ba90-e5a8f04d525f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TRK",
+            "EOE"
+          ],
+          "primarySetCode": "TRK"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "United Battlefront",
+          "nameJa": "団結の最前線",
+          "detailUrl": "https://scryfall.com/card/tdm/32/ja/%E5%9B%A3%E7%B5%90%E3%81%AE%E6%9C%80%E5%89%8D%E7%B7%9A-(united-battlefront)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "892a83a0-a3cb-4cfb-9106-4008e4e75c0f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TDM"
+          ],
+          "primarySetCode": "TDM"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 3,
+          "nameEn": "Spell Snare",
+          "nameJa": "呪文嵌め",
+          "detailUrl": "https://scryfall.com/card/ecl/71/ja/%E5%91%AA%E6%96%87%E5%B5%8C%E3%82%81-(spell-snare)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "38877c68-b69b-4ee1-8e8f-5137a184a8f7",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "ECL"
+          ],
+          "primarySetCode": "ECL"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Rest in Peace",
+          "nameJa": "安らかなる眠り",
+          "detailUrl": "https://scryfall.com/card/mar/6/ja/%E5%AE%89%E3%82%89%E3%81%8B%E3%81%AA%E3%82%8B%E7%9C%A0%E3%82%8A-(rest-in-peace)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "087f9ad7-e74f-40e2-8102-1ed2925d0418",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "BIG"
+          ],
+          "primarySetCode": "BIG"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Erode",
+          "nameJa": "浸食作用",
+          "detailUrl": "https://scryfall.com/card/sos/15/ja/%E6%B5%B8%E9%A3%9F%E4%BD%9C%E7%94%A8-(erode)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "2e467fab-e808-44d3-99bf-e3621baeb7cb",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "SOS"
+          ],
+          "primarySetCode": "SOS"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Pinnacle Starcage",
+          "nameJa": "ピナクルの星（せい）檻（かん）",
+          "detailUrl": "https://scryfall.com/card/eoe/27/ja/%E3%83%94%E3%83%8A%E3%82%AF%E3%83%AB%E3%81%AE%E6%98%9F%EF%BC%88%E3%81%9B%E3%81%84%EF%BC%89%E6%AA%BB%EF%BC%88%E3%81%8B%E3%82%93%EF%BC%89-(pinnacle-starcage)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "10e0b563-4dfc-4530-a010-0ba40bdf02ac",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "EOE"
+          ],
+          "primarySetCode": "EOE"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Day of Judgment",
+          "nameJa": "審判の日",
+          "detailUrl": "https://scryfall.com/card/fdn/140/ja/%E5%AF%A9%E5%88%A4%E3%81%AE%E6%97%A5-(day-of-judgment)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "d057289d-5e28-43d5-8ff3-4a1bc723477d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FDN"
+          ],
+          "primarySetCode": "FDN"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Authority of the Consuls",
+          "nameJa": "領事の権限",
+          "detailUrl": "https://scryfall.com/card/fic/232/ja/%E9%A0%98%E4%BA%8B%E3%81%AE%E6%A8%A9%E9%99%90-(authority-of-the-consuls)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "55f3c721-e13a-406e-bc8e-d6cdc91ac477",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FDN"
+          ],
+          "primarySetCode": "FDN"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Torpor Orb",
+          "nameJa": "倦怠の宝珠",
+          "detailUrl": "https://scryfall.com/card/big/27/ja/%E5%80%A6%E6%80%A0%E3%81%AE%E5%AE%9D%E7%8F%A0-(torpor-orb)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "97326cad-b13c-4e52-82ce-850a39e5ff08",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "BIG"
+          ],
+          "primarySetCode": "BIG"
+        }
+      ]
+    },
+    {
+      "id": "35876397-hooti",
+      "player": "Hooti",
+      "placement": null,
+      "record": "5-0",
+      "mainboardCount": 60,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 4,
+          "nameEn": "Ba Sing Se",
+          "nameJa": "バーシンセー",
+          "detailUrl": "https://scryfall.com/card/tla/266/ja/%E3%83%90%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%BB%E3%83%BC-(ba-sing-se)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "de1ae205-ca5b-4d26-8194-ca85f1406e53",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TLA"
+          ],
+          "primarySetCode": "TLA"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Elven Passage",
+          "nameJa": "エルフの小道",
+          "detailUrl": "https://scryfall.com/card/hob/181/ja/%E3%82%A8%E3%83%AB%E3%83%95%E3%81%AE%E5%B0%8F%E9%81%93-(elven-passage)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "97a2cd39-6b54-496b-b3ac-dab9dfed7edc",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "HOB"
+          ],
+          "primarySetCode": "HOB"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Fabled Passage",
+          "nameJa": "寓話の小道",
+          "detailUrl": "https://scryfall.com/card/msc/242/ja/%E5%AF%93%E8%A9%B1%E3%81%AE%E5%B0%8F%E9%81%93-(fabled-passage)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "0c85b8f7-0bd0-4680-9ec5-d4b110460a54",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "BLB"
+          ],
+          "primarySetCode": "BLB"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Druid of the Cowl",
+          "nameJa": "僧帽地帯のドルイド",
+          "detailUrl": "https://scryfall.com/card/fdn/554/ja/%E5%83%A7%E5%B8%BD%E5%9C%B0%E5%B8%AF%E3%81%AE%E3%83%89%E3%83%AB%E3%82%A4%E3%83%89-(druid-of-the-cowl)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "b1793c3b-25d6-4fae-a99d-cfdd2210ca67",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FDN"
+          ],
+          "primarySetCode": "FDN"
+        },
+        {
+          "quantity": 10,
+          "nameEn": "Forest",
+          "nameJa": "森",
+          "detailUrl": "https://scryfall.com/card/hob/193/ja/%E6%A3%AE-(forest)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "b34bb2dc-c1af-4d77-b0b3-a0fb342a5fc6",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TRK",
+            "HOB",
+            "MSH",
+            "SOS",
+            "TMT",
+            "ECL",
+            "TLA",
+            "SPM",
+            "EOE",
+            "FIN",
+            "TDM",
+            "DFT",
+            "FDN",
+            "DSK",
+            "BLB",
+            "OTJ",
+            "MKM",
+            "LCI",
+            "WOE",
+            "KTK"
+          ],
+          "primarySetCode": "TRK"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Earthbender Ascension",
+          "nameJa": "土のベンダーの位に至る",
+          "detailUrl": "https://scryfall.com/card/tla/175/ja/%E5%9C%9F%E3%81%AE%E3%83%99%E3%83%B3%E3%83%80%E3%83%BC%E3%81%AE%E4%BD%8D%E3%81%AB%E8%87%B3%E3%82%8B-(earthbender-ascension)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "f8966fd5-2926-4ba0-b7d6-cfea40cd4e05",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TLA"
+          ],
+          "primarySetCode": "TLA"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Formidable Speaker",
+          "nameJa": "並外れた語り部",
+          "detailUrl": "https://scryfall.com/card/ecl/176/ja/%E4%B8%A6%E5%A4%96%E3%82%8C%E3%81%9F%E8%AA%9E%E3%82%8A%E9%83%A8-(formidable-speaker)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "5bd06f9e-9a42-455d-ad26-24bc04e51c7c",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "ECL"
+          ],
+          "primarySetCode": "ECL"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Llanowar Elves",
+          "nameJa": "ラノワールのエルフ",
+          "detailUrl": "https://scryfall.com/card/fdn/227/ja/%E3%83%A9%E3%83%8E%E3%83%AF%E3%83%BC%E3%83%AB%E3%81%AE%E3%82%A8%E3%83%AB%E3%83%95-(llanowar-elves)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "68954295-54e3-4303-a6bc-fc4547a4e3a3",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FDN"
+          ],
+          "primarySetCode": "FDN"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Icetill Explorer",
+          "nameJa": "氷（こおり）耕（たがや）しの探（たん）検（けん）家（か）",
+          "detailUrl": "https://scryfall.com/card/eoe/192/ja/%E6%B0%B7%EF%BC%88%E3%81%93%E3%81%8A%E3%82%8A%EF%BC%89%E8%80%95%EF%BC%88%E3%81%9F%E3%81%8C%E3%82%84%EF%BC%89%E3%81%97%E3%81%AE%E6%8E%A2%EF%BC%88%E3%81%9F%E3%82%93%EF%BC%89%E6%A4%9C%EF%BC%88%E3%81%91%E3%82%93%EF%BC%89%E5%AE%B6%EF%BC%88%E3%81%8B%EF%BC%89-(icetill-explorer)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "109cdefd-e8cc-4ac7-b6ba-2cfdef8d780f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "EOE"
+          ],
+          "primarySetCode": "EOE"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Mightform Harmonizer",
+          "nameJa": "強（きょう）靭（じん）形（けい）態（たい）の調（ちょう）和（わ）者（しゃ）",
+          "detailUrl": "https://scryfall.com/card/eoe/200/ja/%E5%BC%B7%EF%BC%88%E3%81%8D%E3%82%87%E3%81%86%EF%BC%89%E9%9D%AD%EF%BC%88%E3%81%98%E3%82%93%EF%BC%89%E5%BD%A2%EF%BC%88%E3%81%91%E3%81%84%EF%BC%89%E6%85%8B%EF%BC%88%E3%81%9F%E3%81%84%EF%BC%89%E3%81%AE%E8%AA%BF%EF%BC%88%E3%81%A1%E3%82%87%E3%81%86%EF%BC%89%E5%92%8C%EF%BC%88%E3%82%8F%EF%BC%89%E8%80%85%EF%BC%88%E3%81%97%E3%82%83%EF%BC%89-(mightform-harmonizer)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "8e025cda-71c5-4d06-8436-decd408667af",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "EOE"
+          ],
+          "primarySetCode": "EOE"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sazh's Chocobo",
+          "nameJa": "サッズのヒナチョコボ",
+          "detailUrl": "https://scryfall.com/card/fin/200/ja/%E3%82%B5%E3%83%83%E3%82%BA%E3%81%AE%E3%83%92%E3%83%8A%E3%83%81%E3%83%A7%E3%82%B3%E3%83%9C-(sazhs-chocobo)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "c2b082b4-5d9c-4125-b353-d1cf4f334720",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FIN"
+          ],
+          "primarySetCode": "FIN"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Surrak, Elusive Hunter",
+          "nameJa": "神出鬼没の狩人、スーラク",
+          "detailUrl": "https://scryfall.com/card/tdm/161/ja/%E7%A5%9E%E5%87%BA%E9%AC%BC%E6%B2%A1%E3%81%AE%E7%8B%A9%E4%BA%BA%E3%80%81%E3%82%B9%E3%83%BC%E3%83%A9%E3%82%AF-(surrak-elusive-hunter)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "7a0fe73f-6e08-4c9a-80e1-c2ead6cebe06",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TDM"
+          ],
+          "primarySetCode": "TDM"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Escape Tunnel",
+          "nameJa": "脱出トンネル",
+          "detailUrl": "https://scryfall.com/card/tmt/184/ja/%E8%84%B1%E5%87%BA%E3%83%88%E3%83%B3%E3%83%8D%E3%83%AB-(escape-tunnel)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "0056fc91-4398-471c-b561-7ff99750ac8a",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TMT",
+            "MKM"
+          ],
+          "primarySetCode": "TMT"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Mossborn Hydra",
+          "nameJa": "苔生まれのハイドラ",
+          "detailUrl": "https://scryfall.com/card/fdn/107/ja/%E8%8B%94%E7%94%9F%E3%81%BE%E3%82%8C%E3%81%AE%E3%83%8F%E3%82%A4%E3%83%89%E3%83%A9-(mossborn-hydra)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "84122d81-9634-4d3f-85a5-f6cf4303691a",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FDN"
+          ],
+          "primarySetCode": "FDN"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 3,
+          "nameEn": "Callous Sell-Sword",
+          "nameJa": null,
+          "detailUrl": "https://scryfall.com/card/woe/221/ja/callous-sell-sword-%E5%90%88%EF%BC%88%E3%81%94%E3%81%86%EF%BC%89%E5%90%8C%EF%BC%88%E3%81%A9%E3%81%86%EF%BC%89%E7%81%AB%EF%BC%88%E3%81%8B%EF%BC%89%E8%91%AC%EF%BC%88%E3%81%9D%E3%81%86%EF%BC%89-(callous-sell-sword-burn-together)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "0e7405e3-e9e6-4213-a73f-e0c01a7d6721",
+          "translationStatus": "missing",
+          "translationSource": null,
+          "setCodes": [
+            "WOE"
+          ],
+          "primarySetCode": "WOE"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Fire Magic",
+          "nameJa": "炎魔法",
+          "detailUrl": "https://scryfall.com/card/fin/136/ja/%E7%82%8E%E9%AD%94%E6%B3%95-(fire-magic)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "c87db803-3490-41bc-af7a-78f99bcd77c8",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FIN"
+          ],
+          "primarySetCode": "FIN"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Mountain",
+          "nameJa": "山",
+          "detailUrl": "https://scryfall.com/card/hob/192/ja/%E5%B1%B1-(mountain)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TRK",
+            "HOB",
+            "MSH",
+            "SOS",
+            "TMT",
+            "ECL",
+            "TLA",
+            "SPM",
+            "EOE",
+            "FIN",
+            "TDM",
+            "DFT",
+            "FDN",
+            "DSK",
+            "BLB",
+            "OTJ",
+            "MKM",
+            "LCI",
+            "WOE",
+            "KTK"
+          ],
+          "primarySetCode": "TRK"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Torpor Orb",
+          "nameJa": "倦怠の宝珠",
+          "detailUrl": "https://scryfall.com/card/big/27/ja/%E5%80%A6%E6%80%A0%E3%81%AE%E5%AE%9D%E7%8F%A0-(torpor-orb)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "97326cad-b13c-4e52-82ce-850a39e5ff08",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "BIG"
+          ],
+          "primarySetCode": "BIG"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sapling Nursery",
+          "nameJa": "若木の生育場",
+          "detailUrl": "https://scryfall.com/card/ecl/192/ja/%E8%8B%A5%E6%9C%A8%E3%81%AE%E7%94%9F%E8%82%B2%E5%A0%B4-(sapling-nursery)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "8bcbae66-1854-480e-a449-33e5389610ab",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "ECL"
+          ],
+          "primarySetCode": "ECL"
+        }
+      ]
+    },
+    {
+      "id": "35876435-jitty",
+      "player": "jitty",
+      "placement": null,
+      "record": "5-0",
+      "mainboardCount": 60,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 1,
+          "nameEn": "Basilisk Collar",
+          "nameJa": "バジリスクの首輪",
+          "detailUrl": "https://scryfall.com/card/dsc/241/ja/%E3%83%90%E3%82%B8%E3%83%AA%E3%82%B9%E3%82%AF%E3%81%AE%E9%A6%96%E8%BC%AA-(basilisk-collar)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "f5f4dd28-f4ae-4d39-b9b8-6ebfd63c93fe",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FDN"
+          ],
+          "primarySetCode": "FDN"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Burst Lightning",
+          "nameJa": "噴出の稲妻",
+          "detailUrl": "https://scryfall.com/card/soa/41/ja/%E5%99%B4%E5%87%BA%E3%81%AE%E7%A8%B2%E5%A6%BB-(burst-lightning)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "ac2086fe-98ee-4280-9c7c-c5c2d6548a8b",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FDN"
+          ],
+          "primarySetCode": "FDN"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Chainsaw",
+          "nameJa": "チェーンソー",
+          "detailUrl": "https://scryfall.com/card/dsk/128/ja/%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E3%82%BD%E3%83%BC-(chainsaw)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "3db40361-5f55-417e-a7cd-7e360cc91b4d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "DSK"
+          ],
+          "primarySetCode": "DSK"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Cloud, Midgar Mercenary",
+          "nameJa": "ミッドガルの傭兵、クラウド",
+          "detailUrl": "https://scryfall.com/card/fin/10/ja/%E3%83%9F%E3%83%83%E3%83%89%E3%82%AC%E3%83%AB%E3%81%AE%E5%82%AD%E5%85%B5%E3%80%81%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89-(cloud-midgar-mercenary)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "33d2584b-bf29-4c22-bd45-14ba2fb98c0e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FIN"
+          ],
+          "primarySetCode": "FIN"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Dáin's Company",
+          "nameJa": "ダーインの隊",
+          "detailUrl": "https://scryfall.com/card/hob/152/ja/%E3%83%80%E3%83%BC%E3%82%A4%E3%83%B3%E3%81%AE%E9%9A%8A-(d%C3%A1ins-company)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "ae03782f-8f05-4ce2-a049-005b1b688faf",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "HOB"
+          ],
+          "primarySetCode": "HOB"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Dragonfire Blade",
+          "nameJa": "龍火の刃",
+          "detailUrl": "https://scryfall.com/card/tdm/240/ja/%E9%BE%8D%E7%81%AB%E3%81%AE%E5%88%83-(dragonfire-blade)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "e809b847-b712-4558-95ea-9bb7356cde91",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TDM"
+          ],
+          "primarySetCode": "TDM"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Dwarven Mauler",
+          "nameJa": "ドワーフの打ち壊し屋",
+          "detailUrl": "https://scryfall.com/card/hob/95/ja/%E3%83%89%E3%83%AF%E3%83%BC%E3%83%95%E3%81%AE%E6%89%93%E3%81%A1%E5%A3%8A%E3%81%97%E5%B1%8B-(dwarven-mauler)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "70538676-2ffb-4cad-827e-b55e81088678",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "HOB"
+          ],
+          "primarySetCode": "HOB"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Plains",
+          "nameJa": "平地",
+          "detailUrl": "https://scryfall.com/card/hob/189/ja/%E5%B9%B3%E5%9C%B0-(plains)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "bc71ebf6-2056-41f7-be35-b2e5c34afa99",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TRK",
+            "HOB",
+            "MSH",
+            "SOS",
+            "TMT",
+            "ECL",
+            "TLA",
+            "SPM",
+            "EOE",
+            "FIN",
+            "TDM",
+            "DFT",
+            "FDN",
+            "DSK",
+            "BLB",
+            "OTJ",
+            "MKM",
+            "LCI",
+            "WOE",
+            "KTK"
+          ],
+          "primarySetCode": "TRK"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Inspiring Vantage",
+          "nameJa": "感動的な眺望所",
+          "detailUrl": "https://scryfall.com/card/sld/1605/ja/%E6%84%9F%E5%8B%95%E7%9A%84%E3%81%AA%E7%9C%BA%E6%9C%9B%E6%89%80-(inspiring-vantage)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "3f17c60e-923a-4392-9da8-87d9ded009b7",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "OTJ"
+          ],
+          "primarySetCode": "OTJ"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Iron Man Armor",
+          "nameJa": "アイアンマン・アーマー",
+          "detailUrl": "https://scryfall.com/card/msh/248/ja/%E3%82%A2%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%9E%E3%83%B3%E3%83%BB%E3%82%A2%E3%83%BC%E3%83%9E%E3%83%BC-(iron-man-armor)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "958d81c2-ca09-4275-890e-3bb595317325",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "MSH"
+          ],
+          "primarySetCode": "MSH"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Kíli the Resourceful",
+          "nameJa": "臨機応変なる者、キーリ",
+          "detailUrl": "https://scryfall.com/card/hob/17/ja/%E8%87%A8%E6%A9%9F%E5%BF%9C%E5%A4%89%E3%81%AA%E3%82%8B%E8%80%85%E3%80%81%E3%82%AD%E3%83%BC%E3%83%AA-(k%C3%ADli-the-resourceful)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "840de40b-590e-4bf0-8d16-22b0eff61202",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "HOB"
+          ],
+          "primarySetCode": "HOB"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Leyline Axe",
+          "nameJa": "力線の斧",
+          "detailUrl": "https://scryfall.com/card/fdn/129/ja/%E5%8A%9B%E7%B7%9A%E3%81%AE%E6%96%A7-(leyline-axe)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "4f597675-0f6d-438c-990c-337171927a5e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FDN"
+          ],
+          "primarySetCode": "FDN"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Mjölnir, Hammer of Thor",
+          "nameJa": "ソーのハンマー、ムジョルニア",
+          "detailUrl": "https://scryfall.com/card/msh/146/ja/%E3%82%BD%E3%83%BC%E3%81%AE%E3%83%8F%E3%83%B3%E3%83%9E%E3%83%BC%E3%80%81%E3%83%A0%E3%82%B8%E3%83%A7%E3%83%AB%E3%83%8B%E3%82%A2-(mj%C3%B6lnir-hammer-of-thor)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "7f9a8845-d760-44a7-a4c9-8a20dba4e14a",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "MSH"
+          ],
+          "primarySetCode": "MSH"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Mountain",
+          "nameJa": "山",
+          "detailUrl": "https://scryfall.com/card/hob/192/ja/%E5%B1%B1-(mountain)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TRK",
+            "HOB",
+            "MSH",
+            "SOS",
+            "TMT",
+            "ECL",
+            "TLA",
+            "SPM",
+            "EOE",
+            "FIN",
+            "TDM",
+            "DFT",
+            "FDN",
+            "DSK",
+            "BLB",
+            "OTJ",
+            "MKM",
+            "LCI",
+            "WOE",
+            "KTK"
+          ],
+          "primarySetCode": "TRK"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sacred Foundry",
+          "nameJa": "聖（せい）なる鋳（ちゅう）造（ぞう）所（しょ）",
+          "detailUrl": "https://scryfall.com/card/eoe/256/ja/%E8%81%96%EF%BC%88%E3%81%9B%E3%81%84%EF%BC%89%E3%81%AA%E3%82%8B%E9%8B%B3%EF%BC%88%E3%81%A1%E3%82%85%E3%81%86%EF%BC%89%E9%80%A0%EF%BC%88%E3%81%9E%E3%81%86%EF%BC%89%E6%89%80%EF%BC%88%E3%81%97%E3%82%87%EF%BC%89-(sacred-foundry)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "45181cb8-2090-4471-ba90-e5a8f04d525f",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TRK",
+            "EOE"
+          ],
+          "primarySetCode": "TRK"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Samurai's Katana",
+          "nameJa": "「侍」の刀",
+          "detailUrl": "https://scryfall.com/card/fin/154/ja/%E3%80%8C%E4%BE%8D%E3%80%8D%E3%81%AE%E5%88%80-(samurais-katana)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "9b8b5812-73bd-453e-bdff-aad1fafa9226",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FIN"
+          ],
+          "primarySetCode": "FIN"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Skateboard",
+          "nameJa": "スケートボード",
+          "detailUrl": "https://scryfall.com/card/tmt/178/ja/%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%89-(skateboard)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "decfde5e-ea53-4b15-8f69-51da7ef39d15",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TMT"
+          ],
+          "primarySetCode": "TMT"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Starting Town",
+          "nameJa": "始まりの町",
+          "detailUrl": "https://scryfall.com/card/fin/289/ja/%E5%A7%8B%E3%81%BE%E3%82%8A%E3%81%AE%E7%94%BA-(starting-town)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "d04e0975-f401-41b8-a9db-9bcf9cbbce66",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FIN"
+          ],
+          "primarySetCode": "FIN"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Sunbillow Verge",
+          "nameJa": "サンビロウの境界",
+          "detailUrl": "https://scryfall.com/card/dft/264/ja/%E3%82%B5%E3%83%B3%E3%83%93%E3%83%AD%E3%82%A6%E3%81%AE%E5%A2%83%E7%95%8C-(sunbillow-verge)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "a202276b-1f1b-4277-95ee-26877a204f5e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "DFT"
+          ],
+          "primarySetCode": "DFT"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Sundown Pass",
+          "nameJa": "日没の道",
+          "detailUrl": "https://scryfall.com/card/who/310/ja/%E6%97%A5%E6%B2%A1%E3%81%AE%E9%81%93-(sundown-pass)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "5ad0b405-cca4-475e-985c-4d7e3599d87e",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "SOS"
+          ],
+          "primarySetCode": "SOS"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "The Lonely Mountain",
+          "nameJa": "はなれ山",
+          "detailUrl": "https://scryfall.com/card/hob/187/ja/%E3%81%AF%E3%81%AA%E3%82%8C%E5%B1%B1-(the-lonely-mountain)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "3678c06f-8a33-4a6d-bf20-5b92d5c05a95",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "HOB"
+          ],
+          "primarySetCode": "HOB"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Thorin, Mountain-king",
+          "nameJa": "山の王、ソーリン",
+          "detailUrl": "https://scryfall.com/card/hob/114/ja/%E5%B1%B1%E3%81%AE%E7%8E%8B%E3%80%81%E3%82%BD%E3%83%BC%E3%83%AA%E3%83%B3-(thorin-mountain-king)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "94917b80-ac32-45ab-b4ee-157ade024bcd",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "HOB"
+          ],
+          "primarySetCode": "HOB"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 1,
+          "nameEn": "Dissection Tools",
+          "nameJa": "解剖道具",
+          "detailUrl": "https://scryfall.com/card/dsk/245/ja/%E8%A7%A3%E5%89%96%E9%81%93%E5%85%B7-(dissection-tools)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "50de5faa-d22e-4909-a1ff-3810cfcfcb1a",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "DSK"
+          ],
+          "primarySetCode": "DSK"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Chandra, Spark Hunter",
+          "nameJa": "灯を追う者、チャンドラ",
+          "detailUrl": "https://scryfall.com/card/dft/116/ja/%E7%81%AF%E3%82%92%E8%BF%BD%E3%81%86%E8%80%85%E3%80%81%E3%83%81%E3%83%A3%E3%83%B3%E3%83%89%E3%83%A9-(chandra-spark-hunter)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "oracleId": "30bb01c1-9253-4251-80e7-fb8236b3d858",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "DFT"
+          ],
+          "primarySetCode": "DFT"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Ajani, Outland Chaperone",
+          "nameJa": "辺境地の御目付役、アジャニ",
+          "detailUrl": "https://scryfall.com/card/ecl/4/ja/%E8%BE%BA%E5%A2%83%E5%9C%B0%E3%81%AE%E5%BE%A1%E7%9B%AE%E4%BB%98%E5%BD%B9%E3%80%81%E3%82%A2%E3%82%B8%E3%83%A3%E3%83%8B-(ajani-outland-chaperone)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "oracleId": "3ba809ce-3556-415c-9fcc-291cb10a43cd",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "ECL"
+          ],
+          "primarySetCode": "ECL"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Practiced Offense",
+          "nameJa": "練習を積んだ攻撃",
+          "detailUrl": "https://scryfall.com/card/sos/25/ja/%E7%B7%B4%E7%BF%92%E3%82%92%E7%A9%8D%E3%82%93%E3%81%A0%E6%94%BB%E6%92%83-(practiced-offense)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "99678cc9-59c8-4358-b847-8c38ffb4a050",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "SOS"
+          ],
+          "primarySetCode": "SOS"
+        },
+        {
+          "quantity": 1,
+          "nameEn": "Dawn's Truce",
+          "nameJa": "薄暮の休戦",
+          "detailUrl": "https://scryfall.com/card/blb/9/ja/%E8%96%84%E6%9A%AE%E3%81%AE%E4%BC%91%E6%88%A6-(dawns-truce)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "37c06f89-db36-4937-9404-2b07cd22e1a6",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "BLB"
+          ],
+          "primarySetCode": "BLB"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Rest in Peace",
+          "nameJa": "安らかなる眠り",
+          "detailUrl": "https://scryfall.com/card/mar/6/ja/%E5%AE%89%E3%82%89%E3%81%8B%E3%81%AA%E3%82%8B%E7%9C%A0%E3%82%8A-(rest-in-peace)?utm_source=api",
+          "typeGroup": "enchantment",
+          "category": "enchantment",
+          "oracleId": "087f9ad7-e74f-40e2-8102-1ed2925d0418",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "BIG"
+          ],
+          "primarySetCode": "BIG"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Requisition Raid",
+          "nameJa": "没収の強行",
+          "detailUrl": "https://scryfall.com/card/soa/10/ja/%E6%B2%A1%E5%8F%8E%E3%81%AE%E5%BC%B7%E8%A1%8C-(requisition-raid)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "09669283-eb14-46a2-b37a-51d7a52da891",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "OTJ"
+          ],
+          "primarySetCode": "OTJ"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Erode",
+          "nameJa": "浸食作用",
+          "detailUrl": "https://scryfall.com/card/sos/15/ja/%E6%B5%B8%E9%A3%9F%E4%BD%9C%E7%94%A8-(erode)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "2e467fab-e808-44d3-99bf-e3621baeb7cb",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "SOS"
+          ],
+          "primarySetCode": "SOS"
+        }
+      ]
+    }
+  ]
+}
