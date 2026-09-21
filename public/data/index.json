@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T01:34:07+09:00",
-  "lastSuccessfulUpdateAt": "2026-09-21T01:34:07+09:00",
+  "generatedAt": "2026-09-21T19:16:00+09:00",
+  "lastSuccessfulUpdateAt": "2026-09-21T19:16:00+09:00",
   "period": {
     "startDate": "2026-09-12",
     "endDate": "2026-09-21",
@@ -9,14 +9,29 @@
   },
   "overallStatus": "success",
   "summary": {
-    "completedEvents": 18,
+    "completedEvents": 20,
     "pendingEvents": 0,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 65
+    "untranslatedCards": 74
   },
   "events": [
+    {
+      "id": "standard-league-2026-09-2111015",
+      "name": "Standard League September 21 2026",
+      "eventType": "league",
+      "eventDate": "2026-09-21",
+      "eventDateTime": null,
+      "publishedDate": "2026-09-21",
+      "status": "completed",
+      "deckCount": 4,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-09-2111015",
+      "dataFile": "./events/standard-league-2026-09-2111015.json",
+      "firstSeenAt": "2026-09-21T19:15:46+09:00",
+      "lastCheckedAt": "2026-09-21T19:15:47+09:00",
+      "completedAt": "2026-09-21T19:15:47+09:00"
+    },
     {
       "id": "standard-league-2026-09-2011015",
       "name": "Standard League September 20 2026",
@@ -31,6 +46,21 @@
       "firstSeenAt": "2026-09-20T18:29:45+09:00",
       "lastCheckedAt": "2026-09-20T18:29:51+09:00",
       "completedAt": "2026-09-20T18:29:51+09:00"
+    },
+    {
+      "id": "standard-challenge-16-2026-09-2012854521",
+      "name": "Standard Challenge 16 September 20 2026",
+      "eventType": "challenge",
+      "eventDate": "2026-09-20",
+      "eventDateTime": "2026-09-20T22:00:00",
+      "publishedDate": "2026-09-21",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-09-2012854521",
+      "dataFile": "./events/standard-challenge-16-2026-09-2012854521.json",
+      "firstSeenAt": "2026-09-21T19:15:46+09:00",
+      "lastCheckedAt": "2026-09-21T19:15:49+09:00",
+      "completedAt": "2026-09-21T19:15:49+09:00"
     },
     {
       "id": "standard-league-2026-09-1911015",
