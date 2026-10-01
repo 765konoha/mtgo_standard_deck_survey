@@ -3,6 +3,66 @@
 @tailwind utilities;
 
 @layer base {
+  /* Color palette "Indigo Night": slate neutrals, indigo primary.
+     tailwind.config.js maps every color class to these variables. */
+  :root {
+    --c-neutral-50: 248 250 252;
+    --c-neutral-100: 241 245 249;
+    --c-neutral-200: 226 232 240;
+    --c-neutral-300: 203 213 225;
+    --c-neutral-400: 148 163 184;
+    --c-neutral-500: 100 116 139;
+    --c-neutral-600: 71 85 105;
+    --c-neutral-700: 51 65 85;
+    --c-neutral-800: 30 41 59;
+    --c-neutral-900: 15 23 42;
+    --c-neutral-950: 2 6 23;
+    --c-primary-50: 238 242 255;
+    --c-primary-100: 224 231 255;
+    --c-primary-200: 199 210 254;
+    --c-primary-300: 165 180 252;
+    --c-primary-400: 129 140 248;
+    --c-primary-500: 99 102 241;
+    --c-primary-600: 79 70 229;
+    --c-primary-700: 67 56 202;
+    --c-primary-800: 55 48 163;
+    --c-primary-900: 49 46 129;
+    --c-primary-950: 30 27 75;
+    --c-success-50: 236 253 245;
+    --c-success-100: 209 250 229;
+    --c-success-200: 167 243 208;
+    --c-success-300: 110 231 183;
+    --c-success-400: 52 211 153;
+    --c-success-500: 16 185 129;
+    --c-success-600: 5 150 105;
+    --c-success-700: 4 120 87;
+    --c-success-800: 6 95 70;
+    --c-success-900: 6 78 59;
+    --c-success-950: 2 44 34;
+    --c-warning-50: 255 251 235;
+    --c-warning-100: 254 243 199;
+    --c-warning-200: 253 230 138;
+    --c-warning-300: 252 211 77;
+    --c-warning-400: 251 191 36;
+    --c-warning-500: 245 158 11;
+    --c-warning-600: 217 119 6;
+    --c-warning-700: 180 83 9;
+    --c-warning-800: 146 64 14;
+    --c-warning-900: 120 53 15;
+    --c-warning-950: 69 26 3;
+    --c-error-50: 255 241 242;
+    --c-error-100: 255 228 230;
+    --c-error-200: 254 205 211;
+    --c-error-300: 253 164 175;
+    --c-error-400: 251 113 133;
+    --c-error-500: 244 63 94;
+    --c-error-600: 225 29 72;
+    --c-error-700: 190 18 60;
+    --c-error-800: 159 18 57;
+    --c-error-900: 136 19 55;
+    --c-error-950: 76 5 25;
+  }
+
   html {
     font-family: 'Noto Sans JP', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -61,7 +121,7 @@
 @layer utilities {
   .scrollbar-thin {
     scrollbar-width: thin;
-    scrollbar-color: #404040 #1a1a1a;
+    scrollbar-color: rgb(var(--c-neutral-700)) rgb(var(--c-neutral-900));
   }
 
   .scrollbar-thin::-webkit-scrollbar {
@@ -70,17 +130,17 @@
   }
 
   .scrollbar-thin::-webkit-scrollbar-track {
-    background: #1a1a1a;
+    background: rgb(var(--c-neutral-900));
     border-radius: 3px;
   }
 
   .scrollbar-thin::-webkit-scrollbar-thumb {
-    background: #404040;
+    background: rgb(var(--c-neutral-700));
     border-radius: 3px;
   }
 
   .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-    background: #525252;
+    background: rgb(var(--c-neutral-600));
   }
 
   @keyframes slide-up {
