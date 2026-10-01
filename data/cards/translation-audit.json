@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T18:45:28+09:00",
+  "generatedAt": "2026-10-01T14:54:12+09:00",
   "summary": {
-    "auditedCards": 5638,
-    "translated": 5367,
-    "unresolved": 287,
-    "nameJaNull": 287,
-    "missing": 179,
+    "auditedCards": 5946,
+    "translated": 5665,
+    "unresolved": 299,
+    "nameJaNull": 298,
+    "missing": 168,
     "sameAsEnglish": 0,
-    "partialFaces": 108,
-    "notAppliedToEvents": 0,
-    "detailWithoutJapaneseName": 271,
+    "partialFaces": 130,
+    "notAppliedToEvents": 1,
+    "detailWithoutJapaneseName": 281,
     "manualOverrides": 3
   },
   "cards": [
@@ -99,6 +99,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Ancestral Craving",
+      "oracleId": "c8e9a7e1-28ae-40e3-8715-1bb0aa2057c7",
+      "layout": "prepare",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Ancestral Recall",
       "oracleId": "24a29be4-5bc2-469b-b2ce-2fb305c3facb",
       "layout": "prepare",
@@ -143,6 +157,20 @@
     {
       "nameEn": "Aqueous Aria",
       "oracleId": "9b3155c1-c662-4ff1-80e2-4064e6233dc5",
+      "layout": "prepare",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Arc of Fortune",
+      "oracleId": "67c603cc-ad66-4a1c-8386-5901c9c01bfb",
       "layout": "prepare",
       "translationStatus": "missing",
       "translationSource": null,
@@ -309,20 +337,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Biblioplex Tomekeeper",
-      "oracleId": "08a0e845-9ef9-4de1-b9fe-4530357346ca",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Bilbo Baggins, Burglar // Take a Glance",
       "oracleId": "fa85f9e6-69ff-4669-b70a-440aa7b16c97",
       "layout": "adventure",
@@ -393,6 +407,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Bloodline Recollector // Ancestral Craving",
+      "oracleId": "c8e9a7e1-28ae-40e3-8715-1bb0aa2057c7",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Bloomvine Regent",
       "oracleId": "da1e019c-2ffb-412d-90d7-f2e5e5c44c4b",
       "layout": "adventure",
@@ -417,6 +445,20 @@
         "detailWithoutJapaneseName",
         "missing",
         "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Blossom-Blessed Angel // Seed Suture",
+      "oracleId": "cd61c26b-8d3c-4730-92f2-0d94d961bafd",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -460,7 +502,13 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-16-2026-08-2012852720",
+        "standard-challenge-16-2026-09-1612854118",
+        "standard-challenge-32-2026-08-1712851694",
+        "standard-challenge-32-2026-08-3012853208",
+        "standard-league-2026-09-2911015"
+      ]
     },
     {
       "nameEn": "Bramble Familiar // Fetch Quest",
@@ -519,14 +567,25 @@
         "nameJaNull"
       ],
       "eventIds": [
+        "standard-challenge-16-2026-09-2012854521",
         "standard-challenge-32-2026-07-1012847107",
+        "standard-challenge-32-2026-08-0212849506",
         "standard-challenge-32-2026-08-0312849496",
         "standard-challenge-32-2026-08-0412849506",
         "standard-challenge-32-2026-08-0612850613",
         "standard-challenge-32-2026-08-0712850805",
         "standard-challenge-32-2026-08-0712850815",
         "standard-challenge-32-2026-08-0912851116",
-        "standard-league-2026-07-2910879"
+        "standard-challenge-32-2026-08-1012851116",
+        "standard-challenge-32-2026-08-2012852775",
+        "standard-challenge-32-2026-08-2512852775",
+        "standard-challenge-32-2026-09-0412853674",
+        "standard-league-2026-07-2910879",
+        "standard-league-2026-08-2811015",
+        "standard-league-2026-09-0111015",
+        "standard-league-2026-09-0211015",
+        "standard-league-2026-09-0811015",
+        "standard-league-2026-09-1811015"
       ]
     },
     {
@@ -572,6 +631,36 @@
         "nameJaNull"
       ],
       "eventIds": []
+    },
+    {
+      "nameEn": "Carnivorous Cultivator // Enroot",
+      "oracleId": "db655c5a-06f6-42bc-8180-d9ca1c1d939a",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Cease/Desist",
+      "oracleId": null,
+      "layout": null,
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": [
+        "standard-league-2026-08-3111015",
+        "standard-league-2026-09-1511015"
+      ]
     },
     {
       "nameEn": "Cheeky House-Mouse",
@@ -671,15 +760,62 @@
         "nameJaNull"
       ],
       "eventIds": [
+        "standard-challenge-16-2026-09-0912853786",
+        "standard-challenge-16-2026-09-1412854542",
+        "standard-challenge-16-2026-09-1612854118",
+        "standard-challenge-16-2026-09-1712854483",
+        "standard-challenge-16-2026-09-2012854521",
+        "standard-challenge-16-2026-09-2312854542",
+        "standard-challenge-16-2026-09-2912855524",
         "standard-challenge-32-2026-08-0112849466",
         "standard-challenge-32-2026-08-0712850815",
         "standard-challenge-32-2026-08-0812850823",
         "standard-challenge-32-2026-08-0812851135",
+        "standard-challenge-32-2026-08-0912851628",
+        "standard-challenge-32-2026-08-1112851611",
+        "standard-challenge-32-2026-08-1212851628",
+        "standard-challenge-32-2026-08-1212851664",
+        "standard-challenge-32-2026-08-1312851628",
+        "standard-challenge-32-2026-08-1412851651",
+        "standard-challenge-32-2026-08-1512851651",
+        "standard-challenge-32-2026-08-1512851664",
+        "standard-challenge-32-2026-08-1612851684",
+        "standard-challenge-32-2026-08-1812851725",
+        "standard-challenge-32-2026-09-1412854105",
+        "standard-challenge-32-2026-09-1512854114",
+        "standard-challenge-32-2026-09-1812854496",
+        "standard-challenge-32-2026-09-1912854503",
+        "standard-challenge-32-2026-09-2112854529",
+        "standard-challenge-32-2026-09-2212854538",
+        "standard-challenge-32-2026-09-2612854920",
+        "standard-challenge-32-2026-09-2712854496",
+        "standard-challenge-32-2026-09-2712854503",
+        "standard-challenge-32-2026-09-2812854946",
         "standard-league-2026-07-0210879",
         "standard-league-2026-07-2910879",
         "standard-league-2026-08-0410879",
         "standard-league-2026-08-0610879",
-        "standard-league-2026-08-1010879"
+        "standard-league-2026-08-1010879",
+        "standard-league-2026-08-1211015",
+        "standard-league-2026-08-1311015",
+        "standard-league-2026-08-1411015",
+        "standard-league-2026-08-1711015",
+        "standard-league-2026-08-2211015",
+        "standard-league-2026-08-2311015",
+        "standard-league-2026-08-2811015",
+        "standard-league-2026-09-0511015",
+        "standard-league-2026-09-0711015",
+        "standard-league-2026-09-1411015",
+        "standard-league-2026-09-1511015",
+        "standard-league-2026-09-1611015",
+        "standard-league-2026-09-1711015",
+        "standard-league-2026-09-2211015",
+        "standard-league-2026-09-2311015",
+        "standard-league-2026-09-2411015",
+        "standard-league-2026-09-2511015",
+        "standard-league-2026-09-2611015",
+        "standard-league-2026-09-2811015",
+        "standard-league-2026-09-3011129"
       ]
     },
     {
@@ -879,16 +1015,36 @@
       "eventIds": []
     },
     {
-      "nameEn": "Diary of Dreams",
-      "oracleId": "98b43c61-4563-4a29-8cf0-fb8b34f337ce",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
+      "nameEn": "Disruptive Stormbrood",
+      "oracleId": "ec74ae5d-1284-443c-9842-18954f8cf5a8",
+      "layout": "adventure",
+      "translationStatus": "complete",
+      "translationSource": "scryfall_card_faces",
+      "reason": "notAppliedToEvents",
+      "reasons": [
+        "notAppliedToEvents"
+      ],
+      "eventIds": [
+        "standard-challenge-16-2026-09-1312854097",
+        "standard-challenge-32-2026-09-1112854067",
+        "standard-challenge-32-2026-09-1412854105",
+        "standard-league-2026-08-2711015",
+        "standard-league-2026-08-2811015",
+        "standard-league-2026-09-1311015",
+        "standard-league-2026-09-1611015"
+      ]
+    },
+    {
+      "nameEn": "Diviner of Victory // Unwind History",
+      "oracleId": "e7b78acd-5288-4528-97a8-a5b43de90bf5",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
       "reasons": [
         "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -933,14 +1089,24 @@
         "nameJaNull"
       ],
       "eventIds": [
+        "standard-challenge-16-2026-09-2012854521",
+        "standard-challenge-16-2026-09-2912855524",
         "standard-challenge-32-2026-07-1012847107",
+        "standard-challenge-32-2026-08-0212849506",
         "standard-challenge-32-2026-08-0312849496",
         "standard-challenge-32-2026-08-0412849506",
         "standard-challenge-32-2026-08-0612850613",
         "standard-challenge-32-2026-08-0712850805",
         "standard-challenge-32-2026-08-0712850815",
         "standard-challenge-32-2026-08-0912851116",
-        "standard-league-2026-07-2910879"
+        "standard-challenge-32-2026-08-1012851116",
+        "standard-challenge-32-2026-08-2012852775",
+        "standard-challenge-32-2026-08-2512852775",
+        "standard-league-2026-07-2910879",
+        "standard-league-2026-08-2811015",
+        "standard-league-2026-09-0111015",
+        "standard-league-2026-09-1811015",
+        "standard-league-2026-09-3011129"
       ]
     },
     {
@@ -959,6 +1125,20 @@
         "standard-challenge-32-2026-06-2512845634",
         "standard-challenge-32-2026-07-0212846451"
       ]
+    },
+    {
+      "nameEn": "Emergency Phytomedic // Seed Suture",
+      "oracleId": "7737ccdc-49f2-463e-8ffd-43ab98d11f45",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
     },
     {
       "nameEn": "Emeritus of Abundance // Regrowth",
@@ -1031,6 +1211,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Enroot",
+      "oracleId": "db655c5a-06f6-42bc-8180-d9ca1c1d939a",
+      "layout": "prepare",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Exude Toxin",
       "oracleId": "7e97a242-0bac-4f18-9228-e98ecca36254",
       "layout": "adventure",
@@ -1055,6 +1249,20 @@
         "detailWithoutJapaneseName",
         "missing",
         "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Fatehold Chronologist // Peer Review",
+      "oracleId": "1063822f-47d3-42e9-8a21-f62b12609fe1",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -1143,37 +1351,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Fields of Strife",
-      "oracleId": "a32e08fa-bea4-4ba9-a126-9bf0a91f67e2",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Flameshape",
       "oracleId": "f48f2a9b-4ba5-4984-8180-3950889bba65",
       "layout": "adventure",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Forum of Amity",
-      "oracleId": "349ea6c7-6b3e-417f-b082-b712e2b1635b",
-      "layout": "normal",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -1508,6 +1688,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Hallway Heckler // Vicious Verse",
+      "oracleId": "d1af8018-35b5-4b6f-93c8-1ed6bd8c92b1",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Harmonized Trio // Brainstorm",
       "oracleId": "f6036065-7196-44d4-8a27-2199f0e1a03c",
       "layout": "prepare",
@@ -1576,6 +1770,19 @@
         "nameJaNull"
       ],
       "eventIds": [
+        "standard-challenge-16-2026-08-2012852720",
+        "standard-challenge-16-2026-08-2112853170",
+        "standard-challenge-16-2026-08-2712853170",
+        "standard-challenge-16-2026-09-0212853229",
+        "standard-challenge-16-2026-09-0312853666",
+        "standard-challenge-16-2026-09-0912853786",
+        "standard-challenge-16-2026-09-1012854059",
+        "standard-challenge-16-2026-09-1312854097",
+        "standard-challenge-16-2026-09-1412854542",
+        "standard-challenge-16-2026-09-1612854118",
+        "standard-challenge-16-2026-09-2012854521",
+        "standard-challenge-16-2026-09-2312854542",
+        "standard-challenge-16-2026-09-2712854938",
         "standard-challenge-32-2026-07-0312846464",
         "standard-challenge-32-2026-07-0412846487",
         "standard-challenge-32-2026-07-0712846527",
@@ -1601,6 +1808,7 @@
         "standard-challenge-32-2026-07-3012849430",
         "standard-challenge-32-2026-07-3112849443",
         "standard-challenge-32-2026-08-0212849486",
+        "standard-challenge-32-2026-08-0212849506",
         "standard-challenge-32-2026-08-0312849496",
         "standard-challenge-32-2026-08-0412849506",
         "standard-challenge-32-2026-08-0612850613",
@@ -1609,7 +1817,29 @@
         "standard-challenge-32-2026-08-0812850823",
         "standard-challenge-32-2026-08-0812851135",
         "standard-challenge-32-2026-08-0912851116",
+        "standard-challenge-32-2026-08-0912851628",
+        "standard-challenge-32-2026-08-1012851116",
         "standard-challenge-32-2026-08-1012851126",
+        "standard-challenge-32-2026-08-1112851611",
+        "standard-challenge-32-2026-08-1212851628",
+        "standard-challenge-32-2026-08-1312851628",
+        "standard-challenge-32-2026-08-1612852728",
+        "standard-challenge-32-2026-08-1712851694",
+        "standard-challenge-32-2026-08-2112852728",
+        "standard-challenge-32-2026-08-2112852733",
+        "standard-challenge-32-2026-08-2412852766",
+        "standard-challenge-32-2026-08-2912853190",
+        "standard-challenge-32-2026-08-3012853208",
+        "standard-challenge-32-2026-09-0112853225",
+        "standard-challenge-32-2026-09-0412853674",
+        "standard-challenge-32-2026-09-0512853686",
+        "standard-challenge-32-2026-09-0712853712",
+        "standard-challenge-32-2026-09-0812853721",
+        "standard-challenge-32-2026-09-1112854067",
+        "standard-challenge-32-2026-09-1212854079",
+        "standard-challenge-32-2026-09-2112854529",
+        "standard-challenge-32-2026-09-2212854538",
+        "standard-challenge-32-2026-09-2512854913",
         "standard-league-2026-07-0810879",
         "standard-league-2026-07-2110879",
         "standard-league-2026-07-2910879",
@@ -1617,7 +1847,18 @@
         "standard-league-2026-08-0110879",
         "standard-league-2026-08-0610879",
         "standard-league-2026-08-0710879",
-        "standard-league-2026-08-0810879"
+        "standard-league-2026-08-0810879",
+        "standard-league-2026-08-1211015",
+        "standard-league-2026-08-1311015",
+        "standard-league-2026-08-2111015",
+        "standard-league-2026-08-2311015",
+        "standard-league-2026-08-2611015",
+        "standard-league-2026-08-3011015",
+        "standard-league-2026-09-0111015",
+        "standard-league-2026-09-0511015",
+        "standard-league-2026-09-0711015",
+        "standard-league-2026-09-1511015",
+        "standard-league-2026-09-2011015"
       ]
     },
     {
@@ -1642,6 +1883,20 @@
         "standard-league-2026-06-2610879",
         "standard-league-2026-06-3010879"
       ]
+    },
+    {
+      "nameEn": "Heartwood Crafter // Soul Tether",
+      "oracleId": "c8b3a070-408e-4a8f-8597-6476eeec0a5f",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
     },
     {
       "nameEn": "Heroic Stanza",
@@ -1739,7 +1994,10 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-16-2026-09-1612854118",
+        "standard-challenge-32-2026-08-1712851694"
+      ]
     },
     {
       "nameEn": "Imodane's Recruiter // Train Troops",
@@ -1752,6 +2010,20 @@
         "detailWithoutJapaneseName",
         "nameJaNull",
         "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Improvised Act",
+      "oracleId": "33e3793c-098f-4897-88f3-9f9ce9081e0f",
+      "layout": "prepare",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
       ],
       "eventIds": []
     },
@@ -2026,6 +2298,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Konstrari Improviser // Soul Tether",
+      "oracleId": "bad2e3b2-ad47-4e17-b35e-0fcc13e82937",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Lake-town Mariners // Gone Fishing",
       "oracleId": "dba1d231-6b03-44ad-ab8c-be0c8fe1b6db",
       "layout": "adventure",
@@ -2198,20 +2484,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Mage Tower Referee",
-      "oracleId": "3f27988b-0863-4cc1-8eb9-83bd0cd8561c",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Marang River Regent",
       "oracleId": "099b8d2c-b482-48dd-b6bc-dedf546d66c5",
       "layout": "adventure",
@@ -2224,6 +2496,7 @@
         "nameJaNull"
       ],
       "eventIds": [
+        "standard-challenge-16-2026-09-0212853229",
         "standard-challenge-32-2026-07-1912847716",
         "standard-league-2026-08-1110879",
         "standard-league-2026-08-1111015"
@@ -2314,6 +2587,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Molten Tide",
+      "oracleId": "8940f503-fc6d-4fae-be74-22c660cae1a7",
+      "layout": "prepare",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Most Decrepit Old Bird // Speak Secrets",
       "oracleId": "34d34f2c-06ff-4acf-8f2f-ff867774b777",
       "layout": "adventure",
@@ -2385,6 +2672,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Omit Variables",
+      "oracleId": "517f84b5-cf99-410d-96ea-910740231dac",
+      "layout": "prepare",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Oracle's Gift",
       "oracleId": "c63b3511-d597-4c6e-9094-eabdeaa8a394",
       "layout": "prepare",
@@ -2427,26 +2728,23 @@
       "eventIds": []
     },
     {
-      "nameEn": "Page, Loose Leaf",
-      "oracleId": "3bbad38b-7d88-4ff2-9fd3-5081536e7c56",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
+      "nameEn": "Paradox Shaper // Omit Variables",
+      "oracleId": "511951ed-fbff-4e44-9429-27f237496672",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
       "reasons": [
         "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
+        "nameJaNull",
+        "partialFaces"
       ],
-      "eventIds": [
-        "standard-challenge-32-2026-07-2412848182",
-        "standard-challenge-32-2026-08-0612850613"
-      ]
+      "eventIds": []
     },
     {
-      "nameEn": "Paradox Gardens",
-      "oracleId": "638ff242-63d5-457d-a7a6-40ad51052e2e",
-      "layout": "normal",
+      "nameEn": "Peer Review",
+      "oracleId": "21b8d59f-a90d-44ff-a2e3-9f439ac3e14a",
+      "layout": "prepare",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -2470,55 +2768,6 @@
         "nameJaNull"
       ],
       "eventIds": []
-    },
-    {
-      "nameEn": "Petrified Hamlet",
-      "oracleId": "78a2972c-14f4-41f3-99f9-167948bdd73a",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2512845634",
-        "standard-challenge-32-2026-06-2612845647",
-        "standard-challenge-32-2026-06-2612845657",
-        "standard-challenge-32-2026-06-2712845670",
-        "standard-challenge-32-2026-07-0212846451",
-        "standard-challenge-32-2026-07-0312846464",
-        "standard-challenge-32-2026-07-0312846474",
-        "standard-challenge-32-2026-07-0412846482",
-        "standard-challenge-32-2026-07-0712846527",
-        "standard-challenge-32-2026-07-0912847094",
-        "standard-challenge-32-2026-07-1012847107",
-        "standard-challenge-32-2026-07-1712847680",
-        "standard-challenge-32-2026-07-2112847734",
-        "standard-challenge-32-2026-07-2312848169",
-        "standard-challenge-32-2026-07-2412848182",
-        "standard-challenge-32-2026-07-2512848200",
-        "standard-challenge-32-2026-07-3012849430",
-        "standard-challenge-32-2026-08-0112849461",
-        "standard-challenge-32-2026-08-0112849466",
-        "standard-challenge-32-2026-08-0412849506",
-        "standard-challenge-32-2026-08-0812850823",
-        "standard-challenge-32-2026-08-0812851135",
-        "standard-challenge-32-2026-08-1012851126",
-        "standard-league-2026-06-2610879",
-        "standard-league-2026-07-0310879",
-        "standard-league-2026-07-0810879",
-        "standard-league-2026-07-1110879",
-        "standard-league-2026-07-1310879",
-        "standard-league-2026-07-1910879",
-        "standard-league-2026-08-0110879",
-        "standard-league-2026-08-0310879",
-        "standard-league-2026-08-0510879",
-        "standard-league-2026-08-0610879",
-        "standard-league-2026-08-1010879"
-      ]
     },
     {
       "nameEn": "Phoenix Flame",
@@ -2607,16 +2856,30 @@
       "eventIds": []
     },
     {
-      "nameEn": "Potioner's Trove",
-      "oracleId": "d604c75e-9d81-49de-80bc-08f4ef3ee975",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
+      "nameEn": "Pompous Battlemage // Improvised Act",
+      "oracleId": "33e3793c-098f-4897-88f3-9f9ce9081e0f",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
       "reasons": [
         "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Prudent Fateseer // Peer Review",
+      "oracleId": "63f67baa-3f37-41b8-9ee6-3c37f828917d",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -2632,12 +2895,28 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-league-2026-08-2311015"
+      ]
     },
     {
       "nameEn": "Purging Stormbrood // Absorb Essence",
       "oracleId": "5e8086d5-ea48-4555-b65a-a33d08ba4afd",
       "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Pyre Rhymer // Molten Tide",
+      "oracleId": "8940f503-fc6d-4fae-be74-22c660cae1a7",
+      "layout": "prepare",
       "translationStatus": "partial",
       "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
@@ -2664,7 +2943,9 @@
         "standard-challenge-32-2026-07-2012847725",
         "standard-challenge-32-2026-07-2112847734",
         "standard-challenge-32-2026-07-2512848205",
-        "standard-challenge-32-2026-07-2812848245"
+        "standard-challenge-32-2026-07-2812848245",
+        "standard-challenge-32-2026-09-0412853674",
+        "standard-league-2026-09-0211015"
       ]
     },
     {
@@ -2933,7 +3214,14 @@
         "nameJaNull"
       ],
       "eventIds": [
-        "standard-league-2026-07-2110879"
+        "standard-challenge-16-2026-08-2012852720",
+        "standard-challenge-32-2026-08-1212851664",
+        "standard-challenge-32-2026-08-1512851664",
+        "standard-challenge-32-2026-08-2112852733",
+        "standard-challenge-32-2026-09-0412853674",
+        "standard-challenge-32-2026-09-1212854079",
+        "standard-league-2026-07-2110879",
+        "standard-league-2026-08-2411015"
       ]
     },
     {
@@ -3035,6 +3323,20 @@
       "eventIds": []
     },
     {
+      "nameEn": "Seed Suture",
+      "oracleId": "bd416426-d037-45e3-9647-816bf982cbea",
+      "layout": "prepare",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Seek the Heart",
       "oracleId": "09f09d0a-6054-4545-b81e-0295773cc5f0",
       "layout": "adventure",
@@ -3076,6 +3378,20 @@
       "eventIds": [
         "standard-challenge-32-2026-06-30"
       ]
+    },
+    {
+      "nameEn": "Semester Foreseer // Peer Review",
+      "oracleId": "21b8d59f-a90d-44ff-a2e3-9f439ac3e14a",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
     },
     {
       "nameEn": "Sentry Sage",
@@ -3178,20 +3494,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Skycoach Waypoint",
-      "oracleId": "2ac2b815-2d72-48e6-b43a-18884a74bf95",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Smaug, the Great Calamity // Spew Flame",
       "oracleId": "fc75cfec-e1f6-4cb5-8a3c-2f7b2c39c03f",
       "layout": "adventure",
@@ -3222,9 +3524,9 @@
       ]
     },
     {
-      "nameEn": "Speak Secrets",
-      "oracleId": "34d34f2c-06ff-4acf-8f2f-ff867774b777",
-      "layout": "adventure",
+      "nameEn": "Soul Tether",
+      "oracleId": "f3ed157f-a09b-405f-aec4-0e7a81d80fc8",
+      "layout": "prepare",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -3236,9 +3538,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Spectacle Summit",
-      "oracleId": "33a4e73d-d93a-4b6f-88ff-cd53f20d178c",
-      "layout": "normal",
+      "nameEn": "Speak Secrets",
+      "oracleId": "34d34f2c-06ff-4acf-8f2f-ff867774b777",
+      "layout": "adventure",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -3320,47 +3622,16 @@
       "eventIds": []
     },
     {
-      "nameEn": "Splatter Technique",
-      "oracleId": "2620dcfe-8738-4f81-b23d-0c1c60cf9047",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
+      "nameEn": "Stingerquill Voxmancer // Vicious Verse",
+      "oracleId": "e8f755f7-ec93-4d2e-bffc-c719984fa13d",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
       "reasons": [
         "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-challenge-32-2026-06-2612845657",
-        "standard-challenge-32-2026-07-1012847117",
-        "standard-challenge-32-2026-07-1612847673",
-        "standard-challenge-32-2026-07-1712847680",
-        "standard-challenge-32-2026-07-2012847725",
-        "standard-challenge-32-2026-07-2112847734",
-        "standard-challenge-32-2026-07-2312848169",
-        "standard-challenge-32-2026-07-2512848205",
-        "standard-challenge-32-2026-07-2612848225",
-        "standard-challenge-32-2026-07-2812848245",
-        "standard-challenge-32-2026-07-3012849430",
-        "standard-challenge-32-2026-08-0212849486",
-        "standard-challenge-32-2026-08-0712850805",
-        "standard-challenge-32-2026-08-0912851116",
-        "standard-league-2026-07-0610879",
-        "standard-league-2026-08-0710879"
-      ]
-    },
-    {
-      "nameEn": "Stadium Tidalmage",
-      "oracleId": "1c45e872-3af8-47a4-9dc7-a99c293338f8",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -3376,7 +3647,14 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-16-2026-09-0212853229",
+        "standard-challenge-32-2026-09-1212854079",
+        "standard-challenge-32-2026-09-1412854105",
+        "standard-challenge-32-2026-09-2212854538",
+        "standard-league-2026-08-3111015",
+        "standard-league-2026-09-0511015"
+      ]
     },
     {
       "nameEn": "Stormkeld Vanguard // Bear Down",
@@ -3463,20 +3741,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Strixhaven Skycoach",
-      "oracleId": "e286a191-39d4-4073-b844-11d2aba911b4",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Studious First-Year // Rampant Growth",
       "oracleId": "58b0c737-0a84-4f9a-b3b7-300c5de43874",
       "layout": "prepare",
@@ -3519,30 +3783,16 @@
       "eventIds": []
     },
     {
-      "nameEn": "Tam, Observant Sequencer",
-      "oracleId": "702e871d-90d8-4468-8f69-5ae42af2c9d3",
-      "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Tam, Observant Sequencer // Deep Sight",
       "oracleId": "702e871d-90d8-4468-8f69-5ae42af2c9d3",
       "layout": "prepare",
-      "translationStatus": "missing",
-      "translationSource": null,
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
       "reasons": [
         "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -3593,6 +3843,20 @@
       "nameEn": "The Arkenstone // Seek the Heart",
       "oracleId": "09f09d0a-6054-4545-b81e-0295773cc5f0",
       "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Theorix Metamage // Omit Variables",
+      "oracleId": "92a0aa44-0ef7-4e6f-8288-7c33067c5fd1",
+      "layout": "prepare",
       "translationStatus": "partial",
       "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
@@ -3660,20 +3924,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Titan's Grave",
-      "oracleId": "595f0eb5-f521-4174-9c48-b89e85ea907c",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Troll of Khazad-dum",
       "oracleId": null,
       "layout": null,
@@ -3728,7 +3978,39 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-challenge-16-2026-09-0912853786",
+        "standard-challenge-16-2026-09-1612854118",
+        "standard-challenge-16-2026-09-1712854483",
+        "standard-challenge-16-2026-09-2012854521",
+        "standard-challenge-16-2026-09-2912855524",
+        "standard-challenge-32-2026-08-1212851664",
+        "standard-challenge-32-2026-08-1412851651",
+        "standard-challenge-32-2026-08-1512851651",
+        "standard-challenge-32-2026-08-1512851664",
+        "standard-challenge-32-2026-08-1612851684",
+        "standard-challenge-32-2026-08-2412852766",
+        "standard-challenge-32-2026-09-1512854114",
+        "standard-challenge-32-2026-09-1812854496",
+        "standard-challenge-32-2026-09-1912854503",
+        "standard-challenge-32-2026-09-2112854529",
+        "standard-challenge-32-2026-09-2212854538",
+        "standard-challenge-32-2026-09-2612854920",
+        "standard-challenge-32-2026-09-2712854496",
+        "standard-challenge-32-2026-09-2712854503",
+        "standard-challenge-32-2026-09-2812854946",
+        "standard-league-2026-08-1711015",
+        "standard-league-2026-08-2311015",
+        "standard-league-2026-09-0711015",
+        "standard-league-2026-09-1611015",
+        "standard-league-2026-09-1711015",
+        "standard-league-2026-09-2211015",
+        "standard-league-2026-09-2311015",
+        "standard-league-2026-09-2411015",
+        "standard-league-2026-09-2511015",
+        "standard-league-2026-09-2611015",
+        "standard-league-2026-09-3011129"
+      ]
     },
     {
       "nameEn": "Twinmaw Stormbrood // Charring Bite",
@@ -3802,6 +4084,20 @@
       ]
     },
     {
+      "nameEn": "Unwind History",
+      "oracleId": "e7b78acd-5288-4528-97a8-a5b43de90bf5",
+      "layout": "prepare",
+      "translationStatus": "missing",
+      "translationSource": null,
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "missing",
+        "nameJaNull"
+      ],
+      "eventIds": []
+    },
+    {
       "nameEn": "Vantress Transmuter",
       "oracleId": "89ae3475-9063-4700-a7bd-47d5dcd43a3b",
       "layout": "adventure",
@@ -3819,6 +4115,20 @@
       "nameEn": "Vantress Transmuter // Croaking Curse",
       "oracleId": "89ae3475-9063-4700-a7bd-47d5dcd43a3b",
       "layout": "adventure",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Variable Chaser // Arc of Fortune",
+      "oracleId": "67c603cc-ad66-4a1c-8386-5901c9c01bfb",
+      "layout": "prepare",
       "translationStatus": "partial",
       "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
@@ -3886,9 +4196,9 @@
       "eventIds": []
     },
     {
-      "nameEn": "Vicious Rivalry",
-      "oracleId": "90898c76-21f9-4597-88fe-dc9179911cde",
-      "layout": "normal",
+      "nameEn": "Vicious Verse",
+      "oracleId": "e1ffb884-a89e-4e2a-9beb-8bd5838b6a94",
+      "layout": "prepare",
       "translationStatus": "missing",
       "translationSource": null,
       "reason": "nameJaNull",
@@ -3897,16 +4207,21 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": [
-        "standard-challenge-32-2026-07-3012849430",
-        "standard-challenge-32-2026-08-0112849461",
-        "standard-challenge-32-2026-08-0312849496",
-        "standard-challenge-32-2026-08-0712850805",
-        "standard-challenge-32-2026-08-1012851126",
-        "standard-league-2026-08-0610879",
-        "standard-league-2026-08-0910879",
-        "standard-league-2026-08-1010879"
-      ]
+      "eventIds": []
+    },
+    {
+      "nameEn": "Vigorbloom Vanguard // Seed Suture",
+      "oracleId": "bd416426-d037-45e3-9647-816bf982cbea",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
     },
     {
       "nameEn": "Virtue of Courage",
@@ -4004,7 +4319,9 @@
         "missing",
         "nameJaNull"
       ],
-      "eventIds": []
+      "eventIds": [
+        "standard-league-2026-09-3011129"
+      ]
     },
     {
       "nameEn": "Virtue of Persistence // Locthwain Scorn",
@@ -4049,16 +4366,30 @@
       "eventIds": []
     },
     {
-      "nameEn": "Visionary's Dance",
-      "oracleId": "c9f35490-462a-4c8f-9d8b-d8abca6596f7",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
+      "nameEn": "Void Extrapolator // Omit Variables",
+      "oracleId": "517f84b5-cf99-410d-96ea-910740231dac",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
       "reasons": [
         "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
+        "nameJaNull",
+        "partialFaces"
+      ],
+      "eventIds": []
+    },
+    {
+      "nameEn": "Whiplash Wordsmith // Vicious Verse",
+      "oracleId": "e1ffb884-a89e-4e2a-9beb-8bd5838b6a94",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
+      "reason": "nameJaNull",
+      "reasons": [
+        "detailWithoutJapaneseName",
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
@@ -4105,52 +4436,6 @@
       "eventIds": []
     },
     {
-      "nameEn": "Wilt in the Heat",
-      "oracleId": "3bed0b60-5944-44bb-9ddd-c82f323e6d20",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
-      "nameEn": "Witherbloom Charm",
-      "oracleId": "ee1db746-f5c1-4dce-82eb-24b273cc9507",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": [
-        "standard-league-2026-07-0810879",
-        "standard-league-2026-08-0310879",
-        "standard-league-2026-08-0510879"
-      ]
-    },
-    {
-      "nameEn": "Witherbloom, the Balancer",
-      "oracleId": "fbb04a21-e513-4317-aac8-fa6df91c3438",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
-      "reason": "nameJaNull",
-      "reasons": [
-        "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
-      ],
-      "eventIds": []
-    },
-    {
       "nameEn": "Woodland Acolyte",
       "oracleId": "ba610f08-61a7-47fe-9a80-32b5ce51b118",
       "layout": "adventure",
@@ -4179,16 +4464,16 @@
       "eventIds": []
     },
     {
-      "nameEn": "Zaffai and the Tempests",
-      "oracleId": "3f8a8650-0e38-4926-8f48-526351e6a863",
-      "layout": "normal",
-      "translationStatus": "missing",
-      "translationSource": null,
+      "nameEn": "Woodwork Prodigy // Soul Tether",
+      "oracleId": "f3ed157f-a09b-405f-aec4-0e7a81d80fc8",
+      "layout": "prepare",
+      "translationStatus": "partial",
+      "translationSource": "scryfall_card_faces",
       "reason": "nameJaNull",
       "reasons": [
         "detailWithoutJapaneseName",
-        "missing",
-        "nameJaNull"
+        "nameJaNull",
+        "partialFaces"
       ],
       "eventIds": []
     },
