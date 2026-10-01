@@ -60,3 +60,31 @@ test('empty cache entries keep the existing negative-cache TTL', () => {
   assert.equal(shouldRecheckJapaneseCache({ checkedAt: checkedDaysAgo(8), prints: [] }, { now: NOW, ttlDays: 7 }), true);
   assert.equal(shouldRecheckJapaneseCache(undefined, { now: NOW }), true);
 });
+
+test('card search does not give a card the Japanese name of its other face', async () => {
+  const { mkdtemp, mkdir, readFile, writeFile } = await import('node:fs/promises');
+  const { tmpdir } = await import('node:os');
+  const { join } = await import('node:path');
+  const { buildPublicIndexes } = await import('../scripts/lib/build-public-index.mjs');
+  const root = await mkdtemp(join(tmpdir(), 'mtgo-faces-'));
+  const oracleId = 'ff812a78-3fe7-47bc-9984-1c2380cff5b1';
+  await mkdir(join(root, 'data', 'events'), { recursive: true });
+  await mkdir(join(root, 'data', 'cards'), { recursive: true });
+  await mkdir(join(root, 'public', 'data', 'events'), { recursive: true });
+  // The omen-side alias comes first, as in the real dictionary.
+  await writeFile(join(root, 'data', 'cards', 'en-ja-map.json'), JSON.stringify({
+    cards: {
+      'charring bite': { nameEn: 'Charring Bite', nameJa: '黒焦げの噛みつき', translationStatus: 'complete', oracleId },
+      'twinmaw stormbrood': { nameEn: 'Twinmaw Stormbrood', nameJa: null, translationStatus: 'missing', oracleId },
+    },
+  }));
+  await writeFile(join(root, 'data', 'events', 'standard-league-2026-09-3011129.json'), JSON.stringify({
+    schemaVersion: 1,
+    event: { id: 'standard-league-2026-09-3011129', name: 'Standard League', eventType: 'league', eventDate: '2026-09-30', publishedDate: '2026-09-30', sourceUrl: 'https://www.mtgo.com/decklist/x', status: 'completed' },
+    decks: [{ id: 'd1', player: 'p', placement: null, mainboard: [{ quantity: 2, nameEn: 'Twinmaw Stormbrood', nameJa: null, oracleId, translationStatus: 'missing' }], sideboard: [] }],
+  }));
+  await buildPublicIndexes({ root, lookbackDays: 10, now: new Date('2026-10-01T12:00:00+09:00') });
+  const index = JSON.parse(await readFile(join(root, 'public', 'data', 'card-search-index.json'), 'utf8'));
+  assert.equal(index.cards[0].nameEn, 'Twinmaw Stormbrood');
+  assert.equal(index.cards[0].nameJa, null);
+});
