@@ -489,7 +489,7 @@ function getJapaneseFaceName(card, index) {
   if (!card || card.lang !== 'ja') return null;
   const face = card.card_faces?.[index];
   return face && isTranslatedName(face.printed_name, face.name)
-    ? face.printed_name
+    ? stripFurigana(face.printed_name)
     : null;
 }
 

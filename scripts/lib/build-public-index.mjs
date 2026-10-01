@@ -320,8 +320,11 @@ function accumulate(perCard, cardList, zone, dictionaryLookup) {
 function toCardIndexInfo(card, dictionaryLookup) {
   const sourceName = card?.nameEn || '';
   const normalizedSourceName = normalizeCardName(sourceName);
-  const dictionaryEntry = dictionaryLookup.byOracleId.get(card?.oracleId)
-    || dictionaryLookup.byName.get(normalizedSourceName)
+  // Look up by exact name first: a multi-face card shares its oracle id with
+  // per-face alias entries (e.g. an Omen's spell side), whose Japanese name
+  // must not be used for the whole card.
+  const dictionaryEntry = dictionaryLookup.byName.get(normalizedSourceName)
+    || dictionaryLookup.byOracleId.get(card?.oracleId)
     || null;
   const oracleId = card?.oracleId || dictionaryEntry?.oracleId || null;
   const nameEn = preferredNameEn(card?.nameEn, dictionaryEntry?.nameEn);
