@@ -6,6 +6,8 @@
   /* Color palette "Indigo Night": slate neutrals, indigo primary.
      tailwind.config.js maps every color class to these variables. */
   :root {
+    /* Width of the desktop deck detail side panel (DeckDetail / App). */
+    --deck-panel-width: min(42rem, 48vw);
     --c-neutral-50: 248 250 252;
     --c-neutral-100: 241 245 249;
     --c-neutral-200: 226 232 240;
