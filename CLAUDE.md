@@ -34,7 +34,7 @@ MTGO で公開される Standard の大会結果を取得し、日本語カー�
 
 ## データ保存場所
 
-- `data/raw/events/*.html` … 取得した生HTML
+- `data/raw/events/*.html.gz` … 取得した生HTML（gzip圧縮）
 - `data/events/*.json` … イベント単位の永続JSON
 - `data/cards/` … 辞書（`en-ja-map.json`）、手動補正（`manual-overrides.json`）、Scryfallキャッシュ、セット監査（`<code>-translation-audit.json`）等
 - `data/config/standard-set-codes.json` … 現在のStandard対象セット一覧（全体更新で自動生成、手動編集可）
@@ -47,6 +47,7 @@ MTGO で公開される Standard の大会結果を取得し、日本語カー�
 
 - 取得失敗・解析失敗が起きても、**既存の正常なJSONを不完全なデータで上書きしない**（`scripts/fetch-mtgo-events.mjs` の `writeNonCompletedEventIfSafe` / `hasValidCompletedEventJson`）。
 - イベント一覧にリンクがあるだけでは `completed` にしない。必要なデッキを取得・検証できた場合のみ `completed`。
+- Standard Challenge は同日に複数回開催される。イベントは日付ではなく MTGO の大会番号で区別する（`eventIdentityKey`）。
 - 状態を混同しない: `pending_publication`（未公開/一部のみ）と `parse_error`（構造はあるが解析不能）は別物。
 - **JSONスキーマの互換性を維持する**（`schemaVersion` を含む）。破壊的変更をしない。
 - Windows と GitHub Actions（Linux）の両環境で動くようにする。

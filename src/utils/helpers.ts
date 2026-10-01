@@ -3,6 +3,9 @@ import { CARD_CATEGORY_LABELS } from '../types';
 
 const DISPLAY_LOCALE = 'ja-JP';
 
+// Date selection value meaning "the whole 10-day window".
+export const ALL_DATES = 'all';
+
 export function formatDate(dateStr: string): string {
   const date = new Date(dateStr);
   return date.toLocaleDateString(DISPLAY_LOCALE, {

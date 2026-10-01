@@ -1,4 +1,5 @@
 import { normalizeCardName } from './normalize-card-name.mjs';
+import { stripFurigana } from './japanese-name.mjs';
 
 // Set types whose printings define a card's expansion attribution. This keeps
 // tokens, art series, memorabilia, promos, and Commander-only printings out of
@@ -242,7 +243,7 @@ export function getJapaneseName(card) {
   if (!card || card.lang !== 'ja') return missing;
   if (isTranslatedName(card.printed_name, card.name)) {
     return {
-      nameJa: card.printed_name,
+      nameJa: stripFurigana(card.printed_name),
       source: 'printed_name',
       status: 'complete',
       translatedFaces: [],
@@ -252,7 +253,7 @@ export function getJapaneseName(card) {
   const translatedFaces = faces.map((face, index) => ({
     index,
     nameEn: face.name,
-    nameJa: isTranslatedName(face.printed_name, face.name) ? face.printed_name : null,
+    nameJa: isTranslatedName(face.printed_name, face.name) ? stripFurigana(face.printed_name) : null,
   }));
   const faceNames = translatedFaces.map((face) => face.nameJa);
   if (
@@ -343,6 +344,21 @@ function selectEnglishCard(cards) {
     Number(Boolean(b.type_line)) - Number(Boolean(a.type_line))
     || String(b.released_at || '').localeCompare(String(a.released_at || ''))
   )[0];
+}
+
+// Decides whether a cached Japanese-print lookup must be fetched again. An
+// entry whose prints carry no usable Japanese name (Scryfall can list a ja
+// print with printed_name null, or with only one face translated) is treated
+// like a negative answer: retried once the TTL passes, never kept forever.
+export function shouldRecheckJapaneseCache(cacheEntry, { now = Date.now(), ttlDays = 7 } = {}) {
+  if (!cacheEntry) return true;
+  const prints = cacheEntry.prints || [];
+  if (prints.length > 0 && getJapaneseName(selectJapaneseCard(prints)).status === 'complete') {
+    return false;
+  }
+  const checkedAt = new Date(cacheEntry.checkedAt || 0).getTime();
+  if (!Number.isFinite(checkedAt)) return true;
+  return now - checkedAt > ttlDays * 86400000;
 }
 
 function selectJapaneseCard(cards) {

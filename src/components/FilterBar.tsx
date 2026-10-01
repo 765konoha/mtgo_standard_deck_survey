@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, Languages, Package } from 'lucide-react';
 import type { CardNameDisplayMode, CardSearchEntry, CardSearchIndex } from '../types';
-import { formatDate, formatShortDate } from '../utils/helpers';
+import { ALL_DATES, formatDate, formatShortDate } from '../utils/helpers';
 import { CardSearchBox } from './CardSearchBox';
 
 interface FilterBarProps {
@@ -52,6 +52,25 @@ export function FilterBar({
       .map(([code, cardCount]) => ({ code, name: null, cardCount, deckCount: 0 }));
   }, [cardSearchIndex]);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const barRef = useRef<HTMLDivElement>(null);
+
+  // The bar's height changes with screen width and wrapping, so publish it as
+  // a CSS variable for the sticky date headings that sit right below it.
+  useEffect(() => {
+    const bar = barRef.current;
+    if (!bar || typeof ResizeObserver === 'undefined') return;
+    const root = document.documentElement;
+    const update = () => {
+      root.style.setProperty('--filter-bar-height', `${bar.offsetHeight}px`);
+    };
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(bar);
+    return () => {
+      observer.disconnect();
+      root.style.removeProperty('--filter-bar-height');
+    };
+  }, []);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
 
@@ -78,7 +97,7 @@ export function FilterBar({
   };
 
   return (
-    <div className="bg-neutral-900 border-b border-neutral-800 sticky top-0 z-30">
+    <div ref={barRef} className="bg-neutral-900 border-b border-neutral-800 sticky top-0 z-30">
       <div className="max-w-7xl mx-auto px-4 py-3">
         <div className="flex flex-col gap-3">
           <div className="relative">
@@ -97,7 +116,7 @@ export function FilterBar({
                 role="tablist"
                 aria-label="日付選択"
               >
-                {availableDates.map((date) => (
+                {[ALL_DATES, ...availableDates].map((date) => (
                   <button
                     key={date}
                     onClick={() => onDateChange(date)}
@@ -109,7 +128,7 @@ export function FilterBar({
                     role="tab"
                     aria-selected={selectedDate === date}
                   >
-                    {formatShortDate(date)}
+                    {date === ALL_DATES ? '全期間' : formatShortDate(date)}
                   </button>
                 ))}
               </div>
@@ -130,6 +149,7 @@ export function FilterBar({
                 className="w-full px-3 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-neutral-100 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500"
                 aria-label="日付選択"
               >
+                <option value={ALL_DATES}>全期間（直近{availableDates.length}日）</option>
                 {availableDates.map((date) => (
                   <option key={date} value={date}>
                     {formatDate(date)}

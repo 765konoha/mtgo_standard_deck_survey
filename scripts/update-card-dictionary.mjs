@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import {
   buildCardDictionary,
   mergeSetScopedDictionary,
+  shouldRecheckJapaneseCache,
   unresolvedOracleIds,
 } from './lib/build-card-dictionary.mjs';
 import { readJson, toIsoTokyo, writeJsonAtomic } from './lib/fs-utils.mjs';
@@ -314,11 +315,7 @@ function parseSetCode(args = process.argv.slice(2), env = process.env) {
 }
 
 function shouldRecheckOracle(cacheEntry, now = Date.now()) {
-  if (!cacheEntry) return true;
-  if ((cacheEntry.prints || []).length > 0) return false;
-  const checkedAt = new Date(cacheEntry.checkedAt || 0).getTime();
-  if (!Number.isFinite(checkedAt)) return true;
-  return now - checkedAt > NEGATIVE_CACHE_TTL_DAYS * 86400000;
+  return shouldRecheckJapaneseCache(cacheEntry, { now, ttlDays: NEGATIVE_CACHE_TTL_DAYS });
 }
 
 // Updates the dictionary for a single set (e.g. SET_CODE=MSH). Fetches only

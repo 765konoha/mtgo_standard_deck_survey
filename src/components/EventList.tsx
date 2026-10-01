@@ -92,7 +92,7 @@ export function EventList({
     <div className="space-y-6">
       {sortedDates.map((date) => (
         <div key={date}>
-          <h2 className="text-lg font-semibold text-neutral-100 mb-4 sticky top-[120px] bg-neutral-950 py-2 z-20">
+          <h2 className="text-lg font-semibold text-neutral-100 mb-4 sticky top-[var(--filter-bar-height,120px)] bg-neutral-950 py-2 z-20">
             {formatDate(date)}
           </h2>
           <div className="space-y-4">
