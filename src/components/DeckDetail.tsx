@@ -10,6 +10,9 @@ interface DeckDetailProps {
   deck: Deck;
   cardNameDisplay: CardNameDisplayMode;
   selectedExpansion?: string | null;
+  // Desktop: a side panel beside the list (page stays scrollable).
+  // Mobile/tablet: a modal over the page.
+  isDesktop?: boolean;
   onClose: () => void;
   onCopy: (deck: Deck, format: 'ja' | 'arena') => void;
 }
@@ -20,6 +23,7 @@ export function DeckDetail({
   deck,
   cardNameDisplay,
   selectedExpansion = null,
+  isDesktop = false,
   onClose,
   onCopy,
 }: DeckDetailProps) {
@@ -35,7 +39,7 @@ export function DeckDetail({
 
   useEffect(() => {
     const container = containerRef.current;
-    if (!container) return;
+    if (!container || isDesktop) return;
 
     const focusableElements = container.querySelectorAll<HTMLElement>(
       'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
@@ -57,14 +61,15 @@ export function DeckDetail({
     container.addEventListener('keydown', handleTab);
     firstElement?.focus();
     return () => container.removeEventListener('keydown', handleTab);
-  }, []);
+  }, [isDesktop]);
 
   useEffect(() => {
+    if (isDesktop) return;
     document.body.style.overflow = 'hidden';
     return () => {
       document.body.style.overflow = '';
     };
-  }, []);
+  }, [isDesktop]);
 
   const placement = getPlacementLabel(deck);
   const hasUntranslatedCards =
@@ -81,9 +86,9 @@ export function DeckDetail({
 
       <div
         ref={containerRef}
-        className="fixed inset-0 z-50 bg-neutral-950 overflow-y-auto sm:inset-y-4 sm:right-4 sm:left-auto sm:max-w-2xl sm:rounded-xl sm:border sm:border-neutral-800"
+        className="fixed inset-0 z-50 bg-neutral-950 overflow-y-auto overscroll-contain sm:inset-y-4 sm:right-4 sm:left-auto sm:max-w-2xl sm:rounded-xl sm:border sm:border-neutral-800 lg:w-[var(--deck-panel-width)] lg:max-w-none lg:shadow-2xl"
         role="dialog"
-        aria-modal="true"
+        aria-modal={!isDesktop}
         aria-labelledby="deck-detail-title"
       >
         <div className="sticky top-0 z-10 bg-neutral-950 border-b border-neutral-800">
@@ -151,7 +156,7 @@ export function DeckDetail({
         </div>
 
         <div className="p-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
             <div>
               <h3 className="text-sm font-semibold text-neutral-300 mb-3">
                 メインデッキ{' '}

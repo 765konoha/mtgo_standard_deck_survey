@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type {
   CardNameDisplayMode,
   CardSearchEntry,
@@ -12,6 +12,7 @@ import {
   useIndexData,
   useLocalStorage,
 } from './hooks/useData';
+import { DESKTOP_QUERY, useMediaQuery } from './hooks/useMediaQuery';
 import {
   buildDeckRefIndex,
   buildExpansionDeckIndex,
@@ -108,15 +109,42 @@ export default function App() {
     setSelectedCard(null);
   }, []);
 
+  // Opening a deck adds a history entry so the browser/phone back button
+  // closes the deck detail instead of leaving the site.
+  const deckHistoryPushed = useRef(false);
+
+  const closeDeckDetail = useCallback(() => {
+    setSelectedEvent(null);
+    setSelectedDeckId(null);
+  }, []);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      if (!deckHistoryPushed.current) return;
+      deckHistoryPushed.current = false;
+      closeDeckDetail();
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [closeDeckDetail]);
+
   const handleDeckSelect = useCallback((event: EventSummary, deckId: string) => {
+    if (!deckHistoryPushed.current) {
+      window.history.pushState({ deckDetail: true }, '');
+      deckHistoryPushed.current = true;
+    }
     setSelectedEvent(event);
     setSelectedDeckId(deckId);
   }, []);
 
   const handleCloseDeckDetail = useCallback(() => {
-    setSelectedEvent(null);
-    setSelectedDeckId(null);
-  }, []);
+    if (deckHistoryPushed.current) {
+      // popstate closes the detail and keeps the history stack in order.
+      window.history.back();
+    } else {
+      closeDeckDetail();
+    }
+  }, [closeDeckDetail]);
 
   const handleCopyDeck = useCallback(
     async (deck: Deck, format: 'ja' | 'arena') => {
@@ -130,6 +158,7 @@ export default function App() {
     [addToast]
   );
 
+  const isDesktop = useMediaQuery(DESKTOP_QUERY);
   const { data: selectedEventData } = useEventData(selectedEvent);
   const selectedDeck = useMemo(() => {
     if (!selectedEventData || !selectedDeckId) return null;
@@ -160,8 +189,12 @@ export default function App() {
     );
   }
 
+  const detailOpen = Boolean(selectedEvent && selectedDeck && selectedEventData);
+
   return (
-    <div className="min-h-screen bg-neutral-950">
+    // On desktop the deck detail sits beside the list, so the page keeps
+    // scrolling and the list is not hidden under the panel.
+    <div className={`min-h-screen bg-neutral-950 ${detailOpen ? 'lg:pr-[calc(var(--deck-panel-width)+2rem)]' : ''}`}>
       <Header data={data} loading={loading} onRefetch={refetch} />
 
       <FilterBar
@@ -207,6 +240,7 @@ export default function App() {
           deck={selectedDeck}
           cardNameDisplay={cardNameDisplay}
           selectedExpansion={selectedExpansion}
+          isDesktop={isDesktop}
           onClose={handleCloseDeckDetail}
           onCopy={handleCopyDeck}
         />
