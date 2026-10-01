@@ -17,7 +17,7 @@ import {
   buildExpansionDeckIndex,
   intersectDeckIndexes,
 } from './utils/cardSearch';
-import { copyDeckToClipboard, getLastNDates } from './utils/helpers';
+import { ALL_DATES, copyDeckToClipboard, getLastNDates } from './utils/helpers';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
 import { EventList } from './components/EventList';
@@ -92,8 +92,16 @@ export default function App() {
     setToasts((prev) => prev.filter((t) => t.id !== id));
   }, []);
 
+  // Card and expansion filters search the whole 10-day window, so widen the
+  // date selection to match the deck counts shown in the suggestions.
   const handleCardSelect = useCallback((card: CardSearchEntry) => {
     setSelectedCard(card);
+    setSelectedDate(ALL_DATES);
+  }, []);
+
+  const handleExpansionChange = useCallback((code: string | null) => {
+    setSelectedExpansion(code);
+    if (code) setSelectedDate(ALL_DATES);
   }, []);
 
   const handleCardClear = useCallback(() => {
@@ -170,7 +178,7 @@ export default function App() {
         onCardSelect={handleCardSelect}
         onCardClear={handleCardClear}
         selectedExpansion={selectedExpansion}
-        onExpansionChange={setSelectedExpansion}
+        onExpansionChange={handleExpansionChange}
       />
 
       <main className="max-w-7xl mx-auto px-4 py-6">
@@ -178,7 +186,7 @@ export default function App() {
 
         <EventList
           events={data.events}
-          selectedDate={selectedDate}
+          selectedDate={selectedDate === ALL_DATES ? null : selectedDate}
           eventTypeFilter={eventTypeFilter}
           onDeckSelect={handleDeckSelect}
           selectedDeckId={selectedDeckId}

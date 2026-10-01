@@ -1,5 +1,6 @@
 import { mkdir } from 'node:fs/promises';
 import { join } from 'node:path';
+import { compressLegacyRawHtml, writeGzipAtomic } from './lib/raw-html.mjs';
 import {
   discoverEventPages,
   extractEventDateFromPage,
@@ -8,8 +9,9 @@ import {
   parseLookbackDays,
   shouldFetchEvent,
 } from './lib/backfill.mjs';
+import { eventIdentityKey } from './lib/event-rules.mjs';
 import { buildIndex } from './lib/run-build-index.mjs';
-import { dateTokyo, readJson, toIsoTokyo, writeJsonAtomic, writeTextAtomic } from './lib/fs-utils.mjs';
+import { dateTokyo, readJson, toIsoTokyo, writeJsonAtomic } from './lib/fs-utils.mjs';
 import { parseEventPage } from './lib/parse-event-page.mjs';
 import { translateDecks } from './lib/translate-decklists.mjs';
 import { validateEventData } from './lib/validate-data.mjs';
@@ -25,6 +27,10 @@ await mkdir(join('data', 'raw', 'events'), { recursive: true });
 await mkdir(join('data', 'events'), { recursive: true });
 await mkdir(join('public', 'data', 'events'), { recursive: true });
 
+const RAW_EVENTS_DIR = join('data', 'raw', 'events');
+const compressedLegacy = await compressLegacyRawHtml(RAW_EVENTS_DIR);
+if (compressedLegacy > 0) console.log(`[RAW] compressed legacy HTML files: ${compressedLegacy}`);
+
 const dictionary = await readJson(join('data', 'cards', 'en-ja-map.json'), {
   schemaVersion: 1,
   cards: {},
@@ -34,6 +40,11 @@ const state = await readJson(join('data', 'state', 'events.json'), {
   events: [],
 });
 const stateById = new Map(state.events.map((event) => [event.eventId, event]));
+const stateByIdentity = new Map();
+for (const event of state.events) {
+  const key = eventIdentityKey({ id: event.eventId, eventType: event.eventType });
+  if (!stateByIdentity.has(key)) stateByIdentity.set(key, event);
+}
 
 const discovery = await discoverEventPages({
   listUrl: LIST_URL,
@@ -49,8 +60,18 @@ console.log(`[DISCOVER] Standard events found: ${discovered.length}`);
 
 for (const event of discovered) {
   const existing = stateById.get(event.id);
+  const republished = existing
+    ? null
+    : stateByIdentity.get(eventIdentityKey({ id: event.id, eventType: event.eventType }));
+  if (republished) {
+    // Same Challenge re-published under a new slug: keep tracking the
+    // original entry instead of fetching and listing it twice.
+    console.log(`[DUPLICATE] ${event.id} is the same event as ${republished.eventId}`);
+    if (republished.status !== 'completed') republished.sourceUrl = event.sourceUrl;
+    continue;
+  }
   if (!existing) {
-    stateById.set(event.id, {
+    const created = {
       eventId: event.id,
       eventName: event.name,
       eventType: event.eventType,
@@ -63,7 +84,9 @@ for (const event of discovered) {
       lastResult: null,
       eventDate: event.eventDate,
       publishedDate: event.publishedDate,
-    });
+    };
+    stateById.set(event.id, created);
+    stateByIdentity.set(eventIdentityKey({ id: event.id, eventType: event.eventType }), created);
   } else {
     Object.assign(existing, {
       eventName: event.name,
@@ -132,7 +155,7 @@ async function processEvent(summary, eventState, dictionary) {
   try {
     console.log(`[FETCH] ${summary.name}: ${summary.sourceUrl}`);
     const html = await fetchText(summary.sourceUrl);
-    await writeTextAtomic(join('data', 'raw', 'events', `${summary.id}.html`), html);
+    await writeGzipAtomic(join(RAW_EVENTS_DIR, `${summary.id}.html.gz`), html);
     summary.eventDate = extractEventDateFromPage(html) || summary.eventDate;
     summary.eventDateTime = extractEventDateTimeFromPage(html) || summary.eventDateTime || null;
 

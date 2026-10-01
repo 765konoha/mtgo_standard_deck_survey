@@ -2,6 +2,8 @@ import { readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { isDateInRange, lookbackPeriod } from './backfill.mjs';
 import { isBasicLandCard } from './basic-land.mjs';
+import { compareDuplicateEvents, eventIdentityKey } from './event-rules.mjs';
+import { stripFurigana } from './japanese-name.mjs';
 import { normalizeCardName } from './normalize-card-name.mjs';
 import { validateCardSearchIndex } from './validate-search-index.mjs';
 import { readJson, toIsoTokyo, writeJsonAtomic } from './fs-utils.mjs';
@@ -37,7 +39,7 @@ export async function buildPublicIndexes({
       recordsById.set(eventData.event.id, record);
     }
   }
-  const records = [...recordsById.values()];
+  const records = dedupeRepublishedEvents([...recordsById.values()]);
 
   const events = records.map(({ file, eventData, eventDate }) => ({
     id: eventData.event.id,
@@ -110,6 +112,31 @@ export async function buildPublicIndexes({
   console.log(`[INDEX] ${events.length} events from ${period.startDate} to ${period.endDate}, ${untranslatedCards} untranslated cards`);
   console.log(`[CARD INDEX] ${cardPayload.cards.length} cards from ${events.length} events`);
   return { events, period, indexChanged, cardsChanged: cardsChanged && cardsWritten, cardSearchIndex: cardPayload };
+}
+
+// MTGO sometimes re-publishes a Challenge under a slug with a different date.
+// Both JSON files are kept on disk, but only one copy is published.
+export function dedupeRepublishedEvents(records) {
+  const byIdentity = new Map();
+  for (const record of records) {
+    const candidate = toDuplicateCandidate(record);
+    const key = eventIdentityKey(candidate);
+    const existing = byIdentity.get(key);
+    if (!existing || compareDuplicateEvents(candidate, toDuplicateCandidate(existing)) < 0) {
+      byIdentity.set(key, record);
+    }
+  }
+  return [...byIdentity.values()];
+}
+
+function toDuplicateCandidate({ eventData, eventDate }) {
+  return {
+    id: eventData.event.id,
+    eventType: eventData.event.eventType,
+    eventDate,
+    status: eventData.event.status,
+    firstSeenAt: eventData.event.firstSeenAt,
+  };
 }
 
 function buildCardSearchIndex(records, period, lookbackDays, dictionary = null) {
@@ -298,7 +325,7 @@ function toCardIndexInfo(card, dictionaryLookup) {
     || null;
   const oracleId = card?.oracleId || dictionaryEntry?.oracleId || null;
   const nameEn = preferredNameEn(card?.nameEn, dictionaryEntry?.nameEn);
-  const nameJa = preferredNameJaValue(card, dictionaryEntry);
+  const nameJa = stripFurigana(preferredNameJaValue(card, dictionaryEntry));
   const translationStatus = nameJa
     ? preferredTranslationStatus(card?.translationStatus, dictionaryEntry?.translationStatus)
     : 'missing';

@@ -89,6 +89,33 @@ export function useIndexData() {
   return { data, loading, error, refetch };
 }
 
+// Event JSON is shared by every event card and the deck detail panel, so each
+// file is fetched once per page load. `no-cache` still revalidates with the
+// server (cheap 304s) instead of downloading the file again.
+const eventDataCache = new Map<string, Promise<Event>>();
+
+function loadEventData(eventSummary: EventSummary): Promise<Event> {
+  const path = eventSummary.dataFile.replace(/^\.\//, '');
+  const cacheKey = `${path}#${eventSummary.completedAt ?? ''}`;
+  const cached = eventDataCache.get(cacheKey);
+  if (cached) return cached;
+
+  const request = fetch(`${DATA_BASE_PATH}/${path}`, { cache: 'no-cache' })
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+      }
+      return res.json() as Promise<Event>;
+    })
+    .catch((err) => {
+      // Do not keep failures; the next render may retry.
+      eventDataCache.delete(cacheKey);
+      throw err;
+    });
+  eventDataCache.set(cacheKey, request);
+  return request;
+}
+
 export function useEventData(eventSummary: EventSummary | null) {
   const [data, setData] = useState<Event | null>(null);
   const [loading, setLoading] = useState(false);
@@ -106,18 +133,8 @@ export function useEventData(eventSummary: EventSummary | null) {
     setLoading(true);
     setError(null);
 
-    const dataFile = eventSummary.dataFile.startsWith('./')
-      ? eventSummary.dataFile
-      : `./${eventSummary.dataFile}`;
-
-    fetch(`${DATA_BASE_PATH}/${dataFile.replace('./', '')}`, { cache: 'no-store' })
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error(`HTTP ${res.status}: ${res.statusText}`);
-        }
-        return res.json();
-      })
-      .then((json: Event) => {
+    loadEventData(eventSummary)
+      .then((json) => {
         if (mounted) {
           setData(json);
         }

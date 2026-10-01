@@ -1,5 +1,5 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "mtgo-standard-deck-survey",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -19,7 +19,6 @@
     "audit:set": "node scripts/audit-set-translations.mjs"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.57.4",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

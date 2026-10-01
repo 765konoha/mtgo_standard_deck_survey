@@ -8,7 +8,7 @@ MTGOで公開されるStandard League 5-0とStandard Challenge Top 8のデッキ
 - データ取得と解析: Node.js scripts
 - 公開データ: `public/data/index.json`, `public/data/events/*.json`, `public/data/card-search-index.json`
 - 永続データ: `data/state/events.json`, `data/events/*.json`, `data/cards/en-ja-map.json`
-- 生HTML保存: `data/raw/events/*.html`
+- 生HTML保存: `data/raw/events/*.html.gz`（gzip圧縮）
 
 ## ローカル起動
 
@@ -40,7 +40,7 @@ npm run fetch:decklists
 - `fetch_error` / `parse_error` の再試行
 - `--force` または `FORCE_REFETCH=true` 指定時のcompleted再取得
 
-取得ページは `data/raw/events/<eventId>.html` に保存します。解析成功時は `data/events` と `public/data/events` にイベントJSONを書きます。失敗時も既存の正常データは削除しません。
+取得ページは `data/raw/events/<eventId>.html.gz` にgzip圧縮して保存します（`scripts/lib/raw-html.mjs` の `readRawHtml` で読めます）。旧形式の `.html` は次回の取得時に自動で `.html.gz` へ変換されます。解析成功時は `data/events` と `public/data/events` にイベントJSONを書きます。失敗時も既存の正常データは削除しません。
 
 ## 状態
 
@@ -50,6 +50,8 @@ npm run fetch:decklists
 - `fetch_error`: HTTPエラー、タイムアウト、ネットワークエラー
 - `parse_error`: デッキらしき構造はあるが解析不能
 - `publication_timeout`: 発見から設定日数を超えても未公開
+
+同じ日に複数の Standard Challenge が開催されることがあるため、イベントは日付ではなく MTGO の大会番号（URL末尾の数字）で区別します。MTGO が同じ大会を日付の異なるURLで再掲載した場合は、大会番号が同じなので1件として扱います（`scripts/lib/event-rules.mjs` の `eventIdentityKey`）。既存のJSONは削除せず、公開indexで1件だけを残します。League の番号は日をまたいで共通のため、League はURL単位で区別します。
 
 公開期限は `PUBLICATION_TIMEOUT_DAYS` で変更できます。初期値は7日です。
 
@@ -192,7 +194,7 @@ GitHub PagesはRepository SettingsのPagesでSourceを「GitHub Actions」にし
 - 翻訳処理: `scripts/lib/translate-decklists.mjs`
 - JSON検証: `scripts/lib/validate-data.mjs`
 
-HTML構造変更時は `data/raw/events/*.html` をフィクスチャ化して `tests/parse-event-page.test.mjs` にケースを追加してください。
+HTML構造変更時は `data/raw/events/*.html.gz` を展開してフィクスチャ化し、 `tests/parse-event-page.test.mjs` にケースを追加してください。
 
 ## 既知の制約
 

@@ -1,3 +1,4 @@
+import { stripFurigana } from './japanese-name.mjs';
 import { normalizeCardName } from './normalize-card-name.mjs';
 
 export function translateDecks(decks, dictionary) {
@@ -10,7 +11,7 @@ export function translateDecks(decks, dictionary) {
     return {
       quantity: card.quantity,
       nameEn: entry?.nameEn || card.nameEn,
-      nameJa: entry?.nameJa || null,
+      nameJa: stripFurigana(entry?.nameJa) || null,
       detailUrl: entry?.detailUrl || null,
       typeGroup: entry?.typeGroup || 'other',
       category: entry?.typeGroup || 'other',
