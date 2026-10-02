@@ -6,19 +6,38 @@
       "eventName": "Standard League October 2 2026",
       "eventType": "league",
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-10-0211129",
-      "status": "pending_publication",
+      "status": "completed",
       "firstSeenAt": "2026-10-02T09:17:06+09:00",
-      "lastCheckedAt": "2026-10-02T09:17:17+09:00",
-      "completedAt": null,
-      "retryCount": 1,
+      "lastCheckedAt": "2026-10-02T19:46:15+09:00",
+      "completedAt": "2026-10-02T19:46:15+09:00",
+      "retryCount": 0,
       "lastResult": {
         "httpStatus": 200,
-        "deckCount": 0,
-        "reason": "decklists_not_published"
+        "deckCount": 3,
+        "reason": "ok"
       },
       "eventDate": "2026-10-02",
       "publishedDate": "2026-10-02",
       "eventDateTime": null
+    },
+    {
+      "eventId": "standard-challenge-32-2026-10-0212855466",
+      "eventName": "Standard Challenge 32 October 2 2026",
+      "eventType": "challenge",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-10-0212855466",
+      "status": "completed",
+      "firstSeenAt": "2026-10-02T19:46:13+09:00",
+      "lastCheckedAt": "2026-10-02T19:47:03+09:00",
+      "completedAt": "2026-10-02T19:47:03+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 8,
+        "reason": "ok"
+      },
+      "eventDate": "2026-10-02",
+      "publishedDate": "2026-10-02",
+      "eventDateTime": "2026-10-02T00:00:00"
     },
     {
       "eventId": "standard-league-2026-10-0111129",
@@ -103,9 +122,9 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-09-2911129",
       "status": "pending_publication",
       "firstSeenAt": "2026-09-30T19:47:21+09:00",
-      "lastCheckedAt": "2026-10-02T09:17:07+09:00",
+      "lastCheckedAt": "2026-10-02T19:46:39+09:00",
       "completedAt": null,
-      "retryCount": 7,
+      "retryCount": 8,
       "lastResult": {
         "httpStatus": 200,
         "deckCount": 0,
