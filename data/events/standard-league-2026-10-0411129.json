@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "event": {
+    "id": "standard-league-2026-10-0411129",
+    "name": "Standard League October 4 2026",
+    "eventType": "league",
+    "eventDate": "2026-10-04",
+    "eventDateTime": null,
+    "publishedDate": "2026-10-04",
+    "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-10-0411129",
+    "status": "completed",
+    "firstSeenAt": "2026-10-04T19:48:35+09:00",
+    "fetchedAt": "2026-10-04T19:48:50+09:00",
+    "completedAt": "2026-10-04T19:48:50+09:00"
+  },
+  "decks": [
+    {
+      "id": "36036982-denisevich",
+      "player": "Denisevich",
+      "placement": null,
+      "record": "5-0",
+      "mainboardCount": 60,
+      "sideboardCount": 15,
+      "mainboard": [
+        {
+          "quantity": 4,
+          "nameEn": "Scalding Viper",
+          "nameJa": null,
+          "detailUrl": "https://scryfall.com/card/woe/235/ja/scalding-viper-%E8%92%B8%EF%BC%88%E3%81%98%E3%82%87%E3%81%86%EF%BC%89%E6%B0%97%EF%BC%88%E3%81%8D%EF%BC%89%E6%B4%97%EF%BC%88%E3%81%9B%E3%82%93%EF%BC%89%E6%B5%84%EF%BC%88%E3%81%98%E3%82%87%E3%81%86%EF%BC%89-(scalding-viper-steam-clean)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "12c71296-1243-49e6-a196-8b016a7b635c",
+          "translationStatus": "missing",
+          "translationSource": null,
+          "setCodes": [],
+          "primarySetCode": null
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Burst Lightning",
+          "nameJa": "噴出の稲妻",
+          "detailUrl": "https://scryfall.com/card/soa/41/ja/%E5%99%B4%E5%87%BA%E3%81%AE%E7%A8%B2%E5%A6%BB-(burst-lightning)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "ac2086fe-98ee-4280-9c7c-c5c2d6548a8b",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FDN"
+          ],
+          "primarySetCode": "FDN"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Razorkin Needlehead",
+          "nameJa": "剃刀族の棘頭",
+          "detailUrl": "https://scryfall.com/card/dsk/153/ja/%E5%89%83%E5%88%80%E6%97%8F%E3%81%AE%E6%A3%98%E9%A0%AD-(razorkin-needlehead)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "a78f981a-bf8a-42a4-b171-d655cc2cc1a2",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "DSK"
+          ],
+          "primarySetCode": "DSK"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Sunspine Lynx",
+          "nameJa": "陽背骨のオオヤマネコ",
+          "detailUrl": "https://scryfall.com/card/blb/155/ja/%E9%99%BD%E8%83%8C%E9%AA%A8%E3%81%AE%E3%82%AA%E3%82%AA%E3%83%A4%E3%83%9E%E3%83%8D%E3%82%B3-(sunspine-lynx)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "479adf64-f42c-4cb6-bf25-648c044bca8b",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "BLB"
+          ],
+          "primarySetCode": "BLB"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Vibrant Outburst",
+          "nameJa": "鮮やかな迸り",
+          "detailUrl": "https://scryfall.com/card/sos/240/ja/%E9%AE%AE%E3%82%84%E3%81%8B%E3%81%AA%E8%BF%B8%E3%82%8A-(vibrant-outburst)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "a0cbb1ba-73b1-4418-bbe3-5d1a02007c08",
+          "translationStatus": "complete",
+          "translationSource": "manual_override",
+          "setCodes": [
+            "SOS"
+          ],
+          "primarySetCode": "SOS"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Colorstorm Stallion",
+          "nameJa": "彩嵐の雄馬",
+          "detailUrl": "https://scryfall.com/card/sos/180/ja/%E5%BD%A9%E5%B5%90%E3%81%AE%E9%9B%84%E9%A6%AC-(colorstorm-stallion)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "47ee6837-2e2f-4344-ab9f-6b8887874f77",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "SOS"
+          ],
+          "primarySetCode": "SOS"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Chandra, Torch of Defiance",
+          "nameJa": "反逆の先導者、チャンドラ",
+          "detailUrl": "https://scryfall.com/card/fra/244/ja/%E5%8F%8D%E9%80%86%E3%81%AE%E5%85%88%E5%B0%8E%E8%80%85%E3%80%81%E3%83%81%E3%83%A3%E3%83%B3%E3%83%89%E3%83%A9-(chandra-torch-of-defiance)?utm_source=api",
+          "typeGroup": "planeswalker",
+          "category": "planeswalker",
+          "oracleId": "12cc800c-c7be-4811-8207-fd01a99cc892",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FRA"
+          ],
+          "primarySetCode": "FRA"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Nova Hellkite",
+          "nameJa": "新星のヘルカイト",
+          "detailUrl": "https://scryfall.com/card/eoe/148/ja/%E6%96%B0%EF%BC%88%E3%81%97%E3%82%93%EF%BC%89%E6%98%9F%EF%BC%88%E3%81%9B%E3%81%84%EF%BC%89%E3%81%AE%E3%83%98%E3%83%AB%E3%82%AB%E3%82%A4%E3%83%88-(nova-hellkite)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "9635d79e-62ec-4d80-ae37-2793489cc13b",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "EOE"
+          ],
+          "primarySetCode": "EOE"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Burnout Bashtronaut",
+          "nameJa": "焼き切る非行士",
+          "detailUrl": "https://scryfall.com/card/dft/115/ja/%E7%84%BC%E3%81%8D%E5%88%87%E3%82%8B%E9%9D%9E%E8%A1%8C%E5%A3%AB-(burnout-bashtronaut)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "1b122fbb-c2e1-42d1-bfc5-fcacacdfa0bc",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "DFT"
+          ],
+          "primarySetCode": "DFT"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Spirebluff Canal",
+          "nameJa": "尖塔断の運河",
+          "detailUrl": "https://scryfall.com/card/otj/270/ja/%E5%B0%96%E5%A1%94%E6%96%AD%E3%81%AE%E9%81%8B%E6%B2%B3-(spirebluff-canal)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "eb0d8093-5f93-4b25-9384-08f9731bfb28",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "OTJ"
+          ],
+          "primarySetCode": "OTJ"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Steam Vents",
+          "nameJa": "蒸気孔",
+          "detailUrl": "https://scryfall.com/card/rvr/288/ja/%E8%92%B8%E6%B0%97%E5%AD%94-(steam-vents)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "17039058-822d-409f-938c-b727a366ba63",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TRK",
+            "ECL"
+          ],
+          "primarySetCode": "TRK"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Riverpyre Verge",
+          "nameJa": "リバーパイアーの境界",
+          "detailUrl": "https://scryfall.com/card/dft/260/ja/%E3%83%AA%E3%83%90%E3%83%BC%E3%83%91%E3%82%A4%E3%82%A2%E3%83%BC%E3%81%AE%E5%A2%83%E7%95%8C-(riverpyre-verge)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "510a6ac5-f098-4145-ac07-771b1b6f7cdf",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "DFT"
+          ],
+          "primarySetCode": "DFT"
+        },
+        {
+          "quantity": 11,
+          "nameEn": "Mountain",
+          "nameJa": "山",
+          "detailUrl": "https://scryfall.com/card/fra/287/ja/%E5%B1%B1-(mountain)?utm_source=api",
+          "typeGroup": "land",
+          "category": "land",
+          "oracleId": "a3fb7228-e76b-4e96-a40e-20b5fed75685",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "TRK",
+            "FRA",
+            "HOB",
+            "MSH",
+            "SOS",
+            "TMT",
+            "ECL",
+            "TLA",
+            "SPM",
+            "EOE",
+            "FIN",
+            "TDM",
+            "DFT",
+            "FDN",
+            "DSK",
+            "BLB",
+            "OTJ",
+            "MKM",
+            "LCI",
+            "KTK"
+          ],
+          "primarySetCode": "TRK"
+        },
+        {
+          "quantity": 4,
+          "nameEn": "Hired Claw",
+          "nameJa": "雇われ爪",
+          "detailUrl": "https://scryfall.com/card/blb/140/ja/%E9%9B%87%E3%82%8F%E3%82%8C%E7%88%AA-(hired-claw)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "031cfc7d-8bda-454b-b88a-15d3f5fe47e2",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "BLB"
+          ],
+          "primarySetCode": "BLB"
+        }
+      ],
+      "sideboard": [
+        {
+          "quantity": 3,
+          "nameEn": "Magebane Lizard",
+          "nameJa": "魔道士封じのトカゲ",
+          "detailUrl": "https://scryfall.com/card/otj/134/ja/%E9%AD%94%E9%81%93%E5%A3%AB%E5%B0%81%E3%81%98%E3%81%AE%E3%83%88%E3%82%AB%E3%82%B2-(magebane-lizard)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "0c38f159-367b-4e4b-94cd-bf1b0721c3a8",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "OTJ"
+          ],
+          "primarySetCode": "OTJ"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Soul-Guide Lantern",
+          "nameJa": "魂標ランタン",
+          "detailUrl": "https://scryfall.com/card/eoc/143/ja/%E9%AD%82%EF%BC%88%E3%81%9F%E3%81%BE%EF%BC%89%E6%A8%99%EF%BC%88%E3%81%97%E3%82%8B%E3%81%B9%EF%BC%89%E3%83%A9%E3%83%B3%E3%82%BF%E3%83%B3-(soul-guide-lantern)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "1b5e6560-ff2e-4475-96cb-63f64c8a86db",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FDN"
+          ],
+          "primarySetCode": "FDN"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Giant Cindermaw",
+          "nameJa": "巨大焦がし大口",
+          "detailUrl": "https://scryfall.com/card/bro/136/ja/%E5%B7%A8%E5%A4%A7%E7%84%A6%E3%81%8C%E3%81%97%E5%A4%A7%E5%8F%A3-(giant-cindermaw)?utm_source=api",
+          "typeGroup": "creature",
+          "category": "creature",
+          "oracleId": "bd0c0e85-ff24-46c9-a547-4f633355c131",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "FDN"
+          ],
+          "primarySetCode": "FDN"
+        },
+        {
+          "quantity": 3,
+          "nameEn": "Scorching Shot",
+          "nameJa": "焦熱の射撃",
+          "detailUrl": "https://scryfall.com/card/otj/145/ja/%E7%84%A6%E7%86%B1%E3%81%AE%E5%B0%84%E6%92%83-(scorching-shot)?utm_source=api",
+          "typeGroup": "sorcery",
+          "category": "sorcery",
+          "oracleId": "e13113ba-1923-493c-a48d-ca320b7adbde",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "OTJ"
+          ],
+          "primarySetCode": "OTJ"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Sear",
+          "nameJa": "焼きつけ",
+          "detailUrl": "https://scryfall.com/card/ecl/154/ja/%E7%84%BC%E3%81%8D%E3%81%A4%E3%81%91-(sear)?utm_source=api",
+          "typeGroup": "instant",
+          "category": "instant",
+          "oracleId": "23b11fdc-61b5-4f5e-ad80-f81b729fc91d",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "ECL"
+          ],
+          "primarySetCode": "ECL"
+        },
+        {
+          "quantity": 2,
+          "nameEn": "Torpor Orb",
+          "nameJa": "倦怠の宝珠",
+          "detailUrl": "https://scryfall.com/card/big/27/ja/%E5%80%A6%E6%80%A0%E3%81%AE%E5%AE%9D%E7%8F%A0-(torpor-orb)?utm_source=api",
+          "typeGroup": "artifact",
+          "category": "artifact",
+          "oracleId": "97326cad-b13c-4e52-82ce-850a39e5ff08",
+          "translationStatus": "complete",
+          "translationSource": "scryfall_printed_name",
+          "setCodes": [
+            "BIG"
+          ],
+          "primarySetCode": "BIG"
+        }
+      ]
+    }
+  ]
+}

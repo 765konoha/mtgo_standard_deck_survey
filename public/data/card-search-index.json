@@ -11,14 +11,14 @@
       "name": "Star Trek",
       "releasedAt": "2026-11-13",
       "cardCount": 10,
-      "deckCount": 89
+      "deckCount": 90
     },
     {
       "code": "FRA",
       "name": "Reality Fracture",
       "releasedAt": "2026-10-02",
       "cardCount": 27,
-      "deckCount": 32
+      "deckCount": 33
     },
     {
       "code": "HOB",
@@ -39,7 +39,7 @@
       "name": "Secrets of Strixhaven",
       "releasedAt": "2026-04-24",
       "cardCount": 31,
-      "deckCount": 68
+      "deckCount": 69
     },
     {
       "code": "TMT",
@@ -53,7 +53,7 @@
       "name": "Lorwyn Eclipsed",
       "releasedAt": "2026-01-23",
       "cardCount": 21,
-      "deckCount": 86
+      "deckCount": 87
     },
     {
       "code": "TLA",
@@ -81,7 +81,7 @@
       "name": "Edge of Eternities",
       "releasedAt": "2025-08-01",
       "cardCount": 30,
-      "deckCount": 89
+      "deckCount": 90
     },
     {
       "code": "FIN",
@@ -102,42 +102,42 @@
       "name": "Aetherdrift",
       "releasedAt": "2025-02-14",
       "cardCount": 19,
-      "deckCount": 80
+      "deckCount": 81
     },
     {
       "code": "FDN",
       "name": "Foundations",
       "releasedAt": "2024-11-15",
       "cardCount": 33,
-      "deckCount": 98
+      "deckCount": 99
     },
     {
       "code": "DSK",
       "name": "Duskmourn: House of Horror",
       "releasedAt": "2024-09-27",
-      "cardCount": 23,
-      "deckCount": 91
+      "cardCount": 24,
+      "deckCount": 92
     },
     {
       "code": "BLB",
       "name": "Bloomburrow",
       "releasedAt": "2024-08-02",
       "cardCount": 32,
-      "deckCount": 68
+      "deckCount": 69
     },
     {
       "code": "BIG",
       "name": "The Big Score",
       "releasedAt": "2024-04-19",
       "cardCount": 4,
-      "deckCount": 38
+      "deckCount": 39
     },
     {
       "code": "OTJ",
       "name": "Outlaws of Thunder Junction",
       "releasedAt": "2024-04-19",
-      "cardCount": 22,
-      "deckCount": 86
+      "cardCount": 23,
+      "deckCount": 87
     },
     {
       "code": "MKM",
@@ -2426,11 +2426,17 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 1,
+      "deckCount": 2,
       "deckRefs": [
         {
           "eventId": "standard-league-2026-09-3011129",
           "deckId": "36013302-elcucuy",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -2448,7 +2454,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 24,
+      "deckCount": 25,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-09-2712854938",
@@ -2591,6 +2597,12 @@
         {
           "eventId": "standard-league-2026-10-0111129",
           "deckId": "36016450-pibt",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -3184,13 +3196,19 @@
         "FRA"
       ],
       "primarySetCode": "FRA",
-      "deckCount": 1,
+      "deckCount": 2,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-10-0212855466",
           "deckId": "2-lucasg1ggs",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -3368,7 +3386,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 8,
+      "deckCount": 9,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-09-2712854938",
@@ -3417,6 +3435,12 @@
           "deckId": "4-faria-limer",
           "mainboardQuantity": 0,
           "sideboardQuantity": 3
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -8374,11 +8398,17 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 1,
+      "deckCount": 2,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-09-2612854920",
           "deckId": "8-ares80",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 3
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
           "mainboardQuantity": 0,
           "sideboardQuantity": 3
         }
@@ -9558,7 +9588,7 @@
         "BLB"
       ],
       "primarySetCode": "BLB",
-      "deckCount": 3,
+      "deckCount": 4,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-10-0112855458",
@@ -9575,6 +9605,12 @@
         {
           "eventId": "standard-challenge-32-2026-10-0212855471",
           "deckId": "5-kelmasterp",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -11750,7 +11786,7 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 2,
+      "deckCount": 3,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-10-0212855466",
@@ -11763,6 +11799,12 @@
           "deckId": "5-kelmasterp",
           "mainboardQuantity": 0,
           "sideboardQuantity": 4
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 3
         }
       ]
     },
@@ -12457,7 +12499,7 @@
         "TRK"
       ],
       "primarySetCode": "TRK",
-      "deckCount": 30,
+      "deckCount": 31,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-09-2712854938",
@@ -12637,6 +12679,12 @@
           "eventId": "standard-league-2026-10-0311129",
           "deckId": "36032629-bugzbugs",
           "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 11,
           "sideboardQuantity": 0
         }
       ]
@@ -13069,7 +13117,7 @@
         "EOE"
       ],
       "primarySetCode": "EOE",
-      "deckCount": 10,
+      "deckCount": 11,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-09-2912855524",
@@ -13129,6 +13177,12 @@
           "eventId": "standard-league-2026-10-0111129",
           "deckId": "36016450-pibt",
           "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 3,
           "sideboardQuantity": 0
         }
       ]
@@ -14954,6 +15008,28 @@
       ]
     },
     {
+      "key": "a78f981a-bf8a-42a4-b171-d655cc2cc1a2",
+      "nameEn": "Razorkin Needlehead",
+      "nameJa": "剃刀族の棘頭",
+      "normalizedNameEn": "razorkin needlehead",
+      "normalizedNameJa": "剃刀族の棘頭",
+      "oracleId": "a78f981a-bf8a-42a4-b171-d655cc2cc1a2",
+      "isBasicLand": false,
+      "setCodes": [
+        "DSK"
+      ],
+      "primarySetCode": "DSK",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
       "key": "bb9ce416-eef1-49e8-89a0-2b6837505070",
       "nameEn": "Realm of Koh",
       "nameJa": "コーの領域",
@@ -15745,7 +15821,7 @@
         "DFT"
       ],
       "primarySetCode": "DFT",
-      "deckCount": 14,
+      "deckCount": 15,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-09-2712854938",
@@ -15829,6 +15905,12 @@
           "eventId": "standard-league-2026-10-0311129",
           "deckId": "36032629-bugzbugs",
           "mainboardQuantity": 3,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
       ]
@@ -16416,6 +16498,48 @@
       ]
     },
     {
+      "key": "12c71296-1243-49e6-a196-8b016a7b635c",
+      "nameEn": "Scalding Viper",
+      "nameJa": null,
+      "normalizedNameEn": "scalding viper",
+      "normalizedNameJa": null,
+      "oracleId": "12c71296-1243-49e6-a196-8b016a7b635c",
+      "isBasicLand": false,
+      "setCodes": [],
+      "primarySetCode": null,
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        }
+      ]
+    },
+    {
+      "key": "e13113ba-1923-493c-a48d-ca320b7adbde",
+      "nameEn": "Scorching Shot",
+      "nameJa": "焦熱の射撃",
+      "normalizedNameEn": "scorching shot",
+      "normalizedNameJa": "焦熱の射撃",
+      "oracleId": "e13113ba-1923-493c-a48d-ca320b7adbde",
+      "isBasicLand": false,
+      "setCodes": [
+        "OTJ"
+      ],
+      "primarySetCode": "OTJ",
+      "deckCount": 1,
+      "deckRefs": [
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 3
+        }
+      ]
+    },
+    {
       "key": "dfd5939e-a71a-4e16-9b93-752162be4ccd",
       "nameEn": "Seam Rip",
       "nameJa": "縫い目破り",
@@ -16611,7 +16735,7 @@
         "ECL"
       ],
       "primarySetCode": "ECL",
-      "deckCount": 8,
+      "deckCount": 9,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-09-2712854938",
@@ -16660,6 +16784,12 @@
           "deckId": "36023294-swb110",
           "mainboardQuantity": 1,
           "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         }
       ]
     },
@@ -17846,7 +17976,7 @@
         "FDN"
       ],
       "primarySetCode": "FDN",
-      "deckCount": 16,
+      "deckCount": 17,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-09-2712854938",
@@ -17941,6 +18071,12 @@
         {
           "eventId": "standard-league-2026-10-0311129",
           "deckId": "36032629-bugzbugs",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
           "mainboardQuantity": 0,
           "sideboardQuantity": 2
         }
@@ -18429,7 +18565,7 @@
         "OTJ"
       ],
       "primarySetCode": "OTJ",
-      "deckCount": 13,
+      "deckCount": 14,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-09-2712854938",
@@ -18506,6 +18642,12 @@
         {
           "eventId": "standard-league-2026-10-0311129",
           "deckId": "36032629-bugzbugs",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -19050,7 +19192,7 @@
         "TRK"
       ],
       "primarySetCode": "TRK",
-      "deckCount": 20,
+      "deckCount": 21,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-09-2712854938",
@@ -19169,6 +19311,12 @@
         {
           "eventId": "standard-league-2026-10-0311129",
           "deckId": "36032629-bugzbugs",
+          "mainboardQuantity": 4,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
           "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
@@ -20215,7 +20363,7 @@
         "BLB"
       ],
       "primarySetCode": "BLB",
-      "deckCount": 6,
+      "deckCount": 7,
       "deckRefs": [
         {
           "eventId": "standard-challenge-32-2026-09-2512854913",
@@ -20252,6 +20400,12 @@
           "deckId": "36013523-orbital-period",
           "mainboardQuantity": 0,
           "sideboardQuantity": 3
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 3,
+          "sideboardQuantity": 0
         }
       ]
     },
@@ -21919,7 +22073,7 @@
         "BIG"
       ],
       "primarySetCode": "BIG",
-      "deckCount": 21,
+      "deckCount": 22,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-09-2712854938",
@@ -22046,6 +22200,12 @@
           "deckId": "36025549-feitosa-",
           "mainboardQuantity": 0,
           "sideboardQuantity": 3
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 0,
+          "sideboardQuantity": 2
         }
       ]
     },
@@ -22581,7 +22741,7 @@
         "SOS"
       ],
       "primarySetCode": "SOS",
-      "deckCount": 4,
+      "deckCount": 5,
       "deckRefs": [
         {
           "eventId": "standard-challenge-16-2026-09-2912855524",
@@ -22605,6 +22765,12 @@
           "eventId": "standard-challenge-32-2026-10-0212855466",
           "deckId": "6-ilnano-",
           "mainboardQuantity": 1,
+          "sideboardQuantity": 0
+        },
+        {
+          "eventId": "standard-league-2026-10-0411129",
+          "deckId": "36036982-denisevich",
+          "mainboardQuantity": 4,
           "sideboardQuantity": 0
         }
       ]
@@ -23815,5 +23981,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-04T01:50:41+09:00"
+  "generatedAt": "2026-10-04T19:48:50+09:00"
 }
