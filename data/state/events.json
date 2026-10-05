@@ -2,6 +2,25 @@
   "schemaVersion": 1,
   "events": [
     {
+      "eventId": "standard-league-2026-10-0511129",
+      "eventName": "Standard League October 5 2026",
+      "eventType": "league",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-10-0511129",
+      "status": "completed",
+      "firstSeenAt": "2026-10-05T20:54:54+09:00",
+      "lastCheckedAt": "2026-10-05T20:55:27+09:00",
+      "completedAt": "2026-10-05T20:55:27+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 4,
+        "reason": "ok"
+      },
+      "eventDate": "2026-10-05",
+      "publishedDate": "2026-10-05",
+      "eventDateTime": null
+    },
+    {
       "eventId": "standard-league-2026-10-0411129",
       "eventName": "Standard League October 4 2026",
       "eventType": "league",
@@ -19,6 +38,25 @@
       "eventDate": "2026-10-04",
       "publishedDate": "2026-10-04",
       "eventDateTime": null
+    },
+    {
+      "eventId": "standard-challenge-16-2026-10-0412855496",
+      "eventName": "Standard Challenge 16 October 4 2026",
+      "eventType": "challenge",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-10-0412855496",
+      "status": "pending_publication",
+      "firstSeenAt": "2026-10-05T20:54:54+09:00",
+      "lastCheckedAt": "2026-10-05T20:55:29+09:00",
+      "completedAt": null,
+      "retryCount": 1,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 0,
+        "reason": "decklists_not_published"
+      },
+      "eventDate": "2026-10-04",
+      "publishedDate": "2026-10-05",
+      "eventDateTime": "2026-10-04T22:00:00"
     },
     {
       "eventId": "standard-league-2026-10-0311129",
@@ -179,9 +217,9 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-09-2911129",
       "status": "pending_publication",
       "firstSeenAt": "2026-09-30T19:47:21+09:00",
-      "lastCheckedAt": "2026-10-05T08:39:59+09:00",
+      "lastCheckedAt": "2026-10-05T20:54:55+09:00",
       "completedAt": null,
-      "retryCount": 15,
+      "retryCount": 16,
       "lastResult": {
         "httpStatus": 200,
         "deckCount": 0,
