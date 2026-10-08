@@ -44,19 +44,38 @@
       "eventName": "Standard Challenge 16 Special October 7 2026",
       "eventType": "challenge",
       "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-special-2026-10-0712855544",
-      "status": "pending_publication",
+      "status": "completed",
       "firstSeenAt": "2026-10-08T04:07:41+09:00",
-      "lastCheckedAt": "2026-10-08T09:31:33+09:00",
-      "completedAt": null,
-      "retryCount": 2,
+      "lastCheckedAt": "2026-10-08T20:40:42+09:00",
+      "completedAt": "2026-10-08T20:40:42+09:00",
+      "retryCount": 0,
       "lastResult": {
         "httpStatus": 200,
-        "deckCount": 0,
-        "reason": "decklists_not_published"
+        "deckCount": 8,
+        "reason": "ok"
       },
       "eventDate": "2026-10-07",
       "publishedDate": "2026-10-07",
       "eventDateTime": "2026-10-07T07:00:00"
+    },
+    {
+      "eventId": "standard-challenge-16-special-2026-10-0712856141",
+      "eventName": "Standard Challenge 16 Special October 7 2026",
+      "eventType": "challenge",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-special-2026-10-0712856141",
+      "status": "completed",
+      "firstSeenAt": "2026-10-08T20:40:40+09:00",
+      "lastCheckedAt": "2026-10-08T20:41:05+09:00",
+      "completedAt": "2026-10-08T20:41:05+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 8,
+        "reason": "ok"
+      },
+      "eventDate": "2026-10-07",
+      "publishedDate": "2026-10-08",
+      "eventDateTime": "2026-10-07T22:30:00"
     },
     {
       "eventId": "standard-league-2026-10-0611129",
@@ -350,9 +369,9 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-09-2911129",
       "status": "publication_timeout",
       "firstSeenAt": "2026-09-30T19:47:21+09:00",
-      "lastCheckedAt": "2026-10-08T09:31:35+09:00",
+      "lastCheckedAt": "2026-10-08T20:40:48+09:00",
       "completedAt": null,
-      "retryCount": 24,
+      "retryCount": 25,
       "lastResult": {
         "httpStatus": 200,
         "deckCount": 0,
