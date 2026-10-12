@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T21:32:55+09:00",
-  "lastSuccessfulUpdateAt": "2026-10-12T21:32:55+09:00",
+  "generatedAt": "2026-10-13T06:28:05+09:00",
+  "lastSuccessfulUpdateAt": "2026-10-13T06:28:05+09:00",
   "period": {
-    "startDate": "2026-10-03",
-    "endDate": "2026-10-12",
+    "startDate": "2026-10-04",
+    "endDate": "2026-10-13",
     "lookbackDays": 10
   },
   "overallStatus": "success",
   "summary": {
-    "completedEvents": 21,
+    "completedEvents": 20,
     "pendingEvents": 0,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 41
+    "untranslatedCards": 39
   },
   "events": [
     {
@@ -316,21 +316,6 @@
       "firstSeenAt": "2026-10-05T20:54:54+09:00",
       "lastCheckedAt": "2026-10-06T05:57:37+09:00",
       "completedAt": "2026-10-06T05:57:37+09:00"
-    },
-    {
-      "id": "standard-league-2026-10-0311129",
-      "name": "Standard League October 3 2026",
-      "eventType": "league",
-      "eventDate": "2026-10-03",
-      "eventDateTime": null,
-      "publishedDate": "2026-10-03",
-      "status": "completed",
-      "deckCount": 6,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-10-0311129",
-      "dataFile": "./events/standard-league-2026-10-0311129.json",
-      "firstSeenAt": "2026-10-03T19:07:24+09:00",
-      "lastCheckedAt": "2026-10-04T01:50:18+09:00",
-      "completedAt": "2026-10-04T01:50:18+09:00"
     }
   ]
 }
