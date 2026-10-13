@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T06:28:05+09:00",
-  "lastSuccessfulUpdateAt": "2026-10-13T06:28:05+09:00",
+  "generatedAt": "2026-10-13T21:17:20+09:00",
+  "lastSuccessfulUpdateAt": "2026-10-13T21:17:20+09:00",
   "period": {
     "startDate": "2026-10-04",
     "endDate": "2026-10-13",
@@ -9,7 +9,7 @@
   },
   "overallStatus": "success",
   "summary": {
-    "completedEvents": 20,
+    "completedEvents": 22,
     "pendingEvents": 0,
     "fetchErrors": 0,
     "parseErrors": 0,
@@ -17,6 +17,21 @@
     "untranslatedCards": 39
   },
   "events": [
+    {
+      "id": "standard-league-2026-10-1311129",
+      "name": "Standard League October 13 2026",
+      "eventType": "league",
+      "eventDate": "2026-10-13",
+      "eventDateTime": null,
+      "publishedDate": "2026-10-13",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-10-1311129",
+      "dataFile": "./events/standard-league-2026-10-1311129.json",
+      "firstSeenAt": "2026-10-13T21:16:15+09:00",
+      "lastCheckedAt": "2026-10-13T21:16:48+09:00",
+      "completedAt": "2026-10-13T21:16:48+09:00"
+    },
     {
       "id": "standard-league-2026-10-1211129",
       "name": "Standard League October 12 2026",
@@ -31,6 +46,21 @@
       "firstSeenAt": "2026-10-12T09:03:51+09:00",
       "lastCheckedAt": "2026-10-12T21:32:37+09:00",
       "completedAt": "2026-10-12T21:32:37+09:00"
+    },
+    {
+      "id": "standard-challenge-32-2026-10-1212856191",
+      "name": "Standard Challenge 32 October 12 2026",
+      "eventType": "challenge",
+      "eventDate": "2026-10-12",
+      "eventDateTime": "2026-10-12T20:00:00",
+      "publishedDate": "2026-10-13",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-2026-10-1212856191",
+      "dataFile": "./events/standard-challenge-32-2026-10-1212856191.json",
+      "firstSeenAt": "2026-10-13T21:16:15+09:00",
+      "lastCheckedAt": "2026-10-13T21:17:16+09:00",
+      "completedAt": "2026-10-13T21:17:16+09:00"
     },
     {
       "id": "standard-league-2026-10-1111129",
