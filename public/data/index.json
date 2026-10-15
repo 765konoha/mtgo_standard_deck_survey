@@ -1,22 +1,52 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T08:32:26+09:00",
-  "lastSuccessfulUpdateAt": "2026-10-15T08:32:26+09:00",
+  "generatedAt": "2026-10-15T18:31:22+09:00",
+  "lastSuccessfulUpdateAt": "2026-10-15T18:31:22+09:00",
   "period": {
     "startDate": "2026-10-06",
     "endDate": "2026-10-15",
     "lookbackDays": 10
   },
-  "overallStatus": "success",
+  "overallStatus": "pending",
   "summary": {
-    "completedEvents": 21,
-    "pendingEvents": 0,
+    "completedEvents": 22,
+    "pendingEvents": 1,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 44
+    "untranslatedCards": 46
   },
   "events": [
+    {
+      "id": "standard-league-2026-10-1511129",
+      "name": "Standard League October 15 2026",
+      "eventType": "league",
+      "eventDate": "2026-10-15",
+      "eventDateTime": null,
+      "publishedDate": "2026-10-15",
+      "status": "completed",
+      "deckCount": 7,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-10-1511129",
+      "dataFile": "./events/standard-league-2026-10-1511129.json",
+      "firstSeenAt": "2026-10-15T18:30:29+09:00",
+      "lastCheckedAt": "2026-10-15T18:31:04+09:00",
+      "completedAt": "2026-10-15T18:31:04+09:00"
+    },
+    {
+      "id": "standard-challenge-16-2026-10-1512856571",
+      "name": "Standard Challenge 16 October 15 2026",
+      "eventType": "challenge",
+      "eventDate": "2026-10-15",
+      "eventDateTime": "2026-10-15T01:00:00",
+      "publishedDate": "2026-10-15",
+      "status": "pending_publication",
+      "deckCount": 0,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-10-1512856571",
+      "dataFile": "./events/standard-challenge-16-2026-10-1512856571.json",
+      "firstSeenAt": "2026-10-15T18:30:29+09:00",
+      "lastCheckedAt": "2026-10-15T18:31:03+09:00",
+      "completedAt": null
+    },
     {
       "id": "standard-league-2026-10-1411129",
       "name": "Standard League October 14 2026",
