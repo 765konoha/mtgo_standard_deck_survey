@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T18:13:10+09:00",
-  "lastSuccessfulUpdateAt": "2026-10-18T18:13:10+09:00",
+  "generatedAt": "2026-10-19T01:12:38+09:00",
+  "lastSuccessfulUpdateAt": "2026-10-19T01:12:38+09:00",
   "period": {
-    "startDate": "2026-10-09",
-    "endDate": "2026-10-18",
+    "startDate": "2026-10-10",
+    "endDate": "2026-10-19",
     "lookbackDays": 10
   },
   "overallStatus": "success",
   "summary": {
-    "completedEvents": 21,
+    "completedEvents": 17,
     "pendingEvents": 0,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 40
+    "untranslatedCards": 26
   },
   "events": [
     {
@@ -271,66 +271,6 @@
       "firstSeenAt": "2026-10-10T09:23:29+09:00",
       "lastCheckedAt": "2026-10-10T19:52:20+09:00",
       "completedAt": "2026-10-10T19:52:20+09:00"
-    },
-    {
-      "id": "standard-league-2026-10-0911129",
-      "name": "Standard League October 9 2026",
-      "eventType": "league",
-      "eventDate": "2026-10-09",
-      "eventDateTime": null,
-      "publishedDate": "2026-10-09",
-      "status": "completed",
-      "deckCount": 17,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-10-0911129",
-      "dataFile": "./events/standard-league-2026-10-0911129.json",
-      "firstSeenAt": "2026-10-09T09:45:59+09:00",
-      "lastCheckedAt": "2026-10-10T09:23:30+09:00",
-      "completedAt": "2026-10-10T09:23:30+09:00"
-    },
-    {
-      "id": "standard-challenge-32-special-2026-10-0912856152",
-      "name": "Standard Challenge 32 Special October 9 2026",
-      "eventType": "challenge",
-      "eventDate": "2026-10-09",
-      "eventDateTime": "2026-10-09T00:00:00",
-      "publishedDate": "2026-10-09",
-      "status": "completed",
-      "deckCount": 8,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-special-2026-10-0912856152",
-      "dataFile": "./events/standard-challenge-32-special-2026-10-0912856152.json",
-      "firstSeenAt": "2026-10-09T20:34:08+09:00",
-      "lastCheckedAt": "2026-10-10T09:23:41+09:00",
-      "completedAt": "2026-10-10T09:23:41+09:00"
-    },
-    {
-      "id": "standard-challenge-16-special-2026-10-0912856154",
-      "name": "Standard Challenge 16 Special October 9 2026",
-      "eventType": "challenge",
-      "eventDate": "2026-10-09",
-      "eventDateTime": "2026-10-09T12:00:00",
-      "publishedDate": "2026-10-09",
-      "status": "completed",
-      "deckCount": 8,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-special-2026-10-0912856154",
-      "dataFile": "./events/standard-challenge-16-special-2026-10-0912856154.json",
-      "firstSeenAt": "2026-10-10T09:23:29+09:00",
-      "lastCheckedAt": "2026-10-10T09:24:06+09:00",
-      "completedAt": "2026-10-10T09:24:06+09:00"
-    },
-    {
-      "id": "standard-challenge-32-special-2026-10-0912856158",
-      "name": "Standard Challenge 32 Special October 9 2026",
-      "eventType": "challenge",
-      "eventDate": "2026-10-09",
-      "eventDateTime": "2026-10-09T18:00:00",
-      "publishedDate": "2026-10-10",
-      "status": "completed",
-      "deckCount": 8,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-32-special-2026-10-0912856158",
-      "dataFile": "./events/standard-challenge-32-special-2026-10-0912856158.json",
-      "firstSeenAt": "2026-10-10T19:52:19+09:00",
-      "lastCheckedAt": "2026-10-10T19:52:35+09:00",
-      "completedAt": "2026-10-10T19:52:35+09:00"
     }
   ]
 }
