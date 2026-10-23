@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T18:40:37+09:00",
-  "lastSuccessfulUpdateAt": "2026-10-23T18:40:37+09:00",
+  "generatedAt": "2026-10-24T08:36:41+09:00",
+  "lastSuccessfulUpdateAt": "2026-10-24T08:36:41+09:00",
   "period": {
-    "startDate": "2026-10-14",
-    "endDate": "2026-10-23",
+    "startDate": "2026-10-15",
+    "endDate": "2026-10-24",
     "lookbackDays": 10
   },
   "overallStatus": "success",
   "summary": {
-    "completedEvents": 21,
+    "completedEvents": 19,
     "pendingEvents": 0,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 42
+    "untranslatedCards": 37
   },
   "events": [
     {
@@ -301,36 +301,6 @@
       "firstSeenAt": "2026-10-16T02:26:43+09:00",
       "lastCheckedAt": "2026-10-16T02:26:58+09:00",
       "completedAt": "2026-10-16T02:26:58+09:00"
-    },
-    {
-      "id": "standard-league-2026-10-1411129",
-      "name": "Standard League October 14 2026",
-      "eventType": "league",
-      "eventDate": "2026-10-14",
-      "eventDateTime": null,
-      "publishedDate": "2026-10-14",
-      "status": "completed",
-      "deckCount": 1,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-10-1411129",
-      "dataFile": "./events/standard-league-2026-10-1411129.json",
-      "firstSeenAt": "2026-10-14T18:49:58+09:00",
-      "lastCheckedAt": "2026-10-14T18:50:02+09:00",
-      "completedAt": "2026-10-14T18:50:02+09:00"
-    },
-    {
-      "id": "standard-challenge-16-2026-10-1412856204",
-      "name": "Standard Challenge 16 October 14 2026",
-      "eventType": "challenge",
-      "eventDate": "2026-10-14",
-      "eventDateTime": "2026-10-14T07:00:00",
-      "publishedDate": "2026-10-14",
-      "status": "completed",
-      "deckCount": 8,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-10-1412856204",
-      "dataFile": "./events/standard-challenge-16-2026-10-1412856204.json",
-      "firstSeenAt": "2026-10-15T08:32:18+09:00",
-      "lastCheckedAt": "2026-10-15T08:32:26+09:00",
-      "completedAt": "2026-10-15T08:32:26+09:00"
     }
   ]
 }
