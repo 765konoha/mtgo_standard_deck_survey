@@ -6,15 +6,15 @@
       "eventName": "Standard League November 9 2026",
       "eventType": "league",
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-0911129",
-      "status": "pending_publication",
+      "status": "completed",
       "firstSeenAt": "2026-11-09T09:12:19+09:00",
-      "lastCheckedAt": "2026-11-09T09:12:38+09:00",
-      "completedAt": null,
-      "retryCount": 1,
+      "lastCheckedAt": "2026-11-09T22:27:02+09:00",
+      "completedAt": "2026-11-09T22:27:02+09:00",
+      "retryCount": 0,
       "lastResult": {
         "httpStatus": 200,
-        "deckCount": 0,
-        "reason": "decklists_not_published"
+        "deckCount": 3,
+        "reason": "ok"
       },
       "eventDate": "2026-11-09",
       "publishedDate": "2026-11-09",
@@ -38,6 +38,25 @@
       "eventDate": "2026-11-08",
       "publishedDate": "2026-11-08",
       "eventDateTime": null
+    },
+    {
+      "eventId": "standard-challenge-16-2026-11-0812857702",
+      "eventName": "Standard Challenge 16 November 8 2026",
+      "eventType": "challenge",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-11-0812857702",
+      "status": "completed",
+      "firstSeenAt": "2026-11-09T22:27:01+09:00",
+      "lastCheckedAt": "2026-11-09T22:27:16+09:00",
+      "completedAt": "2026-11-09T22:27:16+09:00",
+      "retryCount": 0,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 8,
+        "reason": "ok"
+      },
+      "eventDate": "2026-11-08",
+      "publishedDate": "2026-11-09",
+      "eventDateTime": "2026-11-08T23:00:00"
     },
     {
       "eventId": "standard-league-2026-11-0711129",
@@ -1661,9 +1680,9 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-09-2911129",
       "status": "publication_timeout",
       "firstSeenAt": "2026-09-30T19:47:21+09:00",
-      "lastCheckedAt": "2026-11-09T09:12:21+09:00",
+      "lastCheckedAt": "2026-11-09T22:27:10+09:00",
       "completedAt": null,
-      "retryCount": 114,
+      "retryCount": 115,
       "lastResult": {
         "httpStatus": 200,
         "deckCount": 0,
