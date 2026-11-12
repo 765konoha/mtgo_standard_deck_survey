@@ -2,6 +2,25 @@
   "schemaVersion": 1,
   "events": [
     {
+      "eventId": "standard-league-2026-11-1211361",
+      "eventName": "Standard League November 12 2026",
+      "eventType": "league",
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-1211361",
+      "status": "pending_publication",
+      "firstSeenAt": "2026-11-12T11:01:56+09:00",
+      "lastCheckedAt": "2026-11-12T11:03:48+09:00",
+      "completedAt": null,
+      "retryCount": 1,
+      "lastResult": {
+        "httpStatus": 200,
+        "deckCount": 0,
+        "reason": "decklists_not_published"
+      },
+      "eventDate": "2026-11-12",
+      "publishedDate": "2026-11-12",
+      "eventDateTime": null
+    },
+    {
       "eventId": "standard-league-2026-11-1111361",
       "eventName": "Standard League November 11 2026",
       "eventType": "league",
@@ -63,19 +82,19 @@
       "eventName": "Standard Challenge 16 November 10 2026",
       "eventType": "challenge",
       "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-11-1012858076",
-      "status": "pending_publication",
+      "status": "completed",
       "firstSeenAt": "2026-11-11T21:15:05+09:00",
-      "lastCheckedAt": "2026-11-12T04:54:29+09:00",
-      "completedAt": null,
-      "retryCount": 2,
+      "lastCheckedAt": "2026-11-12T11:01:57+09:00",
+      "completedAt": "2026-11-12T11:01:57+09:00",
+      "retryCount": 0,
       "lastResult": {
         "httpStatus": 200,
-        "deckCount": 0,
-        "reason": "decklists_not_published"
+        "deckCount": 8,
+        "reason": "ok"
       },
       "eventDate": "2026-11-10",
       "publishedDate": "2026-11-11",
-      "eventDateTime": null
+      "eventDateTime": "2026-11-10T20:00:00"
     },
     {
       "eventId": "standard-league-2026-11-1011361",
@@ -84,9 +103,9 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-1011361",
       "status": "pending_publication",
       "firstSeenAt": "2026-11-11T21:15:05+09:00",
-      "lastCheckedAt": "2026-11-12T04:55:01+09:00",
+      "lastCheckedAt": "2026-11-12T11:01:58+09:00",
       "completedAt": null,
-      "retryCount": 2,
+      "retryCount": 3,
       "lastResult": {
         "httpStatus": 200,
         "deckCount": 0,
@@ -1794,9 +1813,9 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-09-2911129",
       "status": "publication_timeout",
       "firstSeenAt": "2026-09-30T19:47:21+09:00",
-      "lastCheckedAt": "2026-11-12T04:55:28+09:00",
+      "lastCheckedAt": "2026-11-12T11:02:30+09:00",
       "completedAt": null,
-      "retryCount": 120,
+      "retryCount": 121,
       "lastResult": {
         "httpStatus": 200,
         "deckCount": 0,
