@@ -1,22 +1,82 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T23:01:02+09:00",
-  "lastSuccessfulUpdateAt": "2026-11-19T23:01:02+09:00",
+  "generatedAt": "2026-11-20T10:58:09+09:00",
+  "lastSuccessfulUpdateAt": "2026-11-20T10:58:09+09:00",
   "period": {
-    "startDate": "2026-11-10",
-    "endDate": "2026-11-19",
+    "startDate": "2026-11-11",
+    "endDate": "2026-11-20",
     "lookbackDays": 10
   },
-  "overallStatus": "partial",
+  "overallStatus": "pending",
   "summary": {
-    "completedEvents": 16,
-    "pendingEvents": 2,
+    "completedEvents": 17,
+    "pendingEvents": 3,
     "fetchErrors": 0,
     "parseErrors": 0,
-    "timedOutEvents": 1,
-    "untranslatedCards": 95
+    "timedOutEvents": 0,
+    "untranslatedCards": 122
   },
   "events": [
+    {
+      "id": "standard-league-2026-11-2011361",
+      "name": "Standard League November 20 2026",
+      "eventType": "league",
+      "eventDate": "2026-11-20",
+      "eventDateTime": null,
+      "publishedDate": "2026-11-20",
+      "status": "pending_publication",
+      "deckCount": 0,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-2011361",
+      "dataFile": "./events/standard-league-2026-11-2011361.json",
+      "firstSeenAt": "2026-11-20T10:55:51+09:00",
+      "lastCheckedAt": "2026-11-20T10:57:23+09:00",
+      "completedAt": null
+    },
+    {
+      "id": "standard-league-2026-11-1911361",
+      "name": "Standard League November 19 2026",
+      "eventType": "league",
+      "eventDate": "2026-11-19",
+      "eventDateTime": null,
+      "publishedDate": "2026-11-19",
+      "status": "completed",
+      "deckCount": 11,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-1911361",
+      "dataFile": "./events/standard-league-2026-11-1911361.json",
+      "firstSeenAt": "2026-11-20T10:55:51+09:00",
+      "lastCheckedAt": "2026-11-20T10:58:09+09:00",
+      "completedAt": "2026-11-20T10:58:09+09:00"
+    },
+    {
+      "id": "standard-challenge-16-2026-11-1912858915",
+      "name": "Standard Challenge 16 November 19 2026",
+      "eventType": "challenge",
+      "eventDate": "2026-11-19",
+      "eventDateTime": "2026-11-19T02:00:00",
+      "publishedDate": "2026-11-19",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-11-1912858915",
+      "dataFile": "./events/standard-challenge-16-2026-11-1912858915.json",
+      "firstSeenAt": "2026-11-20T10:55:51+09:00",
+      "lastCheckedAt": "2026-11-20T10:57:56+09:00",
+      "completedAt": "2026-11-20T10:57:56+09:00"
+    },
+    {
+      "id": "standard-challenge-16-2026-11-1912858917",
+      "name": "Standard Challenge 16 November 19 2026",
+      "eventType": "challenge",
+      "eventDate": "2026-11-19",
+      "eventDateTime": "2026-11-19T11:00:00",
+      "publishedDate": "2026-11-19",
+      "status": "completed",
+      "deckCount": 8,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-11-1912858917",
+      "dataFile": "./events/standard-challenge-16-2026-11-1912858917.json",
+      "firstSeenAt": "2026-11-20T10:55:51+09:00",
+      "lastCheckedAt": "2026-11-20T10:57:55+09:00",
+      "completedAt": "2026-11-20T10:57:55+09:00"
+    },
     {
       "id": "standard-league-2026-11-1711361",
       "name": "Standard League November 17 2026",
@@ -74,7 +134,7 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-0811361",
       "dataFile": "./events/standard-league-2026-11-0811361.json",
       "firstSeenAt": "2026-11-16T04:09:51+09:00",
-      "lastCheckedAt": "2026-11-19T22:58:56+09:00",
+      "lastCheckedAt": "2026-11-20T10:55:52+09:00",
       "completedAt": null
     },
     {
@@ -149,7 +209,7 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-0611361",
       "dataFile": "./events/standard-league-2026-11-0611361.json",
       "firstSeenAt": "2026-11-16T04:09:51+09:00",
-      "lastCheckedAt": "2026-11-19T22:59:28+09:00",
+      "lastCheckedAt": "2026-11-20T10:55:57+09:00",
       "completedAt": null
     },
     {
@@ -256,51 +316,6 @@
       "firstSeenAt": "2026-11-12T04:54:28+09:00",
       "lastCheckedAt": "2026-11-12T04:55:43+09:00",
       "completedAt": "2026-11-12T04:55:43+09:00"
-    },
-    {
-      "id": "standard-league-2026-11-1011129",
-      "name": "Standard League November 10 2026",
-      "eventType": "league",
-      "eventDate": "2026-11-10",
-      "eventDateTime": null,
-      "publishedDate": "2026-11-10",
-      "status": "completed",
-      "deckCount": 2,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-1011129",
-      "dataFile": "./events/standard-league-2026-11-1011129.json",
-      "firstSeenAt": "2026-11-10T12:01:14+09:00",
-      "lastCheckedAt": "2026-11-10T12:01:24+09:00",
-      "completedAt": "2026-11-10T12:01:24+09:00"
-    },
-    {
-      "id": "standard-league-2026-11-1011361",
-      "name": "Standard League November 10 2026",
-      "eventType": "league",
-      "eventDate": "2026-11-10",
-      "eventDateTime": null,
-      "publishedDate": "2026-11-10",
-      "status": "publication_timeout",
-      "deckCount": 0,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-1011361",
-      "dataFile": "./events/standard-league-2026-11-1011361.json",
-      "firstSeenAt": "2026-11-11T21:15:05+09:00",
-      "lastCheckedAt": "2026-11-19T22:59:59+09:00",
-      "completedAt": null
-    },
-    {
-      "id": "standard-challenge-16-2026-11-1012858076",
-      "name": "Standard Challenge 16 November 10 2026",
-      "eventType": "challenge",
-      "eventDate": "2026-11-10",
-      "eventDateTime": "2026-11-10T20:00:00",
-      "publishedDate": "2026-11-11",
-      "status": "completed",
-      "deckCount": 8,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-11-1012858076",
-      "dataFile": "./events/standard-challenge-16-2026-11-1012858076.json",
-      "firstSeenAt": "2026-11-11T21:15:05+09:00",
-      "lastCheckedAt": "2026-11-12T11:01:57+09:00",
-      "completedAt": "2026-11-12T11:01:57+09:00"
     }
   ]
 }
