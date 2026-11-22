@@ -1,22 +1,37 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T22:07:03+09:00",
-  "lastSuccessfulUpdateAt": "2026-11-21T22:07:03+09:00",
+  "generatedAt": "2026-11-22T09:46:32+09:00",
+  "lastSuccessfulUpdateAt": "2026-11-22T09:46:32+09:00",
   "period": {
-    "startDate": "2026-11-12",
-    "endDate": "2026-11-21",
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-22",
     "lookbackDays": 10
   },
   "overallStatus": "pending",
   "summary": {
-    "completedEvents": 18,
-    "pendingEvents": 3,
+    "completedEvents": 15,
+    "pendingEvents": 4,
     "fetchErrors": 0,
     "parseErrors": 0,
     "timedOutEvents": 0,
-    "untranslatedCards": 148
+    "untranslatedCards": 129
   },
   "events": [
+    {
+      "id": "standard-league-2026-11-2211361",
+      "name": "Standard League November 22 2026",
+      "eventType": "league",
+      "eventDate": "2026-11-22",
+      "eventDateTime": null,
+      "publishedDate": "2026-11-22",
+      "status": "pending_publication",
+      "deckCount": 0,
+      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-2211361",
+      "dataFile": "./events/standard-league-2026-11-2211361.json",
+      "firstSeenAt": "2026-11-22T09:44:54+09:00",
+      "lastCheckedAt": "2026-11-22T09:46:02+09:00",
+      "completedAt": null
+    },
     {
       "id": "standard-league-2026-11-2111361",
       "name": "Standard League November 21 2026",
@@ -44,7 +59,7 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-2011361",
       "dataFile": "./events/standard-league-2026-11-2011361.json",
       "firstSeenAt": "2026-11-20T10:55:51+09:00",
-      "lastCheckedAt": "2026-11-21T22:06:25+09:00",
+      "lastCheckedAt": "2026-11-22T09:44:55+09:00",
       "completedAt": null
     },
     {
@@ -179,7 +194,7 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-0811361",
       "dataFile": "./events/standard-league-2026-11-0811361.json",
       "firstSeenAt": "2026-11-16T04:09:51+09:00",
-      "lastCheckedAt": "2026-11-21T22:06:49+09:00",
+      "lastCheckedAt": "2026-11-22T09:44:57+09:00",
       "completedAt": null
     },
     {
@@ -254,7 +269,7 @@
       "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-0611361",
       "dataFile": "./events/standard-league-2026-11-0611361.json",
       "firstSeenAt": "2026-11-16T04:09:51+09:00",
-      "lastCheckedAt": "2026-11-21T22:06:52+09:00",
+      "lastCheckedAt": "2026-11-22T09:45:19+09:00",
       "completedAt": null
     },
     {
@@ -286,51 +301,6 @@
       "firstSeenAt": "2026-11-14T20:49:54+09:00",
       "lastCheckedAt": "2026-11-14T20:50:12+09:00",
       "completedAt": "2026-11-14T20:50:12+09:00"
-    },
-    {
-      "id": "standard-league-2026-11-1211361",
-      "name": "Standard League November 12 2026",
-      "eventType": "league",
-      "eventDate": "2026-11-12",
-      "eventDateTime": null,
-      "publishedDate": "2026-11-12",
-      "status": "completed",
-      "deckCount": 6,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-league-2026-11-1211361",
-      "dataFile": "./events/standard-league-2026-11-1211361.json",
-      "firstSeenAt": "2026-11-12T11:01:56+09:00",
-      "lastCheckedAt": "2026-11-12T22:22:16+09:00",
-      "completedAt": "2026-11-12T22:22:16+09:00"
-    },
-    {
-      "id": "standard-challenge-16-2026-11-1212858085",
-      "name": "Standard Challenge 16 November 12 2026",
-      "eventType": "challenge",
-      "eventDate": "2026-11-12",
-      "eventDateTime": "2026-11-12T02:00:00",
-      "publishedDate": "2026-11-12",
-      "status": "completed",
-      "deckCount": 8,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-11-1212858085",
-      "dataFile": "./events/standard-challenge-16-2026-11-1212858085.json",
-      "firstSeenAt": "2026-11-12T22:22:15+09:00",
-      "lastCheckedAt": "2026-11-12T22:22:59+09:00",
-      "completedAt": "2026-11-12T22:22:59+09:00"
-    },
-    {
-      "id": "standard-challenge-16-2026-11-1212858087",
-      "name": "Standard Challenge 16 November 12 2026",
-      "eventType": "challenge",
-      "eventDate": "2026-11-12",
-      "eventDateTime": "2026-11-12T11:00:00",
-      "publishedDate": "2026-11-12",
-      "status": "completed",
-      "deckCount": 8,
-      "sourceUrl": "https://www.mtgo.com/decklist/standard-challenge-16-2026-11-1212858087",
-      "dataFile": "./events/standard-challenge-16-2026-11-1212858087.json",
-      "firstSeenAt": "2026-11-13T10:33:11+09:00",
-      "lastCheckedAt": "2026-11-13T10:33:51+09:00",
-      "completedAt": "2026-11-13T10:33:51+09:00"
     }
   ]
 }
